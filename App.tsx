@@ -139,7 +139,7 @@ const AppContent: React.FC = () => {
             onClick={() => setCurrentView(AppView.PROFILE)}
             className="flex items-center gap-2 pl-4 border-l border-slate-200"
           >
-            <span className="text-slate-900">{user?.name.split(' ')[0]}</span>
+            <span className="text-slate-900">{profile?.name.split(' ')[0]}</span>
             <div className="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center text-white">
               <UserIcon size={14} />
             </div>
