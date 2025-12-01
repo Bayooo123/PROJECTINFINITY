@@ -6,12 +6,32 @@ import { Blog } from './views/Blog';
 import { Login } from './components/Auth/Login';
 import { Signup } from './components/Auth/Signup';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader } from 'lucide-react';
+import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader, AlertCircle } from 'lucide-react';
 
 const AppContent: React.FC = () => {
-  const { user, profile, loading, signOut } = useAuth();
+  const { user, profile, loading, isConfigured, signOut } = useAuth();
   const [currentView, setCurrentView] = useState<AppView>(AppView.PRACTICE);
   const [authView, setAuthView] = useState<'login' | 'signup'>('login');
+
+  // Show configuration error if Supabase is missing
+  if (!isConfigured) {
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
+          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <AlertCircle size={32} className="text-red-600" />
+          </div>
+          <h1 className="text-xl font-bold text-slate-900 mb-2">Configuration Error</h1>
+          <p className="text-slate-600 mb-6">
+            The application is missing required configuration. Please check your environment variables.
+          </p>
+          <div className="bg-slate-100 p-4 rounded-lg text-left text-xs font-mono text-slate-700 overflow-x-auto">
+            <p>Missing: VITE_SUPABASE_URL or VITE_SUPABASE_ANON_KEY</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Show loading spinner while checking auth state
   if (loading) {
