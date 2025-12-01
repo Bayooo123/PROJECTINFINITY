@@ -1,44 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import { AppView, UserProfile } from './types';
-import { Onboarding } from './views/Onboarding';
+import React, { useState } from 'react';
+import { AppView } from './types';
 import { Practice } from './views/Practice';
 import { Study } from './views/Study';
 import { Blog } from './views/Blog';
-import { BookOpen, MessageSquare, User as UserIcon, BookText } from 'lucide-react';
+import { Login } from './components/Auth/Login';
+import { Signup } from './components/Auth/Signup';
+import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader } from 'lucide-react';
 
-const App: React.FC = () => {
-  const [currentView, setCurrentView] = useState<AppView>(AppView.ONBOARDING);
-  const [user, setUser] = useState<UserProfile | null>(null);
+const AppContent: React.FC = () => {
+  const { user, profile, loading, signOut } = useAuth();
+  const [currentView, setCurrentView] = useState<AppView>(AppView.PRACTICE);
+  const [authView, setAuthView] = useState<'login' | 'signup'>('login');
 
-  useEffect(() => {
-    const storedUser = localStorage.getItem('learned_user_profile');
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-      setCurrentView(AppView.PRACTICE); // Default to Practice (Priority feature)
+  // Show loading spinner while checking auth state
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+        <div className="text-center">
+          <Loader size={48} className="animate-spin text-amber-600 mx-auto mb-4" />
+          <p className="text-slate-600">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Show auth screens if not logged in
+  if (!user || !profile) {
+    if (authView === 'login') {
+      return <Login onSwitchToSignup={() => setAuthView('signup')} />;
     }
-  }, []);
+    return <Signup onSwitchToLogin={() => setAuthView('login')} />;
+  }
 
-  const handleOnboardingComplete = (profile: UserProfile) => {
-    setUser(profile);
-    localStorage.setItem('learned_user_profile', JSON.stringify(profile));
+
+  const handleLogout = async () => {
+    await signOut();
     setCurrentView(AppView.PRACTICE);
   };
-
-  const handleLogout = () => {
-    localStorage.removeItem('learned_user_profile');
-    setUser(null);
-    setCurrentView(AppView.ONBOARDING);
-  }
 
   // Helper to render the active view
   const renderView = () => {
     switch (currentView) {
-      case AppView.ONBOARDING:
-        return <Onboarding onComplete={handleOnboardingComplete} />;
       case AppView.PRACTICE:
-        return user ? <Practice user={user} /> : null;
+        return profile ? <Practice user={{
+          name: profile.name,
+          university: profile.university,
+          level: profile.level,
+          courses: profile.courses,
+          hasOnboarded: true
+        }} /> : null;
       case AppView.STUDY:
-        return user ? <Study user={user} /> : null;
+        return profile ? <Study user={{
+          name: profile.name,
+          university: profile.university,
+          level: profile.level,
+          courses: profile.courses,
+          hasOnboarded: true
+        }} /> : null;
       case AppView.BLOG:
         return <Blog />;
       case AppView.PROFILE:
@@ -48,9 +67,9 @@ const App: React.FC = () => {
               <UserIcon size={48} />
             </div>
             <div>
-              <h2 className="text-2xl font-serif font-bold text-slate-900">{user?.name}</h2>
-              <p className="text-slate-500">{user?.university}</p>
-              <p className="text-amber-600 font-medium mt-2">{user?.level}</p>
+              <h2 className="text-2xl font-serif font-bold text-slate-900">{profile?.name}</h2>
+              <p className="text-slate-500">{profile?.university}</p>
+              <p className="text-amber-600 font-medium mt-2">{profile?.level}</p>
             </div>
             <button
               onClick={handleLogout}
@@ -64,10 +83,6 @@ const App: React.FC = () => {
         return <div>View not found</div>;
     }
   };
-
-  if (currentView === AppView.ONBOARDING) {
-    return <Onboarding onComplete={handleOnboardingComplete} />;
-  }
 
   return (
     <div className="flex flex-col h-screen bg-slate-50 text-slate-900 font-sans">
@@ -174,5 +189,13 @@ const NavButton: React.FC<NavButtonProps> = ({ active, onClick, icon, label }) =
     <span className="text-[10px] font-medium">{label}</span>
   </button>
 );
+
+const App: React.FC = () => {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
+  );
+};
 
 export default App;
