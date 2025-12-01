@@ -74,7 +74,7 @@ const App: React.FC = () => {
       {/* Top Navbar (Desktop Only mostly, mobile has bottom nav) */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-10 px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src="/learned_logo.png" alt="Learned Logo" className="h-8 w-auto invert" />
+          <img src="/learned_logo.svg" alt="Learned Logo" className="h-8 w-auto" />
         </div>
         <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-500">
           <button
