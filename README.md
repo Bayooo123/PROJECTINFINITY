@@ -83,19 +83,6 @@ AI-powered legal education platform for Nigerian law students. Practice question
 3. **Configure Environment Variables**
    - In Vercel project settings → Environment Variables
    - Add: `VITE_GEMINI_API_KEY` = `your_api_key`
-   - Make sure to add it for Production, Preview, and Development
-
-4. **Deploy**
-   - Click "Deploy"
-   - Your app will be live in ~2 minutes!
-
-### Environment Variables for Vercel
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `VITE_GEMINI_API_KEY` | Google Gemini API key for AI features | Yes |
-
-## Project Structure
 
 ```
 learned/
