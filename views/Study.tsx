@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { chatWithGemini } from '../services/geminiService';
-import { ChatMessage, UserProfile } from '../types';
+import { ChatMessage, UserProfile, LAW_COURSES } from '../types';
 import { Send, User, Bot, Info, Book, ChevronRight, ArrowLeft } from 'lucide-react';
 
 interface StudyProps {
@@ -14,7 +14,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
   // Helper to get user courses or fallback
   const userCourses = user.courses && user.courses.length > 0
     ? user.courses
-    : ["Company Law", "Constitutional Law", "Criminal Law", "Legal Method"];
+    : LAW_COURSES;
 
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');

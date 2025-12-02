@@ -45,23 +45,54 @@ export interface BlogPost {
 export const COURSE_STRUCTURE: Record<string, { compulsory: string[], electives: string[] }> = {
   "100 Level": {
     compulsory: ["Legal Method", "Nigerian Legal System"],
-    electives: ["Logic and Philosophic Thought", "Introduction to Sociology", "Use of English"]
+    electives: ["Logic and Philosophic Thought", "Introduction to Sociology", "Use of English", "Introduction to Information Processing"]
   },
   "200 Level": {
-    compulsory: ["Law of Contract", "Administrative Law", "Constitutional Law", "Nigerian Legal System"],
-    electives: ["Legal Method"]
+    compulsory: ["Law of Contract", "Nigerian Legal System", "Constitutional Law"],
+    electives: ["Labor Law", "Introduction to Psychology"]
   },
   "300 Level": {
-    compulsory: ["Criminal Law", "Law of Torts", "Commercial Law"],
-    electives: ["Banking Law", "Intellectual Property Law", "Oil and Gas Law I"]
+    compulsory: ["Law of Commercial Transactions", "Criminal Law", "Law of Torts"],
+    electives: [
+      "Islamic Law",
+      "Gender and the Law",
+      "Law and Religion",
+      "Intellectual Property Law",
+      "Terrorism and National Security Law",
+      "Mineral and Water Resources Law",
+      "Family Law",
+      "Human Rights and Civil Liberties"
+    ]
   },
   "400 Level": {
-    compulsory: ["Land Law", "Equity and Trusts", "Evidence"],
-    electives: ["Oil and Gas Law II", "Taxation Law", "Environmental Law"]
+    compulsory: ["Legal Research and Writing", "Land Law", "Equity and Trusts"],
+    electives: [
+      "Environmental Law",
+      "Law of Banking",
+      "Law of Insurance",
+      "Entertainment Law",
+      "Conflict of Laws",
+      "Petroleum and Energy Law",
+      "Health Law",
+      "Housing Law",
+      "Law of Restitution",
+      "Advertising Law",
+      "Taxation Law"
+    ]
   },
   "500 Level": {
-    compulsory: ["Company Law", "Jurisprudence", "Law of Partnership"],
-    electives: ["Industrial Law", "Shipping & Admiralty Law", "Public International Law", "Conveyancing"]
+    compulsory: ["Company Law", "Jurisprudence and Legal Theory", "Law of Evidence"],
+    electives: [
+      "Industrial Law",
+      "Shipping and Admiralty Law",
+      "Public International Law",
+      "International Trade Law",
+      "Criminology",
+      "Conveyancing",
+      "Law of Succession",
+      "Planning Law",
+      "Child Law"
+    ]
   },
   "Law School": {
     compulsory: ["Civil Litigation", "Criminal Litigation", "Corporate Law Practice", "Property Law Practice", "Professional Ethics"],
@@ -70,20 +101,57 @@ export const COURSE_STRUCTURE: Record<string, { compulsory: string[], electives:
 };
 
 export const LAW_COURSES = [
-  "Constitutional Law",
-  "Criminal Law",
-  "Law of Contract",
-  "Law of Torts",
-  "Land Law",
-  "Equity and Trusts",
-  "Commercial Law",
-  "Evidence",
-  "Jurisprudence",
-  "Company Law",
+  // Core / Compulsory
   "Legal Method",
   "Nigerian Legal System",
-  "Law of Partnership",
-  "Administrative Law"
+  "Law of Contract",
+  "Constitutional Law",
+  "Law of Commercial Transactions",
+  "Criminal Law",
+  "Law of Torts",
+  "Legal Research and Writing",
+  "Land Law",
+  "Equity and Trusts",
+  "Company Law",
+  "Jurisprudence and Legal Theory",
+  "Law of Evidence",
+
+  // Electives
+  "Islamic Law",
+  "Gender and the Law",
+  "Law and Religion",
+  "Intellectual Property Law",
+  "Terrorism and National Security Law",
+  "Mineral and Water Resources Law",
+  "Family Law",
+  "Human Rights and Civil Liberties",
+  "Environmental Law",
+  "Law of Banking",
+  "Law of Insurance",
+  "Entertainment Law",
+  "Conflict of Laws",
+  "Petroleum and Energy Law",
+  "Health Law",
+  "Housing Law",
+  "Law of Restitution",
+  "Advertising Law",
+  "Taxation Law",
+  "Industrial Law",
+  "Shipping and Admiralty Law",
+  "Public International Law",
+  "International Trade Law",
+  "Criminology",
+  "Conveyancing",
+  "Law of Succession",
+  "Planning Law",
+  "Child Law",
+
+  // Law School
+  "Civil Litigation",
+  "Criminal Litigation",
+  "Corporate Law Practice",
+  "Property Law Practice",
+  "Professional Ethics"
 ];
 
 export const COURSE_TOPICS: Record<string, string[]> = {

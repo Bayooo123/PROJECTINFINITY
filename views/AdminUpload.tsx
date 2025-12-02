@@ -5,6 +5,7 @@ import { Upload, FileText, BookOpen, CheckCircle, AlertCircle, Loader, FileUp } 
 import { getDocument, GlobalWorkerOptions, version } from 'pdfjs-dist';
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 import mammoth from 'mammoth';
+import { UserProfile, COURSE_STRUCTURE, LAW_COURSES } from '../types';
 
 // Configure PDF.js worker
 GlobalWorkerOptions.workerSrc = pdfWorker;
@@ -19,18 +20,8 @@ export const AdminUpload: React.FC = () => {
     const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
     const [fileName, setFileName] = useState<string | null>(null);
 
-    const courses = [
-        "Constitutional Law",
-        "Criminal Law",
-        "Contract Law",
-        "Commercial Law",
-        "Legal Method",
-        "Equity and Trusts",
-        "Land Law",
-        "Company Law",
-        "Law of Torts",
-        "Evidence"
-    ];
+    // Use shared LAW_COURSES
+    const courses = LAW_COURSES.sort();
 
     const toggleCourse = (course: string) => {
         setSelectedCourses(prev =>
