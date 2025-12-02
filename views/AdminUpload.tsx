@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { generateEmbedding } from '../services/geminiService';
 import { Upload, FileText, BookOpen, CheckCircle, AlertCircle, Loader, FileUp } from 'lucide-react';
-import * as pdfjsLib from 'pdfjs-dist';
+import { getDocument, GlobalWorkerOptions, version } from 'pdfjs-dist';
+import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 import mammoth from 'mammoth';
 
 // Configure PDF.js worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+GlobalWorkerOptions.workerSrc = pdfWorker;
 
 export const AdminUpload: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'materials' | 'questions'>('materials');
-    const [course, setCourse] = useState('Constitutional Law');
+    const [selectedCourses, setSelectedCourses] = useState<string[]>(['Constitutional Law']);
     const [topic, setTopic] = useState('');
     const [year, setYear] = useState('');
     const [content, setContent] = useState('');
@@ -31,9 +32,17 @@ export const AdminUpload: React.FC = () => {
         "Evidence"
     ];
 
+    const toggleCourse = (course: string) => {
+        setSelectedCourses(prev =>
+            prev.includes(course)
+                ? prev.filter(c => c !== course)
+                : [...prev, course]
+        );
+    };
+
     const extractTextFromPdf = async (file: File): Promise<string> => {
         const arrayBuffer = await file.arrayBuffer();
-        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        const pdf = await getDocument({ data: arrayBuffer }).promise;
         let fullText = '';
 
         for (let i = 1; i <= pdf.numPages; i++) {
@@ -89,6 +98,10 @@ export const AdminUpload: React.FC = () => {
     const handleUpload = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!content.trim()) return;
+        if (selectedCourses.length === 0) {
+            setStatus({ type: 'error', message: 'Please select at least one course.' });
+            return;
+        }
 
         setIsUploading(true);
         setStatus(null);
@@ -101,27 +114,35 @@ export const AdminUpload: React.FC = () => {
                 throw new Error("Failed to generate embedding. AI service might be down.");
             }
 
-            // 2. Insert into Supabase
-            if (activeTab === 'materials') {
-                const finalTopic = topic.trim() || fileName || "General";
-                const { error } = await supabase.from('course_materials').insert({
-                    course,
-                    topic: finalTopic,
-                    content,
-                    embedding
-                });
-                if (error) throw error;
-            } else {
-                const { error } = await supabase.from('past_questions').insert({
-                    course,
-                    year,
-                    question_text: content,
-                    embedding
-                });
-                if (error) throw error;
+            // 2. Insert into Supabase for EACH selected course
+            const finalTopic = topic.trim() || fileName || "General";
+
+            const promises = selectedCourses.map(course => {
+                if (activeTab === 'materials') {
+                    return supabase.from('course_materials').insert({
+                        course,
+                        topic: finalTopic,
+                        content,
+                        embedding
+                    });
+                } else {
+                    return supabase.from('past_questions').insert({
+                        course,
+                        year,
+                        question_text: content,
+                        embedding
+                    });
+                }
+            });
+
+            const results = await Promise.all(promises);
+            const errors = results.filter(r => r.error).map(r => r.error?.message);
+
+            if (errors.length > 0) {
+                throw new Error(`Failed to upload for some courses: ${errors.join(', ')}`);
             }
 
-            setStatus({ type: 'success', message: 'Uploaded successfully!' });
+            setStatus({ type: 'success', message: `Uploaded successfully to ${selectedCourses.length} course(s)!` });
             setContent(''); // Clear content on success
             setFileName(null);
             if (activeTab === 'materials') setTopic('');
@@ -163,17 +184,31 @@ export const AdminUpload: React.FC = () => {
             </div>
 
             <form onSubmit={handleUpload} className="space-y-6 bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Course Selection */}
-                    <div className="space-y-2">
-                        <label className="text-sm font-medium text-slate-700">Course</label>
-                        <select
-                            value={course}
-                            onChange={(e) => setCourse(e.target.value)}
-                            className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none"
-                        >
-                            {courses.map(c => <option key={c} value={c}>{c}</option>)}
-                        </select>
+                <div className="grid grid-cols-1 gap-6">
+                    {/* Course Selection (Multi-select) */}
+                    <div className="space-y-3">
+                        <label className="text-sm font-medium text-slate-700">Select Applicable Courses</label>
+                        <div className="flex flex-wrap gap-2">
+                            {courses.map(c => {
+                                const isSelected = selectedCourses.includes(c);
+                                return (
+                                    <button
+                                        key={c}
+                                        type="button"
+                                        onClick={() => toggleCourse(c)}
+                                        className={`px-3 py-1.5 text-sm rounded-full border transition-all ${isSelected
+                                                ? 'bg-amber-100 border-amber-600 text-amber-800 font-medium'
+                                                : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-slate-300'
+                                            }`}
+                                    >
+                                        {c}
+                                    </button>
+                                );
+                            })}
+                        </div>
+                        {selectedCourses.length === 0 && (
+                            <p className="text-xs text-red-500">Please select at least one course.</p>
+                        )}
                     </div>
 
                     {/* Dynamic Field: Topic or Year */}
@@ -242,7 +277,7 @@ export const AdminUpload: React.FC = () => {
                     {isUploading ? (
                         <>
                             <Loader size={20} className="animate-spin" />
-                            Processing...
+                            Processing & Vectorizing...
                         </>
                     ) : (
                         <>
