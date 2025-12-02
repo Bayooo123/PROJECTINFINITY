@@ -51,6 +51,12 @@ export const AdminUpload: React.FC = () => {
         return result.value;
     };
 
+    const sanitizeText = (text: string): string => {
+        // Remove null bytes and other non-printable control characters (except newlines/tabs)
+        // Also remove the specific unicode replacement character if it appears
+        return text.replace(/\x00/g, '').replace(/[\uFFFD]/g, '');
+    };
+
     const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
         if (!file) return;
@@ -70,7 +76,9 @@ export const AdminUpload: React.FC = () => {
                 extractedText = await file.text();
             }
 
-            setContent(extractedText);
+            // Sanitize the text to remove null bytes and invalid characters
+            const cleanText = sanitizeText(extractedText);
+            setContent(cleanText);
 
             // Auto-fill topic if empty
             if (!topic && activeTab === 'materials') {
