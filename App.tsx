@@ -6,8 +6,9 @@ import { Blog } from './views/Blog';
 import { Login } from './components/Auth/Login';
 import { Signup } from './components/Auth/Signup';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader, AlertCircle } from 'lucide-react';
+import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader, AlertCircle, Database } from 'lucide-react';
 import { AdminUpload } from './views/AdminUpload';
+import { AdminQuestionGenerator } from './views/AdminQuestionGenerator';
 
 const AppContent: React.FC = () => {
   const { user, profile, loading, isConfigured, signOut } = useAuth();
@@ -94,17 +95,26 @@ const AppContent: React.FC = () => {
               <p className="text-amber-600 font-medium mt-2">{profile?.level}</p>
             </div>
 
-            {/* Admin Access Button */}
-            <button
-              onClick={() => setCurrentView('ADMIN' as AppView)}
-              className="text-slate-500 hover:text-slate-900 text-sm font-medium underline"
-            >
-              Access Knowledge Base Admin
-            </button>
+            {/* Admin Access Buttons */}
+            <div className="space-y-3 pt-4 border-t border-slate-100">
+              <button
+                onClick={() => setCurrentView('ADMIN' as AppView)}
+                className="w-full py-3 text-slate-600 hover:text-slate-900 text-sm font-medium bg-slate-50 hover:bg-slate-100 rounded-lg transition-colors flex items-center justify-center gap-2"
+              >
+                <BookOpen size={16} /> Manage Knowledge Base
+              </button>
+
+              <button
+                onClick={() => setCurrentView('ADMIN_GENERATOR' as AppView)}
+                className="w-full py-3 text-amber-700 hover:text-amber-900 text-sm font-medium bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors flex items-center justify-center gap-2"
+              >
+                <Database size={16} /> Question Bank Generator
+              </button>
+            </div>
 
             <button
               onClick={handleLogout}
-              className="text-red-500 hover:text-red-700 text-sm font-medium border border-red-200 px-4 py-2 rounded-lg hover:bg-red-50 block mx-auto"
+              className="text-red-500 hover:text-red-700 text-sm font-medium border border-red-200 px-4 py-2 rounded-lg hover:bg-red-50 block mx-auto mt-8"
             >
               Sign Out
             </button>
@@ -112,6 +122,8 @@ const AppContent: React.FC = () => {
         );
       case 'ADMIN' as AppView:
         return <AdminUpload />;
+      case 'ADMIN_GENERATOR' as AppView:
+        return <AdminQuestionGenerator />;
       default:
         return <div>View not found</div>;
     }

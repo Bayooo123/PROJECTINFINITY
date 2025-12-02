@@ -274,3 +274,46 @@ export const generateCoccinQuestions = async (
     }
   }
 };
+
+export const batchGenerateAndSaveQuestions = async (
+  course: string,
+  topic: string,
+  type: 'theory' | 'objective',
+  count: number
+): Promise<{ success: boolean; count: number; message?: string }> => {
+  if (!API_KEY) return { success: false, count: 0, message: "API Key missing" };
+
+  try {
+    // 1. Generate Questions using existing logic (reusing the robust function)
+    // We pass [course] as an array because the function expects an array
+    const questions = await generateCoccinQuestions([course], type, count);
+
+    if (!questions || questions.length === 0) {
+      return { success: false, count: 0, message: "AI failed to generate questions." };
+    }
+
+    // 2. Prepare for Batch Insert
+    const rowsToInsert = questions.map((q: any) => ({
+      course,
+      topic,
+      type,
+      question_data: q // Store the full JSON object
+    }));
+
+    // 3. Insert into Supabase
+    const { error } = await supabase
+      .from('question_bank')
+      .insert(rowsToInsert);
+
+    if (error) {
+      console.error("Error saving to question bank:", error);
+      return { success: false, count: 0, message: error.message };
+    }
+
+    return { success: true, count: questions.length };
+
+  } catch (error: any) {
+    console.error("Batch generation error:", error);
+    return { success: false, count: 0, message: error.message || "Unknown error" };
+  }
+};

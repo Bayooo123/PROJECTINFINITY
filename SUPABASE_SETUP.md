@@ -33,23 +33,6 @@ create policy "Users can insert own profile"
   on user_profiles for insert
   with check (auth.uid() = id);
 ```
-
-### 2. Create quiz_history table
-
-```sql
-create table quiz_history (
-  id uuid default uuid_generate_v4() primary key,
-  user_id uuid references auth.users on delete cascade not null,
-  course text not null,
-  topic text,
-  quiz_mode text not null,
-  total_questions integer not null,
-  correct_answers integer not null,
-  score_percentage numeric not null,
-  time_taken_seconds integer,
-  completed_at timestamp with time zone default timezone('utc'::text, now()) not null
-);
-
 -- Enable RLS
 alter table quiz_history enable row level security;
 
