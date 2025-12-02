@@ -7,6 +7,7 @@ import { Login } from './components/Auth/Login';
 import { Signup } from './components/Auth/Signup';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader, AlertCircle } from 'lucide-react';
+import { AdminUpload } from './views/AdminUpload';
 
 const AppContent: React.FC = () => {
   const { user, profile, loading, isConfigured, signOut } = useAuth();
@@ -59,9 +60,7 @@ const AppContent: React.FC = () => {
     setCurrentView(AppView.PRACTICE);
   };
 
-  import { AdminUpload } from './views/AdminUpload';
 
-  // ... (in AppContent)
   // Helper to render the active view
   const renderView = () => {
     switch (currentView) {
