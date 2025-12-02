@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { generateEmbedding } from '../services/geminiService';
-import { Upload, FileText, BookOpen, CheckCircle, AlertCircle, Loader } from 'lucide-react';
+import { Upload, FileText, BookOpen, CheckCircle, AlertCircle, Loader, FileUp } from 'lucide-react';
+import * as pdfjsLib from 'pdfjs-dist';
+import mammoth from 'mammoth';
+
+// Configure PDF.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
 export const AdminUpload: React.FC = () => {
     const [activeTab, setActiveTab] = useState<'materials' | 'questions'>('materials');
@@ -11,6 +16,7 @@ export const AdminUpload: React.FC = () => {
     const [content, setContent] = useState('');
     const [isUploading, setIsUploading] = useState(false);
     const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+    const [fileName, setFileName] = useState<string | null>(null);
 
     const courses = [
         "Constitutional Law",
@@ -24,6 +30,61 @@ export const AdminUpload: React.FC = () => {
         "Law of Torts",
         "Evidence"
     ];
+
+    const extractTextFromPdf = async (file: File): Promise<string> => {
+        const arrayBuffer = await file.arrayBuffer();
+        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        let fullText = '';
+
+        for (let i = 1; i <= pdf.numPages; i++) {
+            const page = await pdf.getPage(i);
+            const textContent = await page.getTextContent();
+            const pageText = textContent.items.map((item: any) => item.str).join(' ');
+            fullText += pageText + '\n';
+        }
+        return fullText;
+    };
+
+    const extractTextFromDocx = async (file: File): Promise<string> => {
+        const arrayBuffer = await file.arrayBuffer();
+        const result = await mammoth.extractRawText({ arrayBuffer });
+        return result.value;
+    };
+
+    const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        setFileName(file.name);
+        setIsUploading(true);
+        setStatus({ type: 'success', message: 'Extracting text from file...' });
+
+        try {
+            let extractedText = '';
+            if (file.type === 'application/pdf') {
+                extractedText = await extractTextFromPdf(file);
+            } else if (file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+                extractedText = await extractTextFromDocx(file);
+            } else {
+                // Plain text
+                extractedText = await file.text();
+            }
+
+            setContent(extractedText);
+
+            // Auto-fill topic if empty
+            if (!topic && activeTab === 'materials') {
+                setTopic(file.name.replace(/\.[^/.]+$/, "")); // Remove extension
+            }
+
+            setStatus(null);
+        } catch (error) {
+            console.error("Extraction error:", error);
+            setStatus({ type: 'error', message: 'Failed to extract text from file.' });
+        } finally {
+            setIsUploading(false);
+        }
+    };
 
     const handleUpload = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -42,9 +103,10 @@ export const AdminUpload: React.FC = () => {
 
             // 2. Insert into Supabase
             if (activeTab === 'materials') {
+                const finalTopic = topic.trim() || fileName || "General";
                 const { error } = await supabase.from('course_materials').insert({
                     course,
-                    topic,
+                    topic: finalTopic,
                     content,
                     embedding
                 });
@@ -61,6 +123,8 @@ export const AdminUpload: React.FC = () => {
 
             setStatus({ type: 'success', message: 'Uploaded successfully!' });
             setContent(''); // Clear content on success
+            setFileName(null);
+            if (activeTab === 'materials') setTopic('');
         } catch (error: any) {
             console.error("Upload error:", error);
             setStatus({ type: 'error', message: error.message || 'Upload failed.' });
@@ -81,8 +145,8 @@ export const AdminUpload: React.FC = () => {
                 <button
                     onClick={() => setActiveTab('materials')}
                     className={`pb-3 px-4 font-medium transition-colors ${activeTab === 'materials'
-                            ? 'text-amber-600 border-b-2 border-amber-600'
-                            : 'text-slate-500 hover:text-slate-700'
+                        ? 'text-amber-600 border-b-2 border-amber-600'
+                        : 'text-slate-500 hover:text-slate-700'
                         }`}
                 >
                     Course Materials
@@ -90,8 +154,8 @@ export const AdminUpload: React.FC = () => {
                 <button
                     onClick={() => setActiveTab('questions')}
                     className={`pb-3 px-4 font-medium transition-colors ${activeTab === 'questions'
-                            ? 'text-amber-600 border-b-2 border-amber-600'
-                            : 'text-slate-500 hover:text-slate-700'
+                        ? 'text-amber-600 border-b-2 border-amber-600'
+                        : 'text-slate-500 hover:text-slate-700'
                         }`}
                 >
                     Past Questions
@@ -115,30 +179,43 @@ export const AdminUpload: React.FC = () => {
                     {/* Dynamic Field: Topic or Year */}
                     <div className="space-y-2">
                         <label className="text-sm font-medium text-slate-700">
-                            {activeTab === 'materials' ? 'Topic / Chapter' : 'Exam Year'}
+                            {activeTab === 'materials' ? 'Topic (Optional)' : 'Exam Year'}
                         </label>
                         <input
                             type="text"
                             value={activeTab === 'materials' ? topic : year}
                             onChange={(e) => activeTab === 'materials' ? setTopic(e.target.value) : setYear(e.target.value)}
-                            placeholder={activeTab === 'materials' ? "e.g., Separation of Powers" : "e.g., 2023"}
+                            placeholder={activeTab === 'materials' ? "e.g., Separation of Powers (or leave blank)" : "e.g., 2023"}
                             className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none"
-                            required
+                            required={activeTab === 'questions'}
                         />
+                    </div>
+                </div>
+
+                {/* File Upload Area */}
+                <div className="p-6 border-2 border-dashed border-slate-200 rounded-xl hover:border-amber-500 transition-colors bg-slate-50 text-center cursor-pointer relative">
+                    <input
+                        type="file"
+                        accept=".pdf,.docx,.txt"
+                        onChange={handleFileChange}
+                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                    />
+                    <div className="flex flex-col items-center gap-2 text-slate-500">
+                        <FileUp size={32} className="text-amber-600" />
+                        <p className="font-medium text-slate-700">Click to upload PDF, Word, or Text file</p>
+                        <p className="text-xs">Text will be automatically extracted.</p>
                     </div>
                 </div>
 
                 {/* Content Area */}
                 <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-700">
-                        {activeTab === 'materials' ? 'Text Content' : 'Question Text'}
+                        {activeTab === 'materials' ? 'Extracted Content' : 'Question Text'}
                     </label>
                     <textarea
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
-                        placeholder={activeTab === 'materials'
-                            ? "Paste the text from your textbook, handout, or notes here..."
-                            : "Paste the full exam question here..."}
+                        placeholder="Content will appear here after upload, or you can type manually..."
                         className="w-full h-64 p-4 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none font-mono text-sm"
                         required
                     />
@@ -165,7 +242,7 @@ export const AdminUpload: React.FC = () => {
                     {isUploading ? (
                         <>
                             <Loader size={20} className="animate-spin" />
-                            Processing & Vectorizing...
+                            Processing...
                         </>
                     ) : (
                         <>
