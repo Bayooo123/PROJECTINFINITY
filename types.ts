@@ -348,13 +348,29 @@ export const LEARNING_FACTS = [
   }
 ];
 
+export const COCCIN_COURSES = [
+  "Administrative Law",
+  "Company Law",
+  "Constitutional Law",
+  "Criminal Law",
+  "Equity and Trusts",
+  "Jurisprudence and Legal Theory",
+  "Land Law",
+  "Law of Commercial Transactions",
+  "Law of Contract",
+  "Law of Evidence",
+  "Law of Torts",
+  "Legal Method",
+  "Nigerian Legal System"
+];
+
 export const COCCIN_TOPICS: Record<string, string[]> = {
   "Company Law": [
     "Forms of Business Association",
     "History of Company Law",
     "Formation of Company"
   ],
-  "Evidence": [
+  "Law of Evidence": [
     "Nature, History and Sources of Evidence Law",
     "Relevancy and Admissibility",
     "Illegally Obtained Evidence and Relevancy",
@@ -412,5 +428,30 @@ export const COCCIN_TOPICS: Record<string, string[]> = {
     "Definition, principle and nature, scope, classification, functions and historical development",
     "Offer: Definition, elements, distinction between offer and invitation to treat, forms of offer, termination",
     "Acceptance: Definition, forms of invalid acceptance, Communication of Acceptance"
+  ],
+  "Administrative Law": [
+    "Introduction and Relationship with Constitutional Law",
+    "Theories, Functions, and Sources",
+    "Classification of Administrative Powers"
+  ],
+  "Criminal Law": [
+    "General Principles of Criminal Liability",
+    "Parties to an Offence",
+    "Homicide (Murder & Manslaughter)"
+  ],
+  "Law of Commercial Transactions": [
+    "Agency",
+    "Hire Purchase",
+    "Sale of Goods"
+  ],
+  "Law of Torts": [
+    "Negligence",
+    "Defamation",
+    "Trespass to Person"
+  ],
+  "Legal Method": [
+    "Law in Social Context",
+    "Sources of Nigerian Law",
+    "Methods of Social Control"
   ]
 };

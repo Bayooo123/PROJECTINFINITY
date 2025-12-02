@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { COURSE_TOPICS, QuizQuestion, UserProfile, LEARNING_FACTS, LAW_COURSES } from '../types';
+import { COURSE_TOPICS, QuizQuestion, UserProfile, LEARNING_FACTS, COCCIN_COURSES } from '../types';
 import { generateQuizQuestions, generateCoccinQuestions } from '../services/geminiService';
 import { Button } from '../components/Button';
 import { CheckCircle, XCircle, AlertCircle, Play, Award, BookOpen, ListFilter, Clock, ArrowLeft, ArrowRight, Timer, Zap, Layers, CheckSquare, FileText, Camera } from 'lucide-react';
@@ -63,8 +63,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
 
   const availableTopics = selectedCourse ? (COURSE_TOPICS[selectedCourse] || []) : [];
 
-  // Use global LAW_COURSES for COCCIN selection to ensure all 200-500L courses are available
-  const allCourses = LAW_COURSES.sort();
+  // Use specific COCCIN_COURSES for COCCIN selection
+  const allCourses = COCCIN_COURSES.sort();
 
   const userCourses = user.courses && user.courses.length > 0
     ? user.courses
