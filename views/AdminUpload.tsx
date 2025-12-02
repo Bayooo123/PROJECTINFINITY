@@ -115,30 +115,44 @@ export const AdminUpload: React.FC = () => {
 
             // 2. Insert into Supabase for EACH selected course
             const finalTopic = topic.trim() || fileName || "General";
+            const errors: string[] = [];
+            let successCount = 0;
 
-            const promises = selectedCourses.map(course => {
-                if (activeTab === 'materials') {
-                    return supabase.from('course_materials').insert({
-                        course,
-                        topic: finalTopic,
-                        content,
-                        embedding
-                    });
-                } else {
-                    return supabase.from('past_questions').insert({
-                        course,
-                        year,
-                        question_text: content,
-                        embedding
-                    });
+            for (const course of selectedCourses) {
+                try {
+                    if (activeTab === 'materials') {
+                        const { error } = await supabase.from('course_materials').insert({
+                            course,
+                            topic: finalTopic,
+                            content,
+                            embedding
+                        });
+                        if (error) throw error;
+                    } else {
+                        const { error } = await supabase.from('past_questions').insert({
+                            course,
+                            year,
+                            question_text: content,
+                            embedding
+                        });
+                        if (error) throw error;
+                    }
+                    successCount++;
+                } catch (err: any) {
+                    console.error(`Failed to upload for ${course}:`, err);
+                    errors.push(`${course}: ${err.message || 'Unknown error'}`);
                 }
-            });
-
-            const results = await Promise.all(promises);
-            const errors = results.filter(r => r.error).map(r => r.error?.message);
+            }
 
             if (errors.length > 0) {
-                throw new Error(`Failed to upload for some courses: ${errors.join(', ')}`);
+                // If some failed but some succeeded, show partial success message
+                if (successCount > 0) {
+                    setStatus({ type: 'error', message: `Uploaded to ${successCount} courses, but failed for: ${errors.join(', ')}` });
+                    // Don't clear content if there were errors so user can retry
+                    return;
+                } else {
+                    throw new Error(`Failed to upload for all courses: ${errors.join(', ')}`);
+                }
             }
 
             setStatus({ type: 'success', message: `Uploaded successfully to ${selectedCourses.length} course(s)!` });
@@ -196,8 +210,8 @@ export const AdminUpload: React.FC = () => {
                                         type="button"
                                         onClick={() => toggleCourse(c)}
                                         className={`px-3 py-1.5 text-sm rounded-full border transition-all ${isSelected
-                                                ? 'bg-amber-100 border-amber-600 text-amber-800 font-medium'
-                                                : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-slate-300'
+                                            ? 'bg-amber-100 border-amber-600 text-amber-800 font-medium'
+                                            : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-slate-300'
                                             }`}
                                     >
                                         {c}
