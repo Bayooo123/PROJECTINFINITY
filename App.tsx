@@ -59,6 +59,9 @@ const AppContent: React.FC = () => {
     setCurrentView(AppView.PRACTICE);
   };
 
+  import { AdminUpload } from './views/AdminUpload';
+
+  // ... (in AppContent)
   // Helper to render the active view
   const renderView = () => {
     switch (currentView) {
@@ -91,14 +94,25 @@ const AppContent: React.FC = () => {
               <p className="text-slate-500">{profile?.university}</p>
               <p className="text-amber-600 font-medium mt-2">{profile?.level}</p>
             </div>
+
+            {/* Admin Access Button */}
+            <button
+              onClick={() => setCurrentView('ADMIN' as AppView)}
+              className="text-slate-500 hover:text-slate-900 text-sm font-medium underline"
+            >
+              Access Knowledge Base Admin
+            </button>
+
             <button
               onClick={handleLogout}
-              className="text-red-500 hover:text-red-700 text-sm font-medium border border-red-200 px-4 py-2 rounded-lg hover:bg-red-50"
+              className="text-red-500 hover:text-red-700 text-sm font-medium border border-red-200 px-4 py-2 rounded-lg hover:bg-red-50 block mx-auto"
             >
               Sign Out
             </button>
           </div>
         );
+      case 'ADMIN' as AppView:
+        return <AdminUpload />;
       default:
         return <div>View not found</div>;
     }

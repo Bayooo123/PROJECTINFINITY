@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { sendChatMessage } from '../services/geminiService';
+import { chatWithGemini } from '../services/geminiService';
 import { ChatMessage, UserProfile } from '../types';
 import { Send, User, Bot, Info, Book, ChevronRight, ArrowLeft } from 'lucide-react';
 
@@ -10,10 +10,10 @@ interface StudyProps {
 
 export const Study: React.FC<StudyProps> = ({ user }) => {
   const [selectedCourse, setSelectedCourse] = useState<string | null>(null);
-  
+
   // Helper to get user courses or fallback
-  const userCourses = user.courses && user.courses.length > 0 
-    ? user.courses 
+  const userCourses = user.courses && user.courses.length > 0
+    ? user.courses
     : ["Company Law", "Constitutional Law", "Criminal Law", "Legal Method"];
 
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -25,9 +25,9 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
   useEffect(() => {
     if (selectedCourse) {
       setMessages([
-        { 
-          role: 'model', 
-          text: `Welcome to the **${selectedCourse}** Study Room.\n\nI am ready to assist you with not just answers, but **exam predictions** and **study strategies**. Ask me about any topic, case, or section.` 
+        {
+          role: 'model',
+          text: `Welcome to the **${selectedCourse}** Study Room.\n\nI am ready to assist you with not just answers, but **exam predictions** and **study strategies**. Ask me about any topic, case, or section.`
         }
       ]);
     }
@@ -51,19 +51,21 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
     setIsLoading(true);
 
     try {
-      // Create a temporary history without error messages for the AI
-      const contextHistory = messages.filter(m => !m.isError);
-      contextHistory.push(userMsg);
+      const responseText = await chatWithGemini(input, messages, selectedCourse);
 
-      const responseText = await sendChatMessage(contextHistory, userMsg.text, selectedCourse);
-      
-      setMessages(prev => [...prev, { role: 'model', text: responseText }]);
+      const botMsg: ChatMessage = {
+        role: 'model',
+        text: responseText
+      };
+
+      setMessages(prev => [...prev, botMsg]);
     } catch (error) {
-      setMessages(prev => [...prev, { 
-        role: 'model', 
-        text: "I apologize, but I'm having trouble connecting to the legal database right now. Please check your connection or try again later.",
+      const errorMsg: ChatMessage = {
+        role: 'model',
+        text: "I'm having trouble connecting right now. Please try again.",
         isError: true
-      }]);
+      };
+      setMessages(prev => [...prev, errorMsg]);
     } finally {
       setIsLoading(false);
     }
@@ -108,7 +110,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
       {/* Header */}
       <div className="bg-white border-b border-slate-100 p-4 flex items-center justify-between sticky top-0 z-10 shadow-sm">
         <div className="flex items-center gap-3">
-          <button 
+          <button
             onClick={() => setSelectedCourse(null)}
             className="p-2 hover:bg-slate-100 rounded-full text-slate-500 transition-colors"
             title="Switch Course"
@@ -130,23 +132,22 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
         {messages.map((msg, idx) => (
           <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
             <div className={`flex gap-3 max-w-[85%] md:max-w-[75%] ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
-              
+
               {/* Avatar */}
               <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${msg.role === 'user' ? 'bg-slate-900 text-white' : 'bg-amber-600 text-white'}`}>
                 {msg.role === 'user' ? <User size={16} /> : <Bot size={16} />}
               </div>
 
               {/* Bubble */}
-              <div className={`p-4 rounded-2xl text-sm md:text-base leading-relaxed ${
-                msg.role === 'user' 
-                  ? 'bg-slate-900 text-white rounded-tr-none' 
-                  : msg.isError 
-                    ? 'bg-red-50 text-red-800 border border-red-100 rounded-tl-none' 
-                    : 'bg-white text-slate-800 shadow-sm border border-slate-100 rounded-tl-none'
-              }`}>
+              <div className={`p-4 rounded-2xl text-sm md:text-base leading-relaxed ${msg.role === 'user'
+                ? 'bg-slate-900 text-white rounded-tr-none'
+                : msg.isError
+                  ? 'bg-red-50 text-red-800 border border-red-100 rounded-tl-none'
+                  : 'bg-white text-slate-800 shadow-sm border border-slate-100 rounded-tl-none'
+                }`}>
                 {/* Simple markdown-like formatting */}
                 <div className="whitespace-pre-wrap font-light">
-                  {msg.text.split('**').map((part, i) => 
+                  {msg.text.split('**').map((part, i) =>
                     i % 2 === 1 ? <strong key={i} className="font-semibold">{part}</strong> : part
                   )}
                 </div>
@@ -156,7 +157,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
         ))}
         {isLoading && (
           <div className="flex justify-start">
-             <div className="flex gap-3 max-w-[75%]">
+            <div className="flex gap-3 max-w-[75%]">
               <div className="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center flex-shrink-0">
                 <Bot size={16} />
               </div>
@@ -167,7 +168,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
                   <div className="w-2 h-2 bg-slate-300 rounded-full animate-bounce delay-150"></div>
                 </div>
               </div>
-             </div>
+            </div>
           </div>
         )}
         <div ref={messagesEndRef} />
@@ -184,7 +185,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
             className="w-full pl-4 pr-12 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none text-slate-900 transition-all"
             disabled={isLoading}
           />
-          <button 
+          <button
             type="submit"
             disabled={!input.trim() || isLoading}
             className="absolute right-2 p-2 text-amber-600 hover:text-amber-700 disabled:text-slate-300 disabled:cursor-not-allowed transition-colors"

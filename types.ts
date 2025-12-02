@@ -12,7 +12,8 @@ export enum AppView {
   PRACTICE = 'PRACTICE',
   STUDY = 'STUDY',
   BLOG = 'BLOG',
-  PROFILE = 'PROFILE'
+  PROFILE = 'PROFILE',
+  ADMIN = 'ADMIN'
 }
 
 export interface QuizQuestion {
@@ -216,12 +217,12 @@ export const COURSE_TOPICS: Record<string, string[]> = {
     "Internal Conflict of Laws",
   ],
   "Law of Partnership": [
-     "Nature of Partnership",
-     "Creation of Partnership",
-     "Relationship between Partners",
-     "Relationship between Partners and Third Parties",
-     "Dissolution of Partnership",
-     "Limited Liability Partnership (LLP)"
+    "Nature of Partnership",
+    "Creation of Partnership",
+    "Relationship between Partners",
+    "Relationship between Partners and Third Parties",
+    "Dissolution of Partnership",
+    "Limited Liability Partnership (LLP)"
   ],
   "Administrative Law": [
     "Introduction and Relationship with Constitutional Law",
