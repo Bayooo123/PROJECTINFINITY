@@ -190,7 +190,8 @@ export const generateQuizQuestions = async (
 
 export const generateCoccinQuestions = async (
   courses: string[],
-  type: 'theory' | 'objective'
+  type: 'theory' | 'objective',
+  count: number = 10
 ): Promise<any> => {
   if (!API_KEY) return null;
 
@@ -200,11 +201,15 @@ export const generateCoccinQuestions = async (
     let topicsList: string[] = [];
 
     for (const course of courses) {
-      const courseTopics = COCCIN_TOPICS[course] || [];
+      // Fallback to using the course name itself if no specific topics are defined
+      const courseTopics = COCCIN_TOPICS[course] || [course];
       topicsList = [...topicsList, ...courseTopics];
 
       // Search for context for each topic (limit to top 1 to save tokens/time)
-      for (const topic of courseTopics) {
+      // We randomly select a few topics to search if the list is too long to avoid rate limits
+      const searchTopics = courseTopics.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+      for (const topic of searchTopics) {
         const embedding = await generateEmbedding(topic);
         if (embedding) {
           const materials = await searchCourseMaterials(embedding, course);
@@ -219,7 +224,7 @@ export const generateCoccinQuestions = async (
     const prompt = `
       You are an expert law examiner for Nigerian law students.
       
-      TASK: Generate ${type === 'objective' ? '10 multiple-choice questions' : '4 theory questions'} for a mock exam.
+      TASK: Generate ${count} ${type === 'objective' ? 'multiple-choice questions' : 'theory questions'} for a mock exam.
       
       COURSES: ${courses.join(' and ')}
       FOCUS TOPICS: ${topicsList.join(', ')}
@@ -237,6 +242,7 @@ export const generateCoccinQuestions = async (
 
     const result = await chatModel.generateContent(prompt);
     const text = result.response.text();
+    // Robust JSON cleaning
     const jsonString = text.replace(/```json/g, '').replace(/```/g, '').trim();
 
     return JSON.parse(jsonString);

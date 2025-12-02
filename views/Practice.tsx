@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { COURSE_TOPICS, QuizQuestion, UserProfile, LEARNING_FACTS } from '../types';
+import { COURSE_TOPICS, QuizQuestion, UserProfile, LEARNING_FACTS, LAW_COURSES } from '../types';
 import { generateQuizQuestions, generateCoccinQuestions } from '../services/geminiService';
 import { Button } from '../components/Button';
-import { CheckCircle, XCircle, AlertCircle, Play, Award, BookOpen, ListFilter, Clock, ArrowLeft, ArrowRight, Timer, Zap, Layers, CheckSquare, FileText } from 'lucide-react';
+import { CheckCircle, XCircle, AlertCircle, Play, Award, BookOpen, ListFilter, Clock, ArrowLeft, ArrowRight, Timer, Zap, Layers, CheckSquare, FileText, Camera } from 'lucide-react';
 
 interface PracticeProps {
   user: UserProfile;
@@ -11,7 +11,7 @@ interface PracticeProps {
 type Phase = 'SELECTION' | 'LOADING' | 'QUIZ' | 'RESULT';
 type QuizMode = 'STANDARD' | 'SPEED' | 'MARATHON';
 type PracticeType = 'STANDARD' | 'COCCIN';
-type CoccinType = 'theory' | 'objective';
+type CoccinStage = 'MCQ' | 'THEORY';
 
 const QUIZ_MODES: Record<QuizMode, { label: string, count: number, timeMinutes: number, description: string, icon: React.ReactNode }> = {
   STANDARD: {
@@ -48,7 +48,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
 
   // COCCIN Mode State
   const [coccinCourses, setCoccinCourses] = useState<string[]>([]);
-  const [coccinType, setCoccinType] = useState<CoccinType>('objective');
+  const [coccinStage, setCoccinStage] = useState<CoccinStage>('MCQ');
 
   // Quiz State
   const [questions, setQuestions] = useState<any[]>([]);
@@ -62,6 +62,9 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
   const [randomTip, setRandomTip] = useState<{ title: string, content: string } | null>(null);
 
   const availableTopics = selectedCourse ? (COURSE_TOPICS[selectedCourse] || []) : [];
+
+  // Use global LAW_COURSES for COCCIN selection to ensure all 200-500L courses are available
+  const allCourses = LAW_COURSES.sort();
 
   const userCourses = user.courses && user.courses.length > 0
     ? user.courses
@@ -123,31 +126,55 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           modeConfig.count
         );
         setTimeLeft(modeConfig.timeMinutes * 60);
+
+        if (generatedQuestions && generatedQuestions.length > 0) {
+          setQuestions(generatedQuestions);
+          setCurrentQuestionIndex(0);
+          setUserAnswers({});
+          setScore(0);
+          setPhase('QUIZ');
+        } else {
+          throw new Error("Failed to generate questions.");
+        }
+
       } else {
-        // COCCIN Mode
+        // COCCIN Mode - Start with MCQ Stage
         if (coccinCourses.length !== 2) {
           setError("Please select exactly 2 courses.");
           setPhase('SELECTION');
           return;
         }
-        generatedQuestions = await generateCoccinQuestions(coccinCourses, coccinType);
-        // Set time based on type
-        setTimeLeft(coccinType === 'objective' ? 15 * 60 : 30 * 60); // 15 mins for 10 obj, 30 mins for 4 theory
+
+        setCoccinStage('MCQ');
+        // Generate 20 MCQs (10 mins)
+        generatedQuestions = await generateCoccinQuestions(coccinCourses, 'objective', 20);
+        setTimeLeft(10 * 60); // 10 minutes
+
+        if (generatedQuestions && generatedQuestions.length > 0) {
+          setQuestions(generatedQuestions);
+          setCurrentQuestionIndex(0);
+          setUserAnswers({});
+          setScore(0);
+          setPhase('QUIZ');
+        } else {
+          // Retry once if failed
+          console.log("Retrying generation...");
+          generatedQuestions = await generateCoccinQuestions(coccinCourses, 'objective', 20);
+          if (generatedQuestions && generatedQuestions.length > 0) {
+            setQuestions(generatedQuestions);
+            setCurrentQuestionIndex(0);
+            setUserAnswers({});
+            setScore(0);
+            setPhase('QUIZ');
+          } else {
+            throw new Error("Failed to generate questions. Please try again.");
+          }
+        }
       }
 
-      if (generatedQuestions && generatedQuestions.length > 0) {
-        setQuestions(generatedQuestions);
-        setCurrentQuestionIndex(0);
-        setUserAnswers({});
-        setShowTheoryAnswer(false);
-        setScore(0);
-        setPhase('QUIZ');
-      } else {
-        setError("Failed to generate questions. Please try again.");
-        setPhase('SELECTION');
-      }
     } catch (err) {
-      setError("Connection error. Please check your internet and try again.");
+      console.error(err);
+      setError("Failed to generate questions. Please try again.");
       setPhase('SELECTION');
     }
   };
@@ -173,22 +200,59 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
     }
   };
 
+  const startCoccinTheoryStage = async () => {
+    setPhase('LOADING');
+    setError(null);
+    setCoccinStage('THEORY');
+
+    try {
+      // Generate 2 Theory Questions (1 hr 30 mins)
+      const theoryQuestions = await generateCoccinQuestions(coccinCourses, 'theory', 2);
+
+      if (theoryQuestions && theoryQuestions.length > 0) {
+        setQuestions(theoryQuestions);
+        setCurrentQuestionIndex(0);
+        setShowTheoryAnswer(false);
+        setTimeLeft(90 * 60); // 1 hr 30 mins
+        setPhase('QUIZ');
+      } else {
+        throw new Error("Failed to generate theory questions.");
+      }
+    } catch (err) {
+      setError("Failed to load theory stage. Please try again.");
+      setPhase('SELECTION'); // Or handle gracefully
+    }
+  };
+
   const handleSubmitQuiz = () => {
-    if (practiceType === 'STANDARD' || coccinType === 'objective') {
+    if (practiceType === 'STANDARD') {
       let newScore = 0;
       questions.forEach((q, idx) => {
-        // Handle varying data structures
         const correctIdx = q.correctAnswer !== undefined ? q.correctAnswer : q.correctAnswerIndex;
-        if (userAnswers[idx] === correctIdx) {
-          newScore += 1;
-        }
+        if (userAnswers[idx] === correctIdx) newScore += 1;
       });
       setScore(newScore);
-    }
+      const tip = LEARNING_FACTS[Math.floor(Math.random() * LEARNING_FACTS.length)];
+      setRandomTip(tip);
+      setPhase('RESULT');
+    } else {
+      // COCCIN FLOW
+      if (coccinStage === 'MCQ') {
+        // Calculate MCQ Score but don't show result yet, move to Theory
+        let newScore = 0;
+        questions.forEach((q, idx) => {
+          const correctIdx = q.correctAnswer !== undefined ? q.correctAnswer : q.correctAnswerIndex;
+          if (userAnswers[idx] === correctIdx) newScore += 1;
+        });
+        setScore(newScore); // Store MCQ score
 
-    const tip = LEARNING_FACTS[Math.floor(Math.random() * LEARNING_FACTS.length)];
-    setRandomTip(tip);
-    setPhase('RESULT');
+        // Move to Theory Stage
+        startCoccinTheoryStage();
+      } else {
+        // Theory Finished
+        setPhase('RESULT');
+      }
+    }
   };
 
   const resetQuiz = () => {
@@ -203,7 +267,6 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
 
   const handleCourseSelect = (course: string) => {
     setSelectedCourse(course);
-    // Reset topic if we switch courses, unless we are in a mode that forces All Topics
     if (quizMode === 'STANDARD') {
       setTopic('');
     }
@@ -322,10 +385,21 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           ) : (
             <>
               {/* COCCIN MODE UI */}
+              <div className="bg-amber-50 border border-amber-200 p-4 rounded-lg mb-4">
+                <h4 className="font-bold text-amber-900 mb-2 flex items-center gap-2">
+                  <Award size={18} /> COCCIN Simulation Protocol
+                </h4>
+                <ul className="text-sm text-amber-800 space-y-1 list-disc list-inside">
+                  <li><strong>Stage 1:</strong> 20 Multiple Choice Questions (10 Minutes)</li>
+                  <li><strong>Stage 2:</strong> 2 Theory Questions (1 Hour 30 Minutes)</li>
+                  <li><strong>Note:</strong> You must complete Stage 1 to proceed to Stage 2.</li>
+                </ul>
+              </div>
+
               <div className="space-y-3">
-                <label className="block text-sm font-medium text-slate-900">1. Select 2 Courses</label>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  {userCourses.map((course) => {
+                <label className="block text-sm font-medium text-slate-900">Select 2 Courses (Compulsory Courses 200-500L)</label>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-h-60 overflow-y-auto p-2 border border-slate-200 rounded-lg">
+                  {allCourses.map((course) => {
                     const isSelected = coccinCourses.includes(course);
                     return (
                       <button
@@ -337,7 +411,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                           }`}
                       >
                         <div className="flex justify-between items-center">
-                          <div className="font-medium truncate">{course}</div>
+                          <div className="font-medium truncate text-sm">{course}</div>
                           {isSelected && <CheckCircle size={16} className="text-amber-600" />}
                         </div>
                       </button>
@@ -345,34 +419,6 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                   })}
                 </div>
                 <p className="text-xs text-slate-500 text-right">{coccinCourses.length}/2 Selected</p>
-              </div>
-
-              <div className="space-y-3">
-                <label className="block text-sm font-medium text-slate-900">2. Question Type</label>
-                <div className="grid grid-cols-2 gap-4">
-                  <button
-                    onClick={() => setCoccinType('objective')}
-                    className={`p-4 rounded-xl border text-left transition-all ${coccinType === 'objective'
-                        ? 'border-amber-600 bg-amber-50 ring-1 ring-amber-600'
-                        : 'border-slate-200 hover:border-slate-300'
-                      }`}
-                  >
-                    <CheckSquare className={`mb-2 ${coccinType === 'objective' ? 'text-amber-600' : 'text-slate-500'}`} />
-                    <div className="font-bold text-slate-900">Objective</div>
-                    <p className="text-xs text-slate-500 mt-1">10 Multiple Choice Questions</p>
-                  </button>
-                  <button
-                    onClick={() => setCoccinType('theory')}
-                    className={`p-4 rounded-xl border text-left transition-all ${coccinType === 'theory'
-                        ? 'border-amber-600 bg-amber-50 ring-1 ring-amber-600'
-                        : 'border-slate-200 hover:border-slate-300'
-                      }`}
-                  >
-                    <FileText className={`mb-2 ${coccinType === 'theory' ? 'text-amber-600' : 'text-slate-500'}`} />
-                    <div className="font-bold text-slate-900">Theory</div>
-                    <p className="text-xs text-slate-500 mt-1">4 Theory Questions with Key Points</p>
-                  </button>
-                </div>
               </div>
             </>
           )}
@@ -397,7 +443,6 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
   // VIEW: Loading
   // ------------------------------------------------
   if (phase === 'LOADING') {
-    const modeConfig = QUIZ_MODES[quizMode];
     return (
       <div className="flex flex-col items-center justify-center h-[60vh] space-y-6">
         <div className="relative w-20 h-20">
@@ -409,7 +454,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           <p className="text-slate-500 max-w-md mx-auto">
             {practiceType === 'STANDARD'
               ? `Curating questions on ${topic === 'All Topics' ? 'All Topics' : topic}...`
-              : `Generating ${coccinType} questions for ${coccinCourses.join(' & ')}...`
+              : `Generating ${coccinStage} questions for ${coccinCourses.join(' & ')}...`
             }
           </p>
         </div>
@@ -434,7 +479,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
               Q {currentQuestionIndex + 1} / {questions.length}
             </span>
             <div className="hidden md:block text-sm text-slate-400">
-              {practiceType === 'STANDARD' ? modeConfig.label : 'COCCIN Simulator'}
+              {practiceType === 'STANDARD' ? modeConfig.label : `COCCIN Simulator (${coccinStage})`}
             </div>
           </div>
 
@@ -458,7 +503,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           </h3>
 
           {/* OBJECTIVE MODE */}
-          {(practiceType === 'STANDARD' || coccinType === 'objective') && (
+          {(practiceType === 'STANDARD' || (practiceType === 'COCCIN' && coccinStage === 'MCQ')) && (
             <div className="space-y-3">
               {question.options.map((option: string, idx: number) => {
                 const isSelected = selectedOption === idx;
@@ -482,7 +527,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           )}
 
           {/* THEORY MODE */}
-          {practiceType === 'COCCIN' && coccinType === 'theory' && (
+          {practiceType === 'COCCIN' && coccinStage === 'THEORY' && (
             <div className="space-y-6">
               <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
                 <h4 className="font-bold text-slate-900 mb-4">Marking Scheme / Key Points</h4>
@@ -529,7 +574,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
               variant="secondary"
               className="flex items-center gap-2"
             >
-              Submit Exam <CheckCircle size={16} />
+              {practiceType === 'COCCIN' && coccinStage === 'MCQ' ? 'Proceed to Theory' : 'Submit Exam'} <CheckCircle size={16} />
             </Button>
           )}
         </div>
@@ -541,13 +586,25 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
   // VIEW: Result
   // ------------------------------------------------
   if (phase === 'RESULT') {
-    const percentage = Math.round((score / questions.length) * 100);
+    const percentage = Math.round((score / 20) * 100); // Score is based on 20 MCQs
     let message = "Keep practicing to improve your mastery.";
     if (percentage >= 80) message = "Excellent mastery of the concepts!";
     else if (percentage >= 60) message = "Good job! Review the missed areas.";
 
     return (
       <div className="max-w-4xl mx-auto p-6 space-y-8">
+
+        {/* COCCIN NOTICE */}
+        {practiceType === 'COCCIN' && (
+          <div className="bg-amber-900 text-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center space-y-4 animate-pulse">
+            <Camera size={48} className="text-amber-400" />
+            <h2 className="text-2xl font-serif font-bold">Important Notice</h2>
+            <p className="text-lg max-w-lg">
+              Cohorts are to snap their question booklet and send to their mentor upon conclusion.
+            </p>
+          </div>
+        )}
+
         {/* Score Card */}
         <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm text-center space-y-4 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 to-slate-900"></div>
@@ -556,17 +613,14 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           </div>
 
           {/* Only show score for Objective/Standard */}
-          {(practiceType === 'STANDARD' || coccinType === 'objective') ? (
+          {(practiceType === 'STANDARD' || practiceType === 'COCCIN') ? (
             <div>
-              <h2 className="text-5xl font-serif font-bold text-slate-900">{percentage}%</h2>
-              <p className="text-lg text-slate-600 mt-1">You scored {score} out of {questions.length}</p>
+              <h2 className="text-5xl font-serif font-bold text-slate-900">{practiceType === 'COCCIN' ? `${score}/20` : `${percentage}%`}</h2>
+              <p className="text-lg text-slate-600 mt-1">
+                {practiceType === 'COCCIN' ? 'MCQ Score' : `You scored ${score} out of ${questions.length}`}
+              </p>
             </div>
-          ) : (
-            <div>
-              <h2 className="text-3xl font-serif font-bold text-slate-900">Session Complete</h2>
-              <p className="text-lg text-slate-600 mt-1">Review the key points for self-assessment.</p>
-            </div>
-          )}
+          ) : null}
 
           <p className="text-slate-500 max-w-sm mx-auto">{message}</p>
 
@@ -578,68 +632,52 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
         </div>
 
         {/* Detailed Review */}
-        <div className="space-y-6">
-          <div className="flex items-center justify-between">
-            <h3 className="text-2xl font-serif font-bold text-slate-900">Review Answers</h3>
-          </div>
+        {practiceType === 'STANDARD' && (
+          <div className="space-y-6">
+            <div className="flex items-center justify-between">
+              <h3 className="text-2xl font-serif font-bold text-slate-900">Review Answers</h3>
+            </div>
 
-          <div className="grid gap-6">
-            {questions.map((q, idx) => {
-              const userAnswer = userAnswers[idx];
-              // Handle both data structures (standard vs coccin)
-              const correctIdx = q.correctAnswer !== undefined ? q.correctAnswer : q.correctAnswerIndex;
-              const isCorrect = userAnswer === correctIdx;
-              const isSkipped = userAnswer === undefined;
+            <div className="grid gap-6">
+              {questions.map((q, idx) => {
+                const userAnswer = userAnswers[idx];
+                const correctIdx = q.correctAnswer !== undefined ? q.correctAnswer : q.correctAnswerIndex;
+                const isCorrect = userAnswer === correctIdx;
+                const isSkipped = userAnswer === undefined;
 
-              if (practiceType === 'COCCIN' && coccinType === 'theory') {
                 return (
-                  <div key={idx} className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                  <div key={idx} className={`bg-white p-6 rounded-xl border-l-4 shadow-sm ${isCorrect ? 'border-l-green-500' : 'border-l-red-500'}`}>
                     <div className="flex items-start gap-3 mb-4">
                       <span className="font-bold text-slate-400 text-sm mt-1">Q{idx + 1}</span>
-                      <h4 className="font-medium text-slate-900 text-lg">{q.text}</h4>
+                      <h4 className="font-medium text-slate-900 text-lg">{q.question || q.text}</h4>
                     </div>
-                    <div className="bg-slate-50 p-4 rounded-lg">
-                      <h5 className="font-bold text-sm text-slate-900 mb-2">Key Points:</h5>
-                      <ul className="list-disc list-inside text-sm text-slate-700 space-y-1">
-                        {q.keyPoints?.map((p: string, i: number) => <li key={i}>{p}</li>)}
-                      </ul>
+
+                    <div className="space-y-2 mb-4">
+                      <div className={`flex items-center gap-2 text-sm ${isCorrect ? 'text-green-700 font-medium' : 'text-red-600'}`}>
+                        {isCorrect ? <CheckCircle size={16} /> : <XCircle size={16} />}
+                        <span>Your Answer: {isSkipped ? 'Skipped' : q.options[userAnswer]}</span>
+                      </div>
+                      {!isCorrect && (
+                        <div className="flex items-center gap-2 text-sm text-green-700 font-medium">
+                          <CheckCircle size={16} />
+                          <span>Correct Answer: {q.options[correctIdx]}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700 leading-relaxed flex gap-3">
+                      <BookOpen size={18} className="flex-shrink-0 text-slate-400 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-slate-900">Explanation: </span>
+                        {q.explanation}
+                      </div>
                     </div>
                   </div>
                 );
-              }
-
-              return (
-                <div key={idx} className={`bg-white p-6 rounded-xl border-l-4 shadow-sm ${isCorrect ? 'border-l-green-500' : 'border-l-red-500'}`}>
-                  <div className="flex items-start gap-3 mb-4">
-                    <span className="font-bold text-slate-400 text-sm mt-1">Q{idx + 1}</span>
-                    <h4 className="font-medium text-slate-900 text-lg">{q.question || q.text}</h4>
-                  </div>
-
-                  <div className="space-y-2 mb-4">
-                    <div className={`flex items-center gap-2 text-sm ${isCorrect ? 'text-green-700 font-medium' : 'text-red-600'}`}>
-                      {isCorrect ? <CheckCircle size={16} /> : <XCircle size={16} />}
-                      <span>Your Answer: {isSkipped ? 'Skipped' : q.options[userAnswer]}</span>
-                    </div>
-                    {!isCorrect && (
-                      <div className="flex items-center gap-2 text-sm text-green-700 font-medium">
-                        <CheckCircle size={16} />
-                        <span>Correct Answer: {q.options[correctIdx]}</span>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700 leading-relaxed flex gap-3">
-                    <BookOpen size={18} className="flex-shrink-0 text-slate-400 mt-0.5" />
-                    <div>
-                      <span className="font-semibold text-slate-900">Explanation: </span>
-                      {q.explanation}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+              })}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     );
   }
