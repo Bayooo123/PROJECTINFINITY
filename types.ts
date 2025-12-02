@@ -347,3 +347,70 @@ export const LEARNING_FACTS = [
     content: "Explaining a concept in simple terms (as if to a child) reveals gaps in your understanding."
   }
 ];
+
+export const COCCIN_TOPICS: Record<string, string[]> = {
+  "Company Law": [
+    "Forms of Business Association",
+    "History of Company Law",
+    "Formation of Company"
+  ],
+  "Evidence": [
+    "Nature, History and Sources of Evidence Law",
+    "Relevancy and Admissibility",
+    "Illegally Obtained Evidence and Relevancy",
+    "Res Gestae"
+  ],
+  "Jurisprudence and Legal Theory": [
+    "Nature of Jurisprudence",
+    "Law and Morality",
+    "Law and Justice"
+  ],
+  "Land Law": [
+    "concept of property",
+    "features of a land",
+    "History of the Nigerian land tenure system",
+    "land rights",
+    "customary land tenure system"
+  ],
+  "Law of Banking": [
+    "History of the banking system",
+    "Types of banks"
+  ],
+  "Equity and Trusts": [
+    "Evolution of equity",
+    "Maxims of equity"
+  ],
+  "Law of Insurance": [
+    "History of insurance",
+    "Nature and definition of insurance",
+    "Classification, Registration and Modes of Operation of insurance",
+    "Formation of a contract of insurance"
+  ],
+  "Petroleum and Energy Law": [
+    "History of oil and gas",
+    "The legal definition of the habitat of oil and gas",
+    "Ownership of mineral resources"
+  ],
+  "Taxation Law": [
+    "General nature of taxation",
+    "Sources of tax law",
+    "Fiscal policy",
+    "Personal income tax"
+  ],
+  "Constitutional Law": [
+    "Definition and sources of Constitutional Law",
+    "Classification of Constitution",
+    "The making of Constitution",
+    "Nigerian Constitutional history, sources of constitution"
+  ],
+  "Nigerian Legal System": [
+    "Meaning and Definition of a Legal System",
+    "Characteristics of the Nigerian Legal System",
+    "Historical Development of the Nigerian Legal System"
+  ],
+  "Law of Contract": [
+    "Definition, principle and nature, scope, classification, functions and historical development",
+    "Offer: Definition, elements, distinction between offer and invitation to treat, forms of offer, termination",
+    "Acceptance: Definition, forms of invalid acceptance, Communication of Acceptance"
+  ]
+};

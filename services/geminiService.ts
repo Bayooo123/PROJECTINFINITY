@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { supabase } from '../lib/supabase';
+import { COCCIN_TOPICS } from '../types';
 
 // Access the API key from Vite environment variables
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
@@ -183,6 +184,65 @@ export const generateQuizQuestions = async (
     return JSON.parse(jsonString);
   } catch (error) {
     console.error("Error generating quiz:", error);
+    return [];
+  }
+};
+
+export const generateCoccinQuestions = async (
+  courses: string[],
+  type: 'theory' | 'objective'
+): Promise<any> => {
+  if (!API_KEY) return null;
+
+  try {
+    // 1. Gather Topics and Context
+    let allContext = "";
+    let topicsList: string[] = [];
+
+    for (const course of courses) {
+      const courseTopics = COCCIN_TOPICS[course] || [];
+      topicsList = [...topicsList, ...courseTopics];
+
+      // Search for context for each topic (limit to top 1 to save tokens/time)
+      for (const topic of courseTopics) {
+        const embedding = await generateEmbedding(topic);
+        if (embedding) {
+          const materials = await searchCourseMaterials(embedding, course);
+          if (materials && materials.length > 0) {
+            allContext += `\n[Course: ${course} | Topic: ${topic}]\n${materials[0].content.substring(0, 500)}...\n`;
+          }
+        }
+      }
+    }
+
+    // 2. Construct Prompt
+    const prompt = `
+      You are an expert law examiner for Nigerian law students.
+      
+      TASK: Generate ${type === 'objective' ? '10 multiple-choice questions' : '4 theory questions'} for a mock exam.
+      
+      COURSES: ${courses.join(' and ')}
+      FOCUS TOPICS: ${topicsList.join(', ')}
+      
+      CONTEXT FROM MATERIALS:
+      ${allContext}
+      
+      INSTRUCTIONS:
+      1. Questions must be strictly based on the provided FOCUS TOPICS.
+      2. For 'objective' questions, return a JSON array with fields: id, text, options (array), correctAnswer (index), explanation.
+      3. For 'theory' questions, return a JSON array with fields: id, text, keyPoints (array of bullet points for the marking scheme).
+      4. Ensure questions are challenging and suitable for final year law students.
+      5. Return ONLY the raw JSON array.
+    `;
+
+    const result = await chatModel.generateContent(prompt);
+    const text = result.response.text();
+    const jsonString = text.replace(/```json/g, '').replace(/```/g, '').trim();
+
+    return JSON.parse(jsonString);
+
+  } catch (error) {
+    console.error("Error generating COCCIN questions:", error);
     return [];
   }
 };
