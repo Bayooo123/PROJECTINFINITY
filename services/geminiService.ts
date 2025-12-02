@@ -195,60 +195,82 @@ export const generateCoccinQuestions = async (
 ): Promise<any> => {
   if (!API_KEY) return null;
 
+  let allContext = "";
+  let topicsList: string[] = [];
+
+  // 1. Robust Context Retrieval (with Timeout)
   try {
-    // 1. Gather Topics and Context
-    let allContext = "";
-    let topicsList: string[] = [];
+    const contextPromise = (async () => {
+      let ctx = "";
+      for (const course of courses) {
+        const courseTopics = COCCIN_TOPICS[course] || [course];
+        topicsList = [...topicsList, ...courseTopics];
 
-    for (const course of courses) {
-      // Fallback to using the course name itself if no specific topics are defined
-      const courseTopics = COCCIN_TOPICS[course] || [course];
-      topicsList = [...topicsList, ...courseTopics];
+        // Limit to 2 topics per course to be faster
+        const searchTopics = courseTopics.sort(() => 0.5 - Math.random()).slice(0, 2);
 
-      // Search for context for each topic (limit to top 1 to save tokens/time)
-      // We randomly select a few topics to search if the list is too long to avoid rate limits
-      const searchTopics = courseTopics.sort(() => 0.5 - Math.random()).slice(0, 3);
-
-      for (const topic of searchTopics) {
-        const embedding = await generateEmbedding(topic);
-        if (embedding) {
-          const materials = await searchCourseMaterials(embedding, course);
-          if (materials && materials.length > 0) {
-            allContext += `\n[Course: ${course} | Topic: ${topic}]\n${materials[0].content.substring(0, 500)}...\n`;
+        for (const topic of searchTopics) {
+          try {
+            const embedding = await generateEmbedding(topic);
+            if (embedding) {
+              const materials = await searchCourseMaterials(embedding, course);
+              if (materials && materials.length > 0) {
+                ctx += `\n[Course: ${course} | Topic: ${topic}]\n${materials[0].content.substring(0, 300)}...\n`;
+              }
+            }
+          } catch (e) {
+            console.warn(`Skipping topic ${topic} due to error`, e);
           }
         }
       }
-    }
+      return ctx;
+    })();
 
-    // 2. Construct Prompt
-    const prompt = `
-      You are an expert law examiner for Nigerian law students.
-      
-      TASK: Generate ${count} ${type === 'objective' ? 'multiple-choice questions' : 'theory questions'} for a mock exam.
-      
-      COURSES: ${courses.join(' and ')}
-      FOCUS TOPICS: ${topicsList.join(', ')}
-      
-      CONTEXT FROM MATERIALS:
-      ${allContext}
-      
-      INSTRUCTIONS:
-      1. Questions must be strictly based on the provided FOCUS TOPICS.
-      2. For 'objective' questions, return a JSON array with fields: id, text, options (array), correctAnswer (index), explanation.
-      3. For 'theory' questions, return a JSON array with fields: id, text, keyPoints (array of bullet points for the marking scheme).
-      4. Ensure questions are challenging and suitable for final year law students.
-      5. Return ONLY the raw JSON array.
-    `;
+    // Race against a 4-second timeout
+    const timeoutPromise = new Promise<string>((resolve) => setTimeout(() => resolve(""), 4000));
+
+    allContext = await Promise.race([contextPromise, timeoutPromise]);
+    if (!allContext) console.log("Context retrieval timed out or empty, proceeding with general knowledge.");
+
+  } catch (err) {
+    console.error("Context retrieval failed:", err);
+    // Fallback: Ensure topicsList is populated even if context fails
+    courses.forEach(c => {
+      topicsList = [...topicsList, ...(COCCIN_TOPICS[c] || [c])];
+    });
+  }
+
+  // 2. Generation with Retry Strategy
+  const generate = async (isRetry = false) => {
+    const prompt = isRetry
+      ? `Generate ${count} ${type} questions for Nigerian law students on: ${courses.join(', ')}. Return ONLY valid JSON array. Structure: ${type === 'objective' ? '[{id, text, options[], correctAnswer, explanation}]' : '[{id, text, keyPoints[]}]'}`
+      : `
+          You are an expert law examiner for Nigerian law students.
+          TASK: Generate ${count} ${type === 'objective' ? 'multiple-choice questions' : 'theory questions'} for a mock exam.
+          COURSES: ${courses.join(' and ')}
+          FOCUS TOPICS: ${topicsList.slice(0, 10).join(', ')}...
+          CONTEXT: ${allContext.substring(0, 2000)}
+          INSTRUCTIONS:
+          1. Questions must be based on Nigerian Law.
+          2. Return ONLY the raw JSON array.
+          3. Structure for '${type}': ${type === 'objective' ? 'id, text, options (4), correctAnswer (index), explanation' : 'id, text, keyPoints (array)'}.
+        `;
 
     const result = await chatModel.generateContent(prompt);
     const text = result.response.text();
-    // Robust JSON cleaning
     const jsonString = text.replace(/```json/g, '').replace(/```/g, '').trim();
-
     return JSON.parse(jsonString);
+  };
 
+  try {
+    return await generate(false);
   } catch (error) {
-    console.error("Error generating COCCIN questions:", error);
-    return [];
+    console.warn("First generation attempt failed, retrying with simple prompt...", error);
+    try {
+      return await generate(true);
+    } catch (retryError) {
+      console.error("All generation attempts failed:", retryError);
+      return [];
+    }
   }
 };
