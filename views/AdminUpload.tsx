@@ -118,53 +118,85 @@ export const AdminUpload: React.FC = () => {
 
         try {
             const finalTopic = topic.trim() || fileName || "General";
-            const textChunks = activeTab === 'materials' ? chunkText(content) : [content]; // Only chunk materials, not questions (usually short)
+            const textChunks = activeTab === 'materials' ? chunkText(content) : [content];
 
-            let totalSuccess = 0;
-            let totalErrors: string[] = [];
+            // Helper for concurrency control
+            const processBatch = async (chunks: string[], concurrency: number = 5) => {
+                const results: { chunk: string; embedding: number[]; index: number }[] = [];
+                const errors: string[] = [];
 
-            // Process each course
-            for (const course of selectedCourses) {
-                // Process each chunk
-                for (let i = 0; i < textChunks.length; i++) {
-                    const chunk = textChunks[i];
-
-                    try {
-                        // 1. Generate Embedding for chunk
-                        const embedding = await generateEmbedding(chunk);
-                        if (!embedding) throw new Error("Failed to generate embedding");
-
-                        // 2. Insert into Supabase
-                        if (activeTab === 'materials') {
-                            const { error } = await supabase.from('course_materials').insert({
-                                course,
-                                topic: finalTopic,
-                                content: chunk,
-                                embedding,
-                                metadata: { chunk_index: i, total_chunks: textChunks.length, file_name: fileName }
-                            });
-                            if (error) throw error;
-                        } else {
-                            const { error } = await supabase.from('past_questions').insert({
-                                course,
-                                year,
-                                question_text: chunk,
-                                embedding
-                            });
-                            if (error) throw error;
+                for (let i = 0; i < chunks.length; i += concurrency) {
+                    const batch = chunks.slice(i, i + concurrency);
+                    const batchPromises = batch.map(async (chunk, batchIndex) => {
+                        const globalIndex = i + batchIndex;
+                        try {
+                            const embedding = await generateEmbedding(chunk);
+                            if (embedding) {
+                                return { chunk, embedding, index: globalIndex };
+                            }
+                        } catch (e) {
+                            console.error(`Failed to embed chunk ${globalIndex}`, e);
                         }
-                        totalSuccess++;
-                    } catch (err: any) {
-                        console.error(`Error uploading chunk ${i} for ${course}:`, err);
-                        totalErrors.push(`${course} (Chunk ${i + 1})`);
-                    }
+                        return null;
+                    });
+
+                    const batchResults = await Promise.all(batchPromises);
+                    batchResults.forEach(res => {
+                        if (res) results.push(res);
+                        else errors.push(`Chunk ${i + 1} failed`); // Approximate error tracking
+                    });
+                }
+                return { results, errors };
+            };
+
+            // 1. Generate Embeddings in Parallel
+            setStatus({ type: 'success', message: `Processing ${textChunks.length} chunks...` });
+            const { results: processedChunks, errors: embeddingErrors } = await processBatch(textChunks);
+
+            if (processedChunks.length === 0) {
+                throw new Error("Failed to generate embeddings for any chunks.");
+            }
+
+            // 2. Batch Insert into Supabase
+            let totalSuccess = 0;
+            const uploadErrors: string[] = [];
+
+            for (const course of selectedCourses) {
+                try {
+                    const rowsToInsert = processedChunks.map(pc => ({
+                        course,
+                        topic: finalTopic, // Same topic for all chunks
+                        ...(activeTab === 'materials'
+                            ? {
+                                content: pc.chunk,
+                                embedding: pc.embedding,
+                                metadata: { chunk_index: pc.index, total_chunks: textChunks.length, file_name: fileName }
+                            }
+                            : {
+                                year: year,
+                                question_text: pc.chunk,
+                                embedding: pc.embedding
+                            }
+                        )
+                    }));
+
+                    const tableName = activeTab === 'materials' ? 'course_materials' : 'past_questions';
+
+                    const { error } = await supabase.from(tableName).insert(rowsToInsert);
+
+                    if (error) throw error;
+                    totalSuccess += rowsToInsert.length;
+
+                } catch (err: any) {
+                    console.error(`Failed to upload batch for ${course}:`, err);
+                    uploadErrors.push(course);
                 }
             }
 
-            if (totalErrors.length > 0) {
+            if (uploadErrors.length > 0 || embeddingErrors.length > 0) {
                 setStatus({
                     type: 'error',
-                    message: `Uploaded ${totalSuccess} chunks. Failed: ${totalErrors.length} chunks.`
+                    message: `Uploaded ${totalSuccess} chunks. Errors: ${uploadErrors.length + embeddingErrors.length} issues.`
                 });
             } else {
                 setStatus({
