@@ -94,6 +94,17 @@ export const AdminUpload: React.FC = () => {
         }
     };
 
+    const chunkText = (text: string, chunkSize: number = 1000, overlap: number = 100): string[] => {
+        const chunks: string[] = [];
+        let start = 0;
+        while (start < text.length) {
+            const end = Math.min(start + chunkSize, text.length);
+            chunks.push(text.slice(start, end));
+            start += chunkSize - overlap;
+        }
+        return chunks;
+    };
+
     const handleUpload = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!content.trim()) return;
@@ -106,59 +117,65 @@ export const AdminUpload: React.FC = () => {
         setStatus(null);
 
         try {
-            // 1. Generate Embedding
-            const embedding = await generateEmbedding(content);
-
-            if (!embedding) {
-                throw new Error("Failed to generate embedding. AI service might be down.");
-            }
-
-            // 2. Insert into Supabase for EACH selected course
             const finalTopic = topic.trim() || fileName || "General";
-            const errors: string[] = [];
-            let successCount = 0;
+            const textChunks = activeTab === 'materials' ? chunkText(content) : [content]; // Only chunk materials, not questions (usually short)
 
+            let totalSuccess = 0;
+            let totalErrors: string[] = [];
+
+            // Process each course
             for (const course of selectedCourses) {
-                try {
-                    if (activeTab === 'materials') {
-                        const { error } = await supabase.from('course_materials').insert({
-                            course,
-                            topic: finalTopic,
-                            content,
-                            embedding
-                        });
-                        if (error) throw error;
-                    } else {
-                        const { error } = await supabase.from('past_questions').insert({
-                            course,
-                            year,
-                            question_text: content,
-                            embedding
-                        });
-                        if (error) throw error;
+                // Process each chunk
+                for (let i = 0; i < textChunks.length; i++) {
+                    const chunk = textChunks[i];
+
+                    try {
+                        // 1. Generate Embedding for chunk
+                        const embedding = await generateEmbedding(chunk);
+                        if (!embedding) throw new Error("Failed to generate embedding");
+
+                        // 2. Insert into Supabase
+                        if (activeTab === 'materials') {
+                            const { error } = await supabase.from('course_materials').insert({
+                                course,
+                                topic: finalTopic,
+                                content: chunk,
+                                embedding,
+                                metadata: { chunk_index: i, total_chunks: textChunks.length, file_name: fileName }
+                            });
+                            if (error) throw error;
+                        } else {
+                            const { error } = await supabase.from('past_questions').insert({
+                                course,
+                                year,
+                                question_text: chunk,
+                                embedding
+                            });
+                            if (error) throw error;
+                        }
+                        totalSuccess++;
+                    } catch (err: any) {
+                        console.error(`Error uploading chunk ${i} for ${course}:`, err);
+                        totalErrors.push(`${course} (Chunk ${i + 1})`);
                     }
-                    successCount++;
-                } catch (err: any) {
-                    console.error(`Failed to upload for ${course}:`, err);
-                    errors.push(`${course}: ${err.message || 'Unknown error'}`);
                 }
             }
 
-            if (errors.length > 0) {
-                // If some failed but some succeeded, show partial success message
-                if (successCount > 0) {
-                    setStatus({ type: 'error', message: `Uploaded to ${successCount} courses, but failed for: ${errors.join(', ')}` });
-                    // Don't clear content if there were errors so user can retry
-                    return;
-                } else {
-                    throw new Error(`Failed to upload for all courses: ${errors.join(', ')}`);
-                }
+            if (totalErrors.length > 0) {
+                setStatus({
+                    type: 'error',
+                    message: `Uploaded ${totalSuccess} chunks. Failed: ${totalErrors.length} chunks.`
+                });
+            } else {
+                setStatus({
+                    type: 'success',
+                    message: `Successfully uploaded ${totalSuccess} chunks for ${selectedCourses.length} course(s)!`
+                });
+                setContent('');
+                setFileName(null);
+                if (activeTab === 'materials') setTopic('');
             }
 
-            setStatus({ type: 'success', message: `Uploaded successfully to ${selectedCourses.length} course(s)!` });
-            setContent(''); // Clear content on success
-            setFileName(null);
-            if (activeTab === 'materials') setTopic('');
         } catch (error: any) {
             console.error("Upload error:", error);
             setStatus({ type: 'error', message: error.message || 'Upload failed.' });
