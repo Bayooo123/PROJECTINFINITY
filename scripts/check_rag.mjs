@@ -40,25 +40,29 @@ async function checkMaterials() {
         return;
     }
 
+    console.log("\n========== DATABASE CONTENT REPORT ==========");
+    console.log(`Total Chunks Found: ${data ? data.length : 0}`);
+
     if (!data || data.length === 0) {
-        console.log("No documents found in the database.");
+        console.log("  (No documents found)");
+        console.log("=============================================\n");
         return;
     }
-
-    console.log(`Found ${data.length} total chunks.`);
 
     // Group by course and topic
     const grouped = {};
     data.forEach(item => {
-        const key = `${item.course} | ${item.topic}`;
+        const key = `[${item.course}] - ${item.topic}`;
         if (!grouped[key]) grouped[key] = 0;
         grouped[key]++;
     });
 
-    console.log("\n--- Uploaded Documents Summary ---");
-    Object.entries(grouped).forEach(([key, count]) => {
-        console.log(`${key} (${count} chunks)`);
+    console.log("\n--- Course Breakdown ---");
+    const keys = Object.keys(grouped).sort();
+    keys.forEach(key => {
+        console.log(`  ${key}: ${grouped[key]} chunks`);
     });
+    console.log("=============================================\n");
 }
 
 checkMaterials();

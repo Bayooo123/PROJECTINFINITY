@@ -19,7 +19,8 @@ AI-powered legal education platform for Nigerian law students. Practice question
 
 - **Frontend**: React 19 + TypeScript
 - **Build Tool**: Vite
-- **AI**: Google Gemini 2.5 Flash
+- **AI**: Google Gemini 2.5 Flash + AI Studio (Question Generation)
+- **Database**: Supabase (PostgreSQL + pgvector)
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 
