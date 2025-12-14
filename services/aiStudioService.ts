@@ -8,7 +8,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Use dedicated AI Studio API key
-const AI_STUDIO_KEY = import.meta.env.VITE_AI_STUDIO_API_KEY;
+// Use dedicated AI Studio API key or fallback to general Gemini key
+const AI_STUDIO_KEY = import.meta.env.VITE_AI_STUDIO_API_KEY || import.meta.env.VITE_GEMINI_API_KEY;
 
 if (!AI_STUDIO_KEY) {
     console.warn("AI Studio API key not found. Question generation will use fallback.");
