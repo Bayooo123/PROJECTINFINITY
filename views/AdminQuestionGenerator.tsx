@@ -56,8 +56,6 @@ export const AdminQuestionGenerator: React.FC = () => {
             // We can add `importQuestionsToBank` to geminiService.ts next.
             // For now, let's assume we will add it.
 
-            // @ts-ignore
-            import { importQuestionsToBank } from '../services/geminiService';
             const result = await importQuestionsToBank(rowsToInsert);
 
             if (result.success) {
