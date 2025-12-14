@@ -228,9 +228,6 @@ IMPORTANT: Return ONLY the JSON array, no markdown, no additional text.`;
     }
 };
 
-/**
- * Generate questions with retry logic for reliability
- */
 export const generateQuestionsWithRetry = async <T>(
     generatorFn: () => Promise<T>,
     maxRetries: number = 2
@@ -240,9 +237,28 @@ export const generateQuestionsWithRetry = async <T>(
     for (let attempt = 0; attempt <= maxRetries; attempt++) {
         try {
             return await generatorFn();
-        } catch (error) {
+        } catch (error: any) {
             lastError = error as Error;
+
+            // Check for Rate Limits (429 or Quota Exceeded)
+            const errorMsg = error.toString().toLowerCase();
+            const isRateLimit = errorMsg.includes('429') ||
+                errorMsg.includes('quota') ||
+                errorMsg.includes('resource exhausted');
+
             console.warn(`Generation attempt ${attempt + 1} failed:`, error);
+
+            if (isRateLimit) {
+                // Immediate fail for rate limits - retrying immediately won't help usually, 
+                // but we can try once if it's strictly a "resource exhausted" that might clear in a second.
+                // For now, let's wait longer if it is rate limit.
+                if (attempt < maxRetries) {
+                    await new Promise(resolve => setTimeout(resolve, 2000 * Math.pow(2, attempt)));
+                    continue;
+                } else {
+                    throw new Error("Service is currently busy (Rate Limit). Please wait a minute and try again.");
+                }
+            }
 
             if (attempt < maxRetries) {
                 // Wait before retry (exponential backoff)
@@ -251,5 +267,5 @@ export const generateQuestionsWithRetry = async <T>(
         }
     }
 
-    throw lastError || new Error("Question generation failed after retries");
+    throw lastError || new Error("Failed to generate questions after retries");
 };

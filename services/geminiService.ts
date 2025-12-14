@@ -30,8 +30,27 @@ export interface ChatMessage {
 // --- RAG Helper Functions ---
 
 /**
- * Generates a vector embedding for a given text using Gemini.
+ * Import manually prepared questions into the question bank.
  */
+export const importQuestionsToBank = async (
+  rows: any[]
+): Promise<{ success: boolean; count: number; message?: string }> => {
+  try {
+    const { error } = await supabase
+      .from('question_bank')
+      .insert(rows);
+
+    if (error) {
+      console.error("Error importing to question bank:", error);
+      return { success: false, count: 0, message: error.message };
+    }
+
+    return { success: true, count: rows.length };
+  } catch (error: any) {
+    console.error("Import error:", error);
+    return { success: false, count: 0, message: error.message || "Unknown error" };
+  }
+};
 export const generateEmbedding = async (text: string): Promise<number[] | null> => {
   try {
     const result = await embeddingModel.embedContent(text);
@@ -166,6 +185,24 @@ export const generateQuizQuestions = async (
   count: number = 5
 ): Promise<any[]> => {
   try {
+    // 1. Try fetching from Question Bank first
+    const { data, error } = await supabase
+      .from('question_bank')
+      .select('question_data')
+      .eq('course', course)
+      .eq('topic', topic)
+      .eq('type', 'objective')
+      .limit(count);
+
+    if (data && data.length >= count) {
+      console.log("Fetched questions from Bank!");
+      // Randomize the selection if needed, but for now take the first N
+      return data.map(row => row.question_data);
+    }
+
+    console.log("Bank empty or insufficient. Generating live...");
+
+    // 2. Fallback to AI Generation
     // Use AI Studio service with retry logic for reliability
     return await generateQuestionsWithRetry(() =>
       generateStandardQuestions(course, topic, count)
@@ -182,6 +219,37 @@ export const generateCoccinQuestions = async (
   count: number = 10
 ): Promise<any> => {
   try {
+    // 1. Try fetching from Question Bank
+    // We need questions for EACH course.
+    // Calculate questions per course (e.g. 10 total / 2 courses = 5 each)
+    const questionsPerCourse = Math.ceil(count / courses.length);
+    let bankQuestions: any[] = [];
+    let allFound = true;
+
+    for (const course of courses) {
+      const { data } = await supabase
+        .from('question_bank')
+        .select('question_data')
+        .eq('course', course)
+        .eq('type', type)
+        .limit(questionsPerCourse);
+
+      if (data && data.length >= questionsPerCourse) {
+        bankQuestions = [...bankQuestions, ...data.map(r => r.question_data)];
+      } else {
+        allFound = false;
+        break;
+      }
+    }
+
+    if (allFound && bankQuestions.length > 0) {
+      console.log(`Fetched COCCIN ${type} questions from Bank!`);
+      return bankQuestions.slice(0, count);
+    }
+
+    console.log("Bank insufficient for COCCIN. Generating live...");
+
+    // 2. Fallback to AI Generation
     // Use AI Studio service with retry logic for maximum reliability
     if (type === 'objective') {
       return await generateQuestionsWithRetry(() =>

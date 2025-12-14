@@ -172,9 +172,9 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
         }
       }
 
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
-      setError("Failed to generate questions. Please try again.");
+      setError(err.message || "Failed to generate questions. Please try again.");
       setPhase('SELECTION');
     }
   };
@@ -319,8 +319,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                       key={course}
                       onClick={() => { setSelectedCourse(course); if (quizMode === 'STANDARD') setTopic(''); }}
                       className={`text-left px-4 py-3 rounded-lg border transition-all ${selectedCourse === course
-                          ? 'border-amber-600 bg-amber-50 text-amber-900 ring-1 ring-amber-600'
-                          : 'border-slate-200 hover:border-slate-400 text-slate-700'
+                        ? 'border-amber-600 bg-amber-50 text-amber-900 ring-1 ring-amber-600'
+                        : 'border-slate-200 hover:border-slate-400 text-slate-700'
                         }`}
                     >
                       <div className="font-medium truncate">{course}</div>
@@ -340,8 +340,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                         key={mode}
                         onClick={() => setQuizMode(mode)}
                         className={`relative p-4 rounded-xl border text-left transition-all ${isSelected
-                            ? 'border-amber-600 bg-amber-50 ring-1 ring-amber-600'
-                            : 'border-slate-200 hover:border-slate-300 bg-white'
+                          ? 'border-amber-600 bg-amber-50 ring-1 ring-amber-600'
+                          : 'border-slate-200 hover:border-slate-300 bg-white'
                           }`}
                       >
                         <div className={`mb-2 ${isSelected ? 'text-amber-600' : 'text-slate-500'}`}>
@@ -406,8 +406,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                         key={course}
                         onClick={() => handleCoccinCourseToggle(course)}
                         className={`text-left px-4 py-3 rounded-lg border transition-all ${isSelected
-                            ? 'border-amber-600 bg-amber-50 text-amber-900 ring-1 ring-amber-600'
-                            : 'border-slate-200 hover:border-slate-400 text-slate-700'
+                          ? 'border-amber-600 bg-amber-50 text-amber-900 ring-1 ring-amber-600'
+                          : 'border-slate-200 hover:border-slate-400 text-slate-700'
                           }`}
                       >
                         <div className="flex justify-between items-center">
@@ -512,8 +512,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                     key={idx}
                     onClick={() => handleOptionSelect(idx)}
                     className={`w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-start gap-3 ${isSelected
-                        ? 'border-slate-900 bg-slate-50 ring-1 ring-slate-900'
-                        : 'border-slate-200 hover:border-slate-400 bg-white'
+                      ? 'border-slate-900 bg-slate-50 ring-1 ring-slate-900'
+                      : 'border-slate-200 hover:border-slate-400 bg-white'
                       }`}
                   >
                     <div className={`mt-0.5 w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 ${isSelected ? 'border-slate-900 dot-center' : 'border-slate-400'
