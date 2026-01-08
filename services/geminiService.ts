@@ -9,7 +9,7 @@ import {
 } from './aiStudioService';
 
 // Access the API key from Vite environment variables
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.VITE_AI_STUDIO_API_KEY;
 
 if (!API_KEY) {
   console.warn("Gemini API key not found in environment variables. AI features will not work.");
