@@ -47,7 +47,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             } else {
                 setLoading(false);
             }
+        }).catch((err) => {
+            console.error("Error getting session:", err);
+            setLoading(false);
         });
+
+        // Safety timeout in case Supabase hangs
+        const safetyTimeout = setTimeout(() => {
+            setLoading((prev) => {
+                if (prev) {
+                    console.warn("Auth check timed out, forcing loading false");
+                    return false;
+                }
+                return prev;
+            });
+        }, 5000);
 
         // Listen for auth changes
         const {
@@ -63,7 +77,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             }
         });
 
-        return () => subscription.unsubscribe();
+        return () => {
+            subscription.unsubscribe();
+            clearTimeout(safetyTimeout);
+        };
     }, []);
 
     const fetchProfile = async (userId: string) => {
