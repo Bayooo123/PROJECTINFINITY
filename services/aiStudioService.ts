@@ -16,7 +16,12 @@ if (!AI_STUDIO_KEY) {
 }
 
 const aiStudio = new GoogleGenerativeAI(AI_STUDIO_KEY || '');
-const questionModel = aiStudio.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+
+// Primary Model: Gemini 2.0 Flash Exp (Experimental, smarter, lower rate limits)
+const primaryModel = aiStudio.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+
+// Fallback Model: Gemini 1.5 Flash (Stable, higher rate limits)
+const fallbackModel = aiStudio.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // --- Type Definitions ---
 
@@ -33,6 +38,37 @@ export interface TheoryQuestion {
     text: string;
     keyPoints: string[];
 }
+
+
+// --- Helper: Safe Content Generation with Fallback ---
+
+const generateContentSafe = async (prompt: string): Promise<string> => {
+    try {
+        // Attempt 1: Primary Model
+        const result = await primaryModel.generateContent(prompt);
+        return result.response.text();
+
+    } catch (error: any) {
+        // Check if error is Rate Limit (429) or overloaded
+        const msg = error.toString().toLowerCase();
+        const isRateLimit = msg.includes('429') || msg.includes('quota') || msg.includes('dazzy') || msg.includes('exhausted');
+
+        if (isRateLimit) {
+            console.warn("Primary model rate-limited. Switching to Fallback (Gemini 1.5 Flash)...");
+            try {
+                // Attempt 2: Fallback Model
+                const fallbackResult = await fallbackModel.generateContent(prompt);
+                return fallbackResult.response.text();
+            } catch (fallbackError: any) {
+                console.error("Fallback model also failed:", fallbackError);
+                throw fallbackError; // Throw original error to be mapped
+            }
+        }
+
+        throw error; // Throw non-rate-limit errors immediately
+    }
+};
+
 
 // --- Question Generation Functions ---
 
@@ -74,8 +110,7 @@ OUTPUT FORMAT: Return ONLY a valid JSON array with this exact structure:
 
 IMPORTANT: Return ONLY the JSON array, no markdown formatting, no additional text. Ensure the JSON is valid.`;
 
-        const result = await questionModel.generateContent(prompt);
-        const text = result.response.text();
+        const text = await generateContentSafe(prompt);
 
         // Clean and parse response
         const jsonString = text
@@ -145,8 +180,7 @@ OUTPUT FORMAT: Return ONLY a valid JSON array:
 
 IMPORTANT: Return ONLY the JSON array, no markdown, no additional text.`;
 
-        const result = await questionModel.generateContent(prompt);
-        const text = result.response.text();
+        const text = await generateContentSafe(prompt);
 
         const jsonString = text
             .replace(/```json/g, '')
@@ -216,8 +250,7 @@ OUTPUT FORMAT: Return ONLY a valid JSON array:
 
 IMPORTANT: Return ONLY the JSON array, no markdown, no additional text.`;
 
-        const result = await questionModel.generateContent(prompt);
-        const text = result.response.text();
+        const text = await generateContentSafe(prompt);
 
         const jsonString = text
             .replace(/```json/g, '')
@@ -250,7 +283,7 @@ const mapErrorToUserMessage = (error: any): Error => {
 
     if (msg.includes('api key')) return new Error("System Configuration Error: API Key missing or invalid.");
     if (msg.includes('fetch failed') || msg.includes('network')) return new Error("Network Error: Please check your internet connection.");
-    if (msg.includes('429') || msg.includes('quota') || msg.includes('exhausted')) return new Error("Service Busy: The AI is currently overloaded. Please wait a moment.");
+    if (msg.includes('429') || msg.includes('quota') || msg.includes('exhausted')) return new Error("System Busy: High traffic. Please check back in 1 minute.");
     if (msg.includes('safety') || msg.includes('blocked')) return new Error("Content Safety Error: The request was blocked by safety filters.");
 
     return error instanceof Error ? error : new Error("An unexpected error occurred.");
@@ -281,9 +314,8 @@ export const generateQuestionsWithRetry = async <T>(
                 if (attempt < maxRetries) {
                     await new Promise(resolve => setTimeout(resolve, 2000 * Math.pow(2, attempt)));
                     continue;
-                } else {
-                    throw new Error("System is currently busy. Please wait 1 minute and try again.");
                 }
+                // With fallback model, simpler failures now mean hard limits
             }
 
             // Don't retry for configuration errors
