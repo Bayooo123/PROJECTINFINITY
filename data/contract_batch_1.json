@@ -1,0 +1,802 @@
+[
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "A contract is defined as a voluntary arrangement between two or more parties that is enforceable at law as a:",
+            "options": [
+                "Moral commitment",
+                "Binding legal agreement",
+                "Social promise",
+                "Gentleman's agreement"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A contract is a legally binding agreement between parties."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "The distinguishing factor between a contract and a mere agreement is the badge of:",
+            "options": [
+                "Consensus ad idem",
+                "Consideration",
+                "Enforceability",
+                "Sanctity"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Enforceability is what turns an agreement into a contract."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "How many parties are required, at minimum, for a legally recognizable contract to exist?",
+            "options": [
+                "One",
+                "Two",
+                "Three",
+                "Unlimited"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A contract requires at least two parties."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that a contract is all about a 'meeting of the minds' is known as:",
+            "options": [
+                "Delegatus non potest delegare",
+                "Caveat emptor",
+                "Consensus ad idem",
+                "Contra proferentem"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Consensus ad idem refers to the meeting of minds."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that parties to a contract must honor their obligations under it is known as the:",
+            "options": [
+                "Will theory of law",
+                "Freedom of Contract",
+                "Objective interpretation",
+                "Sanctity of contract"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Sanctity of contract means parties must honor their agreements."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "To determine the existence of a contract, courts rely on what type of interpretation regarding the parties’ intentions?",
+            "options": [
+                "Subjective",
+                "Objective",
+                "Moral",
+                "Literal"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Courts use an objective test to determine intention."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "Which type of contract is defined by its terms being embodied in a document that is signed, sealed, and delivered?",
+            "options": [
+                "Simple contract",
+                "Express contract",
+                "Formal contract",
+                "Implied contract"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A formal contract (deed) is signed, sealed, and delivered."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "A formal contract is enforceable even in the absence of which essential element of a simple contract?",
+            "options": [
+                "Acceptance",
+                "Offer",
+                "Intention to create legal relations",
+                "Consideration"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Deeds do not require consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of formal contracts, what action demonstrates that a deed is intended to be executed, even if retained in the custody of the grantor?",
+            "options": [
+                "Sealing the document",
+                "Acts or words showing intention",
+                "Imprinting in wax",
+                "Affixing adhesive wafers"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Delivery is about intention to be bound, not necessarily physical transfer."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "All contracts other than formal contracts are classified as simple contracts and are dependent on the presence of:",
+            "options": [
+                "A written document",
+                "Consideration",
+                "A notary seal",
+                "Specific performance"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Simple contracts must be supported by consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "In which type of contract are the terms clearly stated, either orally or in writing?",
+            "options": [
+                "Implied contract",
+                "Quasi-contract",
+                "Express contract",
+                "Unilateral contract"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Express contracts have explicitly stated terms."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "An implied contract's existence is construed by the court based on:",
+            "options": [
+                "Statutory provisions",
+                "Social agreement",
+                "The conduct of the parties",
+                "Moral obligation"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Implied contracts are inferred from conduct."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "A bilateral contract involves:",
+            "options": [
+                "A promise for an act",
+                "Performance in return for a promise",
+                "An exchange of promises",
+                "Only one party making a promise"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Bilateral contracts involve mutual promises (promise for promise)."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "In a bilateral contract, the consideration is usually characterized as:",
+            "options": [
+                "Executed",
+                "Past",
+                "Executory",
+                "Insufficient"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A promise to perform in the future is executory consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Introduction and Classification of Contracts",
+        "type": "objective",
+        "question_data": {
+            "text": "Carlill v. Carbolic Smoke Ball Co. is the famous case illustrating what type of contract?",
+            "options": [
+                "Bilateral contract",
+                "Formal contract",
+                "Unilateral contract",
+                "Implied contract"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "It involved an offer to the whole world (unilateral)."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "Which element of a valid contract was identified as a fifth requirement by Niki Tobi JCA in Orient Bank v. Bilante International?",
+            "options": [
+                "Offer",
+                "Acceptance",
+                "Consideration",
+                "Capacity to contract"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Legal capacity is essential for a valid contract."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "An offer is defined as a definite, precise, or clear promise made by the offeror with the intention that it shall become binding as soon as it is:",
+            "options": [
+                "Communicated",
+                "Advertised",
+                "Accepted by the offeree",
+                "Withdrawn"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Acceptance makes the offer binding."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the rules of offer, the offer must be definite, certain, and unequivocal, leaving no room for:",
+            "options": [
+                "Negotiation",
+                "Communication",
+                "Speculation",
+                "Consideration"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Offers must be clear and certain, not speculative."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the term for a preliminary move which may induce a contract but is not itself an offer?",
+            "options": [
+                "Counter-offer",
+                "Collateral contract",
+                "Invitation to treat",
+                "Conditional acceptance"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "An invitation to treat is a request to receive offers."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of auctions, the request for a bid constitutes which preliminary step?",
+            "options": [
+                "Offer",
+                "Acceptance",
+                "Counter-offer",
+                "Invitation to treat"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Putting an item up for auction is an invitation to treat."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "In an auction, when does acceptance typically occur, according to Payne v. Cave?",
+            "options": [
+                "When the bid is made",
+                "When the auctioneer's hammer falls",
+                "When the reserved price is met",
+                "When the advert is placed"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The fall of the hammer signifies acceptance of the highest bid."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "A bid dependent for its definition on the bids of others (e.g., $100,000 in excess of any other bid) is known as a:",
+            "options": [
+                "Conditional bid",
+                "Definitive bid",
+                "Referential bid",
+                "Unilateral bid"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Referential bids are generally invalid unless the invitation allows them."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the ruling in Pharmaceutical Society of Great Britain v. Boots Cash Chemist, the display of goods on shelves in a self-service shop is considered:",
+            "options": [
+                "An offer",
+                "An invitation to treat",
+                "A bilateral contract",
+                "A conditional offer"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Displaying goods is an invitation to treat; the customer offers to buy at the counter."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "In a shop setting where goods are displayed, who typically makes the offer?",
+            "options": [
+                "The shop owner",
+                "The customer",
+                "The clerk",
+                "The court"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The customer makes the offer when presenting items for purchase."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "In bilateral contracts, advertisements are generally treated as:",
+            "options": [
+                "Offers",
+                "Binding terms",
+                "Invitations to treat",
+                "Conditional agreements"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Ads are usually invitations to treat, not binding offers."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "An advertisement can be considered an offer in which specific type of contract?",
+            "options": [
+                "Express",
+                "Implied",
+                "Bilateral",
+                "Unilateral"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Unilateral advertisements (like reward posters) can be offers."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "Tenders are invitations for offers from interested parties and not offers themselves. This was established in:",
+            "options": [
+                "Harvela Investment v. Royal Trust Company",
+                "Spencer v. Harding",
+                "Patridge v. Crittendon",
+                "Carlill v. Carbolic Smoke Ball Co."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Spencer v. Harding held that an invitation for tenders is an invitation to treat."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Offer and Invitation to Treat",
+        "type": "objective",
+        "question_data": {
+            "text": "In Berliet Nigeria v. Francis, the Managing Director's letter stating that 10% of company shares would be owned by workers was held to be:",
+            "options": [
+                "An offer",
+                "A valid contract",
+                "An invitation to treat",
+                "A unilateral promise"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The court held it lacked the definiteness of an offer."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "Acceptance is defined as the absolute and unqualified expression of assent to the terms of the:",
+            "options": [
+                "Consideration",
+                "Invitation to treat",
+                "Offer",
+                "Collateral promise"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Acceptance must match the offer exactly."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Felthouse v. Bindley, what typically cannot amount to acceptance?",
+            "options": [
+                "Conduct",
+                "Words",
+                "Documents",
+                "Mental intention or silence"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Silence does not constitute acceptance."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "Any qualification or change in the terms of an offer by the offeree results in a fresh offer known as a:",
+            "options": [
+                "Conditional acceptance",
+                "Counter offer",
+                "Provisional acceptance",
+                "Cross offer"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A variation of terms is a counter-offer, which rejects the original offer."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "The locus classicus case for the principle that a counter offer destroys the original offer is:",
+            "options": [
+                "Tinn v. Hoffman & Co",
+                "Hyde v. Wrench",
+                "Carlill v. Carbolic Smoke Ball Co.",
+                "Felthouse v. Bindley"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Hyde v. Wrench established that a counter-offer terminates the original offer."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the effect of an acceptance made 'subject to contract'?",
+            "options": [
+                "It is provisionally binding.",
+                "It creates an implied contract.",
+                "It postpones liability until a formal document is signed.",
+                "It reverses the roles of offeror and offeree."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "This phrase indicates there is no binding contract yet."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "Which expression confers a binding effect on an agreement in which it appears?",
+            "options": [
+                "Subject to contract",
+                "Provisional agreement",
+                "Without prejudice",
+                "Gentleman's agreement"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A provisional agreement can be binding immediately."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "What occurs when two identical offers are sent by two parties to each other and they cross 'en route'?",
+            "options": [
+                "Conditional acceptance",
+                "Valid contract",
+                "Cross offers, resulting in no contract",
+                "Counter offers"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Tinn v. Hoffman held that cross-offers do not make a contract."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "The general rule regarding acceptance in ignorance of an offer is based on the principle of:",
+            "options": [
+                "Stare decisis",
+                "Quantum meruit",
+                "Delegatus non potest delegare",
+                "Consensus ad idem"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "You cannot accept an offer you don't know exists because there is no consensus."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "In instantaneous communication (e.g., telephone or telex), acceptance generally occurs when the offeror:",
+            "options": [
+                "Sends the offer",
+                "Receives the acceptance",
+                "Posts the acceptance",
+                "Formulates the acceptance"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Acceptance must be communicated to the offeror."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "Where the offeror prescribes a particular mode of acceptance, what alternative mode is generally considered sufficient?",
+            "options": [
+                "Any mode, regardless of speed.",
+                "Only the mode prescribed.",
+                "Any mode either as fast as or faster than that prescribed.",
+                "Any mode if the acceptance is in writing."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "An equally fast or faster method is usually acceptable unless explicitly forbidden."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule governing acceptance by post states that a contract comes into existence immediately:",
+            "options": [
+                "The offeror receives the letter.",
+                "The offeree posts the acceptance.",
+                "The letter is delivered to the address.",
+                "The post office confirms receipt."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Acceptance is complete at the moment of posting."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "The locus classicus for the postal acceptance rule is:",
+            "options": [
+                "Household Fire Insurance v. Grant",
+                "Holwell Securities v. Hughes",
+                "Adams v. Lindsell",
+                "Entores v. Miles Far East Corporation"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Adams v. Lindsell established the postal rule."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "A major criticism of the postal acceptance rule is that it is often viewed as:",
+            "options": [
+                "Modern and efficient",
+                "Arbitrary and unfair",
+                "Highly flexible",
+                "Subjective and unreliable"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It places all risk of delay or loss on the offeror."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "An exception to the posting rule arises if the terms of the offer expressly or impliedly indicate that the acceptance must:",
+            "options": [
+                "Be sent by registered mail",
+                "Be verbally confirmed",
+                "Reach the offeror",
+                "Be accompanied by consideration"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the offer asks for 'notice,' it implies the acceptance must be received."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "Acceptance can be revoked at any time before it reaches the offeror, but revocation of acceptance in postal cases:",
+            "options": [
+                "Is not possible once posted",
+                "Leads to immediate breach",
+                "Is permitted only if delivered before the letter of acceptance",
+                "Is governed by the same rule as postal acceptance"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the revocation reaches before or with the acceptance, it might be valid (though controversial)."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is not one of the four ways an offer can be terminated?",
+            "options": [
+                "By repudiation",
+                "By revocation",
+                "By lapse of time",
+                "By rejection"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Repudiation applies to existing contracts, not offers."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "An offeror who promises to keep an offer open for a specific period can still revoke it before that period expires, provided there is no:",
+            "options": [
+                "Communication",
+                "Negotiation",
+                "Consideration",
+                "Rejection"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Without consideration (an option), a promise to keep an offer open is not binding."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "For revocation of an offer to be valid, it must be:",
+            "options": [
+                "Signed and sealed",
+                "Communicated to the offeree",
+                "Executory",
+                "Made by registered post"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Revocation is not effective until the offeree knows about it."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of revocation by post, the revocation is effective only when it:",
+            "options": [
+                "Is posted",
+                "Is delivered to the post office",
+                "Reaches the offeree",
+                "Is received by a third party"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Unlike acceptance, revocation counts when received."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "Communication of revocation may be valid even if it comes from a reliable third party, as established in:",
+            "options": [
+                "Byrne v. Van Tien Hoven",
+                "Dickinson v. Dodds",
+                "Routledge v. Grant",
+                "Mountford v. Scott"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Dickinson v. Dodds held that notice from a reliable 3rd party is valid."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "In a unilateral contract where performance has commenced, the offeror generally cannot revoke, as illustrated in:",
+            "options": [
+                "Ramsgate Victoria Hotel v. Montifiore",
+                "Kennedy v. Thomassen",
+                "Errington v. Errington",
+                "Eliason v. Henshaw"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Errington v. Errington established this equitable protection for performers."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Acceptance and Termination",
+        "type": "objective",
+        "question_data": {
+            "text": "In the absence of a stipulated time limit, an offer will lapse after:",
+            "options": [
+                "30 days",
+                "6 months",
+                "A reasonable time",
+                "1 year"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Reasonable time depends on the subject matter (e.g. shares vs perishables)."
+        }
+    }
+]

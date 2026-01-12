@@ -391,6 +391,16 @@ export const COCCIN_TOPICS: Record<string, string[]> = {
     "Concept of Settlement",
     "Co-ownership"
   ],
+  "Law of Contract": [
+    "Introduction and Classification of Contracts",
+    "Offer and Invitation to Treat",
+    "Acceptance and Termination",
+    "Consideration",
+    "Promissory Estoppel and Legal Relations",
+    "Terms of a Contract",
+    "Exclusion Clauses and Capacity",
+    "Privity of Contract"
+  ],
   "Law of Banking": [
     "History of the banking system",
     "Types of banks"
@@ -430,11 +440,6 @@ export const COCCIN_TOPICS: Record<string, string[]> = {
     "Meaning and Definition of a Legal System",
     "Characteristics of the Nigerian Legal System",
     "Historical Development of the Nigerian Legal System"
-  ],
-  "Law of Contract": [
-    "Definition, principle and nature, scope, classification, functions and historical development",
-    "Offer: Definition, elements, distinction between offer and invitation to treat, forms of offer, termination",
-    "Acceptance: Definition, forms of invalid acceptance, Communication of Acceptance"
   ],
   "Administrative Law": [
     "Introduction and Relationship with Constitutional Law",

@@ -1,0 +1,802 @@
+[
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "Which is the only type of contract that does not require the furnishing of consideration?",
+            "options": [
+                "Simple contracts",
+                "Bilateral contracts",
+                "Contracts made under seal",
+                "Unilateral contracts"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Contracts under seal (deeds) derive their validity from their form, not consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "Consideration was defined in Currie v. Misa as focusing on what basic feature of the doctrine?",
+            "options": [
+                "Reciprocity",
+                "Morality",
+                "Adequacy",
+                "Formality"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Currie v. Misa defined consideration in terms of benefit or detriment (reciprocity)."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the rule of consideration affirmed in Faloughi v. Faloughi, what generally cannot constitute sufficient consideration?",
+            "options": [
+                "A nominal sum",
+                "An executory promise",
+                "Natural love and affection",
+                "Detriment suffered by the promisee"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Natural love and affection is sentimental and not sufficient in legal eyes."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "A promise made without requiring some kind of promise or act in return from the promisee is termed a:",
+            "options": [
+                "Collateral promise",
+                "Gratuitous promise",
+                "Executed promise",
+                "Formal promise"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A gratuitous promise is unenforceable under simple contract law."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "Which form of consideration happens when delivery and payment occur later, and each promise is consideration for the other?",
+            "options": [
+                "Past consideration",
+                "Executory consideration",
+                "Executed consideration",
+                "Gratuitous consideration"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Executory consideration is a promise for a promise."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "Consideration given by the promisee which was furnished before the promisor made the promise is known as:",
+            "options": [
+                "Executed consideration",
+                "Executory consideration",
+                "Sufficient consideration",
+                "Past consideration"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Past consideration is generally no consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "The doctrine of implied assumpsit, an exception to the rule of past consideration, was illustrated in which case?",
+            "options": [
+                "Re McArdle",
+                "Lampleigh v. Brathwait",
+                "Akenzua II v. Benin Council",
+                "African Petroleum v. Owodunni"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Lampleigh v. Brathwait held that a prior request can link a past act to a later promise."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "In the absence of fraud or duress, courts generally will not question the ___________ of consideration.",
+            "options": [
+                "Sufficiency",
+                "Legality",
+                "Adequacy",
+                "Reciprocity"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Consideration must be sufficient but need not be adequate."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "In Chappel v. Nestle, the chocolate bar wrappers were deemed to constitute partial consideration because:",
+            "options": [
+                "They had economic value",
+                "They were useless to either party",
+                "They were specifically requested by the defendants",
+                "They formed part of a bilateral contract"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Since the offeror requested them, they were part of the consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in White v. Bluet demonstrated that giving up something one is not legally entitled to do, such as ceasing complaints, constitutes:",
+            "options": [
+                "Adequate consideration",
+                "Insufficient consideration",
+                "Executory consideration",
+                "Executed consideration"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A promise not to complain about something you have no right to complain about is not consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "Performance of a duty already imposed by law (public duty) cannot constitute valid consideration unless the plaintiff:",
+            "options": [
+                "Receives express permission",
+                "Acts in excess of what the law required",
+                "Is also bound by a third-party contract",
+                "Waives their legal rights"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Exceeding a legal duty provides fresh consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle established in Stilk v. Myrick is that performing a duty already owed under a contract with the promisor:",
+            "options": [
+                "Constitutes fresh consideration",
+                "Does not constitute fresh consideration",
+                "Is a conditional acceptance",
+                "Is an example of promissory estoppel"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Stilk v. Myrick held that doing what you're already contracted to do is not new consideration."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "What rule states that part payment of a lesser sum does not discharge a debtor from the obligation to pay the full amount?",
+            "options": [
+                "Rule in Hyde v. Wrench",
+                "Rule in Pinnel’s Case",
+                "Rule in Stilk v. Myrick",
+                "Rule in Carlill v. Carbolic Smoke Ball Co."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Pinnel's Case established that part-payment of a debt is not full satisfaction."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Consideration",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in Pinnel’s Case can be avoided by the introduction of a new element, such as:",
+            "options": [
+                "Payment of the lesser sum",
+                "Part payment at an earlier date",
+                "Payment using cash",
+                "Payment after the due date"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Payment earlier or at a different place can satisfy the whole debt."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "Which doctrine prohibits a promisor from enforcing his strict legal position where the promisee has, in good faith, acted on the promise?",
+            "options": [
+                "Subrogation",
+                "Contra proferentem",
+                "Novation",
+                "Promissory Estoppel"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Promissory estoppel prevents injustice when a party relies on a promise."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "The seminal case that firmly established the doctrine of Promissory Estoppel is:",
+            "options": [
+                "Jorden v. Money",
+                "Hughes v. Metropolitan Railway Co",
+                "The High Trees Case",
+                "Combe v. Combe"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Central London Property Trust v High Trees House Ltd is the key case."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "Promissory Estoppel acts as a ___________ and not a ___________, meaning it cannot create new causes of action.",
+            "options": [
+                "Sword; shield",
+                "Shield; sword",
+                "Contract; agreement",
+                "Permanent; temporary"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It is a defense (shield), not a ground for a lawsuit (sword)."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "A situation where a debtor who owes multiple people money agrees with creditors to accept a fraction of debts is called:",
+            "options": [
+                "Promissory Estoppel",
+                "Subrogation",
+                "Composition with creditors",
+                "Part payment"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Composition with creditors is a valid exception to the part-payment rule."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "In social and domestic agreements, what is the rebuttable presumption regarding contractual intention?",
+            "options": [
+                "Parties intend to be legally bound",
+                "Intention is irrelevant",
+                "Parties do not intend to create legal relations",
+                "The agreement is automatically void"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Balfour v Balfour established that domestic agreements carry no intention to be bound."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "The presumption that contractual intention is absent between spouses does not apply in cases where the couple is:",
+            "options": [
+                "Living in amity",
+                "Separated or about to separate",
+                "Engaging in small transactions",
+                "Relying on mutual affection"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Merritt v Merritt showed that separated couples often intend to be bound."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "An extravagant statement made in a commercial context that no reasonable man would believe is termed a:",
+            "options": [
+                "Collateral contract",
+                "Honor clause",
+                "Mere puff",
+                "Misrepresentation"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Puffs are non-binding sales talk."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Promissory Estoppel and Legal Relations",
+        "type": "objective",
+        "question_data": {
+            "text": "A clause in commercial agreements which expressly excludes contractual intention, often using 'in honor only', is an:",
+            "options": [
+                "Implied term",
+                "Exclusion Clause",
+                "Collateral Term",
+                "Honor Clause"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Honor clauses make agreements binding in honor only, not in law."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "The importance of distinguishing between a term of a contract and a representation lies in determining the:",
+            "options": [
+                "Jurisdiction",
+                "Consideration",
+                "Remedy",
+                "Capacity"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Breach of term leads to contract remedies; misrepresentation leads to tort/rescission."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "The test for distinguishing a term from a representation that asks about the time gap between the statement and final agreement is the:",
+            "options": [
+                "Relative Skill & Expertise Test",
+                "Degree of Importance Test",
+                "Timing Test",
+                "Parol Evidence Rule"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The closer a statement is to the contract, the more likely it is a term."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "If a statement is made by a party with special knowledge or skill compared to the other party, it is likely treated as a:",
+            "options": [
+                "Mere representation",
+                "Collateral promise",
+                "Term",
+                "Warranty"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Dick Bentley v Harold Smith established that expertise makes a statement a term."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "What type of term forms the main purpose of the contract, non-performance of which destroys the very substance of it?",
+            "options": [
+                "Warranty",
+                "Condition",
+                "Intermediate term",
+                "Fundamental term"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "A fundamental term is the core of the contract."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "A provision forming an essential part of the contract, breach of which allows the injured party to repudiate, is a:",
+            "options": [
+                "Warranty",
+                "Condition",
+                "Fundamental breach",
+                "Collateral term"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Breach of condition allows repudiation and damages."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "A condition whose happening operates to destroy an existing contractual obligation is called a:",
+            "options": [
+                "Condition precedent",
+                "Condition inherent",
+                "Intermediate condition",
+                "Condition subsequent"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "A condition subsequent ends an existing contract."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "In Bettini v. Gye, the singer's promise to be in London for rehearsals was held to be a:",
+            "options": [
+                "Condition",
+                "Fundamental term",
+                "Warranty",
+                "Condition subsequent"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Rehearsals were not central to the performance contract itself."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "For intermediate terms, the remedy for breach depends primarily on the:",
+            "options": [
+                "Nature of the term",
+                "Status of the parties",
+                "Extent and severity of the breach",
+                "Express wording"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Hong Kong Fir Shipping v Kawasaki established the 'severity' test for innominate terms."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "What doctrine allows courts to assume the existence of certain terms not expressly included to make the contract workable?",
+            "options": [
+                "Delegatus non potest delegare",
+                "Business efficacy",
+                "Contra proferentem",
+                "Consensus ad idem"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 'Moorcock' established the business efficacy test for implied terms."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "Which English statute, applicable to Nigeria, implies certain conditions in every contract of sale?",
+            "options": [
+                "Statute of Frauds 1677",
+                "Infants Relief Act 1874",
+                "Sale of Goods Act 1893",
+                "Limitation Act 1980"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Sale of Goods Act implies terms like fitness for purpose and merchantable quality."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Section 14(2) of the Sale of Goods Act, goods bought must be of what quality?",
+            "options": [
+                "Acceptable",
+                "Merchantable",
+                "Adequate",
+                "Suitable"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Merchantable quality is the statutory standard."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Terms of a Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "What rule of construction dictates that words are construed more forcibly against the party using them?",
+            "options": [
+                "Literal Rule",
+                "Ejusdem Generis Rule",
+                "Contra Proferentem Rule",
+                "Golden Rule"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Contra proferentem protects the weaker party in interpretation."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "For an unsigned Exclusion Clause (EC) to bind an injured party, notice of it must be given:",
+            "options": [
+                "After the contract is concluded",
+                "Only if requested",
+                "Before the contract is concluded",
+                "By registered mail"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Thornton v Shoe Lane Parking held that notice must come before the 'click' or 'ticket'."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "In signed documents, a person is generally bound by an EC whether they read it or not, provided there is no:",
+            "options": [
+                "Negligence",
+                "Fraud, duress, or misrepresentation",
+                "Lack of consideration",
+                "Unilateral mistake"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "L'Estrange v Graucob established this strict rule for signed documents."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "Which principle allows a party to disregard an EC if the breach goes to the root of the contract?",
+            "options": [
+                "Doctrine of Subrogation",
+                "Doctrine of Quantum Meruit",
+                "Doctrine of Fundamental Breach",
+                "Doctrine of Judicial Notice"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Fundamental breach prevents reliance on exemption clauses."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "The case that overturned the automatic nullification of EC by fundamental breach was:",
+            "options": [
+                "Adel Boshalli v Allied Comm",
+                "Suisse Atlantique",
+                "Photo Productions v Securicor",
+                "Karsales v Wallis"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Photo Production v Securicor held that EC is a matter of construction."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the Illiterates Protection Law, a document written for an illiterate must include a statement that it was:",
+            "options": [
+                "Approved by a magistrate",
+                "Written in their presence",
+                "Signed under seal",
+                "Read over and explained"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "This ensures the illiterate understood the contents before signing."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "In P.Z & CO v. Gusau and Kantoma, the 'writer of the document' was interpreted as the person who:",
+            "options": [
+                "Negotiated the agreement",
+                "Typed the contract",
+                "Enters the name and address of the illiterate",
+                "Translated the document"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The person who actually writes the name of the illiterate is the writer under the law."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the strict common law definition of an illiterate?",
+            "options": [
+                "One unable to read English",
+                "One unable to read with understanding",
+                "One who is totally ignorant of letters",
+                "A graduate in a foreign language"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The strict definition is someone who cannot read or write at all."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "In Nigeria, what is the age of majority for determining contractual capacity under the Child Rights Act 2003?",
+            "options": [
+                "18",
+                "21",
+                "16",
+                "25"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The Child Rights Act sets the age of adulthood at 18."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "At common law, the two types of contracts absolutely binding on an infant were necessaries and:",
+            "options": [
+                "Simple contracts",
+                "Formal contracts",
+                "Gratuitous promises",
+                "Beneficial contracts of service"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Contracts for education or apprenticeship are binding if they benefit the infant."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "Necessary goods must be suitable to the infant's condition and to his actual requirements at the time of:",
+            "options": [
+                "Negotiation",
+                "Sale and delivery",
+                "Ratification",
+                "Repudiation"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the infant is already well-supplied, the goods are not 'necessaries'."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Exclusion Clauses and Capacity",
+        "type": "objective",
+        "question_data": {
+            "text": "Contracts of loan, goods other than necessaries, and account stated involving infants are:",
+            "options": [
+                "Voidable",
+                "Absolutely void",
+                "Valid unless ratified",
+                "Subject to discretion"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Under the Infants Relief Act 1874, these are void."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Privity of Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the core principle of the doctrine of Privity of Contract?",
+            "options": [
+                "Only signers are bound",
+                "Only parties to a contract can sue or be sued",
+                "Only sealed contracts are enforceable",
+                "Third-party beneficiaries can always enforce"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Privity means only those who are parties to the agreement have rights under it."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Privity of Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "The doctrine of privity was firmly established by the House of Lords in which locus classicus?",
+            "options": [
+                "Dutton v Poole",
+                "Tweddle v Atkinson",
+                "Dunlop v Selfridge Ltd.",
+                "Ikpeazu v ACB"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Dunlop v Selfridge is the definitive modern authority on privity."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Privity of Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "Which exception to privity binds subsequent purchasers of land to restrictions (covenants)?",
+            "options": [
+                "Assignments",
+                "Novation",
+                "Banker’s commercial credits",
+                "Covenants running with the land"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Tulk v Moxhay established that restrictive covenants can bind third parties with notice."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Privity of Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "A transaction by which a new contract replaces an existing one with consent of all parties is:",
+            "options": [
+                "Assignment",
+                "Novation",
+                "Trust concept",
+                "Collateral contract"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Novation effectively transfers obligations by creating a new contract."
+        }
+    },
+    {
+        "course": "Law of Contract",
+        "topic": "Privity of Contract",
+        "type": "objective",
+        "question_data": {
+            "text": "In the Trust concept exception to privity, if A promises B to benefit C, equity may treat B as a __________ for C.",
+            "options": [
+                "Guarantor",
+                "Agent",
+                "Trustee",
+                "Administrator"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The promisee holds the right to sue for the benefit of the third party."
+        }
+    }
+]

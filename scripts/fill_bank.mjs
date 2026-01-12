@@ -30,6 +30,16 @@ const TOPICS_TO_POPULATE = {
         "Concept of Settlement",
         "Co-ownership"
     ],
+    "Law of Contract": [
+        "Introduction and Classification of Contracts",
+        "Offer and Invitation to Treat",
+        "Acceptance and Termination",
+        "Consideration",
+        "Promissory Estoppel and Legal Relations",
+        "Terms of a Contract",
+        "Exclusion Clauses and Capacity",
+        "Privity of Contract"
+    ],
     "Equity and Trusts": [
         "Meaning, Nature, Origin, and Reception of Equity",
         "Maxims of Equity",
