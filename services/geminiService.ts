@@ -320,24 +320,26 @@ export const generateQuizQuestions = async (
 export const batchGenerateAndSaveQuestions = async (
   course: string,
   topic: string,
-  type: 'theory' | 'objective',
-  count: number
+  count: number,
+  type: 'theory' | 'objective' = 'objective'
 ): Promise<{ success: boolean; count: number; message?: string }> => {
   if (!API_KEY) return { success: false, count: 0, message: "API Key missing" };
 
   try {
-    // Standard Bank Retrieval for administrative batching/seeding
-    const questions = await generateQuizQuestions(course, topic, count);
+    // For Admin seeding, we use AI Studio directly to generate NEW questions
+    const questions = await generateStandardQuestions(course, topic, count);
 
     if (!questions || questions.length === 0) {
-      return { success: false, count: 0, message: "No questions in bank/available." };
+      return { success: false, count: 0, message: "Generation returned no results." };
     }
 
     const rowsToInsert = questions.map((q: any) => ({
       course,
       topic,
       type,
-      question_data: q
+      question_data: q,
+      is_verified: false, // AI generated questions start as unverified
+      created_at: new Date()
     }));
 
     const { error } = await supabase

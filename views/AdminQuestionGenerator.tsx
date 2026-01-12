@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { COCCIN_COURSES, COCCIN_TOPICS } from '../types';
+import { COURSE_TOPICS } from '../types';
 import { batchGenerateAndSaveQuestions, importQuestionsToBank } from '../services/geminiService';
 import { Button } from '../components/Button';
 import { Database, Save, AlertCircle, CheckCircle, Loader2 } from 'lucide-react';
@@ -13,7 +13,27 @@ export const AdminQuestionGenerator: React.FC = () => {
     const [isGenerating, setIsGenerating] = useState(false);
     const [status, setStatus] = useState<{ type: 'success' | 'error', message: string } | null>(null);
 
-    const availableTopics = selectedCourse ? (COCCIN_TOPICS[selectedCourse] || []) : [];
+    const allCourses = Object.keys(COURSE_TOPICS).sort();
+    const availableTopics = selectedCourse ? (COURSE_TOPICS[selectedCourse] || []) : [];
+
+    const handleGenerate = async () => {
+        if (!selectedCourse || !selectedTopic) return;
+        setIsGenerating(true);
+        setStatus(null);
+        try {
+            const result = await batchGenerateAndSaveQuestions(selectedCourse, selectedTopic, count, questionType);
+            if (result.success) {
+                setStatus({ type: 'success', message: `Successfully generated and saved ${result.count} questions!` });
+            } else {
+                setStatus({ type: 'error', message: result.message || "Generation failed." });
+            }
+        } catch (err) {
+            console.error(err);
+            setStatus({ type: 'error', message: "Generation failed. Check console." });
+        } finally {
+            setIsGenerating(false);
+        }
+    };
 
     const [importJson, setImportJson] = useState('');
     const [activeTab, setActiveTab] = useState<'generate' | 'import'>('generate');
@@ -107,7 +127,7 @@ export const AdminQuestionGenerator: React.FC = () => {
                             className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-slate-900 outline-none bg-white"
                         >
                             <option value="">-- Select Course --</option>
-                            {COCCIN_COURSES.map(c => <option key={c} value={c}>{c}</option>)}
+                            {allCourses.map(c => <option key={c} value={c}>{c}</option>)}
                         </select>
                     </div>
 
