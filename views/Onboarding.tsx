@@ -14,7 +14,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
   const [name, setName] = useState('');
   const [university, setUniversity] = useState('');
   const [level, setLevel] = useState('100 Level');
-  
+
   // Course Selection State
   const [selectedCourses, setSelectedCourses] = useState<Set<string>>(new Set());
   const [expandedLevels, setExpandedLevels] = useState<Set<string>>(new Set());
@@ -80,11 +80,11 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
         <div className="w-full max-w-md space-y-8">
           <div className="text-center space-y-2">
             <div className="flex justify-center mb-6">
-               <img src="learned_logo.png" alt="Learned Logo" className="h-24 w-auto" />
+              <img src="learned_logo.png" alt="Learned Logo" className="h-24 w-auto" />
             </div>
-            <h1 className="text-3xl font-serif font-bold text-slate-900 -mt-4">Welcome to Learned</h1>
+            <h1 className="text-3xl font-serif font-bold text-slate-900 -mt-4">Learned: Empowering the Future of Law in Nigeria</h1>
             <p className="text-slate-600 leading-relaxed font-medium">
-              The educational development of Nigeria is the shared responsibility of all Nigerians. Read Section 14(2)b, Section 18, and Section 20-21.
+              Contributing our quota to resolve the issue of academic underperformance, specifically for law students across Nigeria.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
           <div className="text-center space-y-2 mb-8">
             <h2 className="text-2xl font-serif font-bold text-slate-900">Select Your Courses</h2>
             <p className="text-slate-600">
-              We've selected compulsory courses for <span className="font-semibold text-slate-900">{level}</span>. <br/>
+              We've selected compulsory courses for <span className="font-semibold text-slate-900">{level}</span>. <br />
               Please add your electives and any carryover courses.
             </p>
           </div>
@@ -158,7 +158,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
               <span className="font-medium text-slate-700">Course List</span>
               <span className="text-sm text-amber-600 font-medium">{selectedCourses.size} Selected</span>
             </div>
-            
+
             <div className="divide-y divide-slate-100 max-h-[60vh] overflow-y-auto">
               {Object.entries(COURSE_STRUCTURE).map(([lvl, data]) => {
                 const isCurrentLevel = lvl === level;
@@ -166,15 +166,15 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
                 return (
                   <div key={lvl} className="bg-white">
-                    <button 
+                    <button
                       onClick={() => toggleLevelExpand(lvl)}
                       className={`w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors ${isCurrentLevel ? 'bg-amber-50 hover:bg-amber-50/80' : ''}`}
                     >
                       <div className="flex items-center gap-3">
-                         <span className={`font-bold ${isCurrentLevel ? 'text-amber-700' : 'text-slate-700'}`}>{lvl}</span>
-                         {isCurrentLevel && <span className="text-xs bg-amber-200 text-amber-800 px-2 py-0.5 rounded-full">My Level</span>}
+                        <span className={`font-bold ${isCurrentLevel ? 'text-amber-700' : 'text-slate-700'}`}>{lvl}</span>
+                        {isCurrentLevel && <span className="text-xs bg-amber-200 text-amber-800 px-2 py-0.5 rounded-full">My Level</span>}
                       </div>
-                      {isExpanded ? <ChevronUp size={20} className="text-slate-400"/> : <ChevronDown size={20} className="text-slate-400"/>}
+                      {isExpanded ? <ChevronUp size={20} className="text-slate-400" /> : <ChevronDown size={20} className="text-slate-400" />}
                     </button>
 
                     {isExpanded && (
@@ -188,8 +188,8 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                                 <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${selectedCourses.has(course) ? 'bg-amber-600 border-amber-600' : 'border-slate-300 bg-white'}`}>
                                   {selectedCourses.has(course) && <Check size={14} className="text-white" />}
                                 </div>
-                                <input 
-                                  type="checkbox" 
+                                <input
+                                  type="checkbox"
                                   className="hidden"
                                   checked={selectedCourses.has(course)}
                                   onChange={() => toggleCourse(course)}
@@ -210,8 +210,8 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                                   <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${selectedCourses.has(course) ? 'bg-amber-600 border-amber-600' : 'border-slate-300 bg-white'}`}>
                                     {selectedCourses.has(course) && <Check size={14} className="text-white" />}
                                   </div>
-                                  <input 
-                                    type="checkbox" 
+                                  <input
+                                    type="checkbox"
                                     className="hidden"
                                     checked={selectedCourses.has(course)}
                                     onChange={() => toggleCourse(course)}
@@ -252,28 +252,31 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
         <div className="relative z-10 space-y-8">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 leading-tight">
-            The development of the Nigerian educational sector is the shared responsibility of all Nigerian institutions and stakeholders.
+            Learned: Empowering the Future of Law in Nigeria
           </h2>
 
           <div className="space-y-6 text-slate-700 text-lg leading-relaxed font-serif">
             <p>
-              The right to education as recognised under the Nigerian constitution is categorised under the class of socio-economic rights. This classification has ssubjected education to a second class concern of the government and this can be seen in the non-justiciability of educational rights. A more appropriate constitutional interpretation would be that though the right to education is non-justiciable all stakeholders within and without the Nigerian government must work independently and jointly to develop the Nigerian educational sector.
+              The challenge of academic underperformance in Nigeria’s educational system is a complex, far-reaching problem. While the right to education is a constitutional ideal, its non-enforceability often leaves it as a secondary concern.
             </p>
             <p>
-              Learned seeks to address the issue of academic underperformance within the context of law students across Nigeria. Academic underperformance can be a failure of the state, institutions, the family and even students but its consequences are far reaching and all encompassing.
+              At Learned, we believe that developing the Nigerian educational sector is a shared responsibility; one that goes beyond the government and requires the active commitment of every stakeholder.
+            </p>
+            <p className="font-bold text-slate-900">
+              Our Mission is Simple: To directly confront and contribute our quota to resolve the issue of academic underperformance, specifically for law students across Nigeria.
             </p>
           </div>
 
           <div className="pt-8 border-t border-slate-100">
             <p className="text-xl font-bold text-slate-900 mb-1">Join Learned today.</p>
             <p className="text-lg text-slate-600 mb-8">Enjoy the right to education and lets grow together.</p>
-            
+
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
               <div>
                 <p className="font-serif font-bold text-lg text-slate-900">Adebayo Gbadebo</p>
                 <p className="text-amber-700 font-medium">Co-founder, Learned</p>
               </div>
-              
+
               <Button onClick={handleFinalSubmit} className="px-8 py-4 text-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all">
                 Enter Learned
               </Button>
