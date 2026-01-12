@@ -1,0 +1,322 @@
+[
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The phrase 'Equity acts in personam' means that equity:",
+            "options": [
+                "Applies to everyone",
+                "Enforces its decrees against the person of the defendant",
+                "Only affects property",
+                "Is personal to the judge"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity historically enforced its orders through imprisonment or fines against the individual."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'fusion' of law and equity was accomplished by:",
+            "options": [
+                "The Magna Carta",
+                "The Judicature Acts 1873-1875",
+                "The Land Use Act",
+                "The Constitution"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Judicature Acts allowed both law and equity to be administered in the same courts."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "In the event of a conflict between law and equity, which prevails?",
+            "options": [
+                "The Common Law",
+                "Equity",
+                "Neither; the Governor decides",
+                "Both are abolished"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 25 of the Judicature Act 1873 confirms the supremacy of equity in cases of conflict."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The reception of English Equity into Nigeria was through:",
+            "options": [
+                "Religious conversion",
+                "Local Enactments (e.g. High Court Laws)",
+                "Traditional rulers",
+                "Military decree only"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Reception statutes introduced 'statutes of general application' and equity into Nigerian law."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Chancellor's Foot' metaphor refers to:",
+            "options": [
+                "A unit of measurement",
+                "The variable and subjective nature of early equitable relief",
+                "A type of punishment",
+                "The King's authority"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Selden famously quipped that equity was as variable as the length of the Chancellor's foot."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Which Earl's Case (1615) established that equity could stay a common law judgment?",
+            "options": [
+                "Earl of Oxford's Case",
+                "Earl of Warwick's Case",
+                "Earl of Essex's Case",
+                "Earl of Sandwich's Case"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The Earl of Oxford's Case is the seminal authority for the supremacy of equity."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary objective of early equity was to satisfy:",
+            "options": [
+                "The King's pocket",
+                "The conscience of the defendant",
+                "The logic of the law",
+                "Public opinion"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity was originally a 'court of conscience'."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Is Equity a self-sufficient system of law?",
+            "options": [
+                "Yes",
+                "No; it is a 'gloss' or appendix to the common law",
+                "Only in Nigeria",
+                "Only in the Court of Appeals"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Maitland described equity as a supplement to the law, not a replacement."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The writ system in common law was often criticized for being:",
+            "options": [
+                "Too flexible",
+                "Too rigid and formalistic",
+                "Too cheap",
+                "Too fast"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The inability to obtain a writ for new types of wrongs led to the rise of Equity."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Which Nigerian statute typically receives English law and equity?",
+            "options": [
+                "The Criminal Code",
+                "Interpretation Act (and regional High Court Laws)",
+                "The Land Use Act",
+                "The Evidence Act"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These statutes authorize the application of English common law and equity in Nigeria."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Twelve Maxims of Equity' are:",
+            "options": [
+                "Statutory laws",
+                "Guiding principles for the exercise of discretion",
+                "Religious commandments",
+                "Arguments for the defense"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Maxims are not rigid rules but flexible guidelines for the court."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'trust' is a creation of:",
+            "options": [
+                "The Common Law",
+                "Equity",
+                "Merchant custom",
+                "The Parliament"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The trust is equity's greatest contribution to legal science."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Equity will not assist a 'volunteer' means it will not:",
+            "options": [
+                "Help people who work for free",
+                "Enforce a promise where no consideration was given",
+                "Help a criminal",
+                "Help a person without a lawyer"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity generally requires value/consideration to intervene in an agreement."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "'He who comes to equity must come with clean hands' refers to:",
+            "options": [
+                "Personal hygiene",
+                "Past conduct of the plaintiff in the transaction",
+                "The defendant's guilt",
+                "The judge's impartiality"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A plaintiff who has acted improperly regarding the claim will be denied relief."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'New Equity' in modern law often refers to:",
+            "options": [
+                "Digital currency",
+                "Promissory Estoppel and Unconscionability",
+                "Environmental law",
+                "The Land Use Act"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Modern equitable principles like estoppel have expanded equity's reach."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "'Delay defeats equities' is another way of saying:",
+            "options": [
+                "The court is busy",
+                "The clock is ticking",
+                "Laches and acquiescence",
+                "The trial is postponed"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Unreasonable delay in asserting a right can bar equitable relief."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The Judicature Acts fused:",
+            "options": [
+                "The bodies of law",
+                "The administration of law and equity (the procedures)",
+                "The UK and Nigeria",
+                "The Church and State"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It was a procedural fusion, though some argue it led to a substantive fusion over time."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of these is NOT an equitable remedy?",
+            "options": [
+                "Injunction",
+                "Specific Performance",
+                "Damages as of right at common law",
+                "Rescission"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Common law damages are a right; equitable remedies are discretionary."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Equity's jurisdiction to set aside a contract for 'undue influence' is based on:",
+            "options": [
+                "Fraud",
+                "The abuse of a relationship of trust/confidence",
+                "Lack of money",
+                "Public safety"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity protects vulnerable parties from the overbearing influence of others."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Meaning, Nature, Origin, and Reception of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The reception date for English law (including equity) in some Nigerian states is:",
+            "options": [
+                "1914",
+                "January 1, 1900",
+                "1960",
+                "1978"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Many statutes use 1900 as the cutoff for 'statutes of general application'."
+        }
+    }
+]
