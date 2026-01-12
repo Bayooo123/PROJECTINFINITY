@@ -19,6 +19,24 @@ const TOPICS_TO_POPULATE = {
     "Criminal Law": [
         "General Principles of Criminal Liability",
         "Homicide (Murder & Manslaughter)"
+    ],
+    "Land Law": [
+        "Land Law as Property: Introduction",
+        "Land Rights",
+        "Customary Land Tenure System",
+        "Customary Land Transactions",
+        "Land Use Act",
+        "Estates in Land",
+        "Concept of Settlement",
+        "Co-ownership"
+    ],
+    "Equity and Trusts": [
+        "Meaning, Nature, Origin, and Reception of Equity",
+        "Maxims of Equity",
+        "Nature of Equitable Interest and Doctrine of Notice",
+        "Assignment of Choses in Action",
+        "Injunction",
+        "Specific Performance"
     ]
 };
 const TARGET_COUNT = 20;

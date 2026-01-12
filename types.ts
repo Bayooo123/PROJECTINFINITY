@@ -230,22 +230,22 @@ export const COURSE_TOPICS: Record<string, string[]> = {
     "Strict Liability (Rylands v Fletcher)"
   ],
   "Land Law": [
-    "Land Use Act 1978",
-    "Customary Land Tenure",
-    "Right of Occupancy",
-    "Governor's Consent",
-    "Mortgages",
-    "Leases and Tenancy",
-    "Easements and Profits"
+    "Land Law as Property: Introduction",
+    "Land Rights",
+    "Customary Land Tenure System",
+    "Customary Land Transactions",
+    "Land Use Act",
+    "Estates in Land",
+    "Concept of Settlement",
+    "Co-ownership"
   ],
   "Equity and Trusts": [
+    "Meaning, Nature, Origin, and Reception of Equity",
     "Maxims of Equity",
-    "Equitable Remedies",
-    "Creation of Trusts",
-    "Duties of Trustees",
-    "Charitable Trusts",
-    "Resulting and Constructive Trusts",
-    "Administration of Estates"
+    "Nature of Equitable Interest and Doctrine of Notice",
+    "Assignment of Choses in Action",
+    "Injunction",
+    "Specific Performance"
   ],
   "Commercial Law": [
     "Agency",
@@ -382,19 +382,26 @@ export const COCCIN_TOPICS: Record<string, string[]> = {
     "Law and Justice"
   ],
   "Land Law": [
-    "concept of property",
-    "features of a land",
-    "History of the Nigerian land tenure system",
-    "land rights",
-    "customary land tenure system"
+    "Land Law as Property: Introduction",
+    "Land Rights",
+    "Customary Land Tenure System",
+    "Customary Land Transactions",
+    "Land Use Act",
+    "Estates in Land",
+    "Concept of Settlement",
+    "Co-ownership"
   ],
   "Law of Banking": [
     "History of the banking system",
     "Types of banks"
   ],
   "Equity and Trusts": [
-    "Evolution of equity",
-    "Maxims of equity"
+    "Meaning, Nature, Origin, and Reception of Equity",
+    "Maxims of Equity",
+    "Nature of Equitable Interest and Doctrine of Notice",
+    "Assignment of Choses in Action",
+    "Injunction",
+    "Specific Performance"
   ],
   "Law of Insurance": [
     "History of insurance",
