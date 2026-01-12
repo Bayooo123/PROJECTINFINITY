@@ -209,7 +209,8 @@ export const generateQuizQuestions = async (
     );
   } catch (error) {
     console.error("Error generating quiz:", error);
-    return [];
+    // Rethrow to allow UI to show specific error
+    throw error;
   }
 };
 
@@ -262,7 +263,8 @@ export const generateCoccinQuestions = async (
     }
   } catch (error) {
     console.error("Error generating COCCIN questions:", error);
-    return [];
+    // Rethrow to allow UI to show specific error
+    throw error;
   }
 };
 
