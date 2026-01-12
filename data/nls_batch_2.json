@@ -1,0 +1,802 @@
+[
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Customary Law and Validity",
+        "type": "objective",
+        "question_data": {
+            "text": "A custom permitting two women to get married to each other was rejected in Meribe v. Egbu because it was contrary to:",
+            "options": [
+                "Natural justice",
+                "Common law",
+                "Public policy",
+                "Statutory provisions"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Customs that violate public policy (such as 'woman-to-woman marriage' in certain contexts) are held invalid."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Customary Law and Validity",
+        "type": "objective",
+        "question_data": {
+            "text": "When a custom is judicially noticed, what happens to the need for strict proof by evidence?",
+            "options": [
+                "It is always required.",
+                "It is dispensed with.",
+                "It is required only in superior courts.",
+                "It depends on the complexity of the custom."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Judicial notice means the court accepts the fact (the custom) without requiring further proof because it is well-established."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Customary Law and Validity",
+        "type": "objective",
+        "question_data": {
+            "text": "The burden of proving an alleged custom lies on which party?",
+            "options": [
+                "The judge",
+                "The court clerk",
+                "The party who asserts and seeks to rely on it",
+                "The opposing counsel"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The general rule of evidence is that he who asserts must prove; this applies to the existence of customary rules."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Customary Law and Validity",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Taiwo v. Dosunmu, for a custom to be judicially noticed, it must have been recognized by the courts in:",
+            "options": [
+                "Ghana",
+                "The area where it is to be judicially noticed",
+                "All West African countries",
+                "The Supreme Court only"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A custom must be 'sufficiently established' in the relevant geographical area to be judicially noticed."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the primary source of Islamic Law, containing Allah's revelation to Prophet Muhammed (SAW)?",
+            "options": [
+                "Hadith/Sunna",
+                "Ijma",
+                "The Qiyas",
+                "Holy Qur’an"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "The Holy Qur'an is the supreme and literal word of God in Islam and the primary source of Sharia."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The second source of Islamic Law, referring to the collected traditions of the acts and statements of the Prophet, is known as:",
+            "options": [
+                "Ijma",
+                "Hadith/Sunna",
+                "Qiyas",
+                "Taorata"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Sunna (tradition) and Hadith (sayings) clarify and complement the Qur'anic revelations."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "What source of Islamic Law means the 'consensus of opinion of Muslim jurists or scholars'?",
+            "options": [
+                "Qiyas",
+                "Hadith",
+                "Ijma",
+                "Qur'an"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Ijma represents the collective wisdom of legal scholars when the primary sources are silent."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the term for the process of deduction in Islamic Law by which the law of text is applied to cases not covered by the original text, based on analogy?",
+            "options": [
+                "Ijma",
+                "Sunna",
+                "Qiyas",
+                "Sahih"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Qiyas (analogical deduction) allows the law to be extended to new situations via reasoned analogy."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "International law is concerned with regulating the affairs of:",
+            "options": [
+                "Private individuals",
+                "Sovereign states",
+                "Federal High Courts",
+                "Local governments"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Public International Law primarily governs the relations between independent states."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary maxim governing treaties in international law is pacto sumt servanda, which means that all obligations must be:",
+            "options": [
+                "Ratified",
+                "Domestically enacted",
+                "Respected",
+                "Subject to Qiyas"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Pacta sunt servanda (agreements must be kept) is the bedrock of treaty law."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The maxim 'He who seeks equity must come with clean hands' is an example of a general principle of law recognized by:",
+            "options": [
+                "Customary courts",
+                "Traditional rulers",
+                "Civilized nations",
+                "Islamic jurists"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "General principles of law recognized by civilized nations are a formal source of international law."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Islamic Law and International Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The hierarchy of international law sources places which sources as subordinate or subsidiary?",
+            "options": [
+                "Treaties and Customs",
+                "Opinions of writers and Judicial Decisions",
+                "General Principles and Treaties",
+                "Codifications and Resolutions"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Art 38 of the ICJ Statute lists judicial decisions and teachings of highly qualified publicists as subsidiary means."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "Conflict of laws arises in Nigeria due to its complex diversity and agglomeration of laws, known as:",
+            "options": [
+                "Judicial activism",
+                "Normative hierarchy",
+                "Legal transplantation",
+                "Legal pluralism (heterogeneity)"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Legal pluralism occurs when multiple legal systems (English, Customary, Islamic) co-exist within one state."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "In a conflict between Federal law and State law on a matter on the Concurrent Legislative List, the Federal law will prevail due to the doctrine of:",
+            "options": [
+                "Lex situs",
+                "Covering the field",
+                "Judicial notice",
+                "Repugnancy"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The doctrine of 'covering the field' ensures federal supremacy in shared legislative areas."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "Customary law will generally not apply in a transaction if the transaction is:",
+            "options": [
+                "Written",
+                "Unwritten",
+                "Unknown to customary law",
+                "Accepted by natives"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Parties may opt-out of customary law if the transaction is fundamentally foreign to custom."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "In Labinjoh v. Abake, the court decided that even though both parties were natives, customary law could not apply because the Infants Relief Act (English law) was applicable, illustrating that:",
+            "options": [
+                "Customary law is supreme",
+                "Statutes supersede customary law",
+                "Public policy prevents application",
+                "Repugnancy applies to infants"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Labinjoh v Abake demonstrated that statutes (received or local) override conflicting customary rules."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "The general rule in cases between a Nigerian and a non-Nigerian is that the transaction will be governed by:",
+            "options": [
+                "Customary law",
+                "Islamic law",
+                "English law",
+                "International law"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Transactions involving non-natives are generally presumed to be governed by the laws of the 'civilized state' (English law)."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "In cases of intestate succession, what law is the general rule for determining the distribution of property?",
+            "options": [
+                "Law of the place where the land is situated (lex situs)",
+                "Law prevailing in the area of the court’s jurisdiction",
+                "Personal law of the deceased",
+                "English common law"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Succession to intestate property is governed by the personal law of the deceased at the time of death."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "What law applies in land matters, aligning with the principle of lex situs?",
+            "options": [
+                "The law of the deceased",
+                "The law where the land is located",
+                "The law agreed upon by the parties",
+                "The law of the place of litigation"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Lex situs (law of the place) is the universal conflict rule for immovable property (land)."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "In the conflict of laws, if both parties are subject to different laws, the court should apply the law to which the parties, subject matter, and entire transaction are:",
+            "options": [
+                "Most convenient",
+                "Most significantly connected",
+                "Least contradictory",
+                "Most recent"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 'center of gravity' or 'most significant relationship' test helps resolve complex conflict scenarios."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "In Olowu v. Olowu, the court determined the deceased Ijesa man's property distribution by applying Benin customary law because he was deemed to have chosen the law of that community as his:",
+            "options": [
+                "Lex situs",
+                "Personal law",
+                "Lex fori",
+                "Law of the place of death"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Individuals can opt into a different personal law by fully integrating into and being accepted by a different community."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Internal Conflict of Laws",
+        "type": "objective",
+        "question_data": {
+            "text": "Where a custom is alleged but not judicially noticed, the law permits the use of books or manuscripts to prove the rule of customary law, provided the book is:",
+            "options": [
+                "Written by a professor",
+                "Recognized by natives as a legal authority",
+                "Written pre-1900",
+                "Written in English"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Textbooks or manuscripts must be recognized by the community members as providing a correct statement of custom."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "Which court is considered an inferior court of record in the Nigerian judicial hierarchy?",
+            "options": [
+                "Federal High Court",
+                "Court of Appeal",
+                "Magistrates Court",
+                "National Industrial Court"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Magistrate and District courts are inferior courts of record, whereas High Courts are superior courts of record."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "In Nigeria, laws that impose duties or define conduct are referred to as:",
+            "options": [
+                "Secondary rules",
+                "Primary duty imposing rules",
+                "Rules of recognition",
+                "Rules of change"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "H.L.A. Hart categorized laws into primary rules (conduct) and secondary rules (power conferring)."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The reception of English law was partly considered inevitable because English law was considered superior for business and trade, and existing customary law was seen as:",
+            "options": [
+                "Unwritten",
+                "Too flexible",
+                "Inadequate or barbaric",
+                "Too modern"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Colonial administrators viewed many indigenous customs as unsuitable for modern commerce and public order."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The controversy over the limiting date (January 1, 1900) primarily questions whether it applies to SOGA or also to the unwritten laws of:",
+            "options": [
+                "Common law and equity",
+                "Local enactments",
+                "Customary laws",
+                "International treaties"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "There is legal debate on whether the reception date applies only to statutes or also limits the common law and equity."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "What did the Supreme Court state concerning foreign authorities in relation to local case law?",
+            "options": [
+                "Foreign authorities are superior to local ones.",
+                "Foreign authorities must be followed if post-1900.",
+                "Foreign cases are persuasive and not binding.",
+                "Foreign opinions replace Nigerian case law."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "While influential, decisions from courts outside Nigeria (like the UK House of Lords) no longer bind Nigerian courts."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "What form of distinguishing involves accepting the ratio decidendi of a previous case but finding a significant difference in the facts of the subsequent case?",
+            "options": [
+                "Restrictive distinguishing",
+                "Non-restrictive distinguishing",
+                "Original distinguishing",
+                "Declaratory distinguishing"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Distinguishing preserves the earlier rule but restricts its application to similar facts."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that a delegated power cannot be further sub-delegated without express or implied authority is expressed by the maxim:",
+            "options": [
+                "Ultra vires",
+                "Ratio decidendi",
+                "Delegatus non potest delegare",
+                "Nemo Judex In Causa Sua"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Delegatus non potest delegare prevents a delegate from passing their powers to another unless authorized."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule of statutory interpretation that advises judges to adopt a secondary meaning of words if the literal meaning produces an absurd result is the:",
+            "options": [
+                "Literal Rule",
+                "Golden Rule",
+                "Mischief Rule",
+                "Purposive Approach"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Golden Rule serves as a safety valve for the literal rule to optimize justice."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "In the application of the Ejusdem Generis Rule, when specific words are followed by general words, the meaning of the general words is typically:",
+            "options": [
+                "Expanded universally",
+                "Restrained by the preceding specific words",
+                "Determined by legislative intent",
+                "Ignored completely"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "General words are interpreted as being of the same nature as the specific list preceding them."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The abolition of Customary Criminal Law means that virtually all cases of conflicts of laws now arising are primarily:",
+            "options": [
+                "Constitutional matters",
+                "Civil matters",
+                "Criminal matters",
+                "Administrative matters"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "With the abolition of customary crime, internal conflict of laws is mostly restricted to civil transactions and family law."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The two major sources of evidence permitted in proving an alleged customary law (when not judicially noticed) are witnesses and:",
+            "options": [
+                "Juju",
+                "Oracles",
+                "Books or manuscripts",
+                "Statutes"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Expert witnesses and authoritative books are the primary means of proving custom as a fact in court."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "Which rule of equity states that a party seeking equitable remedy must act promptly?",
+            "options": [
+                "Equity follows the law",
+                "He who seeks equity must do equity",
+                "Delay defeats equity",
+                "Equity looks to intent not form"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The doctrine of Laches and the maxim 'delay defeats equity' emphasize the importance of timely claims."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "Why is the strict proof of an alleged rule of customary law generally unnecessary in Customary Courts?",
+            "options": [
+                "Customary law is always written",
+                "The rule of stare decisis is strictly applied",
+                "They are often presided over by persons indigenous to the area",
+                "Customs are universally applicable"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Judges of customary courts are presumed to know the law of their own community."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the term for the written or enacted laws from the major legislative arm of government?",
+            "options": [
+                "Subsidiary legislation",
+                "Decrees",
+                "Edicts",
+                "Statutes (Primary Laws)"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Statutes are formal written enactments passed by legislative bodies."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The power granted to courts by Section 6(6)(b) of the Constitution to review the actions of the government is referred to as:",
+            "options": [
+                "Original jurisdiction",
+                "Judicial review",
+                "Appellate power",
+                "Enforcement power"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Judicial review allows courts to check executive and legislative actions for constitutionality."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of judicial decisions, judges who apply sound logic and common sense to resolve cases of first impression are creating what type of precedent?",
+            "options": [
+                "Derivative precedent",
+                "Declaratory precedent",
+                "Original precedent",
+                "Binding precedent"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Original precedents are set when a court decides a point of law for the first time."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian Legal System is characterized by the duality of English Law and Customary Law, reflecting what broad socio-political feature?",
+            "options": [
+                "Federation",
+                "Accusatorial system",
+                "Military influence",
+                "Heterogeneity/Legal pluralism"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Legal pluralism is the hallmark of post-colonial systems that integrate multiple legal traditions."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "What are the laws that prescribe the method or process by which legal objectives are attained and rights are enforced (e.g., law of evidence, civil procedure law)?",
+            "options": [
+                "Substantive law",
+                "Common law",
+                "Procedural law",
+                "Customary law"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Procedural law governs the 'how' of the legal process, ensuring due process."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "When applying English statutes locally, reception statutes require that names and places peculiar to England should be replaced with names known to Nigeria, which is referred to as making necessary:",
+            "options": [
+                "Verbal alterations",
+                "Substantial modifications",
+                "Constitutional changes",
+                "Judicial notices"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Verbal alterations are formal adjustments to make received laws readable in the local context."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary purpose of receiving English law, according to some academic views, was to enable Nigeria's legal institutions to eventually develop their:",
+            "options": [
+                "Civil law tradition",
+                "Religious law",
+                "Own legal system",
+                "Statutory codes"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Reception was a transitional phase to providing a framework for the development of an indigenous legal system."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "Why is the Western Region's approach to incorporating SOGA unique compared to other regions?",
+            "options": [
+                "They rejected SOGA entirely.",
+                "They adopted SOGA via Common Law.",
+                "They enacted SOGA as local legislation, incorporating post-1900 developments.",
+                "They applied SOGA only to land matters."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Western Region (now roughly the SW) took the initiative to 'localize' English statutes in its 1959 laws."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "What does Section 12 of the Constitution require concerning international treaties before they can have the force of law in Nigeria?",
+            "options": [
+                "Ratification by the President",
+                "Approval by the Supreme Court",
+                "Enactment into law by the National Assembly",
+                "Recognition by the UN"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "S.12 ensures that the legislature retains control over which international laws affect Nigerian citizens."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "What must judicial officers generally demonstrate before they can be considered experts whose opinion is relevant in the proof of customary law?",
+            "options": [
+                "Legal degrees",
+                "Foreign experience",
+                "Special knowledge or skill in the custom",
+                "Written publications"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Expertise in custom is based on empirical knowledge and experience within the specific culture."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of the Pure Theory of Law, the process of determining the legal validity of a rule by reference to whether it was laid down in accordance with stipulated requirements is:",
+            "options": [
+                "Subjective",
+                "Formal",
+                "Functional",
+                "Equitable"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Pure theory focuses on the formal chain of validity (the hierarchy of norms)."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian Legal System's adherence to a highly structured judicial hierarchy primarily serves to enhance certainty and minimize the influence of:",
+            "options": [
+                "Constitutional flaws",
+                "Executive interference",
+                "Personal bias",
+                "Legislative pressure"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The hierarchy ensures that legal rules are applied consistently across the nation, reducing arbitrary decisions."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule of statutory interpretation applied in Smith v. Hughes, which looked at the underlying objective of cleaning up the streets, is the:",
+            "options": [
+                "Literal Rule",
+                "Golden Rule",
+                "Mischief Rule",
+                "Ejusdem Generis Rule"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Smith v Hughes is a classic application of the mischief rule to fulfill the legislature's intent (clearing streets of solicitation)."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "In the event that an alleged custom fails to pass all three validity tests, the courts may invoke which body of law as a last resort?",
+            "options": [
+                "Customary Law of the adjacent community",
+                "English law",
+                "Procedural law",
+                "International law"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If a custom is rejected, judges often fall back on English common law or equity to resolve the dispute."
+        }
+    },
+    {
+        "course": "Nigerian Legal System",
+        "topic": "Judicial Hierarchy and Additional Topics",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that equity will not permit a statute to be a cloak for fraud is an equitable maxim designed to prevent the law from becoming an engine of:",
+            "options": [
+                "Discretion",
+                "Injustice",
+                "Fraud",
+                "Technicality"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity intervenes to prevent the strict letter of the law from being used to facilitate wrongful acts."
+        }
+    }
+]

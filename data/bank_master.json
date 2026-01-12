@@ -3680,806 +3680,6 @@
     }
   },
   {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "Which is the only type of contract that does not require the furnishing of consideration?",
-      "options": [
-        "Simple contracts",
-        "Bilateral contracts",
-        "Contracts made under seal",
-        "Unilateral contracts"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Contracts under seal (deeds) derive their validity from their form, not consideration."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "Consideration was defined in Currie v. Misa as focusing on what basic feature of the doctrine?",
-      "options": [
-        "Reciprocity",
-        "Morality",
-        "Adequacy",
-        "Formality"
-      ],
-      "correctAnswerIndex": 0,
-      "explanation": "Currie v. Misa defined consideration in terms of benefit or detriment (reciprocity)."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "According to the rule of consideration affirmed in Faloughi v. Faloughi, what generally cannot constitute sufficient consideration?",
-      "options": [
-        "A nominal sum",
-        "An executory promise",
-        "Natural love and affection",
-        "Detriment suffered by the promisee"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Natural love and affection is sentimental and not sufficient in legal eyes."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "A promise made without requiring some kind of promise or act in return from the promisee is termed a:",
-      "options": [
-        "Collateral promise",
-        "Gratuitous promise",
-        "Executed promise",
-        "Formal promise"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "A gratuitous promise is unenforceable under simple contract law."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "Which form of consideration happens when delivery and payment occur later, and each promise is consideration for the other?",
-      "options": [
-        "Past consideration",
-        "Executory consideration",
-        "Executed consideration",
-        "Gratuitous consideration"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Executory consideration is a promise for a promise."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "Consideration given by the promisee which was furnished before the promisor made the promise is known as:",
-      "options": [
-        "Executed consideration",
-        "Executory consideration",
-        "Sufficient consideration",
-        "Past consideration"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "Past consideration is generally no consideration."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "The doctrine of implied assumpsit, an exception to the rule of past consideration, was illustrated in which case?",
-      "options": [
-        "Re McArdle",
-        "Lampleigh v. Brathwait",
-        "Akenzua II v. Benin Council",
-        "African Petroleum v. Owodunni"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Lampleigh v. Brathwait held that a prior request can link a past act to a later promise."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "In the absence of fraud or duress, courts generally will not question the ___________ of consideration.",
-      "options": [
-        "Sufficiency",
-        "Legality",
-        "Adequacy",
-        "Reciprocity"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Consideration must be sufficient but need not be adequate."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "In Chappel v. Nestle, the chocolate bar wrappers were deemed to constitute partial consideration because:",
-      "options": [
-        "They had economic value",
-        "They were useless to either party",
-        "They were specifically requested by the defendants",
-        "They formed part of a bilateral contract"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Since the offeror requested them, they were part of the consideration."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "The rule in White v. Bluet demonstrated that giving up something one is not legally entitled to do, such as ceasing complaints, constitutes:",
-      "options": [
-        "Adequate consideration",
-        "Insufficient consideration",
-        "Executory consideration",
-        "Executed consideration"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "A promise not to complain about something you have no right to complain about is not consideration."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "Performance of a duty already imposed by law (public duty) cannot constitute valid consideration unless the plaintiff:",
-      "options": [
-        "Receives express permission",
-        "Acts in excess of what the law required",
-        "Is also bound by a third-party contract",
-        "Waives their legal rights"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Exceeding a legal duty provides fresh consideration."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "The principle established in Stilk v. Myrick is that performing a duty already owed under a contract with the promisor:",
-      "options": [
-        "Constitutes fresh consideration",
-        "Does not constitute fresh consideration",
-        "Is a conditional acceptance",
-        "Is an example of promissory estoppel"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Stilk v. Myrick held that doing what you're already contracted to do is not new consideration."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "What rule states that part payment of a lesser sum does not discharge a debtor from the obligation to pay the full amount?",
-      "options": [
-        "Rule in Hyde v. Wrench",
-        "Rule in Pinnel’s Case",
-        "Rule in Stilk v. Myrick",
-        "Rule in Carlill v. Carbolic Smoke Ball Co."
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Pinnel's Case established that part-payment of a debt is not full satisfaction."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Consideration",
-    "type": "objective",
-    "question_data": {
-      "text": "The rule in Pinnel’s Case can be avoided by the introduction of a new element, such as:",
-      "options": [
-        "Payment of the lesser sum",
-        "Part payment at an earlier date",
-        "Payment using cash",
-        "Payment after the due date"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Payment earlier or at a different place can satisfy the whole debt."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "Which doctrine prohibits a promisor from enforcing his strict legal position where the promisee has, in good faith, acted on the promise?",
-      "options": [
-        "Subrogation",
-        "Contra proferentem",
-        "Novation",
-        "Promissory Estoppel"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "Promissory estoppel prevents injustice when a party relies on a promise."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "The seminal case that firmly established the doctrine of Promissory Estoppel is:",
-      "options": [
-        "Jorden v. Money",
-        "Hughes v. Metropolitan Railway Co",
-        "The High Trees Case",
-        "Combe v. Combe"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Central London Property Trust v High Trees House Ltd is the key case."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "Promissory Estoppel acts as a ___________ and not a ___________, meaning it cannot create new causes of action.",
-      "options": [
-        "Sword; shield",
-        "Shield; sword",
-        "Contract; agreement",
-        "Permanent; temporary"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "It is a defense (shield), not a ground for a lawsuit (sword)."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "A situation where a debtor who owes multiple people money agrees with creditors to accept a fraction of debts is called:",
-      "options": [
-        "Promissory Estoppel",
-        "Subrogation",
-        "Composition with creditors",
-        "Part payment"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Composition with creditors is a valid exception to the part-payment rule."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "In social and domestic agreements, what is the rebuttable presumption regarding contractual intention?",
-      "options": [
-        "Parties intend to be legally bound",
-        "Intention is irrelevant",
-        "Parties do not intend to create legal relations",
-        "The agreement is automatically void"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Balfour v Balfour established that domestic agreements carry no intention to be bound."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "The presumption that contractual intention is absent between spouses does not apply in cases where the couple is:",
-      "options": [
-        "Living in amity",
-        "Separated or about to separate",
-        "Engaging in small transactions",
-        "Relying on mutual affection"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Merritt v Merritt showed that separated couples often intend to be bound."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "An extravagant statement made in a commercial context that no reasonable man would believe is termed a:",
-      "options": [
-        "Collateral contract",
-        "Honor clause",
-        "Mere puff",
-        "Misrepresentation"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Puffs are non-binding sales talk."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Promissory Estoppel and Legal Relations",
-    "type": "objective",
-    "question_data": {
-      "text": "A clause in commercial agreements which expressly excludes contractual intention, often using 'in honor only', is an:",
-      "options": [
-        "Implied term",
-        "Exclusion Clause",
-        "Collateral Term",
-        "Honor Clause"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "Honor clauses make agreements binding in honor only, not in law."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "The importance of distinguishing between a term of a contract and a representation lies in determining the:",
-      "options": [
-        "Jurisdiction",
-        "Consideration",
-        "Remedy",
-        "Capacity"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Breach of term leads to contract remedies; misrepresentation leads to tort/rescission."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "The test for distinguishing a term from a representation that asks about the time gap between the statement and final agreement is the:",
-      "options": [
-        "Relative Skill & Expertise Test",
-        "Degree of Importance Test",
-        "Timing Test",
-        "Parol Evidence Rule"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "The closer a statement is to the contract, the more likely it is a term."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "If a statement is made by a party with special knowledge or skill compared to the other party, it is likely treated as a:",
-      "options": [
-        "Mere representation",
-        "Collateral promise",
-        "Term",
-        "Warranty"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Dick Bentley v Harold Smith established that expertise makes a statement a term."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "What type of term forms the main purpose of the contract, non-performance of which destroys the very substance of it?",
-      "options": [
-        "Warranty",
-        "Condition",
-        "Intermediate term",
-        "Fundamental term"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "A fundamental term is the core of the contract."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "A provision forming an essential part of the contract, breach of which allows the injured party to repudiate, is a:",
-      "options": [
-        "Warranty",
-        "Condition",
-        "Fundamental breach",
-        "Collateral term"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Breach of condition allows repudiation and damages."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "A condition whose happening operates to destroy an existing contractual obligation is called a:",
-      "options": [
-        "Condition precedent",
-        "Condition inherent",
-        "Intermediate condition",
-        "Condition subsequent"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "A condition subsequent ends an existing contract."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "In Bettini v. Gye, the singer's promise to be in London for rehearsals was held to be a:",
-      "options": [
-        "Condition",
-        "Fundamental term",
-        "Warranty",
-        "Condition subsequent"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Rehearsals were not central to the performance contract itself."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "For intermediate terms, the remedy for breach depends primarily on the:",
-      "options": [
-        "Nature of the term",
-        "Status of the parties",
-        "Extent and severity of the breach",
-        "Express wording"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Hong Kong Fir Shipping v Kawasaki established the 'severity' test for innominate terms."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "What doctrine allows courts to assume the existence of certain terms not expressly included to make the contract workable?",
-      "options": [
-        "Delegatus non potest delegare",
-        "Business efficacy",
-        "Contra proferentem",
-        "Consensus ad idem"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "The 'Moorcock' established the business efficacy test for implied terms."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "Which English statute, applicable to Nigeria, implies certain conditions in every contract of sale?",
-      "options": [
-        "Statute of Frauds 1677",
-        "Infants Relief Act 1874",
-        "Sale of Goods Act 1893",
-        "Limitation Act 1980"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "The Sale of Goods Act implies terms like fitness for purpose and merchantable quality."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "According to Section 14(2) of the Sale of Goods Act, goods bought must be of what quality?",
-      "options": [
-        "Acceptable",
-        "Merchantable",
-        "Adequate",
-        "Suitable"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Merchantable quality is the statutory standard."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Terms of a Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "What rule of construction dictates that words are construed more forcibly against the party using them?",
-      "options": [
-        "Literal Rule",
-        "Ejusdem Generis Rule",
-        "Contra Proferentem Rule",
-        "Golden Rule"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Contra proferentem protects the weaker party in interpretation."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "For an unsigned Exclusion Clause (EC) to bind an injured party, notice of it must be given:",
-      "options": [
-        "After the contract is concluded",
-        "Only if requested",
-        "Before the contract is concluded",
-        "By registered mail"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Thornton v Shoe Lane Parking held that notice must come before the 'click' or 'ticket'."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "In signed documents, a person is generally bound by an EC whether they read it or not, provided there is no:",
-      "options": [
-        "Negligence",
-        "Fraud, duress, or misrepresentation",
-        "Lack of consideration",
-        "Unilateral mistake"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "L'Estrange v Graucob established this strict rule for signed documents."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "Which principle allows a party to disregard an EC if the breach goes to the root of the contract?",
-      "options": [
-        "Doctrine of Subrogation",
-        "Doctrine of Quantum Meruit",
-        "Doctrine of Fundamental Breach",
-        "Doctrine of Judicial Notice"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Fundamental breach prevents reliance on exemption clauses."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "The case that overturned the automatic nullification of EC by fundamental breach was:",
-      "options": [
-        "Adel Boshalli v Allied Comm",
-        "Suisse Atlantique",
-        "Photo Productions v Securicor",
-        "Karsales v Wallis"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Photo Production v Securicor held that EC is a matter of construction."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "According to the Illiterates Protection Law, a document written for an illiterate must include a statement that it was:",
-      "options": [
-        "Approved by a magistrate",
-        "Written in their presence",
-        "Signed under seal",
-        "Read over and explained"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "This ensures the illiterate understood the contents before signing."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "In P.Z & CO v. Gusau and Kantoma, the 'writer of the document' was interpreted as the person who:",
-      "options": [
-        "Negotiated the agreement",
-        "Typed the contract",
-        "Enters the name and address of the illiterate",
-        "Translated the document"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "The person who actually writes the name of the illiterate is the writer under the law."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "What is the strict common law definition of an illiterate?",
-      "options": [
-        "One unable to read English",
-        "One unable to read with understanding",
-        "One who is totally ignorant of letters",
-        "A graduate in a foreign language"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "The strict definition is someone who cannot read or write at all."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "In Nigeria, what is the age of majority for determining contractual capacity under the Child Rights Act 2003?",
-      "options": [
-        "18",
-        "21",
-        "16",
-        "25"
-      ],
-      "correctAnswerIndex": 0,
-      "explanation": "The Child Rights Act sets the age of adulthood at 18."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "At common law, the two types of contracts absolutely binding on an infant were necessaries and:",
-      "options": [
-        "Simple contracts",
-        "Formal contracts",
-        "Gratuitous promises",
-        "Beneficial contracts of service"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "Contracts for education or apprenticeship are binding if they benefit the infant."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "Necessary goods must be suitable to the infant's condition and to his actual requirements at the time of:",
-      "options": [
-        "Negotiation",
-        "Sale and delivery",
-        "Ratification",
-        "Repudiation"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "If the infant is already well-supplied, the goods are not 'necessaries'."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Exclusion Clauses and Capacity",
-    "type": "objective",
-    "question_data": {
-      "text": "Contracts of loan, goods other than necessaries, and account stated involving infants are:",
-      "options": [
-        "Voidable",
-        "Absolutely void",
-        "Valid unless ratified",
-        "Subject to discretion"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Under the Infants Relief Act 1874, these are void."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Privity of Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "What is the core principle of the doctrine of Privity of Contract?",
-      "options": [
-        "Only signers are bound",
-        "Only parties to a contract can sue or be sued",
-        "Only sealed contracts are enforceable",
-        "Third-party beneficiaries can always enforce"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Privity means only those who are parties to the agreement have rights under it."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Privity of Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "The doctrine of privity was firmly established by the House of Lords in which locus classicus?",
-      "options": [
-        "Dutton v Poole",
-        "Tweddle v Atkinson",
-        "Dunlop v Selfridge Ltd.",
-        "Ikpeazu v ACB"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "Dunlop v Selfridge is the definitive modern authority on privity."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Privity of Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "Which exception to privity binds subsequent purchasers of land to restrictions (covenants)?",
-      "options": [
-        "Assignments",
-        "Novation",
-        "Banker’s commercial credits",
-        "Covenants running with the land"
-      ],
-      "correctAnswerIndex": 3,
-      "explanation": "Tulk v Moxhay established that restrictive covenants can bind third parties with notice."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Privity of Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "A transaction by which a new contract replaces an existing one with consent of all parties is:",
-      "options": [
-        "Assignment",
-        "Novation",
-        "Trust concept",
-        "Collateral contract"
-      ],
-      "correctAnswerIndex": 1,
-      "explanation": "Novation effectively transfers obligations by creating a new contract."
-    }
-  },
-  {
-    "course": "Law of Contract",
-    "topic": "Privity of Contract",
-    "type": "objective",
-    "question_data": {
-      "text": "In the Trust concept exception to privity, if A promises B to benefit C, equity may treat B as a __________ for C.",
-      "options": [
-        "Guarantor",
-        "Agent",
-        "Trustee",
-        "Administrator"
-      ],
-      "correctAnswerIndex": 2,
-      "explanation": "The promisee holds the right to sue for the benefit of the third party."
-    }
-  },
-  {
     "course": "Constitutional Law",
     "topic": "Constitution, Constitutional Law and Constitutionalism",
     "type": "objective",
@@ -6077,6 +5277,1606 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Natural justice requires hearing both sides of a dispute fairly."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The totality of laws, legal rules, and legal machinery operating within Nigeria as a sovereign or independent African country is known as the:",
+      "options": [
+        "Received English Law",
+        "Nigerian Legal System",
+        "Constitutional Framework",
+        "International Legal Order"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Nigerian Legal System encompasses all laws and mechanisms for justice administration in Nigeria."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the term for the self-existent principle (apex norm) from which all other principles or norms in a legal system are derived, according to Kelsen?",
+      "options": [
+        "Obiter Dictum",
+        "Ratio Decidendi",
+        "Grundnorm or Basic norm",
+        "Judicial Precedent"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Hans Kelsen's Pure Theory of Law identifies the Grundnorm as the ultimate source of legal validity."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The Nigerian Legal System is based on which foreign legal tradition, due to colonization and legal transplantation?",
+      "options": [
+        "Civil Law",
+        "Germanic Law",
+        "English Common Law",
+        "Roman Law"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Nigeria's legal system is primarily a derivative of the English Common Law tradition."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "Section 45(1) of the Interpretation Act states that the Common Law of England, doctrines of equity, and Statutes of General Application (SOGA) are applicable in Nigeria, provided they were in force on:",
+      "options": [
+        "October 1, 1960",
+        "January 1, 1000",
+        "December 31, 1959",
+        "May 29, 1999"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The reception date for English law (SOGA) in Nigeria is January 1, 1900."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "A special feature of the Nigerian Legal System where judicial decisions of higher courts are binding on lower courts is the doctrine of:",
+      "options": [
+        "Legal Reasoning",
+        "Stare Decisis (Judicial Precedent)",
+        "Legal Pluralism",
+        "Adjudication"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Stare decisis ensures consistency and predictability in the legal system by following precedents."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "In the Nigerian Legal System's accusatorial or adversary system of adjudication, the courts are expected to maintain a neutral stand and avoid:",
+      "options": [
+        "Consulting legal experts",
+        "Writing dissenting judgments",
+        "Descending into the arena",
+        "Adopting inductive reasoning"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "In an adversary system, the judge acts as an impartial umpire and must not take over the role of counsel."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "Which theory of law, espoused by John Austin, defines law as a 'command set by a superior being to inferior beings and enforced by sanctions'?",
+      "options": [
+        "Natural Law Theory",
+        "Historical School",
+        "Command Theory (Positivist School)",
+        "Sociological School"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "John Austin's Command Theory is a foundational concept in the Positivist School of Jurisprudence."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The Natural Law School believes that for a law to be valid, it must conform to certain objective moral principles based on the nature of man and the dictates of:",
+      "options": [
+        "Command",
+        "Sovereignty",
+        "Reason",
+        "History"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Natural law is discovered through human reason and is considered universal and eternal."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "Hans Kelsen's Pure Theory of Law argues that the main concern of the theory is the formal validity of laws, but not their:",
+      "options": [
+        "Derivation",
+        "Hierarchy",
+        "Functions or content (justness)",
+        "Normative structure"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Kelsen's theory is 'pure' because it seeks to exclude non-legal factors like morality or politics."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Introduction and Theories of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The Historical School, led by Friedrich Carl Von Savigny, views law as a product arising from the:",
+      "options": [
+        "Sovereign's command",
+        "Social conduct of the people",
+        "Reason and logic",
+        "History of society and its 'volkgeist' (spirit of the people)"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Savigny believed law is rooted in the collective consciousness or 'spirit' of the people."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "Which classification of law is concerned with laws regulating relationships between persons and conferring rights and obligations upon individuals (e.g., contract law, tort law)?",
+      "options": [
+        "Public law",
+        "Criminal law",
+        "Private law",
+        "Procedural law"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Private law (Civil law) deals with disputes between private individuals or entities."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "In a civil law action, the objective is generally __________, and the outcome is often a finding that one party is __________.",
+      "options": [
+        "Punishment; guilty",
+        "Compensation; liable",
+        "Adjudication; supreme",
+        "Sanction; convicted"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Civil actions seek to restore the plaintiff to their original position through compensation (damages)."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "Which body of law defines the existence and extent of a right in a particular branch of law (e.g., validity of contracts)?",
+      "options": [
+        "Procedural law",
+        "International law",
+        "Customary law",
+        "Substantive law"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Substantive law defines legal rights and duties, while procedural law defines the process for enforcing them."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "What are the laws indigenous to native communities, often requiring proof by evidence?",
+      "options": [
+        "Received English Law",
+        "Local Enactments",
+        "Customary Law",
+        "Public Law"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Customary law is unwritten and must be proved as a fact unless it is judicially noticed."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the term for the process of adopting rules from other legal systems, used to incorporate English law into the Nigerian system?",
+      "options": [
+        "Domestication",
+        "Legal Pluralism",
+        "Legal Transplantation",
+        "Judicial Activism"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Legal transplantation involves moving legal rules or systems from one country to another."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The Common Law of England is largely unwritten and characterized as:",
+      "options": [
+        "Legislatively enacted",
+        "Judge made",
+        "Codified",
+        "Based on divine revelation"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Common law consists of rules and principles developed through judicial decisions over centuries."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "Equity was developed to mitigate the harshness and technicalities of Common Law. In the event of a conflict between the two, which one shall prevail?",
+      "options": [
+        "Common Law",
+        "Statute Law",
+        "Equity",
+        "Local Custom"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Following the Earl of Oxford's Case, it is well-established that equity prevails where it conflicts with common law."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "Which maxim of Equity states that remedies are not automatic but depend on the court's judgment?",
+      "options": [
+        "Equity follows the law",
+        "Equity acts in personam",
+        "Delay defeats equity",
+        "Equitable remedies are discretionary"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Unlike common law damages, equitable remedies like specific performance are granted at the court's discretion."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "When determining the geographical entity for Statutes of General Application (SOGA), courts settled on using the definition of:",
+      "options": [
+        "The UK",
+        "Great Britain",
+        "Nigeria",
+        "England"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Courts generally interpret 'Statutes of General Application' as those that applied across England on the reception date."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The Western Region approach to reception, established in 1959, enacted SOGA as:",
+      "options": [
+        "Federal Decrees",
+        "Local legislations",
+        "Customary rules",
+        "Judicial precedents"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Western Region Law of England (Application) Law 1959 enacted relevant English statutes as local laws."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Classification and Sources of Law",
+    "type": "objective",
+    "question_data": {
+      "text": "If an English statute was enacted before January 1, 1900, but repealed in England after 1900, it:",
+      "options": [
+        "Is not applicable in Nigeria",
+        "Still applies in Nigeria (unless locally repealed)",
+        "Applies only in Lagos",
+        "Is superseded by Common Law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Repeal of a received statute in England after the reception date does not affect its validity in Nigeria."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the core guiding principle leading to a court's decision in a case, which forms the binding aspect of judicial precedent?",
+      "options": [
+        "Obiter Dictum",
+        "Ratio Decidendi",
+        "Stare Decisis",
+        "Judicial Notice"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The ratio decidendi is the legal reasoning or principle upon which the court's decision is based."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "A definitive pronouncement made by a judge that is not directly relevant to the issues under consideration is known as:",
+      "options": [
+        "Ratio Decidendi",
+        "Judicial Review",
+        "Obiter Dictum",
+        "Original Precedent"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Obiter dicta are 'things said by the way' and are persuasive but not binding."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "Which type of precedent establishes a new rule of law and happens in cases of first impression?",
+      "options": [
+        "Derivative Precedent",
+        "Declaratory Precedent",
+        "Original Precedent",
+        "Persuasive Precedent"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Original precedents occur when a judge must formulate a new rule because none exists for the case."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "The Supreme Court will depart from its previous decisions in special cases, such as when a decision was given:",
+      "options": [
+        "Persuasively",
+        "Per incuriam",
+        "Judicially noticed",
+        "Extra-judicially"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Supreme Court is not absolutely bound by its precedents if they were made in error or caused injustice."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "Which court is the Court of Appeal primarily bound by?",
+      "options": [
+        "Magistrates Court",
+        "Privy Council",
+        "Supreme Court",
+        "High Court"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Under the doctrine of stare decisis, the Court of Appeal must follow decisions of the Supreme Court."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "A decision is deemed per incuriam when it was arrived at by the court in ignorance or forgetfulness of an authority, statutory or otherwise, that is:",
+      "options": [
+        "Persuasive",
+        "Binding on that court",
+        "Easily distinguishable",
+        "Highly persuasive"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Per incuriam decisions lack binding authority because they ignored relevant laws or precedents."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "When faced with two conflicting decisions from the Supreme Court, what approach ensures consistency and upholds stare decisis?",
+      "options": [
+        "Lower court refers the conflict to the Supreme Court",
+        "Lower court picks the later decision",
+        "Lower court picks and chooses which decision seems correct",
+        "Lower court applies the per incuriam rule"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "In cases of conflict between Supreme Court rulings, the lower court should seek clarification from the apex court."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "The process where a court rejects an earlier case because the material facts are different is called:",
+      "options": [
+        "Overruling",
+        "Abstraction",
+        "Distinguishing",
+        "Ratification"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Distinguishing allows a judge to avoid a precedent by showing it is factually different from the current case."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Case Law and Stare Decisis",
+    "type": "objective",
+    "question_data": {
+      "text": "Decisions of the Supreme Court, even if pre-1900, are considered by Nigerian courts to be primarily:",
+      "options": [
+        "Persuasive and not binding",
+        "Absolutely binding",
+        "Irrelevant",
+        "Subject to the House of Lords"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Questions of whether foreign decisions bind local courts often boil down to their persuasive value in the local context."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Local Enactments and Legislation",
+    "type": "objective",
+    "question_data": {
+      "text": "For any international treaty to have the force of law in Nigeria, it must have been enacted into law by the National Assembly, a process known as:",
+      "options": [
+        "Ratification",
+        "Implementation",
+        "Judicial Review",
+        "Domestication"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Nigeria follows a dualist system where treaties must be domesticated by statute to be enforceable locally."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Local Enactments and Legislation",
+    "type": "objective",
+    "question_data": {
+      "text": "The type of legislation that is enacted by the major legislative arm of government (National Assembly or House of Assembly) is known as:",
+      "options": [
+        "Subsidiary legislation",
+        "Primary law or statute",
+        "Delegated legislation",
+        "Bye-Law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Primary legislation consists of Acts (Federal) and Laws (State) passed by the respective legislatures."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Local Enactments and Legislation",
+    "type": "objective",
+    "question_data": {
+      "text": "What doctrine is a major legal limitation to subsidiary legislations, requiring them to operate within the bounds of the powers conferred by the enabling law?",
+      "options": [
+        "Delegatus non potest delegare",
+        "Rule of law",
+        "Ultra-vires",
+        "Ratio decidendi"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The ultra vires doctrine renders any law or act void if it exceeds the authority granted by the parent statute."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Local Enactments and Legislation",
+    "type": "objective",
+    "question_data": {
+      "text": "When a bill is passed by both Houses of the National Assembly and the President withholds assent, the bill can still become law if subsequently passed by a 2/3 majority of:",
+      "options": [
+        "The Supreme Court",
+        "The Joint Finance Committee",
+        "Each House",
+        "The Provisional Ruling Council"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The legislature can override a presidential veto by repassing the bill with a qualified majority."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Local Enactments and Legislation",
+    "type": "objective",
+    "question_data": {
+      "text": "Under military rule, the hierarchy of laws placed which document at the apex?",
+      "options": [
+        "The Constitution",
+        "Decrees of the Federal Military Government",
+        "Constitution (Suspension and Modification Decree)",
+        "Acts of the National Assembly"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Military regimes used Suspension Decrees to assert the supremacy of military decrees over the Constitution."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Rules of Statutory Interpretation",
+    "type": "objective",
+    "question_data": {
+      "text": "The judicial philosophy that states the judge's duty is jus dicere (state the law) not jus dare (give the law) is most closely associated with which rule of interpretation?",
+      "options": [
+        "Golden Rule",
+        "Literal Rule",
+        "Mischief Rule",
+        "Purposive Approach"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Literal Rule requires judges to apply words in their plain, ordinary meaning regardless of the outcome."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Rules of Statutory Interpretation",
+    "type": "objective",
+    "question_data": {
+      "text": "The Golden Rule is applied when the literal meaning produces a result that is:",
+      "options": [
+        "Ambiguous",
+        "Manifestly absurd or leads to a miscarriage of justice",
+        "Contrary to public policy",
+        "Contrary to the common law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Golden Rule is a modification of the literal rule used to avoid obvious injustice or absurdity."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Rules of Statutory Interpretation",
+    "type": "objective",
+    "question_data": {
+      "text": "Which rule of interpretation requires the court to look at the law before the statute was passed, the defect the law did not provide for, and the remedy intended by the legislature?",
+      "options": [
+        "Literal Rule",
+        "Ejusdem Generis Rule",
+        "Mischief Rule",
+        "Purposive Approach"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Established in Heydon's Case, the Mischief Rule focuses on the purpose of the legislation."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Rules of Statutory Interpretation",
+    "type": "objective",
+    "question_data": {
+      "text": "Which rule of interpretation dictates that general words following specific words should be interpreted to have a meaning of the same kind as the preceding specific ones?",
+      "options": [
+        "Literal Rule",
+        "Purposive Approach",
+        "Ejusdem Generis Rule",
+        "Golden Rule"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Ejusdem generis means 'of the same kind' and limits the scope of general terms by their context."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Rules of Statutory Interpretation",
+    "type": "objective",
+    "question_data": {
+      "text": "The modern approach to statutory interpretation that favours a general and liberal interpretation, aiming to address gaps and defects in legislation, is the:",
+      "options": [
+        "Narrow approach",
+        "Strict constructionist approach",
+        "New Purposive Approach",
+        "Adversary approach"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The Purposive Approach seeks to give effect to the 'spirit' and intention of the legislature."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Rules of Statutory Interpretation",
+    "type": "objective",
+    "question_data": {
+      "text": "A criticism of the Purposive Approach is that it fails to recognize the principle of:",
+      "options": [
+        "Judicial independence",
+        "Stare decisis",
+        "Separation of powers",
+        "Sovereignty"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Critics argue that the purposive approach allows judges to cross into 'judicial legislation'."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Rules of Statutory Interpretation",
+    "type": "objective",
+    "question_data": {
+      "text": "What external aid to interpretation refers to the traditional transcripts of Parliamentary Debates?",
+      "options": [
+        "Preamble",
+        "Law Commissions Report",
+        "Hansard",
+        "Schedules"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Following Pepper v Hart, Hansard may be consulted to clarify ambiguous legislative intent."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "Customary law is the oldest source of Nigerian law, and is defined as a body of customs accepted by members of a community as:",
+      "options": [
+        "Negotiable",
+        "Flexible",
+        "Binding upon them",
+        "Unwritten"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "For a custom to be law, it must be recognized by the community as having mandatory force."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "Customary Criminal Law was abolished by which section of the Constitution, requiring an offense to be defined and penalized in a written law?",
+      "options": [
+        "Section 4(8)",
+        "Section 36(12)",
+        "Section 18(3)",
+        "Section 12(1)"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The principle of 'nullum crimen sine lege' (no crime without law) is enshrined in S.36(12)."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "A key characteristic of Customary Law noted in the sources is that it is largely:",
+      "options": [
+        "Statutory",
+        "Rigid",
+        "Unwritten",
+        "Formal"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Customary law is traditionally unwritten and transmitted through oral tradition and social usage."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "According to Owoniyin v. Omotosho, customary law is defined as a mirror of accepted usage, which aligns with which characteristic?",
+      "options": [
+        "Flexible",
+        "Unwritten",
+        "Acceptable",
+        "Binding"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Acceptability is the hallmark of custom; it must be the standard behavior of the people."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "Which principle of customary law allows it to be easily adaptable to changing circumstances?",
+      "options": [
+        "Rigidity",
+        "Unwritten nature",
+        "Flexibility",
+        "Universal applicability"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Customary law is organic and changes with the social and economic development of the community."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "The Repugnancy Test requires that a rule of customary law must not be repugnant to natural justice, equity and:",
+      "options": [
+        "Public policy",
+        "Statutory provisions",
+        "Good conscience",
+        "Common law principles"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The validity of customary law is tested against the standards of 'natural justice, equity and good conscience'."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "In Danmole v. Dawodu, the court rejected the Yoruba rule of inheritance known as 'idi-igi', preferring the system where inheritance is shared equally among children (ori ojori), on grounds of:",
+      "options": [
+        "Public policy",
+        "Repugnancy to good conscience",
+        "Incompatibility with statute",
+        "Lack of acceptance"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Idi-igi was challenged in Dawodu v Danmole as potentially discriminatory, though eventually upheld based on specific community practices."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "The test that requires a rule of customary law not to be incompatibility or inconsistent with any law for the time being in force (including Received English Law and Statutes of General Application) is the:",
+      "options": [
+        "Public Policy Test",
+        "Repugnancy Test",
+        "Incompatibility Test",
+        "Acceptance Test"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The Incompatibility Test ensures that custom does not override valid local statutes."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "A custom permitting two women to get married to each other was rejected in Meribe v. Egbu because it was contrary to:",
+      "options": [
+        "Natural justice",
+        "Common law",
+        "Public policy",
+        "Statutory provisions"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Customs that violate public policy (such as 'woman-to-woman marriage' in certain contexts) are held invalid."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "When a custom is judicially noticed, what happens to the need for strict proof by evidence?",
+      "options": [
+        "It is always required.",
+        "It is dispensed with.",
+        "It is required only in superior courts.",
+        "It depends on the complexity of the custom."
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Judicial notice means the court accepts the fact (the custom) without requiring further proof because it is well-established."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "The burden of proving an alleged custom lies on which party?",
+      "options": [
+        "The judge",
+        "The court clerk",
+        "The party who asserts and seeks to rely on it",
+        "The opposing counsel"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The general rule of evidence is that he who asserts must prove; this applies to the existence of customary rules."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Customary Law and Validity",
+    "type": "objective",
+    "question_data": {
+      "text": "According to Taiwo v. Dosunmu, for a custom to be judicially noticed, it must have been recognized by the courts in:",
+      "options": [
+        "Ghana",
+        "The area where it is to be judicially noticed",
+        "All West African countries",
+        "The Supreme Court only"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A custom must be 'sufficiently established' in the relevant geographical area to be judicially noticed."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the primary source of Islamic Law, containing Allah's revelation to Prophet Muhammed (SAW)?",
+      "options": [
+        "Hadith/Sunna",
+        "Ijma",
+        "The Qiyas",
+        "Holy Qur’an"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "The Holy Qur'an is the supreme and literal word of God in Islam and the primary source of Sharia."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The second source of Islamic Law, referring to the collected traditions of the acts and statements of the Prophet, is known as:",
+      "options": [
+        "Ijma",
+        "Hadith/Sunna",
+        "Qiyas",
+        "Taorata"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Sunna (tradition) and Hadith (sayings) clarify and complement the Qur'anic revelations."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "What source of Islamic Law means the 'consensus of opinion of Muslim jurists or scholars'?",
+      "options": [
+        "Qiyas",
+        "Hadith",
+        "Ijma",
+        "Qur'an"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Ijma represents the collective wisdom of legal scholars when the primary sources are silent."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the term for the process of deduction in Islamic Law by which the law of text is applied to cases not covered by the original text, based on analogy?",
+      "options": [
+        "Ijma",
+        "Sunna",
+        "Qiyas",
+        "Sahih"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Qiyas (analogical deduction) allows the law to be extended to new situations via reasoned analogy."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "International law is concerned with regulating the affairs of:",
+      "options": [
+        "Private individuals",
+        "Sovereign states",
+        "Federal High Courts",
+        "Local governments"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Public International Law primarily governs the relations between independent states."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The primary maxim governing treaties in international law is pacto sumt servanda, which means that all obligations must be:",
+      "options": [
+        "Ratified",
+        "Domestically enacted",
+        "Respected",
+        "Subject to Qiyas"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Pacta sunt servanda (agreements must be kept) is the bedrock of treaty law."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The maxim 'He who seeks equity must come with clean hands' is an example of a general principle of law recognized by:",
+      "options": [
+        "Customary courts",
+        "Traditional rulers",
+        "Civilized nations",
+        "Islamic jurists"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "General principles of law recognized by civilized nations are a formal source of international law."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Islamic Law and International Law",
+    "type": "objective",
+    "question_data": {
+      "text": "The hierarchy of international law sources places which sources as subordinate or subsidiary?",
+      "options": [
+        "Treaties and Customs",
+        "Opinions of writers and Judicial Decisions",
+        "General Principles and Treaties",
+        "Codifications and Resolutions"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Art 38 of the ICJ Statute lists judicial decisions and teachings of highly qualified publicists as subsidiary means."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "Conflict of laws arises in Nigeria due to its complex diversity and agglomeration of laws, known as:",
+      "options": [
+        "Judicial activism",
+        "Normative hierarchy",
+        "Legal transplantation",
+        "Legal pluralism (heterogeneity)"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Legal pluralism occurs when multiple legal systems (English, Customary, Islamic) co-exist within one state."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "In a conflict between Federal law and State law on a matter on the Concurrent Legislative List, the Federal law will prevail due to the doctrine of:",
+      "options": [
+        "Lex situs",
+        "Covering the field",
+        "Judicial notice",
+        "Repugnancy"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The doctrine of 'covering the field' ensures federal supremacy in shared legislative areas."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "Customary law will generally not apply in a transaction if the transaction is:",
+      "options": [
+        "Written",
+        "Unwritten",
+        "Unknown to customary law",
+        "Accepted by natives"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Parties may opt-out of customary law if the transaction is fundamentally foreign to custom."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "In Labinjoh v. Abake, the court decided that even though both parties were natives, customary law could not apply because the Infants Relief Act (English law) was applicable, illustrating that:",
+      "options": [
+        "Customary law is supreme",
+        "Statutes supersede customary law",
+        "Public policy prevents application",
+        "Repugnancy applies to infants"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Labinjoh v Abake demonstrated that statutes (received or local) override conflicting customary rules."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "The general rule in cases between a Nigerian and a non-Nigerian is that the transaction will be governed by:",
+      "options": [
+        "Customary law",
+        "Islamic law",
+        "English law",
+        "International law"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Transactions involving non-natives are generally presumed to be governed by the laws of the 'civilized state' (English law)."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "In cases of intestate succession, what law is the general rule for determining the distribution of property?",
+      "options": [
+        "Law of the place where the land is situated (lex situs)",
+        "Law prevailing in the area of the court’s jurisdiction",
+        "Personal law of the deceased",
+        "English common law"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Succession to intestate property is governed by the personal law of the deceased at the time of death."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "What law applies in land matters, aligning with the principle of lex situs?",
+      "options": [
+        "The law of the deceased",
+        "The law where the land is located",
+        "The law agreed upon by the parties",
+        "The law of the place of litigation"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Lex situs (law of the place) is the universal conflict rule for immovable property (land)."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "In the conflict of laws, if both parties are subject to different laws, the court should apply the law to which the parties, subject matter, and entire transaction are:",
+      "options": [
+        "Most convenient",
+        "Most significantly connected",
+        "Least contradictory",
+        "Most recent"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The 'center of gravity' or 'most significant relationship' test helps resolve complex conflict scenarios."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "In Olowu v. Olowu, the court determined the deceased Ijesa man's property distribution by applying Benin customary law because he was deemed to have chosen the law of that community as his:",
+      "options": [
+        "Lex situs",
+        "Personal law",
+        "Lex fori",
+        "Law of the place of death"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Individuals can opt into a different personal law by fully integrating into and being accepted by a different community."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Internal Conflict of Laws",
+    "type": "objective",
+    "question_data": {
+      "text": "Where a custom is alleged but not judicially noticed, the law permits the use of books or manuscripts to prove the rule of customary law, provided the book is:",
+      "options": [
+        "Written by a professor",
+        "Recognized by natives as a legal authority",
+        "Written pre-1900",
+        "Written in English"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Textbooks or manuscripts must be recognized by the community members as providing a correct statement of custom."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "Which court is considered an inferior court of record in the Nigerian judicial hierarchy?",
+      "options": [
+        "Federal High Court",
+        "Court of Appeal",
+        "Magistrates Court",
+        "National Industrial Court"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Magistrate and District courts are inferior courts of record, whereas High Courts are superior courts of record."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "In Nigeria, laws that impose duties or define conduct are referred to as:",
+      "options": [
+        "Secondary rules",
+        "Primary duty imposing rules",
+        "Rules of recognition",
+        "Rules of change"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "H.L.A. Hart categorized laws into primary rules (conduct) and secondary rules (power conferring)."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The reception of English law was partly considered inevitable because English law was considered superior for business and trade, and existing customary law was seen as:",
+      "options": [
+        "Unwritten",
+        "Too flexible",
+        "Inadequate or barbaric",
+        "Too modern"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Colonial administrators viewed many indigenous customs as unsuitable for modern commerce and public order."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The controversy over the limiting date (January 1, 1900) primarily questions whether it applies to SOGA or also to the unwritten laws of:",
+      "options": [
+        "Common law and equity",
+        "Local enactments",
+        "Customary laws",
+        "International treaties"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "There is legal debate on whether the reception date applies only to statutes or also limits the common law and equity."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "What did the Supreme Court state concerning foreign authorities in relation to local case law?",
+      "options": [
+        "Foreign authorities are superior to local ones.",
+        "Foreign authorities must be followed if post-1900.",
+        "Foreign cases are persuasive and not binding.",
+        "Foreign opinions replace Nigerian case law."
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "While influential, decisions from courts outside Nigeria (like the UK House of Lords) no longer bind Nigerian courts."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "What form of distinguishing involves accepting the ratio decidendi of a previous case but finding a significant difference in the facts of the subsequent case?",
+      "options": [
+        "Restrictive distinguishing",
+        "Non-restrictive distinguishing",
+        "Original distinguishing",
+        "Declaratory distinguishing"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Distinguishing preserves the earlier rule but restricts its application to similar facts."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The principle that a delegated power cannot be further sub-delegated without express or implied authority is expressed by the maxim:",
+      "options": [
+        "Ultra vires",
+        "Ratio decidendi",
+        "Delegatus non potest delegare",
+        "Nemo Judex In Causa Sua"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Delegatus non potest delegare prevents a delegate from passing their powers to another unless authorized."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The rule of statutory interpretation that advises judges to adopt a secondary meaning of words if the literal meaning produces an absurd result is the:",
+      "options": [
+        "Literal Rule",
+        "Golden Rule",
+        "Mischief Rule",
+        "Purposive Approach"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Golden Rule serves as a safety valve for the literal rule to optimize justice."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "In the application of the Ejusdem Generis Rule, when specific words are followed by general words, the meaning of the general words is typically:",
+      "options": [
+        "Expanded universally",
+        "Restrained by the preceding specific words",
+        "Determined by legislative intent",
+        "Ignored completely"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "General words are interpreted as being of the same nature as the specific list preceding them."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The abolition of Customary Criminal Law means that virtually all cases of conflicts of laws now arising are primarily:",
+      "options": [
+        "Constitutional matters",
+        "Civil matters",
+        "Criminal matters",
+        "Administrative matters"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "With the abolition of customary crime, internal conflict of laws is mostly restricted to civil transactions and family law."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The two major sources of evidence permitted in proving an alleged customary law (when not judicially noticed) are witnesses and:",
+      "options": [
+        "Juju",
+        "Oracles",
+        "Books or manuscripts",
+        "Statutes"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Expert witnesses and authoritative books are the primary means of proving custom as a fact in court."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "Which rule of equity states that a party seeking equitable remedy must act promptly?",
+      "options": [
+        "Equity follows the law",
+        "He who seeks equity must do equity",
+        "Delay defeats equity",
+        "Equity looks to intent not form"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The doctrine of Laches and the maxim 'delay defeats equity' emphasize the importance of timely claims."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "Why is the strict proof of an alleged rule of customary law generally unnecessary in Customary Courts?",
+      "options": [
+        "Customary law is always written",
+        "The rule of stare decisis is strictly applied",
+        "They are often presided over by persons indigenous to the area",
+        "Customs are universally applicable"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Judges of customary courts are presumed to know the law of their own community."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the term for the written or enacted laws from the major legislative arm of government?",
+      "options": [
+        "Subsidiary legislation",
+        "Decrees",
+        "Edicts",
+        "Statutes (Primary Laws)"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Statutes are formal written enactments passed by legislative bodies."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The power granted to courts by Section 6(6)(b) of the Constitution to review the actions of the government is referred to as:",
+      "options": [
+        "Original jurisdiction",
+        "Judicial review",
+        "Appellate power",
+        "Enforcement power"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Judicial review allows courts to check executive and legislative actions for constitutionality."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "In the context of judicial decisions, judges who apply sound logic and common sense to resolve cases of first impression are creating what type of precedent?",
+      "options": [
+        "Derivative precedent",
+        "Declaratory precedent",
+        "Original precedent",
+        "Binding precedent"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Original precedents are set when a court decides a point of law for the first time."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The Nigerian Legal System is characterized by the duality of English Law and Customary Law, reflecting what broad socio-political feature?",
+      "options": [
+        "Federation",
+        "Accusatorial system",
+        "Military influence",
+        "Heterogeneity/Legal pluralism"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Legal pluralism is the hallmark of post-colonial systems that integrate multiple legal traditions."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "What are the laws that prescribe the method or process by which legal objectives are attained and rights are enforced (e.g., law of evidence, civil procedure law)?",
+      "options": [
+        "Substantive law",
+        "Common law",
+        "Procedural law",
+        "Customary law"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Procedural law governs the 'how' of the legal process, ensuring due process."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "When applying English statutes locally, reception statutes require that names and places peculiar to England should be replaced with names known to Nigeria, which is referred to as making necessary:",
+      "options": [
+        "Verbal alterations",
+        "Substantial modifications",
+        "Constitutional changes",
+        "Judicial notices"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Verbal alterations are formal adjustments to make received laws readable in the local context."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The primary purpose of receiving English law, according to some academic views, was to enable Nigeria's legal institutions to eventually develop their:",
+      "options": [
+        "Civil law tradition",
+        "Religious law",
+        "Own legal system",
+        "Statutory codes"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Reception was a transitional phase to providing a framework for the development of an indigenous legal system."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "Why is the Western Region's approach to incorporating SOGA unique compared to other regions?",
+      "options": [
+        "They rejected SOGA entirely.",
+        "They adopted SOGA via Common Law.",
+        "They enacted SOGA as local legislation, incorporating post-1900 developments.",
+        "They applied SOGA only to land matters."
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The Western Region (now roughly the SW) took the initiative to 'localize' English statutes in its 1959 laws."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "What does Section 12 of the Constitution require concerning international treaties before they can have the force of law in Nigeria?",
+      "options": [
+        "Ratification by the President",
+        "Approval by the Supreme Court",
+        "Enactment into law by the National Assembly",
+        "Recognition by the UN"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "S.12 ensures that the legislature retains control over which international laws affect Nigerian citizens."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "What must judicial officers generally demonstrate before they can be considered experts whose opinion is relevant in the proof of customary law?",
+      "options": [
+        "Legal degrees",
+        "Foreign experience",
+        "Special knowledge or skill in the custom",
+        "Written publications"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Expertise in custom is based on empirical knowledge and experience within the specific culture."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "In the context of the Pure Theory of Law, the process of determining the legal validity of a rule by reference to whether it was laid down in accordance with stipulated requirements is:",
+      "options": [
+        "Subjective",
+        "Formal",
+        "Functional",
+        "Equitable"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Pure theory focuses on the formal chain of validity (the hierarchy of norms)."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The Nigerian Legal System's adherence to a highly structured judicial hierarchy primarily serves to enhance certainty and minimize the influence of:",
+      "options": [
+        "Constitutional flaws",
+        "Executive interference",
+        "Personal bias",
+        "Legislative pressure"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "The hierarchy ensures that legal rules are applied consistently across the nation, reducing arbitrary decisions."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The rule of statutory interpretation applied in Smith v. Hughes, which looked at the underlying objective of cleaning up the streets, is the:",
+      "options": [
+        "Literal Rule",
+        "Golden Rule",
+        "Mischief Rule",
+        "Ejusdem Generis Rule"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Smith v Hughes is a classic application of the mischief rule to fulfill the legislature's intent (clearing streets of solicitation)."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "In the event that an alleged custom fails to pass all three validity tests, the courts may invoke which body of law as a last resort?",
+      "options": [
+        "Customary Law of the adjacent community",
+        "English law",
+        "Procedural law",
+        "International law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "If a custom is rejected, judges often fall back on English common law or equity to resolve the dispute."
+    }
+  },
+  {
+    "course": "Nigerian Legal System",
+    "topic": "Judicial Hierarchy and Additional Topics",
+    "type": "objective",
+    "question_data": {
+      "text": "The principle that equity will not permit a statute to be a cloak for fraud is an equitable maxim designed to prevent the law from becoming an engine of:",
+      "options": [
+        "Discretion",
+        "Injustice",
+        "Fraud",
+        "Technicality"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity intervenes to prevent the strict letter of the law from being used to facilitate wrongful acts."
     }
   },
   {

@@ -2,8 +2,6 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { supabase } from '../lib/supabase';
 import {
   generateStandardQuestions,
-  generateCoccinObjective,
-  generateCoccinTheory,
   generateQuestionsWithRetry
 } from './aiStudioService';
 
@@ -319,48 +317,6 @@ export const generateQuizQuestions = async (
   }
 };
 
-export const generateCoccinQuestions = async (
-  courses: string[],
-  type: 'theory' | 'objective',
-  count: number = 10
-): Promise<any> => {
-  try {
-    // 1. Try fetching from Question Bank
-    const questionsPerCourse = Math.ceil(count / courses.length);
-    let bankQuestions: any[] = [];
-    let allFound = true;
-
-    for (const course of courses) {
-      const { data } = await supabase
-        .from('question_bank')
-        .select('question_data')
-        .eq('course', course)
-        .eq('type', type)
-        .limit(questionsPerCourse);
-
-      if (data && data.length >= questionsPerCourse) {
-        bankQuestions = [...bankQuestions, ...data.map(r => r.question_data)];
-      } else {
-        allFound = false;
-        break;
-      }
-    }
-
-    if (allFound && bankQuestions.length > 0) {
-      console.log(`Fetched COCCIN ${type} questions from Bank!`);
-      return bankQuestions.slice(0, count);
-    }
-
-    console.warn(`Bank insufficient for COCCIN ${type}. Switching to partial return.`);
-
-    // STRICT PRODUCTION MODE: Do NOT generate live.
-    return bankQuestions;
-  } catch (error) {
-    console.error("Error generating COCCIN questions:", error);
-    throw error;
-  }
-};
-
 export const batchGenerateAndSaveQuestions = async (
   course: string,
   topic: string,
@@ -370,8 +326,8 @@ export const batchGenerateAndSaveQuestions = async (
   if (!API_KEY) return { success: false, count: 0, message: "API Key missing" };
 
   try {
-    // Reusing the robust COCCIN logic for admin batching
-    const questions = await generateCoccinQuestions([course], type, count);
+    // Standard Bank Retrieval for administrative batching/seeding
+    const questions = await generateQuizQuestions(course, topic, count);
 
     if (!questions || questions.length === 0) {
       return { success: false, count: 0, message: "No questions in bank/available." };

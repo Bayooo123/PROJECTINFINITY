@@ -283,6 +283,7 @@ export const COURSE_TOPICS: Record<string, string[]> = {
     "Customary Law and Validity",
     "Islamic Law and International Law",
     "Internal Conflict of Laws",
+    "Judicial Hierarchy and Additional Topics"
   ],
   "Law of Partnership": [
     "Nature of Partnership",
@@ -348,127 +349,5 @@ export const LEARNING_FACTS = [
   }
 ];
 
-export const COCCIN_COURSES = [
-  "Administrative Law",
-  "Company Law",
-  "Constitutional Law",
-  "Criminal Law",
-  "Equity and Trusts",
-  "Jurisprudence and Legal Theory",
-  "Land Law",
-  "Law of Commercial Transactions",
-  "Law of Contract",
-  "Law of Evidence",
-  "Law of Torts",
-  "Legal Method",
-  "Nigerian Legal System"
-];
 
-export const COCCIN_TOPICS: Record<string, string[]> = {
-  "Company Law": [
-    "Forms of Business Association",
-    "History of Company Law",
-    "Formation of Company"
-  ],
-  "Law of Evidence": [
-    "Nature, History and Sources of Evidence Law",
-    "Relevancy and Admissibility",
-    "Illegally Obtained Evidence and Relevancy",
-    "Res Gestae"
-  ],
-  "Jurisprudence and Legal Theory": [
-    "Nature of Jurisprudence",
-    "Law and Morality",
-    "Law and Justice"
-  ],
-  "Land Law": [
-    "Land Law as Property: Introduction",
-    "Land Rights",
-    "Customary Land Tenure System",
-    "Customary Land Transactions",
-    "Land Use Act",
-    "Estates in Land",
-    "Concept of Settlement",
-    "Co-ownership"
-  ],
-  "Law of Contract": [
-    "Introduction and Classification of Contracts",
-    "Offer and Invitation to Treat",
-    "Acceptance and Termination",
-    "Consideration",
-    "Promissory Estoppel and Legal Relations",
-    "Terms of a Contract",
-    "Exclusion Clauses and Capacity",
-    "Privity of Contract"
-  ],
-  "Law of Banking": [
-    "History of the banking system",
-    "Types of banks"
-  ],
-  "Equity and Trusts": [
-    "Meaning, Nature, Origin, and Reception of Equity",
-    "Maxims of Equity",
-    "Nature of Equitable Interest and Doctrine of Notice",
-    "Assignment of Choses in Action",
-    "Injunction",
-    "Specific Performance"
-  ],
-  "Law of Insurance": [
-    "History of insurance",
-    "Nature and definition of insurance",
-    "Classification, Registration and Modes of Operation of insurance",
-    "Formation of a contract of insurance"
-  ],
-  "Petroleum and Energy Law": [
-    "History of oil and gas",
-    "The legal definition of the habitat of oil and gas",
-    "Ownership of mineral resources"
-  ],
-  "Taxation Law": [
-    "General nature of taxation",
-    "Sources of tax law",
-    "Fiscal policy",
-    "Personal income tax"
-  ],
-  "Constitutional Law": [
-    "Constitution, Constitutional Law and Constitutionalism",
-    "Constitutional Concepts (Rule of Law & Supremacy)",
-    "Constitutional Concepts (Separation of Powers & Rights)",
-    "Constitutional History and Interpretation",
-    "The Legislature",
-    "The Executive",
-    "The Judiciary",
-    "Federalism and Local Government",
-    "Electoral System and Constitutional History (Advanced)"
-  ],
-  "Nigerian Legal System": [
-    "Meaning and Definition of a Legal System",
-    "Characteristics of the Nigerian Legal System",
-    "Historical Development of the Nigerian Legal System"
-  ],
-  "Administrative Law": [
-    "Introduction and Relationship with Constitutional Law",
-    "Theories, Functions, and Sources",
-    "Classification of Administrative Powers"
-  ],
-  "Criminal Law": [
-    "General Principles of Criminal Liability",
-    "Parties to an Offence",
-    "Homicide (Murder & Manslaughter)"
-  ],
-  "Law of Commercial Transactions": [
-    "Agency",
-    "Hire Purchase",
-    "Sale of Goods"
-  ],
-  "Law of Torts": [
-    "Negligence",
-    "Defamation",
-    "Trespass to Person"
-  ],
-  "Legal Method": [
-    "Law in Social Context",
-    "Sources of Nigerian Law",
-    "Methods of Social Control"
-  ]
-};
+// END OF FILE
