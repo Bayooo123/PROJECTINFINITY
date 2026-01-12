@@ -1,0 +1,322 @@
+[
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'settlement' is adopted by a landowner to provide for:",
+            "options": [
+                "A quick sale",
+                "A succession of beneficiaries",
+                "The Governor's taxes",
+                "Criminal defense"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Settlements manage property for the benefit of generations."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "'Strict settlement' was traditionally used to:",
+            "options": [
+                "Sell land quickly",
+                "Keep land in the family through successive generations",
+                "Give land to the Church",
+                "Abolish fee simples"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Strict settlement ensured land remained within biological lineages."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "The Settled Land Act 1882 gave the 'tenant for life' the power to:",
+            "options": [
+                "Kill the heirs",
+                "Sell, lease, or mortgage the settled land",
+                "Cancel the settlement",
+                "Bequeath the land to a stranger"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Act modernized settlements by giving the life tenant managerial powers."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Act, land is 'settled land' if it is held by:",
+            "options": [
+                "An adult in fee simple",
+                "An infant",
+                "The Governor",
+                "A stranger"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Land held by an infant is automatically treated as settled land under the statute."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'trust for sale' directs trustees to:",
+            "options": [
+                "Keep the land forever",
+                "Sell the land and hold the proceeds for beneficiaries",
+                "Give the land to the King",
+                "Mine the land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The primary duty is to sell, though they can postpone it."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Doctrine of Conversion' treats land held on trust for sale as:",
+            "options": [
+                "Soil",
+                "Money/Personalty",
+                "A crime",
+                "A building"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity treats that as done which ought to be done (converting land to money)."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'trust for sale' must be:",
+            "options": [
+                "Optional",
+                "Immediate and binding",
+                "For 99 years",
+                "Oral"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A valid trust for sale requires a mandatory instruction to sell."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "In PCL states, land conveyed to an infant operates as a:",
+            "options": [
+                "Gift",
+                "Trust for sale",
+                "Customary pledge",
+                "Life estate"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Law creates a statutory trust for sale to protect the infant's interest."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "Tenancy in common created by conveyance vests the legal estate in:",
+            "options": [
+                "Everyone in the city",
+                "At most 4 joint tenants upon statutory trust for sale",
+                "The Family Head",
+                "The Governor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "PCL restricts how many people can hold the legal title directly."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "The subject matter of a strict settlement is:",
+            "options": [
+                "Money",
+                "Land",
+                "Crops",
+                "Cattle"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Strict settlement is concerned with the land itself remaining in the family."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "The subject matter of a trust for sale is:",
+            "options": [
+                "Land",
+                "Personalty/Money",
+                "Minerals",
+                "Titles"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In equity, the beneficiaries are interested in the value (money)."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "Under S.25 of the Land Use Act, attempts to create future successive ownership by settlement are:",
+            "options": [
+                "Encouraged",
+                "Defeated/Void",
+                "Taxed heavily",
+                "Mandatory"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The LUA discourages complex future interests that fragment the right of occupancy."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "Does the Land Use Act affect settlements created before the Act?",
+            "options": [
+                "Yes, they are void",
+                "No; the Act is prospective",
+                "Only in urban areas",
+                "Only for infants"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Act generally does not invalidate pre-existing legal arrangements retrospectively."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'tenant for life' must give notice of intent to sell to at least:",
+            "options": [
+                "10 people",
+                "2 trustees",
+                "The Governor",
+                "The King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Procedural safeguards ensure the interests of remaindermen are protected."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "Powers of a tenant for life:",
+            "options": [
+                "Can be assigned to a stranger",
+                "Cannot be assigned and remain with the tenant for life",
+                "Are abolished by the PCL",
+                "Must be exercised by the Governor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These statutory powers are personal to the life tenant's status."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'vesting deed' is used to:",
+            "options": [
+                "Pay taxes",
+                "Convey land to trustees in a settlement",
+                "Revoke a grant",
+                "Clear a bush"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The vesting deed formally places the legal interest in the appropriate hands under the settlement."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "What happens to the interests of beneficiaries when a tenant for life sells the land?",
+            "options": [
+                "They are destroyed",
+                "They are overreached and converted to money",
+                "They stay on the land",
+                "They go to the King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Overreaching allows a clean title to pass to the buyer while protecting beneficiaries' value."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "'Resettlement' usually happened when the eldest son:",
+            "options": [
+                "Died",
+                "Attained his majority",
+                "Married",
+                "Sold the land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Resettlement typically occurred when the next generation turned 21."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "An instrument prohibiting a tenant for life from exercising statutory powers is:",
+            "options": [
+                "Mandatory",
+                "Void",
+                "A crime",
+                "Only valid in Lagos"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The statutory powers of a life tenant cannot be restricted by a private document."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Concept of Settlement",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Settled Land Act' is a:",
+            "options": [
+                "Local enactment",
+                "Statute of General Application",
+                "Customary rule",
+                "Part of the 1999 Constitution"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 1882 Act is a key English statute received into Nigerian law."
+        }
+    }
+]

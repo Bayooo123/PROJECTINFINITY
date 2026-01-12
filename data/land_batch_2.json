@@ -1,0 +1,322 @@
+[
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'right' is distinguished from a 'privilege' because a privilege is:",
+            "options": [
+                "Enforceable by law",
+                "A discretionary grant withdrawable at the pleasure of the grantor",
+                "Permanent",
+                "Inheritable"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A privilege lacks the legal entitlement and protection associated with a right."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 43 of the 1999 Constitution provides that every citizen has the right to:",
+            "options": [
+                "Free land",
+                "Acquire and own immovable property anywhere in Nigeria",
+                "Be a King",
+                "Evict anyone"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This is the fundamental constitutional right to property."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "If a state law prevents Nigerians from accessing land, it is:",
+            "options": [
+                "Valid as a residual matter",
+                "Inconsistent with the Constitution and void",
+                "Subject to the Governor’s whim",
+                "A customary rule"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "State laws cannot override fundamental human rights to property and movement."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'proprietary right' is best protected by:",
+            "options": [
+                "Physical force",
+                "Registration",
+                "Oral tradition",
+                "Hiding the deed"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Registration provides public notice and statutory protection for land rights."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "'De jure possession' means:",
+            "options": [
+                "Possession in fact",
+                "Possession in law (exclusive occupation with intent to remain)",
+                "Mere occupation",
+                "Living on land as a guest"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "De jure possession involves the legal elements of animus possidendi and corpus possessionis."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "'Title' connotes the existence of facts from which:",
+            "options": [
+                "The King is chosen",
+                "Ownership and possession can be inferred",
+                "Taxes are calculated",
+                "Minerals are found"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Title is the bundle of facts that justifies a claim to land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Niki Tobi, an 'owner' is the:",
+            "options": [
+                "Servant of the land",
+                "Alpha and Omega of the property",
+                "Tenant of the community",
+                "Licensee of the Governor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Justice Niki Tobi famously described the absolute nature of ownership as being the 'Alpha and Omega'."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "In England, all 'allodial ownership' is vested in:",
+            "options": [
+                "The people",
+                "The Crown",
+                "The Parliament",
+                "The Church"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Under English land law, all land is held of the Crown."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Land Use Act, ownership in Nigeria is construed as:",
+            "options": [
+                "Fee simple absolute",
+                "A right of occupancy",
+                "A customary pledge",
+                "A gift from the King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The LUA converted ownership into right of occupancy (statutory or customary)."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "Which case listed the 5 main ways to establish ownership of land?",
+            "options": [
+                "Amodu Tijani v. Southern Nigeria",
+                "Idundun v. Okumagba",
+                "Savannah Bank V. Ajilo",
+                "Ogunleye V. Oni"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Idundun v. Okumagba is the leading case for proving title to land in Nigeria."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "Production of title documents older than 20 years gives rise to a presumption of due execution under the:",
+            "options": [
+                "Land Use Act",
+                "Evidence Act (Section 170)",
+                "Constitution",
+                "Wills Act"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Ancient documents carry a presumption of validity if they come from proper custody."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Contiguity Rule' suggests that the owner of adjacent land is:",
+            "options": [
+                "A trespasser",
+                "Probably the owner of the land in dispute (rebuttable)",
+                "The Governor",
+                "A tenant"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Ownership of surrounding land creates an inference for the inner portion."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "If two parties claim possession, the law ascribes it to:",
+            "options": [
+                "The one with the most children",
+                "The one with the better title",
+                "The one who arrived last",
+                "The Local Government"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Legal possession follows the better title where two parties are on the same land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "In Nigeria, an action to recover land by a private person is statute-barred after:",
+            "options": [
+                "5 years",
+                "12 years",
+                "20 years",
+                "99 years"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Limitation Law sets 12 years for recovery of land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "'Adverse possession' must be nec vi, nec clam, nec precario, meaning:",
+            "options": [
+                "By force, secret, and permission",
+                "Without force, secrecy, or permission",
+                "With the Governor's help",
+                "Under a written contract"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Adverse possession must be peaceful, open, and without the owner's license."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "Does a customary land owner lose title to an adverse possessor under the Statute of Limitations?",
+            "options": [
+                "Yes, after 12 years",
+                "No; the statute expressly excludes customary law",
+                "Only if they are related",
+                "Only in urban areas"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Statutes of Limitation generally exclude land held under customary law from their operation."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in Akpan Awo v. Cookey Gam protects an adverse possessor if the owner:",
+            "options": [
+                "Is dead",
+                "Acquiesced while the possessor spent money under a mistaken belief of title",
+                "Is a minor",
+                "Forgot where the land was"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equitable acquiescence can block a claim by the original owner."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "'Hauzi' in Islamic law refers to:",
+            "options": [
+                "A type of crop",
+                "Prescription after 10 years of undisturbed possession",
+                "A religious ceremony",
+                "The King's court"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Islamic law recognizes a form of prescriptive title (Hauzi) after long possession."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Land Use Act, we are all effectively:",
+            "options": [
+                "Absolute owners",
+                "Tenants of the government",
+                "Owners of the radical title",
+                "Trespassers"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The LUA changed the status from ownership to usufructuary rights under the Governor."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Rights",
+        "type": "objective",
+        "question_data": {
+            "text": "Is 'individual ownership' known to customary law?",
+            "options": [
+                "No, never",
+                "Yes, as the focal point of communal ownership",
+                "Only for women",
+                "Only since 1978"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Customary law has long recognized individual ownership alongside communal holdings."
+        }
+    }
+]

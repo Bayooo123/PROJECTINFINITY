@@ -1,0 +1,322 @@
+[
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "The Land Use Act (1978) vests all land in a state in:",
+            "options": [
+                "The President",
+                "The Governor",
+                "The Local Government",
+                "The People"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 1 of the LUA vests all land in the Governor of each state."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 1 of the Act states land is held 'in trust' for:",
+            "options": [
+                "The Governor's family",
+                "The use and common benefit of Nigerians",
+                "Foreign investors",
+                "The King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Governor acts as a fiduciary for the benefit of the people."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the Supreme Court in Ogunleye V Oni, the Act did NOT:",
+            "options": [
+                "Vest title in the Governor",
+                "Abolish all existing titles and rights to possession",
+                "Create urban areas",
+                "Require consent for mortgages"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Act modified titles into rights of occupancy but didn't wipe out existing rights of possession."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "'Urban areas' are designated by:",
+            "options": [
+                "The President",
+                "The Governor by order in a gazette",
+                "The Local Government",
+                "The High Court"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Governor has statutory authority to define urban boundaries."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "The body that advises the Governor on land management in urban areas is the:",
+            "options": [
+                "Land Allocation Advisory Committee",
+                "Land Use and Allocation Committee",
+                "Ministry of Justice",
+                "Traditional Council"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The LUAC is the primary advisory body for urban land matters."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'minor' under the Land Use Act is anyone under:",
+            "options": [
+                "18 years",
+                "21 years",
+                "25 years",
+                "16 years"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The LUA sets the age of maturity for land grants at 21."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "'Developed land' includes land with physical improvements like:",
+            "options": [
+                "Just grass",
+                "Roads, water, or buildings",
+                "Only gold mines",
+                "A fence made of sticks"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Development requires substantial human intervention and improvement."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'half hectare rule' applies to:",
+            "options": [
+                "Developed land in urban areas",
+                "Undeveloped land in urban areas",
+                "All rural land",
+                "Mining sites"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "S.34 of the LUA limits undeveloped urban land holdings to half a hectare."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'deemed grant' for agricultural land in non-urban areas entitles the occupier to a:",
+            "options": [
+                "Statutory right of occupancy",
+                "Customary right of occupancy",
+                "Fee simple",
+                "License to mine"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Rural landholders are deemed to have a customary right of occupancy."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 5(2) of the Act provides that a new statutory grant:",
+            "options": [
+                "Is always void",
+                "Extinguishes all existing rights to the use and occupation",
+                "Must be signed by the President",
+                "Lasts forever"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "An actual grant overrides and extinguishes any previous deemed rights."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "In Savannah Bank Ltd v. Ajilo, the court held that Governor's consent is required for:",
+            "options": [
+                "Only actual grants",
+                "Both actual and deemed grants",
+                "Only gifts",
+                "No transactions"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The consent requirement applies broadly to all rights of occupancy under the Act."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'Certificate of Occupancy' is:",
+            "options": [
+                "Conclusive evidence of title",
+                "Prima facie evidence of a right to use and occupy",
+                "A deed of gift",
+                "Only for urban land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A C of O is evidence of a right, but can be challenged (it is not absolute proof of ownership)."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Can a Local Government issue a Certificate of Occupancy?",
+            "options": [
+                "Yes, for rural land",
+                "No; it is the prerogative of the Governor",
+                "Only if the Governor is busy",
+                "Only to family heads"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Governor is the sole authority for issuing the formal C of O certificate."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Alienation of a right of occupancy without Governor's consent makes the transaction:",
+            "options": [
+                "Voidable",
+                "Ineffectual and the instrument void",
+                "Valid but taxed",
+                "A crime only"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "S.22 and S.26 make such transfers strictly void in law."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "The Governor can revoke a right of occupancy for:",
+            "options": [
+                "Personal reasons",
+                "Overriding public interest",
+                "The King's request",
+                "Fun"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 28 allows revocation for defined public purposes or overrides."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Revocation for a 'public purpose' requires:",
+            "options": [
+                "No notice",
+                "Notice stating the specific purpose",
+                "A payment of 1 billion Naira",
+                "Only an oral announcement"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The notice must clearly specify why the land is being taken."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Revocation is NOT valid if the notice is served only by:",
+            "options": [
+                "Hand delivery",
+                "Publication in a newspaper (without following Section 44)",
+                "Registered letter",
+                "Affixing to the premises"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Proper service according to the statute is a condition precedent to valid revocation."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Is compensation payable for 'vacant land' with no improvements?",
+            "options": [
+                "Yes, the full market value",
+                "No; it is for unexhausted improvements",
+                "Only if the Governor feels like it",
+                "Only in urban areas"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Compensation is generally restricted to the value of improvements on the land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Disputes regarding the amount of compensation are referred to:",
+            "options": [
+                "The Supreme Court",
+                "The Land Use and Allocation Committee",
+                "The Local Government Chairman",
+                "The King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The LUAC handles valuation and compensation disputes."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Use Act",
+        "type": "objective",
+        "question_data": {
+            "text": "Does the Land Use Act abolish Customary Tenancy?",
+            "options": [
+                "Yes, completely",
+                "No; it preserves the relationship but modifies the radical title",
+                "Only in the North",
+                "Only for building leases"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Abioye v. Yakubu confirmed that the Act does not wipe out customary relationships."
+        }
+    }
+]

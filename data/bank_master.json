@@ -1,0 +1,4162 @@
+[
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "Which maxim is described as the root of all equitable jurisdiction?",
+      "options": [
+        "Equity follows the law",
+        "Equity will not suffer a wrong without a remedy",
+        "Delay defeats equity",
+        "Equality is equity"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This maxim reflects the foundational purpose of equity to provide a remedy where common law fails."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "Equity grants an injunction where damages are insufficient. This is an example of:",
+      "options": [
+        "Original jurisdiction",
+        "Concurrent jurisdiction",
+        "Auxiliary jurisdiction",
+        "Criminal jurisdiction"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Concurrent jurisdiction exists where both law and equity have a role, but equity provides a better remedy."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "Auxiliary jurisdiction refers to:",
+      "options": [
+        "Remedies for which common law had no equivalent",
+        "Procedural inventions like discovery of documents",
+        "Mitigation of harsh statutes",
+        "Enforcement of foreign judgments"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Auxiliary jurisdiction provided procedural assistance to common law litigants."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "According to Kayode Esho, Equity is not a 'warlord' determined to do battle with the law, but part of a:",
+      "options": [
+        "Religious system",
+        "Legal system mixed with law to achieve justice",
+        "Separate court structure",
+        "Political movement"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Justice Kayode Esho emphasized the complementary nature of law and equity in the Nigerian legal system."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "Where there is 'equal equity,' which interest shall prevail?",
+      "options": [
+        "The equitable interest",
+        "The law (legal interest)",
+        "The first in time",
+        "The interest of the state"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Where the equities are equal, the law (legal interest) prevails."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "A legal interest takes priority over a prior equitable interest if the holder is a:",
+      "options": [
+        "Volunteer",
+        "Bona fide purchaser for value without notice",
+        "Member of the family",
+        "Donee"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This is a classic protection for the 'equity's darling' (BFP for value without notice)."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'First in Time' maxim applies primarily to:",
+      "options": [
+        "Conflicts between a legal and equitable interest",
+        "Competing equitable interests that are equally meritorious",
+        "Criminal prosecutions",
+        "Statutory interpretations"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Qui prior est tempore potior est jure applies between competing pure equitable interests."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "In Rice V. Rice, why was the first equity postponed?",
+      "options": [
+        "It was illegal",
+        "The holder's conduct facilitated the creation of another equity",
+        "It was not registered",
+        "The holder was an infant"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The vendor's conduct in handing over title deeds despite not being paid postponed their prior equity."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "'He who seeks equity must do equity' focuses on the plaintiff's:",
+      "options": [
+        "Past conduct",
+        "Future conduct",
+        "Financial status",
+        "Legal training"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This maxim requires the plaintiff to be willing to act fairly in the future/ongoing matter."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "The Doctrine of Election is an application of which maxim?",
+      "options": [
+        "Equity follows the law",
+        "He who seeks equity must do equity",
+        "Equality is equity",
+        "Delay defeats equity"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Election requires a person taking a benefit under a deed to also accept its burdens."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "'He who comes to equity must come with clean hands' focuses on the:",
+      "options": [
+        "Future conduct of the defendant",
+        "Past conduct of the plaintiff in relation to the dispute",
+        "Physical cleanliness of the litigants",
+        "Form of the writ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This maxim scrutinizes the plaintiff's previous conduct in the specific matter before the court."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "In Craig V. Craig, the petitioner was denied a divorce because of:",
+      "options": [
+        "Laches",
+        "Bad faith (unclean hands)",
+        "Lack of evidence",
+        "Poverty"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The petitioner's own conduct in the marital situation 'dirtied' their hands in the eyes of equity."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "The Latin term for the doctrine of laches is:",
+      "options": [
+        "Nemo dat quod non habet",
+        "Vigilantibus non dormientibus jura subveniunt",
+        "Quic quid plantatur solo solo cedit",
+        "Jus accrescendi"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity aids the vigilant, not those who sleep on their rights."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "Equity leans against joint tenancies because of the 'inequitable effect' of:",
+      "options": [
+        "Partition",
+        "Survivorship (jus accrescendi)",
+        "Mortgages",
+        "Taxation"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Survivorship can be unfair if parties contributed differently to the purchase."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "In equity, if A and B purchase property in unequal shares but take it jointly at law, they are treated as:",
+      "options": [
+        "Joint tenants",
+        "Tenants in common",
+        "Sole owners",
+        "Licensees"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity presumes a tenancy in common where purchase money is provided in unequal shares."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "The maxim 'Equity looks on intent rather than form' is illustrated by:",
+      "options": [
+        "The doctrine of laches",
+        "Time clauses in land sale contracts",
+        "The rule in Dearle v. Hall",
+        "The plea of caveat emptor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity will often overlook technical delays if the core intent was fulfilled."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "Which maxim is the foundation of the Doctrine of Conversion?",
+      "options": [
+        "Equity follows the law",
+        "Equity looks on that as done which ought to be done",
+        "He who seeks equity must do equity",
+        "Equality is equity"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Conversion treats money directed to be turned into land as land, and vice-versa."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "'Equity imputes an intention to fulfill an obligation' is the basis for:",
+      "options": [
+        "Specific performance",
+        "Satisfaction and performance",
+        "Injunctions",
+        "Constructive notice"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "If a person does an act that could be seen as fulfilling a duty, equity assumes that was the intent."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "The maxim 'Equity acts in personam' means remedies are exercisable against:",
+      "options": [
+        "The property itself",
+        "The defendant personally",
+        "The state",
+        "The community head"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equitable decrees are enforced by acting on the person of the defendant (e.g., contempt)."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Maxims of Equity",
+    "type": "objective",
+    "question_data": {
+      "text": "In Ayinule V. Abimbola, the court granted an injunction for an act outside its jurisdiction because:",
+      "options": [
+        "The land was within jurisdiction",
+        "The defendant was within the jurisdiction",
+        "The plaintiff was a foreigner",
+        "The contract was in writing"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Because equity acts in personam, it can command a person within its reach to act elsewhere."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Equitable interests are classified into those modeled on common law rights and:",
+      "options": [
+        "Statutory interests",
+        "Particular equitable interests",
+        "Legal estates",
+        "Criminal liabilities"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Particular equitable interests are those unique to equity and not modeled on legal rights."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "In equity, a purchaser acquires an interest in land as soon as:",
+      "options": [
+        "The deed is registered",
+        "The contract of sale/lease comes into existence",
+        "The full price is paid",
+        "They move onto the land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The principle of Walsh v. Lonsdale creates an equitable interest from the valid contract."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Under customary law, a purchase receipt plus possession creates:",
+      "options": [
+        "A legal estate",
+        "An equitable interest",
+        "A tenancy at will",
+        "No interest at all"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This is a settled principle in Nigerian land law (Akingbade v. Elemosho)."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Restrictive covenants run with the land in equity to bind future owners EXCEPT:",
+      "options": [
+        "Family members",
+        "A bona fide purchaser of the legal estate without notice",
+        "Tenants",
+        "The government"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Tulk v. Moxhay established that only a BFP without notice can defeat the covenant."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'equity of redemption' allows a mortgagor to:",
+      "options": [
+        "Sell the land without the bank's permission",
+        "Redeem the property after the contractual date has passed",
+        "Avoid paying interest",
+        "Cancel the mortgage at any time"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity ensures the mortgagor doesn't lose the property just by missing the legal due date."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "An equitable mortgage can be created by the deposit of:",
+      "options": [
+        "Money",
+        "Title deeds",
+        "Crops",
+        "Marriage certificates"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Deposit of title deeds is taken as an agreement to create a mortgage in equity."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "An equitable lien arises when a vendor conveys land:",
+      "options": [
+        "For free",
+        "Before being fully paid",
+        "To a minor",
+        "Without a receipt"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The unpaid vendor has an equitable lien for the balance of the purchase money."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "As between two adverse claimants of a legal interest, the rule is:",
+      "options": [
+        "The last in time prevails",
+        "He who is first in time is stronger in law",
+        "Equity prevails",
+        "The court divides the land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Between two legal interests, the first one created has priority."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "In Cave V. Cave, the beneficiaries' interest took priority over Z's equitable mortgage because:",
+      "options": [
+        "Z had notice",
+        "The beneficiaries' interest was first in time",
+        "The beneficiaries had the legal estate",
+        "Z was a volunteer"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Where both interests are equitable, the first in time (the beneficiaries) prevails."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "A subsequent purchaser for value is NOT affected by a prior equitable interest if they obtain the legal estate and have:",
+      "options": [
+        "A lawyer",
+        "No notice of the equitable interest",
+        "Permission from the King",
+        "Paid half the price"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This is the core definition of the Bona Fide Purchaser rule."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Marriage consideration is treated in equity as:",
+      "options": [
+        "A volunteer act",
+        "Value",
+        "A gift",
+        "Illegal"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Marriage is considered the highest form of value in old equitable doctrine."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Actual notice consists of:",
+      "options": [
+        "Information a person ought to have discovered",
+        "Personal knowledge of a prior equity",
+        "Notice to an agent",
+        "Public rumors"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Actual notice is direct, personal knowledge of the facts."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Constructive notice covers facts which a purchaser:",
+      "options": [
+        "Actually knew",
+        "Could have discovered if they had acted prudently",
+        "Was told by a stranger",
+        "Read in a novel"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Purchasers are expected to perform proper investigations and searches."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "In Oliver V. Hinton, a purchaser was postponed because of negligence in failing to ask for:",
+      "options": [
+        "A receipt",
+        "The title deeds",
+        "The Governor's consent",
+        "A witness"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Failure to ask for deeds is gross negligence constituting constructive notice."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Notice to a solicitor is generally treated as:",
+      "options": [
+        "Actual notice",
+        "Imputed notice to the client",
+        "Constructive notice",
+        "No notice at all"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Knowledge of the agent is the knowledge of the principal."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Notice acquired by a solicitor in a previous transaction generally:",
+      "options": [
+        "Affects the current client",
+        "Does not affect the current client",
+        "Must be reported to the police",
+        "Is public record"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Notice must usually be acquired in the same transaction to be imputed (with some exceptions)."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Occupation of land by someone other than the vendor constitutes:",
+      "options": [
+        "Actual notice",
+        "Constructive notice",
+        "A crime",
+        "Admissible hearsay"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Hunt v. Luck established that a tenant's possession is notice of their interest."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "A purchaser with notice is NOT bound if they buy from:",
+      "options": [
+        "A thief",
+        "A vendor who was himself a bona fide purchaser without notice",
+        "A family head",
+        "A minor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This is the 'Shelter Rule' (Wilkes v. Spooner) to protect the BFP's right to sell."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Can a trustee defeat beneficiaries by selling to a bona fide purchaser and then buying the property back?",
+      "options": [
+        "Yes, the chain is broken",
+        "No, equity will not allow a person to profit from their own fraud",
+        "Only if the Governor consents",
+        "Only after 12 years"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The 'Shelter Rule' cannot be abused by a party to the original breach of trust."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Nature of Equitable Interest and Doctrine of Notice",
+    "type": "objective",
+    "question_data": {
+      "text": "Which case established that a purchase receipt plus possession raises a presumption of an equitable interest?",
+      "options": [
+        "Tulk V. Moxhay",
+        "Ogunbamibi V. Abowaba",
+        "Walsh V. Lonsdale",
+        "Dearle V. Hall"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Ogunbamibi v. Abowaba is the locus classicus for this in Nigerian law."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'chose in possession' refers to property that:",
+      "options": [
+        "Can only be recovered by legal action",
+        "Can be physically possessed",
+        "Is intangible",
+        "Consists only of debts"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Choses in possession are tangible movable objects (chattels)."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'chose in action' is a personal right of property that can only be enforced by:",
+      "options": [
+        "Taking physical possession",
+        "Legal proceedings",
+        "Entering the land",
+        "Selling it at auction"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Debts and stocks are examples of rights that require court action to realize if denied."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "Which of these is a legal chose in action?",
+      "options": [
+        "Legacy under a will",
+        "Debt",
+        "Interest of a beneficiary in a trust",
+        "Reversionary interest in land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Statutory debts are historically recognized legal choses in action."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "Before the Judicature Act, common law generally did not allow assignment of debts because of fear of:",
+      "options": [
+        "Taxation",
+        "Maintenance",
+        "Theft",
+        "Overcrowded courts"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Maintenance and champerty were seen as dangers of allowing 'trafficking' in lawsuits."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'statutory assignment' must be in writing and:",
+      "options": [
+        "Oral",
+        "Absolute",
+        "Conditional",
+        "Witnessed by a King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Section 25(6) of the Judicature Act 1873 requires assignment to be absolute and in writing."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "Written notice of a statutory assignment must be given to:",
+      "options": [
+        "The Governor",
+        "The debtor or trustee",
+        "The High Court",
+        "The Ministry of Justice"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Express notice in writing to the debtor is a requirement for a legal (statutory) assignment."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "In Udakason Enterprise Nig Ltd V. Olisa, the court held that the notice of assignment:",
+      "options": [
+        "Must follow a rigid format",
+        "Need not follow any particular form as long as it is express and in writing",
+        "Must be by deed",
+        "Is only valid if sent by registered post"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The substance of the notice is more important than its specific technical form."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "An assignment 'by way of charge only' is:",
+      "options": [
+        "A valid statutory assignment",
+        "Not absolute and thus not a statutory assignment",
+        "Illegal",
+        "Automatically void"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A charge is a security interest, whereas a statutory assignment must transfer the whole debt."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "The assignment of a part of a debt is:",
+      "options": [
+        "A statutory assignment",
+        "Not absolute and takes effect only as an equitable assignment",
+        "Prohibited by law",
+        "Only possible for family members"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity allows partial assignments, but the Judicature Act does not."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "For an equitable assignment of an equitable interest, which statute requires writing?",
+      "options": [
+        "Judicature Act",
+        "Statute of Frauds 1677",
+        "Land Use Act",
+        "Bills of Exchange Act"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Section 9 of the Statute of Frauds requires the assignment of a trust interest to be in writing."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "In equity, the 'language is immaterial' for an assignment as long as:",
+      "options": [
+        "It is in Latin",
+        "The meaning is plain",
+        "It is signed by a judge",
+        "It is stamped"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity looks at the substance and intention rather than formalistic phrasing."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "Consideration is strictly required for the equitable assignment of:",
+      "options": [
+        "An existing debt",
+        "An expectancy (future property)",
+        "A lease",
+        "A trademark"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity will not assist a volunteer with future property; consideration is essential."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "The rule in Dearle V. Hall determines priority of assignments based on:",
+      "options": [
+        "The date of the assignment",
+        "The order in which notice is given to the trustee",
+        "The age of the assignor",
+        "The amount of consideration"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The first assignee to give notice to the debtor/trustee gains priority."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "Under the rule in Dearle V. Hall, a later assignee cannot get priority if they:",
+      "options": [
+        "Paid too little",
+        "Had notice of a previous assignment when their own was made",
+        "Are not a lawyer",
+        "Did not register with the Governor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Notice of a prior assignment at the time of taking the interest prevents a 'BFP' status."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "An assignee takes 'subject to equities,' meaning they:",
+      "options": [
+        "Are immune to the debtor's claims",
+        "Cannot be in a better position than the assignor",
+        "Must pay the assignor's taxes",
+        "Can ignore fraud"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The assignee takes the debt with all its original flaws or defenses."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "Which of these is NOT assignable on grounds of public policy?",
+      "options": [
+        "Copyright",
+        "Alimony or maintenance granted to a wife",
+        "Debt",
+        "Patent"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Maintenance is intended for the support of the wife and cannot be traded."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "Novation differs from assignment because it requires:",
+      "options": [
+        "No consent",
+        "The consent of the debtor, creditor, and the new party",
+        "A written receipt only",
+        "A court order"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Novation is the substitution of a new contract for an old one, requiring all parties' agreement."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "In Ukatta V. Emembo, an agreement to assign a lease 'as soon as it was obtained' was held to be:",
+      "options": [
+        "Invalid",
+        "A valid assignment of an expectancy",
+        "A customary tenancy",
+        "A mortgage"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity treats an agreement to assign future property as a valid assignment if value is given."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "An assignment by letter is complete in equity as soon as:",
+      "options": [
+        "The debtor reads it",
+        "The letter is posted",
+        "The judge signs it",
+        "14 days pass"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Alexander v. Steinhardt established that posting the instruction completes the equitable transfer."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Assignment of Choses in Action",
+    "type": "objective",
+    "question_data": {
+      "text": "If notice of two assignments is received substantially simultaneously, priority depends on:",
+      "options": [
+        "The alphabet",
+        "The order in which the interests were created",
+        "The value paid",
+        "The Governor's discretion"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "If the 'notice' race is a tie, equity falls back on the creation date."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'prohibitory injunction' is an order that:",
+      "options": [
+        "Compels a positive act",
+        "Restrains the doing of a wrongful act",
+        "Awards damages",
+        "Cancels a contract"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Prohibitory injunctions are negative orders used to stop ongoing or threatened wrongs."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "Which type of injunction is usually targeted at a 'completed act'?",
+      "options": [
+        "Prohibitory",
+        "Mandatory",
+        "Quia Timet",
+        "Interim"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Mandatory injunctions compel the defendant to take positive steps to reverse a wrong."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "In Niger Chemists V. Nigeria Chemists, the court granted an injunction for:",
+      "options": [
+        "Breach of contract",
+        "Passing off",
+        "Trespass",
+        "Nuisance"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The injunction prevented the use of a confusingly similar name."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'Quia Timet' injunction is ordered when an action is:",
+      "options": [
+        "Already completed",
+        "Feared/threatened in the future",
+        "Decided by the King",
+        "Statute-barred"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Quia Timet (since he fears) is used to prevent imminent harm."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "For an injunction to be granted, the plaintiff must show the existence of:",
+      "options": [
+        "A moral wrong",
+        "A legally enforceable right",
+        "A large bank account",
+        "A witness"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Injunctions protect defined legal or equitable rights, not mere morality."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "In Day V. Browning, the court held there was no legal injury because:",
+      "options": [
+        "The defendant was poor",
+        "There is no right in the name of a house",
+        "The plaintiff was late",
+        "It was a criminal matter"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Mere inconvenience (damnum absque injuria) is not enough for an injunction."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "The phrase 'just or convenient' in the context of injunctions refers to:",
+      "options": [
+        "Arbitrary power",
+        "Regulated judicial discretion",
+        "The King's pleasure",
+        "Convenience of the defendant only"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The decision must follow settled legal principles."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "An injunction will NOT be granted for land outside the jurisdiction even if:",
+      "options": [
+        "The plaintiff is rich",
+        "The defendant is within the jurisdiction",
+        "There is a written contract",
+        "It is a 'Quia Timet' action"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Courts generally won't make orders directly affecting land titles abroad."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "Locus standi for an injunction requires the plaintiff to have:",
+      "options": [
+        "A law degree",
+        "Sufficient interest in the right sought to be protected",
+        "Nigerian citizenship only",
+        "A certificate of occupancy"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The applicant must prove their own rights are being affected."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "An 'interim injunction' generally perishes on:",
+      "options": [
+        "The day the trial ends",
+        "The day the motion for interlocutory injunction is heard",
+        "After 99 years",
+        "When the Governor says so"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Interim orders are very short-term 'gap-fillers'."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "Under Federal High Court rules, an interim injunction automatically lapses after:",
+      "options": [
+        "7 days",
+        "14 days",
+        "30 days",
+        "3 months"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Rules often set a 14-day limit for ex-parte/interim orders."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "An 'Ex-Parte' injunction is granted:",
+      "options": [
+        "After a full trial",
+        "Without notice to the other party in cases of real urgency",
+        "Only by the Governor",
+        "For criminal offences"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Ex-parte orders are emergency measures heard in the absence of the defendant."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "The main purpose of an interlocutory injunction is to:",
+      "options": [
+        "Punish the defendant",
+        "Maintain the status quo pending final determination",
+        "Award final damages",
+        "Settle the title to land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "It prevents the defendant from changing the situation before the trial finishes."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'balance of convenience' test considers:",
+      "options": [
+        "Who has more money",
+        "Who stands to lose more if the status quo is not maintained",
+        "The age of the parties",
+        "The length of the writ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The court weighs the potential hardship to both sides."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "Irreparable damage is damage that:",
+      "options": [
+        "Is very small",
+        "Cannot be adequately remedied by pecuniary payment",
+        "Can be fixed by a carpenter",
+        "Only happens to land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Injunctions are for when money alone isn't enough to fix the injury."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "An 'undertaking as to damages' is extracted from the:",
+      "options": [
+        "Defendant",
+        "Plaintiff",
+        "Judge",
+        "Witness"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The plaintiff must promise to compensate the defendant if the injunction was wrong."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'perpetual injunction' is granted:",
+      "options": [
+        "Before the trial starts",
+        "After the right has been established in a final action",
+        "For only 7 days",
+        "Only in ex-parte motions"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "It is the final determination of the court after hearing both sides."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'Mareva' injunction is now commonly known as a:",
+      "options": [
+        "Search order",
+        "Freezing injunction",
+        "Mandatory order",
+        "Stay of execution"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "It prevents a defendant from moving assets out of the court's reach."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "An 'Anton Piller' order enables a plaintiff to:",
+      "options": [
+        "Freeze bank accounts",
+        "Enter premises to search for and seize incriminating evidence",
+        "Sell the defendant's land",
+        "Arrest the defendant"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "It is used to prevent the destruction of evidence needed for a trial."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Injunction",
+    "type": "objective",
+    "question_data": {
+      "text": "Which statute specifically recognizes search orders (Anton Piller) in copyright actions?",
+      "options": [
+        "Land Use Act",
+        "Copyright Act (Section 22)",
+        "Evidence Act",
+        "High Court Law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Copyright Act has codified this powerful equitable weapon."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Specific performance is an order compelling a person to:",
+      "options": [
+        "Pay damages",
+        "Carry out his obligation under a contract",
+        "Go to prison",
+        "Apologize publicly"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "It is a positive decree requiring the literal fulfillment of the bargain."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Specific performance is generally NOT granted if:",
+      "options": [
+        "The contract is for land",
+        "Damages are an adequate remedy",
+        "The defendant is rich",
+        "It is in writing"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity only intervenes where the common law remedy (money) is insufficient."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Specific performance applies only to which type of contract?",
+      "options": [
+        "Executed",
+        "Executory",
+        "Oral only",
+        "Criminal"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Executory contracts are those where something still remains to be done."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "The remedy of specific performance is:",
+      "options": [
+        "Available as of right",
+        "Discretionary",
+        "Abolished by the Land Use Act",
+        "Only for the Governor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Unlike damages at law, equitable remedies are granted at the court's discretion."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Why is specific performance common in land sale contracts?",
+      "options": [
+        "Land is cheap",
+        "Land has a unique character and money is not adequate",
+        "There are no damages for land",
+        "The Governor requires it"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "In equity, every piece of land is considered uniquely valuable."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "In British Bata Shoe Co. Ltd V. Melikan, specific performance was granted for land outside the jurisdiction because:",
+      "options": [
+        "The land was in England",
+        "The remedy acts in personam and the defendant was within jurisdiction",
+        "The plaintiff was a corporation",
+        "The contract was oral"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The court can order the person to execute the conveyance regardless of the land's location."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Courts will NOT specifically enforce an agreement for:",
+      "options": [
+        "Separation of a marriage",
+        "Future separation",
+        "Sale of a unique chattel",
+        "Transfer of a patent"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Contracts for future separation were seen as against public policy."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Section 52 of the Sale of Goods Act allows specific performance for:",
+      "options": [
+        "Any goods",
+        "Specific or ascertained goods",
+        "Future goods only",
+        "Unidentified goods"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Goods must be distinct and identified for the remedy to apply."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Specific performance of a building contract is generally refused EXCEPT where:",
+      "options": [
+        "The price is high",
+        "The work is clearly defined and the plaintiff has an interest",
+        "The builder is a foreigner",
+        "The Governor orders it"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Wolverhampton Corp v. Emmons sets out the narrow exceptions for building contracts."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Equity will not grant specific performance of a promise made for:",
+      "options": [
+        "High value",
+        "No consideration (volunteer)",
+        "Land",
+        "99 years"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity will not assist a volunteer (Maxim: Equity looks on the intent, but also requires consideration)."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Will equity enforce a contract involving 'personal skill,' like an agreement to sing?",
+      "options": [
+        "Yes, always",
+        "No, as the court cannot ensure satisfactory performance",
+        "Only if the Governor consents",
+        "Only in the High Court"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Courts cannot supervise or force people to exhibit artistic skill (Lumley v. Wagner)."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "A contract for an 'insubstantial interest,' such as a tenancy at will, is:",
+      "options": [
+        "Specifically enforceable",
+        "Not specifically enforceable",
+        "Illegal",
+        "Mandatory"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "If the interest could be terminated immediately anyway, the court won't bother with the decree."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Specific performance is refused for contracts requiring 'constant supervision,' such as:",
+      "options": [
+        "Sale of a car",
+        "Maintenance of a railway",
+        "A one-time payment",
+        "A gift of land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The court will not issue an order it cannot effectively monitor over time."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "A contract that is 'subject to contract' is:",
+      "options": [
+        "Specifically enforceable",
+        "Not specifically enforceable",
+        "A deemed grant",
+        "Valid only in equity"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Until the formal contract is signed, there is no binding agreement to enforce."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "The Doctrine of Part Performance allows an oral land contract to be enforced to prevent:",
+      "options": [
+        "Taxes",
+        "Fraud (using law as a statute of fraud)",
+        "Competition",
+        "The Governor's revocation"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity prevents the Statute of Frauds from being used as a cloak for fraud."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "For part performance to apply, the acts must be referable to:",
+      "options": [
+        "The defendant's health",
+        "The existence of the contract",
+        "The King's will",
+        "The price of the land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The acts must point squarely to the existence of the specific contract claimed."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "If a claimant induces a contract via misrepresentation, specific performance is refused because:",
+      "options": [
+        "Laches",
+        "He who comes to equity must come with clean hands",
+        "The contract is too long",
+        "The defendant is a minor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A party seeking the 'grace' of equity must have behaved impeccably."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "A person induced into a transaction by 'undue influence' is entitled to:",
+      "options": [
+        "Pay double",
+        "Set the transaction aside",
+        "A perpetual injunction",
+        "Nothing"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity protects the vulnerable from being pressured into unfair deals."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Specific performance will NOT be granted where there is no consensus ad idem due to:",
+      "options": [
+        "Lack of money",
+        "Fundamental mistake",
+        "High interest rates",
+        "The death of a witness"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "If the parties never truly agreed on the core terms, there is no contract to perform."
+    }
+  },
+  {
+    "course": "Equity and Trusts",
+    "topic": "Specific Performance",
+    "type": "objective",
+    "question_data": {
+      "text": "Lapse of time is a defense because a party must enforce rights with:",
+      "options": [
+        "A lawyer",
+        "Sufficient speed and within reasonable time",
+        "The help of the Governor",
+        "20 witnesses"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Delay (laches) defeats equity; rights must be asserted promptly."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Property is deemed 'real' when the court:",
+      "options": [
+        "Awards only money",
+        "Restores the thing itself to the owner",
+        "Punishes the thief",
+        "Grants a license"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Real property actions (actions in rem) allow for the recovery of the specific thing (res)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "The indigenous system of land holding in Nigeria is:",
+      "options": [
+        "English Common Law",
+        "Customary Land Tenure",
+        "The Land Use Act",
+        "Islamic Law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Customary land tenure is the fundamental indigenous system in Nigeria."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Customary law must be proved in court by:",
+      "options": [
+        "Calling witnesses, books, or assessors",
+        "Using the King’s writs",
+        "Citing the 1978 Act",
+        "Logical deduction only"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "As common law does not judicially notice all customs, they must be proved as facts (Evidence Act)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'Interpretation Act' definition of land is considered:",
+      "options": [
+        "Extensive",
+        "Restrictive (excludes minerals)",
+        "Universal",
+        "Obsolete"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The legal definition often excludes certain sub-surface or specific statutory minerals."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "'Stool land' belongs to:",
+      "options": [
+        "The individual King",
+        "The traditional office or 'stool'",
+        "The Governor",
+        "The first settler only"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Stool land is held by the ruler in their representative capacity for the office, not personally."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Who has the responsibility for repairs and maintenance of stool land?",
+      "options": [
+        "The King personally",
+        "The community (historically) or government (modernly)",
+        "The Governor",
+        "The tenants"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "As a communal asset, the burden of maintenance historically fell on the community."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "'Communal land' belongs to:",
+      "options": [
+        "The Governor",
+        "The community as an entity; individuals have only right of use",
+        "The King absolutely",
+        "The first person to farm it"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Individuals have usufructuary rights, but the radical title stays with the community."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "'Virgin bush' or 'waste land' refers to communal land that is:",
+      "options": [
+        "Owned by the Governor",
+        "Uncultivated; the individual who clears it acquires an interest",
+        "Forbidden to farm",
+        "Used for ceremonies only"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Labor mixed with uncultivated land often establishes a primary interest in customary law."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Beach lands belong to:",
+      "options": [
+        "The first fisherman",
+        "The whole town, village, or community",
+        "The Federal Government only",
+        "Private developers"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Amodu Tijani v. Southern Nigeria confirmed the communal nature of such key assets."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Title to minerals is vested in:",
+      "options": [
+        "The land owner",
+        "The Federal Government",
+        "The State Governor",
+        "The Local Government"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Constitution vests all mineral rights in the Federation/Federal Government."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "The Latin maxim quic quid plantatur solo solo cedit means:",
+      "options": [
+        "Land belongs to the King",
+        "Whatever is affixed to the soil becomes part of it",
+        "First in time is stronger in law",
+        "Equity follows the law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Things fixed to the land (buildings, trees) generally follow the ownership of the land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Under Islamic law, does the quic quid rule apply?",
+      "options": [
+        "Yes, always",
+        "No; crops and buildings are separate from the land",
+        "Only if the Governor says so",
+        "Only in urban areas"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Islamic law often treats buildings and crops as distinct property from the soil."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "In Francis V. Ibitoye, a building erected on another's land without consent became property of:",
+      "options": [
+        "The builder",
+        "The landowner",
+        "The community",
+        "The State"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A classic application of the quic quid rule where no equitable excuse exists."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Which statute creates an exception to the quic quid rule for holders of a statutory right of occupancy?",
+      "options": [
+        "Evidence Act",
+        "Land Use Act (Section 15)",
+        "Interpretation Act",
+        "Wills Act"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "S.15 of the LUA allows for compensation for improvements, modifying the strict quic quid effect."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "An 'incorporeal hereditament' is:",
+      "options": [
+        "A physical building",
+        "An intangible right like an easement or profit",
+        "A type of soil",
+        "A customary chief"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "These are rights over land that lack physical substance."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "How much space above the earth does a landowner own?",
+      "options": [
+        "Up to the stars",
+        "Such space as is needed to make the land productive to a reasonable extent",
+        "None; all air is public",
+        "100 meters exactly"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Airspace rights are limited to the height required for reasonable use and enjoyment."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Which case involved an aircraft taking photos and established limits on airspace rights?",
+      "options": [
+        "Bernstein v. Skyviews Ltd",
+        "Francis V. Ibitoye",
+        "Amodu Tijani V. Southern Nigeria",
+        "Idundun v. Okumagba"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Bernstein v. Skyviews established that rights do not extend to infinite heights."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "'Foreshores' belong to:",
+      "options": [
+        "The nearest family",
+        "The State",
+        "The Federal Government",
+        "No one"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Foreshores are generally under the control of the state for public benefit."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "A traditional ruler has which interest in 'stool land'?",
+      "options": [
+        "Fee simple",
+        "No more than a life interest",
+        "A 99-year lease",
+        "Absolute ownership"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The ruler is effectively a manager for their lifetime, with no power to alienate absolutely as an individual."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Law as Property: Introduction",
+    "type": "objective",
+    "question_data": {
+      "text": "Under the Land Use Act, the radical title to land is vested in:",
+      "options": [
+        "The President",
+        "The Governor",
+        "The Local Government",
+        "The family head"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Governor of each state holds the radical title in trust (Section 1 LUA)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'right' is distinguished from a 'privilege' because a privilege is:",
+      "options": [
+        "Enforceable by law",
+        "A discretionary grant withdrawable at the pleasure of the grantor",
+        "Permanent",
+        "Inheritable"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A privilege lacks the legal entitlement and protection associated with a right."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "Section 43 of the 1999 Constitution provides that every citizen has the right to:",
+      "options": [
+        "Free land",
+        "Acquire and own immovable property anywhere in Nigeria",
+        "Be a King",
+        "Evict anyone"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "This is the fundamental constitutional right to property."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "If a state law prevents Nigerians from accessing land, it is:",
+      "options": [
+        "Valid as a residual matter",
+        "Inconsistent with the Constitution and void",
+        "Subject to the Governor’s whim",
+        "A customary rule"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "State laws cannot override fundamental human rights to property and movement."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'proprietary right' is best protected by:",
+      "options": [
+        "Physical force",
+        "Registration",
+        "Oral tradition",
+        "Hiding the deed"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Registration provides public notice and statutory protection for land rights."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "'De jure possession' means:",
+      "options": [
+        "Possession in fact",
+        "Possession in law (exclusive occupation with intent to remain)",
+        "Mere occupation",
+        "Living on land as a guest"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "De jure possession involves the legal elements of animus possidendi and corpus possessionis."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "'Title' connotes the existence of facts from which:",
+      "options": [
+        "The King is chosen",
+        "Ownership and possession can be inferred",
+        "Taxes are calculated",
+        "Minerals are found"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Title is the bundle of facts that justifies a claim to land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "According to Niki Tobi, an 'owner' is the:",
+      "options": [
+        "Servant of the land",
+        "Alpha and Omega of the property",
+        "Tenant of the community",
+        "Licensee of the Governor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Justice Niki Tobi famously described the absolute nature of ownership as being the 'Alpha and Omega'."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "In England, all 'allodial ownership' is vested in:",
+      "options": [
+        "The people",
+        "The Crown",
+        "The Parliament",
+        "The Church"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Under English land law, all land is held of the Crown."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "Under the Land Use Act, ownership in Nigeria is construed as:",
+      "options": [
+        "Fee simple absolute",
+        "A right of occupancy",
+        "A customary pledge",
+        "A gift from the King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The LUA converted ownership into right of occupancy (statutory or customary)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "Which case listed the 5 main ways to establish ownership of land?",
+      "options": [
+        "Amodu Tijani v. Southern Nigeria",
+        "Idundun v. Okumagba",
+        "Savannah Bank V. Ajilo",
+        "Ogunleye V. Oni"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Idundun v. Okumagba is the leading case for proving title to land in Nigeria."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "Production of title documents older than 20 years gives rise to a presumption of due execution under the:",
+      "options": [
+        "Land Use Act",
+        "Evidence Act (Section 170)",
+        "Constitution",
+        "Wills Act"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Ancient documents carry a presumption of validity if they come from proper custody."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'Contiguity Rule' suggests that the owner of adjacent land is:",
+      "options": [
+        "A trespasser",
+        "Probably the owner of the land in dispute (rebuttable)",
+        "The Governor",
+        "A tenant"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Ownership of surrounding land creates an inference for the inner portion."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "If two parties claim possession, the law ascribes it to:",
+      "options": [
+        "The one with the most children",
+        "The one with the better title",
+        "The one who arrived last",
+        "The Local Government"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Legal possession follows the better title where two parties are on the same land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "In Nigeria, an action to recover land by a private person is statute-barred after:",
+      "options": [
+        "5 years",
+        "12 years",
+        "20 years",
+        "99 years"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Limitation Law sets 12 years for recovery of land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "'Adverse possession' must be nec vi, nec clam, nec precario, meaning:",
+      "options": [
+        "By force, secret, and permission",
+        "Without force, secrecy, or permission",
+        "With the Governor's help",
+        "Under a written contract"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Adverse possession must be peaceful, open, and without the owner's license."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "Does a customary land owner lose title to an adverse possessor under the Statute of Limitations?",
+      "options": [
+        "Yes, after 12 years",
+        "No; the statute expressly excludes customary law",
+        "Only if they are related",
+        "Only in urban areas"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Statutes of Limitation generally exclude land held under customary law from their operation."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "The rule in Akpan Awo v. Cookey Gam protects an adverse possessor if the owner:",
+      "options": [
+        "Is dead",
+        "Acquiesced while the possessor spent money under a mistaken belief of title",
+        "Is a minor",
+        "Forgot where the land was"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equitable acquiescence can block a claim by the original owner."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "'Hauzi' in Islamic law refers to:",
+      "options": [
+        "A type of crop",
+        "Prescription after 10 years of undisturbed possession",
+        "A religious ceremony",
+        "The King's court"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Islamic law recognizes a form of prescriptive title (Hauzi) after long possession."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "Under the Land Use Act, we are all effectively:",
+      "options": [
+        "Absolute owners",
+        "Tenants of the government",
+        "Owners of the radical title",
+        "Trespassers"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The LUA changed the status from ownership to usufructuary rights under the Governor."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Rights",
+    "type": "objective",
+    "question_data": {
+      "text": "Is 'individual ownership' known to customary law?",
+      "options": [
+        "No, never",
+        "Yes, as the focal point of communal ownership",
+        "Only for women",
+        "Only since 1978"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Customary law has long recognized individual ownership alongside communal holdings."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "Who holds the land for the use of the village or family under customary law?",
+      "options": [
+        "The Governor",
+        "The Chief or Family Head",
+        "The oldest woman",
+        "The Local Government Chairman"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The head of the group acts as a manager for the benefit of all members."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "A Family Head is described as a 'trustee beneficiary' because:",
+      "options": [
+        "He owns the land alone",
+        "He has no title but equal rights with other members",
+        "He is a professional lawyer",
+        "He is appointed by the Governor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "He manages the land and shares in its benefits like any other member."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "In Yoruba custom, 'family' for land purposes includes:",
+      "options": [
+        "Only male children",
+        "Both male and female children",
+        "Only the eldest son",
+        "All neighbors"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Yoruba customary law generally recognizes both male and female children as members."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "The Igbo custom of 'male primogeniture' generally:",
+      "options": [
+        "Includes daughters",
+        "Excludes daughters from inheriting land",
+        "Is abolished by any Governor",
+        "Only applies to urban land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Historically, many Igbo customs prioritized male inheritance for land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "In Benin and Onitsha, the Igiogbe (ancestral home) devolves to:",
+      "options": [
+        "All children equally",
+        "The eldest son exclusively",
+        "The widow",
+        "The community"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The 'Igiogbe' is a special inheritance reserved for the eldest son."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "Can a widow inherit her husband’s property under strict native law?",
+      "options": [
+        "Yes, always",
+        "No",
+        "Only if she has a son",
+        "Only in Lagos"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Under many traditional systems, a widow does not inherit her husband's land absolutely."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "Slaves under ancient customary law were often regarded as:",
+      "options": [
+        "Family heads",
+        "Object of inheritance/property",
+        "Government officials",
+        "Equal to sons"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Historically, slaves were considered chattel or property within the system."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "A grandchild becomes a member of the family for succession purposes only:",
+      "options": [
+        "At age 21",
+        "Upon the death of their parent (who was a member)",
+        "If they are male",
+        "If the Governor agrees"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The right to inherit usually passes through the parent."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "Land purchased with 'family funds' becomes:",
+      "options": [
+        "Property of the head",
+        "Family property",
+        "State property",
+        "A gift"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The source of the funds determines the character of the property."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "A family head is usually:",
+      "options": [
+        "Elected by the Governor",
+        "The eldest surviving male child",
+        "The richest member",
+        "A stranger"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Seniority in age and lineage usually determines the family head."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "Is the Family Head a 'trustee' in the strict English sense?",
+      "options": [
+        "Yes, exactly",
+        "No; for example, he is personally liable for debts in some cases",
+        "He is a King",
+        "He is a civil servant"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The hybrid nature of the role differs from the strict English equitable trustee."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'non-accountability' of the family head:",
+      "options": [
+        "Is an absolute rule in Nigeria",
+        "Is not a judicially noticed custom; accountability depends on circumstances",
+        "Was abolished in 1863",
+        "Only applies to women"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Courts now often demand accountability from family heads."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "'Principal members' in a polygamous family are usually:",
+      "options": [
+        "All the children",
+        "The eldest child of each wife",
+        "The wives only",
+        "The uncles"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Each 'Idi-Igi' or 'Ori-Ojori' branch is represented by a principal member."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "A member of the family has which right over family land?",
+      "options": [
+        "Absolute ownership",
+        "Right of use and exclusive possession of allocated portion",
+        "Right to sell it to strangers",
+        "Right to bequeath it by will"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Individual rights are usufructuary and subject to the collective interest."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "If a member improves family land with their own money, the land:",
+      "options": [
+        "Becomes their private property",
+        "Remains family property",
+        "Is revoked by the Governor",
+        "Must be sold"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Ownership of land and structures often remain with the family title (quic quid rule)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "Alienation of family property without the consent of the Family Head is:",
+      "options": [
+        "Voidable",
+        "Void",
+        "Valid",
+        "Statutory"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The head's consent is critical for a valid transfer of family title."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "Alienation by the Family Head without the consent of principal members is:",
+      "options": [
+        "Void",
+        "Voidable",
+        "Absolute",
+        "Illegal"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Such a sale can be set aside by the non-consenting principal members."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'voidable' sale is valid until:",
+      "options": [
+        "The Governor says no",
+        "A non-consenting party sets it aside timeously",
+        "99 years pass",
+        "The price is paid"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Reasonable promptness is required to challenge a voidable transaction."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "A Power of Attorney for family land must be executed by:",
+      "options": [
+        "The youngest member",
+        "The Family Head",
+        "A judge",
+        "The Local Government Chairman"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The head's authority is required for legal instruments on behalf of the family."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Tenure System",
+    "type": "objective",
+    "question_data": {
+      "text": "'Partition' of family land results in:",
+      "options": [
+        "The Head owning everything",
+        "Each former co-tenant becoming a separate owner of a specific portion",
+        "The Governor revoking the land",
+        "A customary pledge"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Partition ends the communal tenure and creates absolute individual titles."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'sale' of land at customary law is only complete when:",
+      "options": [
+        "A contract is signed",
+        "The full purchase price is paid",
+        "The Governor consents",
+        "12 years pass"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Customary sale requires payment and the actual handing over of possession in the presence of witnesses."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "Which of these is a requirement for a valid customary sale?",
+      "options": [
+        "A written deed",
+        "Presence of witnesses during the handing over",
+        "Payment in cowries only",
+        "A survey plan"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Witnesses are the traditional 'publicity' mechanism for land transfers."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "The maxim caveat emptor means:",
+      "options": [
+        "Land belongs to the King",
+        "Let the buyer beware",
+        "First in time prevails",
+        "Equity is equality"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The buyer must investigate the title and physical state of the land themselves."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'gift' of land (inter vivos) requires:",
+      "options": [
+        "Payment of a small fee",
+        "Full intention by the donor to never have the land return",
+        "A 99-year lease",
+        "The Governor’s signature"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Customary gifts must be absolute and permanent."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "'Borrowing' of land is usually for:",
+      "options": [
+        "Building houses",
+        "Temporary farming of food crops",
+        "Mining",
+        "99 years"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Borrowed land allows for seasonal use without granting permanent title."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'customary tenant' enjoys their interest:",
+      "options": [
+        "For only 1 year",
+        "In perpetuity subject to good behavior",
+        "Until the Governor revokes it",
+        "Only if they are a family member"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The grant is permanent as long as the tenant respects the overlord's title."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "Customary tenancy is characterized by the payment of:",
+      "options": [
+        "Rent",
+        "Tribute",
+        "Taxes",
+        "Interest"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Tribute (Ishakole) is the acknowledgment of the overlord's radical title."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "Does a customary tenant have the right to exclude the overlord?",
+      "options": [
+        "No, never",
+        "Yes, they have exclusive possession",
+        "Only during the day",
+        "Only if they are related"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The tenant has exclusive occupation of the land allotted to them."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A customary tenant who denies the overlord’s title is liable to:",
+      "options": [
+        "A fine",
+        "Forfeiture",
+        "Promotion",
+        "Paying double tribute"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Denial of title is the most serious breach, leading to loss of the tenancy."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "Is forfeiture of a customary tenancy automatic?",
+      "options": [
+        "Yes, upon misbehavior",
+        "No; it must be enforced via a court order",
+        "Only in urban areas",
+        "Only for non-payment of rent"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The court must formally declare the forfeiture based on the evidence."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "'Kola Tenancy' was most prevalent in:",
+      "options": [
+        "Lagos",
+        "Onitsha (Eastern Nigeria)",
+        "Kano",
+        "Ibadan"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Kola tenancy is a unique regional variation of landholding."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A Kola Tenant pays:",
+      "options": [
+        "Annual tribute",
+        "A token 'kola' or payment at the start",
+        "Half the crops",
+        "Nothing"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The initial contribution grants a virtually permanent interest."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'Kola Tenancy Act' was designed to:",
+      "options": [
+        "Encourage more kola tenancies",
+        "Extinguish certain kola holdings and allow for compensation",
+        "Give all land to the King",
+        "Abolish customary law"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Act aimed to modernize and formalize these specific tenures."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'customary pledge' is a:",
+      "options": [
+        "Gift",
+        "Security transaction where possession is given to a creditor",
+        "Sale with a return clause",
+        "Type of tax"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The creditor uses the land as security for a loan."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "The rule 'once a pledge, always a pledge' means:",
+      "options": [
+        "The debt can never be paid",
+        "The land is perpetually redeemable",
+        "The pledgee owns the land",
+        "The Governor cannot revoke it"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Title does not pass to the creditor by lapse of time; the owner can always redeem."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A pledgee who plants economic trees does so:",
+      "options": [
+        "At the owner's expense",
+        "At their own peril (quic quid applies)",
+        "With a 50% profit share",
+        "By Governor's order"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Structural or long-term investments by the pledgee do not grant title."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "Can a pledgee sell the pledged land to recover the debt?",
+      "options": [
+        "Yes, after 1 year",
+        "No; such disposition is void",
+        "Only with witnesses",
+        "Only if the price is high"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The pledgee only has possessory rights, not the power of sale."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "If a customary tenant abandons the land with no intent to return, the tenancy:",
+      "options": [
+        "Continues forever",
+        "Determines",
+        "Goes to the Governor",
+        "Is sold"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Voluntary abandonment ends the customary relationship."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the effect of the nemo dat quod non habet rule on a purchaser of an overlord's title?",
+      "options": [
+        "They can evict all tenants",
+        "They step into the shoes of the overlord and cannot eject existing tenants",
+        "They own the land absolutely",
+        "The tenancy is abolished"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The new owner is bound by the existing customary tenant's rights."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Customary Land Transactions",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'customary tenancy' differs from a 'lease' because it lacks:",
+      "options": [
+        "Land",
+        "Certainty of duration",
+        "Tribute",
+        "Witnesses"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Customary tenancies are indefinite, whereas leases must have a certain term."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "The Land Use Act (1978) vests all land in a state in:",
+      "options": [
+        "The President",
+        "The Governor",
+        "The Local Government",
+        "The People"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Section 1 of the LUA vests all land in the Governor of each state."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Section 1 of the Act states land is held 'in trust' for:",
+      "options": [
+        "The Governor's family",
+        "The use and common benefit of Nigerians",
+        "Foreign investors",
+        "The King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Governor acts as a fiduciary for the benefit of the people."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "According to the Supreme Court in Ogunleye V Oni, the Act did NOT:",
+      "options": [
+        "Vest title in the Governor",
+        "Abolish all existing titles and rights to possession",
+        "Create urban areas",
+        "Require consent for mortgages"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Act modified titles into rights of occupancy but didn't wipe out existing rights of possession."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "'Urban areas' are designated by:",
+      "options": [
+        "The President",
+        "The Governor by order in a gazette",
+        "The Local Government",
+        "The High Court"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Governor has statutory authority to define urban boundaries."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "The body that advises the Governor on land management in urban areas is the:",
+      "options": [
+        "Land Allocation Advisory Committee",
+        "Land Use and Allocation Committee",
+        "Ministry of Justice",
+        "Traditional Council"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The LUAC is the primary advisory body for urban land matters."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'minor' under the Land Use Act is anyone under:",
+      "options": [
+        "18 years",
+        "21 years",
+        "25 years",
+        "16 years"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The LUA sets the age of maturity for land grants at 21."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "'Developed land' includes land with physical improvements like:",
+      "options": [
+        "Just grass",
+        "Roads, water, or buildings",
+        "Only gold mines",
+        "A fence made of sticks"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Development requires substantial human intervention and improvement."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'half hectare rule' applies to:",
+      "options": [
+        "Developed land in urban areas",
+        "Undeveloped land in urban areas",
+        "All rural land",
+        "Mining sites"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "S.34 of the LUA limits undeveloped urban land holdings to half a hectare."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'deemed grant' for agricultural land in non-urban areas entitles the occupier to a:",
+      "options": [
+        "Statutory right of occupancy",
+        "Customary right of occupancy",
+        "Fee simple",
+        "License to mine"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Rural landholders are deemed to have a customary right of occupancy."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Section 5(2) of the Act provides that a new statutory grant:",
+      "options": [
+        "Is always void",
+        "Extinguishes all existing rights to the use and occupation",
+        "Must be signed by the President",
+        "Lasts forever"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "An actual grant overrides and extinguishes any previous deemed rights."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "In Savannah Bank Ltd v. Ajilo, the court held that Governor's consent is required for:",
+      "options": [
+        "Only actual grants",
+        "Both actual and deemed grants",
+        "Only gifts",
+        "No transactions"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The consent requirement applies broadly to all rights of occupancy under the Act."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'Certificate of Occupancy' is:",
+      "options": [
+        "Conclusive evidence of title",
+        "Prima facie evidence of a right to use and occupy",
+        "A deed of gift",
+        "Only for urban land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A C of O is evidence of a right, but can be challenged (it is not absolute proof of ownership)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Can a Local Government issue a Certificate of Occupancy?",
+      "options": [
+        "Yes, for rural land",
+        "No; it is the prerogative of the Governor",
+        "Only if the Governor is busy",
+        "Only to family heads"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Governor is the sole authority for issuing the formal C of O certificate."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Alienation of a right of occupancy without Governor's consent makes the transaction:",
+      "options": [
+        "Voidable",
+        "Ineffectual and the instrument void",
+        "Valid but taxed",
+        "A crime only"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "S.22 and S.26 make such transfers strictly void in law."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "The Governor can revoke a right of occupancy for:",
+      "options": [
+        "Personal reasons",
+        "Overriding public interest",
+        "The King's request",
+        "Fun"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Section 28 allows revocation for defined public purposes or overrides."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Revocation for a 'public purpose' requires:",
+      "options": [
+        "No notice",
+        "Notice stating the specific purpose",
+        "A payment of 1 billion Naira",
+        "Only an oral announcement"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The notice must clearly specify why the land is being taken."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Revocation is NOT valid if the notice is served only by:",
+      "options": [
+        "Hand delivery",
+        "Publication in a newspaper (without following Section 44)",
+        "Registered letter",
+        "Affixing to the premises"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Proper service according to the statute is a condition precedent to valid revocation."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Is compensation payable for 'vacant land' with no improvements?",
+      "options": [
+        "Yes, the full market value",
+        "No; it is for unexhausted improvements",
+        "Only if the Governor feels like it",
+        "Only in urban areas"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Compensation is generally restricted to the value of improvements on the land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Disputes regarding the amount of compensation are referred to:",
+      "options": [
+        "The Supreme Court",
+        "The Land Use and Allocation Committee",
+        "The Local Government Chairman",
+        "The King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The LUAC handles valuation and compensation disputes."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Land Use Act",
+    "type": "objective",
+    "question_data": {
+      "text": "Does the Land Use Act abolish Customary Tenancy?",
+      "options": [
+        "Yes, completely",
+        "No; it preserves the relationship but modifies the radical title",
+        "Only in the North",
+        "Only for building leases"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Abioye v. Yakubu confirmed that the Act does not wipe out customary relationships."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'Doctrine of Estate' was introduced to Nigeria from:",
+      "options": [
+        "France",
+        "England",
+        "Islamic Law",
+        "The US"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Nigeria's land law system is heavily influenced by English common law principles."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "In English law, who enjoys absolute ownership of all land?",
+      "options": [
+        "The people",
+        "The reigning monarch (The Crown)",
+        "The Parliament",
+        "The Church"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The doctrine of tenure posits that all land is held of the Crown."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "An 'estate' represents the measure of a person’s right to:",
+      "options": [
+        "Vote",
+        "Seisin (possession)",
+        "Mine minerals",
+        "Evict the King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Estate defines the duration and nature of the interest in the land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'freehold estate' is characterized by:",
+      "options": [
+        "Certainty of period",
+        "Uncertainty of duration and lack of a superior title",
+        "Being less than a lease",
+        "Requiring rent to the King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Freeholds are indefinite in duration, unlike leaseholds."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "Which of these is a 'freehold of inheritance'?",
+      "options": [
+        "Life estate",
+        "Fee simple",
+        "Tenancy at will",
+        "Periodic tenancy"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A fee simple can be passed to heirs indefinitely."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "'Fee simple' is the largest estate known and is practically equivalent to:",
+      "options": [
+        "A lease",
+        "Ownership",
+        "A license",
+        "A pledge"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Fee simple absolute in possession is the closest one can get to absolute ownership."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "The word 'simple' in fee simple indicates it can be inherited by:",
+      "options": [
+        "Only male heirs",
+        "General heirs (ascendants, descendants, or collaterals)",
+        "Only the eldest son",
+        "The State only"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Simple means there are no restrictions on which heirs can inherit."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "The classic common law formula to create a fee simple was:",
+      "options": [
+        "'To A forever'",
+        "'To A and his heirs'",
+        "'To A in tail'",
+        "'To A and his successors'"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Strict words of limitation were required at common law to pass the fee."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "A grant 'To Amazon Nig. Ltd' at common law passed a fee simple because:",
+      "options": [
+        "It is a rich company",
+        "A corporation aggregate has no heirs",
+        "The Governor ordered it",
+        "It is a statutory right"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Corporations have perpetual succession rather than biological heirs."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "Section 85(1) of the PCL provides that a conveyance without words of limitation passes:",
+      "options": [
+        "A life estate",
+        "A fee simple (unless contrary intention)",
+        "Nothing",
+        "A customary pledge"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Property and Conveyancing Law modernized the requirement for words of limitation."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "'Fee tail' is inheritable ONLY by:",
+      "options": [
+        "Uncles",
+        "Specified lineal descendants of the grantee",
+        "The Governor",
+        "Anyone in the will"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Fee tail (from 'tailler', to cut) restricts inheritance to specific descendants."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "'Tail male' means the estate can only be inherited by:",
+      "options": [
+        "The eldest son",
+        "Male descendants of the body",
+        "Brothers",
+        "The King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "It restricts inheritance to the male line of descent."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "In PCL states, a conveyance of a fee tail estate now operates as a:",
+      "options": [
+        "Life estate",
+        "Fee simple absolute",
+        "Lease",
+        "Crime"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Modern law has largely abolished or converted fee tails."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'life estate' is determined by:",
+      "options": [
+        "99 years",
+        "The life of the tenant or another person (pur autree vie)",
+        "The Governor's whim",
+        "The price of the land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A life estate lasts only for the duration of a specific person's life."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "A condition 'To X and his heirs when X is 21' is a:",
+      "options": [
+        "Condition subsequent",
+        "Condition precedent",
+        "Determinable fee",
+        "Void condition"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The interest only vests once the condition (turning 21) is met."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'determinable interest' automatically determines upon:",
+      "options": [
+        "A court order",
+        "The occurrence of a specified event which may never happen",
+        "The death of the King",
+        "12 years"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The interest flows back automatically if the defining event occurs."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "If a condition is 'repugnant to the interest granted,' it is:",
+      "options": [
+        "Mandatory",
+        "Void",
+        "A deemed grant",
+        "A fee tail"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Conditions that contradict the basic nature of the grant are legally ineffective."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "The Land Use Act converted unlimited rights into:",
+      "options": [
+        "Fee simples",
+        "Rights of occupancy",
+        "Customary gifts",
+        "Allodial titles"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The LUA standardized all titles into rights of occupancy."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'deemed grantee' under the Land Use Act holds an estate akin to:",
+      "options": [
+        "A leasehold",
+        "A freehold (as it is not limited to a term of years)",
+        "A license",
+        "A pledge"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Deemed grants are often construed as indefinite interests similar to freeholds."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Estates in Land",
+    "type": "objective",
+    "question_data": {
+      "text": "'Seisin' refers to:",
+      "options": [
+        "Taxes",
+        "Possession",
+        "Sale",
+        "Rituals"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Seisin is the formal possession of a freehold estate."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'settlement' is adopted by a landowner to provide for:",
+      "options": [
+        "A quick sale",
+        "A succession of beneficiaries",
+        "The Governor's taxes",
+        "Criminal defense"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Settlements manage property for the benefit of generations."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "'Strict settlement' was traditionally used to:",
+      "options": [
+        "Sell land quickly",
+        "Keep land in the family through successive generations",
+        "Give land to the Church",
+        "Abolish fee simples"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Strict settlement ensured land remained within biological lineages."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "The Settled Land Act 1882 gave the 'tenant for life' the power to:",
+      "options": [
+        "Kill the heirs",
+        "Sell, lease, or mortgage the settled land",
+        "Cancel the settlement",
+        "Bequeath the land to a stranger"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Act modernized settlements by giving the life tenant managerial powers."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "Under the Act, land is 'settled land' if it is held by:",
+      "options": [
+        "An adult in fee simple",
+        "An infant",
+        "The Governor",
+        "A stranger"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Land held by an infant is automatically treated as settled land under the statute."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'trust for sale' directs trustees to:",
+      "options": [
+        "Keep the land forever",
+        "Sell the land and hold the proceeds for beneficiaries",
+        "Give the land to the King",
+        "Mine the land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The primary duty is to sell, though they can postpone it."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'Doctrine of Conversion' treats land held on trust for sale as:",
+      "options": [
+        "Soil",
+        "Money/Personalty",
+        "A crime",
+        "A building"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Equity treats that as done which ought to be done (converting land to money)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'trust for sale' must be:",
+      "options": [
+        "Optional",
+        "Immediate and binding",
+        "For 99 years",
+        "Oral"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "A valid trust for sale requires a mandatory instruction to sell."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "In PCL states, land conveyed to an infant operates as a:",
+      "options": [
+        "Gift",
+        "Trust for sale",
+        "Customary pledge",
+        "Life estate"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Law creates a statutory trust for sale to protect the infant's interest."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "Tenancy in common created by conveyance vests the legal estate in:",
+      "options": [
+        "Everyone in the city",
+        "At most 4 joint tenants upon statutory trust for sale",
+        "The Family Head",
+        "The Governor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "PCL restricts how many people can hold the legal title directly."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "The subject matter of a strict settlement is:",
+      "options": [
+        "Money",
+        "Land",
+        "Crops",
+        "Cattle"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Strict settlement is concerned with the land itself remaining in the family."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "The subject matter of a trust for sale is:",
+      "options": [
+        "Land",
+        "Personalty/Money",
+        "Minerals",
+        "Titles"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "In equity, the beneficiaries are interested in the value (money)."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "Under S.25 of the Land Use Act, attempts to create future successive ownership by settlement are:",
+      "options": [
+        "Encouraged",
+        "Defeated/Void",
+        "Taxed heavily",
+        "Mandatory"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The LUA discourages complex future interests that fragment the right of occupancy."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "Does the Land Use Act affect settlements created before the Act?",
+      "options": [
+        "Yes, they are void",
+        "No; the Act is prospective",
+        "Only in urban areas",
+        "Only for infants"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Act generally does not invalidate pre-existing legal arrangements retrospectively."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'tenant for life' must give notice of intent to sell to at least:",
+      "options": [
+        "10 people",
+        "2 trustees",
+        "The Governor",
+        "The King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Procedural safeguards ensure the interests of remaindermen are protected."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "Powers of a tenant for life:",
+      "options": [
+        "Can be assigned to a stranger",
+        "Cannot be assigned and remain with the tenant for life",
+        "Are abolished by the PCL",
+        "Must be exercised by the Governor"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "These statutory powers are personal to the life tenant's status."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'vesting deed' is used to:",
+      "options": [
+        "Pay taxes",
+        "Convey land to trustees in a settlement",
+        "Revoke a grant",
+        "Clear a bush"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The vesting deed formally places the legal interest in the appropriate hands under the settlement."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "What happens to the interests of beneficiaries when a tenant for life sells the land?",
+      "options": [
+        "They are destroyed",
+        "They are overreached and converted to money",
+        "They stay on the land",
+        "They go to the King"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Overreaching allows a clean title to pass to the buyer while protecting beneficiaries' value."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "'Resettlement' usually happened when the eldest son:",
+      "options": [
+        "Died",
+        "Attained his majority",
+        "Married",
+        "Sold the land"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Resettlement typically occurred when the next generation turned 21."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "An instrument prohibiting a tenant for life from exercising statutory powers is:",
+      "options": [
+        "Mandatory",
+        "Void",
+        "A crime",
+        "Only valid in Lagos"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The statutory powers of a life tenant cannot be restricted by a private document."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Concept of Settlement",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'Settled Land Act' is a:",
+      "options": [
+        "Local enactment",
+        "Statute of General Application",
+        "Customary rule",
+        "Part of the 1999 Constitution"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The 1882 Act is a key English statute received into Nigerian law."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "'Co-ownership' exists where two or more persons are:",
+      "options": [
+        "Neighbors",
+        "Simultaneously entitled to the enjoyment of land",
+        "Related by blood only",
+        "Suing each other"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Co-ownership involves concurrent interests in the same parcel of land."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "A 'joint tenancy' arises where land is conveyed without:",
+      "options": [
+        "Money",
+        "Words of severance",
+        "Witnesses",
+        "The Governor’s consent"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Without words indicating split shares, the law presumes a joint holding."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "To the outside world, joint tenants are seen as:",
+      "options": [
+        "Multiple owners",
+        "One single owner",
+        "Tenants only",
+        "Trespassers"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Joint tenants hold 'per my et per tout' – as a single legal entity."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "The 'right of survivorship' (jus accrescendi) means that on the death of a joint tenant:",
+      "options": [
+        "Their share goes to their children",
+        "Their interest is extinguished and the remainder survivors take it",
+        "The land goes to the State",
+        "The land is sold"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Survivorship is the defining feature of joint tenancy."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "The '4 unities' of joint tenancy are:",
+      "options": [
+        "Faith, Hope, Love, Peace",
+        "Possession, Interest, Title, Time",
+        "North, South, East, West",
+        "Land, Water, Air, Fire"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "All four unities must coexist for a joint tenancy to be valid."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "'Tenancy in common' arises where there are 'words of severance' like:",
+      "options": [
+        "'To A and B jointly'",
+        "'In equal shares' or 'share and share alike'",
+        "'To A only'",
+        "'To the Family Head'"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "These words indicate that the parties take distinct, split shares."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Tenants in common hold in:",
+      "options": [
+        "One single block",
+        "Undivided shares",
+        "Different cities",
+        "Secret"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Each has a distinct share, but the physical land is not yet divided."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Does 'survivorship' apply to tenancy in common?",
+      "options": [
+        "Yes",
+        "No; a tenant can give their share by will",
+        "Only if they are married",
+        "Only in urban areas"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "There is no jus accrescendi in tenancy in common."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Which unity is the ONLY one required for a tenancy in common?",
+      "options": [
+        "Unity of Time",
+        "Unity of Possession",
+        "Unity of Title",
+        "Unity of Interest"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Without unity of possession, there is no co-ownership at all."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Equity presumes a tenancy in common if there is:",
+      "options": [
+        "Unequal contribution to the purchase price",
+        "A very long contract",
+        "A marriage",
+        "A gift"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Equity leans against joint tenancies where contributions are unequal."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Land acquired as a 'partnership asset' is presumed in equity to be held as:",
+      "options": [
+        "Joint tenancy",
+        "Tenancy in common",
+        "Sole ownership",
+        "State property"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Commercial partnerships are presumed to hold property as tenants in common."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "In PCL states, a 'legal estate' can ONLY be held as a:",
+      "options": [
+        "Tenancy in common",
+        "Joint tenancy",
+        "Life estate",
+        "Customary pledge"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The 1925 reforms (mirrored in PCL) prohibited legal tenancies in common."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "What is the maximum number of people who can hold a legal estate as joint tenants under PCL?",
+      "options": [
+        "2",
+        "4",
+        "10",
+        "Unlimited"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "PCL limits the number of legal trustees to four."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "A legal joint tenancy under PCL is held upon a:",
+      "options": [
+        "Statutory trust for sale",
+        "Customary gift",
+        "99-year lease",
+        "Criminal bond"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "This mechanism ensures the property remains manageable even if owners disagree."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "'Severance' is the process of:",
+      "options": [
+        "Selling land to the Governor",
+        "Separating off a share of a joint tenancy to create a tenancy in common",
+        "Building a fence",
+        "Paying off a mortgage"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Severance destroys the unity of interest/title to end survivorship."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Can a joint tenancy be severed by a will?",
+      "options": [
+        "Yes",
+        "No; it operates only inter vivos",
+        "Only if the Governor says so",
+        "Only for land in Lagos"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Survivorship takes precedence over a testamentary disposition."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Which of these is a mode of severance?",
+      "options": [
+        "Written notice to other joint tenants",
+        "Thinking about it",
+        "Moving to another state",
+        "Getting a new job"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "A formal notice is the most common way to sever an equitable joint tenancy."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Severance by 'Homicide' occurs when:",
+      "options": [
+        "The Governor dies",
+        "One joint tenant kills another",
+        "The land is destroyed",
+        "A witness is murdered"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Public policy prevents a killer from benefiting through survivorship."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "'Over-reaching' protects a purchaser by:",
+      "options": [
+        "Giving them more land",
+        "Detaching equitable interests from the land and moving them to the money",
+        "Evicting the King",
+        "Abolishing taxes"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Overreaching shifts the beneficiaries' rights from the physical land to the sale proceeds."
+    }
+  },
+  {
+    "course": "Land Law",
+    "topic": "Co-ownership",
+    "type": "objective",
+    "question_data": {
+      "text": "Under PCL, can a joint tenancy of a legal estate be severed?",
+      "options": [
+        "Yes, by notice",
+        "No; it is impermissible",
+        "Only by the Governor",
+        "Only if all 4 tenants agree."
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Legal joint tenancies cannot be severed; only the equitable interest can be."
+    }
+  }
+]

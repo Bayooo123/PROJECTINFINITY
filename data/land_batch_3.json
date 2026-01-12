@@ -1,0 +1,642 @@
+[
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "Who holds the land for the use of the village or family under customary law?",
+            "options": [
+                "The Governor",
+                "The Chief or Family Head",
+                "The oldest woman",
+                "The Local Government Chairman"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The head of the group acts as a manager for the benefit of all members."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "A Family Head is described as a 'trustee beneficiary' because:",
+            "options": [
+                "He owns the land alone",
+                "He has no title but equal rights with other members",
+                "He is a professional lawyer",
+                "He is appointed by the Governor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "He manages the land and shares in its benefits like any other member."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "In Yoruba custom, 'family' for land purposes includes:",
+            "options": [
+                "Only male children",
+                "Both male and female children",
+                "Only the eldest son",
+                "All neighbors"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Yoruba customary law generally recognizes both male and female children as members."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "The Igbo custom of 'male primogeniture' generally:",
+            "options": [
+                "Includes daughters",
+                "Excludes daughters from inheriting land",
+                "Is abolished by any Governor",
+                "Only applies to urban land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Historically, many Igbo customs prioritized male inheritance for land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "In Benin and Onitsha, the Igiogbe (ancestral home) devolves to:",
+            "options": [
+                "All children equally",
+                "The eldest son exclusively",
+                "The widow",
+                "The community"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 'Igiogbe' is a special inheritance reserved for the eldest son."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "Can a widow inherit her husband’s property under strict native law?",
+            "options": [
+                "Yes, always",
+                "No",
+                "Only if she has a son",
+                "Only in Lagos"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Under many traditional systems, a widow does not inherit her husband's land absolutely."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "Slaves under ancient customary law were often regarded as:",
+            "options": [
+                "Family heads",
+                "Object of inheritance/property",
+                "Government officials",
+                "Equal to sons"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Historically, slaves were considered chattel or property within the system."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "A grandchild becomes a member of the family for succession purposes only:",
+            "options": [
+                "At age 21",
+                "Upon the death of their parent (who was a member)",
+                "If they are male",
+                "If the Governor agrees"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The right to inherit usually passes through the parent."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "Land purchased with 'family funds' becomes:",
+            "options": [
+                "Property of the head",
+                "Family property",
+                "State property",
+                "A gift"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The source of the funds determines the character of the property."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "A family head is usually:",
+            "options": [
+                "Elected by the Governor",
+                "The eldest surviving male child",
+                "The richest member",
+                "A stranger"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Seniority in age and lineage usually determines the family head."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "Is the Family Head a 'trustee' in the strict English sense?",
+            "options": [
+                "Yes, exactly",
+                "No; for example, he is personally liable for debts in some cases",
+                "He is a King",
+                "He is a civil servant"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The hybrid nature of the role differs from the strict English equitable trustee."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'non-accountability' of the family head:",
+            "options": [
+                "Is an absolute rule in Nigeria",
+                "Is not a judicially noticed custom; accountability depends on circumstances",
+                "Was abolished in 1863",
+                "Only applies to women"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Courts now often demand accountability from family heads."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "'Principal members' in a polygamous family are usually:",
+            "options": [
+                "All the children",
+                "The eldest child of each wife",
+                "The wives only",
+                "The uncles"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Each 'Idi-Igi' or 'Ori-Ojori' branch is represented by a principal member."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "A member of the family has which right over family land?",
+            "options": [
+                "Absolute ownership",
+                "Right of use and exclusive possession of allocated portion",
+                "Right to sell it to strangers",
+                "Right to bequeath it by will"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Individual rights are usufructuary and subject to the collective interest."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "If a member improves family land with their own money, the land:",
+            "options": [
+                "Becomes their private property",
+                "Remains family property",
+                "Is revoked by the Governor",
+                "Must be sold"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Ownership of land and structures often remain with the family title (quic quid rule)."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "Alienation of family property without the consent of the Family Head is:",
+            "options": [
+                "Voidable",
+                "Void",
+                "Valid",
+                "Statutory"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The head's consent is critical for a valid transfer of family title."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "Alienation by the Family Head without the consent of principal members is:",
+            "options": [
+                "Void",
+                "Voidable",
+                "Absolute",
+                "Illegal"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Such a sale can be set aside by the non-consenting principal members."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'voidable' sale is valid until:",
+            "options": [
+                "The Governor says no",
+                "A non-consenting party sets it aside timeously",
+                "99 years pass",
+                "The price is paid"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Reasonable promptness is required to challenge a voidable transaction."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "A Power of Attorney for family land must be executed by:",
+            "options": [
+                "The youngest member",
+                "The Family Head",
+                "A judge",
+                "The Local Government Chairman"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The head's authority is required for legal instruments on behalf of the family."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Tenure System",
+        "type": "objective",
+        "question_data": {
+            "text": "'Partition' of family land results in:",
+            "options": [
+                "The Head owning everything",
+                "Each former co-tenant becoming a separate owner of a specific portion",
+                "The Governor revoking the land",
+                "A customary pledge"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Partition ends the communal tenure and creates absolute individual titles."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'sale' of land at customary law is only complete when:",
+            "options": [
+                "A contract is signed",
+                "The full purchase price is paid",
+                "The Governor consents",
+                "12 years pass"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Customary sale requires payment and the actual handing over of possession in the presence of witnesses."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of these is a requirement for a valid customary sale?",
+            "options": [
+                "A written deed",
+                "Presence of witnesses during the handing over",
+                "Payment in cowries only",
+                "A survey plan"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Witnesses are the traditional 'publicity' mechanism for land transfers."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "The maxim caveat emptor means:",
+            "options": [
+                "Land belongs to the King",
+                "Let the buyer beware",
+                "First in time prevails",
+                "Equity is equality"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The buyer must investigate the title and physical state of the land themselves."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'gift' of land (inter vivos) requires:",
+            "options": [
+                "Payment of a small fee",
+                "Full intention by the donor to never have the land return",
+                "A 99-year lease",
+                "The Governor’s signature"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Customary gifts must be absolute and permanent."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "'Borrowing' of land is usually for:",
+            "options": [
+                "Building houses",
+                "Temporary farming of food crops",
+                "Mining",
+                "99 years"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Borrowed land allows for seasonal use without granting permanent title."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'customary tenant' enjoys their interest:",
+            "options": [
+                "For only 1 year",
+                "In perpetuity subject to good behavior",
+                "Until the Governor revokes it",
+                "Only if they are a family member"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The grant is permanent as long as the tenant respects the overlord's title."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "Customary tenancy is characterized by the payment of:",
+            "options": [
+                "Rent",
+                "Tribute",
+                "Taxes",
+                "Interest"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Tribute (Ishakole) is the acknowledgment of the overlord's radical title."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "Does a customary tenant have the right to exclude the overlord?",
+            "options": [
+                "No, never",
+                "Yes, they have exclusive possession",
+                "Only during the day",
+                "Only if they are related"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The tenant has exclusive occupation of the land allotted to them."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A customary tenant who denies the overlord’s title is liable to:",
+            "options": [
+                "A fine",
+                "Forfeiture",
+                "Promotion",
+                "Paying double tribute"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Denial of title is the most serious breach, leading to loss of the tenancy."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "Is forfeiture of a customary tenancy automatic?",
+            "options": [
+                "Yes, upon misbehavior",
+                "No; it must be enforced via a court order",
+                "Only in urban areas",
+                "Only for non-payment of rent"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The court must formally declare the forfeiture based on the evidence."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "'Kola Tenancy' was most prevalent in:",
+            "options": [
+                "Lagos",
+                "Onitsha (Eastern Nigeria)",
+                "Kano",
+                "Ibadan"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Kola tenancy is a unique regional variation of landholding."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A Kola Tenant pays:",
+            "options": [
+                "Annual tribute",
+                "A token 'kola' or payment at the start",
+                "Half the crops",
+                "Nothing"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The initial contribution grants a virtually permanent interest."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Kola Tenancy Act' was designed to:",
+            "options": [
+                "Encourage more kola tenancies",
+                "Extinguish certain kola holdings and allow for compensation",
+                "Give all land to the King",
+                "Abolish customary law"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Act aimed to modernize and formalize these specific tenures."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'customary pledge' is a:",
+            "options": [
+                "Gift",
+                "Security transaction where possession is given to a creditor",
+                "Sale with a return clause",
+                "Type of tax"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The creditor uses the land as security for a loan."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule 'once a pledge, always a pledge' means:",
+            "options": [
+                "The debt can never be paid",
+                "The land is perpetually redeemable",
+                "The pledgee owns the land",
+                "The Governor cannot revoke it"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Title does not pass to the creditor by lapse of time; the owner can always redeem."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A pledgee who plants economic trees does so:",
+            "options": [
+                "At the owner's expense",
+                "At their own peril (quic quid applies)",
+                "With a 50% profit share",
+                "By Governor's order"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Structural or long-term investments by the pledgee do not grant title."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "Can a pledgee sell the pledged land to recover the debt?",
+            "options": [
+                "Yes, after 1 year",
+                "No; such disposition is void",
+                "Only with witnesses",
+                "Only if the price is high"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The pledgee only has possessory rights, not the power of sale."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "If a customary tenant abandons the land with no intent to return, the tenancy:",
+            "options": [
+                "Continues forever",
+                "Determines",
+                "Goes to the Governor",
+                "Is sold"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Voluntary abandonment ends the customary relationship."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the effect of the nemo dat quod non habet rule on a purchaser of an overlord's title?",
+            "options": [
+                "They can evict all tenants",
+                "They step into the shoes of the overlord and cannot eject existing tenants",
+                "They own the land absolutely",
+                "The tenancy is abolished"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The new owner is bound by the existing customary tenant's rights."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Customary Land Transactions",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'customary tenancy' differs from a 'lease' because it lacks:",
+            "options": [
+                "Land",
+                "Certainty of duration",
+                "Tribute",
+                "Witnesses"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Customary tenancies are indefinite, whereas leases must have a certain term."
+        }
+    }
+]

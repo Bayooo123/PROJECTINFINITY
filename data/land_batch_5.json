@@ -1,0 +1,322 @@
+[
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Doctrine of Estate' was introduced to Nigeria from:",
+            "options": [
+                "France",
+                "England",
+                "Islamic Law",
+                "The US"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Nigeria's land law system is heavily influenced by English common law principles."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In English law, who enjoys absolute ownership of all land?",
+            "options": [
+                "The people",
+                "The reigning monarch (The Crown)",
+                "The Parliament",
+                "The Church"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The doctrine of tenure posits that all land is held of the Crown."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "An 'estate' represents the measure of a person’s right to:",
+            "options": [
+                "Vote",
+                "Seisin (possession)",
+                "Mine minerals",
+                "Evict the King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Estate defines the duration and nature of the interest in the land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'freehold estate' is characterized by:",
+            "options": [
+                "Certainty of period",
+                "Uncertainty of duration and lack of a superior title",
+                "Being less than a lease",
+                "Requiring rent to the King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Freeholds are indefinite in duration, unlike leaseholds."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of these is a 'freehold of inheritance'?",
+            "options": [
+                "Life estate",
+                "Fee simple",
+                "Tenancy at will",
+                "Periodic tenancy"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A fee simple can be passed to heirs indefinitely."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "'Fee simple' is the largest estate known and is practically equivalent to:",
+            "options": [
+                "A lease",
+                "Ownership",
+                "A license",
+                "A pledge"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Fee simple absolute in possession is the closest one can get to absolute ownership."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "The word 'simple' in fee simple indicates it can be inherited by:",
+            "options": [
+                "Only male heirs",
+                "General heirs (ascendants, descendants, or collaterals)",
+                "Only the eldest son",
+                "The State only"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Simple means there are no restrictions on which heirs can inherit."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "The classic common law formula to create a fee simple was:",
+            "options": [
+                "'To A forever'",
+                "'To A and his heirs'",
+                "'To A in tail'",
+                "'To A and his successors'"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Strict words of limitation were required at common law to pass the fee."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "A grant 'To Amazon Nig. Ltd' at common law passed a fee simple because:",
+            "options": [
+                "It is a rich company",
+                "A corporation aggregate has no heirs",
+                "The Governor ordered it",
+                "It is a statutory right"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Corporations have perpetual succession rather than biological heirs."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 85(1) of the PCL provides that a conveyance without words of limitation passes:",
+            "options": [
+                "A life estate",
+                "A fee simple (unless contrary intention)",
+                "Nothing",
+                "A customary pledge"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Property and Conveyancing Law modernized the requirement for words of limitation."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "'Fee tail' is inheritable ONLY by:",
+            "options": [
+                "Uncles",
+                "Specified lineal descendants of the grantee",
+                "The Governor",
+                "Anyone in the will"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Fee tail (from 'tailler', to cut) restricts inheritance to specific descendants."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "'Tail male' means the estate can only be inherited by:",
+            "options": [
+                "The eldest son",
+                "Male descendants of the body",
+                "Brothers",
+                "The King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It restricts inheritance to the male line of descent."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In PCL states, a conveyance of a fee tail estate now operates as a:",
+            "options": [
+                "Life estate",
+                "Fee simple absolute",
+                "Lease",
+                "Crime"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Modern law has largely abolished or converted fee tails."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'life estate' is determined by:",
+            "options": [
+                "99 years",
+                "The life of the tenant or another person (pur autree vie)",
+                "The Governor's whim",
+                "The price of the land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A life estate lasts only for the duration of a specific person's life."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "A condition 'To X and his heirs when X is 21' is a:",
+            "options": [
+                "Condition subsequent",
+                "Condition precedent",
+                "Determinable fee",
+                "Void condition"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The interest only vests once the condition (turning 21) is met."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'determinable interest' automatically determines upon:",
+            "options": [
+                "A court order",
+                "The occurrence of a specified event which may never happen",
+                "The death of the King",
+                "12 years"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The interest flows back automatically if the defining event occurs."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "If a condition is 'repugnant to the interest granted,' it is:",
+            "options": [
+                "Mandatory",
+                "Void",
+                "A deemed grant",
+                "A fee tail"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Conditions that contradict the basic nature of the grant are legally ineffective."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "The Land Use Act converted unlimited rights into:",
+            "options": [
+                "Fee simples",
+                "Rights of occupancy",
+                "Customary gifts",
+                "Allodial titles"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The LUA standardized all titles into rights of occupancy."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'deemed grantee' under the Land Use Act holds an estate akin to:",
+            "options": [
+                "A leasehold",
+                "A freehold (as it is not limited to a term of years)",
+                "A license",
+                "A pledge"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Deemed grants are often construed as indefinite interests similar to freeholds."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Estates in Land",
+        "type": "objective",
+        "question_data": {
+            "text": "'Seisin' refers to:",
+            "options": [
+                "Taxes",
+                "Possession",
+                "Sale",
+                "Rituals"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Seisin is the formal possession of a freehold estate."
+        }
+    }
+]

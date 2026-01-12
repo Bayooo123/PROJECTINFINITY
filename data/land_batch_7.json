@@ -1,0 +1,322 @@
+[
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "'Co-ownership' exists where two or more persons are:",
+            "options": [
+                "Neighbors",
+                "Simultaneously entitled to the enjoyment of land",
+                "Related by blood only",
+                "Suing each other"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Co-ownership involves concurrent interests in the same parcel of land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'joint tenancy' arises where land is conveyed without:",
+            "options": [
+                "Money",
+                "Words of severance",
+                "Witnesses",
+                "The Governor’s consent"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Without words indicating split shares, the law presumes a joint holding."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "To the outside world, joint tenants are seen as:",
+            "options": [
+                "Multiple owners",
+                "One single owner",
+                "Tenants only",
+                "Trespassers"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Joint tenants hold 'per my et per tout' – as a single legal entity."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'right of survivorship' (jus accrescendi) means that on the death of a joint tenant:",
+            "options": [
+                "Their share goes to their children",
+                "Their interest is extinguished and the remainder survivors take it",
+                "The land goes to the State",
+                "The land is sold"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Survivorship is the defining feature of joint tenancy."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "The '4 unities' of joint tenancy are:",
+            "options": [
+                "Faith, Hope, Love, Peace",
+                "Possession, Interest, Title, Time",
+                "North, South, East, West",
+                "Land, Water, Air, Fire"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "All four unities must coexist for a joint tenancy to be valid."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "'Tenancy in common' arises where there are 'words of severance' like:",
+            "options": [
+                "'To A and B jointly'",
+                "'In equal shares' or 'share and share alike'",
+                "'To A only'",
+                "'To the Family Head'"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These words indicate that the parties take distinct, split shares."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Tenants in common hold in:",
+            "options": [
+                "One single block",
+                "Undivided shares",
+                "Different cities",
+                "Secret"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Each has a distinct share, but the physical land is not yet divided."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Does 'survivorship' apply to tenancy in common?",
+            "options": [
+                "Yes",
+                "No; a tenant can give their share by will",
+                "Only if they are married",
+                "Only in urban areas"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "There is no jus accrescendi in tenancy in common."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Which unity is the ONLY one required for a tenancy in common?",
+            "options": [
+                "Unity of Time",
+                "Unity of Possession",
+                "Unity of Title",
+                "Unity of Interest"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Without unity of possession, there is no co-ownership at all."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Equity presumes a tenancy in common if there is:",
+            "options": [
+                "Unequal contribution to the purchase price",
+                "A very long contract",
+                "A marriage",
+                "A gift"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Equity leans against joint tenancies where contributions are unequal."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Land acquired as a 'partnership asset' is presumed in equity to be held as:",
+            "options": [
+                "Joint tenancy",
+                "Tenancy in common",
+                "Sole ownership",
+                "State property"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Commercial partnerships are presumed to hold property as tenants in common."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "In PCL states, a 'legal estate' can ONLY be held as a:",
+            "options": [
+                "Tenancy in common",
+                "Joint tenancy",
+                "Life estate",
+                "Customary pledge"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 1925 reforms (mirrored in PCL) prohibited legal tenancies in common."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the maximum number of people who can hold a legal estate as joint tenants under PCL?",
+            "options": [
+                "2",
+                "4",
+                "10",
+                "Unlimited"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "PCL limits the number of legal trustees to four."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "A legal joint tenancy under PCL is held upon a:",
+            "options": [
+                "Statutory trust for sale",
+                "Customary gift",
+                "99-year lease",
+                "Criminal bond"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "This mechanism ensures the property remains manageable even if owners disagree."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "'Severance' is the process of:",
+            "options": [
+                "Selling land to the Governor",
+                "Separating off a share of a joint tenancy to create a tenancy in common",
+                "Building a fence",
+                "Paying off a mortgage"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Severance destroys the unity of interest/title to end survivorship."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Can a joint tenancy be severed by a will?",
+            "options": [
+                "Yes",
+                "No; it operates only inter vivos",
+                "Only if the Governor says so",
+                "Only for land in Lagos"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Survivorship takes precedence over a testamentary disposition."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of these is a mode of severance?",
+            "options": [
+                "Written notice to other joint tenants",
+                "Thinking about it",
+                "Moving to another state",
+                "Getting a new job"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "A formal notice is the most common way to sever an equitable joint tenancy."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Severance by 'Homicide' occurs when:",
+            "options": [
+                "The Governor dies",
+                "One joint tenant kills another",
+                "The land is destroyed",
+                "A witness is murdered"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Public policy prevents a killer from benefiting through survivorship."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "'Over-reaching' protects a purchaser by:",
+            "options": [
+                "Giving them more land",
+                "Detaching equitable interests from the land and moving them to the money",
+                "Evicting the King",
+                "Abolishing taxes"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Overreaching shifts the beneficiaries' rights from the physical land to the sale proceeds."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Co-ownership",
+        "type": "objective",
+        "question_data": {
+            "text": "Under PCL, can a joint tenancy of a legal estate be severed?",
+            "options": [
+                "Yes, by notice",
+                "No; it is impermissible",
+                "Only by the Governor",
+                "Only if all 4 tenants agree."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Legal joint tenancies cannot be severed; only the equitable interest can be."
+        }
+    }
+]

@@ -1,0 +1,322 @@
+[
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Property is deemed 'real' when the court:",
+            "options": [
+                "Awards only money",
+                "Restores the thing itself to the owner",
+                "Punishes the thief",
+                "Grants a license"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Real property actions (actions in rem) allow for the recovery of the specific thing (res)."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "The indigenous system of land holding in Nigeria is:",
+            "options": [
+                "English Common Law",
+                "Customary Land Tenure",
+                "The Land Use Act",
+                "Islamic Law"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Customary land tenure is the fundamental indigenous system in Nigeria."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Customary law must be proved in court by:",
+            "options": [
+                "Calling witnesses, books, or assessors",
+                "Using the King’s writs",
+                "Citing the 1978 Act",
+                "Logical deduction only"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "As common law does not judicially notice all customs, they must be proved as facts (Evidence Act)."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Interpretation Act' definition of land is considered:",
+            "options": [
+                "Extensive",
+                "Restrictive (excludes minerals)",
+                "Universal",
+                "Obsolete"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The legal definition often excludes certain sub-surface or specific statutory minerals."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "'Stool land' belongs to:",
+            "options": [
+                "The individual King",
+                "The traditional office or 'stool'",
+                "The Governor",
+                "The first settler only"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Stool land is held by the ruler in their representative capacity for the office, not personally."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Who has the responsibility for repairs and maintenance of stool land?",
+            "options": [
+                "The King personally",
+                "The community (historically) or government (modernly)",
+                "The Governor",
+                "The tenants"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "As a communal asset, the burden of maintenance historically fell on the community."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "'Communal land' belongs to:",
+            "options": [
+                "The Governor",
+                "The community as an entity; individuals have only right of use",
+                "The King absolutely",
+                "The first person to farm it"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Individuals have usufructuary rights, but the radical title stays with the community."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "'Virgin bush' or 'waste land' refers to communal land that is:",
+            "options": [
+                "Owned by the Governor",
+                "Uncultivated; the individual who clears it acquires an interest",
+                "Forbidden to farm",
+                "Used for ceremonies only"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Labor mixed with uncultivated land often establishes a primary interest in customary law."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Beach lands belong to:",
+            "options": [
+                "The first fisherman",
+                "The whole town, village, or community",
+                "The Federal Government only",
+                "Private developers"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Amodu Tijani v. Southern Nigeria confirmed the communal nature of such key assets."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Title to minerals is vested in:",
+            "options": [
+                "The land owner",
+                "The Federal Government",
+                "The State Governor",
+                "The Local Government"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Constitution vests all mineral rights in the Federation/Federal Government."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "The Latin maxim quic quid plantatur solo solo cedit means:",
+            "options": [
+                "Land belongs to the King",
+                "Whatever is affixed to the soil becomes part of it",
+                "First in time is stronger in law",
+                "Equity follows the law"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Things fixed to the land (buildings, trees) generally follow the ownership of the land."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Under Islamic law, does the quic quid rule apply?",
+            "options": [
+                "Yes, always",
+                "No; crops and buildings are separate from the land",
+                "Only if the Governor says so",
+                "Only in urban areas"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Islamic law often treats buildings and crops as distinct property from the soil."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "In Francis V. Ibitoye, a building erected on another's land without consent became property of:",
+            "options": [
+                "The builder",
+                "The landowner",
+                "The community",
+                "The State"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A classic application of the quic quid rule where no equitable excuse exists."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Which statute creates an exception to the quic quid rule for holders of a statutory right of occupancy?",
+            "options": [
+                "Evidence Act",
+                "Land Use Act (Section 15)",
+                "Interpretation Act",
+                "Wills Act"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "S.15 of the LUA allows for compensation for improvements, modifying the strict quic quid effect."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "An 'incorporeal hereditament' is:",
+            "options": [
+                "A physical building",
+                "An intangible right like an easement or profit",
+                "A type of soil",
+                "A customary chief"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These are rights over land that lack physical substance."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "How much space above the earth does a landowner own?",
+            "options": [
+                "Up to the stars",
+                "Such space as is needed to make the land productive to a reasonable extent",
+                "None; all air is public",
+                "100 meters exactly"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Airspace rights are limited to the height required for reasonable use and enjoyment."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Which case involved an aircraft taking photos and established limits on airspace rights?",
+            "options": [
+                "Bernstein v. Skyviews Ltd",
+                "Francis V. Ibitoye",
+                "Amodu Tijani V. Southern Nigeria",
+                "Idundun v. Okumagba"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Bernstein v. Skyviews established that rights do not extend to infinite heights."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "'Foreshores' belong to:",
+            "options": [
+                "The nearest family",
+                "The State",
+                "The Federal Government",
+                "No one"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Foreshores are generally under the control of the state for public benefit."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "A traditional ruler has which interest in 'stool land'?",
+            "options": [
+                "Fee simple",
+                "No more than a life interest",
+                "A 99-year lease",
+                "Absolute ownership"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The ruler is effectively a manager for their lifetime, with no power to alienate absolutely as an individual."
+        }
+    },
+    {
+        "course": "Land Law",
+        "topic": "Land Law as Property: Introduction",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Land Use Act, the radical title to land is vested in:",
+            "options": [
+                "The President",
+                "The Governor",
+                "The Local Government",
+                "The family head"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Governor of each state holds the radical title in trust (Section 1 LUA)."
+        }
+    }
+]

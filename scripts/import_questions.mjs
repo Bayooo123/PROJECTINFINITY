@@ -60,7 +60,10 @@ if (!SUPABASE_URL || !SUPABASE_KEY) {
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function importQuestions() {
-    const filePath = path.resolve(process.cwd(), 'data/my_questions.json');
+    const customPath = process.argv[2];
+    const filePath = customPath
+        ? path.resolve(process.cwd(), customPath)
+        : path.resolve(process.cwd(), 'data/my_questions.json');
 
     if (!fs.existsSync(filePath)) {
         console.error("Error: 'data/my_questions.json' not found.");
