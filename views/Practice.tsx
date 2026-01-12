@@ -134,7 +134,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           setScore(0);
           setPhase('QUIZ');
         } else {
-          throw new Error("Failed to generate questions.");
+          throw new Error("We are currently populating the question bank for this specific topic. Please try another topic or check back in a few minutes!");
         }
 
       } else {

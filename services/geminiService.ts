@@ -1,6 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { supabase } from '../lib/supabase';
-import { COCCIN_TOPICS } from '../types';
 import {
   generateStandardQuestions,
   generateCoccinObjective,
@@ -51,6 +50,7 @@ export const importQuestionsToBank = async (
     return { success: false, count: 0, message: error.message || "Unknown error" };
   }
 };
+
 export const generateEmbedding = async (text: string): Promise<number[] | null> => {
   try {
     const result = await embeddingModel.embedContent(text);
@@ -67,8 +67,8 @@ export const generateEmbedding = async (text: string): Promise<number[] | null> 
 export const searchCourseMaterials = async (queryEmbedding: number[], course?: string) => {
   const { data, error } = await supabase.rpc('match_course_materials', {
     query_embedding: queryEmbedding,
-    match_threshold: 0.5, // Minimum similarity
-    match_count: 3,       // Number of chunks to retrieve
+    match_threshold: 0.5,
+    match_count: 3,
     filter_course: course || null
   });
 
@@ -97,6 +97,50 @@ export const searchPastQuestions = async (queryEmbedding: number[], course?: str
   return data || [];
 };
 
+/**
+ * Searches for a semantically similar query in the study_cache.
+ */
+export const searchStudyCache = async (queryEmbedding: number[], course?: string) => {
+  const { data, error } = await supabase.rpc('match_study_cache', {
+    query_embedding: queryEmbedding,
+    match_threshold: 0.92, // High similarity required for reuse
+    match_count: 1,
+    filter_course: course || null
+  });
+
+  if (error) {
+    console.error("Error searching study cache:", error);
+    return null;
+  }
+  return data && data.length > 0 ? data[0] : null;
+};
+
+/**
+ * Saves a high-quality Q&A pair to the study_cache for future reuse.
+ */
+export const saveToStudyCache = async (
+  queryText: string,
+  queryEmbedding: number[],
+  responseText: string,
+  courseContext?: string
+) => {
+  try {
+    const { error } = await supabase
+      .from('study_cache')
+      .insert({
+        query_text: queryText,
+        query_embedding: queryEmbedding,
+        response_text: responseText,
+        course_context: courseContext,
+        is_verified: true
+      });
+
+    if (error) console.error("Error saving to study cache:", error);
+  } catch (err) {
+    console.error("Cache save error:", err);
+  }
+};
+
 // --- Main Chat Function ---
 
 export const chatWithGemini = async (
@@ -112,11 +156,21 @@ export const chatWithGemini = async (
     // 1. Generate Embedding for the user's question
     const embedding = await generateEmbedding(message);
 
+    if (embedding) {
+      // 2. CHECK SEMANTIC CACHE FIRST
+      // Optimization: Serve cached response if similarity is very high.
+      const cachedMatch = await searchStudyCache(embedding, courseContext);
+      if (cachedMatch) {
+        console.log("Serving from Study Cache! Similarity:", cachedMatch.similarity);
+        return cachedMatch.response_text;
+      }
+    }
+
     let contextText = "";
     let pastQuestionsText = "";
 
     if (embedding) {
-      // 2. Parallel Search: Course Materials & Past Questions
+      // 3. Parallel Search: Course Materials & Past Questions (RAG)
       const [materials, pastQuestions] = await Promise.all([
         searchCourseMaterials(embedding, courseContext),
         searchPastQuestions(embedding, courseContext)
@@ -133,7 +187,7 @@ export const chatWithGemini = async (
       }
     }
 
-    // 3. Construct the "Exam-Smart" System Prompt
+    // 4. Construct the "Exam-Smart" System Prompt
     const systemPrompt = `
       You are an expert law tutor for Nigerian law students.
       
@@ -144,10 +198,10 @@ export const chatWithGemini = async (
       ${pastQuestionsText ? pastQuestionsText : "No relevant past questions found."}
 
       INSTRUCTIONS:
-      1. Answer the student's question primarily using the CONTEXT provided above. If the context is empty, use your general legal knowledge but mention that you are doing so.
-      2. If PAST EXAM QUESTIONS are provided, analyze them to provide **exam-focused recommendations**. Mention how this topic is typically tested (e.g., "This topic appeared in the ${pastQuestionsText ? 'past' : ''} exam...").
-      3. Provide a specific "Study Tip" or "Exam Strategy" based on the provided materials and questions.
-      4. Be precise, cite relevant Nigerian cases and statutes if applicable.
+      1. Answer the student's question primarily using the CONTEXT provided above. 
+      2. If PAST EXAM QUESTIONS are provided, analyze them to provide **exam-focused recommendations**.
+      3. Provide a specific "Study Tip" or "Exam Strategy" grounded in the provided materials.
+      4. Be precise, cite relevant Nigerian cases and statutes.
       5. Keep the tone encouraging and academic.
     `;
 
@@ -170,8 +224,16 @@ export const chatWithGemini = async (
     });
 
     const result = await chat.sendMessage(message);
-    const response = result.response;
-    return response.text();
+    const responseText = result.response.text();
+
+    // 5. ASYNC CACHE POPULATION
+    // Population strategy: Store successful responses for future reuse.
+    if (embedding && responseText.length > 50) {
+      // We don't await this to keep response time low
+      saveToStudyCache(message, embedding, responseText, courseContext);
+    }
+
+    return responseText;
 
   } catch (error) {
     console.error("Error calling Gemini API:", error);
@@ -179,13 +241,15 @@ export const chatWithGemini = async (
   }
 };
 
+// --- Practice Area Functions ---
+
 export const generateQuizQuestions = async (
   course: string,
   topic: string,
   count: number = 5
 ): Promise<any[]> => {
   try {
-    // 1. Try fetching from Question Bank first
+    // 1. Try fetching from Question Bank first (Strict Production Mode)
     const { data, error } = await supabase
       .from('question_bank')
       .select('question_data')
@@ -196,20 +260,15 @@ export const generateQuizQuestions = async (
 
     if (data && data.length >= count) {
       console.log("Fetched questions from Bank!");
-      // Randomize the selection if needed, but for now take the first N
       return data.map(row => row.question_data);
     }
 
-    console.log("Bank empty or insufficient. Generating live...");
+    console.warn(`Bank insufficient for ${course} - ${topic}. Requested ${count}, found ${data?.length || 0}.`);
 
-    // 2. Fallback to AI Generation
-    // Use AI Studio service with retry logic for reliability
-    return await generateQuestionsWithRetry(() =>
-      generateStandardQuestions(course, topic, count)
-    );
+    // STRICT PRODUCTION MODE: Do NOT generate live.
+    return data ? data.map(row => row.question_data) : [];
   } catch (error) {
     console.error("Error generating quiz:", error);
-    // Rethrow to allow UI to show specific error
     throw error;
   }
 };
@@ -221,8 +280,6 @@ export const generateCoccinQuestions = async (
 ): Promise<any> => {
   try {
     // 1. Try fetching from Question Bank
-    // We need questions for EACH course.
-    // Calculate questions per course (e.g. 10 total / 2 courses = 5 each)
     const questionsPerCourse = Math.ceil(count / courses.length);
     let bankQuestions: any[] = [];
     let allFound = true;
@@ -248,22 +305,12 @@ export const generateCoccinQuestions = async (
       return bankQuestions.slice(0, count);
     }
 
-    console.log("Bank insufficient for COCCIN. Generating live...");
+    console.warn(`Bank insufficient for COCCIN ${type}. Switching to partial return.`);
 
-    // 2. Fallback to AI Generation
-    // Use AI Studio service with retry logic for maximum reliability
-    if (type === 'objective') {
-      return await generateQuestionsWithRetry(() =>
-        generateCoccinObjective(courses, count)
-      );
-    } else {
-      return await generateQuestionsWithRetry(() =>
-        generateCoccinTheory(courses, count)
-      );
-    }
+    // STRICT PRODUCTION MODE: Do NOT generate live.
+    return bankQuestions;
   } catch (error) {
     console.error("Error generating COCCIN questions:", error);
-    // Rethrow to allow UI to show specific error
     throw error;
   }
 };
@@ -277,23 +324,20 @@ export const batchGenerateAndSaveQuestions = async (
   if (!API_KEY) return { success: false, count: 0, message: "API Key missing" };
 
   try {
-    // 1. Generate Questions using existing logic (reusing the robust function)
-    // We pass [course] as an array because the function expects an array
+    // Reusing the robust COCCIN logic for admin batching
     const questions = await generateCoccinQuestions([course], type, count);
 
     if (!questions || questions.length === 0) {
-      return { success: false, count: 0, message: "AI failed to generate questions." };
+      return { success: false, count: 0, message: "No questions in bank/available." };
     }
 
-    // 2. Prepare for Batch Insert
     const rowsToInsert = questions.map((q: any) => ({
       course,
       topic,
       type,
-      question_data: q // Store the full JSON object
+      question_data: q
     }));
 
-    // 3. Insert into Supabase
     const { error } = await supabase
       .from('question_bank')
       .insert(rowsToInsert);
