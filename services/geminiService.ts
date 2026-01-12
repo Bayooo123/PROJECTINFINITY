@@ -141,6 +141,52 @@ export const saveToStudyCache = async (
   }
 };
 
+/**
+ * Generates an academically precise topic title based on a cluster of questions.
+ */
+export const generateTopicTitle = async (course: string, questionSamples: string[]): Promise<string> => {
+  const prompt = `
+    You are an expert Nigerian law academic.
+    COURSE: ${course}
+    QUESTION SAMPLES:
+    ${questionSamples.join("\n---\n")}
+
+    TASK:
+    Based on these questions, generate a concise, academically precise topic title.
+    Standards:
+    - Use legal nomenclature (e.g., 'Doctrine of...', 'Principles of...').
+    - Reflect historical or doctrinal perspectives where appropriate.
+    - Max 8 words.
+
+    EXAMPLE: 'Meaning, Nature, Origin, and Reception of Equity'
+
+    RETURN ONLY THE TITLE. No quotes, no preamble.
+  `;
+
+  try {
+    const result = await chatModel.generateContent(prompt);
+    return result.response.text().trim().replace(/['"]/g, '');
+  } catch (error) {
+    console.error("Error generating topic title:", error);
+    return "General Principles of Equity"; // Safe fallback
+  }
+};
+
+/**
+ * Logs the automatic creation of a topic for auditing purposes.
+ */
+export const logAutoTopic = async (course: string, title: string, sourceSample: string) => {
+  try {
+    await supabase.from('auto_topic_logs').insert({
+      course,
+      generated_title: title,
+      source_sample: sourceSample
+    });
+  } catch (err) {
+    console.error("Failed to log auto-topic:", err);
+  }
+};
+
 // --- Main Chat Function ---
 
 export const chatWithGemini = async (
