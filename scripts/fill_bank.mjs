@@ -40,6 +40,17 @@ const TOPICS_TO_POPULATE = {
         "Exclusion Clauses and Capacity",
         "Privity of Contract"
     ],
+    "Constitutional Law": [
+        "Constitution, Constitutional Law and Constitutionalism",
+        "Constitutional Concepts (Rule of Law & Supremacy)",
+        "Constitutional Concepts (Separation of Powers & Rights)",
+        "Constitutional History and Interpretation",
+        "The Legislature",
+        "The Executive",
+        "The Judiciary",
+        "Federalism and Local Government",
+        "Electoral System and Constitutional History (Advanced)"
+    ],
     "Equity and Trusts": [
         "Meaning, Nature, Origin, and Reception of Equity",
         "Maxims of Equity",

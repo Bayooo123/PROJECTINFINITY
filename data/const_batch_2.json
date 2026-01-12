@@ -1,0 +1,802 @@
+[
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the effect of a presidential pardon on a convicted person?",
+            "options": [
+                "Wipes out the conviction entirely",
+                "Removes all penalties and punishments, but the conviction remains",
+                "Grants immunity from civil proceedings",
+                "Grants perpetual freedom from future legal action"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A pardon removes the punishment but does not typically expunge the legal record of conviction unless specifically stated."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "Which constitutional provision grants the President, Vice-President, Governor, and Deputy Governor immunity from civil or criminal proceedings during their period of office?",
+            "options": [
+                "Section 6(6)",
+                "Section 143",
+                "Section 308",
+                "Section 5(1)"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 308 of the 1999 Constitution provides absolute immunity from court proceedings for these executives while in office."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "Impeachment proceedings against the President or Governor must be based on allegations of gross misconduct in relation to:",
+            "options": [
+                "Their personal life",
+                "Performance of official functions",
+                "Political party activities",
+                "Economic policy failures"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Gross misconduct is constitutionally defined in the context of the performance of official duties."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "The locus classicus case which held that the impeachment of a Governor is subject to judicial review, despite the ouster clause, is:",
+            "options": [
+                "Alhaji Balarabe Musa v. Kaduna State House of Assembly",
+                "Inakoju v. Adeleke",
+                "Shugaba v. Federal Minister of Internal Affairs",
+                "Bola Tinubu v. IMB Securities"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In Inakoju v. Adeleke, the Supreme Court held that the courts can intervene if the constitutional procedure for impeachment is breached."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "Judicial power is vested in the courts and includes the inherent power of the court to control and conduct its business, enforce its judgment, known as:",
+            "options": [
+                "Appellate jurisdiction",
+                "Original jurisdiction",
+                "Judicial review",
+                "Judicial independence"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Judicial independence and inherent powers allow the court to operate without external interference."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "The highest court in Nigeria and the court of last resort is the:",
+            "options": [
+                "Court of Appeal",
+                "National Industrial Court",
+                "Supreme Court",
+                "Federal High Court"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Supreme Court of Nigeria is the final adjudicatory body."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "Appointments of Justices of the Supreme Court are made by the President upon recommendation from the National Judicial Council, subject to confirmation by the:",
+            "options": [
+                "House of Representatives",
+                "State Governors",
+                "Senate",
+                "Attorney General"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Senate must confirm Supreme Court appointments."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "What specific constitutional provision ensures the salaries and allowances of judicial officers cannot be altered to their detriment after appointment?",
+            "options": [
+                "Section 292",
+                "Section 80",
+                "Section 84(3)",
+                "Section 291"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 84(3) protects the remuneration of certain constitutional officers, including judges."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "The power of the Supreme Court to hear disputes between the Federation and a State, or between States, is called:",
+            "options": [
+                "Appellate jurisdiction",
+                "Exclusive jurisdiction",
+                "Supervisory jurisdiction",
+                "Original jurisdiction"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "The Supreme Court has original jurisdiction in disputes between level of government."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "Appeals from the Federal High Court or State High Court must first go to which court before they can reach the Supreme Court?",
+            "options": [
+                "Customary Court of Appeal",
+                "National Industrial Court",
+                "Court of Appeal",
+                "Magistrates Court"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Court of Appeal is the intermediate court between trial courts and the Supreme Court."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "The judicial examination of the decision of an inferior court by a superior court is termed:",
+            "options": [
+                "Judicial Review",
+                "Original Jurisdiction",
+                "Appellate Jurisdiction",
+                "Certiorari"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Appellate jurisdiction involves reviewing the findings and conclusions of lower courts."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "The doctrine whereby the decision of the Supreme Court is binding on all lower courts is known as:",
+            "options": [
+                "Judicial Activism",
+                "Stare Decisis",
+                "Ultra Vires",
+                "Nemo Judex In Causa Sua"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Stare decisis (judicial precedent) ensures consistency and predictability in the legal system."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Judiciary",
+        "type": "objective",
+        "question_data": {
+            "text": "The Supreme Court case of Dalhatu v. Turaki condemned a High Court judge for refusing to follow a Supreme Court decision, labeling the act as one of:",
+            "options": [
+                "Per incuriam",
+                "Judicial impertinence",
+                "Obiter dictum",
+                "Judicial activism"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Refusal by a lower court to follow a binding precedent of a superior court is regarded as judicial impertinence."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the term defined as the division of powers and duties between at least two levels of government (national and regional/state)?",
+            "options": [
+                "Constitutionalism",
+                "Federalism",
+                "Autochthony",
+                "Unitarism"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Federalism is a system of government where power is shared between central and constituent units."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "According to K.C. Wheare, a key feature of federalism is that the two levels of government must operate directly on:",
+            "options": [
+                "Constitutional principles",
+                "Political parties",
+                "Persons and property",
+                "Legislative lists"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "KC Wheare's definition of federalism emphasizes the coordinate and independent status of levels of government."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "Which feature of Nigerian federalism dictates that the central and regional governments must cooperate to promote development?",
+            "options": [
+                "Division of powers",
+                "Independence",
+                "Supremacy of the Constitution",
+                "Cooperation among levels of government"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Cooperative federalism emphasizes interdependence and joint action by levels of government."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 4(2) of the Constitution vests the National Assembly with the power to make laws on matters in the Exclusive Legislative List, excluding the:",
+            "options": [
+                "Federal Executive",
+                "State Government",
+                "Judiciary",
+                "Local Government"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Only the National Assembly can legislate on exclusive list matters, to the exclusion of states."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "The constitutional flaw noted regarding federalism is the establishment of the Revenue Mobilisation Allocation and Fiscal Commission (RMAFC), which:",
+            "options": [
+                "Are non-justiciable",
+                "Encroach upon the independence and autonomy of the states",
+                "Are subject to the legislature",
+                "Control foreign policy"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Concentration of fiscal control at the center is often cited as a weakness of Nigerian federalism."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "The constitutional principle that dictates that the law applicable to land matters is that of the place where the land is situated is known as:",
+            "options": [
+                "Lex fori",
+                "Lex situs",
+                "Lex loci celebrationis",
+                "Lex mercatoria"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Lex situs is the law of the place where the property is located."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "What percentage of total revenue realized from the exploration of natural resources in a state must be allocated back to that state, based on the principle of derivation?",
+            "options": [
+                "Not less than 50%",
+                "Not less than 20%",
+                "Not less than 13%",
+                "Not less than 5%"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The 13% derivation principle is enshrined in Section 162(2) of the Constitution."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "Local government councils are guaranteed existence \"by means of democratically elected local government councils\" under which constitutional provision?",
+            "options": [
+                "Section 7(1)",
+                "Section 8",
+                "Section 162",
+                "Fourth Schedule"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Section 7(1) guarantees the system of local government by democratically elected councils."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Federalism and Local Government",
+        "type": "objective",
+        "question_data": {
+            "text": "Which tier of government is primarily responsible for legislating on the tenure of elective officers of the local government council?",
+            "options": [
+                "National Assembly",
+                "State House of Assembly",
+                "Federal Executive",
+                "Local Government Council itself"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "States have the power to regulate local government affairs within their borders."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The institutional framework for elections in the 1999 Constitution is the:",
+            "options": [
+                "Federal Ministry of Justice",
+                "National Assembly",
+                "Independent National Electoral Commission (INEC)",
+                "Judicial Service Commission"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "INEC is the body charged with conducting federal and state elections."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The Chairman of INEC must not be less than:",
+            "options": [
+                "40 years of age",
+                "50 years of age",
+                "35 years of age",
+                "60 years of age"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Constitution specifies high age and character requirements for the INEC chairman."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The INEC has the power to organize, undertake, and supervise all elections, except for elections into the:",
+            "options": [
+                "Presidency",
+                "Senate",
+                "State House of Assembly",
+                "Local government councils"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "State Independent Electoral Commissions (SIECs) conduct local government elections."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "In Buhari v. Obasanjo, the court held that INEC did not have the power to amend the:",
+            "options": [
+                "Constitution",
+                "Electoral Act",
+                "National Assembly rules",
+                "Fundamental rights provisions"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Administrative bodies like INEC cannot override or amend statutory provisions enacted by the legislature."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Nigerian electoral system, a qualification for election into legislative or executive offices is being a member of a political party and:",
+            "options": [
+                "Being independently wealthy",
+                "Being sponsored by that political party",
+                "Being a citizen by birth",
+                "Having served previously in the Civil Service"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Nigerian law currently requires political party sponsorship for all elective offices."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The controversial phrase in the Preamble of the 1999 Constitution that suggested the document was authored by citizens is:",
+            "options": [
+                "Sovereign National Conference",
+                "We the People",
+                "Under God",
+                "Nigerian Legal System"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Critics argue that 'We the People' is a lie because the 1999 constitution was a military decree."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "A major criticism of the Pure Autochthony Test is the lack of assurance that a popular election will produce:",
+            "options": [
+                "Affordable government",
+                "Unanimous consent",
+                "Selfless and experienced members",
+                "Rigid constitutional rules"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Purely popular processes may lack technical expertise or be swayed by demagoguery."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The test of autochthony which stipulates that a constitution is autochthonous provided there is no imperial influence or intervention is the:",
+            "options": [
+                "Acceptance Theory",
+                "Pure Autochthony Test",
+                "Substantiality of Process Test",
+                "Legal Source Test"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Substantiality of Process test looks at the degree of local control over the drafting and adoption."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The Acceptance Theory of autochthony argues that a constitution with extra-legal origin is valid if it is accepted and supported by the:",
+            "options": [
+                "Military regime",
+                "Sovereign National Conference",
+                "Legal experts",
+                "People"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Popular acceptance can 'legalize' a document that had a procedurally flawed start."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The suggested forum for identifying defects in the 1999 Constitution and proposing amendments, avoiding the controversial sovereignty issues, is the:",
+            "options": [
+                "Sovereign National Conference",
+                "Political Party Primaries",
+                "Constitutional Conference",
+                "National Assembly only"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A Constitutional Conference is seen as a more moderate alternative to a 'Sovereign' conference."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "What provision must first be amended before the Constitutional Conference proposals for a new constitution or amendment can be acted upon?",
+            "options": [
+                "Section 5(1)",
+                "Section 4(2)",
+                "Section 9(2)",
+                "Section 162"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 9(2) outlines the rigorous process for amending the current constitution."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "In AG Ondo v. AG Federation, the Supreme Court held that the National Assembly had the power to enact the ICPC Act because corruption was a matter promoting the observance of which chapter's objectives?",
+            "options": [
+                "Chapter 1",
+                "Chapter 2",
+                "Chapter 4",
+                "Chapter 7"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Chapter 2 (Fundamental Objectives and Directive Principles) requires the state to abolish corrupt practices."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that an express mention of one thing excludes all other things is known as:",
+            "options": [
+                "Stare decisis",
+                "Ratio decidendi",
+                "Expressio unius est exclusion alterius",
+                "Ejusdem Generis"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "This canon of interpretation limits the scope of a provision to what is explicitly named."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The structure of the State House of Assembly, in contrast to the National Assembly, is:",
+            "options": [
+                "Bicameral",
+                "Multi-cameral",
+                "Unicameal",
+                "Ceremonial"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "State legislatures in Nigeria consist of a single chamber."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The three organs of government distinguished in the Separation of Powers doctrine are the Legislature, Executive, and the:",
+            "options": [
+                "Civil Service",
+                "Public Service",
+                "Judiciary",
+                "Administration"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Legislature (laws), Executive (enforcement), Judiciary (interpretation)."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The power conferred on the National Assembly to make laws for the peace, order and good government with respect to any matter in the Exclusive Legislative List is granted by:",
+            "options": [
+                "Section 5(1)",
+                "Section 4(2)",
+                "Section 68",
+                "Section 162"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 4(2) is the source of the federal government's primary legislative authority."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "What constitutional principle guarantees that a government is accountable to the electorate on whose trust power is held?",
+            "options": [
+                "Separation of powers",
+                "Constitutionalism",
+                "Rule of law",
+                "Judicial immunity"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Constitutionalism implies government as a trust for the people."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary mechanism by which the legislature limits the executive's power over public funds is by requiring all federal revenue to be paid into the:",
+            "options": [
+                "Federation Account",
+                "Contingency Fund",
+                "Consolidated Revenue Fund",
+                "State Joint Local Government Account"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 80 requires all revenue to be paid into the CRF, and no withdrawal can be made without an Appropriation Act."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "Under military rule, the legislative body was often designated as the Supreme Military Council, Armed Forces Ruling Council, or the:",
+            "options": [
+                "Federal Executive Council",
+                "Provisional Ruling Council",
+                "National Assembly",
+                "Constitutional Conference"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The PRC was the highest decision-making body during the Abacha era."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "If the President or Vice President is deemed permanently unable to resume office due to infirmity, the declaration must be supported by a 2/3 majority of the:",
+            "options": [
+                "National Assembly",
+                "Senate only",
+                "House of Representatives only",
+                "Executive Council (Ministers)"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Section 144 requires the Executive Council to pass this resolution before a medical panel is set up."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The purpose of granting judicial officers immunity in the exercise of their judicial functions is to ensure they are free to exercise their functions with independence and without fear of:",
+            "options": [
+                "Financial constraint",
+                "Political pressure",
+                "Consequences",
+                "Legislative interference"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Judicial immunity protects judges from being sued for decisions made in their official capacity."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the highest age of compulsory retirement for Justices of the Supreme Court and Justices of the Court of Appeal?",
+            "options": [
+                "65",
+                "70",
+                "60",
+                "75"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Constitutional amendments have pegged the retirement age for appellate justices at 70."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "A necessary condition for a Federal System is that the various levels of government must be equal, independent, and of:",
+            "options": [
+                "Subordinate status",
+                "Co-ordinate status",
+                "Absolute authority",
+                "Legislative supremacy"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Coordinate status implies that neither level is the boss of the other."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "If the President wishes to deploy members of the armed forces on combat duty outside the country, he cannot do so without the resolution of the:",
+            "options": [
+                "National Defence Council",
+                "Minister of External Affairs",
+                "National Assembly",
+                "Chief of Army Staff"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Deployment for combat duty abroad requires legislative approval."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The decision in AG Bendel v. AG Federation nullified the Appropriation Bill because it was passed by the National Assembly in a manner contrary to:",
+            "options": [
+                "Judicial precedents",
+                "Executive orders",
+                "Constitutional provisions",
+                "Legislative procedures"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Supreme Court held that the Joint Finance Committee could not exercise the power of the whole Assembly."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The process by which courts resolve conflicts between the federal government and state governments through limited original jurisdiction is known as:",
+            "options": [
+                "Legislative delegation",
+                "Judicial Activism",
+                "Constitutional Interpretation",
+                "Rule of Law at Rest"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Constitutional interpretation in disputes between governments is a key role of the Supreme Court."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "Constitutional law regulates the exercise of powers given by a constitution, while administrative law regulates the exercise of:",
+            "options": [
+                "Judicial powers",
+                "Administrative powers",
+                "Constitutional powers",
+                "Bicameral powers"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Administrative law focuses on the procedures and constraints of the executive/civil service."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Electoral System and Constitutional History (Advanced)",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle of Audi Alteram Partem falls under the principle of:",
+            "options": [
+                "Supremacy of Constitution",
+                "Separation of Powers",
+                "Natural Justice",
+                "Ultra Vires"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Natural justice requires hearing both sides of a dispute fairly."
+        }
+    }
+]

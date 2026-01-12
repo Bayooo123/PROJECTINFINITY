@@ -33,26 +33,19 @@ const SUPABASE_KEY = env['VITE_SUPABASE_ANON_KEY'];
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-async function verify() {
-    const { data, error } = await supabase.from('question_bank').select('course, topic');
+async function purgeAll() {
+    console.log("PURGING ALL QUESTIONS FROM BANK...");
+
+    const { error } = await supabase
+        .from('question_bank')
+        .delete()
+        .neq('id', '00000000-0000-0000-0000-000000000000'); // Delete everything
+
     if (error) {
-        fs.writeFileSync('bank_report.txt', "Error: " + error.message);
-        return;
+        console.error("Purge failed:", error.message);
+    } else {
+        console.log("BANK PURGED SUCCESSFULLY.");
     }
-
-    console.log(`Total rows fetched from question_bank: ${data.length}`);
-
-    const totalCounts = {};
-    const counts = data.reduce((acc, curr) => {
-        const key = `${curr.course} | ${curr.topic}`;
-        acc[key] = (acc[key] || 0) + 1;
-        totalCounts[curr.course] = (totalCounts[curr.course] || 0) + 1;
-        return acc;
-    }, {});
-
-    console.log("Total counts per Course:", totalCounts);
-
-    fs.writeFileSync('bank_report.txt', JSON.stringify(counts, null, 2));
 }
 
-verify();
+purgeAll();

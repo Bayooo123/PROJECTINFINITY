@@ -272,10 +272,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
             <p className="text-lg text-slate-600 mb-8">Enjoy the right to education and lets grow together.</p>
 
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-              <div>
-                <p className="font-serif font-bold text-lg text-slate-900">Adebayo Gbadebo</p>
-                <p className="text-amber-700 font-medium">Co-founder, Learned</p>
-              </div>
+              <div />
 
               <Button onClick={handleFinalSubmit} className="px-8 py-4 text-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all">
                 Enter Learned

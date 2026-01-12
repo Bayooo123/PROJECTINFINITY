@@ -1,0 +1,802 @@
+[
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "The basic law that serves as a source of authority for all other laws and renders inconsistent laws null and void is the:",
+            "options": [
+                "Statute",
+                "Constitution",
+                "Judicial Precedent",
+                "Common Law"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Constitution is the supreme law of the land, and any other law that is inconsistent with it is void to the extent of its inconsistency."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "A constitution fulfills the purpose of definition (being descriptive and prescriptive) and:",
+            "options": [
+                "Justiciability",
+                "Evaluation",
+                "Enforcement",
+                "Codification"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A constitution serves both as a descriptive/prescriptive document and as a tool for evaluation of government actions."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Peter W. Hogg, the wide sense of the constitution involves all important rules which establish, empower and regulate principles of government, some of which are:",
+            "options": [
+                "Statutory",
+                "Non-justifiable",
+                "Republican",
+                "Rigid"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Peter Hogg notes that some constitutional rules in the wide sense are non-justifiable conventions."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "Constitutional law is generally described as a theoretical concept, whereas constitutionalism is the actual:",
+            "options": [
+                "Codification",
+                "Enforcement and practice",
+                "Interpretation",
+                "Amendment"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Constitutionalism refers to the practice of limited government and adherence to constitutional principles."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "Constitutionalism combines the idea of government limited in its action and accountable to the:",
+            "options": [
+                "Legislature",
+                "Judiciary",
+                "Supreme Court",
+                "People/Electorate"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Accountability to the people/electorate is a core pillar of constitutionalism."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "A constitution that is home made, home grown, and home processed, formed wholly and exclusively by the representatives of the people without foreign interference, is known as a(n):",
+            "options": [
+                "Republican Constitution",
+                "Autocratic Constitution",
+                "Autochthonous Constitution",
+                "Federal Constitution"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "An autochthonous constitution derives its force from the people it governs rather than an external authority."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "Which type of constitution has its rules entrenched, preventing or making amendment difficult due to a rigorous procedure?",
+            "options": [
+                "Flexible",
+                "Unitary",
+                "Rigid",
+                "Confederal"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A rigid constitution requires a special, more complex process for amendments compared to ordinary laws."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "A constitution where sovereignty is vested in the people, and officials are elected as representatives to govern in accordance with the constitution, is a:",
+            "options": [
+                "Monarchical constitution",
+                "Totalitarian constitution",
+                "Republican constitution",
+                "Parliamentary constitution"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A republic is characterized by popular sovereignty and elected representatives."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "In a Parliamentary system of government, who differs from the Head of Government and holds a purely ceremonial role?",
+            "options": [
+                "Prime Minister",
+                "Head of State",
+                "Speaker of the House",
+                "Chief Executive"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In parliamentary systems, the Head of State (Monarch or President) is often ceremonial, while the PM is the Head of Government."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitution, Constitutional Law and Constitutionalism",
+        "type": "objective",
+        "question_data": {
+            "text": "The Presidential System of government operates under the doctrine of:",
+            "options": [
+                "Fusion of powers",
+                "Supremacy of parliament",
+                "Separation of powers",
+                "Absolute monarchy"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Presidential system is built on the strict separation of executive, legislative, and judicial powers."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "Which constitutional concept is considered the most basic, such that all other concepts cannot operate without it?",
+            "options": [
+                "Separation of Powers",
+                "Rule of Law",
+                "Supremacy of Constitution",
+                "Democracy"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Rule of Law is the foundational principle that ensures government by law rather than arbitrary power."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "According to A.V. Dicey's development of the Rule of Law, the principle that excludes the presence of arbitrariness, prerogative, or wide discretionary powers is:",
+            "options": [
+                "Equality before the law",
+                "Absolute supremacy of law",
+                "Enforcement of minimum rights",
+                "Separation of powers"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Dicey's first meaning emphasizes that no man is punishable except for a distinct breach of law established in ordinary legal manner."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Aoko v. Fagbemi illustrated the principle of Rule of Law that no one can be punished for an offence that was not:",
+            "options": [
+                "Tried by the judiciary",
+                "Part of our written laws at the time it was committed",
+                "Subject to due process",
+                "Determined by consensus"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In Aoko v Fagbemi, the court held that a person cannot be convicted for an unwritten offence (customary law offence)."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "Dicey's second meaning of the Rule of Law, concerning the equal subjection of all classes to the ordinary laws of the land administered by the ordinary law courts, is:",
+            "options": [
+                "Absolute supremacy of law",
+                "Enforcement of minimum rights",
+                "Equality before the law",
+                "Procedural justice"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Equality before the law means that everyone, regardless of rank, is subject to the same law."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "What theoretical approach justifies the existence of the Rule of Law in a totalitarian state by defining it as strict adherence to a supreme law?",
+            "options": [
+                "Procedural justice theory",
+                "Material Justice theory",
+                "Law enforcement theory",
+                "Natural Law theory"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The 'law enforcement' theory focus strictly on the technical adherence to whatever law is in place."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "The forceful eviction of Ojukwu by the Lagos state government while his application was pending in court was held unconstitutional in Military governor of Lagos v. Ojukwu, reinforcing the necessity of:",
+            "options": [
+                "Equality before the law",
+                "Judicial immunity",
+                "Due process of law",
+                "Supremacy of decree"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Supreme Court in Ojukwu's case emphasized that the government must not take the law into its own hands (self-help)."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "What term confers superiority on the Constitution and inferiority on other legal norms?",
+            "options": [
+                "Rule of Law",
+                "Separation of Powers",
+                "Constitutional Supremacy",
+                "Judicial Review"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Constitutional Supremacy means the constitution is the supreme law and all other laws must conform to it."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 1(3) of the Constitution states that if any other law is inconsistent with the Constitution, the Constitution shall prevail and that other law shall, to the extent of its inconsistency, be:",
+            "options": [
+                "Amended",
+                "Void",
+                "Suspended",
+                "Referred"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This is the supremacy clause of the 1999 Constitution."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "The doctrine of Constitutional Supremacy replaced which previously practiced doctrine in Nigeria (before independence)?",
+            "options": [
+                "Supremacy of the decree",
+                "Judicial supremacy",
+                "Parliamentary supremacy",
+                "Separation of powers"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Before the 1963/1979/1999 constitutions, Nigeria followed the British model of Parliamentary Supremacy."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Rule of Law & Supremacy)",
+        "type": "objective",
+        "question_data": {
+            "text": "Under military rule, what concept replaced Constitutional Supremacy?",
+            "options": [
+                "Rule of Law",
+                "Supremacy of decree",
+                "Parliamentary rule",
+                "Checks and balances"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Military regimes operate by decrees which supersede the constitution (which is often suspended or modified)."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Separation of Powers & Rights)",
+        "type": "objective",
+        "question_data": {
+            "text": "The doctrine that opposes the concentration of all government power in the hands of a single body to preserve liberty is:",
+            "options": [
+                "Constitutionalism",
+                "Supremacy of Constitution",
+                "Separation of powers",
+                "Rule of Law"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Separation of powers prevents tyranny by distributing authority across distinct branches."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Separation of Powers & Rights)",
+        "type": "objective",
+        "question_data": {
+            "text": "Which corollary principle to the separation of powers seeks to limit the powers of one arm of government by enabling another arm to monitor their activities?",
+            "options": [
+                "Checks and balances",
+                "Rule of law",
+                "Bicameral legislature",
+                "Judicial independence"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Checks and balances ensure that no branch operates in isolation or without oversight."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Separation of Powers & Rights)",
+        "type": "objective",
+        "question_data": {
+            "text": "In Nigeria's presidential system, a member of the legislature appointed into the executive branch is typically required to:",
+            "options": [
+                "Retain their legislative seat",
+                "Give up their legislative seat",
+                "Get Senate confirmation only",
+                "Be subject to impeachment"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Under the presidential system, a person cannot belong to two branches of government simultaneously (unlike the parliamentary system)."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Separation of Powers & Rights)",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary purpose of separation of powers is to prevent tyrannical rule due to the conferment of too much power on:",
+            "options": [
+                "The judiciary",
+                "The electorate",
+                "A single body",
+                "The civil service"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Madison argued that the accumulation of all powers in the same hands is the very definition of tyranny."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Separation of Powers & Rights)",
+        "type": "objective",
+        "question_data": {
+            "text": "Rights that are specifically guaranteed by the constitution and cannot be suspended or curtailed except in a manner laid down by the Constitution are called:",
+            "options": [
+                "Economic rights",
+                "Civil and political rights",
+                "Legal rights",
+                "Fundamental human rights"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Fundamental human rights are entrenched in Chapter IV of the Nigerian Constitution."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Separation of Powers & Rights)",
+        "type": "objective",
+        "question_data": {
+            "text": "The concept of transparency focuses on publicity, asset information, responsiveness, and involvement, ensuring government actions are conducted in a way that is easy for others to:",
+            "options": [
+                "Approve",
+                "See what is performed",
+                "Amend",
+                "Challenge"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Transparency ensures that government processes are open to public scrutiny."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional Concepts (Separation of Powers & Rights)",
+        "type": "objective",
+        "question_data": {
+            "text": "Accountability involves accepting responsibility and being open to discipline, sanction, and:",
+            "options": [
+                "Negotiation",
+                "Judicial independence",
+                "Punishment",
+                "Legislative oversight"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Accountability implies that officials must answer for their actions and face consequences for misconduct."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "The four constitutions processed under colonial government (pre-independence) are referred to as:",
+            "options": [
+                "Republican constitutions",
+                "Presidential constitutions",
+                "Imperial or Governor’s constitutions",
+                "Autochthonous constitutions"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Constitutions like Clifford, Richards, Macpherson, and Lyttelton were imposed by the colonial governor/imperial power."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "The 1960 Independence Constitution was strictly speaking non-autochthonous because it was passed by:",
+            "options": [
+                "The Nigerian Parliament",
+                "The Provisional Ruling Council",
+                "The British Parliament",
+                "A Constitutional Conference"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The 1960 Constitution was an Order in Council passed by the British Parliament, not a home-grown document."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "A constitution is considered autochthonous if it derives its force and validity from its own:",
+            "options": [
+                "Imperial decree",
+                "Native authority",
+                "External treaty",
+                "Supreme Court decision"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Autochthony implies that the legal validity of the constitution comes from within the country (the people)."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "Which constitution marked the beginning of Nigeria's transition to civilian rule after the first period of military administration?",
+            "options": [
+                "1963 Constitution",
+                "1979 Constitution",
+                "1995 Constitution",
+                "1999 Constitution"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 1979 Constitution introduced the Presidential system and ended the first military era."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "The Pure Autochthony Test insists that constitution making must be monopolized by the people and their:",
+            "options": [
+                "Constitutional experts",
+                "Elected representatives",
+                "Military leaders",
+                "Ruling party"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Pure autochthony requires a constituent assembly or direct popular involvement in the drafting and adoption."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "Which interpretation theory involves basing legal decisions on the actual words of the law if its meaning is clear, precise, and unambiguous?",
+            "options": [
+                "Liberal approach",
+                "Purposive approach",
+                "Historical approach",
+                "Textual or literal approach"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "The literal rule (textualism) looks at the plain meaning of the words used by the legislature."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "The interpretation approach that judges should prefer a broader construction which would promote effectiveness and consistency with the intention of the legislature is the:",
+            "options": [
+                "Liberal or broad approach",
+                "Textual approach",
+                "Purist approach",
+                "Purposive approach"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The liberal approach seeks to avoid narrow technicalities that defeat the spirit of the document."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "Constitutional History and Interpretation",
+        "type": "objective",
+        "question_data": {
+            "text": "Which interpretation approach focuses on giving effect to the true purpose of legislation, including looking at the context, antecedent history, and purpose to be achieved?",
+            "options": [
+                "Literal approach",
+                "Doctrinal approach",
+                "Purposive approach",
+                "Historical approach"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The purposive approach looks beyond the literal text to understand the 'mischief' the law intended to solve."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "Legislative powers for the Federation are vested in the National Assembly, which is structured as a:",
+            "options": [
+                "Unicameral legislature",
+                "Bicameral legislature",
+                "Tripartite legislature",
+                "Judicial council"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The National Assembly consists of two houses: The Senate and the House of Representatives."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "How many Senators does each State of the Federation contribute to the National Assembly?",
+            "options": [
+                "Two",
+                "Three",
+                "Four",
+                "One"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Each state has 3 senators, and the FCT has 1, making a total of 109."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "To be qualified for election to the Senate, a Nigerian citizen must have attained the age of:",
+            "options": [
+                "Thirty years",
+                "Thirty-five years",
+                "Forty years",
+                "Twenty-five years"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 1999 Constitution (as amended) sets the minimum age for the Senate at 35."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "If the President withholds assent to a bill passed by the National Assembly, the bill can still become law if passed again by a 2/3 majority of:",
+            "options": [
+                "The Senate only",
+                "The House of Representatives only",
+                "Each House",
+                "A joint sitting of the National Assembly"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The veto override requires a 2/3 majority in both houses of the National Assembly."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 88 of the Constitution gives the National Assembly the power to investigate the conduct of MDAs primarily to expose corruption, inefficiency, or:",
+            "options": [
+                "Political interference",
+                "Waste",
+                "Legislative oversight",
+                "Executive control"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The investigative power is for the purpose of making laws or exposing corruption and waste."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "The investigative powers of the legislature cannot be used for what purpose?",
+            "options": [
+                "Making laws",
+                "Exposing corruption",
+                "Trying criminal offences",
+                "Disbursing funds"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The legislature is not a court and cannot try or punish criminal offences."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "What constitutional provision restricts the legislature from enacting laws that oust the jurisdiction of the courts?",
+            "options": [
+                "Section 4(5)",
+                "Section 4(8)",
+                "Section 4(9)",
+                "Section 4(2)"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 4(8) prohibits the enactment of ouster clauses by the legislature."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "The lawmaking power for residual matters, not contained in the Exclusive or Concurrent lists, typically rests with the:",
+            "options": [
+                "President",
+                "National Assembly",
+                "State House of Assembly",
+                "Judiciary"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Residual powers belong to the states under the Nigerian federal structure."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Legislature",
+        "type": "objective",
+        "question_data": {
+            "text": "When a State law is inconsistent with a Federal law, which doctrine dictates that the Federal law will prevail and the State law will be void to the extent of its inconsistency?",
+            "options": [
+                "Stare Decisis",
+                "Lex Situs",
+                "Rule of Law",
+                "Doctrine of Covering the Field"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Covering the field ensures federal uniformity on matters where both levels can legislate but the federal government has acted comprehensively."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Presidential system, the Head of State is the same as the:",
+            "options": [
+                "Speaker of the House",
+                "Chief Justice",
+                "Commander-in-Chief of the Armed Forces and Head of Government",
+                "Prime Minister"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "In a presidential system, the President holds all these roles concurrently."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "The executive powers of the President extend to the execution and maintenance of the Constitution and all laws made by the:",
+            "options": [
+                "Judiciary",
+                "Senate",
+                "National Assembly",
+                "State Governors"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The executive branch maintains and carries out the laws enacted by the legislature."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "To be qualified for election as President, a person must be a Nigerian citizen by:",
+            "options": [
+                "Registration",
+                "Naturalization",
+                "Birth",
+                "Marriage"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Only citizens by birth are eligible for the office of the President."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "The President determines the operation of the armed forces and, in accordance with Section 5(4), cannot declare war with another country without the resolution of the:",
+            "options": [
+                "United Nations",
+                "National Defence Council",
+                "National Assembly",
+                "State Governors"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The President's power to declare war is subject to the approval of the National Assembly."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "The Attorney General of the Federation has the power to discontinue criminal proceedings at any stage, a power known as:",
+            "options": [
+                "Certiorari",
+                "Habeas Corpus",
+                "Mandamus",
+                "Nolle Prosequi"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Nolle Prosequi allows the AG to end a prosecution before judgment is delivered."
+        }
+    },
+    {
+        "course": "Constitutional Law",
+        "topic": "The Executive",
+        "type": "objective",
+        "question_data": {
+            "text": "The constitutional provision in Section 12, requiring international treaties to be enacted into law by the National Assembly before domestic enforcement, is the:",
+            "options": [
+                "Supremacy Clause",
+                "Domestication Clause",
+                "Ratification Clause",
+                "Federal Character Clause"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Nigeria follows a dualist system where treaties must be domesticated by an act of Parliament."
+        }
+    }
+]

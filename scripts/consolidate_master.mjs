@@ -16,6 +16,8 @@ const filesToMerge = [
     'land_batch_7.json',
     'contract_batch_1.json',
     'contract_batch_2.json',
+    'const_batch_1.json',
+    'const_batch_2.json',
     'my_questions.json' // This had the initial 100 equity questions
 ];
 

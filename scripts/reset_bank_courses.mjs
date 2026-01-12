@@ -34,13 +34,15 @@ const SUPABASE_KEY = env['VITE_SUPABASE_ANON_KEY'];
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function reset() {
-    console.log("Resetting bank for Land Law and Equity and Trusts...");
+    const args = process.argv.slice(2);
+    const courses = args.length > 0
+        ? args
+        : ['Land Law', 'Equity and Trusts', 'Law of Contract', 'Constitutional Law'];
 
-    // Delete any mistakenly tagged ones too
-    const courses = ['Land Law', 'Equity and Trusts', 'Land Use Act'];
+    console.log(`Resetting bank for: ${courses.join(', ')}...`);
 
     for (const course of courses) {
-        const { count, error } = await supabase
+        const { error } = await supabase
             .from('question_bank')
             .delete()
             .eq('course', course);

@@ -189,15 +189,15 @@ export const COURSE_TOPICS: Record<string, string[]> = {
     "Business Facilitation"
   ],
   "Constitutional Law": [
-    "Separation of Powers",
-    "Rule of Law",
-    "Federalism in Nigeria",
-    "Human Rights (Chapter IV)",
-    "Executive Powers",
-    "Legislative Powers",
-    "Judicial Powers",
-    "Locus Standi",
-    "Supremacy of the Constitution"
+    "Constitution, Constitutional Law and Constitutionalism",
+    "Constitutional Concepts (Rule of Law & Supremacy)",
+    "Constitutional Concepts (Separation of Powers & Rights)",
+    "Constitutional History and Interpretation",
+    "The Legislature",
+    "The Executive",
+    "The Judiciary",
+    "Federalism and Local Government",
+    "Electoral System and Constitutional History (Advanced)"
   ],
   "Criminal Law": [
     "General Principles of Criminal Liability",
@@ -431,10 +431,15 @@ export const COCCIN_TOPICS: Record<string, string[]> = {
     "Personal income tax"
   ],
   "Constitutional Law": [
-    "Definition and sources of Constitutional Law",
-    "Classification of Constitution",
-    "The making of Constitution",
-    "Nigerian Constitutional history, sources of constitution"
+    "Constitution, Constitutional Law and Constitutionalism",
+    "Constitutional Concepts (Rule of Law & Supremacy)",
+    "Constitutional Concepts (Separation of Powers & Rights)",
+    "Constitutional History and Interpretation",
+    "The Legislature",
+    "The Executive",
+    "The Judiciary",
+    "Federalism and Local Government",
+    "Electoral System and Constitutional History (Advanced)"
   ],
   "Nigerian Legal System": [
     "Meaning and Definition of a Legal System",
