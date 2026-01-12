@@ -20,8 +20,8 @@ const aiStudio = new GoogleGenerativeAI(AI_STUDIO_KEY || '');
 // Primary Model: Gemini 2.0 Flash Exp (Experimental, smarter, lower rate limits)
 const primaryModel = aiStudio.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
 
-// Fallback Model: Gemini 1.5 Flash (Stable, higher rate limits)
-const fallbackModel = aiStudio.getGenerativeModel({ model: "gemini-1.5-flash" });
+// Fallback Model: Gemini 1.5 Flash (Stable, specific version)
+const fallbackModel = aiStudio.getGenerativeModel({ model: "gemini-1.5-flash-001" });
 
 // --- Type Definitions ---
 
