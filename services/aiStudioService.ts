@@ -45,7 +45,7 @@ export const generateStandardQuestions = async (
     count: number
 ): Promise<ObjectiveQuestion[]> => {
     if (!AI_STUDIO_KEY) {
-        throw new Error("AI Studio API key not configured");
+        throw new Error("API Key is missing. Please check your configuration.");
     }
 
     try {
@@ -72,7 +72,7 @@ OUTPUT FORMAT: Return ONLY a valid JSON array with this exact structure:
   }
 ]
 
-IMPORTANT: Return ONLY the JSON array, no markdown formatting, no additional text.`;
+IMPORTANT: Return ONLY the JSON array, no markdown formatting, no additional text. Ensure the JSON is valid.`;
 
         const result = await questionModel.generateContent(prompt);
         const text = result.response.text();
@@ -83,18 +83,23 @@ IMPORTANT: Return ONLY the JSON array, no markdown formatting, no additional tex
             .replace(/```/g, '')
             .trim();
 
-        const questions = JSON.parse(jsonString);
+        try {
+            const questions = JSON.parse(jsonString);
 
-        // Validate structure
-        if (!Array.isArray(questions) || questions.length === 0) {
-            throw new Error("Invalid response format");
+            // Validate structure
+            if (!Array.isArray(questions) || questions.length === 0) {
+                throw new Error("AI returned an invalid format (not an array).");
+            }
+
+            return questions;
+        } catch (jsonError) {
+            console.error("JSON Parse Error:", jsonError, "Raw Text:", text);
+            throw new Error("Failed to parse AI response. The AI might be busy or confused.");
         }
 
-        return questions;
-
-    } catch (error) {
+    } catch (error: any) {
         console.error("Error generating standard questions:", error);
-        throw error;
+        throw mapErrorToUserMessage(error);
     }
 };
 
@@ -106,7 +111,7 @@ export const generateCoccinObjective = async (
     count: number = 20
 ): Promise<ObjectiveQuestion[]> => {
     if (!AI_STUDIO_KEY) {
-        throw new Error("AI Studio API key not configured");
+        throw new Error("API Key is missing. Please check your configuration.");
     }
 
     try {
@@ -148,17 +153,22 @@ IMPORTANT: Return ONLY the JSON array, no markdown, no additional text.`;
             .replace(/```/g, '')
             .trim();
 
-        const questions = JSON.parse(jsonString);
+        try {
+            const questions = JSON.parse(jsonString);
 
-        if (!Array.isArray(questions) || questions.length === 0) {
-            throw new Error("Invalid response format");
+            if (!Array.isArray(questions) || questions.length === 0) {
+                throw new Error("AI returned an empty or invalid list of questions.");
+            }
+            return questions;
+
+        } catch (jsonError) {
+            console.error("COCCIN Objective Parse Error:", jsonError, "Raw Text:", text);
+            throw new Error("Failed to process the exam paper. Please try again.");
         }
 
-        return questions;
-
-    } catch (error) {
+    } catch (error: any) {
         console.error("Error generating COCCIN objective questions:", error);
-        throw error;
+        throw mapErrorToUserMessage(error);
     }
 };
 
@@ -170,7 +180,7 @@ export const generateCoccinTheory = async (
     count: number = 2
 ): Promise<TheoryQuestion[]> => {
     if (!AI_STUDIO_KEY) {
-        throw new Error("AI Studio API key not configured");
+        throw new Error("API Key is missing. Please check your configuration.");
     }
 
     try {
@@ -214,18 +224,36 @@ IMPORTANT: Return ONLY the JSON array, no markdown, no additional text.`;
             .replace(/```/g, '')
             .trim();
 
-        const questions = JSON.parse(jsonString);
+        try {
+            const questions = JSON.parse(jsonString);
 
-        if (!Array.isArray(questions) || questions.length === 0) {
-            throw new Error("Invalid response format");
+            if (!Array.isArray(questions) || questions.length === 0) {
+                throw new Error("AI returned an invalid theory question format.");
+            }
+            return questions;
+        } catch (jsonError) {
+            console.error("COCCIN Theory Parse Error:", jsonError, "Raw Text:", text);
+            throw new Error("Failed to process theory questions. Please try again.");
         }
 
-        return questions;
-
-    } catch (error) {
+    } catch (error: any) {
         console.error("Error generating COCCIN theory questions:", error);
-        throw error;
+        throw mapErrorToUserMessage(error);
     }
+};
+
+/**
+ * Helper to map technical errors to user-friendly messages
+ */
+const mapErrorToUserMessage = (error: any): Error => {
+    const msg = error.toString().toLowerCase();
+
+    if (msg.includes('api key')) return new Error("System Configuration Error: API Key missing or invalid.");
+    if (msg.includes('fetch failed') || msg.includes('network')) return new Error("Network Error: Please check your internet connection.");
+    if (msg.includes('429') || msg.includes('quota') || msg.includes('exhausted')) return new Error("Service Busy: The AI is currently overloaded. Please wait a moment.");
+    if (msg.includes('safety') || msg.includes('blocked')) return new Error("Content Safety Error: The request was blocked by safety filters.");
+
+    return error instanceof Error ? error : new Error("An unexpected error occurred.");
 };
 
 export const generateQuestionsWithRetry = async <T>(
@@ -238,26 +266,29 @@ export const generateQuestionsWithRetry = async <T>(
         try {
             return await generatorFn();
         } catch (error: any) {
-            lastError = error as Error;
+            lastError = mapErrorToUserMessage(error);
+            const errorMsg = lastError.message.toLowerCase();
 
             // Check for Rate Limits (429 or Quota Exceeded)
-            const errorMsg = error.toString().toLowerCase();
-            const isRateLimit = errorMsg.includes('429') ||
-                errorMsg.includes('quota') ||
-                errorMsg.includes('resource exhausted');
+            const isRateLimit = errorMsg.includes('service busy') ||
+                errorMsg.includes('429') ||
+                errorMsg.includes('overloaded');
 
             console.warn(`Generation attempt ${attempt + 1} failed:`, error);
 
             if (isRateLimit) {
-                // Immediate fail for rate limits - retrying immediately won't help usually, 
-                // but we can try once if it's strictly a "resource exhausted" that might clear in a second.
-                // For now, let's wait longer if it is rate limit.
+                // Immediate fail for rate limits if it's the last retry
                 if (attempt < maxRetries) {
                     await new Promise(resolve => setTimeout(resolve, 2000 * Math.pow(2, attempt)));
                     continue;
                 } else {
-                    throw new Error("Service is currently busy (Rate Limit). Please wait a minute and try again.");
+                    throw new Error("System is currently busy. Please wait 1 minute and try again.");
                 }
+            }
+
+            // Don't retry for configuration errors
+            if (errorMsg.includes('configuration') || errorMsg.includes('api key')) {
+                throw lastError;
             }
 
             if (attempt < maxRetries) {
@@ -267,5 +298,5 @@ export const generateQuestionsWithRetry = async <T>(
         }
     }
 
-    throw lastError || new Error("Failed to generate questions after retries");
+    throw lastError || new Error("Failed to generate questions. Please ensure you are connected to the internet.");
 };
