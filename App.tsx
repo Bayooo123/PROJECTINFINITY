@@ -6,28 +6,30 @@ import { Blog } from './views/Blog';
 import { Login } from './components/Auth/Login';
 import { Signup } from './components/Auth/Signup';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader, AlertCircle, Database } from 'lucide-react';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+import { BookOpen, MessageSquare, User as UserIcon, BookText, Loader, AlertCircle, Database, Sun, Moon } from 'lucide-react';
 import { AdminUpload } from './views/AdminUpload';
 import { AdminQuestionGenerator } from './views/AdminQuestionGenerator';
 
 const AppContent: React.FC = () => {
   const { user, profile, loading, isConfigured, signOut } = useAuth();
+  const { theme, toggleTheme } = useTheme();
   const [currentView, setCurrentView] = useState<AppView>(AppView.PRACTICE);
   const [authView, setAuthView] = useState<'login' | 'signup'>('login');
 
   // Show configuration error if Supabase is missing
   if (!isConfigured) {
     return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
-          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <AlertCircle size={32} className="text-red-600" />
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center p-4">
+        <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
+          <div className="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+            <AlertCircle size={32} className="text-red-600 dark:text-red-400" />
           </div>
-          <h1 className="text-xl font-bold text-slate-900 mb-2">Configuration Error</h1>
-          <p className="text-slate-600 mb-6">
+          <h1 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Configuration Error</h1>
+          <p className="text-slate-600 dark:text-slate-300 mb-6">
             The application is missing required configuration. Please check your environment variables.
           </p>
-          <div className="bg-slate-100 p-4 rounded-lg text-left text-xs font-mono text-slate-700 overflow-x-auto">
+          <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-lg text-left text-xs font-mono text-slate-700 dark:text-slate-300 overflow-x-auto">
             <p>Missing: VITE_SUPABASE_URL or VITE_SUPABASE_ANON_KEY</p>
           </div>
         </div>
@@ -38,10 +40,10 @@ const AppContent: React.FC = () => {
   // Show loading spinner while checking auth state
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center">
         <div className="text-center">
           <Loader size={48} className="animate-spin text-amber-600 mx-auto mb-4" />
-          <p className="text-slate-600">Loading...</p>
+          <p className="text-slate-600 dark:text-slate-400">Loading...</p>
         </div>
       </div>
     );
@@ -86,27 +88,27 @@ const AppContent: React.FC = () => {
       case AppView.PROFILE:
         return (
           <div className="p-6 max-w-md mx-auto text-center space-y-6 pt-20">
-            <div className="w-24 h-24 bg-slate-200 rounded-full mx-auto flex items-center justify-center text-slate-500">
+            <div className="w-24 h-24 bg-slate-200 dark:bg-slate-800 rounded-full mx-auto flex items-center justify-center text-slate-500 dark:text-slate-400">
               <UserIcon size={48} />
             </div>
             <div>
-              <h2 className="text-2xl font-serif font-bold text-slate-900">{profile?.name}</h2>
-              <p className="text-slate-500">{profile?.university}</p>
+              <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">{profile?.name}</h2>
+              <p className="text-slate-500 dark:text-slate-400">{profile?.university}</p>
               <p className="text-amber-600 font-medium mt-2">{profile?.level}</p>
             </div>
 
             {/* Admin Access Buttons */}
-            <div className="space-y-3 pt-4 border-t border-slate-100">
+            <div className="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
               <button
                 onClick={() => setCurrentView('ADMIN' as AppView)}
-                className="w-full py-3 text-slate-600 hover:text-slate-900 text-sm font-medium bg-slate-50 hover:bg-slate-100 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 <BookOpen size={16} /> Manage Knowledge Base
               </button>
 
               <button
                 onClick={() => setCurrentView('ADMIN_GENERATOR' as AppView)}
-                className="w-full py-3 text-amber-700 hover:text-amber-900 text-sm font-medium bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="w-full py-3 text-amber-700 dark:text-amber-500 hover:text-amber-900 dark:hover:text-amber-400 text-sm font-medium bg-amber-50 dark:bg-amber-900/20 hover:bg-amber-100 dark:hover:bg-amber-900/30 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 <Database size={16} /> Question Bank Generator
               </button>
@@ -114,7 +116,7 @@ const AppContent: React.FC = () => {
 
             <button
               onClick={handleLogout}
-              className="text-red-500 hover:text-red-700 text-sm font-medium border border-red-200 px-4 py-2 rounded-lg hover:bg-red-50 block mx-auto mt-8"
+              className="text-red-500 hover:text-red-700 dark:hover:text-red-400 text-sm font-medium border border-red-200 dark:border-red-900/50 px-4 py-2 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 block mx-auto mt-8"
             >
               Sign Out
             </button>
@@ -130,18 +132,18 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-slate-50 text-slate-900 font-sans">
+    <div className="flex flex-col h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans transition-colors duration-200">
       {/* Top Navbar (Desktop Only mostly, mobile has bottom nav) */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-10 px-6 py-4 flex items-center justify-between">
+      <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10 px-6 py-4 flex items-center justify-between transition-colors duration-200">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full border-2 border-amber-600 flex items-center justify-center">
               <span className="text-amber-600 font-bold text-sm">L</span>
             </div>
-            <span className="text-xl font-serif font-bold text-slate-900">Learned</span>
+            <span className="text-xl font-serif font-bold text-slate-900 dark:text-white">Learned</span>
           </div>
         </div>
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-500">
+        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-500 dark:text-slate-400">
           <button
             onClick={() => setCurrentView(AppView.PRACTICE)}
             className={`hover:text-amber-600 transition-colors ${currentView === AppView.PRACTICE ? 'text-amber-600' : ''}`}
@@ -160,14 +162,35 @@ const AppContent: React.FC = () => {
           >
             Blog
           </button>
+
+          <div className="h-6 w-px bg-slate-200 dark:bg-slate-700 mx-2"></div>
+
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-colors"
+            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+          >
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+
           <button
             onClick={() => setCurrentView(AppView.PROFILE)}
-            className="flex items-center gap-2 pl-4 border-l border-slate-200"
+            className="flex items-center gap-2 pl-4 border-l border-slate-200 dark:border-slate-700"
           >
-            <span className="text-slate-900">{profile?.name.split(' ')[0]}</span>
-            <div className="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center text-white">
+            <span className="text-slate-900 dark:text-slate-200">{profile?.name.split(' ')[0]}</span>
+            <div className="w-8 h-8 bg-slate-900 dark:bg-slate-700 rounded-full flex items-center justify-center text-white">
               <UserIcon size={14} />
             </div>
+          </button>
+        </div>
+
+        {/* Mobile Theme Toggle (Visible only on mobile) */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-colors"
+          >
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </div>
       </header>
@@ -180,14 +203,14 @@ const AppContent: React.FC = () => {
 
         {/* Footer */}
         <footer className="py-8 px-4 text-center">
-          <p className="text-[10px] text-slate-400 font-medium uppercase tracking-widest">
+          <p className="text-[10px] text-slate-400 dark:text-slate-600 font-medium uppercase tracking-widest">
             Learned is a product of REFORMA DIGITAL SOLUTIONS LIMITED (RC Number: 8801487)
           </p>
         </footer>
       </main>
 
       {/* Mobile Bottom Navigation */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 flex justify-around py-3 px-2 pb-safe z-50">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 flex justify-around py-3 px-2 pb-safe z-50 transition-colors duration-200">
         <NavButton
           active={currentView === AppView.PRACTICE}
           onClick={() => setCurrentView(AppView.PRACTICE)}
@@ -227,7 +250,7 @@ interface NavButtonProps {
 const NavButton: React.FC<NavButtonProps> = ({ active, onClick, icon, label }) => (
   <button
     onClick={onClick}
-    className={`flex flex-col items-center gap-1 w-16 transition-colors ${active ? 'text-amber-600' : 'text-slate-400 hover:text-slate-600'
+    className={`flex flex-col items-center gap-1 w-16 transition-colors ${active ? 'text-amber-600' : 'text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300'
       }`}
   >
     {icon}
@@ -238,7 +261,9 @@ const NavButton: React.FC<NavButtonProps> = ({ active, onClick, icon, label }) =
 const App: React.FC = () => {
   return (
     <AuthProvider>
-      <AppContent />
+      <ThemeProvider>
+        <AppContent />
+      </ThemeProvider>
     </AuthProvider>
   );
 };

@@ -279,21 +279,21 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
     return (
       <div className="max-w-4xl mx-auto p-6 space-y-8">
         <header className="mb-8">
-          <h2 className="text-3xl font-serif font-bold text-slate-900 mb-2">Practice Area</h2>
-          <p className="text-slate-600">Simulate real examinations to reinforce your legal understanding.</p>
+          <h2 className="text-3xl font-serif font-bold text-slate-900 dark:text-white mb-2">Practice Area</h2>
+          <p className="text-slate-600 dark:text-slate-400">Simulate real examinations to reinforce your legal understanding.</p>
         </header>
 
         {/* Mode Toggle */}
-        <div className="flex p-1 bg-slate-100 rounded-xl mb-6">
+        <div className="flex p-1 bg-slate-100 dark:bg-slate-800 rounded-xl mb-6">
           <button
             onClick={() => setPracticeType('STANDARD')}
-            className={`flex-1 py-3 rounded-lg font-medium transition-all ${practiceType === 'STANDARD' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+            className={`flex-1 py-3 rounded-lg font-medium transition-all ${practiceType === 'STANDARD' ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'}`}
           >
             Standard Practice
           </button>
           <button
             onClick={() => setPracticeType('COCCIN')}
-            className={`flex-1 py-3 rounded-lg font-medium transition-all ${practiceType === 'COCCIN' ? 'bg-amber-100 text-amber-900 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+            className={`flex-1 py-3 rounded-lg font-medium transition-all ${practiceType === 'COCCIN' ? 'bg-amber-100 dark:bg-amber-900/40 text-amber-900 dark:text-amber-400 shadow-sm' : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200'}`}
           >
             COCCIN Simulator
           </button>
@@ -306,21 +306,21 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           </div>
         )}
 
-        <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-8">
+        <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-8">
 
           {practiceType === 'STANDARD' ? (
             <>
               {/* STANDARD MODE UI */}
               <div className="space-y-3">
-                <label className="block text-sm font-medium text-slate-900">1. Select Course</label>
+                <label className="block text-sm font-medium text-slate-900 dark:text-slate-300">1. Select Course</label>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   {userCourses.map((course) => (
                     <button
                       key={course}
                       onClick={() => { setSelectedCourse(course); if (quizMode === 'STANDARD') setTopic(''); }}
                       className={`text-left px-4 py-3 rounded-lg border transition-all ${selectedCourse === course
-                        ? 'border-amber-600 bg-amber-50 text-amber-900 ring-1 ring-amber-600'
-                        : 'border-slate-200 hover:border-slate-400 text-slate-700'
+                        ? 'border-amber-600 bg-amber-50 dark:bg-amber-900/20 text-amber-900 dark:text-amber-400 ring-1 ring-amber-600'
+                        : 'border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300'
                         }`}
                     >
                       <div className="font-medium truncate">{course}</div>
@@ -330,7 +330,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
               </div>
 
               <div className={`space-y-3 transition-opacity duration-300 ${selectedCourse ? 'opacity-100' : 'opacity-50 pointer-events-none'}`}>
-                <label className="block text-sm font-medium text-slate-900">2. Select Exam Mode</label>
+                <label className="block text-sm font-medium text-slate-900 dark:text-slate-300">2. Select Exam Mode</label>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {(Object.keys(QUIZ_MODES) as QuizMode[]).map((mode) => {
                     const config = QUIZ_MODES[mode];
@@ -340,18 +340,18 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                         key={mode}
                         onClick={() => setQuizMode(mode)}
                         className={`relative p-4 rounded-xl border text-left transition-all ${isSelected
-                          ? 'border-amber-600 bg-amber-50 ring-1 ring-amber-600'
-                          : 'border-slate-200 hover:border-slate-300 bg-white'
+                          ? 'border-amber-600 bg-amber-50 dark:bg-amber-900/20 ring-1 ring-amber-600'
+                          : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 bg-white dark:bg-slate-800'
                           }`}
                       >
                         <div className={`mb-2 ${isSelected ? 'text-amber-600' : 'text-slate-500'}`}>
                           {config.icon}
                         </div>
-                        <div className="font-bold text-slate-900">{config.label}</div>
-                        <div className="text-xs text-slate-500 mt-1 font-medium">
+                        <div className="font-bold text-slate-900 dark:text-white">{config.label}</div>
+                        <div className="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
                           {config.count} Qs • {config.timeMinutes} Mins
                         </div>
-                        <p className="text-xs text-slate-400 mt-2 leading-tight">
+                        <p className="text-xs text-slate-400 dark:text-slate-500 mt-2 leading-tight">
                           {config.description}
                         </p>
                       </button>
@@ -362,12 +362,12 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
 
               {quizMode === 'STANDARD' && (
                 <div className={`space-y-3 transition-opacity duration-300 ${selectedCourse ? 'opacity-100' : 'opacity-50 pointer-events-none'}`}>
-                  <label className="block text-sm font-medium text-slate-900">3. Select Topic</label>
+                  <label className="block text-sm font-medium text-slate-900 dark:text-slate-300">3. Select Topic</label>
                   <div className="relative">
                     <select
                       value={topic === 'All Topics' ? '' : topic}
                       onChange={(e) => setTopic(e.target.value)}
-                      className="w-full px-4 py-3 pr-10 rounded-lg border border-slate-300 focus:ring-2 focus:ring-slate-900 outline-none appearance-none bg-white disabled:bg-slate-50"
+                      className="w-full px-4 py-3 pr-10 rounded-lg border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-500 outline-none appearance-none bg-white dark:bg-slate-800 text-slate-900 dark:text-white disabled:bg-slate-50 dark:disabled:bg-slate-900"
                       disabled={!selectedCourse}
                     >
                       <option value="">-- Select a Topic --</option>
@@ -397,8 +397,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
               </div>
 
               <div className="space-y-3">
-                <label className="block text-sm font-medium text-slate-900">Select 2 Courses (Compulsory Courses 200-500L)</label>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-h-60 overflow-y-auto p-2 border border-slate-200 rounded-lg">
+                <label className="block text-sm font-medium text-slate-900 dark:text-slate-300">Select 2 Courses (Compulsory Courses 200-500L)</label>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 max-h-60 overflow-y-auto p-2 border border-slate-200 dark:border-slate-700 rounded-lg">
                   {allCourses.map((course) => {
                     const isSelected = coccinCourses.includes(course);
                     return (
@@ -406,8 +406,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                         key={course}
                         onClick={() => handleCoccinCourseToggle(course)}
                         className={`text-left px-4 py-3 rounded-lg border transition-all ${isSelected
-                          ? 'border-amber-600 bg-amber-50 text-amber-900 ring-1 ring-amber-600'
-                          : 'border-slate-200 hover:border-slate-400 text-slate-700'
+                          ? 'border-amber-600 bg-amber-50 dark:bg-amber-900/20 text-amber-900 dark:text-amber-400 ring-1 ring-amber-600'
+                          : 'border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300'
                           }`}
                       >
                         <div className="flex justify-between items-center">
@@ -446,12 +446,12 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
     return (
       <div className="flex flex-col items-center justify-center h-[60vh] space-y-6">
         <div className="relative w-20 h-20">
-          <div className="absolute top-0 left-0 w-full h-full border-4 border-slate-200 rounded-full"></div>
+          <div className="absolute top-0 left-0 w-full h-full border-4 border-slate-200 dark:border-slate-700 rounded-full"></div>
           <div className="absolute top-0 left-0 w-full h-full border-4 border-amber-600 rounded-full border-t-transparent animate-spin"></div>
         </div>
         <div className="text-center space-y-2">
-          <h3 className="text-xl font-medium text-slate-900">Preparing Exam Paper</h3>
-          <p className="text-slate-500 max-w-md mx-auto">
+          <h3 className="text-xl font-medium text-slate-900 dark:text-white">Preparing Exam Paper</h3>
+          <p className="text-slate-500 dark:text-slate-400 max-w-md mx-auto">
             {practiceType === 'STANDARD'
               ? `Curating questions on ${topic === 'All Topics' ? 'All Topics' : topic}...`
               : `Generating ${coccinStage} questions for ${coccinCourses.join(' & ')}...`
@@ -473,7 +473,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
     return (
       <div className="max-w-4xl mx-auto p-4 md:p-6 min-h-[calc(100vh-80px)] flex flex-col">
         {/* Header with Timer */}
-        <div className="mb-6 flex flex-col md:flex-row md:items-center justify-between bg-white p-4 rounded-xl shadow-sm border border-slate-100 sticky top-0 z-10 gap-4 md:gap-0">
+        <div className="mb-6 flex flex-col md:flex-row md:items-center justify-between bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 sticky top-0 z-10 gap-4 md:gap-0">
           <div className="flex items-center gap-3">
             <span className="text-sm font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
               Q {currentQuestionIndex + 1} / {questions.length}
@@ -484,21 +484,21 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           </div>
 
           {/* Progress Bar for larger screens */}
-          <div className="hidden md:flex flex-1 mx-8 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div className="hidden md:flex flex-1 mx-8 h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
             <div
-              className="h-full bg-slate-900 transition-all duration-300"
+              className="h-full bg-slate-900 dark:bg-amber-600 transition-all duration-300"
               style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
             ></div>
           </div>
 
-          <div className={`flex items-center gap-2 font-mono font-bold text-xl ${timeLeft < 60 ? 'text-red-600 animate-pulse' : 'text-slate-700'}`}>
+          <div className={`flex items-center gap-2 font-mono font-bold text-xl ${timeLeft < 60 ? 'text-red-600 animate-pulse' : 'text-slate-700 dark:text-slate-300'}`}>
             <Timer size={24} />
             {formatTime(timeLeft)}
           </div>
         </div>
 
         <div className="flex-grow">
-          <h3 className="text-xl md:text-2xl font-serif font-medium text-slate-900 mb-8 leading-relaxed">
+          <h3 className="text-xl md:text-2xl font-serif font-medium text-slate-900 dark:text-white mb-8 leading-relaxed">
             {question.text || question.question}
           </h3>
 
@@ -512,14 +512,14 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                     key={idx}
                     onClick={() => handleOptionSelect(idx)}
                     className={`w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-start gap-3 ${isSelected
-                      ? 'border-slate-900 bg-slate-50 ring-1 ring-slate-900'
-                      : 'border-slate-200 hover:border-slate-400 bg-white'
+                      ? 'border-slate-900 dark:border-amber-500 bg-slate-50 dark:bg-slate-800 ring-1 ring-slate-900 dark:ring-amber-500'
+                      : 'border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 bg-white dark:bg-slate-900'
                       }`}
                   >
-                    <div className={`mt-0.5 w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 ${isSelected ? 'border-slate-900 dot-center' : 'border-slate-400'
+                    <div className={`mt-0.5 w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 ${isSelected ? 'border-slate-900 dark:border-amber-500 dot-center' : 'border-slate-400 dark:border-slate-500'
                       }`}>
                     </div>
-                    <span className="text-base">{option}</span>
+                    <span className="text-base text-slate-900 dark:text-slate-200">{option}</span>
                   </button>
                 );
               })}
@@ -529,10 +529,10 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           {/* THEORY MODE */}
           {practiceType === 'COCCIN' && coccinStage === 'THEORY' && (
             <div className="space-y-6">
-              <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                <h4 className="font-bold text-slate-900 mb-4">Marking Scheme / Key Points</h4>
+              <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700">
+                <h4 className="font-bold text-slate-900 dark:text-white mb-4">Marking Scheme / Key Points</h4>
                 {showTheoryAnswer ? (
-                  <ul className="list-disc list-inside space-y-2 text-slate-700">
+                  <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
                     {question.keyPoints?.map((point: string, i: number) => (
                       <li key={i}>{point}</li>
                     ))}
@@ -550,7 +550,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
         </div>
 
         {/* Navigation Footer */}
-        <div className="mt-8 pt-6 border-t border-slate-100 flex justify-between items-center">
+        <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center">
           <Button
             onClick={handlePrevQuestion}
             variant="ghost"
@@ -606,17 +606,17 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
         )}
 
         {/* Score Card */}
-        <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm text-center space-y-4 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 to-slate-900"></div>
+        <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-center space-y-4 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 to-slate-900 dark:to-slate-700"></div>
           <div className="relative inline-block">
-            <Award size={64} className={`mx-auto ${percentage >= 60 ? 'text-amber-500' : 'text-slate-400'}`} />
+            <Award size={64} className={`mx-auto ${percentage >= 60 ? 'text-amber-500' : 'text-slate-400 dark:text-slate-600'}`} />
           </div>
 
           {/* Only show score for Objective/Standard */}
           {(practiceType === 'STANDARD' || practiceType === 'COCCIN') ? (
             <div>
-              <h2 className="text-5xl font-serif font-bold text-slate-900">{practiceType === 'COCCIN' ? `${score}/20` : `${percentage}%`}</h2>
-              <p className="text-lg text-slate-600 mt-1">
+              <h2 className="text-5xl font-serif font-bold text-slate-900 dark:text-white">{practiceType === 'COCCIN' ? `${score}/20` : `${percentage}%`}</h2>
+              <p className="text-lg text-slate-600 dark:text-slate-400 mt-1">
                 {practiceType === 'COCCIN' ? 'MCQ Score' : `You scored ${score} out of ${questions.length}`}
               </p>
             </div>
@@ -646,29 +646,29 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                 const isSkipped = userAnswer === undefined;
 
                 return (
-                  <div key={idx} className={`bg-white p-6 rounded-xl border-l-4 shadow-sm ${isCorrect ? 'border-l-green-500' : 'border-l-red-500'}`}>
+                  <div key={idx} className={`bg-white dark:bg-slate-900 p-6 rounded-xl border-l-4 shadow-sm ${isCorrect ? 'border-l-green-500' : 'border-l-red-500'}`}>
                     <div className="flex items-start gap-3 mb-4">
                       <span className="font-bold text-slate-400 text-sm mt-1">Q{idx + 1}</span>
-                      <h4 className="font-medium text-slate-900 text-lg">{q.question || q.text}</h4>
+                      <h4 className="font-medium text-slate-900 dark:text-white text-lg">{q.question || q.text}</h4>
                     </div>
 
                     <div className="space-y-2 mb-4">
-                      <div className={`flex items-center gap-2 text-sm ${isCorrect ? 'text-green-700 font-medium' : 'text-red-600'}`}>
+                      <div className={`flex items-center gap-2 text-sm ${isCorrect ? 'text-green-700 dark:text-green-400 font-medium' : 'text-red-600 dark:text-red-400'}`}>
                         {isCorrect ? <CheckCircle size={16} /> : <XCircle size={16} />}
                         <span>Your Answer: {isSkipped ? 'Skipped' : q.options[userAnswer]}</span>
                       </div>
                       {!isCorrect && (
-                        <div className="flex items-center gap-2 text-sm text-green-700 font-medium">
+                        <div className="flex items-center gap-2 text-sm text-green-700 dark:text-green-400 font-medium">
                           <CheckCircle size={16} />
                           <span>Correct Answer: {q.options[correctIdx]}</span>
                         </div>
                       )}
                     </div>
 
-                    <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700 leading-relaxed flex gap-3">
+                    <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg text-sm text-slate-700 dark:text-slate-300 leading-relaxed flex gap-3">
                       <BookOpen size={18} className="flex-shrink-0 text-slate-400 mt-0.5" />
                       <div>
-                        <span className="font-semibold text-slate-900">Explanation: </span>
+                        <span className="font-semibold text-slate-900 dark:text-white">Explanation: </span>
                         {q.explanation}
                       </div>
                     </div>
