@@ -1,32 +1,1602 @@
 [
     {
         "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
         "type": "objective",
         "question_data": {
-            "text": "The maxim 'Equity follows the Law' implies that:",
+            "text": "Which maxim is described as the root of all equitable jurisdiction?",
             "options": [
-                "Equity ignores legal rules",
-                "Equity supplements the law without overriding its clear application",
-                "Equity always prevails over law",
-                "Law is superior to equity in all cases"
+                "Equity follows the law",
+                "Equity will not suffer a wrong without a remedy",
+                "Delay defeats equity",
+                "Equality is equity"
             ],
             "correctAnswerIndex": 1,
-            "explanation": "Equity respects legal rules but intervenes where their application would be unconscionable."
+            "explanation": "This maxim reflects the foundational purpose of equity to provide a remedy where common law fails."
         }
     },
     {
         "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
         "type": "objective",
         "question_data": {
-            "text": "In the context of Maxims, 'He who seeks equity must do equity' requires the plaintiff to:",
+            "text": "Equity grants an injunction where damages are insufficient. This is an example of:",
             "options": [
-                "Pay a legal fee",
-                "Act fairly towards the defendant in the matter",
-                "Prove the defendant is a criminal",
-                "Abolish the common law"
+                "Original jurisdiction",
+                "Concurrent jurisdiction",
+                "Auxiliary jurisdiction",
+                "Criminal jurisdiction"
             ],
             "correctAnswerIndex": 1,
-            "explanation": "A plaintiff seeking equitable relief must be prepared to fulfill their own obligations."
+            "explanation": "Concurrent jurisdiction exists where both law and equity have a role, but equity provides a better remedy."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Auxiliary jurisdiction refers to:",
+            "options": [
+                "Remedies for which common law had no equivalent",
+                "Procedural inventions like discovery of documents",
+                "Mitigation of harsh statutes",
+                "Enforcement of foreign judgments"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Auxiliary jurisdiction provided procedural assistance to common law litigants."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Kayode Esho, Equity is not a 'warlord' determined to do battle with the law, but part of a:",
+            "options": [
+                "Religious system",
+                "Legal system mixed with law to achieve justice",
+                "Separate court structure",
+                "Political movement"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Justice Kayode Esho emphasized the complementary nature of law and equity in the Nigerian legal system."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Where there is 'equal equity,' which interest shall prevail?",
+            "options": [
+                "The equitable interest",
+                "The law (legal interest)",
+                "The first in time",
+                "The interest of the state"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Where the equities are equal, the law (legal interest) prevails."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "A legal interest takes priority over a prior equitable interest if the holder is a:",
+            "options": [
+                "Volunteer",
+                "Bona fide purchaser for value without notice",
+                "Member of the family",
+                "Donee"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This is a classic protection for the 'equity's darling' (BFP for value without notice)."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'First in Time' maxim applies primarily to:",
+            "options": [
+                "Conflicts between a legal and equitable interest",
+                "Competing equitable interests that are equally meritorious",
+                "Criminal prosecutions",
+                "Statutory interpretations"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Qui prior est tempore potior est jure applies between competing pure equitable interests."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "In Rice V. Rice, why was the first equity postponed?",
+            "options": [
+                "It was illegal",
+                "The holder's conduct facilitated the creation of another equity",
+                "It was not registered",
+                "The holder was an infant"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The vendor's conduct in handing over title deeds despite not being paid postponed their prior equity."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "'He who seeks equity must do equity' focuses on the plaintiff's:",
+            "options": [
+                "Past conduct",
+                "Future conduct",
+                "Financial status",
+                "Legal training"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This maxim requires the plaintiff to be willing to act fairly in the future/ongoing matter."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The Doctrine of Election is an application of which maxim?",
+            "options": [
+                "Equity follows the law",
+                "He who seeks equity must do equity",
+                "Equality is equity",
+                "Delay defeats equity"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Election requires a person taking a benefit under a deed to also accept its burdens."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "'He who comes to equity must come with clean hands' focuses on the:",
+            "options": [
+                "Future conduct of the defendant",
+                "Past conduct of the plaintiff in relation to the dispute",
+                "Physical cleanliness of the litigants",
+                "Form of the writ"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This maxim scrutinizes the plaintiff's previous conduct in the specific matter before the court."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "In Craig V. Craig, the petitioner was denied a divorce because of:",
+            "options": [
+                "Laches",
+                "Bad faith (unclean hands)",
+                "Lack of evidence",
+                "Poverty"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The petitioner's own conduct in the marital situation 'dirtied' their hands in the eyes of equity."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The Latin term for the doctrine of laches is:",
+            "options": [
+                "Nemo dat quod non habet",
+                "Vigilantibus non dormientibus jura subveniunt",
+                "Quic quid plantatur solo solo cedit",
+                "Jus accrescendi"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity aids the vigilant, not those who sleep on their rights."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Equity leans against joint tenancies because of the 'inequitable effect' of:",
+            "options": [
+                "Partition",
+                "Survivorship (jus accrescendi)",
+                "Mortgages",
+                "Taxation"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Survivorship can be unfair if parties contributed differently to the purchase."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "In equity, if A and B purchase property in unequal shares but take it jointly at law, they are treated as:",
+            "options": [
+                "Joint tenants",
+                "Tenants in common",
+                "Sole owners",
+                "Licensees"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity presumes a tenancy in common where purchase money is provided in unequal shares."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The maxim 'Equity looks on intent rather than form' is illustrated by:",
+            "options": [
+                "The doctrine of laches",
+                "Time clauses in land sale contracts",
+                "The rule in Dearle v. Hall",
+                "The plea of caveat emptor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity will often overlook technical delays if the core intent was fulfilled."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "Which maxim is the foundation of the Doctrine of Conversion?",
+            "options": [
+                "Equity follows the law",
+                "Equity looks on that as done which ought to be done",
+                "He who seeks equity must do equity",
+                "Equality is equity"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Conversion treats money directed to be turned into land as land, and vice-versa."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "'Equity imputes an intention to fulfill an obligation' is the basis for:",
+            "options": [
+                "Specific performance",
+                "Satisfaction and performance",
+                "Injunctions",
+                "Constructive notice"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If a person does an act that could be seen as fulfilling a duty, equity assumes that was the intent."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "The maxim 'Equity acts in personam' means remedies are exercisable against:",
+            "options": [
+                "The property itself",
+                "The defendant personally",
+                "The state",
+                "The community head"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equitable decrees are enforced by acting on the person of the defendant (e.g., contempt)."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Maxims of Equity",
+        "type": "objective",
+        "question_data": {
+            "text": "In Ayinule V. Abimbola, the court granted an injunction for an act outside its jurisdiction because:",
+            "options": [
+                "The land was within jurisdiction",
+                "The defendant was within the jurisdiction",
+                "The plaintiff was a foreigner",
+                "The contract was in writing"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Because equity acts in personam, it can command a person within its reach to act elsewhere."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Equitable interests are classified into those modeled on common law rights and:",
+            "options": [
+                "Statutory interests",
+                "Particular equitable interests",
+                "Legal estates",
+                "Criminal liabilities"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Particular equitable interests are those unique to equity and not modeled on legal rights."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "In equity, a purchaser acquires an interest in land as soon as:",
+            "options": [
+                "The deed is registered",
+                "The contract of sale/lease comes into existence",
+                "The full price is paid",
+                "They move onto the land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The principle of Walsh v. Lonsdale creates an equitable interest from the valid contract."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Under customary law, a purchase receipt plus possession creates:",
+            "options": [
+                "A legal estate",
+                "An equitable interest",
+                "A tenancy at will",
+                "No interest at all"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This is a settled principle in Nigerian land law (Akingbade v. Elemosho)."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Restrictive covenants run with the land in equity to bind future owners EXCEPT:",
+            "options": [
+                "Family members",
+                "A bona fide purchaser of the legal estate without notice",
+                "Tenants",
+                "The government"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Tulk v. Moxhay established that only a BFP without notice can defeat the covenant."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'equity of redemption' allows a mortgagor to:",
+            "options": [
+                "Sell the land without the bank's permission",
+                "Redeem the property after the contractual date has passed",
+                "Avoid paying interest",
+                "Cancel the mortgage at any time"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity ensures the mortgagor doesn't lose the property just by missing the legal due date."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "An equitable mortgage can be created by the deposit of:",
+            "options": [
+                "Money",
+                "Title deeds",
+                "Crops",
+                "Marriage certificates"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Deposit of title deeds is taken as an agreement to create a mortgage in equity."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "An equitable lien arises when a vendor conveys land:",
+            "options": [
+                "For free",
+                "Before being fully paid",
+                "To a minor",
+                "Without a receipt"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The unpaid vendor has an equitable lien for the balance of the purchase money."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "As between two adverse claimants of a legal interest, the rule is:",
+            "options": [
+                "The last in time prevails",
+                "He who is first in time is stronger in law",
+                "Equity prevails",
+                "The court divides the land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Between two legal interests, the first one created has priority."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "In Cave V. Cave, the beneficiaries' interest took priority over Z's equitable mortgage because:",
+            "options": [
+                "Z had notice",
+                "The beneficiaries' interest was first in time",
+                "The beneficiaries had the legal estate",
+                "Z was a volunteer"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Where both interests are equitable, the first in time (the beneficiaries) prevails."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "A subsequent purchaser for value is NOT affected by a prior equitable interest if they obtain the legal estate and have:",
+            "options": [
+                "A lawyer",
+                "No notice of the equitable interest",
+                "Permission from the King",
+                "Paid half the price"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This is the core definition of the Bona Fide Purchaser rule."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Marriage consideration is treated in equity as:",
+            "options": [
+                "A volunteer act",
+                "Value",
+                "A gift",
+                "Illegal"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Marriage is considered the highest form of value in old equitable doctrine."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Actual notice consists of:",
+            "options": [
+                "Information a person ought to have discovered",
+                "Personal knowledge of a prior equity",
+                "Notice to an agent",
+                "Public rumors"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Actual notice is direct, personal knowledge of the facts."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Constructive notice covers facts which a purchaser:",
+            "options": [
+                "Actually knew",
+                "Could have discovered if they had acted prudently",
+                "Was told by a stranger",
+                "Read in a novel"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Purchasers are expected to perform proper investigations and searches."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "In Oliver V. Hinton, a purchaser was postponed because of negligence in failing to ask for:",
+            "options": [
+                "A receipt",
+                "The title deeds",
+                "The Governor's consent",
+                "A witness"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Failure to ask for deeds is gross negligence constituting constructive notice."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Notice to a solicitor is generally treated as:",
+            "options": [
+                "Actual notice",
+                "Imputed notice to the client",
+                "Constructive notice",
+                "No notice at all"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Knowledge of the agent is the knowledge of the principal."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Notice acquired by a solicitor in a previous transaction generally:",
+            "options": [
+                "Affects the current client",
+                "Does not affect the current client",
+                "Must be reported to the police",
+                "Is public record"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Notice must usually be acquired in the same transaction to be imputed (with some exceptions)."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Occupation of land by someone other than the vendor constitutes:",
+            "options": [
+                "Actual notice",
+                "Constructive notice",
+                "A crime",
+                "Admissible hearsay"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Hunt v. Luck established that a tenant's possession is notice of their interest."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "A purchaser with notice is NOT bound if they buy from:",
+            "options": [
+                "A thief",
+                "A vendor who was himself a bona fide purchaser without notice",
+                "A family head",
+                "A minor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This is the 'Shelter Rule' (Wilkes v. Spooner) to protect the BFP's right to sell."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Can a trustee defeat beneficiaries by selling to a bona fide purchaser and then buying the property back?",
+            "options": [
+                "Yes, the chain is broken",
+                "No, equity will not allow a person to profit from their own fraud",
+                "Only if the Governor consents",
+                "Only after 12 years"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 'Shelter Rule' cannot be abused by a party to the original breach of trust."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Nature of Equitable Interest and Doctrine of Notice",
+        "type": "objective",
+        "question_data": {
+            "text": "Which case established that a purchase receipt plus possession raises a presumption of an equitable interest?",
+            "options": [
+                "Tulk V. Moxhay",
+                "Ogunbamibi V. Abowaba",
+                "Walsh V. Lonsdale",
+                "Dearle V. Hall"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Ogunbamibi v. Abowaba is the locus classicus for this in Nigerian law."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'chose in possession' refers to property that:",
+            "options": [
+                "Can only be recovered by legal action",
+                "Can be physically possessed",
+                "Is intangible",
+                "Consists only of debts"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Choses in possession are tangible movable objects (chattels)."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'chose in action' is a personal right of property that can only be enforced by:",
+            "options": [
+                "Taking physical possession",
+                "Legal proceedings",
+                "Entering the land",
+                "Selling it at auction"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Debts and stocks are examples of rights that require court action to realize if denied."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of these is a legal chose in action?",
+            "options": [
+                "Legacy under a will",
+                "Debt",
+                "Interest of a beneficiary in a trust",
+                "Reversionary interest in land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Statutory debts are historically recognized legal choses in action."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "Before the Judicature Act, common law generally did not allow assignment of debts because of fear of:",
+            "options": [
+                "Taxation",
+                "Maintenance",
+                "Theft",
+                "Overcrowded courts"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Maintenance and champerty were seen as dangers of allowing 'trafficking' in lawsuits."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'statutory assignment' must be in writing and:",
+            "options": [
+                "Oral",
+                "Absolute",
+                "Conditional",
+                "Witnessed by a King"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 25(6) of the Judicature Act 1873 requires assignment to be absolute and in writing."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "Written notice of a statutory assignment must be given to:",
+            "options": [
+                "The Governor",
+                "The debtor or trustee",
+                "The High Court",
+                "The Ministry of Justice"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Express notice in writing to the debtor is a requirement for a legal (statutory) assignment."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "In Udakason Enterprise Nig Ltd V. Olisa, the court held that the notice of assignment:",
+            "options": [
+                "Must follow a rigid format",
+                "Need not follow any particular form as long as it is express and in writing",
+                "Must be by deed",
+                "Is only valid if sent by registered post"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The substance of the notice is more important than its specific technical form."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "An assignment 'by way of charge only' is:",
+            "options": [
+                "A valid statutory assignment",
+                "Not absolute and thus not a statutory assignment",
+                "Illegal",
+                "Automatically void"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A charge is a security interest, whereas a statutory assignment must transfer the whole debt."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "The assignment of a part of a debt is:",
+            "options": [
+                "A statutory assignment",
+                "Not absolute and takes effect only as an equitable assignment",
+                "Prohibited by law",
+                "Only possible for family members"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity allows partial assignments, but the Judicature Act does not."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "For an equitable assignment of an equitable interest, which statute requires writing?",
+            "options": [
+                "Judicature Act",
+                "Statute of Frauds 1677",
+                "Land Use Act",
+                "Bills of Exchange Act"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 9 of the Statute of Frauds requires the assignment of a trust interest to be in writing."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "In equity, the 'language is immaterial' for an assignment as long as:",
+            "options": [
+                "It is in Latin",
+                "The meaning is plain",
+                "It is signed by a judge",
+                "It is stamped"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity looks at the substance and intention rather than formalistic phrasing."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "Consideration is strictly required for the equitable assignment of:",
+            "options": [
+                "An existing debt",
+                "An expectancy (future property)",
+                "A lease",
+                "A trademark"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity will not assist a volunteer with future property; consideration is essential."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in Dearle V. Hall determines priority of assignments based on:",
+            "options": [
+                "The date of the assignment",
+                "The order in which notice is given to the trustee",
+                "The age of the assignor",
+                "The amount of consideration"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The first assignee to give notice to the debtor/trustee gains priority."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the rule in Dearle V. Hall, a later assignee cannot get priority if they:",
+            "options": [
+                "Paid too little",
+                "Had notice of a previous assignment when their own was made",
+                "Are not a lawyer",
+                "Did not register with the Governor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Notice of a prior assignment at the time of taking the interest prevents a 'BFP' status."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "An assignee takes 'subject to equities,' meaning they:",
+            "options": [
+                "Are immune to the debtor's claims",
+                "Cannot be in a better position than the assignor",
+                "Must pay the assignor's taxes",
+                "Can ignore fraud"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The assignee takes the debt with all its original flaws or defenses."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of these is NOT assignable on grounds of public policy?",
+            "options": [
+                "Copyright",
+                "Alimony or maintenance granted to a wife",
+                "Debt",
+                "Patent"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Maintenance is intended for the support of the wife and cannot be traded."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "Novation differs from assignment because it requires:",
+            "options": [
+                "No consent",
+                "The consent of the debtor, creditor, and the new party",
+                "A written receipt only",
+                "A court order"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Novation is the substitution of a new contract for an old one, requiring all parties' agreement."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "In Ukatta V. Emembo, an agreement to assign a lease 'as soon as it was obtained' was held to be:",
+            "options": [
+                "Invalid",
+                "A valid assignment of an expectancy",
+                "A customary tenancy",
+                "A mortgage"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity treats an agreement to assign future property as a valid assignment if value is given."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "An assignment by letter is complete in equity as soon as:",
+            "options": [
+                "The debtor reads it",
+                "The letter is posted",
+                "The judge signs it",
+                "14 days pass"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Alexander v. Steinhardt established that posting the instruction completes the equitable transfer."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Assignment of Choses in Action",
+        "type": "objective",
+        "question_data": {
+            "text": "If notice of two assignments is received substantially simultaneously, priority depends on:",
+            "options": [
+                "The alphabet",
+                "The order in which the interests were created",
+                "The value paid",
+                "The Governor's discretion"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the 'notice' race is a tie, equity falls back on the creation date."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'prohibitory injunction' is an order that:",
+            "options": [
+                "Compels a positive act",
+                "Restrains the doing of a wrongful act",
+                "Awards damages",
+                "Cancels a contract"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Prohibitory injunctions are negative orders used to stop ongoing or threatened wrongs."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "Which type of injunction is usually targeted at a 'completed act'?",
+            "options": [
+                "Prohibitory",
+                "Mandatory",
+                "Quia Timet",
+                "Interim"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mandatory injunctions compel the defendant to take positive steps to reverse a wrong."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "In Niger Chemists V. Nigeria Chemists, the court granted an injunction for:",
+            "options": [
+                "Breach of contract",
+                "Passing off",
+                "Trespass",
+                "Nuisance"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The injunction prevented the use of a confusingly similar name."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'Quia Timet' injunction is ordered when an action is:",
+            "options": [
+                "Already completed",
+                "Feared/threatened in the future",
+                "Decided by the King",
+                "Statute-barred"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Quia Timet (since he fears) is used to prevent imminent harm."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "For an injunction to be granted, the plaintiff must show the existence of:",
+            "options": [
+                "A moral wrong",
+                "A legally enforceable right",
+                "A large bank account",
+                "A witness"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Injunctions protect defined legal or equitable rights, not mere morality."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "In Day V. Browning, the court held there was no legal injury because:",
+            "options": [
+                "The defendant was poor",
+                "There is no right in the name of a house",
+                "The plaintiff was late",
+                "It was a criminal matter"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mere inconvenience (damnum absque injuria) is not enough for an injunction."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "The phrase 'just or convenient' in the context of injunctions refers to:",
+            "options": [
+                "Arbitrary power",
+                "Regulated judicial discretion",
+                "The King's pleasure",
+                "Convenience of the defendant only"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The decision must follow settled legal principles."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "An injunction will NOT be granted for land outside the jurisdiction even if:",
+            "options": [
+                "The plaintiff is rich",
+                "The defendant is within the jurisdiction",
+                "There is a written contract",
+                "It is a 'Quia Timet' action"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Courts generally won't make orders directly affecting land titles abroad."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "Locus standi for an injunction requires the plaintiff to have:",
+            "options": [
+                "A law degree",
+                "Sufficient interest in the right sought to be protected",
+                "Nigerian citizenship only",
+                "A certificate of occupancy"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The applicant must prove their own rights are being affected."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "An 'interim injunction' generally perishes on:",
+            "options": [
+                "The day the trial ends",
+                "The day the motion for interlocutory injunction is heard",
+                "After 99 years",
+                "When the Governor says so"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Interim orders are very short-term 'gap-fillers'."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "Under Federal High Court rules, an interim injunction automatically lapses after:",
+            "options": [
+                "7 days",
+                "14 days",
+                "30 days",
+                "3 months"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Rules often set a 14-day limit for ex-parte/interim orders."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "An 'Ex-Parte' injunction is granted:",
+            "options": [
+                "After a full trial",
+                "Without notice to the other party in cases of real urgency",
+                "Only by the Governor",
+                "For criminal offences"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Ex-parte orders are emergency measures heard in the absence of the defendant."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "The main purpose of an interlocutory injunction is to:",
+            "options": [
+                "Punish the defendant",
+                "Maintain the status quo pending final determination",
+                "Award final damages",
+                "Settle the title to land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It prevents the defendant from changing the situation before the trial finishes."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'balance of convenience' test considers:",
+            "options": [
+                "Who has more money",
+                "Who stands to lose more if the status quo is not maintained",
+                "The age of the parties",
+                "The length of the writ"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The court weighs the potential hardship to both sides."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "Irreparable damage is damage that:",
+            "options": [
+                "Is very small",
+                "Cannot be adequately remedied by pecuniary payment",
+                "Can be fixed by a carpenter",
+                "Only happens to land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Injunctions are for when money alone isn't enough to fix the injury."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "An 'undertaking as to damages' is extracted from the:",
+            "options": [
+                "Defendant",
+                "Plaintiff",
+                "Judge",
+                "Witness"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The plaintiff must promise to compensate the defendant if the injunction was wrong."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'perpetual injunction' is granted:",
+            "options": [
+                "Before the trial starts",
+                "After the right has been established in a final action",
+                "For only 7 days",
+                "Only in ex-parte motions"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It is the final determination of the court after hearing both sides."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "A 'Mareva' injunction is now commonly known as a:",
+            "options": [
+                "Search order",
+                "Freezing injunction",
+                "Mandatory order",
+                "Stay of execution"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It prevents a defendant from moving assets out of the court's reach."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "An 'Anton Piller' order enables a plaintiff to:",
+            "options": [
+                "Freeze bank accounts",
+                "Enter premises to search for and seize incriminating evidence",
+                "Sell the defendant's land",
+                "Arrest the defendant"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It is used to prevent the destruction of evidence needed for a trial."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Injunction",
+        "type": "objective",
+        "question_data": {
+            "text": "Which statute specifically recognizes search orders (Anton Piller) in copyright actions?",
+            "options": [
+                "Land Use Act",
+                "Copyright Act (Section 22)",
+                "Evidence Act",
+                "High Court Law"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Copyright Act has codified this powerful equitable weapon."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Specific performance is an order compelling a person to:",
+            "options": [
+                "Pay damages",
+                "Carry out his obligation under a contract",
+                "Go to prison",
+                "Apologize publicly"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It is a positive decree requiring the literal fulfillment of the bargain."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Specific performance is generally NOT granted if:",
+            "options": [
+                "The contract is for land",
+                "Damages are an adequate remedy",
+                "The defendant is rich",
+                "It is in writing"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity only intervenes where the common law remedy (money) is insufficient."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Specific performance applies only to which type of contract?",
+            "options": [
+                "Executed",
+                "Executory",
+                "Oral only",
+                "Criminal"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Executory contracts are those where something still remains to be done."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "The remedy of specific performance is:",
+            "options": [
+                "Available as of right",
+                "Discretionary",
+                "Abolished by the Land Use Act",
+                "Only for the Governor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Unlike damages at law, equitable remedies are granted at the court's discretion."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Why is specific performance common in land sale contracts?",
+            "options": [
+                "Land is cheap",
+                "Land has a unique character and money is not adequate",
+                "There are no damages for land",
+                "The Governor requires it"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In equity, every piece of land is considered uniquely valuable."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "In British Bata Shoe Co. Ltd V. Melikan, specific performance was granted for land outside the jurisdiction because:",
+            "options": [
+                "The land was in England",
+                "The remedy acts in personam and the defendant was within jurisdiction",
+                "The plaintiff was a corporation",
+                "The contract was oral"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The court can order the person to execute the conveyance regardless of the land's location."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Courts will NOT specifically enforce an agreement for:",
+            "options": [
+                "Separation of a marriage",
+                "Future separation",
+                "Sale of a unique chattel",
+                "Transfer of a patent"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Contracts for future separation were seen as against public policy."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 52 of the Sale of Goods Act allows specific performance for:",
+            "options": [
+                "Any goods",
+                "Specific or ascertained goods",
+                "Future goods only",
+                "Unidentified goods"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Goods must be distinct and identified for the remedy to apply."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Specific performance of a building contract is generally refused EXCEPT where:",
+            "options": [
+                "The price is high",
+                "The work is clearly defined and the plaintiff has an interest",
+                "The builder is a foreigner",
+                "The Governor orders it"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Wolverhampton Corp v. Emmons sets out the narrow exceptions for building contracts."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Equity will not grant specific performance of a promise made for:",
+            "options": [
+                "High value",
+                "No consideration (volunteer)",
+                "Land",
+                "99 years"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity will not assist a volunteer (Maxim: Equity looks on the intent, but also requires consideration)."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Will equity enforce a contract involving 'personal skill,' like an agreement to sing?",
+            "options": [
+                "Yes, always",
+                "No, as the court cannot ensure satisfactory performance",
+                "Only if the Governor consents",
+                "Only in the High Court"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Courts cannot supervise or force people to exhibit artistic skill (Lumley v. Wagner)."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "A contract for an 'insubstantial interest,' such as a tenancy at will, is:",
+            "options": [
+                "Specifically enforceable",
+                "Not specifically enforceable",
+                "Illegal",
+                "Mandatory"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the interest could be terminated immediately anyway, the court won't bother with the decree."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Specific performance is refused for contracts requiring 'constant supervision,' such as:",
+            "options": [
+                "Sale of a car",
+                "Maintenance of a railway",
+                "A one-time payment",
+                "A gift of land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The court will not issue an order it cannot effectively monitor over time."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "A contract that is 'subject to contract' is:",
+            "options": [
+                "Specifically enforceable",
+                "Not specifically enforceable",
+                "A deemed grant",
+                "Valid only in equity"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Until the formal contract is signed, there is no binding agreement to enforce."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "The Doctrine of Part Performance allows an oral land contract to be enforced to prevent:",
+            "options": [
+                "Taxes",
+                "Fraud (using law as a statute of fraud)",
+                "Competition",
+                "The Governor's revocation"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity prevents the Statute of Frauds from being used as a cloak for fraud."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "For part performance to apply, the acts must be referable to:",
+            "options": [
+                "The defendant's health",
+                "The existence of the contract",
+                "The King's will",
+                "The price of the land"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The acts must point squarely to the existence of the specific contract claimed."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "If a claimant induces a contract via misrepresentation, specific performance is refused because:",
+            "options": [
+                "Laches",
+                "He who comes to equity must come with clean hands",
+                "The contract is too long",
+                "The defendant is a minor"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A party seeking the 'grace' of equity must have behaved impeccably."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "A person induced into a transaction by 'undue influence' is entitled to:",
+            "options": [
+                "Pay double",
+                "Set the transaction aside",
+                "A perpetual injunction",
+                "Nothing"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Equity protects the vulnerable from being pressured into unfair deals."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Specific performance will NOT be granted where there is no consensus ad idem due to:",
+            "options": [
+                "Lack of money",
+                "Fundamental mistake",
+                "High interest rates",
+                "The death of a witness"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the parties never truly agreed on the core terms, there is no contract to perform."
+        }
+    },
+    {
+        "course": "Equity and Trusts",
+        "topic": "Specific Performance",
+        "type": "objective",
+        "question_data": {
+            "text": "Lapse of time is a defense because a party must enforce rights with:",
+            "options": [
+                "A lawyer",
+                "Sufficient speed and within reasonable time",
+                "The help of the Governor",
+                "20 witnesses"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Delay (laches) defeats equity; rights must be asserted promptly."
         }
     }
 ]

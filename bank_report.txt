@@ -1,4 +1,9 @@
 {
   "Equity and Trusts | Meaning, Nature, Origin, and Reception of Equity": 20,
-  "Equity and Trusts | General Legal Principles": 6
+  "Equity and Trusts | General Legal Principles": 6,
+  "Equity and Trusts | Maxims of Equity": 20,
+  "Equity and Trusts | Nature of Equitable Interest and Doctrine of Notice": 20,
+  "Equity and Trusts | Assignment of Choses in Action": 20,
+  "Equity and Trusts | Injunction": 20,
+  "Equity and Trusts | Specific Performance": 20
 }
