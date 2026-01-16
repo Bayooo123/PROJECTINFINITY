@@ -5,20 +5,27 @@ import { generateEmbedding } from './geminiService';
 const PINECONE_API_KEY = import.meta.env.VITE_PINECONE_API_KEY;
 const PINECONE_INDEX_NAME = import.meta.env.VITE_PINECONE_INDEX_NAME || 'reforma';
 
-if (!PINECONE_API_KEY) {
-    console.warn('Pinecone API key not found. RAG features will be limited.');
-}
-
-const pinecone = new Pinecone({
-    apiKey: PINECONE_API_KEY || ''
-});
-
+let pinecone: Pinecone | null = null;
 let index: any = null;
+
+const getPineconeClient = () => {
+    if (!pinecone && PINECONE_API_KEY) {
+        pinecone = new Pinecone({
+            apiKey: PINECONE_API_KEY
+        });
+    }
+    return pinecone;
+};
 
 // Lazy initialization of index
 const getIndex = async () => {
-    if (!index && PINECONE_API_KEY) {
-        index = pinecone.index(PINECONE_INDEX_NAME);
+    if (!index) {
+        const client = getPineconeClient();
+        if (client) {
+            index = client.index(PINECONE_INDEX_NAME);
+        } else {
+            console.warn('Pinecone API key missing. RAG features disabled.');
+        }
     }
     return index;
 };
