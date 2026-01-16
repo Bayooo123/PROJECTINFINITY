@@ -4,6 +4,10 @@ import {
   generateStandardQuestions,
   generateQuestionsWithRetry
 } from './aiStudioService';
+import {
+  searchCourseMaterials as pineconeSearchMaterials,
+  searchPastQuestions as pineconeSearchQuestions
+} from './pineconeService';
 
 // Access the API key from Vite environment variables
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.VITE_AI_STUDIO_API_KEY;
@@ -60,39 +64,27 @@ export const generateEmbedding = async (text: string): Promise<number[] | null> 
 };
 
 /**
- * Searches for relevant course materials in Supabase.
+ * Searches for relevant course materials in Pinecone.
  */
 export const searchCourseMaterials = async (queryEmbedding: number[], course?: string) => {
-  const { data, error } = await supabase.rpc('match_course_materials', {
-    query_embedding: queryEmbedding,
-    match_threshold: 0.5,
-    match_count: 3,
-    filter_course: course || null
-  });
-
-  if (error) {
-    console.error("Error searching course materials:", error);
+  try {
+    return await pineconeSearchMaterials(queryEmbedding, course, 3);
+  } catch (error) {
+    console.error("Error searching course materials in Pinecone:", error);
     return [];
   }
-  return data || [];
 };
 
 /**
- * Searches for relevant past questions in Supabase.
+ * Searches for relevant past questions in Pinecone.
  */
 export const searchPastQuestions = async (queryEmbedding: number[], course?: string) => {
-  const { data, error } = await supabase.rpc('match_past_questions', {
-    query_embedding: queryEmbedding,
-    match_threshold: 0.5,
-    match_count: 3,
-    filter_course: course || null
-  });
-
-  if (error) {
-    console.error("Error searching past questions:", error);
+  try {
+    return await pineconeSearchQuestions(queryEmbedding, course, 3);
+  } catch (error) {
+    console.error("Error searching past questions in Pinecone:", error);
     return [];
   }
-  return data || [];
 };
 
 /**
@@ -231,22 +223,37 @@ export const chatWithGemini = async (
       }
     }
 
-    // 4. Construct the "Exam-Smart" System Prompt
+    // 4. Construct the "Triple-Layer" System Prompt
     const systemPrompt = `
-      You are an expert law tutor for Nigerian law students.
+      You are the "PROJECT INFINITY" Research Assistant, a high-fidelity RAG-enabled tutor for Nigerian law students.
       
+      CORE CAPABILITIES:
+      1. KNOWLEDGE RETRIEVAL: Answer with academic precision using PROVIDED COURSE MATERIALS.
+      2. EXAM ANALYTICS: Analyze PROVIDED PAST QUESTIONS to identify patterns, recurring themes, and examiners' expectations.
+      3. PEDAGOGICAL GUIDANCE: Recommend evidence-based study habits and critical thinking prompts.
+
       CONTEXT FROM COURSE MATERIALS:
-      ${contextText ? contextText : "No specific course materials found for this query."}
+      ${contextText ? contextText : "No specific course materials found. Rely on general Nigerian legal principles and statutes."}
 
-      RELEVANT PAST EXAM QUESTIONS:
-      ${pastQuestionsText ? pastQuestionsText : "No relevant past questions found."}
+      RELEVANT PAST EXAM QUESTIONS (DATASET):
+      ${pastQuestionsText ? pastQuestionsText : "No past questions found for this specific query."}
 
-      INSTRUCTIONS:
-      1. Answer the student's question primarily using the CONTEXT provided above. 
-      2. If PAST EXAM QUESTIONS are provided, analyze them to provide **exam-focused recommendations**.
-      3. Provide a specific "Study Tip" or "Exam Strategy" grounded in the provided materials.
-      4. Be precise, cite relevant Nigerian cases and statutes.
-      5. Keep the tone encouraging and academic.
+      RESPONSE STRUCTURE (MANDATORY):
+      Your response MUST follow this structure for maximum clarity:
+
+      ### 📚 Academic Analysis
+      [Provide a deep, precise answer citing relevant cases/statutes from the materials. Focus on level-1 retrieval.]
+
+      ### 🎯 Exam Insight & Patterns
+      [Cross-reference initially provided data with the Past Questions dataset. Identify if this topic appears often, how it's phrased, or if there's a specific pattern of examiners' interest.]
+
+      ### 💡 Learning Best Practices
+      [Recommend a specific study technique (e.g., active recall, IRAC practice) or pose a research-based question to stimulate critical thinking relative to this topic.]
+
+      STYLE RULES:
+      - Cite EXACT case names and sections where available.
+      - Be encouraging but academically rigorous.
+      - If no past questions exist, provide a "Predicted Exam Focus" instead.
     `;
 
     // Start chat with history

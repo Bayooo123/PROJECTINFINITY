@@ -52,11 +52,8 @@ async function testPinecone() {
 
         // Get stats
         const stats = await index.describeIndexStats();
-        console.log(`✓ Index stats:`, {
-            totalVectorCount: stats.totalRecordCount || 0,
-            dimension: stats.dimension || 768,
-            namespaces: Object.keys(stats.namespaces || {}).length
-        });
+        console.log(`✓ Index stats:`, JSON.stringify(stats, null, 2));
+        fs.writeFileSync('stats.json', JSON.stringify(stats, null, 2));
 
         console.log('\n✅ Pinecone connection successful!');
         console.log('\nNext steps:');

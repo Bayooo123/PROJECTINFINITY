@@ -21,7 +21,7 @@ const pdfParse = require('pdf-parse');
 
 // --- Configuration ---
 const PINECONE_API_KEY = process.argv[2];
-const GEMINI_API_KEY = 'AIzaSyCYI_yxVzfdaTFgg_vmZqtmiJn3s_3MFqQ';
+const GEMINI_API_KEY = 'AIzaSyDatdJGGLf7vvyOxIEbJQR_uTMpHQeB0-g';
 const PINECONE_INDEX_NAME = 'reforma';
 const MATERIALS_DIR = path.resolve(process.cwd(), 'data', 'course_materials');
 
@@ -30,15 +30,27 @@ const CHUNK_SIZE = 800; // words per chunk (optimal for RAG)
 const CHUNK_OVERLAP = 100; // words overlap between chunks
 
 if (!PINECONE_API_KEY) {
-    console.log('❌ Usage: node scripts/upload_pdfs_to_pinecone.mjs YOUR_PINECONE_API_KEY');
-    console.log('\nGet your Pinecone API key from: https://app.pinecone.io/');
+    log('❌ Usage: node scripts/upload_pdfs_to_pinecone.mjs YOUR_PINECONE_API_KEY');
+    log('\nGet your Pinecone API key from: https://app.pinecone.io/');
     process.exit(1);
 }
 
-console.log('🚀 PDF Ingestion Pipeline Starting...\n');
-console.log('📊 Target Index:', PINECONE_INDEX_NAME);
-console.log('📁 Source Directory:', MATERIALS_DIR);
-console.log('🤖 Embedding Model: text-embedding-004 (768d → 1024d)\n');
+const logFile = fs.createWriteStream('ingestion.log', { flags: 'a' });
+const log = (msg) => {
+    process.stdout.write(msg + '\n');
+    logFile.write(msg + '\n');
+};
+const errorLog = (msg) => {
+    process.stderr.write(msg + '\n');
+    logFile.write('ERROR: ' + msg + '\n');
+};
+
+log('🚀 PDF Ingestion Pipeline Starting...\n');
+log('📊 Target Index:', PINECONE_INDEX_NAME);
+log('📁 Source Directory:', MATERIALS_DIR);
+log('🤖 Embedding Model: text-embedding-004 (768d → 1024d)\n');
+
+
 
 // Initialize clients
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
@@ -57,7 +69,7 @@ async function extractTextFromPDF(filePath) {
         const data = await pdfParse(dataBuffer);
         return data.text;
     } catch (error) {
-        console.error(`   ❌ Error extracting PDF: ${error.message}`);
+        errorLog(`   ❌ Error extracting PDF: ${error.message}`);
         return null;
     }
 }
@@ -115,7 +127,7 @@ async function generateEmbedding(text) {
         const result = await embeddingModel.embedContent(text);
         return result.embedding.values;
     } catch (error) {
-        console.error('   ⚠️  Embedding error:', error.message);
+        errorLog(`   ⚠️  Embedding error: ${JSON.stringify(error, Object.getOwnPropertyNames(error))}`);
         return null;
     }
 }
@@ -162,9 +174,9 @@ async function upsertBatch(vectors) {
     if (vectors.length === 0) return;
     try {
         await index.namespace('course_materials').upsert(vectors);
-        console.log(`   ✓ Uploaded ${vectors.length} vectors`);
+        log(`   ✓ Uploaded ${vectors.length} vectors`);
     } catch (error) {
-        console.error(`   ❌ Upload error:`, error.message);
+        errorLog(`   ❌ Upload error:`, error.message);
     }
 }
 
@@ -173,24 +185,24 @@ async function upsertBatch(vectors) {
  */
 async function processPDF(filePath) {
     const fileName = path.basename(filePath);
-    console.log(`\n📄 ${fileName}`);
+    log(`\n📄 ${fileName}`);
 
     // Extract text
     const text = await extractTextFromPDF(filePath);
     if (!text) {
-        console.log('   ⚠️  Failed to extract text');
+        log('   ⚠️  Failed to extract text');
         return 0;
     }
 
-    console.log(`   📝 Extracted ${text.length} characters`);
+    log(`   📝 Extracted ${text.length} characters`);
 
     // Parse metadata
     const { course, topic } = parseFilename(fileName);
-    console.log(`   📚 ${course} → ${topic}`);
+    log(`   📚 ${course} → ${topic}`);
 
     // Chunk text
     const chunks = chunkText(text);
-    console.log(`   ✂️  Created ${chunks.length} chunks`);
+    log(`   ✂️  Created ${chunks.length} chunks`);
 
     // Generate embeddings and create vectors
     const vectors = [];
@@ -203,11 +215,11 @@ async function processPDF(filePath) {
             process.stdout.write(`\r   Progress: ${i + 1}/${chunks.length}`);
         }
 
-        // Rate limiting (100ms delay)
-        await new Promise(resolve => setTimeout(resolve, 100));
+        // Rate limiting (500ms delay)
+        await new Promise(resolve => setTimeout(resolve, 500));
     }
 
-    console.log(`\r   Progress: ${vectors.length}/${chunks.length}`);
+    log(`\r   Progress: ${vectors.length}/${chunks.length}`);
 
     // Upload in batches of 100
     for (let i = 0; i < vectors.length; i += 100) {
@@ -224,13 +236,13 @@ async function processPDF(filePath) {
 async function main() {
     // Create materials directory if it doesn't exist
     if (!fs.existsSync(MATERIALS_DIR)) {
-        console.log(`📁 Creating directory: ${MATERIALS_DIR}`);
+        log(`📁 Creating directory: ${MATERIALS_DIR}`);
         fs.mkdirSync(MATERIALS_DIR, { recursive: true });
-        console.log('\n⚠️  No PDF files found.');
-        console.log('📌 Next steps:');
-        console.log('   1. Place your PDF files in: data/course_materials/');
-        console.log('   2. Name them like: Constitutional_Law_Chapter_1.pdf');
-        console.log('   3. Run this script again');
+        log('\n⚠️  No PDF files found.');
+        log('📌 Next steps:');
+        log('   1. Place your PDF files in: data/course_materials/');
+        log('   2. Name them like: Constitutional_Law_Chapter_1.pdf');
+        log('   3. Run this script again');
         return;
     }
 
@@ -240,16 +252,16 @@ async function main() {
         .map(f => path.join(MATERIALS_DIR, f));
 
     if (files.length === 0) {
-        console.log('⚠️  No PDF files found in data/course_materials/');
-        console.log('\n📌 Next steps:');
-        console.log('   1. Add your PDF files to: data/course_materials/');
-        console.log('   2. Name them like: Equity_Maxims.pdf or Land_Law_Chapter_3.pdf');
-        console.log('   3. Run this script again');
+        log('⚠️  No PDF files found in data/course_materials/');
+        log('\n📌 Next steps:');
+        log('   1. Add your PDF files to: data/course_materials/');
+        log('   2. Name them like: Equity_Maxims.pdf or Land_Law_Chapter_3.pdf');
+        log('   3. Run this script again');
         return;
     }
 
-    console.log(`📁 Found ${files.length} PDF file(s)\n`);
-    console.log('='.repeat(60));
+    log(`📁 Found ${files.length} PDF file(s)\n`);
+    log('='.repeat(60));
 
     let totalVectors = 0;
 
@@ -258,7 +270,7 @@ async function main() {
             const count = await processPDF(file);
             totalVectors += count;
         } catch (error) {
-            console.error(`\n❌ Error processing ${path.basename(file)}:`, error.message);
+            errorLog(`\n❌ Error processing ${path.basename(file)}:`, error.message);
         }
     }
 

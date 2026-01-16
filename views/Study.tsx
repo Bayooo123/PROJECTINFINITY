@@ -1,5 +1,6 @@
-
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { chatWithGemini } from '../services/geminiService';
 import { ChatMessage, UserProfile, LAW_COURSES } from '../types';
 import { Send, User, Bot, Info, Book, ChevronRight, ArrowLeft } from 'lucide-react';
@@ -27,7 +28,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
       setMessages([
         {
           role: 'model',
-          text: `Welcome to the **${selectedCourse}** Study Room.\n\nI am ready to assist you with not just answers, but **exam predictions** and **study strategies**. Ask me about any topic, case, or section.`
+          text: `Welcome to the **${selectedCourse}** Research Room. I have initialized my triple-layer analysis system:\n\n1. **📚 Academic Retrieval**: Deep grounding in Nigerian statutes and cases.\n2. **🎯 Exam Analytics**: Pattern recognition based on past questions.\n3. **💡 Pedagogical Support**: Research-based learning recommendations.\n\nHow can I assist your studies today?`
         }
       ]);
     }
@@ -80,21 +81,24 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
           <p className="text-slate-600">Select a course to enter its dedicated research environment.</p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {userCourses.map((course) => (
             <button
               key={course}
               onClick={() => setSelectedCourse(course)}
-              className="group text-left p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:border-amber-500 transition-all duration-200 flex flex-col justify-between h-40"
+              className="group relative overflow-hidden text-left p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-xl hover:border-amber-500 transition-all duration-300 flex flex-col justify-between h-48"
             >
-              <div className="p-3 bg-slate-50 w-fit rounded-lg text-slate-700 group-hover:bg-amber-50 group-hover:text-amber-700 transition-colors">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Book size={64} className="text-slate-900" />
+              </div>
+              <div className="p-3 bg-slate-50 w-fit rounded-xl text-slate-700 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
                 <Book size={24} />
               </div>
-              <div className="space-y-1">
-                <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors">{course}</h3>
-                <div className="flex items-center text-xs text-slate-400 group-hover:text-slate-500">
-                  <span>Enter Room</span>
-                  <ChevronRight size={14} className="ml-1" />
+              <div className="space-y-2 z-10">
+                <h3 className="font-serif font-bold text-lg text-slate-900 group-hover:text-amber-800 transition-colors leading-tight">{course}</h3>
+                <div className="flex items-center text-xs font-semibold text-amber-600 tracking-wider uppercase">
+                  <span>Open Archive</span>
+                  <ChevronRight size={14} className="ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </button>
@@ -119,11 +123,19 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
           </button>
           <div>
             <h2 className="font-serif font-bold text-lg text-slate-900">{selectedCourse}</h2>
-            <p className="text-xs text-amber-600 font-medium">Dedicated Research Assistant</p>
+            <p className="text-xs text-amber-600 font-medium tracking-wide uppercase">RAG-Enabled Research Assistant</p>
           </div>
         </div>
-        <div className="hidden md:block px-3 py-1 bg-slate-100 text-slate-600 text-xs rounded-full border border-slate-200">
-          Context: Nigerian Legal System
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => setMessages([])}
+            className="hidden md:flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-slate-500 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors border border-transparent hover:border-red-100"
+          >
+            Clear Session
+          </button>
+          <div className="hidden lg:block px-3 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider rounded-full border border-slate-200">
+            NGA-LEGAL-CONTOUR v2.4
+          </div>
         </div>
       </div>
 
@@ -145,11 +157,12 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
                   ? 'bg-red-50 text-red-800 border border-red-100 rounded-tl-none'
                   : 'bg-white text-slate-800 shadow-sm border border-slate-100 rounded-tl-none'
                 }`}>
-                {/* Simple markdown-like formatting */}
-                <div className="whitespace-pre-wrap font-light">
-                  {msg.text.split('**').map((part, i) =>
-                    i % 2 === 1 ? <strong key={i} className="font-semibold">{part}</strong> : part
-                  )}
+
+                {/* Rich Markdown Rendering */}
+                <div className={`prose ${msg.role === 'user' ? 'prose-dark' : 'prose-slate'} max-w-none text-sm md:text-base`}>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {msg.text}
+                  </ReactMarkdown>
                 </div>
               </div>
             </div>
