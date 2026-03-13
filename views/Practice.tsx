@@ -8,8 +8,10 @@ interface PracticeProps {
   user: UserProfile;
 }
 
-type Phase = 'SELECTION' | 'LOADING' | 'QUIZ' | 'RESULT';
-type QuizMode = 'STANDARD' | 'SPEED' | 'MARATHON';
+import { IRACInterface } from '../components/IRACInterface';
+
+type Phase = 'SELECTION' | 'LOADING' | 'QUIZ' | 'RESULT' | 'IRAC';
+type QuizMode = 'STANDARD' | 'SPEED' | 'MARATHON' | 'IRAC';
 
 const QUIZ_MODES: Record<QuizMode, { label: string, count: number, timeMinutes: number, description: string, icon: React.ReactNode }> = {
   STANDARD: {
@@ -32,6 +34,13 @@ const QUIZ_MODES: Record<QuizMode, { label: string, count: number, timeMinutes: 
     timeMinutes: 50,
     description: '100 questions in 50 minutes. Full syllabus simulation.',
     icon: <Layers size={20} />
+  },
+  IRAC: {
+    label: 'IRAC Practice',
+    count: 1,
+    timeMinutes: 30,
+    description: 'Practice structuring legal arguments using the Issue-Rule-Application-Conclusion method.',
+    icon: <BookOpen size={20} />
   }
 };
 
@@ -80,6 +89,8 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
   useEffect(() => {
     if (quizMode === 'SPEED' || quizMode === 'MARATHON') {
       setTopic('All Topics');
+    } else if (quizMode === 'IRAC') {
+      setTopic('IRAC Case Scenarios');
     } else if (quizMode === 'STANDARD' && topic === 'All Topics') {
       setTopic('');
     }
@@ -96,6 +107,12 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
 
     setPhase('LOADING');
     setError(null);
+
+    if (quizMode === 'IRAC') {
+      // Direct jump to IRAC phase
+      setPhase('IRAC');
+      return;
+    }
 
     try {
       const modeConfig = QUIZ_MODES[quizMode];
@@ -472,5 +489,33 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
     );
   }
 
+  // ------------------------------------------------
+  // VIEW: IRAC
+  // ------------------------------------------------
+  if (phase === 'IRAC') {
+    return (
+      <div className="max-w-7xl mx-auto py-2 flex flex-col items-center">
+        <div className="w-full flex justify-between items-center px-6 mb-4">
+          <Button
+            onClick={() => setPhase('SELECTION')}
+            variant="ghost"
+            className="flex items-center gap-2 text-slate-500"
+          >
+            <ArrowLeft size={16} /> Back to Selection
+          </Button>
+          <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">IRAC Practice</h2>
+        </div>
+        <IRACInterface
+          scenarioId="SC-PRACTICE"
+          onSubmit={(data) => {
+            console.log("IRAC submission:", data);
+            alert("IRAC structured data submitted successfully! Check console for JSON.");
+            setPhase('SELECTION');
+          }}
+        />
+      </div>
+    );
+  }
+
   return null;
-};
+}
