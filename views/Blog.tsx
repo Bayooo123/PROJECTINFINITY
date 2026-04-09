@@ -116,7 +116,7 @@ export const Blog: React.FC = () => {
 
         <div className="p-6 md:p-12 space-y-8">
           <div className="space-y-4">
-            <span className="text-amber-600 font-semibold text-sm tracking-wider uppercase">{selectedPost.category}</span>
+            <span className="text-slate-900 font-bold text-sm tracking-wider uppercase">{selectedPost.category}</span>
             <h1 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 leading-tight">{selectedPost.title}</h1>
             
             <div className="flex items-center gap-6 text-slate-500 text-sm border-y border-slate-100 py-4">
@@ -150,7 +150,7 @@ export const Blog: React.FC = () => {
           <div className="pt-12 border-t border-slate-200">
              <button 
                 onClick={() => setSelectedPost(null)}
-                className="text-slate-500 hover:text-amber-600 font-medium flex items-center gap-2 transition-colors"
+                className="text-slate-500 hover:text-slate-900 font-bold flex items-center gap-2 transition-colors"
              >
                 <ArrowLeft size={20} /> Back to Journal
              </button>
@@ -192,7 +192,7 @@ export const Blog: React.FC = () => {
                 <Clock size={12} />
                 <span>{post.readTime}</span>
               </div>
-              <h3 className="text-xl font-serif font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">
+              <h3 className="text-xl font-serif font-bold text-slate-900 mb-3 group-hover:text-slate-900 transition-colors">
                 {post.title}
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1 line-clamp-3">

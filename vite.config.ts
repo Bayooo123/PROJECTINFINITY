@@ -14,27 +14,27 @@ export default defineConfig(({ mode }) => {
       react(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['learned_logo.png'],
+        includeAssets: ['logo_banner.png', 'logo_icon.png', 'favicon.png'],
         manifest: {
           name: 'Learned - Legal Education',
           short_name: 'Learned',
           description: 'AI-powered legal education platform for Nigerian law students.',
-          theme_color: '#f59e0b',
-          background_color: '#f8fafc',
+          theme_color: '#000000',
+          background_color: '#0f172a',
           display: 'standalone',
           icons: [
             {
-              src: 'learned_logo.png',
+              src: 'logo_icon.png',
               sizes: '192x192',
               type: 'image/png'
             },
             {
-              src: 'learned_logo.png',
+              src: 'logo_icon.png',
               sizes: '512x512',
               type: 'image/png'
             },
             {
-              src: 'learned_logo.png',
+              src: 'logo_icon.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'any maskable'

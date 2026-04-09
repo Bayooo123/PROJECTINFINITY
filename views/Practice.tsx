@@ -207,7 +207,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                   key={course}
                   onClick={() => { setSelectedCourse(course); if (quizMode === 'STANDARD') setTopic(''); }}
                   className={`text-left px-4 py-3 rounded-lg border transition-all ${selectedCourse === course
-                    ? 'border-amber-600 bg-amber-50 dark:bg-amber-900/20 text-amber-900 dark:text-amber-400 ring-1 ring-amber-600'
+                    ? 'border-slate-900 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white ring-1 ring-slate-900'
                     : 'border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 text-slate-700 dark:text-slate-300'
                     }`}
                 >
@@ -228,11 +228,11 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                     key={mode}
                     onClick={() => setQuizMode(mode)}
                     className={`relative p-4 rounded-xl border text-left transition-all ${isSelected
-                      ? 'border-amber-600 bg-amber-50 dark:bg-amber-900/20 ring-1 ring-amber-600'
+                      ? 'border-slate-900 bg-slate-50 dark:bg-slate-800 ring-1 ring-slate-900'
                       : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 bg-white dark:bg-slate-800'
                       }`}
                   >
-                    <div className={`mb-2 ${isSelected ? 'text-amber-600' : 'text-slate-500'}`}>
+                    <div className={`mb-2 ${isSelected ? 'text-slate-900 dark:text-slate-200' : 'text-slate-500'}`}>
                       {config.icon}
                     </div>
                     <div className="font-bold text-slate-900 dark:text-white">{config.label}</div>
@@ -294,7 +294,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
       <div className="flex flex-col items-center justify-center h-[60vh] space-y-6">
         <div className="relative w-20 h-20">
           <div className="absolute top-0 left-0 w-full h-full border-4 border-slate-200 dark:border-slate-700 rounded-full"></div>
-          <div className="absolute top-0 left-0 w-full h-full border-4 border-amber-600 rounded-full border-t-transparent animate-spin"></div>
+          <div className="absolute top-0 left-0 w-full h-full border-4 border-slate-900 dark:border-white rounded-full border-t-transparent animate-spin"></div>
         </div>
         <div className="text-center space-y-2">
           <h3 className="text-xl font-medium text-slate-900 dark:text-white">Preparing Exam Paper</h3>
@@ -329,7 +329,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
 
           <div className="hidden md:flex flex-1 mx-8 h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
             <div
-              className="h-full bg-slate-900 dark:bg-amber-600 transition-all duration-300"
+              className="h-full bg-slate-900 dark:bg-slate-50 transition-all duration-300"
               style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
             ></div>
           </div>
@@ -353,11 +353,11 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
                   key={idx}
                   onClick={() => handleOptionSelect(idx)}
                   className={`w-full text-left p-4 rounded-xl border transition-all duration-200 flex items-start gap-3 ${isSelected
-                    ? 'border-slate-900 dark:border-amber-500 bg-slate-50 dark:bg-slate-800 ring-1 ring-slate-900 dark:ring-amber-500'
+                    ? 'border-slate-900 dark:border-white bg-slate-50 dark:bg-slate-800 ring-1 ring-slate-900 dark:ring-white'
                     : 'border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 bg-white dark:bg-slate-900'
                     }`}
                 >
-                  <div className={`mt-0.5 w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 ${isSelected ? 'border-slate-900 dark:border-amber-500 dot-center' : 'border-slate-400 dark:border-slate-500'}`}>
+                  <div className={`mt-0.5 w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 ${isSelected ? 'border-slate-900 dark:border-white dot-center' : 'border-slate-400 dark:border-slate-500'}`}>
                   </div>
                   <span className="text-base text-slate-900 dark:text-slate-200">{option}</span>
                 </button>
@@ -411,9 +411,9 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
     return (
       <div className="max-w-4xl mx-auto p-6 space-y-8">
         <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm text-center space-y-4 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 to-slate-900 dark:to-slate-700"></div>
+          <div className="absolute top-0 left-0 w-full h-2 bg-slate-900 dark:bg-slate-200"></div>
           <div className="relative inline-block">
-            <Award size={64} className={`mx-auto ${percentage >= 60 ? 'text-amber-500' : 'text-slate-400 dark:text-slate-600'}`} />
+            <Award size={64} className={`mx-auto ${percentage >= 60 ? 'text-slate-900 dark:text-slate-200' : 'text-slate-400 dark:text-slate-600'}`} />
           </div>
 
           <div>
@@ -428,7 +428,7 @@ export const Practice: React.FC<PracticeProps> = ({ user }) => {
           {randomTip && (
             <div className="mt-6 bg-slate-50 dark:bg-slate-800 p-4 rounded-xl border border-slate-100 dark:border-slate-700 text-left">
               <h4 className="font-bold text-slate-900 dark:text-white flex items-center gap-2 text-sm mb-1">
-                <Zap size={14} className="text-amber-500" /> Study Tip: {randomTip.title}
+                <Zap size={14} className="text-slate-900 dark:text-white" /> Study Tip: {randomTip.title}
               </h4>
               <p className="text-xs text-slate-500 dark:text-slate-400">{randomTip.content}</p>
             </div>

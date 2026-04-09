@@ -42,7 +42,7 @@ const AppContent: React.FC = () => {
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex items-center justify-center">
         <div className="text-center">
-          <Loader size={48} className="animate-spin text-amber-600 mx-auto mb-4" />
+          <Loader size={48} className="animate-spin text-slate-900 dark:text-white mx-auto mb-4" />
           <p className="text-slate-600 dark:text-slate-400">Loading...</p>
         </div>
       </div>
@@ -137,9 +137,7 @@ const AppContent: React.FC = () => {
       <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10 px-6 py-4 flex items-center justify-between transition-colors duration-200">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full border-2 border-amber-600 flex items-center justify-center">
-              <span className="text-amber-600 font-bold text-sm">L</span>
-            </div>
+            <img src="/logo_icon.png" alt="Learned Icon" className="w-8 h-8 rounded-full" />
             <span className="text-xl font-serif font-bold text-slate-900 dark:text-white">Learned</span>
           </div>
         </div>

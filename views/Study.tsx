@@ -86,17 +86,17 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
             <button
               key={course}
               onClick={() => setSelectedCourse(course)}
-              className="group relative overflow-hidden text-left p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-xl hover:border-amber-500 transition-all duration-300 flex flex-col justify-between h-48"
+              className="group relative overflow-hidden text-left p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-xl hover:border-slate-900 transition-all duration-300 flex flex-col justify-between h-48"
             >
               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Book size={64} className="text-slate-900" />
               </div>
-              <div className="p-3 bg-slate-50 w-fit rounded-xl text-slate-700 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-sm">
+              <div className="p-3 bg-slate-50 w-fit rounded-xl text-slate-700 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300 shadow-sm">
                 <Book size={24} />
               </div>
               <div className="space-y-2 z-10">
-                <h3 className="font-serif font-bold text-lg text-slate-900 group-hover:text-amber-800 transition-colors leading-tight">{course}</h3>
-                <div className="flex items-center text-xs font-semibold text-amber-600 tracking-wider uppercase">
+                <h3 className="font-serif font-bold text-lg text-slate-900 group-hover:text-slate-900 transition-colors leading-tight">{course}</h3>
+                <div className="flex items-center text-xs font-semibold text-slate-900 tracking-wider uppercase">
                   <span>Open Archive</span>
                   <ChevronRight size={14} className="ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -123,7 +123,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
           </button>
           <div>
             <h2 className="font-serif font-bold text-lg text-slate-900">{selectedCourse}</h2>
-            <p className="text-xs text-amber-600 font-medium tracking-wide uppercase">RAG-Enabled Research Assistant</p>
+            <p className="text-xs text-slate-900 font-bold tracking-wide uppercase">RAG-Enabled Research Assistant</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -146,7 +146,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
             <div className={`flex gap-3 max-w-[85%] md:max-w-[75%] ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
 
               {/* Avatar */}
-              <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${msg.role === 'user' ? 'bg-slate-900 text-white' : 'bg-amber-600 text-white'}`}>
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${msg.role === 'user' ? 'bg-slate-900 text-white' : 'bg-slate-700 text-white'}`}>
                 {msg.role === 'user' ? <User size={16} /> : <Bot size={16} />}
               </div>
 
@@ -171,7 +171,7 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
         {isLoading && (
           <div className="flex justify-start">
             <div className="flex gap-3 max-w-[75%]">
-              <div className="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 rounded-full bg-slate-700 text-white flex items-center justify-center flex-shrink-0">
                 <Bot size={16} />
               </div>
               <div className="bg-white p-4 rounded-2xl rounded-tl-none shadow-sm border border-slate-100">
@@ -195,13 +195,13 @@ export const Study: React.FC<StudyProps> = ({ user }) => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder={`Ask a question about ${selectedCourse}...`}
-            className="w-full pl-4 pr-12 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-600 focus:border-transparent outline-none text-slate-900 transition-all"
+            className="w-full pl-4 pr-12 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none text-slate-900 transition-all"
             disabled={isLoading}
           />
           <button
             type="submit"
             disabled={!input.trim() || isLoading}
-            className="absolute right-2 p-2 text-amber-600 hover:text-amber-700 disabled:text-slate-300 disabled:cursor-not-allowed transition-colors"
+            className="absolute right-2 p-2 text-slate-900 hover:text-black disabled:text-slate-300 disabled:cursor-not-allowed transition-colors"
           >
             <Send size={20} />
           </button>

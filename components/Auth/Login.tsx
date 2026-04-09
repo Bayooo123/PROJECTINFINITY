@@ -28,15 +28,13 @@ export const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-amber-50 to-slate-100 flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md">
+        <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md border border-slate-100">
                 {/* Logo */}
                 <div className="text-center mb-8">
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                        <div className="w-10 h-10 rounded-full border-2 border-amber-600 flex items-center justify-center">
-                            <span className="text-amber-600 font-bold">L</span>
-                        </div>
-                        <h1 className="text-2xl font-serif font-bold text-slate-900">Learned</h1>
+                    <div className="flex flex-col items-center justify-center gap-4 mb-2">
+                        <img src="/logo_icon.png" alt="Learned Icon" className="w-16 h-16 rounded-full shadow-sm" />
+                        <h1 className="text-3xl font-serif font-bold text-slate-900">Learned</h1>
                     </div>
                     <p className="text-slate-500 text-sm">Welcome back! Sign in to continue</p>
                 </div>
@@ -62,7 +60,7 @@ export const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
-                                className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"
+                                className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition"
                                 placeholder="you@university.edu"
                             />
                         </div>
@@ -79,7 +77,7 @@ export const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
-                                className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"
+                                className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition"
                                 placeholder="••••••••"
                             />
                         </div>
@@ -88,7 +86,7 @@ export const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-amber-600 hover:bg-amber-700 text-white font-medium py-2.5 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                        className="w-full bg-slate-900 hover:bg-black text-white font-medium py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                         {loading ? (
                             <>
@@ -107,7 +105,7 @@ export const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
                         Don't have an account?{' '}
                         <button
                             onClick={onSwitchToSignup}
-                            className="text-amber-600 hover:text-amber-700 font-medium"
+                            className="text-slate-900 hover:underline font-bold"
                         >
                             Sign up
                         </button>

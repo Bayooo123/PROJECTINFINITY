@@ -80,7 +80,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
         <div className="w-full max-w-md space-y-8">
           <div className="text-center space-y-2">
             <div className="flex justify-center mb-6">
-              <img src="learned_logo.png" alt="Learned Logo" className="h-24 w-auto" />
+              <img src="logo_banner.png" alt="Learned Logo" className="h-24 w-auto rounded-xl shadow-lg" />
             </div>
             <h1 className="text-3xl font-serif font-bold text-slate-900 -mt-4">Learned: Empowering the Future of Law in Nigeria</h1>
             <p className="text-slate-600 leading-relaxed font-medium">
