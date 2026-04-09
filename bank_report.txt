@@ -33,5 +33,22 @@
   "Equity and Trusts | Nature of Equitable Interest and Doctrine of Notice": 20,
   "Equity and Trusts | Assignment of Choses in Action": 20,
   "Equity and Trusts | Injunction": 20,
-  "Equity and Trusts | Specific Performance": 20
+  "Equity and Trusts | Specific Performance": 20,
+  "Criminal Law | Elements of an Offence": 30,
+  "Criminal Law | Classification of Offences": 30,
+  "Criminal Law | Criminal Responsibility": 30,
+  "Criminal Law | Defences to Criminal Responsibility": 30,
+  "Criminal Law | Attempt and Conspiracy": 30,
+  "Criminal Law | Parties to an Offence": 30,
+  "Commercial transactions | Law of Agency": 5,
+  "Criminal Law | Non-Sexual Personal Offences": 30,
+  "Criminal Law | Sexual Personal Offences": 30,
+  "Criminal Law | Non-Personal Sexual and Allied Offences": 30,
+  "Criminal Law | History, Criminalization Policy and Cultural Compatibility": 30,
+  "Criminal Law | Meaning of Crime and Nature of Criminal Law": 30,
+  "Law of Torts | Nature and Functions": 30,
+  "Law of Torts | Trespass to Person": 30,
+  "Law of Torts | Trespass to Land": 30,
+  "Law of Torts | Negligence": 30,
+  "Commercial transactions | Hire Purchase": 15
 }

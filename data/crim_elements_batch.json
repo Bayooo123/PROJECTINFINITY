@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The two main elements of an offence, as defined by Okonkwo and Naish and adopted by Nigerian courts, are:",
+            "options": [
+                "Motive and Intention.",
+                "Physical element and Mental element.",
+                "Strict Liability and Negligence.",
+                "Actus and Reus."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Nigerian law identifies Actus Reus (physical) and Mens Rea (mental) as the core elements of a crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the physical element of an offence known as?",
+            "options": [
+                "Mens Rea.",
+                "Actus Reus.",
+                "Actus Non Facit.",
+                "Nisi Mens Sit Rea."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Actus Reus refers to the physical conduct or 'guilty act'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the mental element of an offence known as?",
+            "options": [
+                "Mens Rea.",
+                "Actus Reus.",
+                "Actus Non Facit.",
+                "Actus Reus."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Mens Rea refers to the 'guilty mind' or mental state."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The criminal law maxim Actus non facit reum nisi mens sit rea means:",
+            "options": [
+                "An act does not make a person legally guilty unless the mind is legally blameworthy.",
+                "An intention alone is sufficient for a conviction.",
+                "The physical act must always precede the mental state.",
+                "All acts are forbidden by law."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "This maxim emphasizes that both a physical act and a guilty mind are required for liability."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "A person cannot be convicted and legally punished unless it is proved that he/she had the mindset to commit an act or omission, EXCEPT in the case of:",
+            "options": [
+                "Defences to criminal responsibility.",
+                "Attempted crimes.",
+                "Crimes of strict liability.",
+                "Cases of self-defence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Strict liability offences do not require proof of mens rea for at least one element of the actus reus."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "In the offence of rape, the actus reus (physical element) that the prosecution must prove is:",
+            "options": [
+                "The intention to have sexual intercourse.",
+                "The man's knowledge of the lady's lack of consent.",
+                "The accused had carnal knowledge of the lady by penetration.",
+                "The accused had a motive to assault the lady."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The actus reus of rape is carnal knowledge (penetration)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "An evil state of mind or criminal intention alone is NOT sufficient for conviction unless:",
+            "options": [
+                "It is confessed by the accused.",
+                "It is manifested itself in some conduct.",
+                "The prosecution can prove motive.",
+                "The harm caused is grave."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Criminal law requires an overt act (conduct) to manifest the internal intention."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Professor Glanville Williams, the law governs:",
+            "options": [
+                "Purity of intention.",
+                "Motive alone.",
+                "Consequences only.",
+                "Conduct, not purity of intention."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "The law punishes conduct that causes harm, not just 'bad thoughts'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The Latin word 'reus' in actus reus literally means:",
+            "options": [
+                "A human conduct.",
+                "Forbidden by law.",
+                "A deed or omission.",
+                "Guilty mind."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In this context, it refers to that which is forbidden or unlawful."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT listed as an aspect of actus reus beyond mere conduct?",
+            "options": [
+                "A state of affairs (situation or status offence).",
+                "Consequences caused by the act of the defendant.",
+                "Motive or reason for the act.",
+                "Circumstances in which the defendant acts."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Motive is generally immaterial to actus reus (and usually mens rea unless specified)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "An example of actus reus as a 'state of affairs' is:",
+            "options": [
+                "Destroying property in a rage.",
+                "Having an offensive weapon in a public place.",
+                "Intending to commit a murder.",
+                "Failing to stop at a zebra crossing."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Being in a certain state (e.g., in possession of a weapon) is the actus reus here."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "In the offence of murder, the actus reus requires a particular prohibited result, which is:",
+            "options": [
+                "The defendant's intention to kill.",
+                "The victim's death must result from the defendant's acts.",
+                "The voluntary nature of the act.",
+                "The absence of self-defence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Murder is a 'result crime' where the actus reus includes the death of the victim."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Sexual intercourse is rape only if performed without the consent of the victim. This is an example of actus reus found in:",
+            "options": [
+                "A state of affairs.",
+                "Prohibited result or consequences.",
+                "Relevant circumstances attached to the prohibited conduct.",
+                "Voluntary act."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Lack of consent is a required 'circumstance' for the act of intercourse to be rape."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "As a general rule, criminal liability does not attach to omissions unless the individual is under a:",
+            "options": [
+                "Moral duty.",
+                "Professional duty.",
+                "Social duty.",
+                "Legal duty."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Failure to act (omission) is only criminal if there was a pre-existing legal duty to act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an example of a legal duty arising from a contractual obligation where an omission can lead to criminal liability?",
+            "options": [
+                "A master to a servant under 16 years.",
+                "A head of family to a child under 14 years.",
+                "A railway gateman employed to shut and open gates.",
+                "A person who created a dangerous situation."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A railway gateman has a contractual duty to the public; failure to perform it (omission) can lead to liability."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R V Gibbons & Proctor is an example of liability for omission due to:",
+            "options": [
+                "Failure to perform a duty under a contract.",
+                "Failure to perform statutory obligations.",
+                "Failure to perform duty under a special relationship.",
+                "Creation of danger."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "This case involved the starvation of a child by parents (special relationship)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The 3rd category of circumstances where there is liability for omission, as discussed in the document, is mostly in the area of:",
+            "options": [
+                "Professional negligence.",
+                "Statutory provisions.",
+                "Implicit contracts.",
+                "General public interest."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Many statutes explicitly criminalize omissions (e.g., failure to file taxes)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Miller (1983) illustrates a duty to act arising out of:",
+            "options": [
+                "Failure to perform a duty under a special relationship.",
+                "Creation of a dangerous situation.",
+                "Failure to perform a statutory obligation.",
+                "Failure to perform a contractual duty."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Miller accidentally started a fire and failed to put it out (creation of danger)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "For actus reus that requires action or conduct, it is a fundamental principle that such action must be:",
+            "options": [
+                "Intentional.",
+                "Foresightful.",
+                "Willed or voluntary.",
+                "Negligent."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The physical act must be a product of the defendant's will (voluntary)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The voluntariness requirement for actus reus means that the defendant can be guilty only if:",
+            "options": [
+                "She foresaw the consequences.",
+                "She deliberately chose to act in that way.",
+                "She was able to prevent herself from acting in the way she did.",
+                "She was motivated by an evil intent."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Voluntariness implies control over the physical movement."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The law on causation requires the prosecution to show that the defendant's act was:",
+            "options": [
+                "The sole cause of the harm.",
+                "A substantial and operating cause of the harm.",
+                "The main cause of the harm.",
+                "The latest act contributing to the harm."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 'legal cause' must be substantial and still operating at the time of the harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The term 'substantial' in causation, as stated in Cheshire (1991), makes it clear that the defendant's act:",
+            "options": [
+                "Must be the sole cause.",
+                "Must be the main cause.",
+                "Must be more than a minimal cause.",
+                "Must be the final cause."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Substantial means it contributed significantly, even if other factors were involved."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The starting point in determining causation is the:",
+            "options": [
+                "Foresight of the accused.",
+                "Motive of the accused.",
+                " 'But for' the defendant's act.",
+                "Voluntariness of the act."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The 'But for' test establishes factual causation before legal causation is considered."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "A break in the chain of causation (novus actus interveniens) can occur where:",
+            "options": [
+                "The defendant's act was not the sole cause.",
+                "The victim does or omits to do an act which is said to break the chain.",
+                "The defendant had no motive to commit the crime.",
+                "The harm was foreseeable."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "An intervening act that is voluntary or unpredictable can break the chain of liability."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Kennedy (2007), where the victim voluntarily injected themselves with drugs provided by the accused, was overruled because:",
+            "options": [
+                "The act was not substantial.",
+                "The victim's voluntary injection broke the chain of causation.",
+                "The accused lacked a guilty mind.",
+                "The drug was not lethal."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A free, deliberate, and informed act by the victim breaks the chain of causation."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The common law history of the origin of the mens rea doctrine is the age long authority of the case:",
+            "options": [
+                "R v Instan.",
+                "Haughton v Smith.",
+                "Fowler v Paget.",
+                "R v Gibbons & Proctor."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Fowler v. Paget is a key historical authority for the mens rea requirement."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Section 24, second paragraph, of the Criminal Code, unless expressly declared otherwise, the motive by which a person is induced to do an act is:",
+            "options": [
+                "A primary element of the offence.",
+                "Immaterial so far as regards criminal responsibility.",
+                "Considered alongside intention.",
+                "Relevant to the actus reus."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In Nigerian law, why someone committed a crime (motive) is generally legally irrelevant to liability."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The mens rea for the offence of receiving property obtained by a felony (Sec. 427) is simply:",
+            "options": [
+                "Intention to permanently deprive the owner.",
+                "Knowledge about it.",
+                "Recklessness as to the origin.",
+                "Negligence in receiving it."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Receiving stolen property requires proof that the defendant knew it was stolen."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Professor J.W.C Turner, which of the following is NOT one of the three types of mens rea he identified?",
+            "options": [
+                "Intention.",
+                "Recklessness.",
+                "Knowledge.",
+                "Negligence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Turner focused on Intention, Recklessness, and Negligence (Knowledge is often grouped with intention or seen separately)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Elements of an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that actus reus and mens rea must be simultaneous in point of time is known as:",
+            "options": [
+                "Voluntary nature.",
+                "Causation.",
+                "Concurrence.",
+                "Strict Liability."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Concurrence (or Coincidence) requires the physical and mental elements to exist at the same time."
+        }
+    }
+]

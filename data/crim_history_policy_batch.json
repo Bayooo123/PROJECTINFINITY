@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary source of all Nigerian criminal law is:",
+            "options": [
+                "English common law cases",
+                "Nigerian legislative enactment",
+                "Moslem Law (Maliki School)",
+                "Native law and custom"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 36(12) of the 1999 Constitution (and previous versions) requires all offences to be defined in written laws (legislative enactments)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Prior to the arrival of British Criminal Law in Nigeria, the legal system was characterized by:",
+            "options": [
+                "A single, unified criminal code.",
+                "The application of the English common law only.",
+                "A large number of systems of criminal law.",
+                "Only the Maliki School of Moslem Law."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nigeria had diverse customary and religious legal systems before British colonization."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The two main categories of statutes in Nigeria relating to criminal law are:",
+            "options": [
+                "Federal and State statutes defining 'technical offences' and the two Codes.",
+                "The Criminal Code and the Penal Code.",
+                "The 1963 Constitution and the 1999 Constitution.",
+                "English common law and the two Codes."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Nigerian criminal statutes include the major Codes and numerous specific laws (technical offences)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Criminal Code was first introduced into Northern Nigeria by proclamation in:",
+            "options": [
+                "1914.",
+                "1916.",
+                "1904.",
+                "1959."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Lord Lugard introduced the Criminal Code to Northern Nigeria in 1904."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Criminal Code was extended to the whole country after the unification of Nigeria in:",
+            "options": [
+                "1904.",
+                "1916.",
+                "1959.",
+                "1933."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Following amalgamation in 1914, the Code was applied nationwide in 1916."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The common law of crime was unsuitable for early British administration in Nigeria because it was:",
+            "options": [
+                "Based on native law and custom.",
+                "Relatively complicated and not easily ascertainable.",
+                "Restricted only to the Southern States.",
+                "Too compatible with the Maliki Law."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The British preferred codes over the unwritten, complex English common law for administrative ease."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The concept that was the most frequent cause of friction between the Criminal Code and Maliki Law in Northern Nigeria was:",
+            "options": [
+                "Theft.",
+                "Provocation.",
+                "Treason.",
+                "Rape."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Maliki law and the Criminal Code disagreed significantly on the defence of provocation in homicide."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Maliki Law, as interpreted by the Maliki School, was firmly entrenched in Northern Nigeria primarily because it was:",
+            "options": [
+                "Introduced by the British Administration.",
+                "An integral part of the Northern Moslem's way of life.",
+                "Based on the English Common Law.",
+                "Introduced to displace the Criminal Code."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Islamic law was deeply rooted in the culture and governance of the North."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which event led to the decision to abolish customary criminal law in the rest of Nigeria (excluding the North) at the 1958 constitutional conference?",
+            "options": [
+                "The unification of Nigeria in 1914.",
+                "The introduction of the Penal Code in 1959.",
+                "The adoption of Section 22 (10) of the 1963 constitution.",
+                "The Maliki law conflict over provocation."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Constitutional reforms demanded written laws, leading to the abolition of unwritten customary crimes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The section of the 1963 Constitution that effectively abolished unwritten customary criminal law in the South by requiring an offence and penalty to be defined in a written law is:",
+            "options": [
+                "Section 4.",
+                "Section 22 (10).",
+                "Section 3(2).",
+                "Section 37."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 22(10) of the 1963 Constitution (now section 36(12) of 1999) codified this requirement."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Penal Code Law, which emerged to displace the Criminal Code in Northern Nigeria in 1959, was based on a successful code from:",
+            "options": [
+                "Sudan.",
+                "England.",
+                "India.",
+                "Maliki Law texts."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The Northern Nigerian Penal Code was modeled after the Sudanese (and Indian) codes to balance Islamic and Modern needs."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The legal system in Nigeria was ultimately replaced by a:",
+            "options": [
+                "Dual system of customary and statute criminal law.",
+                "Dual code system (Criminal Code and Penal Code).",
+                "Single unified criminal code.",
+                "System based entirely on English common law."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Nigeria currently uses the Criminal Code (South) and Penal Code (North)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Penal Code Law of the North explicitly states in Section 3(2) that:",
+            "options": [
+                "No person is liable to punishment under any native law or custom.",
+                "The Criminal Code is the supreme law.",
+                "Customary criminal law can be applied in some cases.",
+                "Treason is an offence under the Penal Code."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Section 3(2) of the Penal Code Law abolished separate customary criminal punishments."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which legal concept prevents the abolition of traditional offences in Nigeria?",
+            "options": [
+                "They are preserved only in so far as they are contained in an enactment.",
+                "They are protected by the Bill of Rights.",
+                "They are fundamental human rights.",
+                "They form the basis of the Criminal Code."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Traditional offences continue to exist only if they are codified into statutory law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The policy of Criminalization underlying the Penal Code represents a compromise between:",
+            "options": [
+                "The British and the Maliki School.",
+                "The reformers and traditionalists.",
+                "The Federal and State governments.",
+                "The judiciary and the legislature."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 1959 code was a political compromise between traditional Islamic leaders and modern reformers."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the Criminal Code Act (Section 2), an act or omission which renders the person doing the act or making the omission liable to punishment is called:",
+            "options": [
+                "A crime.",
+                "An offence.",
+                "A tort.",
+                "A felony."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Code uses the term 'offence' as its primary definition of criminal conduct."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Sir James Pity Stephens, crime in its strict legal connotation is defined as:",
+            "options": [
+                "An act or omission in violation of a public law.",
+                "An act or omission punished by law.",
+                "A wrong remissible by the Crown alone.",
+                "A breach of duty with a sanction in the public interest."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Stephens focused on the punishment-based definition of legal crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Harm Principle, which is one of the liberty limiting principles, owes its origin to the work of:",
+            "options": [
+                "Cesare Bonesaria Beccaria.",
+                "Lord Devlin.",
+                "John Stuart Mill.",
+                "H.L.A. Hart."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "J.S. Mill's 'On Liberty' is the foundation of the Harm Principle."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The sole reason for government interference with a citizen's liberty/autonomy, as posited by Mill's Harm Principle, is for:",
+            "options": [
+                "Punishing immorality 'as such'.",
+                "Legal paternalism.",
+                "Self-protection and to prevent harm to others.",
+                "Maintaining public order and decency."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Mill argued that the only justification for state coercion is to prevent harm to others."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Feinberg, the Harm Principle should prohibit only those acts that cause:",
+            "options": [
+                "Any type of injury.",
+                "Avoidable and substantial harm.",
+                "Loss of value.",
+                "Public morality."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Joel Feinberg refined the principle to focus on substantial and unjustified harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Legal Moralism is concerned with the question of whether criminal law should be used to punish:",
+            "options": [
+                "Harm to others.",
+                "Immorality 'as such'.",
+                "Self-inflicting harm.",
+                "Offences to others."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Legal moralism argues that the state can punish acts simply because they are immoral."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Conducts like corruption, smuggling, and tax evasion are said to cause harm, primarily to:",
+            "options": [
+                "The individual actor.",
+                "The state or society on a collective scale.",
+                "The inanimate environment.",
+                "The judiciary."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These 'victimless' crimes harm the collective welfare and stability of society."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle of Legal Paternalism aims at:",
+            "options": [
+                "Protecting individuals from themselves.",
+                "Punishing immorality.",
+                "Preventing harm to third parties.",
+                "Upholding public morality."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Paternalism is the state acting like a parent to protect citizens from self-harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Laws that prohibit suicide (Section 327 CC) and euthanasia are examples of the application of which criminalization principle?",
+            "options": [
+                "The Harm Principle.",
+                "Legal Moralism.",
+                "Legal Paternalism.",
+                "The Offence Principle."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Prohibiting suicide is a classic example of paternalistic law (though suicide is now decriminalized in many jurisdictions)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The function of criminal law, as identified by the Wolfenden Report, is, among other things, to preserve public order and:",
+            "options": [
+                "Enforce a particular pattern of behavior.",
+                "Decency.",
+                "Equate crime with sin.",
+                "Intervene in the private lives of citizens."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The report emphasized preserving public order and decency as the law's boundary."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which philosophical view asserts that there must remain a realm of private morality and immorality which is not the law's business?",
+            "options": [
+                "Legal Moralists (Patrick Devlin).",
+                "Liberalists (Wolfenden Committee).",
+                "Positivists.",
+                "Neo-Classical School."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Wolfenden report championed the idea of a private sphere immune from legal scrutiny."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The classification of offences into felonies, misdemeanours, and simple offences is contained in which section of the Criminal Code?",
+            "options": [
+                "Section 2.",
+                "Section 3.",
+                "Section 7.",
+                "Section 24."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 3 of the Criminal Code contains the definition of these three categories."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The classification of offences into Indictable and Non-indictable offences is purely for:",
+            "options": [
+                "Substantive purposes.",
+                "Procedural purposes.",
+                "Jurisdictional purposes.",
+                "Academic purposes."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Indictability refers to the method of trial and prosecution procedure."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "What classification category is used for offences made merely for the sake of convenience or academic purposes, having no legal significance?",
+            "options": [
+                "Preliminary offences.",
+                "Substantive offences.",
+                "Descriptive offences.",
+                "Jurisdictional offences."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Descriptive classifications help categorize but don't usually carry distinct legal rules."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "History, Criminalization Policy and Cultural Compatibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Offences against the person, property, or state are examples of classification based on:",
+            "options": [
+                "Descriptive criteria.",
+                "Procedural law.",
+                "Substantive law.",
+                "Jurisdictional law."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "These are descriptive categories based on the victim or interest protected."
+        }
+    }
+]

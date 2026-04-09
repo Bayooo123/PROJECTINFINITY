@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "In the Criminal Code and Penal Code, which word is traditionally used instead of 'crime'?",
+            "options": [
+                "Misdemeanor",
+                "Offence",
+                "Felony",
+                "Tort"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Both Nigerian codes use the term 'offence' as the standard designation for criminal acts."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Sir James Pity Stephens defined crime in its strict legal connotation as:",
+            "options": [
+                "An act or omission in violation of a public law",
+                "A wrong whose action is punitive",
+                "An act or omission punished by law",
+                "A legal wrong whose remedy is punishment at the instance of the state"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Stephens defined crime based on the direct consequence of legal punishment."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the Criminal Code Act (Section 2), an act or omission which renders the person liable to punishment under the Code, or any other statute, is called:",
+            "options": [
+                "A crime",
+                "An offence",
+                "A civil wrong",
+                "A felony"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 2 CC defines 'offence' as conduct punishable by law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary aim of criminal law, in contrast to civil matters where the aim is typically monetary compensation, is:",
+            "options": [
+                "Restitution for the injured plaintiff",
+                "To grant a 'nolle prosequi'",
+                "The punishment of the offender",
+                "To waive the civil rights of the plaintiff"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Criminal law focuses on punishing the wrongdoer rather than providing private remedies."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT an essential element of a crime, regardless of the definition adopted?",
+            "options": [
+                "An act or omission",
+                "Prescribed by the state",
+                "Has a punishment for its occurrence",
+                "Always gives rise to a civil claim by the citizen"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Not all crimes result in civil claims, and not all civil wrongs are crimes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Which philosophical principle of criminalization is designed to restrict the state's coercive use of power and is posited by John Stuart Mill for 'self-protection' and to prevent 'harm to others'?",
+            "options": [
+                "Legal Moralism",
+                "The Offence Principle",
+                "Legal Paternalism",
+                "The Harm Principle"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Mill's Harm Principle is the core liberal restriction on state power."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The two main components of the Harm Principle, as posited by Mill, are:",
+            "options": [
+                "Punishing immorality and self-protection",
+                "Self-protection and prevention of harm to others",
+                "Maintaining public decency and order",
+                "Avoiding lesser evils and public authority"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mill identified self-protection and prevention of harm to others as the only valid grounds for interference."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following examples of harm would typically extend the scope of the Harm Principle to the state or society on a collective scale?",
+            "options": [
+                "Assaults",
+                "Corruption and tax evasion",
+                "Libels",
+                "Fraudulent conversion"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These offences undermine the collective functioning and economy of the whole society."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Feinberg criticized Mill's Harm Principle by noting that not every act causing harm to others can be rightly prohibited, but only those that cause:",
+            "options": [
+                "Avoidable and substantial harm",
+                "Any type of injury or damage",
+                "Loss of value",
+                "Unexcused and unjustifiable conduct"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Feinberg argued that only significant and avoidable harm warrants criminalization."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that asserts that immorality is a justified reason for the criminal proscription of a conduct, even if it does not pose harm to others, is known as:",
+            "options": [
+                "Legal Paternalism",
+                "The Offence Principle",
+                "Legal Moralism",
+                "The Harm Principle"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Legal moralism allows the law to enforce social morality even in the absence of harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The recommendation by the Wolfenden Report to decriminalize homosexual practices between consenting adults in private was based on the view that:",
+            "options": [
+                "The criminal law should punish immorality 'as such'",
+                "The function of criminal law is to enforce a pattern of behavior",
+                "There must remain a realm of private morality which is not the law's business",
+                "The state must prevent all self-inflicting harm"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The report argued for a private sphere free from the reach of criminal law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Patrick Devlin's argument against the Wolfenden Report was based on the belief that society is held together by a public morality which should be enforced by law, and this public morality is ascertainable by the standard of:",
+            "options": [
+                "A rational man",
+                "The majority public opinion",
+                "A reasonable man",
+                "The judiciary"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Devlin proposed using the judgment of the 'reasonable man' (the man on the Clapham omnibus) to define immoral acts."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that supports criminal prohibition of harm to the actor himself, aiming at protecting the individual from themselves, is called:",
+            "options": [
+                "Legal Moralism",
+                "The Offence Principle",
+                "Legal Paternalism",
+                "The Harm Principle"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Paternalism protects people from the consequences of their own choices."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following laws is an example of the application of Legal Paternalism (passive paternalism)?",
+            "options": [
+                "Laws against assault",
+                "Laws against suicide",
+                "Laws against robbery",
+                "Laws against tax evasion"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Laws against suicide or drug use are intended to prevent the actor from harming themselves."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The philosophical school of thought that believed every human being is rational and offences are committed out of free will, and therefore people should be punished for wrongdoings, is the:",
+            "options": [
+                "Neo-Classical School",
+                "Positivist School",
+                "Classical School",
+                "Utilitarian School"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Classical School emphasized free will and individual responsibility."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The philosophical school that believed not every criminal offence is because people desire to commit it, but because of circumstances beyond their control (determinism), is the:",
+            "options": [
+                "Positivist School",
+                "Classical School",
+                "Neo-Classical School",
+                "Utilitarian School"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Positivism introduced the idea of deterministic causes (biological, social) for crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The Neo-Classical School introduced modifications to the Classical School's thesis by arguing that some people should be exempted from criminal responsibility due to circumstances, including:",
+            "options": [
+                "Public officers",
+                "Women, Infants, and Insane people",
+                "Criminals with anatomical deformities",
+                "People acting out of strong motive"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Neo-classicals recognized that certain groups lacked the full capacity for 'free will'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Cesare Bonesaria Beccaria, a prominent classical writer, was an exponent of all the following EXCEPT:",
+            "options": [
+                "Proportionality of punishment",
+                "Certainty of the law",
+                "Retroactive legislation",
+                "Duration of punishment over intensity"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Beccaria strongly opposed retroactive laws, advocating for clarity and foresight in legislation."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The underlying philosophy of the position that 'no liability without fault' is better that ten guilty men should escape than one innocent man should suffer is illustrated by the English case of:",
+            "options": [
+                "R v. Amadu Adamu",
+                "Woolmington v. DPP",
+                "Thabo Meli v R",
+                "DPP v Smith"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Woolmington v DPP established the 'golden thread' that the burden of proof lies on the prosecution."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "Laws that prohibit public indecency or being naked in public without intent to cause harm are examples of the application of which criminalization principle?",
+            "options": [
+                "The Harm Principle",
+                "Legal Paternalism",
+                "The Offence Principle",
+                "Legal Moralism"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Offence Principle targets conduct that is offensive to the sensibilities of others, even if not physically harmful."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "In the Devlin/Hart debate, Hart rejected Devlin's thesis by arguing that feelings of reprobation should be subjected to critical reasoning to sieve out:",
+            "options": [
+                "Public order",
+                "Superstition, ignorance, and misunderstanding",
+                "Political coercion",
+                "The standard of a reasonable man"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Hart argued that mere disgust or prejudice (without rational basis) should not dictate criminal law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The legal notion of criminal harm, according to Jerome Hall, includes physical harm but more essentially refers to harm to:",
+            "options": [
+                "Moral failings.",
+                "Intangible interest and injuries to intangible values.",
+                "Conduct only.",
+                "Public opinion."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Hall argued that legal harm encompasses invasions of legally protected social interests."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "A crime that also gives rise to civil liability (tort) is exemplified by:",
+            "options": [
+                "Treason",
+                "Assaults",
+                "Traffic offences",
+                "Drug offences"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Assault is both a crime against the state and a trespass to the person (tort) in civil law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The definition of crime offered by Halsbury is that 'a crime is an unlawful act or default which is an offence against the public and renders the person guilty of the act or default liable to:",
+            "options": [
+                "Compensation or restitution",
+                "Legal punishment",
+                "Imprisonment for three years or more",
+                "Indictment"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Halsbury's definition focuses on the public nature of the act and its punitive consequence."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the provided documents, the existence of different defences in Nigerian Criminal Law, such as mistake, alcoholism, and immaturity due to young age, exemplifies the significance of contributions from which philosophical schools?",
+            "options": [
+                "Classical and Positivist Schools",
+                "Utilitarian and Liberal Schools",
+                "Neo-Classical and Legal Moralist Schools",
+                "Hart and Devlin's views"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Classical school focused on free will, while positivism looked at deterministic factors, both influencing the law of responsibility."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle of criminal law that there shall be no liability without fault is predicated on which concept of criminal responsibility?",
+            "options": [
+                "Actus reus",
+                "Culpability or blame worthiness",
+                "Strict Liability",
+                "Concurrence"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Moral culpability (the 'guilty mind') is a prerequisite for just punishment in most criminal systems."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The two Codes (Criminal Code and Penal Code) are categorized under which type of statutes in Nigeria?",
+            "options": [
+                "Federal and State statutes defining 'technical offences'",
+                "The second category of criminal statutes",
+                "English Common Law Statutes",
+                "Customary Law Statutes"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Major Codes are distinct from the 'first category' of specialized technical statutes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The essential nature of a crime is that it is a breach of the law resulting in a special procedure that is:",
+            "options": [
+                "Controlled by the victim",
+                "Subject to civil compensation",
+                "Controlled by the state",
+                "Controlled by the common law"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Prosecution of crimes is a public function managed by the state's legal officers."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "What, according to the documents, is generally true about the relationship between morality and criminality?",
+            "options": [
+                "They are co-extensive",
+                "They are entirely separate concepts",
+                "What is immoral is also occasionally criminal",
+                "Criminality determines morality"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Law and morality overlap, but they are not identical; many immoral acts are legal and vice versa."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Meaning of Crime and Nature of Criminal Law",
+        "type": "objective",
+        "question_data": {
+            "text": "The Liberalist view on criminalization (e.g., Wolfenden Committee) advocates for:",
+            "options": [
+                "Equating the sphere of crime with sin",
+                "Intervention in the private lives of citizens",
+                "Protecting the individual's freedom of choice and action in matters of private morality",
+                "Punishing conducts that are immoral, whether or not they cause harm"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Liberalism prioritizes individual autonomy in the private sphere."
+        }
+    }
+]

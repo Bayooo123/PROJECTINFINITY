@@ -30,6 +30,18 @@ const getIndex = async () => {
     return index;
 };
 
+/**
+ * Pad 768-dimensional Gemini embeddings to 1024 dimensions for Pinecone compatibility
+ */
+const padTo1024 = (embedding: number[]): number[] => {
+    if (embedding.length === 1024) return embedding;
+    const padded = new Array(1024).fill(0);
+    for (let i = 0; i < Math.min(embedding.length, 1024); i++) {
+        padded[i] = embedding[i];
+    }
+    return padded;
+};
+
 // --- Type Definitions ---
 
 export interface CourseMaterial {
@@ -66,7 +78,7 @@ export const upsertCourseMaterials = async (materials: CourseMaterial[]): Promis
 
             return {
                 id: material.id,
-                values: embedding,
+                values: padTo1024(embedding),
                 metadata: {
                     type: 'course_material',
                     course: material.course,
@@ -98,7 +110,7 @@ export const upsertPastQuestions = async (questions: PastQuestion[]): Promise<vo
 
             return {
                 id: question.id,
-                values: embedding,
+                values: padTo1024(embedding),
                 metadata: {
                     type: 'past_question',
                     course: question.course,
@@ -134,7 +146,7 @@ export const searchCourseMaterials = async (
         }
 
         const results = await idx.namespace('course_materials').query({
-            vector: queryEmbedding,
+            vector: padTo1024(queryEmbedding),
             topK,
             filter,
             includeMetadata: true
@@ -172,7 +184,7 @@ export const searchPastQuestions = async (
         }
 
         const results = await idx.query({
-            vector: queryEmbedding,
+            vector: padTo1024(queryEmbedding),
             topK,
             filter,
             includeMetadata: true

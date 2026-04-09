@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass to the person is defined in the document as any wrongful or unauthorised interference that is primarily:",
+            "options": [
+                "Reckless or consequential",
+                "Direct or intentional",
+                "Indirect or negligent",
+                "Incidental or implied"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Trespass (as opposed to case) requires direct interference."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass to person is considered to be more deterrent than compensatory because:",
+            "options": [
+                "It is not actionable in civil law.",
+                "The tort is only a crime and not a tort.",
+                "The plaintiff need not prove that he has suffered actual damage.",
+                "It is always dealt with by criminal prosecution."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Actionability 'per se' means the law protects the interest in bodily integrity itself, regardless of loss."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in trespass is that the defendant acts at his own peril, for where the result of an act committed amounts to a direct interference with the plaintiff’s interest, there is liability for:",
+            "options": [
+                "Negligence",
+                "Strict Liability",
+                "Trespass",
+                "Breach of Contract"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Direct interference with person or property without lawful excuse is trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "If an act is negligent, the document states it will give rise to liability in:",
+            "options": [
+                "Trespass and not negligence",
+                "Negligence and not trespass",
+                "Both trespass and negligence",
+                "Strict liability"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Modern law (Fowler v Lanning) restricts trespass to intentional acts; negligent acts fall under the tort of negligence."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass to person has four arms, but consists of how many distinct torts?",
+            "options": [
+                "Two (2)",
+                "Three (3)",
+                "Four (4)",
+                "Five (5)"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The three standard torts are Assault, Battery, and False Imprisonment."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "In the law of tort, Assault is defined by Kodilinye as any act which puts the plaintiff in fear that what is about to be committed against him?",
+            "options": [
+                "False Imprisonment",
+                "Trespass to Land",
+                "Battery",
+                "Defamation"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Assault is the reasonable apprehension of immediate battery."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT one of the key points summarizing the nature of an assault in the law of tort?",
+            "options": [
+                "An attempt or threat to apply force or violence.",
+                "With the apparent ability to carry it out.",
+                "Contact is mandatory.",
+                "Which puts the person in reasonable fear of battery."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Assault occurs without contact; contact makes it battery."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "In a claim for assault, it is not necessary to prove that the plaintiff was actually put in fear or experienced fear. What must be proved instead?",
+            "options": [
+                "That the defendant had a bad motive.",
+                "That a battery was immediately committed.",
+                "That it was reasonable for the plaintiff to expect immediate battery.",
+                "That the defendant was not insured."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The test is objective: would a reasonable person expect immediate force?"
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "As a general principle, pointing an unloaded gun at a person who does not know it is unloaded is an assault. This was held in the case of:",
+            "options": [
+                "Stephen v Myers",
+                "R v St. George",
+                "Innes v Wylie",
+                "Brady v Schatzel"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "R v St. George established that the apparent ability to shoot suffices for assault."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Innes v Wylie, the defendant policeman who stood motionless in order to block a doorway was held to have:",
+            "options": [
+                "Committed Battery",
+                "Committed Assault",
+                "Committed False Imprisonment",
+                "Not committed Assault"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "A purely passive act (standing still) is not an assault."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Smith v Supt of Woking Police Station established that the defendant frightening the complainant by looking through her bedroom window late in the night was guilty of assault because:",
+            "options": [
+                "He made physical contact.",
+                "He was an invited guest.",
+                "The complainant was put in fear of personal violence.",
+                "He had no lights on."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Fear of immediate (imminent) violence constitutes assault."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "In Stephen v Myers, where the defendant was stopped from reaching the chairman, the court held that assault was committed because:",
+            "options": [
+                "He was near enough at the time to have struck him.",
+                "He advanced with an intention which amounted to an assault in law.",
+                "He was a policeman.",
+                "He broke his contract with the parish meeting."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Advancing with intent and the means to carry it out is assault, even if stopped."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "In Read v Coker, the defendant ordered his workmen to surround the plaintiff, roll up their sleeves, and threaten to break his neck if he did not leave. The court held that there was an assault, illustrating that:",
+            "options": [
+                "Words alone are always sufficient for assault.",
+                "An order coupled with a threat may be assault.",
+                "Assault requires physical injury.",
+                "Intentional acts give rise to negligence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Threatening behavior combined with words can constitute assault."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the general rule regarding 'Words Alone' and assault?",
+            "options": [
+                "Mere words alone always amount to assault.",
+                "Words must always be accompanied by battery to constitute assault.",
+                "Mere words alone do not amount to assault, but a gesture alone may.",
+                "Words alone cannot, under any circumstances, amount to assault."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Traditionally, words alone aren't assault, but modern law (R v Ireland) shows exceptions."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R v Ireland & Burston, involving repeated silent phone calls, was used to illustrate the exception where:",
+            "options": [
+                "Words alone may amount to assault because they put a person in reasonable expectation of fear.",
+                "Only verbal threats constitute assault.",
+                "The silent phone calls were a form of battery.",
+                "Assault can only be committed in person."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The silent calls induced a fear of imminent violence."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "In Tuberville v Savage, the defendant's words 'if it were not assize time I would not take such language from you' resulted in a finding of no assault because:",
+            "options": [
+                "The words explained and thus negated the possibility of battery.",
+                "The defendant did not put his hand on his sword.",
+                "The plaintiff was too brave to be frightened.",
+                "He was exercising his legal right."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The words explicitly stated the defendant would *not* strike."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the standard applied in the objective test for assault ('THAT THE ACT WILL PUT A REASONABLE MAN IN FEAR OF BATTERY')?",
+            "options": [
+                "Subjective to the plaintiff's actual fear.",
+                "Subjective to the defendant's actual intention.",
+                "Objective to what a reasonable man in the plaintiff's shoes would fear.",
+                "The criminal standard of proof."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Tort law uses the reasonable person standard for liability."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "In Brady v Schatzel, the plaintiff admitted in court that he was not scared when the defendant pointed a gun at him. What did the court hold?",
+            "options": [
+                "The defendant was liable for assault because the act amounted to assault regardless of the plaintiff's subjective fear.",
+                "The claim for assault failed because the plaintiff was not scared.",
+                "The defendant was only liable for breach of trust.",
+                "The act was too trivial to be actionable."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Assault depends on the nature of the act, not the plaintiff's courage."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "When is a battery sometimes committed straight away without first having committed an assault?",
+            "options": [
+                "Only when words negate the threat.",
+                "When a person is struck suddenly from behind or while asleep.",
+                "When the threat is clearly impossible of being carried out.",
+                "When the act is done with consent."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the victim doesn't see the blow coming, there's no apprehension (assault), only the touch (battery)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Battery is defined as the application of force, however slight, on another person without:",
+            "options": [
+                "Direct contact and legal justification.",
+                "Intention and a hostile act.",
+                "His consent and without legal justification.",
+                "An attempt to cause fear."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Consent and legal authority (like police arrest) are the primary defences."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "According to C.F. Padfield, battery is: 'applying force however slight to the person of another, hostilely or against his will.' What must the touch be for a battery claim to succeed?",
+            "options": [
+                "Accidental and negligent.",
+                "Hostile and without the plaintiff's consent.",
+                "Trivial and generally acceptable.",
+                "Only direct and intentional."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Battery is basically an offensive touch against someone's will."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT listed in the document as an example of a way battery can be committed?",
+            "options": [
+                "Spitting on a person's face.",
+                "Knocking a person down with a motor vehicle.",
+                "Tapping a person on the back as part of a congratulation.",
+                "Removing a chair from under a person who thereby falls to the ground."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Congratulatory tapping is socially acceptable and usually implies consent."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "What are the two main elements a plaintiff needs to prove to succeed in a claim for battery?",
+            "options": [
+                "Threat and Fear.",
+                "Loss and Damage.",
+                "Assault and False Imprisonment.",
+                "Application of Force and Intention to Apply Force."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Battery requires a physical act (force) and the intent for that act."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the reason that common forms of social touching, such as tapping a person on the back to draw attention, are generally not considered battery?",
+            "options": [
+                "They are not done with intention.",
+                "There is implied consent to such touching.",
+                "They are not direct acts.",
+                "They are only crimes, not torts."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "General social life involves an implied license for non-hostile touching."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Battery can be a direct or indirect contact with a person. What does the document state is sufficient application of force to give a right to a claim in battery?",
+            "options": [
+                "Only striking the person with a stick.",
+                "Only contact that causes physical injury.",
+                "The slightest, merest or the least touching of another person.",
+                "Only when the act is negligent."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "In tort, even the smallest unpermitted touch is technically a battery."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following examples of indirect contact is given to illustrate how battery can be committed?",
+            "options": [
+                "Pointing an unloaded gun.",
+                "Standing motionless in a doorway.",
+                "Throwing stone at a person.",
+                "Threatening to break a person's neck."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Throwing a stone that hits is an indirect application of force."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the fundamental nature of the interference involved in Trespass to the Person?",
+            "options": [
+                "Consequential interference with a person's reputation.",
+                "Indirect interference with a person's property.",
+                "Direct interference with a person's body or liberty.",
+                "Negligent interference with economic interests."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Bodily integrity and freedom of movement are the core protected interests."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "If A places a log on the highway and B trips over the log and falls, the document states that this is NOT a direct interference and the result would be:",
+            "options": [
+                "Intentional",
+                "Compensatory",
+                "Consequential",
+                "Actionable per se"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "This is a classic 'case' example—indirect or consequential harm."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "What type of tort is 'OTHER ACTS INTENDED TO CAUSE PHYSICAL AND MENTAL HARM' listed as under Trespass to Person?",
+            "options": [
+                "One of the four arms.",
+                "A category of strict liability.",
+                "A form of vicarious liability.",
+                "An economic tort."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "This refers to the rule in Wilkinson v Downton (intentional infliction of mental shock)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Person",
+        "type": "objective",
+        "question_data": {
+            "text": "The intention required for Trespass to Person ('International [Intentional] here does not necessarily mean deliberate') means more of the defendant intending to carry out an act, even if:",
+            "options": [
+                "The motive was good.",
+                "The end result is unintended.",
+                "The act was lawful.",
+                "The police failed to press charges."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the act itself was intended, unforeseen consequences don't negate trespass liability."
+        }
+    }
+]

@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "A person who is deemed to have taken part in committing an offence and to be guilty of the offence, and may be charged with actually committing it, is known as a:",
+            "options": [
+                "Accessory after the fact.",
+                "Principal offender.",
+                "Conspirator.",
+                "Witness."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 7 of the Criminal Code defines principal offenders."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Section 7(a) of the Criminal Code, which of the following is a principal offender?",
+            "options": [
+                "A person who enables another to commit the offence.",
+                "A person who actually does the act or makes the omission.",
+                "A person who counsels or procures another to commit the offence.",
+                "A person who assists the offender after the crime."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The person who physically performs the actus reus is the primary principal."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 7(b) of the Criminal Code defines a principal offender as every person who does or omits to do any act for the purpose of:",
+            "options": [
+                "Hiding the evidence of the crime.",
+                "Counseling someone else to commit the crime.",
+                "Enabling or aiding another person to commit the offence.",
+                "Assisting someone to escape after the crime."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Aiding or enabling another makes one a principal under Nigerian law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Which category of principal offender is defined as every person who aids another person in committing the offence?",
+            "options": [
+                "Section 7(a).",
+                "Section 7(b).",
+                "Section 7(c).",
+                "Section 7(d)."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 7(c) specifically covers 'aiding' during the commission of the crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Every person who counsels or procures any other person to commit the offence is considered a principal offender under:",
+            "options": [
+                "Section 7(a).",
+                "Section 7(b).",
+                "Section 7(c).",
+                "Section 7(d)."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Counseling and procuring are covered under Section 7(d)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The major implication of being classified as a principal offender under Section 7 of the Criminal Code is that such a person:",
+            "options": [
+                "May be charged with committing the offence.",
+                "Is only liable for half the punishment of the actual actor.",
+                "Cannot be arrested without a warrant.",
+                "Is only liable as an accessory after the fact."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "In Nigerian law, there is no procedural difference between the actor and the aider/abettor."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following describes 'common intention' under Section 8 of the Criminal Code?",
+            "options": [
+                "Two or more people forming a common intention to prosecute an unlawful purpose in conjunction with one another.",
+                "One person counseling another to commit a crime.",
+                "A person assisting another to escape punishment.",
+                "A person providing tools to another to commit an offence."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Section 8 covers joint enterprises with a shared unlawful goal."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "How does Section 8 of the Criminal Code impact criminal responsibility when an offence is committed by one person in the group?",
+            "options": [
+                "Only the person who did the act is liable.",
+                "Each person is deemed to have committed the offence, provided the offence was a probable consequence of the common purpose.",
+                "Everyone is liable regardless of whether the offence was foreseeable.",
+                "Liability is limited to the principal only."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Partners in a common purpose are liable for crimes committed 'in prosecution' of that purpose."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "For liability to attach under 'common intention' (S. 8), the offence committed must be:",
+            "options": [
+                "Specifically planned by all parties.",
+                "A probable consequence of the prosecution of the purpose.",
+                "The only way to achieve the goal.",
+                "Done with the knowledge of all parties."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Foreseeability (probable consequence) is the test for collateral crimes in joint enterprise."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 9 of the Criminal Code deals with the counselling of another which results in an offence being committed. It holds the counsellor liable for:",
+            "options": [
+                "Only the offence specifically counseled.",
+                "Any offence that is actually committed.",
+                "The offence actually committed, provided it was a probable consequence of the counseling.",
+                "A misdemeanor only."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Liability extends to foreseeable variations of the counseled crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "An accessory after the fact is defined in Section 10 of the Criminal Code as a person who, knowing a person to have committed an offence:",
+            "options": [
+                "Drove them to the scene of the crime.",
+                "Witnessed the crime but did not report it.",
+                "Receives or assists him in order to enable him to escape punishment.",
+                "Provides the tools for the crime."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Assistance *after* the crime to evade justice defines an accessory after the fact."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT a principal offender under Nigerian law?",
+            "options": [
+                "A person who takes part in committing the offence.",
+                "A person who aids the offender after the crime is completed.",
+                "A person who counsels another to commit the crime.",
+                "A person who enables another to commit the offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Accessory after the fact is a distinct category and not a 'principal'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R v Enweonye (1955) is an example of:",
+            "options": [
+                "Criminal responsibility for omissions.",
+                "Joint liability based on common intention.",
+                "The distinction between preparation and attempt.",
+                "Accessories after the fact."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This case involved a joint assault leading to murder liability for both."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the primary requirement for a person to be an accessory after the fact?",
+            "options": [
+                "They must have a common intention with the offender.",
+                "They must have known the person committed an offence.",
+                "They must be present during the commission of the crime.",
+                "They must be a relative of the offender."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Knowledge of the crime is a prerequisite for being an accessory after the fact."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Section 10, a wife does NOT become an accessory after the fact by:",
+            "options": [
+                "Committing a separate crime to help her husband.",
+                "Assisting her husband to escape punishment.",
+                "Being present at the scene of the crime.",
+                "Providing her husband with tools for the crime."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The law provides a marital exemption for wives assisting husbands."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "If a person is a principal under Section 7, how are they typically charged in a criminal trial?",
+            "options": [
+                "They are charged as aiders and abettors.",
+                "They are charged with the actual commission of the offence.",
+                "They are charged as co-conspirators only.",
+                "They are charged with a lesser offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The law treats all principals as having 'actually committed' the crime for charging purposes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Under Section 7(b), an example of enabling another to commit an offence would be:",
+            "options": [
+                "Giving a master key to a burglar.",
+                "Driving a getaway car during a robbery.",
+                "Encouraging someone to commit a crime.",
+                "Hiding the stolen goods after the robbery."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Providing the means (enabling) before the act falls under 7(b)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Assisting an offender to escape punishment can include:",
+            "options": [
+                "Providing food and shelter to a fugitive.",
+                "Giving false information to the police about the offender’s whereabouts.",
+                "Hiding the weapon used in the crime.",
+                "All of the above."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Any active help to evade justice can constitute 'assisting'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Can a person be a principal offender if they were not present at the scene when the act was performed?",
+            "options": [
+                "No, presence is required.",
+                "Yes, if they enabled, aided (prior), or counseled the commission.",
+                "Only if they are co-conspirators.",
+                "Only in cases of strict liability."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Counselors and enablers (7b/d) are often absent from the actual scene."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of common intention (S. 8), what happens if the group's purpose was lawful but one person commits a crime?",
+            "options": [
+                "Everyone is liable if the crime was probable.",
+                "Only the actor is liable, as the common purpose must be unlawful for S. 8 to apply.",
+                "Everyone is liable as they were part of a group.",
+                "Liability is determined by the court’s discretion."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 8 requires a 'common intention to prosecute an UNLAWFUL purpose'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Counseling under Section 7(d) involves:",
+            "options": [
+                "Giving advice or instructions on how to commit a crime.",
+                "Being present at the crime scene to give social support.",
+                "Hiding the offender from the police.",
+                "Failing to report a planned crime."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Counseling is the intellectual or instructional preparation for the crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Procuring under Section 7(d) means:",
+            "options": [
+                "Hiring someone to commit a crime.",
+                "Forcing someone to commit a crime.",
+                "Inducing or bringing about the commission of the offence.",
+                "All of the above."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "To procure is to initiate or 'cause' someone else to act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the name for the category of parties to an offence who assist the offender only after the crime is completed?",
+            "options": [
+                "Principal offenders.",
+                "Accessories after the fact.",
+                "Inchoate offenders.",
+                "Simple offenders."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Post-conduct assistance is the hallmark of an accessory after the fact."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "An accessory after the fact to a felony is generally punishable with:",
+            "options": [
+                "The same punishment as the principal.",
+                "Life imprisonment.",
+                "Two years imprisonment, or as specified for that felony.",
+                "A fine only."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Accessories usually receive a significantly reduced sentence compared to principals."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Which section of the Criminal Code protects a wife from being an accessory after the fact?",
+            "options": [
+                "Section 7.",
+                "Section 8.",
+                "Section 10.",
+                "Section 24."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 10 contains the marital exemption."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Joint responsibility under Section 8 is common in cases involving:",
+            "options": [
+                "Group brawls and street violence.",
+                "Bank robberies with multiple roles.",
+                "Vandalism by a group.",
+                "All of the above."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Common intention applies to any collaborative criminal effort."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "If A counsels B to rob a bank, and B murders a security guard during the robbery, A is liable for murder if:",
+            "options": [
+                "A specifically asked B to kill.",
+                "The murder was a probable (foreseeable) consequence of the robbery.",
+                "B used the gun A provided.",
+                "A was waiting in the getaway car."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Under Section 9, the counselor is liable for the foreseeable results of the counseled act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "The distinction between a principal under Section 7 and an accessory after the fact under Section 10 is mainly:",
+            "options": [
+                "The degree of their intent.",
+                "Whether their involvement occurred during/before OR after the crime.",
+                "The amount of money they received.",
+                "Whether they were at the scene or not."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Timing of the assistance (before/during vs. after) is the key legal boundary."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "A person who is present at the scene and encourages the perpetrator but does not physically intervene is a principal under:",
+            "options": [
+                "Section 7(a).",
+                "Section 7(c).",
+                "Section 10.",
+                "None of the above."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Encouragement at the scene is a form of 'aiding' (7c)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Parties to an Offence",
+        "type": "objective",
+        "question_data": {
+            "text": "Parties to an offence are classified in which part of the Criminal Code?",
+            "options": [
+                "Chapter 2.",
+                "Chapter 5.",
+                "Chapter 1.",
+                "Chapter 8."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The general principles regarding parties are found early in the Code (Chapter 2)."
+        }
+    }
+]

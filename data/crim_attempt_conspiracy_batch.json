@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The offence of Attempt is primarily criminalized to address:",
+            "options": [
+                "The abandonment of a criminal enterprise.",
+                "An evil state of mind.",
+                "Conduct that manifests an intention to commit a crime.",
+                "The legal impossibility of committing the complete crime."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Attempt targets steps taken toward a crime, even if the result remains unfulfilled."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "For a defendant to be guilty of an attempt to commit a crime, the prosecution must establish:",
+            "options": [
+                "The consequence of the completed offence.",
+                "An intentional act, regardless of the target crime.",
+                "Intent to commit the complete crime.",
+                "Recklessness as to the result."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The mens rea for attempt is the specific intent to complete the principal offence."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "According to R v Albert, what specific intent is required to convict for attempted murder?",
+            "options": [
+                "Intent to cause Grievous Bodily Harm (GBH).",
+                "Intent to cause GBH or death.",
+                "Intention to kill.",
+                "Recklessness as to whether death would occur."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Attempted murder requires a higher standard of intent (to kill) than murder itself (which can be GBH)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Why can a defendant NOT be guilty of attempting to commit a crime which can only be committed recklessly or negligently?",
+            "options": [
+                "Attempt requires a voluntary act.",
+                "Attempt requires a specific intent.",
+                "Recklessness and negligence are irrelevant to criminal law.",
+                "The actus reus for those crimes is incomplete."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Attempt by definition involves a conscious goal to achieve a result, which is incompatible with recklessness."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Which element of the actus reus of attempt requires that the defendant has not fulfilled his intention to such an extent as to commit the offence?",
+            "options": [
+                "Commencement of attempt.",
+                "Manifestation of intention by some overt act.",
+                "Distinction between preparation and attempt.",
+                "Abandonment of the enterprise."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The 'commencement' stage marks where the action has moved beyond mere preparation but isn't yet complete."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The fundamental problem in the actus reus of attempt is to determine the distinction between an attempt and:",
+            "options": [
+                "A completed offence.",
+                "Legal impossibility.",
+                "Preparation to commit an offence.",
+                "Mens rea."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Courts must decide where innocent preparation ends and criminal attempt begins."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The Proximity Test for attempt, formulated in R v Eagleton, states that acts that are indictable are those:",
+            "options": [
+                "Remotely leading towards the commission of an offence.",
+                "Immediately connected with the commission of an offence.",
+                "That only indicate a definite crime beyond reasonable doubt.",
+                "That are voluntarily abandoned."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Proximity requires the act to be the 'last act' or very close to the final crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The objection raised against the Proximity Test is that:",
+            "options": [
+                "It requires proof of an evil state of mind.",
+                "It is vague as there is no indication when acts pass from remote to immediate.",
+                "It is too favorable to the prosecution.",
+                "It does not consider the defendant's intention."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Proximity is often criticized for being subjective and inconsistent in application."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Which test for attempt is also known as the cinematographic or equivocality test, and requires the acts to 'indicate only' that the defendant intended to commit a certain definite crime?",
+            "options": [
+                "The Proximity Test.",
+                "The Turner's Test.",
+                "The But For Test.",
+                "The Actus Reus Test."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Turner test (equivocality) suggests an attempt is only proven if the act itself speaks to the criminal intent."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Okonkwo and Naish submitted that the draftsman of Section 4 of the Criminal Code (on attempt) probably had which theory in mind?",
+            "options": [
+                "The Proximity theory.",
+                "The Substantial Step theory.",
+                "The Equivocality theory.",
+                "The Legal Impossibility theory."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nigerian scholars suggest the statutory definition aligns closely with the equivocality test."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Physical impossibility in the law of attempt means:",
+            "options": [
+                "The defendant believes the act is illegal, but it is not.",
+                "It is physically impossible for the defendant to commit the complete crime whatever means he adopts.",
+                "The defendant voluntarily abandons the crime.",
+                "The defendant is inept, inefficient, or adopted insufficient means."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Example: Shooting at a person who isn't there."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of attempt under Nigerian law, where there is a physical impossibility to commit the complete crime:",
+            "options": [
+                "There is no attempt.",
+                "The charge is reduced to a simple offence.",
+                "There is an attempt.",
+                "The mens rea requirement is waived."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 4 of the Criminal Code explicitly states physical impossibility does not prevent a conviction for attempt."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of attempt under Nigerian law, where there is a legal impossibility to commit the complete crime:",
+            "options": [
+                "There is an attempt.",
+                "The act is deemed non-voluntary.",
+                "There is no attempt.",
+                "The actus reus is considered complete."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the intended act is not actually a crime in law, attempting it is not criminal."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Haughton v Smith (pre-1981 English law) established the rule that:",
+            "options": [
+                "Abandonment is a complete defence.",
+                "There is no offence of attempt where it is legally impossible to commit the offence.",
+                "The Proximity Test must be strictly applied.",
+                "Attempted crimes are crimes of strict liability."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Haughton v. Smith confirmed the common law principle regarding legal impossibility."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "If a defendant has reached the stage of an attempt, what is the effect of the defendant voluntarily abandoning his criminal enterprise?",
+            "options": [
+                "It serves as a complete defence.",
+                "It is irrelevant to liability, but may be relevant to sentencing.",
+                "It means the actus reus was never completed.",
+                "It means the mens rea was withdrawn."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Once the threshold for an attempt is crossed, abandonment is not a legal defence to the attempt itself."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R v Shivpuri applied the English Criminal Attempts Act 1981 to convict a defendant of attempt where the defendant believed he was dealing with prohibited drugs, but the substance:",
+            "options": [
+                "Was legally impossible to obtain.",
+                "Was not in fact a prohibited drug.",
+                "Was physically impossible to import.",
+                "Was only a simple offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Shivpuri overruled Haughton v Smith in England, holding that believing the act is a crime is sufficient."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 4 of the Criminal Code requires an offender, for attempt, to have begun to put his intention into execution by means adapted to its fulfillment, and:",
+            "options": [
+                "Must have fulfilled his intention to commit the offence.",
+                "Must manifest his intention by some overt act.",
+                "Must only possess the necessary tools.",
+                "Must only show motive."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The statute requires an overt act as proof of the attempt."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The immaterialities under the second paragraph of Section 4 of the Criminal Code deal with factors that do not prevent a conviction for attempt, including:",
+            "options": [
+                "Abandonment and legal impossibility.",
+                "Physical impossibility and legal impossibility.",
+                "Physical impossibility and incompletion independent of the perpetrator’s will.",
+                "Motive and foresight."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the attempt is thwarted or fails physically, the defendant is still liable."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of the elements of an offence, attempted crimes (like rape or murder) require:",
+            "options": [
+                "The causing of direct harm.",
+                "Some conduct to manifest the evil state of mind.",
+                "A lesser mens rea than the completed crime.",
+                "Only an evil state of mind."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Conduct is always required for criminal responsibility."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Conspiracy to murder (Section 324 CC) is listed as an offence punishable by imprisonment for:",
+            "options": [
+                "Life imprisonment.",
+                "7 years.",
+                "14 years.",
+                "2 years."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Conspiracy to commit murder is a major felony."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Preparation to commit offences, which includes conspiracy and attempts, is classified under which part of the Criminal Code?",
+            "options": [
+                "PART 6: Offences relating to property.",
+                "PART 7: Miscellaneous offences.",
+                "PART 8: Preparation to commit offences.",
+                "PART 2: Offences against public order."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Inchoate offences are grouped in Part 8 of the Code."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Haughton v Smith (1975), the court held that there is a distinction between:",
+            "options": [
+                "Actus reus and Mens rea.",
+                "The intention to commit a crime and an attempt to commit it.",
+                "Felony and Misdemeanour.",
+                "Preparation and legal impossibility."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Intention alone is not an attempt; an overt act bordering on completion is required."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is listed as an exception where preparation to commit an offence is explicitly addressed in the Criminal Code?",
+            "options": [
+                "Preparation for forgery.",
+                "Preparation for stealing.",
+                "Preparation for treason.",
+                "Preparation for assault."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Forging is one of the few areas where mere preparation of instruments can be criminal."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The definition of an Indictable offence is relevant to attempt because, as a felony, it informs:",
+            "options": [
+                "The mens rea required.",
+                "The procedures for arrest and bail.",
+                "The type of impossibility.",
+                "The voluntariness of the act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Seriousness of the attempt matches the principal offence for procedural purposes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "Which classification category is also referred to as 'preliminary offences'?",
+            "options": [
+                "Capital offences.",
+                "Descriptive offences.",
+                "Parties to an offence.",
+                "Preparation to commit offences."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Preliminary or inchoate offences include attempts and conspiracies."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The mens rea for attempt focuses on the defendant's:",
+            "options": [
+                "Motive.",
+                "Foresight and desire for the consequence of the complete crime.",
+                "Recklessness.",
+                "Negligence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Attempt requires the specific desire to achieve the criminal result."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R v Ring is an example that demonstrates that in cases of physical impossibility:",
+            "options": [
+                "There is no attempt.",
+                "There is an attempt.",
+                "The act is merely preparation.",
+                "The mens rea is negated."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "R v Ring involved attempting to pick an empty pocket."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The actus reus of attempt requires the offender to have taken steps towards the offence. The real problem lies in determining:",
+            "options": [
+                "The accused's motive.",
+                "The identity of the victim.",
+                "The specific stage at which the accused can be held liable for attempting.",
+                "The severity of the intended harm."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The 'threshold' of attempt is the most litigated part of the doctrine."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The Equivocality Test requires the steps taken by the accused to have reached the point when they indicate:",
+            "options": [
+                "A reasonable doubt as to the end to which they were directed.",
+                "Beyond reasonable doubt what was the end to which they were directed.",
+                "That the crime was physically impossible.",
+                "That the crime was legally impossible."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the act alone doesn't prove the intent, it's 'equivocal' and potentially not an attempt."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Attempt and Conspiracy",
+        "type": "objective",
+        "question_data": {
+            "text": "The maximum imprisonment for Written threats to murder (Section 323) is:",
+            "options": [
+                "Life imprisonment.",
+                "14 years.",
+                "7 years.",
+                "2 years."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 323 of the CC sets 7 years for this felony."
+        }
+    }
+]

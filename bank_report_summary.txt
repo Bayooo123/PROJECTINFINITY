@@ -1,0 +1,11 @@
+{
+  "Equity and Trusts": 120,
+  "Land Law": 160,
+  "Law of Contract": 50,
+  "Constitutional Law": 100,
+  "Nigerian Legal System": 100,
+  "Criminal Law": 330,
+  "Commercial transactions": 100,
+  "Law of Torts": 120,
+  "Intellectual Property Law": 60
+}

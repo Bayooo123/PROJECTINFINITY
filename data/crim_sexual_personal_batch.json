@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In the offence of Rape, the physical element (actus reus) that the prosecution must prove is:",
+            "options": [
+                "The intention to have sexual intercourse.",
+                "Unlawful carnal knowledge by penetration.",
+                "The lady's prior lack of chastity.",
+                "The foresight that the lady would be harmed."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Rape requires proof of penetration as the core physical act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "For Rape, the mental element (mens rea) that the prosecution must prove is the man's:",
+            "options": [
+                "Recklessness as to the consequence.",
+                "Intention to have sexual intercourse without the lady's consent.",
+                "Intention to have carnal knowledge.",
+                "General motive to commit an unlawful act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The mens rea for rape is the intent to have intercourse specifically without consent."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Sexual intercourse is only Rape if performed without the consent of the victim. This requirement is an aspect of the actus reus found in:",
+            "options": [
+                "A state of affairs.",
+                "Prohibited result or consequences.",
+                "Relevant circumstances attached to the prohibited conduct.",
+                "The voluntary nature of the act."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Lack of consent is a 'circumstance' that makes the conduct criminal."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the classification of offences, Rape (Section 357) is found under which Part of the Criminal Code?",
+            "options": [
+                "PART 3: Offence against the administration of law.",
+                "PART 5: Offences against the person.",
+                "PART 4: Acts injurious to the public.",
+                "PART 8: Preliminary offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Rape is a violent offence against the autonomy of a person."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The general principle that the fact that a lady was dressing proactively or is a prostitute is no defence to Rape is an application of the rule that:",
+            "options": [
+                "The victim's contribution to the harm is always a defence.",
+                "The defendant's act need not be the sole cause of the harm.",
+                "The mens rea requirement is waived in sexual offences.",
+                "The actus reus must be an omission."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Victim behavior does not negate the defendant's responsibility for the non-consensual act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The punishment for Rape (Section 358) is:",
+            "options": [
+                "Imprisonment for life with or without caning.",
+                "Imprisonment for 14 years.",
+                "Imprisonment for 7 years.",
+                "Death."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Rape carries a maximum of life imprisonment in Nigeria."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of criminal responsibility, Unnatural offences (Having carnal knowledge against the order of nature, Section 214 CC) are classified under:",
+            "options": [
+                "PART 5: Offences against the person.",
+                "PART 4: Acts injurious to the public.",
+                "PART 6: Offences relating to property.",
+                "PART 2: Offences against public order."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Historically, unnatural offences were grouped under acts injurious to public morality."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Defilement (as an offence against the person) would most likely require, as part of its actus reus, an element of:",
+            "options": [
+                "Lack of consent.",
+                "A prohibited result (e.g., physical injury).",
+                "An omission.",
+                "A state of affairs."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Defilement, like other sexual assaults, hinges on the absence of legal consent."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "If the prosecution fails to prove the specific mens rea of intention to have sexual intercourse without consent in a Rape charge, what happens to the charge?",
+            "options": [
+                "It must fail.",
+                "It is automatically reduced to an indecent assault.",
+                "The defendant is still liable based on the actus reus.",
+                "The court can infer mens rea from the motive."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Without proof of lack of consent and the intent for it, the specific charge of rape cannot stand."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Abduction (Section 364 CC) is listed in the same Part of the Criminal Code as:",
+            "options": [
+                "Treason and Sedition.",
+                "Official Corruption and Perjury.",
+                "Murder and Rape.",
+                "Stealing and Robbery."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Abduction, Murder, and Rape are all grouped in Part 5 (Offences against the person)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The law governs conduct, not purity of intention. This principle applies to Sexual Offences by requiring the intention (e.g., for Rape) to have:",
+            "options": [
+                "Manifested itself in some conduct.",
+                "Only been entertained mentally.",
+                "Been reasonable.",
+                "Been a mistake of fact."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Criminal guilt requires both a mental state and a corresponding outward act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Procurement (Section 223), which includes procuring a girl under 18 for unlawful carnal connection, is guilty of a:",
+            "options": [
+                "Felony and liable to life imprisonment.",
+                "Simple offence, liable to one month imprisonment.",
+                "Misdemeanor and liable to 2 years imprisonment.",
+                "Capital offence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Procurement for immoral purposes is typically a misdemeanor in the Code."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "A crime of Indecent Assault (an offence against the person) would require, like other serious crimes, proof of some blameworthy state of mind, which is referred to as:",
+            "options": [
+                "Actus Reus.",
+                "Mens Rea.",
+                "Motive.",
+                "Act of Omission."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mens rea is the general term for the mental element of a crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle of concurrence is crucial for Sexual Offences because it requires the actus reus (e.g., penetration in Rape) and mens rea (e.g., lack of consent) to be:",
+            "options": [
+                "Foresightful.",
+                "Voluntary.",
+                "Simultaneous in point of time.",
+                "Legally impossible."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The intent and the act must overlap; planning later or having intent without an act is insufficient."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "If a man has carnal knowledge of a woman, but his act is held not to be Rape because he was genuinely under an honest and reasonable Mistake of Fact as to her consent, the mistake relates to:",
+            "options": [
+                "The legal consequence of his act.",
+                "The existence of a state of things (consent/lack of consent).",
+                "The law itself.",
+                "The gravity of the offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mistake of fact applies to external circumstances like consent."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Which element of the actus reus for Rape would be incomplete if there was no proof of penetration?",
+            "options": [
+                "The conduct.",
+                "The state of affairs.",
+                "The prohibited result or consequence.",
+                "The circumstance."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Penetration is the specific prohibited result required for the full offence."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The concept of Recklessness (taking unjustified risks with knowledge or indifference) may be a form of mens rea relevant to Indecent Assault, but it does not necessarily mean the accused:",
+            "options": [
+                "Desired the result.",
+                "Acted voluntarily.",
+                "Had an evil state of mind.",
+                "Acted negligently."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Recklessness is distinct from intention/desire."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The element of Knowledge (mens rea) is required in many crimes. In a Sexual Offence, this could relate to the accused having knowledge of:",
+            "options": [
+                "The victim's name.",
+                "The age of the victim (e.g., Defilement).",
+                "The victim's motive.",
+                "The legal punishment."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In offences against minors, knowledge (or lack of honest belief) about age is critical."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The actus reus of a Sexual Offence is not solely a question of conduct by the accused, it may also include:",
+            "options": [
+                "A state of affairs.",
+                "Consequences caused by the act.",
+                "Circumstances in which the defendant acts.",
+                "All of the above."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Actus reus is a composite of conduct, circumstances, and sometimes results."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The voluntariness requirement for actus reus applies to Sexual Offences such that the defendant can only be guilty if she was:",
+            "options": [
+                "Capable of controlling her behavior when she acted.",
+                "Motivated by a desire.",
+                "Under a legal duty.",
+                "Acting with gross negligence."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Physical control (voluntariness) is a prerequisite for any criminal act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian courts adopted the Latin terms actus reus and mens rea, which are:",
+            "options": [
+                "Provided for in the Criminal Code.",
+                "Principles coined by common law jurists.",
+                "Provided for in the Penal Code.",
+                "Only relevant to simple offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These terms are common law conventions used to interpret the Code's provisions."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Sodomy (Unnatural Offences) is listed under a category of offences that affect the society at large, known as:",
+            "options": [
+                "Offences against the person.",
+                "Acts injurious to the public.",
+                "Offences against public order.",
+                "Preliminary offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It falls under Part 4 (Acts injurious to the public) in the traditional CC structure."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "If a man attempts Rape, even though no direct harm has been caused, which element is still required?",
+            "options": [
+                "Proof of a broken chain of causation.",
+                "Proof of legal impossibility.",
+                "Some conduct.",
+                "A strict liability element."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Even an attempt requires an overt act (conduct) towards the crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "When the prosecution brings a charge containing a Sexual Offence, they must generally prove:",
+            "options": [
+                "The accused's motive.",
+                "All the elements of the offence charged as defined by law.",
+                "Only the physical element.",
+                "Only the mental element."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The burden of proof covers every statutory element of the crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The Latin word actus connotes a deed or an omission, which is the physical result of:",
+            "options": [
+                "An accident.",
+                "Human conduct.",
+                "A natural event.",
+                "Legal impossibility."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Actus focuses on the measurable physical activity of a human being."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The mens rea requirement for Sexual Offences is part of the law's assessment of whether the defendant deserves criminal blame, which can be justified on the grounds of:",
+            "options": [
+                "Deterrence, by punishing people who deliberately break the law.",
+                "Moral purity.",
+                "Strict liability.",
+                "Jurisdiction."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Blame serves social ends like deterrence and retribution."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The concept of a duty to act applies to Sexual Offences only if the offence is based on:",
+            "options": [
+                "An omission (e.g., failure to protect a person under one's charge).",
+                "An attempt.",
+                "A mistake of fact.",
+                "An accident."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Duty to act is only relevant when the crime is defined by not doing something."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Kidnapping (Section 364), which can lead to a death sentence in some States, is classified as a:",
+            "options": [
+                "Misdemeanour.",
+                "Simple offence.",
+                "Felony.",
+                "Preliminary offence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Kidnapping is a serious felony punishable by heavy terms or death."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The Criminal Law of Lagos State is mentioned to have removed the requirement that a Mistake of Fact (relevant to consent in Rape) must be:",
+            "options": [
+                "Honest.",
+                "Based on the existence of a state of things.",
+                "Honest and reasonable.",
+                "Unlawful."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Modern reforms often shift from 'honest and reasonable' to just 'honest' or eliminate the reasonableness test."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "For a severe Sexual Offence to be charged, the act must have been voluntary, meaning the defendant was:",
+            "options": [
+                "Capable of controlling her behavior.",
+                "Fully aware of the legal consequences.",
+                "Not under any legal duty.",
+                "Driven by a strong motive."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Voluntariness is the physical capacity to control one's actions."
+        }
+    }
+]

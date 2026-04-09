@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In the offence of Murder, the physical element (actus reus) that must be proved includes the result that:",
+            "options": [
+                "The accused had the intention to kill.",
+                "The victim's death must result from the defendant's acts.",
+                "The killing was carried out in self-defence.",
+                "The act was willed or voluntary."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Murder is a result crime requiring proof that the defendant's act caused the victim's death."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "For Attempted Murder, the required mens rea (as established in R v Albert and cited in the context) is:",
+            "options": [
+                "Intent to cause grievous bodily harm (GBH).",
+                "Intent to kill.",
+                "Recklessness as to whether death would occur.",
+                "A general intention to assault."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Attempted murder requires a specific intent to kill, not just to cause GBH."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the principle of concurrence, if Mr. A intends to kill Mrs. B but later accidentally shoots her, believing it to be a lion, what is lacking?",
+            "options": [
+                "The actus reus of murder.",
+                "The mens rea of murder.",
+                "The simultaneous presence of actus reus and mens rea.",
+                "The voluntary nature of the act."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Concurrence requires the guilty mind and the prohibited act to coincide at the moment of the crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The conviction of the appellant in Benedict Obumselu v COP (1958) for neglecting to prevent a felony arose from his knowledge and omission regarding:",
+            "options": [
+                "An attempted suicide.",
+                "The murder of his wife.",
+                "Procuring an abortion for his girlfriend.",
+                "A case of false imprisonment."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Obumselu failed to prevent an illegal abortion he knew was being planned."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The degree of negligence required for a conviction of Manslaughter in Nigerian courts is:",
+            "options": [
+                "Simple negligence.",
+                "Foreseeable negligence.",
+                "Gross or a very high degree of negligence.",
+                "Recklessness only."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Criminal negligence in manslaughter must be 'gross' to warrant criminal liability."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Attempted Suicide is an example of an attempted crime that requires:",
+            "options": [
+                "Only an evil state of mind.",
+                "A clear motive.",
+                "Some conduct to manifest the intention.",
+                "Legal impossibility."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Attmpted suicide involves an overt act towards the commission of self-killing."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of causation for Murder or Manslaughter, the defendant's act needs to be more than a minimal cause, meaning it must be:",
+            "options": [
+                "The sole cause.",
+                "A substantial and operating cause.",
+                "The last cause in the sequence of events.",
+                "The main cause."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Legal causation requires the act to be substantial and still operating at the time of harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Accident in a charge of Assault (as per R V MARTYR) may avail the defendant even if the voluntary act of hitting occurred, provided the resulting harm was:",
+            "options": [
+                "Minor.",
+                "A legal impossibility.",
+                "An unforeseen or not reasonably contemplated consequence.",
+                "Committed in a public place."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Accident applies if the result was not a foreseeable consequence of the act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The maximum punishment for Written threats to murder (Section 323 CC) is:",
+            "options": [
+                "Life imprisonment.",
+                "Imprisonment for 7 years.",
+                "Imprisonment for 14 years.",
+                "Death."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 323 of the Criminal Code prescribes 7 years for this offence."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "If a man is working with a machete and accidentally strikes a co-worker while reacting to a bee sting, the defence available for the resulting injury would be:",
+            "options": [
+                "Automatism.",
+                "Mistake of Fact.",
+                "Accident.",
+                "Self-Defence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The injury was an accidental result of a non-criminal act or a lapse in control."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of ADELUMOLA V STATE demonstrates that the defence of Accident did not avail the appellant who threw a lit stove that resulted in the deceased's death because:",
+            "options": [
+                "The act was an omission.",
+                "Throwing fire with fuel is not an unlawful act.",
+                "The consequence (explosion) was reasonably foreseeable and expected.",
+                "The appellant intended to cause GBH."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Explosion is a likely result of throwing a lit stove; thus not an accident."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is required for the mens rea of murder to be inferred from the surrounding circumstances, such as the severity of an Assault?",
+            "options": [
+                "The defendant's expressed motive.",
+                "The legal classification of the crime.",
+                "The part of the body the accused shot the victim.",
+                "The victim's contribution to the harm."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The target and severity of the attack (e.g., shooting a vital organ) indicate intent to kill."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The use of a machete to beat the deceased was sufficient for the Supreme Court in Fred Gira v The State to infer Intention to kill or inflict grievous bodily harm because:",
+            "options": [
+                "A machete is an ordinary stick.",
+                "It is foreseeable that a machete is a lethal weapon that may cause grievous harm.",
+                "The act was a matter of strict liability.",
+                "The actus reus was an omission."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Using a lethal weapon naturally leads to an inference of intent to cause serious harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The voluntary nature of the actus reus means that an accused is not criminally liable for injuring somebody after jumping when startled, because the act was:",
+            "options": [
+                "A reflex action.",
+                "A simple offence.",
+                "The consequence of an unlawful act.",
+                "Committed with a clear motive."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Reflex actions are involuntary and do not attract criminal liability."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R V Gibbons & Proctor is an example of criminal liability for the Murder of a child, based on an omission arising from:",
+            "options": [
+                "Failure to perform duty under a contract.",
+                "Failure to perform duty under a special relationship.",
+                "Failure to avert danger created by one's fault.",
+                "Failure to perform a statutory obligation."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Parents have a special legal relationship with their children creating a duty to care."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In R V GOULD, the mistake made by the defendants who passed a mixture of glycerin and Dettol to induce an Abortion was as to:",
+            "options": [
+                "The existence of the state of things (witchcraft).",
+                "The legal classification of the offence.",
+                "The consequence of their acts.",
+                "The voluntariness of their acts."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "They were mistaken about whether the substance would cause harm (consequence)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Murder is classified under which Part of the Criminal Code based on the object of the offence?",
+            "options": [
+                "PART 3: Offence against the administration of law.",
+                "PART 5: Offences against the person.",
+                "PART 6: Offences relating to property.",
+                "PART 2: Offences against public order."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Murder is a direct violation of personhood."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Automatism requires that the act is done:",
+            "options": [
+                "Voluntarily.",
+                "With an intent to kill.",
+                "Independently of the exercise of the defendant’s will.",
+                "With gross negligence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Automatism is the denial of voluntary control over muscular movements."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the likely charge for a person who poisoned Mr. B's drink, but Mr. B died of a heart attack before drinking it?",
+            "options": [
+                "Guilty of murder.",
+                "Guilty of manslaughter.",
+                "Guilty of attempted murder.",
+                "Not guilty of any crime due to a break in causation."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The attempt was made with intent to kill, even if the death was not caused by the poison."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The maximum punishment for Murder (Section 319 CC) is:",
+            "options": [
+                "Life imprisonment.",
+                "Imprisonment for 14 years.",
+                "Death.",
+                "Imprisonment for 7 years."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Murder is a capital offence in Nigeria."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R V Quick and Paddison is an example of a successful automatism defence because the hypoglycemia was caused by insulin, an:",
+            "options": [
+                "Internal factor (insane automatism).",
+                "External factor (non-insane automatism).",
+                "Unlawful act.",
+                "Unforeseen consequence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Insulin is considered an external trigger for the involuntary state."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "If the prosecution cannot prove all the elements of an offence charged (e.g., Murder), the charge against the accused will:",
+            "options": [
+                "Be reduced to a simple offence.",
+                "Fail.",
+                "Be automatically converted to a lesser charge like manslaughter.",
+                "Result in a conviction based on motive."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Each element of a crime must be proven beyond reasonable doubt."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the Criminal Code (S. 320), Attempt to murder is classified as a:",
+            "options": [
+                "Misdemeanour, liable to 7 years imprisonment.",
+                "Felony, liable to life imprisonment.",
+                "Simple offence, liable to 2 years imprisonment.",
+                "Capital offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 320 CC classifies attempted murder as a major felony."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Amayo v State held that the dropping of a rifle that resulted in a shooting was an intentional act, making only the defence of Accident available, not:",
+            "options": [
+                "Mistake of Fact.",
+                "Automatism.",
+                "Self-defence.",
+                "Voluntariness."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The court focused on the voluntary handling of the weapon leading to an accidental discharge."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Accident is defined by an event that is unforeseen or that had a consequence that was:",
+            "options": [
+                "Willed.",
+                "Legally blameworthy.",
+                "Not reasonably contemplated.",
+                "Done with a criminal intention."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Accident requires the result to be outside reasonable foresight."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In R V KEMP, the defendant assaulted his wife with a hammer due to arteriosclerosis. The verdict was not liable by reason of:",
+            "options": [
+                "Non-insane automatism.",
+                "Insane automatism.",
+                "Accident.",
+                "Mistake of fact."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Arteriosclerosis is an internal condition, thus falling under insane automatism."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The concept of Recklessness (e.g., as applied to an Assault or an act leading to Manslaughter) implies:",
+            "options": [
+                "Desire for the result.",
+                "Foresight and control over the act.",
+                "An indifference and a total disregard for human life.",
+                "A clear motive for the harm."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Recklessness involves conscious risk-taking with indifference to outcomes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In Manslaughter cases involving omissions, criminal liability arises if the person failed to perform a duty under a special relationship, such as:",
+            "options": [
+                "A friend to a friend.",
+                "A head of family to a child under 14 years.",
+                "A blind man to a sighted man.",
+                "A civilian to a police officer."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Guardianship roles create legal duties to act to prevent harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The actus reus of a crime may require a state of affairs, as in the example of having an offensive weapon in a public place. This is an exception to the requirement for:",
+            "options": [
+                "A direct act or omission of the defendant.",
+                "A clear mens rea.",
+                "Proof of a prohibited result.",
+                "The voluntary nature of the act."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Situation-based offences (state of affairs) don't always require an 'event' or active conduct."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Sexual Personal Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Abortion where the defendants incorrectly believed their method was safe (R V GOULD), their act was not protected by a mistake of fact because the mistake was not about:",
+            "options": [
+                "The consequence of their acts.",
+                "The existence of the state of things.",
+                "The legal classification of the offence.",
+                "The voluntariness of their acts."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mistake of fact in Section 25 CC must relate to the existence of a state of things."
+        }
+    }
+]

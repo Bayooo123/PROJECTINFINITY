@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Kodilinye, a tort is broadly defined as a civil wrong involving a breach of a duty fixed by law, and its breach is redressible primarily by an action for:",
+            "options": [
+                "Imprisonment",
+                "Specific Performance",
+                "Liquidated Damages",
+                "Unliquidated Damages"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Tort is redressible by an action for unliquidated (not predetermined) damages."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT listed as a primary objective of the law of tort in the document?",
+            "options": [
+                "Compensation",
+                "Protection of Interests",
+                "Loss Creation",
+                "Deterrence"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Law of tort aims at loss distribution or compensation, not creation."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in Smith v. Selwyn originally required that where a civil wrong is also a crime, the prosecution of the criminal aspect must be initiated or excused before:",
+            "options": [
+                "The tortfeasor can be arrested.",
+                "A civil action filed by the plaintiff can be heard.",
+                "The police can investigate the matter.",
+                "The plaintiff can report the incident."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The rule delayed civil suits until the felony was prosecuted."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Veritas Insurance Co. Ltd. V. Citi Trust Investments Ltd. is cited in the document to illustrate:",
+            "options": [
+                "The elements required to prove the tort of negligence.",
+                "The application of the rule in Rylands v. Fletcher.",
+                "The abolition of the rule in Smith v. Selwyn in Nigeria.",
+                "The distinction between contract and tort."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Veritas confirms the abolition of Smith v. Selwyn rule in the Nigerian context."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "How is the burden of proof generally distinguished between a criminal trial and an action in tort?",
+            "options": [
+                "Criminal prosecution must prove its case by a preponderance of the evidence, while a tort plaintiff must prove beyond reasonable doubt.",
+                "Criminal prosecution must prove its case beyond reasonable doubt, while a tort plaintiff need only prove upon a balance of probabilities.",
+                "Both require proof beyond a reasonable doubt in all cases.",
+                "Both require proof upon a balance of probabilities in all cases."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Criminal standard is 'beyond reasonable doubt' while civil/tort is 'preponderance of evidence' (balance of probabilities)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The Latin maxim Damnum Sine Injuria refers to:",
+            "options": [
+                "Legal wrong without damage.",
+                "Damage with legal injury.",
+                "Damage without a legal injury.",
+                "Nominal damages being awarded."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Damnum (damage) sine (without) injuria (legal injury)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "In tort law, a claim for damages in contract aims to put the claimant in the position they would have been in had the contract been performed, whereas a claim for damages in tort aims to put the claimant in the position they would have been in:",
+            "options": [
+                "Had the contract not been broken.",
+                "Had the tort not been committed.",
+                "If specific performance was granted.",
+                "If the tortfeasor was punished."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Tort remedies focus on restoring the status quo ante."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "Which legal scholar defined tort as: “A civil wrong for which the remedy is a common law action for unliquidated damages, and which is not exclusively the breach of contract or the breach of trust or other merely equitable obligation.”?",
+            "options": [
+                "Kodilinye",
+                "Prof. Sir John W. Salmond",
+                "Winfield",
+                "C.F. Padfield"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This is Salmond's classic definition of tort."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of tort law, what is the 'tortfeasor'?",
+            "options": [
+                "The injured party.",
+                "The person who commits the wrong.",
+                "The court official who awards damages.",
+                "The lawyer representing the plaintiff."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A tortfeasor is a wrongdoer in civil law."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "What is identified as the commonest/normal remedy for a tort?",
+            "options": [
+                "Specific performance",
+                "Monetary damages or compensation",
+                "Imprisonment",
+                "Declaratory judgment"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Damages are the primary remedy in tort actions."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The objective of 'Vindication' in the law of tort provides the means whereby a person can be declared publicly to be 'in the right' by a court. The document notes that this opportunity often does not arise because:",
+            "options": [
+                "The court process is too slow.",
+                "The defendant is usually in contempt of court.",
+                "Most cases are settled out of court.",
+                "Tort is mainly based on case law."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Settlements prevent formal court declarations of right/wrong."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The objective of 'Deterrence' in the law of tort is reflected in the greater awareness of the need for risk management, which is encouraged by:",
+            "options": [
+                "The police.",
+                "The legislature.",
+                "Insurance companies.",
+                "Academic secretariats."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Insurance premiums and requirements incentivize safer behavior."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "Which concept is central to the distinction between the duties in Tort and in Contract?",
+            "options": [
+                "In tort, duties are fixed by the parties; in contract, they are fixed by law.",
+                "In tort, duties are fixed by law; in contract, they are fixed by the parties themselves.",
+                "Both tort and contract duties are fixed exclusively by judicial precedent.",
+                "Both tort and contract duties are fixed exclusively by statute."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Contract duties are consensual (party-defined), tort duties are imposed by law."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The fundamental difference in the legal history of Tort and Breach of Trust is:",
+            "options": [
+                "Tort arose from Roman law; Trust arose from Greek law.",
+                "Tort arose from the doctrine of equity; Trust arose from common law.",
+                "Tort arose from common law; Trust grew from the doctrine of equity in the Court of Chancery.",
+                "Both Tort and Trust are purely equitable creations."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Tort is a common law product while trust is the creature of equity."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the key difference mentioned regarding the nature of the claim for damages in Tort versus the loss caused in Breach of Trust?",
+            "options": [
+                "Tort is liquidated; Breach of Trust is unliquidated.",
+                "Tort is a common law concept; Breach of Trust is a statutory concept.",
+                "Tort is unliquidated; Breach of Trust is liquidated and measured by the loss caused to the trust estate.",
+                "Both claims are always unliquidated."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Breach of trust damages are quantifiable by the actual loss to the estate (liquidated)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian Constitution's provisions, such as sections 6(6)(b), 17(2)(e), and 46(1) of the 1999 Constitution, are said to forbid the blocking of access to court, which is the basis for the abolition of:",
+            "options": [
+                "The doctrine of precedent.",
+                "The rule in Rylands v. Fletcher.",
+                "The rule in Smith v. Selwyn.",
+                "The law of defamation."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Smith v. Selwyn rule was seen as an unconstitutional barrier to justice."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the primary purpose of criminal law, as stated in the document?",
+            "options": [
+                "To give the individual plaintiff compensation for damage suffered.",
+                "To protect the interests of the public at large by punishing those guilty of crimes.",
+                "To enforce promises made between parties.",
+                "To liquidate damages in cases of breach of trust."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Criminal law is public and punitive; tort law is private and compensatory."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an example of an act that may be both a tort and a crime, according to the document?",
+            "options": [
+                "Breach of contract",
+                "Breach of trust",
+                "Assault",
+                "Business competition"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Assault is both a crime against the public and a trespass to person (tort)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the term for a loss or damage that does not have a legal remedy because no legal wrong has been committed?",
+            "options": [
+                "Injuria Sine Damno",
+                "Damnum Sine Injuria",
+                "Res Ipsa Loquitur",
+                "Volenti Non Fit Injuria"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Damnum (damage) without injuria (legal violation) is not actionable."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle of Injuria Sine Damno (legal wrong without damage) is an exception to the general rule that there must be damage or injury before legal action may be brought. Torts that operate under this principle are known as:",
+            "options": [
+                "Torts of strict liability",
+                "Actionable per se",
+                "Tortuous conversion",
+                "Liquidated wrongs"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Actionable 'per se' means the infringement itself satisfies the cause of action."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "In an action for a tort that is actionable per se, if the plaintiff does not prove any actual harm, the court will typically award:",
+            "options": [
+                "Substantial damages",
+                "Punitive damages",
+                "Exemplary damages",
+                "Nominal damages"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Nominal damages symbolize a legal victory where no tangible loss occurred."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "An act is intentional when it is done with full advertence to its consequences and:",
+            "options": [
+                "A lack of proper care.",
+                "A desire to produce them.",
+                "Indifference to the outcome.",
+                "The sole purpose of financial gain."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Intention in tort combines knowledge of consequences and the desire for them."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the well-known principle of law regarding a party’s intention, as cited in the document?",
+            "options": [
+                "A party is presumed to be negligent unless proven otherwise.",
+                "A party is only liable for intended consequences.",
+                "A party must be considered to intend that which is the necessary or natural consequence of that which he does.",
+                "Motive always determines liability."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The law presumes intent for natural consequences of voluntary acts."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "If a defendant is merely negligent, how is their mental state generally described in relation to the consequences of their act?",
+            "options": [
+                "They desired the consequences.",
+                "They were indifferent or careless as to the consequences.",
+                "They had a good motive for the act.",
+                "They acted with malice in the third sense."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Negligence is characterized by a failure to take care, not a desire for the harm."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "Torts in which the defendant is liable even without intention or negligence on their part are called:",
+            "options": [
+                "Torts of omission",
+                "Strict liability torts",
+                "Exemplary torts",
+                "Relational torts"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Strict liability occurs regardless of the state of mind or care taken."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the document, in which tort is the presence of malice (in the sense of spite or ill will) a factor to be taken into account in determining liability?",
+            "options": [
+                "Battery",
+                "Trespass to Land",
+                "Nuisance",
+                "False Imprisonment"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Malice can turn a reasonable act into an unreasonable nuisance."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "What generally makes a defendant's bad motive irrelevant to their liability in tort?",
+            "options": [
+                "If the defendant's act is lawful.",
+                "If the defendant's act is a crime.",
+                "If the tort is actionable per se.",
+                "If the plaintiff suffered no damage."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "If an act is lawful, the reason for doing it (motive) usually doesn't matter."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "Which tort aims to protect persons against criminal prosecution without lawful excuse?",
+            "options": [
+                "False Imprisonment",
+                "Defamation",
+                "Malicious Prosecution",
+                "Trespass to Chattel"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Malicious prosecution targets the wrongful initiation of criminal proceedings."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "Which group of torts is concerned with protecting the right of a person to be free from financial or economic harm?",
+            "options": [
+                "Torts Protecting Personal Interests",
+                "Torts Protecting Property Interests",
+                "Torts Protecting Economic Interests",
+                "Torts Protecting Miscellaneous Interests"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Economic torts protect against purely financial losses."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Nature and Functions",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian case of Nwankwa v. Ajaegbu established an exception to the rule in Smith v. Selwyn by holding that the right to sue in tort is not affected when the police decide not to:",
+            "options": [
+                "Compensate the plaintiff.",
+                "Press criminal charges after a report.",
+                "Hear the civil suit.",
+                "Provide an excuse for the lack of prosecution."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Police inaction (e.g., refusing to charge) allows the civil suit to proceed despite the old rule."
+        }
+    }
+]

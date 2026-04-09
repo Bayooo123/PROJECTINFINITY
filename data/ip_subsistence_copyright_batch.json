@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "For literary, musical, or artistic works to be eligible for copyright in Nigeria, which two core threshold standards must be met (in addition to being an eligible subject matter)?",
+            "options": [
+                "Novelty and Registration",
+                "Originality and Fixation",
+                "Commercial Viability and Publication",
+                "Moral Integrity and Exclusive Right"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Originality and fixation are the fundamental requirements for copyright to subsist."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Section 1(2)(a) of the Copyright Act, a work is eligible for copyright only if sufficient effort has been expended on making the work to give it a/an:",
+            "options": [
+                "Novel character.",
+                "Original character.",
+                "Moral entitlement.",
+                "Economic value."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Original character is mandated by the Act."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The core principle of copyright concerning the subject matter is that it protects the:",
+            "options": [
+                "Idea behind the work.",
+                "Creative genius of the author.",
+                "Manner in which the idea is represented or expressed.",
+                "Quality or content of the work."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The idea-expression dichotomy: ideas are free, expressions are protected."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'Objective School' or 'sweat of the brow' doctrine of originality requires showing that:",
+            "options": [
+                "The work is unique and novel compared to prior art.",
+                "The author exercised minimal creativity.",
+                "Sufficient skill and labour or industry was expended in making the work.",
+                "The work is a manifestation of the creator's personal development."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Sweat of the brow rewards effort regardless of artistic merit."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian judicial position on originality, as reflected in cases like Yemitan v Daily Times & Anor., is that copyright belongs to the author who expended the necessary:",
+            "options": [
+                "Creative spark.",
+                "Financial investment.",
+                "Work, labour, knowledge and skill.",
+                "Registration formalities."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nigerian law aligns with the 'skill and labour' standard."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "In the English case of Exxon Corp v. Exxon Insurance Consultant, the court held that copyright could not be ascribed to a single word because:",
+            "options": [
+                "It lacked sufficient fixation.",
+                "It conveyed no information and was simply an artificial combination of letters.",
+                "It was intended for industrial multiplication.",
+                "It was a government work."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Single words usually lack enough creative content to be 'literary works'."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "A literary, musical, or artistic work is subject to the fixation requirement, meaning it must be fixed in any definite medium of expression from which it can be perceived, reproduced, or otherwise communicated either directly or with the aid of:",
+            "options": [
+                "A public performance.",
+                "A written contract.",
+                "Any machine or device.",
+                "A professional studio."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Fixation ensures the work can be perceived or reproduced later."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The 'most fundamental' purpose served by the fixation requirement is the:",
+            "options": [
+                "Limitation of the originality standard.",
+                "Reduction of market failure.",
+                "Evidentiary purpose, by clarifying authorship and defining the bounds of the copyright grant.",
+                "Ensuring the work is of sustained presence of a permanent nature."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Fixation provides a stable record of what is actually protected."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Which category of eligible work, according to the provided text, is generally understood to be exempt from the requirement of fixation because it can be 'live and unfixed in form'?",
+            "options": [
+                "Sound Recording",
+                "Cinematograph Film",
+                "Broadcast",
+                "Artistic Work"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Broadcasts are protected even if not simultaneously recorded by the broadcaster."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "An artistic work is not eligible for copyright protection if, at the time it is made, the author intends it to be used as a model or pattern to be multiplied by any:",
+            "options": [
+                "Reproduction process.",
+                "Industrial process.",
+                "Publishing method.",
+                "Economic transaction."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Works intended for industrial multiplication fall under Industrial Designs."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Section 1 of the Copyright Act, which of the following is NOT listed as an eligible work for copyright protection?",
+            "options": [
+                "Literary works",
+                "Industrial designs",
+                "Sound recordings",
+                "Musical works"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Industrial designs are regulated separately from copyright."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The protection for Expressions of Folklore and Performers' Rights are categorized under the Copyright Act as:",
+            "options": [
+                "Moral Rights.",
+                "Related Rights or Neighbouring Rights.",
+                "Industrial Property.",
+                "Sui Generis Rights."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Related rights exist 'beside' copyright for certain beneficiaries."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The nature of copyright, as described in the course material, is primarily a/an _________ right, or more appropriately, an exclusionary right, which gives the owner the power to 'stop others from doing something.'",
+            "options": [
+                "Positive",
+                "Negative",
+                "Moral",
+                "Economic"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "IP rights are generally 'negative' rights to exclude others."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Which specific right is considered perpetual, inalienable, and imprescriptible, allowing an author to claim authorship and object to distortion, mutilation, or other derogatory action in relation to their work?",
+            "options": [
+                "Economic right",
+                "Right of Reproduction",
+                "Authors' paternal and attribution rights (Moral Right)",
+                "Right of Commercial Distribution"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Moral rights protect the author's personality and bond with the work."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Section 6 of the Copyright Act grants the copyright owner the exclusive right to control which of the following acts in respect of a substantial part or the whole of a work?",
+            "options": [
+                "The free dissemination of the idea.",
+                "The physical possession of the original manuscript.",
+                "Reproduction, publication, public performance, translation, broadcast, adaptation, etc.",
+                "The independent creation of a similar work."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Economic rights cover specific acts of exploitation."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "For literary, musical, and artistic works, the general duration of copyright under the Nigerian Copyright Act is the life of the author plus:",
+            "options": [
+                "25 years after the end of the year of death.",
+                "50 years after the end of the year of death.",
+                "70 years after the end of the year of death.",
+                "70 years from first publication."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The current Act provides for life plus 70 years for certain works."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "For works authored by the government or a corporate body, the duration of copyright is:",
+            "options": [
+                "The life of the author plus 70 years.",
+                "70 years after the end of the year in which the work was first published.",
+                "50 years from the time of creation.",
+                "Perpetual."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Corporate/government works use a fixed term from publication."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The duration of copyright for cinematograph films, photographs, and sound recordings is generally:",
+            "options": [
+                "50 years after the end of the year of first publication.",
+                "70 years after the end of the year of first publication.",
+                "The life of the author plus 70 years.",
+                "Perpetual until transfer of ownership."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Certain categories like recordings and films receive a 50-year term."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the term of protection for a performer's right under the Copyright Act?",
+            "options": [
+                "70 years from the end of the year of performance.",
+                "The life of the performer.",
+                "50 years from the end of the year in which the performance first took place.",
+                "The life of the performer plus 50 years."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Performer's rights typically last for 50 years from the performance."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Once the term of protection under the Copyright Act lapses, the work:",
+            "options": [
+                "Is mandatorily registered with the NCC.",
+                "Falls into the public domain and allows for free usage.",
+                "Must be renewed by the author's successors in title.",
+                "Is transferred to the government."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Public domain is the destination for works with expired copyright."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The Territoriality Principle in copyright protection means that copyright in Nigeria is protected only to the extent stipulated under:",
+            "options": [
+                "The Berne Convention.",
+                "The relevant international agreement.",
+                "The national law, such as the Copyright Act.",
+                "The law of the author's country of origin."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nigerian law determines the scope of protection within Nigeria."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "For an eligible work to be conferred with copyright under Section 2 of the Copyright Act, the author, or any of the joint authors, must be:",
+            "options": [
+                "A citizen of Nigeria, or domiciled in Nigeria, or a corporate entity incorporated under the laws of Nigeria.",
+                "A natural person.",
+                "A performing artist.",
+                "A person who has registered the work."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Connection via nationality or domicile is a primary qualifying factor."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following works, if the author is non-Nigerian, can be conferred with copyright simply because it was first published in Nigeria?",
+            "options": [
+                "Broadcasts (expressly excluded)",
+                "Literary, musical, artistic, and cinematograph works.",
+                "Sound recordings made outside Nigeria.",
+                "Expressions of Folklore."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "First publication in Nigeria is an alternative qualifying factor for most works."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "A work is generally deemed to have been published if:",
+            "options": [
+                "It has been registered with the Copyright Commission.",
+                "Copies of it have been made available in a manner sufficient to render the work assessable to the public.",
+                "The author has publicly declared its existence.",
+                "It has been fixed in a definite medium."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Publication requires making copies available to the public."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian Copyright Act extends protection to works originating from a foreign country that is party to an obligation in a treaty to which Nigeria is also a party, primarily to comply with the principle of:",
+            "options": [
+                "Territoriality.",
+                "Reciprocal extension / National treatment.",
+                "Unification.",
+                "Novelty."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Treaties ensure international cooperation and mutual protection."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following shall be conclusive proof that a foreign country is a party to an international agreement to which Nigeria is also a party, when a question of reciprocal protection arises?",
+            "options": [
+                "A copy of the international treaty.",
+                "A certificate from the Nigerian Copyright Commission (NCC) to that effect.",
+                "A declaration from the Minister of Justice.",
+                "A court order."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The NCC validates international membership for legal purposes."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Ownership of copyright in every eligible work made by or under the control of the government, a state authority, or a prescribed international body shall vest initially in:",
+            "options": [
+                "The author of the work.",
+                "The government, state authority, or international body.",
+                "The person who commissioned the work.",
+                "The Nigerian Copyright Commission."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Governmental control often results in initial ownership by the state."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian approach to ownership of copyright in works created in the course of employment or pursuant to a commission is that ownership:",
+            "options": [
+                "Automatically vests in the employer or commissioning party (Anglo-American approach).",
+                "Vests in the author, unless waived by a written stipulation in the contract.",
+                "Vests in the employer for economic rights and the author for moral rights.",
+                "Vests jointly in the author and the employer."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Nigeria generally favors authors unless a contract says otherwise."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "For a work to be deemed a 'work of joint authorship' under the Copyright Act, the contribution of each author must be:",
+            "options": [
+                "Separable and distinguishable.",
+                "Equal in degree of skill and labour.",
+                "Inseparable, indivisible, or indistinguishable from the contribution of the other author or authors.",
+                "Limited to ideas, facts, or direction."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Joint authorship requires integrated contributions."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Subsistence of Copyright",
+        "type": "objective",
+        "question_data": {
+            "text": "Which methods are recognized under the Copyright Act for the transfer of copyright ownership?",
+            "options": [
+                "Sale only.",
+                "Assignment, license (exclusive or non-exclusive), testamentary disposition, or by operation of law.",
+                "Registration of transfer only.",
+                "Public notice and oral agreement."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Copyright can be transferred in various legal ways."
+        }
+    }
+]

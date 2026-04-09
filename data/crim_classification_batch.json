@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In Nigeria, the only classification of offences that is of utmost importance, provided for in Section 3 of the Criminal Code, is:",
+            "options": [
+                "Indictable, Non-Indictable, and Capital offences.",
+                "Felony, Misdemeanour, and Simple offences.",
+                "Descriptive offences and Substantive offences.",
+                "Offences against Public Order, and Offences against the Person."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 3 of the Criminal Code explicitly classifies offences into Felonies, Misdemeanours, and Simple Offences."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "A Felony is defined in the Criminal Code as any offence which is declared by law to be a felony or is punishable without proof of previous conviction, with death or with imprisonment for:",
+            "options": [
+                "Less than 6 months.",
+                "Not less than 6 months but less than 3 years.",
+                "Three years or more.",
+                "More than 7 years."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Felonies are the most serious crimes, punishable by 3 years or more imprisonment, or death."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "A Misdemeanor is defined as any offence which is declared by law to be a misdemeanor or is punishable by imprisonment for:",
+            "options": [
+                "Less than 6 months.",
+                "Not less than 6 months but less than three years.",
+                "Three years or more.",
+                "Only a fine."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Misdemeanours are intermediate offences punishable by 6 months to less than 3 years imprisonment."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Simple offences are classified as:",
+            "options": [
+                "Any offence punishable by death.",
+                "All offences other than felonies and misdemeanours.",
+                "Offences punishable by only a fine.",
+                "Offences with a penalty of exactly three years imprisonment."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Simple offences are all crimes that do not fall under the categories of felony or misdemeanour."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The classification of offences into Indictable and Non-indictable is purely for:",
+            "options": [
+                "Substantive purposes.",
+                "Academic purposes.",
+                "Jurisdictional purposes.",
+                "Procedural purposes."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "This classification relates to how the trial is conducted (procedure)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the ACJA 2015, an Indictable offence is one where the term of imprisonment upon conviction exceeds:",
+            "options": [
+                "One year.",
+                "Two years.",
+                "Three years.",
+                "Four years."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Administration of Criminal Justice Act sets 2 years as the threshold for indictable offences."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "What is a Capital offence?",
+            "options": [
+                "An offence punishable by a term of imprisonment exceeding 7 years.",
+                "An offence punishable by death.",
+                "An offence committed against the state.",
+                "Any felony offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Capital offences are those that carry the death penalty."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is listed as a Capital offence in the document?",
+            "options": [
+                "Stealing.",
+                "Conspiracy to murder.",
+                "Treason.",
+                "Official corruption."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Treason is a capital offence in Nigeria."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the punishment for a suspect accused of committing an offence punishable with death, regarding the right to bail, according to Section 30 of the ACJA, 2015?",
+            "options": [
+                "The suspect has an absolute right to bail.",
+                "The suspect does not have a right to bail.",
+                "Bail is granted at the discretion of the police.",
+                "Bail is only denied if the suspect is an accessory after the fact."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Persons charged with capital offences generally do not have an automatic right to bail."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Classification based on the object of the offence (e.g., PART 5: offences against the person) is primarily important for:",
+            "options": [
+                "Determining the final punishment.",
+                "Determining the scope of criminal liability.",
+                "Ease of research of the law.",
+                "Determining the power of arrest."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "This structure helps in organizing the law for better accessibility and research."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Offences such as Treason and Sedition are classified under which Part of the Criminal Code, based on the object of the offence?",
+            "options": [
+                "PART 3: Offence against the administration of law and justice.",
+                "PART 4: Acts injurious to the public.",
+                "PART 2: Offences against public order.",
+                "PART 5: Offences against the person."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "These offences affect the stability and order of the state."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Official corruption and Perjury are examples of offences classified under:",
+            "options": [
+                "PART 2: Offences against public order.",
+                "PART 3: Offence against the administration of law and justice.",
+                "PART 4: Acts injurious to the public.",
+                "PART 7: Miscellaneous offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These offences interfere with the proper functioning of the legal system and government."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Offences like Disturbing religious worship and Unnatural offences (carnal knowledge against the order of nature) are examples of:",
+            "options": [
+                "PART 5: Offences against the person.",
+                "PART 6: Offences relating to property and contracts.",
+                "PART 4: Acts injurious to the public.",
+                "PART 8: Preparation to commit offences."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "These are categorized as acts harmful to the collective public morality or peace."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Murder, Rape, and Kidnapping are classified under:",
+            "options": [
+                "PART 4: Acts injurious to the public.",
+                "PART 5: Offences against the person.",
+                "PART 6: Offences relating to property and contracts.",
+                "PART 8: Preparation to commit offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "These crimes involve direct harm or violation of an individual's physical integrity."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Offences relating to property, such as Stealing, Robbery, Burglary, and Arson, are classified under:",
+            "options": [
+                "PART 4: Acts injurious to the public.",
+                "PART 5: Offences against the person.",
+                "PART 6: Offences relating to property and contracts.",
+                "PART 7: Miscellaneous offences."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "These concern the unlawful interference with assets or belongings."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Adultery is cited as an example of a Jurisdictional offence because:",
+            "options": [
+                "It is a capital offence in all states.",
+                "It is a crime in the North but not the South.",
+                "It is an offence against the administration of law.",
+                "It is a simple offence under the Criminal Code."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Nigeria has different penal systems; some offences exist in one region but not another."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The classification of offences into felony, misdemeanour, and simple offences is important for determining:",
+            "options": [
+                "The motive of the offender.",
+                "The scope or limit of criminal liability or punishment.",
+                "The victim's right to compensation.",
+                "The number of co-conspirators."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The category dictates the maximum and minimum penalties possible."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the prison sentence threshold that, if exceeded for a punishment, means the offence cannot be a misdemeanor?",
+            "options": [
+                "More than one year.",
+                "More than two years.",
+                "More than three years.",
+                "More than six months."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the punishment is 3 years or more, it is a felony."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The gravity of an offence is also determined by whether it is stated to be a:",
+            "options": [
+                "Simple offence.",
+                "Capital punishment.",
+                "Preparatory offence.",
+                "Descriptive offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Offences carrying death (capital punishment) are the most grave."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Classification of offences is important for determining the power of arrest, especially regarding the power of:",
+            "options": [
+                "The judiciary to issue warrants.",
+                "The police to make an arrest without a warrant.",
+                "Private persons or agencies to arrest an offender.",
+                "The prosecutor to press charges."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Private citizens have limited powers of arrest, usually tied to felonies or serious crimes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The power of the court to grant bail to an accused person is dependent on the gravity of the offence. For which category of offence do courts have limited powers in granting bail?",
+            "options": [
+                "Simple offences and Misdemeanours.",
+                "Felony and Capital offences.",
+                "Descriptive offences.",
+                "Preliminary offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Courts are much more restrictive with bail for serious felonies and capital crimes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "A person who receives or assists another who is, to his knowledge, guilty of an offence, in order to enable him to escape punishment, is known as:",
+            "options": [
+                "A principal offender.",
+                "An accessory after the fact.",
+                "A conspirator.",
+                "A simple offender."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Assisting an offender to evade justice makes one an accessory after the fact."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "An offence that is punishable by a term of imprisonment of one month (e.g., Section 88 for unlawful processions) is classified as a:",
+            "options": [
+                "Felony.",
+                "Misdemeanour.",
+                "Simple offence.",
+                "Capital offence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Punishments less than 6 months generally fallback to simple offences."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in Smith V Selwyn (1914), which held that civil causes of action must be stayed pending the trial of a criminal action based on the same facts, is:",
+            "options": [
+                "Still good law in Nigeria.",
+                "The basis for the right of access to court in Nigeria.",
+                "No longer good law and has ceased to apply in Nigeria.",
+                "Only applicable in cases of sexual assault."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nigerian courts have moved away from this rule to ensure access to civil justice."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The classification of offences into felonies, misdemeanours, and simples offences is also important because the punishments for attempts/conspiracies and for being an accessory after the fact vary in accordance with:",
+            "options": [
+                "The object of the offence.",
+                "Whether the offence is capital or not.",
+                "The type of offence it would have been if committed.",
+                "The motive of the offender."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Inchoate and secondary liability are often a fraction or specific limit of the principal crime's penalty."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Treachery (Section 49A), which involves helping the enemy in a war in which Nigeria may be engaged, is a:",
+            "options": [
+                "Simple offence.",
+                "Misdemeanour.",
+                "Felony, liable to suffer death.",
+                "Non-indictable offence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Treachery is a high crime against the state and a capital felony."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the document, the punishment for Perjury (Section 117 & 118) is:",
+            "options": [
+                "Imprisonment for 7 years.",
+                "Imprisonment for 14 years.",
+                "Imprisonment for 2 years.",
+                "Death."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Perjury is a serious felony against the administration of justice."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Which term is used for classifications done for convenience or academic purposes, and which may not have legal implication?",
+            "options": [
+                "Legal Classifications.",
+                "Substantive Offences.",
+                "Jurisdictional Offences.",
+                "Descriptive Offences."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Descriptive classifications help in studying but don't necessarily change the law's application."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The offenses of Conspiracy and Accessories after the fact are classified in Part 8 of the Criminal Code, and are also referred to as:",
+            "options": [
+                "Jurisdictional offences.",
+                "Capital offences.",
+                "Preliminary offences.",
+                "Simple offences."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "These are inchoate or secondary crimes that precede or follow a principal offence."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Classification of Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "An indictable offence in the Criminal Code is generally:",
+            "options": [
+                "A felony or misdemeanour.",
+                "Only a capital offence.",
+                "Any offence triable by a magistrate.",
+                "A simple offence."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Indictable offences are the more serious ones that typically require a formal charge (indictment)."
+        }
+    }
+]

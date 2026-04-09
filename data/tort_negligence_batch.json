@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Lord Wright in Lochgelly Iron & Coal Co v. McMullan, negligence in strict legal analysis connotes the complex concept of duty, breach, and:",
+            "options": [
+                "Intentional omission.",
+                "Damage thereby suffered by the person to whom the duty was owing.",
+                "Gross carelessness.",
+                "Foreseeable risk alone."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Legal negligence requires the tripartite structure: duty, breach, and consequential damage."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "As summed up by Akpata JSC in Odinaka V. Moghalu, negligence is the omission to do something which a reasonable man under similar circumstances would do, or:",
+            "options": [
+                "The doing of something which a reasonable and prudent man would not do.",
+                "The doing of something which the defendant desired.",
+                "The doing of something unintentional.",
+                "The omission to take any action whatsoever."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Negligence is defined as a failure to meet the standard of a reasonable person."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The broad definition of the tort of negligence is the breach of a legal duty to take care which results in damage that is:",
+            "options": [
+                "Desired by the defendant, to the plaintiff.",
+                "Undesired by the defendant, to the plaintiff.",
+                "Liquidated, to the plaintiff.",
+                "Incidental, to the public at large."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Negligence involves unintended harm; intended harm is an intentional tort."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "What are the three essential elements to the tort of negligence?",
+            "options": [
+                "Motive, Malice, and Damage.",
+                "Contract, Tort, and Crime.",
+                "Duty of Care, Breach of Duty, and Damage Resulting from the Breach.",
+                "Intention, Direct Interference, and Unliquidated Damages."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Duty, breach, and causation/damage are the bedrock of a negligence claim."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The three phases of development for the tort of negligence culminated in which landmark case, where it was fully recognized as an independent tort?",
+            "options": [
+                "Heaven V. Pender",
+                "Blyth v Birmingham Water Works",
+                "Donoghue v Stevenson",
+                "Ashton V. Turner"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Donoghue v Stevenson (1932) established negligence as a stand-alone cause of action."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "Lord Esher MR, in Le Lievre v. Gould, stated that a man is entitled to be as negligent as he pleases towards the whole world if:",
+            "options": [
+                "He can prove inevitable accident.",
+                "He owes no duty to them.",
+                "The damage is not foreseeable.",
+                "The injury is slight."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "No liability exists without a pre-existing legal duty of care."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The concept of duty of care, and when liability will attach for its breach, was established in which case?",
+            "options": [
+                "Paris v. Stepney Borough Council",
+                "Donoghue V. Stevenson",
+                "Ibekandu v. Ike",
+                "Spartan Steel Alloys Ltd v. Martin and Co. Ltd"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Donoghue v Stevenson established the general test for a duty of care."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The foreseeability test laid down by Lord Atkin is known as:",
+            "options": [
+                "The Policy Principle.",
+                "The Res Ipsa Loquitur doctrine.",
+                "The But For test.",
+                "The Neighbourhood Principle."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "The Neighbourhood Principle defines to whom a duty is owed based on proximity and foreseeability."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Lord Atkin's dictum, a 'neighbour' in law is a person who is so closely and directly affected by my acts that:",
+            "options": [
+                "I must have a contract with them.",
+                "I must have them in contemplation as being so affected when directing my mind to the acts or omissions in question.",
+                "I am only liable to them if I act with malice.",
+                "They are standing more than 15 yards away."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Proximity in negligence means a person is likely to be affected by the conduct."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "What was a key finding in the Donoghue v. Stevenson case regarding contractual relations?",
+            "options": [
+                "Privity of contract is essential for a successful claim in negligence.",
+                "The existence of a contract is irrelevant for a successful claim in negligence.",
+                "The manufacturer was not liable because the purchaser was a third party.",
+                "The manufacturer only owed a duty to the retailer."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The case established that a duty exists independent of any contract (tortious liability)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The document notes that a duty of care may be denied on the ground of policy, as illustrated by Ashton V. Turner, where the duty was denied to one participant in a crime toward another in relation to:",
+            "options": [
+                "Breaches of statutory duties.",
+                "Acts done in connection with the commission of that crime.",
+                "Manufacturer's liability for defective products.",
+                "Accidents occurring on public highways."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The doctrine of 'ex turpi causa' (from a foul cause) bars claims arising from illegal acts."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "To establish a good cause of action in negligence, the plaintiff must show that the harm suffered was the:",
+            "options": [
+                "Undesired consequence of an intentional act.",
+                "Reasonable foreseeable consequence of the defendant's conduct.",
+                "Direct consequence of criminal activity.",
+                "Consequential consequence of a legal act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Foreseeability is the standard for both duty and remoteness of damage."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "In the tort of negligence, what is meant by 'negligence in the air'?",
+            "options": [
+                "The defendant only owes a duty to persons in the airspace.",
+                "The plaintiff cannot build a wrong to someone else; the duty must be owed to the plaintiff.",
+                "The duty of care is owed to the whole world.",
+                "The damage was not foreseeable."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Negligence is not a abstract wrong; it must be a breach of a specific duty owed to the claimant."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "In Spartan Steel Alloys Ltd v. Martin and Co. Ltd, the defendant who damaged the electric cable was held NOT liable for which loss suffered by the plaintiff steel factory?",
+            "options": [
+                "Physical damage to the equipment.",
+                "Loss of profit due to the stoppage of steel production.",
+                "Damage to the cable itself.",
+                "Personal injury to a workman."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Pure economic loss (not originating from physical damage to the plaintiff's property) is often denied."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the standard of care required of a person in the tort of negligence?",
+            "options": [
+                "That of the most skilled person in the profession.",
+                "That which is expected of a reasonable man in his shoes.",
+                "A subjective standard based on the defendant's best judgment.",
+                "A standard based on the gravity of the consequences alone."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The objective 'reasonable person' standard is the default in negligence."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The test for determining the standard of care is described as a(n):",
+            "options": [
+                "Subjective test.",
+                "Technical test.",
+                "Objective test.",
+                "Statutory test."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Liabiltiy doesn't depend on the defendant's personal ethics but on objective criteria."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "Baron Alderson's definition in Blyth v Birmingham Water Works focuses on negligence as the omission or commission of an act compared to the standard of care of a:",
+            "options": [
+                "Prudent and reasonable man.",
+                "Person of sub-standard intelligence.",
+                "Learner driver.",
+                "Professional surgeon."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Blyth established the 'prudent and reasonable man' as the benchmark."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the 'man in the Clapham Omnibus' an English definition for?",
+            "options": [
+                "The defendant in a motor accident case.",
+                "The reasonable man.",
+                "A person of lower than average intelligence.",
+                "An ordinary worker in Kano City."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This fictional commuter embodies the standard of the ordinary, reasonable person."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "When determining a breach of duty, the court may take into account 'the risk factor.' How many elements does the document state this factor has?",
+            "options": [
+                "Three (3)",
+                "Four (4)",
+                "Five (5)",
+                "Six (6)"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The elements include likelihood of harm, seriousness of injury, utility of act, cost of precaution, and state of knowledge."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The first element of the risk factor, the likelihood of harm the conduct poses, is illustrated by Lord Wright's words that the degree of care must be proportioned to the:",
+            "options": [
+                "Cost of safety measures.",
+                "Seriousness of the injury.",
+                "Degree of risk involved.",
+                "Utility of the defendant's activity."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Higher risk requires higher precautions."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "In Bolton v. Stone, the court held the defendant was NOT negligent for a cricket ball injuring a passer-by because:",
+            "options": [
+                "The defendant had a good motive.",
+                "The likelihood of harm to passers-by was so slight.",
+                "The fence was less than 7 feet high.",
+                "The risk of harm was considered too great."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The event was too rare to necessitate a higher fence or avoiding play."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "Paris v. Stepney Borough Council established that a higher standard of care may be required when considering the risk factor element of:",
+            "options": [
+                "The cost and practicability of safety measure.",
+                "The likelihood of harm the conduct poses.",
+                "The relevance of utility of the defendant's activity.",
+                "The seriousness of injury that may arise."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "The employer owed a higher duty because the worker was already blind in one eye (risk of total blindness)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle in Watt v. Hertfordshire states that a commercial end to make profit is very different from the human end to save life or limbs. This relates to which element of the risk factor?",
+            "options": [
+                "The likelihood of harm.",
+                "The relevance of utility of the defendant’s activity.",
+                "The amount of knowledge currently available.",
+                "The seriousness of injury."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Social utility justifies taking higher risks (e.g., emergency service response)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "In determining the standard of a reasonable man, a defendant will NOT be excused for having acted to the best of his own judgment if his best is below the conduct expected of a person of:",
+            "options": [
+                "Sub-standard skill.",
+                "Normal intelligence.",
+                "Exceptional qualities.",
+                "Advanced knowledge."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The standard is objective and does not lower for individual incompetence."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "A person who holds himself out as having a certain skill (e.g., a car driver or a doctor) is expected to show:",
+            "options": [
+                "The highest possible level of competence.",
+                "The average amount of competence normally possessed by persons doing that kind of work.",
+                "The subjective standard of a learner.",
+                "The intelligence of an ordinary prudent man."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Specialists are compared to the standard of a reasonably competent specialist."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the standard of care generally expected of a child in the law of negligence?",
+            "options": [
+                "The standard of care expected of an average adult.",
+                "The standard of care expected of a child of his age.",
+                "The standard of care expected of a person with the same infirmity.",
+                "A purely subjective standard."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Children are judged by the standard of a 'reasonable child' of similar age."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the Latin phrase Res Ipsa Loquitur translated to?",
+            "options": [
+                "Damage without legal injury.",
+                "The facts speak for themselves.",
+                "Legal wrong without damage.",
+                "The thing is under the management of the defendant."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Res (the thing) ipsa (itself) loquitur (speaks)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "Which is NOT a requirement for the successful application of Res Ipsa Loquitur?",
+            "options": [
+                "There must be an absence of explanation of the occurrence by the plaintiff.",
+                "The thing that caused the harm must have been under the management or control of the defendant or his servant.",
+                "The accident or harm must be one which in the ordinary course of things does not happen without negligence on the part of the defendant.",
+                "The commission of a crime must be in issue."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Res Ipsa is a rule of evidence in civil negligence, not criminal law."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The effect of successfully invoking Res Ipsa Loquitur is to shift the onus onto the defendant to show that the accident was due to a specific cause which did not involve negligence on his part, or that:",
+            "options": [
+                "The damage was too remote.",
+                "He had used reasonably care in the matter.",
+                "The plaintiff was too close to the accident.",
+                "The accident was caused by a third party."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the defendant can show they took all reasonable care, the inference of negligence is rebutted."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Negligence",
+        "type": "objective",
+        "question_data": {
+            "text": "The two aspects of the requirement that the plaintiff must prove damage caused by the breach are:",
+            "options": [
+                "Duty of Care and Breach of Duty.",
+                "Intention and Motive.",
+                "Causation in Fact and Remoteness of Damage in Law.",
+                "Res Ipsa Loquitur and Contributory Negligence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The plaintiff must show the breach caused the harm (fact) and that the harm isn't too remote (law)."
+        }
+    }
+]

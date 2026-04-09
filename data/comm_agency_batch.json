@@ -1,0 +1,802 @@
+[
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "A well-recognized exception to the general principle that only parties to a contract acquire rights and liabilities under it is the concept of:",
+            "options": [
+                "Bailment",
+                "Estoppel",
+                "Agency",
+                "Contract of Hire"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Agency allows an agent to create legal relations between a principal and a third party."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The legal relationship between the Principal and Agent is called:",
+            "options": [
+                "Lien",
+                "Fiduciary",
+                "Agency",
+                "Ratification"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Agency is the term for the relationship where one person acts for another."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The second general rule governing agency is expressed by the maxim:",
+            "options": [
+                "Delegatus non potest delegare",
+                "Nemo dat quad non habet",
+                "He who does through another, does by himself",
+                "Actus reus"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Qui facit per alium facit per se: acts of the agent are the acts of the principal."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Agency can be created in three main ways: by express agreement, by implied agreement, and by:",
+            "options": [
+                "Estoppel",
+                "Ratification",
+                "Necessity",
+                "Operation of law"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Operation of law includes necessity and cohabitation (presumed agency)."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The most formal way of appointing an agent in writing is typically done by a:",
+            "options": [
+                "Simple contract",
+                "Verbal agreement",
+                "Power of Attorney",
+                "Deed of Trust"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A Power of Attorney is a formal instrument authorizing another to act in one's stead."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Agency created when an individual acquires a presumed authority to act in circumstances of an emergency is called:",
+            "options": [
+                "Agency by Estoppel",
+                "Agency by Ratification",
+                "Agent of Necessity",
+                "Commission Agency"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Necessity arises in emergencies to prevent loss to the principal."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "A wife or de facto spouse is presumed to have authority to pledge the husband's credit for:",
+            "options": [
+                "Luxury items",
+                "Investment property",
+                "Necessaries in keeping with their social status",
+                "Legal fees"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Cohabitation creates a rebuttable presumption of agency for household necessaries."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The term that means the Principal adopts or confirms an earlier act done by the Agent, which was not initially binding on the Principal, is:",
+            "options": [
+                "Lien",
+                "Estoppel",
+                "Ratification",
+                "Delegation"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Ratification relates back to the time the act was performed."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "For an agency by ratification to arise, the Agent's act must have been done:",
+            "options": [
+                "In a public place",
+                "With the Principal's prior knowledge",
+                "Expressly on the Principal's behalf",
+                "Within a year of the act"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The agent must purport to act for a principal, even if unnamed."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "A forgery cannot be made valid by ratification because it would effectively be condoning a:",
+            "options": [
+                "Civil wrong",
+                "Tort",
+                "Criminal offence",
+                "Breach of contract"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "One cannot ratify an act that is void ab initio due to criminality."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The legal term 'estoppel' means a person who has led another to believe a certain state of affairs exists is later prevented from denying that state of affairs if the other person has:",
+            "options": [
+                "Made a profit",
+                "Acted to his detriment in reliance",
+                "Received a bribe",
+                "Sought legal advice"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Detrimental reliance is a core element of estoppel."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The English Court of Appeal in Rama Corporation v Proved Tin emphasized three main requirements for Agency by Estoppel, including a representation by a Principal and reliance by a third party, and:",
+            "options": [
+                "The Principal must have a good motive",
+                "The act must be an omission",
+                "An alteration of the third party's position resulting from such representation",
+                "The Agent must be a Mercantile Agent"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The third party must have changed their position based on the representation."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The death, mental incapacity, or bankruptcy of the Principal or the Agent terminates the agency by:",
+            "options": [
+                "Mutual agreement",
+                "Revocation",
+                "Operation of law",
+                "Completion of contract"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "These events automatically end the legal capacity to act as principal or agent."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "An Agent entrusted with goods for sale, who enjoys wide discretionary powers and may pledge the goods, is classified as a:",
+            "options": [
+                "Broker",
+                "Commission Agent",
+                "Del Credere Agent",
+                "Factor"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Factors have physical possession and broader powers than brokers."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "An Agent who, in consideration of an extra commission, guarantees to his Principal that the third party will perform their financial obligations is called a:",
+            "options": [
+                "Factor",
+                "Broker",
+                "Del Credere Agent",
+                "Mercantile Agent"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Del Credere (Italian for 'of belief/trust') agents guarantee consumer payment."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The Agent's fiduciary duty to the Principal requires that the Agent must always act in the interests of the Principal and must not:",
+            "options": [
+                "Charge commission",
+                "Make a secret profit or commission",
+                "Delegate his duties",
+                "Follow instructions"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Secret profits are a breach of the duty of loyalty."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The Latin maxim delegatus non potest delegare means that an Agent:",
+            "options": [
+                "Must act in person",
+                "Can sue and be sued",
+                "Must follow instructions",
+                "May not delegate his authority to another"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "A person delegated authority cannot further delegate it without permission."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "An Agent's duty to maintain proper accounts requires that the Agent must not mix the Principal's money with personal money, and if this happens, the law will presume:",
+            "options": [
+                "The entire sum belongs to the Agent",
+                "The entire sum is a secret profit",
+                "The entire sum belongs to the Principal",
+                "The Agent is a gratuitous agent"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Commingling results in a strict presumption in favor of the principal."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is a main duty that the Principal owes to the Agent?",
+            "options": [
+                "Duty to follow instructions",
+                "Duty to act in person",
+                "The right to an indemnity",
+                "Duty to maintain accounts"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Principals must reimburse agents for expenses and liabilities incurred lawfully."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "A legal right that a creditor has to retain the goods of a debtor as security for the performance of an obligation, which an Agent can exercise over a Principal's goods, is a:",
+            "options": [
+                "Indemnity",
+                "Estoppel",
+                "Lien",
+                "Surety"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Liens allow agents to hold goods until they are paid."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "When an Agent discloses to the third party that he is contracting as Agent for a named Principal, who may sue and be sued on the contract?",
+            "options": [
+                "Only the Agent",
+                "Both the Agent and Principal",
+                "Only the Principal",
+                "Only the Third Party"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A disclosed principal is the true party to the contract."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "A situation where an Agent contracts on behalf of a Principal but does not inform the third party that he is an Agent is covered by the doctrine of the:",
+            "options": [
+                "Agent of Necessity",
+                "Legal Moralism",
+                "Undisclosed Principal",
+                "Agency by Estoppel"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Undisclosed principals can still emerge to sue or be sued."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "An Agent can be personally liable on a contract in a special circumstance where the Agent contracts on behalf of a:",
+            "options": [
+                "Mercantile Agent",
+                "Del Credere Agent",
+                "Non-existent Principal",
+                "Spouse"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the principal doesn't exist (e.g., a pre-incorporation company), the agent is liable."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "If an Agent claims he is acting as an Agent but has no authority to enter into the contract, the Agent can be sued by the third party for:",
+            "options": [
+                "Breach of the Agent's duty of care",
+                "Breach of warranty of authority",
+                "Making a secret profit",
+                "Neglect to prevent a felony"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Agents warrant that they have the authority they claim to have."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The standard of care an Agent must exercise in acting for his Principal, as per Keppel v Wheeler, is that they must:",
+            "options": [
+                "Only follow instructions",
+                "Exercise reasonable diligence, care, and skill",
+                "Be an Agent for reward",
+                "Not be personally liable"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Agents must perform their duties with reasonable competence."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The law of agency in Sri Lanka is governed by the law applicable in England, as made clear by:",
+            "options": [
+                "The Bills of Exchange Ordinance.",
+                "Section 3 of the Civil Law Ordinance No. 5 of 1852.",
+                "The Companies Act.",
+                "The Law of Contract."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 1852 Ordinance imported English commercial law into Sri Lanka."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "An Agent's primary role in a legal sense is to affect the Principal's legal position towards:",
+            "options": [
+                "The government.",
+                "The Agent himself.",
+                "Third parties.",
+                "The judiciary."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Agency is about creating external legal obligations."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an act that involves personal skill and qualifications, and therefore generally cannot be done through an Agent?",
+            "options": [
+                "Buying goods on credit.",
+                "Selling goods.",
+                "Marriage (a contract of a personal nature).",
+                "Signing a letter."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Contracts of a purely personal nature cannot be delegated to an agent."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Agency created by a history of the Principal paying a third party for goods received by the Agent, thus showing a continuous pattern of conduct, is an example of:",
+            "options": [
+                "Agency by Estoppel.",
+                "Agency by Necessity.",
+                "Agency by Implied Agreement.",
+                "Agency by Express Agreement."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Course of conduct implies an agency relationship."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "For an Agent of Necessity to arise, a key circumstance must be present, which is:",
+            "options": [
+                "A written agreement.",
+                "An emergency (e.g., a person's property being in danger).",
+                "The Principal's prior consent.",
+                "The Agent's status as a Mercantile Agent."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Necessity is predicated on an urgent need to act."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Pianta v Macrow and Sons Pty Ltd, a trader who sold a diamond ring to a wife on credit could not claim its cost from the husband because:",
+            "options": [
+                "The husband expressly informed traders not to supply goods.",
+                "The wife was not his de facto spouse.",
+                "The item was a luxury item, not a necessary.",
+                "The purchase was not in writing."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Agency of cohabitation only extends to 'necessaries'."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "For an act to be validly ratified by the Principal, the ratification must take place:",
+            "options": [
+                "Before the Agent acts.",
+                "Within a reasonable time.",
+                "After the Agent discloses the matter to the third party.",
+                "Only in writing."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Ratification cannot be delayed indefinitely."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "In Keighley Maxsted & Co. v Durant, an act could not be later ratified by the Principal because the Agent had not disclosed to the third party that he was acting:",
+            "options": [
+                "Within his authority.",
+                "For a non-existent Principal.",
+                "For another (the Principal).",
+                "In writing."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "One must purport to act as an agent to allow for ratification."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Which requirement for Agency by Estoppel relates to the third party's actions based on the Principal's representation?",
+            "options": [
+                "A representation by a Principal.",
+                "A reliance by a third party on that representation.",
+                "An alteration of the third party's position.",
+                "A forgery."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Reliance is the causal link in estoppel."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Termination of Agency by agreement between the Principal and Agent can occur in all the following ways EXCEPT:",
+            "options": [
+                "By mutual agreement.",
+                "By the Agent completely performing the contract.",
+                "By the Agent's bankruptcy.",
+                "By revocation of the Agent's authority by the Principal."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Bankruptcy terminates agency by operation of law, not by consensual agreement."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The termination of agency due to the subject matter of the contract becoming illegal or frustrated is an example of termination by:",
+            "options": [
+                "Mutual agreement.",
+                "Revocation.",
+                "Operation of law.",
+                "Estoppel."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Law-based termination happens regardless of the parties' immediate wishes."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "A Broker is classified as an Agent who is employed to make contracts for the purchase and sale of goods or property, and is not typically entrusted with:",
+            "options": [
+                "A commission.",
+                "A contract.",
+                "Possession of the goods.",
+                "A good motive."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Brokers are negotiation intermediaries without possession."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The Agent's duty to follow the Principal's instructions, even if the Agent believes the instructions are not commercially sound, was established in:",
+            "options": [
+                "Keppel v Wheeler.",
+                "John McCann & Co v Pow.",
+                "Bertram Armstrong & Co v Godfrey.",
+                "Lapraik v Burrows."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Agents aren't allowed to substitute their judgment for a clear instruction."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The standard of care expected of an Agent may be lower when the Agent is classified as a:",
+            "options": [
+                "Factor.",
+                "Mercantile Agent.",
+                "Gratuitous Agent (not paid for services).",
+                "Broker."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Care standard is lower for unpaid agents (though they still can't be grossly negligent)."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The Latin maxim delegatus non potest delegare is a general rule that an Agent must act in person, but one of the exceptions allows the Agent to delegate:",
+            "options": [
+                "Acts that require personal skill.",
+                "Purely ministerial acts (e.g., signing a letter).",
+                "Acts that involve a non-existent Principal.",
+                "Acts that are a breach of the Principal's duty."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Administrative/clerical tasks can be delegated."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of John McCann & Co v Pow held that the Agent was not entitled to his commission because he had delegated the sale of the flat without the Principal's:",
+            "options": [
+                "Payment.",
+                "Permission/approval.",
+                "Knowledge.",
+                "Signature."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Unauthorized delegation forfeits the right to commission."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The duty of an Agent not to make a secret profit or commission, even if the act was not injurious to the Principal, is a key aspect of the Agent's:",
+            "options": [
+                "Fiduciary or confidential obligation.",
+                "Right to remuneration.",
+                "Duty to follow instructions.",
+                "Right to a lien."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The duty is to avoid any conflict of interest."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The Principal's duty to his Agent, which covers liabilities or payments incurred by the Agent on the Principal's behalf, is the:",
+            "options": [
+                "Right to remuneration.",
+                "Right to an indemnity.",
+                "Right to a lien.",
+                "Duty to maintain accounts."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Indemnity is for losses; remuneration is for services."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "An Agent can be held personally liable on a contract in a special circumstance where the Agent signs a:",
+            "options": [
+                "Contract of hire purchase.",
+                "Power of attorney.",
+                "Bill of exchange or cheque.",
+                "Contract of bailment."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Unless the agency is clear on the face of the negotiable instrument, the signer is liable."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "In Kelner v Baxter, the Agent was held personally liable on a contract because the Principal (a company) was:",
+            "options": [
+                "Fraudulent.",
+                "Not legally capable of signing.",
+                "Not in existence at the time of the contract.",
+                "Acting ultra vires."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "A non-existent principal cannot have an agent, so the signer is bound."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The doctrine of the Undisclosed Principal allows the Principal to subsequently reveal his existence and enforce the contract, provided the Agent had acted:",
+            "options": [
+                "With the Principal's motive.",
+                "Within authority.",
+                "With the Principal's knowledge of the fraud.",
+                "Only for necessaries."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Authority is a prerequisite for the principal's intervention."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "The duty of an Agent to disclose anything he knows or learns that may affect the Principal's interest and judgment is a key aspect of:",
+            "options": [
+                "The right to a lien.",
+                "The duty to maintain accounts.",
+                "The duty to act in the Principal's interest.",
+                "The duty to exercise care."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Full disclosure is part of the agent's fidelity."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "In McPherson v Watt, the Agent's sale of the Principal's property to his own brother, who then conveyed it to the Agent, was set aside because the Agent:",
+            "options": [
+                "Failed to disclose the price.",
+                "Was a gratuitous agent.",
+                "Put his interests above those of his Principal.",
+                "Was an Agent of Necessity."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Agents cannot deal with themselves in the guise of a third party."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "Which rule is illustrated by the case of Collen v Wright, where the Agent was sued by the third party for an untrue representation of authority?",
+            "options": [
+                "The Undisclosed Principal Doctrine.",
+                "Agency by Implied Agreement.",
+                "Agent liable for breach of warranty of authority.",
+                "Termination by Revocation."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Collen v Wright established the warranty of authority rule."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Law of Agency",
+        "type": "objective",
+        "question_data": {
+            "text": "When the Principal tells the Agent to buy certain goods, the Agent is liable for loss if he failed to insure the goods as undertaken, as held in:",
+            "options": [
+                "Bertram Armstrong & Co v Godfrey.",
+                "Keppel v Wheeler.",
+                "Turpin v Billton.",
+                "Rama Corporation v Proved Tin."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Failure to follow insurance instructions is a breach of contract/duty."
+        }
+    }
+]

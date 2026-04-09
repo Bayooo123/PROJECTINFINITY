@@ -1,0 +1,802 @@
+[
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The term Hire Purchase refers to a rental agreement with an option to buy goods payable by:",
+            "options": [
+                "A lump sum payment",
+                "Advance deposits",
+                "Instalments",
+                "Transfer of title only"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Hire purchase is characterized by periodic payments over time."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "In a Hire Purchase agreement, the person who transfers possession of the goods is called the:",
+            "options": [
+                "Hirer",
+                "Bailee",
+                "Hire Vendor",
+                "Purchaser"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The hire vendor is the owner who lets out the goods."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Under a Hire Purchase agreement, the ownership of the asset remains with the seller or financing company until:",
+            "options": [
+                "The initial deposit is paid",
+                "The hirer takes possession",
+                "The hirer gains full ownership",
+                "The final payment is made"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Ownership only transfers once all instalments and the option to purchase fee are paid."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The first judicial recognition of a contract of Hire Purchase was in the House of Lords case of:",
+            "options": [
+                "Incar Motors Nigeria Ltd vs. Elias Bus Transport Ltd",
+                "Williams vs. UAC Ltd",
+                "Helby vs. Mathews",
+                "Amusa & Anor vs. Bentworth Finance Nig Ltd"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Helby v Mathews (1895) is the landmark case establishing the nature of hire purchase."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian law that regulates the Hire Purchase transaction is primarily the:",
+            "options": [
+                "Sale of Goods Act of 1893",
+                "Bills of Exchange Act",
+                "Hire Purchase Act of 1965",
+                "Illiterate Protection Ordinance Act"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The 1965 Act is the primary statutory framework for hire purchase in Nigeria."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT a basic feature of a Hire Purchase agreement?",
+            "options": [
+                "It is a form of bailment",
+                "The owner retains property rights until full payment",
+                "It confers an obligation to purchase",
+                "It confers an option to purchase"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Hire purchase confers an option, not an obligation; the latter would be a conditional sale."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "If the owner reclaims goods and sells them for an amount more than the debt owed by the hirer, the owner is:",
+            "options": [
+                "Bound to return the balance to the hirer",
+                "Entitled to recover the balance from the hirer",
+                "Not bound to return the balance to the hirer",
+                "Liable to the hirer for damages"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "In common law hire purchase, the owner is entitled to the full value of the repossessed goods."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Hire Purchase Act of 1965, the agreement must be in which form?",
+            "options": [
+                "Oral only",
+                "Oral or in writing",
+                "In written form",
+                "Formal contract only"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Act requires a written memorandum signed by the parties."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "For goods other than motor vehicles, the Hire Purchase Act of 1965 generally applies only if the price of the goods in question does not exceed:",
+            "options": [
+                "One thousand naira",
+                "Two thousand naira",
+                "Three thousand naira",
+                "Five thousand naira"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Act's protection is capped at N2,000 for non-motor vehicle items."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "One of the main disadvantages of Hire Purchase agreements is that they tend to be more expensive in the long run due to:",
+            "options": [
+                "High insurance costs",
+                "Interest rates and fees",
+                "Repossession costs",
+                "Minimal monthly installments"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The cost of credit (interest) makes the total hire purchase price higher than the cash price."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The Hire Purchase Act of 1965 applied only to the Federal Capital Territory of Lagos at the time of enactment, but was extended to all parts of the federation by the:",
+            "options": [
+                "Sale of Goods Act",
+                "Hire Purchase (Application Act) 1966",
+                "Common Law Regulation Act",
+                "Hire Purchase (Appointed Day) Order 1968"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The 1966 Application Act made the 1965 Act nationwide."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Common Law, a hirer's default on payment, even for the last installment, meant the owner's right to recover the goods was:",
+            "options": [
+                "Limited to a court order",
+                "Restricted by equity",
+                "Unqualified",
+                "Subject to negotiation"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Common law was strict and allowed repossession upon any default."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "A contract of Hire Purchase is distinguished from a Credit Sale primarily because in a Credit Sale:",
+            "options": [
+                "The buyer retains the risk",
+                "Ownership transfers immediately to the buyer",
+                "The seller retains the risk and liability",
+                "The buyer has an option to return the goods"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In credit sales, ownership passes at the time of agreement."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "A key distinction between Hire Purchase and a Conditional Credit Sale is that the latter confers on the buyer:",
+            "options": [
+                "An option to purchase",
+                "An obligation to purchase",
+                "No property rights",
+                "A right to repossess"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A conditional sale obligates the buyer to finish payments and take title."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Unlike Hire Purchase, a simple Contract of Hire means the hirer has:",
+            "options": [
+                "An option to buy the goods",
+                "Full financial liability",
+                "No intention of eventually owning the asset",
+                "Immediate ownership of the goods"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Standard hire (renting) does not involve a path to ownership."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Failure to comply with the formalities prescribed in S. 2 of the Hire Purchase Act generally disentitles the owner from:",
+            "options": [
+                "Recovering the full price of the goods",
+                "Charging interest",
+                "Enforcing the agreement or recovering the goods",
+                "Applying for a court order"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Strict compliance is required for the owner to enforce their rights under the Act."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The provision of S. 3(a) of the Hire Purchase Act prevents the owner from inserting any term that would give him the right to:",
+            "options": [
+                "Sue the hirer for arrears",
+                "Enter the hirer's premises without authorisation to seize the goods",
+                "Charge interest rates",
+                "Recover a minimum payment"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Protecting the hirer's privacy/security against forceful repossession."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "One of the implied conditions in a Hire Purchase contract, as provided by S. 4 of the Act, is that the goods must be:",
+            "options": [
+                "Sold on a second-hand basis",
+                "Fit for the purpose for which they were required",
+                "Returned if the contract is terminated",
+                "Subject to a credit check"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Fitness for purpose is a standard implied condition."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the Act, the implied condition that the goods are of merchantable quality would NOT apply if:",
+            "options": [
+                "The price of the goods exceeds two thousand naira",
+                "The goods are hired for commercial purposes",
+                "The goods are hired on a second hand basis and this is stated in the memorandum",
+                "The hirer is an illiterate"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Second-hand goods carry a lower standard if disclosed."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The maximum liability that can be incurred by the hirer under the Minimum Payment Clause as stipulated by S. 8(1) of the Act is:",
+            "options": [
+                "The full Hire Purchase price",
+                "Three fifths (3/5) of the total price",
+                "One half (1/2) of the total Hire Purchase price",
+                "Any amount agreed upon by the parties"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Act limits the 'early termination penalty' to 50% of the price."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Karsales Harrow Ltd vs. Wallis, the court held that in a Hire Purchase agreement, the owner has a duty to deliver the goods:",
+            "options": [
+                "In new condition",
+                "In the condition they were in when they were manufactured",
+                "In the condition they were when the hirer inspected them",
+                "Before the final payment is made"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Goods must match the state they were in during the pre-contract inspection."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "According to S.9(1) of the Hire Purchase Act, after the payment of the relevant proportion, the owner cannot recover the goods except by:",
+            "options": [
+                "A private agreement with the hirer",
+                "The consent of the guarantor",
+                "An action in the court of law",
+                "A repossession agent"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The court's protection kicks in once a significant portion of the price is paid."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "For motor vehicles, the 'relevant proportion' of the total Hire Purchase price, after payment of which repossession requires a court order, is:",
+            "options": [
+                "One half (1/2)",
+                "Three fifths (3/5)",
+                "Two thirds (2/3)",
+                "Four fifths (4/5)"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "3/5 is the specific statutory threshold for motor vehicles in Nigeria."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The provision of S. 3(f) of the Act prevents the owner from inserting terms that mandate the hirer to make use of:",
+            "options": [
+                "A particular lawyer",
+                "An insurer or repairer of the owner's choice",
+                "A specific bank",
+                "The owner's premises"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Terms forcing specific insurers/repairers on the hirer are void."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The duty of a hirer to pay installments, as and when due, is demonstrated in the case of:",
+            "options": [
+                "Helby V Mathews",
+                "Williams vs. UAC Ltd",
+                "Animashawun v CFAO",
+                "Anoka v SCOA Warri"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Animashawun v CFAO emphasizes the hirer's core obligation to pay."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Helby vs. Mathews, the House of Lords held that title to the piano still resided in the owner (plaintiff) because:",
+            "options": [
+                "The hirer pledged the piano legally.",
+                "The hirer had an obligation to buy the piano.",
+                "The instalments were not completely paid.",
+                "The agreement was a contract of sale."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Until full payment, the hirer has no power to pass good title to third parties."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "A Hire Purchase agreement only grants the hirer the right of:",
+            "options": [
+                "Ownership",
+                "Possession",
+                "Title transfer",
+                "Resale"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Possession is granted immediately, but ownership is deferred."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "If a hirer defaults on payment, the owner's right to reclaim the property is unqualified under:",
+            "options": [
+                "The Hire Purchase Act of 1965",
+                "English Common Law",
+                "The Hire Purchase (Application Act) 1966",
+                "The Sale of Goods Act"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Common law favored the owner's property rights over the hirer's equity."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "What differentiates a contract of Hire Purchase from a pure bailment is the fact that, at the end of the contract, the hirer has:",
+            "options": [
+                "An option to buy the goods in question.",
+                "A debt obligation to the owner.",
+                "The right of possession.",
+                "Full ownership rights immediately."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Pure bailment involves return of goods; hire purchase includes a purchase option."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "According to S. 20(1) of the Hire Purchase Act of 1965, the term 'Hire Purchase' is defined as a bailment of goods in pursuance of an agreement under which the bailee:",
+            "options": [
+                "Must sell the goods immediately.",
+                "Has no property rights.",
+                "May buy the goods or property in the goods will or may pass.",
+                "Must pay the full price upfront."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The definition focuses on the potential passage of property rights."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The Helby vs. Mathews decision prevented a person who exercises his right to an option to buy from passing good title to an innocent purchaser for value before:",
+            "options": [
+                "Paying the deposit.",
+                "Making full payment to his hire vendor.",
+                "Taking possession of the goods.",
+                "Signing the agreement."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Without title, one cannot legally transfer title (Nemo dat)."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an advantage of a Hire Purchase agreement for the manufacturer/seller?",
+            "options": [
+                "Reduced interest rates.",
+                "Opportunity to profitably sell stocks.",
+                "Immediate full payment.",
+                "Ownership remains with the buyer."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Hire purchase expands the market for expensive goods by making them affordable via credit."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an element of a traditional contract/agreement that must be present in a Hire Purchase agreement?",
+            "options": [
+                "Formality",
+                "Consideration (Price of goods + interest).",
+                "Written cash price notice.",
+                "Minimum payment clause."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Like any contract, hire purchase requires consideration."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Common Law, a provision for punctual payment meant that a one-day delay in the last installment payment was regarded as a breach, entitling the owner to retrieve the goods, as held in:",
+            "options": [
+                "Amusa & Anor vs. Bentworth Finance Nig Ltd.",
+                "Helby vs. Mathews.",
+                "Bentworth Finance Ltd vs. De Bank Transport Ltd.",
+                "Associated Distributors Ltd vs. Hall."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Bentworth v De Bank is the authority for the 'punctual payment' rule."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "For a Hire Purchase agreement to be valid under the Nigerian Act, the owner of the goods has to state in writing, to the hirer:",
+            "options": [
+                "The hire purchase price only.",
+                "The interest rate only.",
+                "The cash price of the goods in question.",
+                "The deposit amount only."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Act requires the hirer be informed of the cash price to evaluate the credit cost."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The need for a written notice of cash price is dispensed with if the hirer selected the goods by reference to a price list, catalogue or:",
+            "options": [
+                "Verbal agreement.",
+                "Owner's declaration.",
+                "Advertisement which stated the cash price of the goods.",
+                "A signed memorandum."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Advertisements with cash prices satisfy the transparency requirement."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The memorandum of agreement for Hire Purchase must contain all the following EXCEPT:",
+            "options": [
+                "A statement of the hire purchase price and cash price.",
+                "A statement of the deposit paid.",
+                "A statement of the owner's motive for selling.",
+                "The amount of each instalment and the date of payment."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Subjective motives are not required in the statutory memorandum."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "In Adelabari vs. Nigeria Motors Ltd, the court held that the consequence for non-compliance with S. 2 of the Act could not apply because:",
+            "options": [
+                "The hirer was an illiterate.",
+                "The non-compliance had not prejudiced the hirer's right.",
+                "The agreement was concluded before the existence of the Hire Purchase Act.",
+                "The agreement concerned a motor vehicle."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Statutes are generally not retroactive."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The discretionary power of the court to waive non-compliance with formalities is available only if the non-compliance has not:",
+            "options": [
+                "Exceeded the cash price.",
+                "Prejudiced the right of the hirer.",
+                "Been noted in the memorandum.",
+                "Involved a motor vehicle."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The court can excuse technical errors if no harm was done to the hirer."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Which section of the Hire Purchase Act specifically deals with the exclusion of certain exploitative terms?",
+            "options": [
+                "S. 2.",
+                "S. 3.",
+                "S. 4.",
+                "S. 8."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 3 lists terms that are void if included in the agreement."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "S. 3(b) of the Act precludes the owner from inserting any term which would exclude the hirer from exercising his right to:",
+            "options": [
+                "Claim a refund of the deposit.",
+                "Bring the agreement to an end (determine the agreement).",
+                "Negotiate the interest rate.",
+                "Sue the hire vendor."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The hirer must always have the right to terminate early (with statutory liability)."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "S. 3(d) of the Act excludes terms which state that the agent of the owner/seller would also be the agent of the:",
+            "options": [
+                "Financer.",
+                "Court.",
+                "Hirer.",
+                "Guarantor."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "To prevent conflict of interest, the owner's agent can't be deemed the hirer's agent."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "One of the implied warranties in a Hire Purchase contract, as provided by S. 4 of the Act, is that the hirer shall have and enjoy:",
+            "options": [
+                "The option to purchase immediately.",
+                "Quiet possession of the goods.",
+                "The right to sell the goods.",
+                "The right to recover arrears."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Quiet possession is a standard implied warranty of title."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The implied condition that the goods are of merchantable quality would NOT apply if the defects in the goods are of the type that the owner:",
+            "options": [
+                "Intentionally concealed.",
+                "Knew about beforehand.",
+                "Could not have been reasonably aware of at the time of the agreement.",
+                "Caused by the hirer."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Owners aren't liable for latent defects beyond reasonable inspection."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "In a Conditional Credit Sale, if the buyer resells the goods to a third party, the buyer transfers good title under:",
+            "options": [
+                "The Hire Purchase Act of 1965.",
+                "The Black's Law Dictionary.",
+                "Section 25 (2) of the SGA of 1893.",
+                "The Common Law."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Sale of Goods Act allows buyers in possession to pass title, unlike hire purchase."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is a disadvantage of a Hire Purchase agreement?",
+            "options": [
+                "Flexible payment options.",
+                "Access to goods without large upfront payment.",
+                "Potential repossession if regular payments are not made.",
+                "Ownership at the end of the agreement."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Repossession risk is the major drawback for the hirer."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The legal definition of a Bailee is a person who:",
+            "options": [
+                "Owns the property.",
+                "Receives personal property from another and has possession but not title.",
+                "Has an obligation to sell the property.",
+                "Has a lien over the property."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Bailment is based on the separation of possession and ownership."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "If the hirer has already paid a sum which is more than one half of the Hire Purchase price and terminates the agreement, he would incur:",
+            "options": [
+                "The full minimum payment liability.",
+                "The payment of all arrears.",
+                "No further liability.",
+                "Liability up to three fifths of the total price."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If payments already reach the 1/2 mark, the termination clause is satisfied."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "When an owner recovers goods in contravention of S. 9(1) of the Act (e.g., without a court order after the relevant proportion is paid), S. 9(2) provides that:",
+            "options": [
+                "The owner shall not be liable to the hirer.",
+                "The hirer shall be entitled to recover the amounts he has paid.",
+                "The hirer shall be free from all liabilities and be entitled to recover amounts paid.",
+                "The hirer is only entitled to recover the deposit."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Illegal repossession results in a total forfeiture by the owner."
+        }
+    },
+    {
+        "course": "Commercial transactions",
+        "topic": "Hire Purchase",
+        "type": "objective",
+        "question_data": {
+            "text": "The duty of a hirer to use the goods in ways that would not occasion damage to the goods is called:",
+            "options": [
+                "Duty not to sell the Goods.",
+                "Duty to pay instalments.",
+                "Duty of custody and care.",
+                "Duty of redelivery."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Hirers must treat the goods as a 'prudent owner' would."
+        }
+    }
+]

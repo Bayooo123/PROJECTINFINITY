@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Criminal law is based on the maxim:",
+            "options": [
+                "Actus non facit reum nisi mens sit rea.",
+                "Actus reus.",
+                "Mens rea.",
+                "Fowler v Paget."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "This fundamental maxim states that an act does not make a person guilty unless the mind is also guilty."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The maxim 'Actus non facit reum nisi mens sit rea' implies that a person cannot be convicted and legally punished unless:",
+            "options": [
+                "The act caused grievous bodily harm.",
+                "The physical element alone is proved.",
+                "It is proved that he/she had the mindset to commit an act or omission.",
+                "The victim contributed to the harm."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Liability generally requires a concurrence of the prohibited act and the guilty mind."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which class of crimes is an exception to the general rule requiring a particular state of mind (mens rea)?",
+            "options": [
+                "Felony offences.",
+                "Simple offences.",
+                "Crimes of strict liability.",
+                "Attempted crimes."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Strict liability crimes are a rare exception where fault or intention may not need to be proven."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The general principle in criminal law is that a criminal intention alone, without some form of conduct, is:",
+            "options": [
+                "Sufficient for conviction in cases of treason.",
+                "Sufficient for conviction only if the motive is evil.",
+                "Not sufficient for conviction in virtually all instances.",
+                "Sufficient for conviction in cases of strict liability."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The law governs conduct, not just purity of intention."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that the actus reus and mens rea must occur simultaneously in point of time is known as:",
+            "options": [
+                "Causation.",
+                "Voluntariness.",
+                "Concurrence.",
+                "Novus Actus Interveniens."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Concurrence ensures that the guilty mind accompanies the prohibited act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of Thabo Meli v R deals with the criminal law principle of:",
+            "options": [
+                "Strict liability.",
+                "Concurrence of the physical and mental elements.",
+                "Legal impossibility of attempt.",
+                "The voluntariness of the actus reus."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "In Thabo Meli, the court treated a series of acts as a single transaction for concurrence purposes."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the Criminal Code (Section 24, second paragraph), what is generally immaterial so far as regards criminal responsibility, unless expressly declared to be an element of the offence?",
+            "options": [
+                "The physical element (actus reus).",
+                "The mental element (mens rea).",
+                "The motive by which a person is induced to act.",
+                "The consequence of the act."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Motive is usually not an element of criminal liability in Nigeria."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT a component of mens rea identified by Professor J.W.C Turner, and later expanded upon?",
+            "options": [
+                "Intention.",
+                "Recklessness.",
+                "Motive.",
+                "Knowledge."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Motive is distinct from mens rea (the intention or state of mind)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The cornerstone of the law on causation is that the defendant's act must be:",
+            "options": [
+                "The sole cause of the harm.",
+                "The most significant cause of the harm.",
+                "A substantial and operating cause of the harm.",
+                "The last act in the sequence of events."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Legal causation requires the act to be more than a 'de minimis' contribution."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of causation, a victim's voluntary, free, and informed act that intervenes after the defendant's conduct may:",
+            "options": [
+                "Increase the defendant's criminal responsibility.",
+                "Be considered a break in the chain of causation.",
+                "Be ignored by the court.",
+                "Be considered part of the defendant's actus reus."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Such an act constitutes a 'novus actus interveniens'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "An omission (failure to act) will lead to criminal liability only if the individual is under a:",
+            "options": [
+                "Moral obligation.",
+                "Legal duty.",
+                "Ethical code.",
+                "Social contract."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "There is no general duty to act to prevent harm unless specified by law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Miller (1983), the duty to act was implied because the accused:",
+            "options": [
+                "Was under a contractual duty to the homeowner.",
+                "Had a special relationship with the homeowner.",
+                "Had created a dangerous situation (albeit unintentionally).",
+                "Was under a statutory obligation."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Miller's accidental fire created a legal duty to take reasonable steps to mitigate it."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which type of offence is punishable by death or with imprisonment for three years or more, and includes accessory after the fact liability?",
+            "options": [
+                "Simple Offence.",
+                "Misdemeanor.",
+                "Felony.",
+                "Indictable Offence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Felonies are the most serious class of offences under the Criminal Code."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of attempt, the prosecution must establish intention. For attempted murder, the required intention is:",
+            "options": [
+                "Intention to cause grievous bodily harm.",
+                "Intention to kill.",
+                "Recklessness as to whether death would occur.",
+                "Intention to do any unlawful act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Attempted murder requires a specific intent to kill, not just to cause harm."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which test for determining the actus reus of attempt was formulated by Park B in R v Eagleton and adopted in Nigeria?",
+            "options": [
+                "The Equivocality test.",
+                "The Turner’s test.",
+                "The Proximity test.",
+                "The Substantial Step test."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The proximity test looks at how close the defendant was to completing the crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The actus reus of a crime is defined as:",
+            "options": [
+                "The act that is morally wrong.",
+                "A deed or omission forbidden by law.",
+                "The desire to commit the crime.",
+                "The consequence that was unforeseen."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Actus Reus is the objective physical element of a crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The voluntariness requirement for an act that forms the actus reus means the defendant:",
+            "options": [
+                "Deliberately chose to act in a particular way.",
+                "Was capable of controlling her behavior when she acted.",
+                "Foresaw the precise consequence of her act.",
+                "Had a positive motive for the act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Acts must be the product of a willed muscular movement."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The classification of offences into felony, misdemeanour, and simple offences is crucial for determining all the following EXCEPT:",
+            "options": [
+                "The scope or limit of criminal liability or punishment.",
+                "The power of arrest by private persons.",
+                "The legal possibility of the crime being committed.",
+                "The court’s power to grant bail."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Classification doesn't determine 'legal possibility' (impossibility is a separate doctrine)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "A defendant may intentionally kill another person and still not be guilty of murder if:",
+            "options": [
+                "The killing was carried out in self-defence.",
+                "The motive was blameless.",
+                "The death was unforeseen.",
+                "The defendant had no guilty knowledge."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Lawful justification like self-defence negates the 'unlawfulness' of the killing."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Yip Chiu-Cheung (1995), an undercover anti-drug officer who intended to conspire to import drugs was found to have the necessary mens rea even though he was acting from:",
+            "options": [
+                "A mistake of law.",
+                "A lack of voluntariness.",
+                "The best of motives.",
+                "Legal impossibility."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Motive is legally irrelevant if the intention to commit the actus reus exists."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The failure to address one's mind to those facts and circumstances which a prudent mind would take into consideration is the definition for which type of mens rea?",
+            "options": [
+                "Intention.",
+                "Recklessness.",
+                "Negligence.",
+                "Knowledge."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Negligence is an objective failure to meet the standard of a reasonable person."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the case of Cheshire (1991), the term 'substantial' in causation means the defendant's act must be:",
+            "options": [
+                "The main cause.",
+                "The last direct cause.",
+                "More than a minimal cause.",
+                "An act of omission."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Legal causation does not require the act to be the only or even the primary cause."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an example of a duty to act arising from a special relationship?",
+            "options": [
+                "A railway gate man to a road user (R V Pittwood).",
+                "A defendant who caused a fire (Miller).",
+                "A head of family to a child under 14 years (Section 301 CC).",
+                "A citizen to prevent a felony (Section 515 CC)."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Familial and guardianship relationships create inherent legal duties to care."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in Smith v Selwyn (1914) that a civil action must be stayed pending a criminal trial based on the same facts is:",
+            "options": [
+                "Still applicable to all felony cases in Nigeria.",
+                "The legal basis for all bail applications.",
+                "Not applicable in Nigeria due to constitutional rights of access to court.",
+                "Only applies when the defendant has confessed to the crime."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Smith v. Selwyn rule has been abrogated in Nigeria to protect civil light of access to courts."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Criminal Code, an act or omission which renders the person doing the act or making the omission liable to punishment is defined as:",
+            "options": [
+                "A Tort.",
+                "A Civil Wrong.",
+                "A Crime.",
+                "A Moral Transgression."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Liability to punishment by the state defines a 'crime' or 'offence'."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Hyam v DPP (1974), it was held that there is intention to cause death or grievous bodily harm if the accused:",
+            "options": [
+                "Desired the result, regardless of foresight.",
+                "Foresaw the result, but did not desire it.",
+                "Deliberately and intentionally did an act knowing the harm was a probable consequence.",
+                "Acted negligently, leading to the harm."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "This case explored the concept of 'foresight of consequences' as evidence of intention."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "For an act to be part of the actus reus, it is essential that it is:",
+            "options": [
+                "Unintentional.",
+                "An omission.",
+                "The physical result of human conduct.",
+                "The product of an evil state of mind."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Criminal law requires a physical manifestation of behavior."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The fact that a victim may have contributed to the harm occurring (e.g., walking along the middle of the road) is generally considered:",
+            "options": [
+                "A defence for the accused.",
+                "Irrelevant if the defendant's acts were a cause of the harm.",
+                "A complete break in the chain of causation.",
+                "A factor that reduces the actus reus to an omission."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Contributory negligence is not a defence in criminal law if the defendant's act was still a substantial cause."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In which case was the appellant convicted for the offence of neglecting to prevent a felony under Section 515 of the Criminal Code?",
+            "options": [
+                "R V ALIMI Akanni & Ors (1959).",
+                "Benedict Obumselu v Commissioner of Police (1958).",
+                "R V Pittwood (1902).",
+                "R V Gibbons & Proctor (1918)."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Obumselu failed to prevent a felony (illegal abortion) which he knew was being planned."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The degree of negligence required for a serious crime like manslaughter is:",
+            "options": [
+                "Simple.",
+                "Minimal.",
+                "Gross or a very high degree.",
+                "Reasonably foreseeable."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Culpable negligence must be so 'gross' as to warrant criminal punishment."
+        }
+    }
+]

@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The mental element (mens rea) for the offence of receiving property obtained by a felony (Sec. 427) is simply:",
+            "options": [
+                "Intention to permanently deprive the owner.",
+                "Knowledge about it.",
+                "Recklessness as to the origin.",
+                "Negligence in receiving it."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Receiving stolen property requires knowledge that the property was dishonestly obtained."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "When a person is convicted for the offence of neglect to prevent a felony (S. 515 CC), they are guilty of a:",
+            "options": [
+                "Felony and liable to life imprisonment.",
+                "Misdemeanor and liable to imprisonment for two years.",
+                "Simple offence and liable to a fine.",
+                "Capital offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 515 of the CC classifies this omission as a misdemeanor."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Conspiracy to murder (Section 324 CC) is listed as an offence punishable by imprisonment for:",
+            "options": [
+                "7 years.",
+                "14 years.",
+                "Life imprisonment.",
+                "2 years."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Section 324 CC sets a 14-year term for conspiracy to kill."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Accessory after the facts to murder (Section 322 CC) is an example of an offence punishable by:",
+            "options": [
+                "Imprisonment for 7 years.",
+                "Life imprisonment.",
+                "Imprisonment for 14 years.",
+                "Death."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Accessory after the fact to murder is a felony punishable by 14 years."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The mental element for being an accessory after the fact to another's crime (Sec. 10 CC) is knowledge that the other is guilty of an offence plus:",
+            "options": [
+                "Recklessness as to punishment.",
+                "Intention to enable him to escape punishment.",
+                "A legal duty to report the crime.",
+                "A motive to help a friend."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The specific intent required is the desire to help the offender evade justice."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The fact of guilty knowledge for an offence like receiving stolen property can seldom be proved by direct evidence and must almost always be:",
+            "options": [
+                "Inferred from the circumstances of the case.",
+                "Established by the accused's motive.",
+                "Proven by the victim's testimony.",
+                "Determined by the legal classification of the offence."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Circumstantial evidence (e.g., buying at an unrealistically low price) is used to infer knowledge."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Treason (Section 37 CC) is classified under the object of offence as:",
+            "options": [
+                "PART 5: Offences against the person.",
+                "PART 2: Offences against public order.",
+                "PART 4: Acts injurious to the public.",
+                "PART 6: Offences relating to property."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Treason is the ultimate offence against public order and the state."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Treachery (Section 49A), which is helping the enemy in any war, is a:",
+            "options": [
+                "Misdemeanour, liable to 2 years imprisonment.",
+                "Simple offence, liable to a fine.",
+                "Felony, liable to suffer death.",
+                "Descriptive offence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Treachery during wartime is a capital felony."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Official Corruption amongst public officials (Section 98 CC) is classified under:",
+            "options": [
+                "PART 2: Offences against public order.",
+                "PART 3: Offence against the administration of law and justice.",
+                "PART 6: Offences relating to property.",
+                "PART 7: Miscellaneous offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Corruption undermines the integrity of the legal and justice system (Part 3)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Perjury (Section 117 & 118) is a felony punishable by:",
+            "options": [
+                "Imprisonment for 7 years.",
+                "Imprisonment for 14 years.",
+                "Imprisonment for 3 years.",
+                "Death."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Perjury in a judicial proceeding carries a 14-year maximum sentence."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The actus reus for Arson (Section 443), like Criminal Damages, must include the prohibited result that:",
+            "options": [
+                "The defendant acted voluntarily.",
+                "Property must be destroyed or damaged.",
+                "The defendant acted recklessly.",
+                "The fire was started intentionally."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The core result required for arson or damage is the physical destruction of the property."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Stealing (Section 383) is an example of an offence against property where the actus reus includes the circumstance that the appropriation of property is theft only if:",
+            "options": [
+                "The act was willed.",
+                "The property belongs to another.",
+                "The accused was reckless.",
+                "The accused had no duty to act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Ownership by 'another' is a required external circumstance (attendant circumstance) for theft."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is listed as a jurisdictional offence, being a crime in the North but not the South of Nigeria?",
+            "options": [
+                "Treason.",
+                "Adultery.",
+                "Murder.",
+                "Stealing."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Adultery is a crime under the Penal Code (North) but not the Criminal Code (South)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The classification of Felony offences is relevant to Accessory After the Fact because:",
+            "options": [
+                "Felony offences incur the toughest penalties, such as life imprisonment or death.",
+                "Accessory liability is always for a misdemeanor.",
+                "The mens rea for accessory is only required for felonies.",
+                "Only felonies require proof of actus reus."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Being an accessory to a felony is itself a serious felony; gravity determines the penalty for the accessory."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The maximum punishment for Procuration (Section 223), which includes procuring a woman to be a common prostitute, is imprisonment for:",
+            "options": [
+                "6 months.",
+                "2 years (Misdemeanor).",
+                "3 years (Felony).",
+                "Life."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It is classified as a misdemeanor with a 2-year limit."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Robbery (Section 401) is classified under:",
+            "options": [
+                "PART 5: Offences against the person.",
+                "PART 6: Offences relating to property and contracts.",
+                "PART 2: Offences against public order.",
+                "PART 4: Acts injurious to the public."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Robbery is primarily an aggravated form of theft (Part 6)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "If an accused ought to have known that a surrounding circumstance may exist for a crime (e.g., in a false declaration), but missed the fact due to lack of due diligence, this relates to:",
+            "options": [
+                "Recklessness.",
+                "Negligence.",
+                "The mens rea of knowledge.",
+                "Strict liability."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Liability for 'knowing' sometimes extends to 'constructive knowledge' or failure to verify."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The term mens rea is often used for the mental element, but a defendant may have a mens rea (e.g., Conspiracy to Import Drugs) even if he is blameless, as seen in Yip Chiu-Cheung, because:",
+            "options": [
+                "His motive was good.",
+                "He had a duty to act.",
+                "The actus reus was an omission.",
+                "He made a mistake of fact."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Law distinguishes between intent (to do the act) and motive (the reason for doing it)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Recklessness (a component of mens rea often relevant to property crimes like Arson if unintentional) implies:",
+            "options": [
+                "Inadvertence.",
+                "A disregard for the consequences of one's action.",
+                "A clear desire for the result.",
+                "A legal impossibility."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "It's taking a known risk without caring about the outcome."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The maximum punishment for Being present at, making poison for unlawful trial by ordeal (Section 209) is imprisonment for:",
+            "options": [
+                "1 year.",
+                "2 years.",
+                "10 years or death.",
+                "7 years."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Section 209 CC sets 1 year for participation in trial by ordeal."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The law in Nigeria provides a punishment of up to 3 years imprisonment for a false declaration or statement which a person:",
+            "options": [
+                "Ought to have known to be false.",
+                "Knows that it is false.",
+                "Was reckless as to its truth.",
+                "Had motive to make."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Proof of actual knowledge of the falsehood is required for conviction."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The legal classification of offences into Felony, Misdemeanour, and Simple Offences is important for determining the gravity of an offence because:",
+            "options": [
+                "The punishments for attempts/conspiracies vary based on this classification.",
+                "All felonies are capital offences.",
+                "Only simple offences require mens rea.",
+                "The actus reus is different for each."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The severity of the punishment for inchoate crimes depends on the type of principal crime planned."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Kidnapping (Section 364), while classified under Offences against the person in the CC, has largely been amended by some States to carry a punishment of:",
+            "options": [
+                "Life imprisonment only.",
+                "A fine only.",
+                "A death sentence.",
+                "Imprisonment for 7 years."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Many states in Nigeria have introduced the death penalty for kidnapping in response to increased cases."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "An act that is classified as a crime in one region of Nigeria but not another (e.g., Adultery) is referred to as a:",
+            "options": [
+                "Descriptive offence.",
+                "Jurisdictional offence.",
+                "Capital offence.",
+                "Simple offence."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Jurisdictional offences reflect regional differences in legal codes (CC vs PC)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "The mens rea for Intention (relevant to crimes like Burglary) is a state of mind where the person:",
+            "options": [
+                "Foresees and desires the consequences of his act.",
+                "Was capable of controlling his behaviour.",
+                "Acted in an accidental manner.",
+                "Was under a legal duty."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Intention is the highest level of mens rea, combining foresight and desire."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Preparation for forgery (s. 480 CC) is listed as an exception where preparation to commit an offence:",
+            "options": [
+                "Is treated as the completed offence.",
+                "Is not a crime.",
+                "Is explicitly criminalized.",
+                "Is treated as a simple offence only."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Forging is one of the few crimes where possessing instruments of preparation is a felony."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "Negligence as a component of mens rea is primarily of great importance in the civil law of tort, but it features in some statutory crimes, particularly in areas of:",
+            "options": [
+                "Public order.",
+                "Professional regulation.",
+                "Sexual offences.",
+                "Capital offences."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Negligence is often a basis for liability in regulatory and professional conduct cases."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "In R v Udo (1942), the court held that the question of whether guilty knowledge on the part of an accused is the proper inference to be drawn from the evidence is for the:",
+            "options": [
+                "Jury.",
+                "Trial judge.",
+                "Appellate court.",
+                "Prosecution."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The judge of fact determines if the inference of guilt is the only reasonable one."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "PART 8: Preparation to commit offences: conspiracy: Accessories after the fact are also referred to as:",
+            "options": [
+                "Capital Offences.",
+                "Descriptive Offences.",
+                "Preliminary Offences.",
+                "Jurisdiction Offences."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "These are inchoate or 'preliminary' because they precede or follow the main crime."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Non-Personal Sexual and Allied Offences",
+        "type": "objective",
+        "question_data": {
+            "text": "If a punishment for an offence (like Disturbing religious worship, Section 206) is imprisonment for two months or a fine of ten Naira, it is classified as a:",
+            "options": [
+                "Felony.",
+                "Misdemeanour.",
+                "Simple offence.",
+                "Capital offence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Any offence with a punishment less than 6 months or only a fine is a simple offence."
+        }
+    }
+]

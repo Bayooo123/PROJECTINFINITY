@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "According to Sir Edward Coke, land in its legal significance comprehends:",
+            "options": [
+                "Only the ground and soil.",
+                "Only immoveable property attached to the earth.",
+                "“Any ground, soil or earth whatsoever,” including castles, houses, and other buildings.",
+                "Only what is attached to the land and the minerals beneath."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Coke's definition is broad, covering both the soil and anything built upon it."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In Nigeria, the definition of land is similar to the common law, but explicitly excludes:",
+            "options": [
+                "All houses and buildings.",
+                "All resources that are vested in the federal government by the 1999 Constitution.",
+                "All chattel attached to the land.",
+                "Airspace above a reasonable height."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Constitution and Land Use Act vest specific resources (minerals, water) in the state."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass to land, also known as Trespass quare clausum fregit, is committed when the defendant, without lawful justification:",
+            "options": [
+                "Indirectly causes a nuisance to the plaintiff's land.",
+                "Enters upon land in the possession of the plaintiff, or remains upon such land, or directly places or projects any material object upon such land.",
+                "Interferes with the plaintiff's ownership of the land.",
+                "Takes chattel from the land."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Trespass to land requires direct and unpermitted physical presence or projection."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass to land is fundamentally an injury to or interference with which right?",
+            "options": [
+                "Ownership right.",
+                "Reversionary right.",
+                "Possessory right or interest in land.",
+                "Statutory right of entry."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Trespass protects possession, not necessarily ownership/title."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the actionability status of Trespass to Land?",
+            "options": [
+                "Actionable only upon proof of substantial damage.",
+                "Actionable only if committed intentionally.",
+                "Actionable per se without proof of damage.",
+                "Actionable only if a court order is first obtained."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Like other trespasses, it is actionable 'per se' to protect the inviolability of land."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "The primary interest protected by the tort of trespass to land is:",
+            "options": [
+                "Ownership.",
+                "Title.",
+                "Exclusive Possession.",
+                "Statutory Right."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The exclusive right to exclude others from one's land is the core protected interest."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is NOT an essential element of trespass to land?",
+            "options": [
+                "Any direct interference.",
+                "With land.",
+                "In the possession of another person.",
+                "Proof of substantial damage."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Proof of damage is not required for a trespass claim to succeed."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "When an interference with land is consequential or indirect, the proper remedy is often in the tort of:",
+            "options": [
+                "Conversion.",
+                "Trespass to Chattel.",
+                "Nuisance.",
+                "Detinue."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nuisance covers indirect interferences like smell, noise, or spreading roots."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Entick v. Carrington, the principle established was that:",
+            "options": [
+                "Mistake is a valid defence for trespass.",
+                "Every invasion of private property, “be it so minute,” is a trespass.",
+                "Trespass is only actionable if it causes substantial damage.",
+                "An owner without immediate possession can sue for trespass."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Lord Camden famously held that any unauthorized entry, however small, is a trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In the case of Basely v. Clarkson, the defendant who innocently mowed his neighbor's lawn by mistake was held liable for trespass. This illustrates that:",
+            "options": [
+                "The lack of motive vitiates an action for trespass.",
+                "Mistake is a strong defence to trespass.",
+                "Mistake is not a defence, and intention is essential in determining trespass.",
+                "Only intentional and not unintentional acts are trespass."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Intention to enter the area is enough; knowledge that the area belongs to another isn't required."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "When a person abuses the purpose for which he has been permitted to be on a land, he becomes a:",
+            "options": [
+                "Licensee ab initio.",
+                "Trespasser ab initio.",
+                "Co-owner.",
+                "Bailee."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Abusing a legal authority to enter makes one a trespasser from the beginning (ab initio)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "The rule in Harrison v. Duke of Rutland held that the plaintiff, who entered the defendant’s land to interrupt a grouse shooting party, was liable for trespass because:",
+            "options": [
+                "The defendant did not have a statutory right of entry.",
+                "The use was outside the lawful purpose of being on the land.",
+                "The plaintiff abused his license granted by the owner.",
+                "He committed destruction waste of common property."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Entry for an unauthorized purpose (interference) turned the presence into a trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass to land may be committed in which of the following ways?",
+            "options": [
+                "Airspace above the land to a reasonable extent for user.",
+                "Earth surface or land surface.",
+                "Beneath the earth surface.",
+                "All of the above."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Land includes everything above and below the surface (with reasonable limits)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In Kelsen v. Imperial Tobacco Co. Ltd, the projection of an advertisement signboard into the plaintiff's airspace a few feet was held to be:",
+            "options": [
+                "An inevitable accident.",
+                "Not a trespass, as no harm resulted.",
+                "A trespass, and the plaintiff was entitled to an injunction for its removal.",
+                "A public nuisance."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Unauthorized intrusion into usable airspace is a trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In Bernstein v. Skyviews and General Ltd, the plane flying at 630 feet above the plaintiff's land was held not to be trespassing because:",
+            "options": [
+                "It was a statutory right of entry.",
+                "The flight was too high to interfere with the reasonable use and enjoyment of the land.",
+                "The defendant was an agent of the third party with a better title.",
+                "The plaintiff failed to prove de facto possession."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Airspace rights are limited to the height necessary for the ordinary use and enjoyment of the land."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "For a person to sue for trespass to land, which form of possession is required?",
+            "options": [
+                "Mere physical presence.",
+                "De facto (actual) possession.",
+                "Possession only on the basis of having legal title.",
+                "Constructive possession only."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Trespass is primarily an action for the possessor in fact."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the key points, which party cannot sue for trespass to land based on mere physical presence or usage of control?",
+            "options": [
+                "An owner of landed property.",
+                "A tenant.",
+                "A servant in a house.",
+                "A holder of reversionary interest (if damage is permanent)."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Servants/guests have 'custody' or 'use' but not legal 'possession' required for trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an example of trespass to land by wrongful entry?",
+            "options": [
+                "An omission to fill up a trench.",
+                "The failure of a tenant to pay his bill.",
+                "Walking on or crossing another person's land without lawful justification.",
+                "Allowing the roots of a tree to spread from adjacent land."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Unauthorized entry by person or object is the most common form of trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In Basely v. Clarkson, the court's finding that the defendant was liable for trespass, despite his mistake, affirmed the principle that:",
+            "options": [
+                "Where there is trespass by mistake, only negligence can be claimed.",
+                "Mistake of fact or law is not a defence to trespass to land.",
+                "Intentional trespassers are not strictly liable.",
+                "Unintentional entry can never be trespass."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A person acts 'at their peril' when entering land."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass by Remaining on Another Person's Land occurs when a person:",
+            "options": [
+                "Enters the land with lawful justification.",
+                "Stays after his purpose or right of entry has come to an end.",
+                "Remains in possession for more than 12 years.",
+                "Sues for recovery of possession."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Presence that was once lawful becomes a trespass if the license/authority expires or is revoked."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In Balogun v. Alakija, the defendant was held liable for trespass because:",
+            "options": [
+                "He entered the house illegally.",
+                "He failed to leave within 15 minutes after the plaintiff requested him to leave.",
+                "He did not pay his rent.",
+                "He committed a crime of malicious damage."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Remaining after a request to leave constitutes a trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the document, in McPhil v. Persons Unknown, what did the English Court of Appeal hold regarding squatters?",
+            "options": [
+                "They were entitled to a lengthy notice before eviction.",
+                "They were protected by the Residential and Recovery of Premises law.",
+                "They were trespassers and the plaintiff was entitled to an order for ejectment.",
+                "They had matured their wrongful possession into ownership."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Squatters have no legal right to remain and can be evicted as trespassers."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Trespass by Placing Things on the Land is a direct invasion. What form of invasion is allowing the roots of a tree to spread from an adjacent land?",
+            "options": [
+                "Trespass by wrongful entry.",
+                "Continuing trespass.",
+                "Indirect invasion, which is Nuisance.",
+                "Trespass ab initio."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Encroachments like roots/branches that require time to grow are indirect and thus nuisance."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the doctrine of Trespass Ab Initio?",
+            "options": [
+                "When an entry is accidental, such as a vehicle skidding.",
+                "When a person with lawful authority of law abuses their right of entry by misbehaving, making them a trespasser from the moment of entry.",
+                "When an owner re-enters the land after a lease is terminated.",
+                "When an omission, such as failure to pay a bill, makes a person a trespasser."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Authority given by law (not by the party) if abused, results in retroactive trespass."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "In the Six Carpenters Case, the carpenters who ate and drank but refused to pay were held NOT to be trespassers ab initio because:",
+            "options": [
+                "An omission cannot make a party a trespasser from the beginning.",
+                "The authority to enter was given by the proprietor (the party), not by law.",
+                "The amount of damage was nominal.",
+                "They had a statutory right of entry."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The rule only applies to authority given by law, not by the proprietor."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Mesne profit is a remedy a landlord may claim against a tenant who 'holds over' (overstays). What is mesne profit?",
+            "options": [
+                "Aggravated damages for the initial trespass.",
+                "Intermediate profit, money, or compensation payable for the use of the premises until the tenant vacates.",
+                "The cost of reinstatement and repairs to the property.",
+                "Statutory penalty for failure to give a proper quit notice."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mesne profits are the value of the 'use and occupation' of the land during wrongful possession."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "What act constitutes a 'Continuing Trespass'?",
+            "options": [
+                "An act of trespass that has ended, such as digging a trench and leaving.",
+                "Remaining on the land or leaving anything on the land after an initial trespass.",
+                "A defendant entering to retake a chattel.",
+                "A tenant 'holding over' after notice to quit."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Leaving an object on someone's land is a new trespass every day until removed."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the legal position of a plaintiff who is an original trespasser but is in exclusive de facto possession of the land?",
+            "options": [
+                "They cannot maintain an action against a later trespasser.",
+                "They can only sue the true owner.",
+                "They can maintain an action in trespass against a later trespasser who cannot show a better title.",
+                "They are only entitled to nominal damages."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Possession (even wrongful) is good against all except the true owner (beati possidentes)."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the doctrine of 'trespass by relation,' a person with the right to immediate possession who enters the land is deemed to have been in possession from what point in time?",
+            "options": [
+                "The moment of filing the lawsuit.",
+                "The time his right of entry occurred.",
+                "The time the trespasser was ejected.",
+                "The day the lease expired."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The right to possession 'relates back' to when the right first accrued once entry is made."
+        }
+    },
+    {
+        "course": "Law of Torts",
+        "topic": "Trespass to Land",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is a valid defence for a defendant in an action for Trespass to Land?",
+            "options": [
+                "Mistake of law or fact.",
+                "Absence of motive.",
+                "Entry by consent, license, or permission of the occupier.",
+                "The fact that the defendant is a servant in the house."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Permission (leave and license) is a complete justification for entry."
+        }
+    }
+]

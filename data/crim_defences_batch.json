@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Automatism is provided for in which section of the Criminal Code?",
+            "options": [
+                "S. 48.",
+                "S. 25.",
+                "S. 24.",
+                "S. 301."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Section 24 of the Criminal Code covers acts done independently of the will (automatism)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "A core requirement for the defence of Automatism is that the act is done:",
+            "options": [
+                "With criminal intention.",
+                "Independently of the exercise of the defendant’s will.",
+                "With a reasonable mistake of fact.",
+                "In the course of an unlawful act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Automatism involves an involuntary act where the mind does not control the muscles."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of Automatism, an act caused by an internal factor or disease of the mind is considered:",
+            "options": [
+                "Non-insane automatism.",
+                "Insane automatism.",
+                "Accidental automatism.",
+                "Reckless automatism."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "If the cause is an internal 'disease of the mind', it falls under insanity or insane automatism."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the verdict when a defendant is found not liable due to insane automatism?",
+            "options": [
+                "Acquitted and discharged.",
+                "Convicted of a simple offence.",
+                "Acquitted but not discharged.",
+                "Charged with a misdemeanor."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The verdict is generally 'Not guilty by reason of insanity', leading to detention in a psychiatric facility (acquitted but not discharged)."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R V Quick and Paddison illustrates that when hypoglycemia is caused by insulin, it is classified as:",
+            "options": [
+                "Insane automatism (internal factor).",
+                "Non-insane automatism (external factor).",
+                "Accident.",
+                "Mistake of fact."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Insulin is an external factor, so its effects are treated as non-insane automatism."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following conditions was Lord Denning's definition of an involuntary act in Bratty v A.G. for Northern Ireland?",
+            "options": [
+                "An act done by the muscles without any control by the mind.",
+                "An act done with criminal intent.",
+                "An act done with a pure intention.",
+                "An act done in self-defence."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Lord Denning defined automatism as a spasm, reflex, or act done without mental control."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In R V KEMP, the defendant assaulted his wife with a hammer due to arteriosclerosis. This was held to be:",
+            "options": [
+                "Non-insane automatism.",
+                "Insane automatism.",
+                "Accident.",
+                "Mistake of fact."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Arteriosclerosis is an internal physical condition affecting the mind, thus insane automatism."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Accident requires an intentional/voluntary act or omission that resulted in an event that was:",
+            "options": [
+                "Intended to be harmful.",
+                "Unforeseen or not reasonably contemplated.",
+                "Known to the accused.",
+                "Legally impossible."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Accident applies when the result of a voluntary act was unexpected and unforeseen."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Criminal Code, the defence of Accident is still applicable even if the voluntary act or omission that led to the event was:",
+            "options": [
+                "Accompanied by gross negligence.",
+                "Unlawful.",
+                "An omission to act under a legal duty.",
+                "Done with a guilty mind."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Criminal Code (unlike some other systems) allows the defence of accident even for unlawful acts, provided the result was truly accidental."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Penal Code's requirement for the defence of Accident, which is stricter than the Criminal Code, is that the act must have been done:",
+            "options": [
+                "Without any criminal intention or knowledge in the course of doing a lawful act.",
+                "In the course of doing an unlawful act.",
+                "With the reasonable belief of necessity.",
+                "Due to an external factor only."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The Penal Code (North) requires the underlying act to be lawful for the accident defence to apply."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In ADELUMOLA V STATE, the defence of accident failed when the appellant threw a lit stove that exploded because:",
+            "options": [
+                "The act was considered an omission.",
+                "The explosion was an event that occurred suddenly.",
+                "The consequence was reasonably foreseeable and expected.",
+                "The appellant did not raise the defence timeously."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the result is a likely consequence of the act, it is not an 'accident' in law."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of R V MARTYR allowed the defence of accident despite the voluntary act of assault because:",
+            "options": [
+                "The blow was moderate.",
+                "The resulting hemorrhage on the brain was an unusual consequence.",
+                "The victim contributed to the harm.",
+                "The act was not a felony."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A moderate blow leading to an extraordinary result (death) was seen as an accidental outcome."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Mistake of Fact under the Criminal Code (S. 25) requires the act to be based on a mistake as to:",
+            "options": [
+                "The existence of any state of things.",
+                "The legal consequence of the act.",
+                "The correct legal classification of the crime.",
+                "The moral quality of the act."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Mistake must relate to factual circumstances, not the law itself."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Under the Criminal Code (S. 25), the mistake of fact must be:",
+            "options": [
+                "Honest only.",
+                "Honest and reasonable.",
+                "Reasonable only.",
+                "A mistake of law."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The defendant must prove they genuinely believed the mistaken fact and that a reasonable person might have too."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Criminal Law of Lagos State is noted for removing which requirement for the defence of Mistake of Fact?",
+            "options": [
+                "That the mistake must be honest.",
+                "That the act must be voluntary.",
+                "That the mistake must be honest and reasonable.",
+                "That the mistake must relate to the state of things."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Some modern reforms move towards an objective 'reasonableness' or a purely subjective 'honesty' trial."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The test applied when assessing the defence of Mistake of Fact is:",
+            "options": [
+                "We determine if the defendant’s act amounts to a crime assuming the mistaken belief was the true state of affairs.",
+                "We assess the defendant’s motive.",
+                "We determine if the mens rea was fully formed.",
+                "We apply the proximity test."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The court judges the act as if the mistaken facts were actually true."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In R V GOULD, the defendants’ mistake that a mixture of glycerin and Dettol was safe to induce an abortion was held to be a mistake as to:",
+            "options": [
+                "The existence of any state of things.",
+                "The consequence of their acts.",
+                "A reasonable belief.",
+                "A matter of law."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "They were mistaken about the properties (state of things) of the substance."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In GADAM V R, the accused's belief in witchcraft was held not to be reasonable. Even if it were reasonable, the accused would still be liable because:",
+            "options": [
+                "The killing was intentional.",
+                "It was still a crime to kill a witch.",
+                "The victim was an old woman.",
+                "The accused had no duty to act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mistake of fact does not excuse acts that are inherently unlawful (like killing) regardless of the belief."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which defence is available to a person who is incapable of controlling their behavior when they acted?",
+            "options": [
+                "Accident.",
+                "Mistake of Fact.",
+                "Automatism.",
+                "Self-Defence."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Automatism is the denial of the 'voluntary act' requirement."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that a defendant who kills another intentionally is not guilty of murder if the killing was carried out in self-defence relates to which assessment of the law?",
+            "options": [
+                "Concurrence.",
+                "Causation.",
+                "Strict Liability.",
+                "Whether the defendant deserves criminal blame."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Justifications and excuses determine if legal 'blame' (guilt) should attach to the act."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the defence of Automatism, an act caused by an external factor (e.g., medication) is considered:",
+            "options": [
+                "Insane automatism.",
+                "Non-insane automatism.",
+                "Recklessness.",
+                "Accident."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "External triggers lead to non-insane (sane) automatism."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the verdict when a defendant is found not liable due to non-insane automatism?",
+            "options": [
+                "Acquitted but not discharged.",
+                "Acquitted and discharged.",
+                "Liable for a simple offence.",
+                "Liable for an unlawful act."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Success in a sane automatism plea leads to a full acquittal."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of AMAYO V STATE held that only the defence of Accident was available to a police constable whose rifle dropped and exploded, because the dropping of the rifle was an:",
+            "options": [
+                "Omission.",
+                "Unlawful act.",
+                "Intentional act.",
+                "Unforeseen circumstance."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The constable voluntarily handled the rifle; its discharge was the accidental result."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The Penal Code requires that a mistake of fact must be made:",
+            "options": [
+                "Honestly and reasonably.",
+                "In good faith.",
+                "With a lawful motive.",
+                "With a criminal intention."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The Penal Code uses the standard of 'good faith' for mistake."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In the context of causation, the fact that a lady was dressing proactively or is a prostitute is considered:",
+            "options": [
+                "A mitigating factor for a rape charge.",
+                "A factor that breaks the chain of causation.",
+                "Irrelevant if the defendant’s acts were a cause of harm (rape).",
+                "A legal defence for the defendant."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The victim's behavior or character does not justify or excuse rape."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Accident requires that the resulting event is:",
+            "options": [
+                "Not reasonably contemplated.",
+                "Intentional.",
+                "An act done by the muscles without any control by the mind.",
+                "The product of a mistake of law."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "If the result was foreseeable, it wasn't an 'accident' in the legal sense."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The case of AGWU V STATE concluded that an injury during a scuffle, where the true cause of the injury was unknown, would qualify as:",
+            "options": [
+                "Insane automatism.",
+                "A felony.",
+                "An accident.",
+                "A mistake of fact."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "If the cause of harm in a lawful or contested struggle is unclear, 'accident' often applies."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is an example of an involuntary act in the context of automatism?",
+            "options": [
+                "An act done while driving recklessly.",
+                "An act done whilst suffering from convulsion or sleepwalking.",
+                "An act done with a criminal intention.",
+                "An act done by a person who foresaw the harm."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Reflexes, convulsions, and sleepwalking are classic examples of involuntary movements."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "The defence of Mistake of Fact does not cover a mistake as to:",
+            "options": [
+                "The existence of any state of things.",
+                "The consequence of one's actions.",
+                "The identity of the victim.",
+                "The possession of stolen property."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "Mistake must be about the facts of the situation, not the resulting outcome."
+        }
+    },
+    {
+        "course": "Criminal Law",
+        "topic": "Defences to Criminal Responsibility",
+        "type": "objective",
+        "question_data": {
+            "text": "In TIMBU KOLIAN V THE QUEEN, the accused was held not liable for the death of his baby (who was struck by a moderate blow aimed at his wife) because the result of his act was:",
+            "options": [
+                "Non-insane automatism.",
+                "An accident.",
+                "Legal impossibility.",
+                "A consequence of his recklessness."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The death of the baby from a moderate blow aimed at another was an accidental event."
+        }
+    }
+]

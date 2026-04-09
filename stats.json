@@ -1,6 +1,10 @@
 {
-  "namespaces": {},
+  "namespaces": {
+    "course_materials": {
+      "recordCount": 660
+    }
+  },
   "dimension": 1024,
   "indexFullness": 0,
-  "totalRecordCount": 0
+  "totalRecordCount": 660
 }

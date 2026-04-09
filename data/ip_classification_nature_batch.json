@@ -1,0 +1,482 @@
+[
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Intellectual property (IP) is broadly divided into which two categories?",
+            "options": [
+                "Patents and Trademarks",
+                "Copyright and Industrial Property",
+                "Literary and Artistic Works",
+                "Traditional Knowledge and Genetic Resources"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "IP is classically split into Copyright (and related rights) and Industrial Property (patents, trademarks, etc.)."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Which of the following is specifically listed as a component of Industrial Property?",
+            "options": [
+                "Copyright",
+                "Related Rights",
+                "Patent",
+                "Scientific Works"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Patents, trademarks, and industrial designs fall under the 'Industrial Property' umbrella."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Intellectual property is considered intangible or incorporeal property because:",
+            "options": [
+                "It requires registration to be protected.",
+                "It is incapable of being physically owned or possessed, and can be simultaneously enjoyed by different users without being lost to the creator.",
+                "It is limited by time and certain exceptions.",
+                "Its protection flows only from human innovative and creative efforts."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "IP protects products of the mind, which can be used by many without physical depletion."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "A Patent is an exclusive right generally granted for a certain period in respect of:",
+            "options": [
+                "Signs identifying goods and services.",
+                "Creative works like books, music, and artistic works.",
+                "An invention that offers a new or improved technical solution to a problem.",
+                "The visual, aesthetic, or ornamental representation of a product's functionality."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Patents protect technical inventions and improvements."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the primary function of a Trademark?",
+            "options": [
+                "To confer exclusive rights over literary or artistic creations.",
+                "To secure rights for a new or improved technical invention.",
+                "To identify and distinguish the goods and services of one individual or company from others in the market.",
+                "To protect the non-functional visual, aesthetic, or ornamental representation of a product."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Trademarks act as indicators of origin and quality in the marketplace."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Which form of Intellectual Property protection listed below is conferred automatically upon creation of the work and does not require registration in Nigeria?",
+            "options": [
+                "Patent",
+                "Trademark",
+                "Industrial Design",
+                "Copyright and related rights"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Copyright arises automatically upon fixation of an original work."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Related Rights (or Neighbouring Rights) typically refer to the rights of:",
+            "options": [
+                "Inventors in their processes.",
+                "Authors in their books and poems.",
+                "Performers, music producers in sound recordings, and broadcasting organizations in their programs.",
+                "Companies in their unique commercial signs and designations."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Related rights protect those who help communicate creative works to the public."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Which Intellectual Property protection is described as currently having 'no legal framework for the protection' in Nigeria?",
+            "options": [
+                "Patents",
+                "Industrial Designs",
+                "Geographical Indications",
+                "Copyright"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nigeria lacks specific sui generis legislation for Geographical Indications."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "According to the provided definitions, what is explicitly excluded from protection by an Industrial Design?",
+            "options": [
+                "Its shape or two-dimensional qualities.",
+                "Its visual or aesthetic representation.",
+                "Its industrial applicability.",
+                "Its functionality."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Industrial designs protect appearance; patents/utility models protect function."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The two key objectives of intellectual property protection are the protection of private interest and the protection of:",
+            "options": [
+                "International treaty compliance.",
+                "Public interest in the promotion of science, arts and societal welfare.",
+                "Government investment in research and development.",
+                "Moral rights in perpetuity."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "IP laws balance rewards for creators with public access to knowledge."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "According to international human rights legal frameworks (UDHR and ICESCR), the right to intellectual property covers the moral and economic interest flowing from:",
+            "options": [
+                "The commercial exploitation of land.",
+                "The scientific, artistic, or literary production of which he/she is the author.",
+                "The acquisition of physical property.",
+                "Protection against unfair competition."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "International law recognizes the right to benefit from one's own creative/scientific output."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The philosophical underpinning for IP protection that views the law as merely reinforcing an inalienable right a creator derives from the act of creation is the:",
+            "options": [
+                "Personality theory.",
+                "Utilitarian theory.",
+                "Reward theory.",
+                "Natural rights theory."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "Natural rights theory (Lockean) suggests property exists inherently in the fruits of one's labor."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The theory that is based on the idea that creators deserve compensation for providing socially beneficial goods through their labour, conceived as a moral entitlement, is the:",
+            "options": [
+                "Personality theory.",
+                "Utilitarian theory.",
+                "Reward theory (or Labour theory subset).",
+                "Development theory."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Reward theory focuses on the justice of compensating the effort expended."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Authors' Moral Rights, such as the right to be identified as the author (paternity/attribution) and the right to object to prejudicial changes (integrity right), are strongly influenced by which justification theory?",
+            "options": [
+                "Economic justification.",
+                "Utilitarian theory.",
+                "Personality theory.",
+                "Social Planning theory."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Personality theory (Hegelian) views the work as an extension of the author's self."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The economic justification for IP protection argues that intellectual works are problematic because, as 'public goods,' they suffer from the phenomenon of:",
+            "options": [
+                "Under-investment.",
+                "Market segmentation.",
+                "Free riding.",
+                "International trade disputes."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Without exclusive rights, others can use the work without paying (free riding), destroying incentives."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "What is the fundamental economic problem that intellectual property law attempts to resolve by granting exclusive rights to creators?",
+            "options": [
+                "The 'problem of ubiquity' leading to market failure/distribution conflicts.",
+                "The challenge of balancing national interests with global trade agreements.",
+                "The difficulty in determining originality.",
+                "The conflict between private and moral rights."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "Information is non-rivalrous and non-excludable (ubiquitous), requiring legal 'fences'."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The Utilitarian theory, often associated with Jeremy Bentham, emphasizes that lawmakers must strike a balance between exclusive rights and:",
+            "options": [
+                "The inalienable moral right of the author.",
+                "The need to promote technological development.",
+                "The goal of ensuring the greatest happiness of the greatest number.",
+                "The requirement for registration formalities."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Utilitarianism seeks the greatest overall welfare for society."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The Development or social planning theory views intellectual property primarily as:",
+            "options": [
+                "An end in itself.",
+                "A means to social, technological, and national development.",
+                "A natural extension of the author's personality.",
+                "A mandatory international obligation."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "This theory prioritizes societal progress over individual property rights."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The WIPO Development Agenda (2007) was initiated primarily by the thinking of countries from the:",
+            "options": [
+                "Global North.",
+                "European Union.",
+                "Global South.",
+                "African Union."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Developing nations pushed for IP systems to better reflect their development needs."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that intellectual property is protected only to the extent stipulated under the relevant national law is called the:",
+            "options": [
+                "National treatment principle.",
+                "Unification principle.",
+                "Harmonisation principle.",
+                "Territoriality principle."
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "IP rights are normally limited by the borders of the granting nation."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The principle that a foreign copyright owner must be accorded equal protection as enjoyed by citizens of the country in question is known as the:",
+            "options": [
+                "Territoriality principle.",
+                "Unification principle.",
+                "National treatment principle.",
+                "Harmonisation principle."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "National treatment is a cornerstone of international IP treaties."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Which approach to international IP standards involves the establishment of minimum standards for IP legislation while respecting the legal systems of member states?",
+            "options": [
+                "Unification",
+                "National Treatment",
+                "Harmonization",
+                "Territoriality"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Harmonization brings laws closer together without making them identical."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The main global body responsible for formulating international normative frameworks for intellectual property is:",
+            "options": [
+                "World Trade Organization (WTO)",
+                "World Health Organization (WHO)",
+                "World Intellectual Property Organization (WIPO)",
+                "United Nations Educational, Scientific and Cultural Organization (UNESCO)"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "WIPO is the specialized UN agency for IP."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The Agreement on the Trade Related Aspects of Intellectual Property Rights (TRIPS Agreement) is primarily administered by which institution?",
+            "options": [
+                "WIPO",
+                "TRIPS Council (under the WTO)",
+                "UNESCO",
+                "ARIPO"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "TRIPS is a core WTO agreement."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Nigeria currently holds which status in the African Regional Intellectual Property Organization (ARIPO)?",
+            "options": [
+                "Full Member",
+                "Non-member",
+                "Observer Status",
+                "Founding Member"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Nigeria attends ARIPO meetings as an observer but isn't a full contracting state yet."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The African Intellectual Property Organization (OAPI) primarily employs which approach to intellectual property laws among its member states?",
+            "options": [
+                "Harmonization",
+                "National Treatment",
+                "Territoriality",
+                "Unification"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "OAPI has a single IP law and a common registration office for its members."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The core mandate of the proposed Pan-African Intellectual Property Organization (PAIPO) is to promote the effective use of the intellectual property system as a tool for:",
+            "options": [
+                "Harmonizing customs duties.",
+                "Resolving boundary disputes.",
+                "The economic, cultural, social and technological development of Africa.",
+                "Enforcing copyright infringement globally."
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "PAIPO is an African Union initiative to leverage IP for continental growth."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian Copyright Commission (NCC) is established under which Nigerian IP statute?",
+            "options": [
+                "Patents and Designs Act",
+                "Trademarks Act",
+                "Copyright Act",
+                "National Office of Technology Acquisition and Protection Act (NOTAP Act)"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "The Copyright Act creates and empowers the Commission."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "The Nigerian institution tasked with the registration of contracts or agreements for the transfer of foreign technology to Nigerian parties, including the right to use patented inventions and trademarks, is the:",
+            "options": [
+                "Nigerian Copyright Commission (NCC)",
+                "Federal Competition and Consumer Protection Commission (FCCPC)",
+                "National Information and Technology Development Agency (NITDA)",
+                "National Office of the Technology Acquisition and Protection (NOTAP)"
+            ],
+            "correctAnswerIndex": 3,
+            "explanation": "NOTAP monitors and registers technology transfer agreements."
+        }
+    },
+    {
+        "course": "Intellectual Property Law",
+        "topic": "Classification and Nature of Intellectual Property",
+        "type": "objective",
+        "question_data": {
+            "text": "Which intellectual property right relates to the visual, aesthetic, or ornamental representation of a product but explicitly excludes its functionality?",
+            "options": [
+                "Patent",
+                "Trademark",
+                "Industrial Design",
+                "Geographical Indication"
+            ],
+            "correctAnswerIndex": 2,
+            "explanation": "Industrial designs protect only the look, not the work/mechanics."
+        }
+    }
+]
