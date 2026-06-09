@@ -20,6 +20,7 @@ export interface UserProfile {
     university: string;
     level: string;
     courses: string[];
+    role?: string;
     created_at?: string;
     updated_at?: string;
 }

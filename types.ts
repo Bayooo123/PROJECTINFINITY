@@ -9,9 +9,9 @@ export interface UserProfile {
 
 export enum AppView {
   ONBOARDING = 'ONBOARDING',
+  HOME = 'HOME',
   PRACTICE = 'PRACTICE',
-  STUDY = 'STUDY',
-  BLOG = 'BLOG',
+  IRAC = 'IRAC',
   PROFILE = 'PROFILE',
   ADMIN = 'ADMIN'
 }
