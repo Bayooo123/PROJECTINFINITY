@@ -1,9 +1,7 @@
-
-
 import React, { useState, useEffect } from 'react';
 import { UserProfile, COURSE_STRUCTURE } from '../types';
 import { Button } from '../components/Button';
-import { Check, ChevronDown, ChevronUp, Quote } from 'lucide-react';
+import { Check, ChevronDown, ChevronUp, BookOpen, ArrowRight } from 'lucide-react';
 
 interface OnboardingProps {
   onComplete: (profile: UserProfile) => void;
@@ -14,8 +12,6 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
   const [name, setName] = useState('');
   const [university, setUniversity] = useState('');
   const [level, setLevel] = useState('100 Level');
-
-  // Course Selection State
   const [selectedCourses, setSelectedCourses] = useState<Set<string>>(new Set());
   const [expandedLevels, setExpandedLevels] = useState<Set<string>>(new Set());
 
@@ -24,10 +20,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
     if (step === 2) {
       const levelData = COURSE_STRUCTURE[level];
       if (levelData) {
-        // Start with compulsory courses for the user's level
-        const initialCourses = new Set(levelData.compulsory);
-        setSelectedCourses(initialCourses);
-        // Expand the user's current level by default
+        setSelectedCourses(new Set(levelData.compulsory));
         setExpandedLevels(new Set([level]));
       }
     }
@@ -35,33 +28,19 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
   const handleStep1Submit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (name && university) {
-      setStep(2);
-    }
-  };
-
-  const handleStep2Submit = () => {
-    setStep(3);
+    if (name && university) setStep(2);
   };
 
   const toggleCourse = (course: string) => {
-    const newSelection = new Set(selectedCourses);
-    if (newSelection.has(course)) {
-      newSelection.delete(course);
-    } else {
-      newSelection.add(course);
-    }
-    setSelectedCourses(newSelection);
+    const next = new Set(selectedCourses);
+    next.has(course) ? next.delete(course) : next.add(course);
+    setSelectedCourses(next);
   };
 
   const toggleLevelExpand = (lvl: string) => {
-    const newExpanded = new Set(expandedLevels);
-    if (newExpanded.has(lvl)) {
-      newExpanded.delete(lvl);
-    } else {
-      newExpanded.add(lvl);
-    }
-    setExpandedLevels(newExpanded);
+    const next = new Set(expandedLevels);
+    next.has(lvl) ? next.delete(lvl) : next.add(lvl);
+    setExpandedLevels(next);
   };
 
   const handleFinalSubmit = () => {
@@ -70,58 +49,74 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
       university,
       level,
       courses: Array.from(selectedCourses),
-      hasOnboarded: true
+      hasOnboarded: true,
     });
   };
 
+  const firstName = name.split(' ')[0];
+
+  // ────────────────────────────────────────────
+  // Step 1 — Name, University, Level
+  // ────────────────────────────────────────────
   if (step === 1) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-slate-50">
+      <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-stone-100 dark:bg-slate-950">
         <div className="w-full max-w-md space-y-8">
-          <div className="text-center space-y-2">
+          <div className="text-center space-y-3">
             <div className="flex justify-center mb-6">
-              <img src="logo_banner.png" alt="Learned Logo" className="h-24 w-auto rounded-xl shadow-lg" />
+              <img src="logo_banner.png" alt="Learned" className="h-20 w-auto rounded-xl" />
             </div>
-            <h1 className="text-3xl font-serif font-bold text-slate-900 -mt-4">Learned: Empowering the Future of Law in Nigeria</h1>
-            <p className="text-slate-600 leading-relaxed font-medium">
-              Contributing our quota to resolve the issue of academic underperformance, specifically for law students across Nigeria.
+            <h1 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">
+              Welcome to Learned
+            </h1>
+            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+              Your daily Nigerian law study companion.
             </p>
           </div>
 
-          <form onSubmit={handleStep1Submit} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-6">
+          <form
+            onSubmit={handleStep1Submit}
+            className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 space-y-5"
+          >
             <div className="space-y-2">
-              <label htmlFor="name" className="block text-sm font-medium text-slate-700">Full Name</label>
+              <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
+                Full Name
+              </label>
               <input
                 type="text"
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none transition-all"
                 placeholder="e.g. Chisom Adebayo"
                 required
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="university" className="block text-sm font-medium text-slate-700">University</label>
+              <label htmlFor="university" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
+                University
+              </label>
               <input
                 type="text"
                 id="university"
                 value={university}
                 onChange={(e) => setUniversity(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none transition-all"
                 placeholder="e.g. University of Lagos"
                 required
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="level" className="block text-sm font-medium text-slate-700">Level</label>
+              <label htmlFor="level" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
+                Level
+              </label>
               <select
                 id="level"
                 value={level}
                 onChange={(e) => setLevel(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all bg-white"
+                className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none transition-all"
               >
                 <option value="100 Level">100 Level</option>
                 <option value="200 Level">200 Level</option>
@@ -132,7 +127,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
               </select>
             </div>
 
-            <Button type="submit" fullWidth className="mt-4">
+            <Button type="submit" fullWidth className="mt-2">
               Next Step
             </Button>
           </form>
@@ -141,52 +136,88 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
     );
   }
 
+  // ────────────────────────────────────────────
+  // Step 2 — Course Selection
+  // ────────────────────────────────────────────
   if (step === 2) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-slate-50 py-12">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 py-12 bg-stone-100 dark:bg-slate-950">
         <div className="w-full max-w-2xl space-y-6">
           <div className="text-center space-y-2 mb-8">
-            <h2 className="text-2xl font-serif font-bold text-slate-900">Select Your Courses</h2>
-            <p className="text-slate-600">
-              We've selected compulsory courses for <span className="font-semibold text-slate-900">{level}</span>. <br />
-              Please add your electives and any carryover courses.
+            <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">
+              Select Your Courses
+            </h2>
+            <p className="text-slate-500 dark:text-slate-400 text-sm">
+              We've pre-selected compulsory courses for{' '}
+              <span className="font-semibold text-slate-900 dark:text-white">{level}</span>.
+              Add your electives and any carryover courses.
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-            <div className="p-4 bg-slate-50 border-b border-slate-200 flex justify-between items-center">
-              <span className="font-medium text-slate-700">Course List</span>
+          <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+            <div className="p-4 bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
+              <span className="font-medium text-slate-700 dark:text-slate-300 text-sm">Course List</span>
               <span className="text-sm text-amber-600 font-medium">{selectedCourses.size} Selected</span>
             </div>
 
-            <div className="divide-y divide-slate-100 max-h-[60vh] overflow-y-auto">
+            <div className="divide-y divide-slate-100 dark:divide-slate-800 max-h-[60vh] overflow-y-auto">
               {Object.entries(COURSE_STRUCTURE).map(([lvl, data]) => {
                 const isCurrentLevel = lvl === level;
                 const isExpanded = expandedLevels.has(lvl);
 
                 return (
-                  <div key={lvl} className="bg-white">
+                  <div key={lvl} className="bg-white dark:bg-slate-900">
                     <button
                       onClick={() => toggleLevelExpand(lvl)}
-                      className={`w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors ${isCurrentLevel ? 'bg-amber-50 hover:bg-amber-50/80' : ''}`}
+                      className={`w-full flex items-center justify-between p-4 transition-colors ${
+                        isCurrentLevel
+                          ? 'bg-amber-50 dark:bg-amber-900/20 hover:bg-amber-50/80 dark:hover:bg-amber-900/30'
+                          : 'hover:bg-slate-50 dark:hover:bg-slate-800'
+                      }`}
                     >
                       <div className="flex items-center gap-3">
-                        <span className={`font-bold ${isCurrentLevel ? 'text-amber-700' : 'text-slate-700'}`}>{lvl}</span>
-                        {isCurrentLevel && <span className="text-xs bg-amber-200 text-amber-800 px-2 py-0.5 rounded-full">My Level</span>}
+                        <span
+                          className={`font-bold text-sm ${
+                            isCurrentLevel
+                              ? 'text-amber-700 dark:text-amber-400'
+                              : 'text-slate-700 dark:text-slate-300'
+                          }`}
+                        >
+                          {lvl}
+                        </span>
+                        {isCurrentLevel && (
+                          <span className="text-xs bg-amber-200 dark:bg-amber-800 text-amber-800 dark:text-amber-200 px-2 py-0.5 rounded-full">
+                            My Level
+                          </span>
+                        )}
                       </div>
-                      {isExpanded ? <ChevronUp size={20} className="text-slate-400" /> : <ChevronDown size={20} className="text-slate-400" />}
+                      {isExpanded ? (
+                        <ChevronUp size={18} className="text-slate-400 dark:text-slate-500" />
+                      ) : (
+                        <ChevronDown size={18} className="text-slate-400 dark:text-slate-500" />
+                      )}
                     </button>
 
                     {isExpanded && (
-                      <div className="p-4 pt-0 space-y-4 animate-in slide-in-from-top-2 duration-200">
-                        {/* Compulsory */}
+                      <div className="p-4 pt-0 space-y-4">
                         <div>
-                          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 mt-2">Compulsory</h4>
+                          <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 mt-3">
+                            Compulsory
+                          </h4>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                            {data.compulsory.map(course => (
-                              <label key={course} className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 cursor-pointer hover:border-amber-500 transition-all">
-                                <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${selectedCourses.has(course) ? 'bg-amber-600 border-amber-600' : 'border-slate-300 bg-white'}`}>
-                                  {selectedCourses.has(course) && <Check size={14} className="text-white" />}
+                            {data.compulsory.map((course) => (
+                              <label
+                                key={course}
+                                className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-amber-500 dark:hover:border-amber-500 transition-all"
+                              >
+                                <div
+                                  className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 transition-colors ${
+                                    selectedCourses.has(course)
+                                      ? 'bg-amber-600 border-amber-600'
+                                      : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
+                                  }`}
+                                >
+                                  {selectedCourses.has(course) && <Check size={12} className="text-white" />}
                                 </div>
                                 <input
                                   type="checkbox"
@@ -194,21 +225,31 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                                   checked={selectedCourses.has(course)}
                                   onChange={() => toggleCourse(course)}
                                 />
-                                <span className="text-sm font-medium text-slate-700">{course}</span>
+                                <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{course}</span>
                               </label>
                             ))}
                           </div>
                         </div>
 
-                        {/* Electives */}
                         {data.electives.length > 0 && (
                           <div>
-                            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 mt-4">Electives</h4>
+                            <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 mt-4">
+                              Electives
+                            </h4>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                              {data.electives.map(course => (
-                                <label key={course} className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 cursor-pointer hover:border-amber-500 transition-all">
-                                  <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${selectedCourses.has(course) ? 'bg-amber-600 border-amber-600' : 'border-slate-300 bg-white'}`}>
-                                    {selectedCourses.has(course) && <Check size={14} className="text-white" />}
+                              {data.electives.map((course) => (
+                                <label
+                                  key={course}
+                                  className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-amber-500 dark:hover:border-amber-500 transition-all"
+                                >
+                                  <div
+                                    className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 transition-colors ${
+                                      selectedCourses.has(course)
+                                        ? 'bg-amber-600 border-amber-600'
+                                        : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
+                                    }`}
+                                  >
+                                    {selectedCourses.has(course) && <Check size={12} className="text-white" />}
                                   </div>
                                   <input
                                     type="checkbox"
@@ -216,7 +257,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                                     checked={selectedCourses.has(course)}
                                     onChange={() => toggleCourse(course)}
                                   />
-                                  <span className="text-sm font-medium text-slate-700">{course}</span>
+                                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{course}</span>
                                 </label>
                               ))}
                             </div>
@@ -231,8 +272,10 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
           </div>
 
           <div className="flex gap-4">
-            <Button variant="ghost" onClick={() => setStep(1)}>Back</Button>
-            <Button fullWidth onClick={handleStep2Submit} disabled={selectedCourses.size === 0}>
+            <Button variant="ghost" onClick={() => setStep(1)}>
+              Back
+            </Button>
+            <Button fullWidth onClick={() => setStep(3)} disabled={selectedCourses.size === 0}>
               Next
             </Button>
           </div>
@@ -241,45 +284,44 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
     );
   }
 
-  // Step 3: Manifesto / Welcome Message
+  // ────────────────────────────────────────────
+  // Step 3 — Personalised Welcome (replaces manifesto)
+  // ────────────────────────────────────────────
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-slate-50">
-      <div className="w-full max-w-2xl bg-white p-8 md:p-12 rounded-2xl shadow-lg border border-slate-200 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-slate-900 to-amber-600"></div>
-        <div className="absolute -right-10 -top-10 text-slate-100 opacity-50 pointer-events-none">
-          <Quote size={180} />
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-stone-100 dark:bg-slate-950">
+      <div className="w-full max-w-md space-y-8">
+        <div className="text-center">
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 dark:text-white leading-tight">
+            You're ready, {firstName}.
+          </h1>
         </div>
 
-        <div className="relative z-10 space-y-8">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 leading-tight">
-            Learned: Empowering the Future of Law in Nigeria
-          </h2>
-
-          <div className="space-y-6 text-slate-700 text-lg leading-relaxed font-serif">
-            <p>
-              The challenge of academic underperformance in Nigeria’s educational system is a complex, far-reaching problem. While the right to education is a constitutional ideal, its non-enforceability often leaves it as a secondary concern.
-            </p>
-            <p>
-              At Learned, we believe that developing the Nigerian educational sector is a shared responsibility; one that goes beyond the government and requires the active commitment of every stakeholder.
-            </p>
-            <p className="font-bold text-slate-900">
-              Our Mission is Simple: To directly confront and contribute our quota to resolve the issue of academic underperformance, specifically for law students across Nigeria.
-            </p>
+        <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+          <div className="px-5 py-4 border-b border-slate-100 dark:border-slate-800">
+            <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Your study plan</p>
           </div>
-
-          <div className="pt-8 border-t border-slate-100">
-            <p className="text-xl font-bold text-slate-900 mb-1">Join Learned today.</p>
-            <p className="text-lg text-slate-600 mb-8">Enjoy the right to education and lets grow together.</p>
-
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-              <div />
-
-              <Button onClick={handleFinalSubmit} className="px-8 py-4 text-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all">
-                Enter Learned
-              </Button>
-            </div>
+          <div className="divide-y divide-slate-100 dark:divide-slate-800">
+            {Array.from(selectedCourses).map((course) => (
+              <div key={course} className="px-5 py-3.5 flex items-center gap-3">
+                <BookOpen size={16} className="text-amber-500 flex-shrink-0" />
+                <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{course}</span>
+              </div>
+            ))}
           </div>
         </div>
+
+        <div className="text-center">
+          <p className="text-slate-500 dark:text-slate-400 text-base">
+            Your first breakdown is waiting.
+          </p>
+        </div>
+
+        <button
+          onClick={handleFinalSubmit}
+          className="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-6 rounded-xl transition-colors flex items-center justify-center gap-2 text-base"
+        >
+          Enter Learned <ArrowRight size={18} />
+        </button>
       </div>
     </div>
   );
