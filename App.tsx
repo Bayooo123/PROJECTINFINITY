@@ -139,10 +139,10 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans transition-colors duration-200">
+    <div className="flex flex-col h-screen bg-stone-100 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans transition-colors duration-200">
       {/* Top Navbar — hidden during active quiz */}
       {!isQuizActive && (
-        <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10 px-6 py-4 flex items-center justify-between transition-colors duration-200">
+        <header className="bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10 px-6 py-4 flex items-center justify-between transition-colors duration-200">
           <div className="flex items-center gap-2">
             <img src="/logo_icon.png" alt="Learned" className="w-8 h-8 rounded-full" />
             <span className="text-xl font-serif font-bold text-slate-900 dark:text-white">Learned</span>
@@ -220,7 +220,7 @@ const AppContent: React.FC = () => {
 
       {/* Mobile Bottom Navigation — hidden during active quiz */}
       {!isQuizActive && (
-        <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 flex justify-around py-3 px-2 pb-safe z-50 transition-colors duration-200">
+        <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 flex justify-around py-3 px-2 pb-safe z-50 transition-colors duration-200">
           <NavButton
             active={currentView === AppView.HOME}
             onClick={() => handleNavigate(AppView.HOME)}

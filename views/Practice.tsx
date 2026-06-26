@@ -41,10 +41,10 @@ const QUIZ_MODES: Record<QuizMode, { label: string; count: number; timeMinutes: 
   },
 };
 
-function saveSessionToStorage(course: string, mode: string, score: number, total: number) {
+function saveSessionToStorage(course: string, mode: string, score: number, total: number, topic?: string) {
   localStorage.setItem(
     'learned_last_session',
-    JSON.stringify({ course, mode, score: `${score}/${total}` })
+    JSON.stringify({ course, mode, score: `${score}/${total}`, topic: topic !== 'All Topics' ? topic : undefined })
   );
 
   // Accumulate total questions answered
@@ -169,7 +169,7 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
     });
     setScore(newScore);
     setRandomTip(LEARNING_FACTS[Math.floor(Math.random() * LEARNING_FACTS.length)]);
-    saveSessionToStorage(selectedCourse, QUIZ_MODES[quizMode].label, newScore, questions.length);
+    saveSessionToStorage(selectedCourse, QUIZ_MODES[quizMode].label, newScore, questions.length, topic);
     setPhase('RESULT');
   };
 

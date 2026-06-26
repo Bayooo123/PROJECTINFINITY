@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import { UserProfile } from '../lib/supabase';
 import { AppView } from '../types';
-import { Flame, BookOpen, Scale, ArrowRight, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Flame, BookOpen, Scale, ArrowRight, ChevronRight } from 'lucide-react';
 
 interface HomeProps {
   user: UserProfile;
   onNavigate: (view: AppView) => void;
 }
 
-// Placeholder breakdown until the daily_breakdowns DB table is wired up.
+// Placeholder until daily_breakdowns Supabase table is wired up
 const PLACEHOLDER_BREAKDOWN = {
   concept: 'Nemo Dat Quod Non Habet',
   course: 'Land Law',
   level: '300L',
-  dayNumber: 1,
+  dayNumber: 12,
   definition:
-    'You cannot give what you do not have. No person can transfer a better title to property than they themselves possess.',
+    'No person can transfer a better title to property than they themselves possess — you cannot give what you do not have.',
 };
+
+const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
 function getGreeting(): string {
   const h = new Date().getHours();
@@ -35,7 +37,55 @@ function getStreakData(): { count: number; days: boolean[] } {
   }
 }
 
-function getLastSession(): { course: string; score: string; mode: string } | null {
+function isTodayComplete(): boolean {
+  const last = localStorage.getItem('learned_today_breakdown');
+  return last === new Date().toISOString().slice(0, 10);
+}
+
+function markTodayComplete() {
+  const today = new Date().toISOString().slice(0, 10);
+  localStorage.setItem('learned_today_breakdown', today);
+  const { count, days } = getStreakData();
+  const todayIdx = (new Date().getDay() + 6) % 7;
+  const updated = [...days];
+  updated[todayIdx] = true;
+  localStorage.setItem('learned_streak', JSON.stringify({ count: count + 1, days: updated }));
+}
+
+function getTotalQuestions(): number {
+  return parseInt(localStorage.getItem('learned_total_questions') || '0', 10);
+}
+
+function getActiveDays(days: boolean[]): number {
+  return days.filter(Boolean).length;
+}
+
+function getOverallAccuracy(): number | null {
+  const all: number[] = [];
+  for (const key of Object.keys(localStorage)) {
+    if (key.startsWith('learned_course_scores_')) {
+      try {
+        const arr = JSON.parse(localStorage.getItem(key) || '[]') as number[];
+        all.push(...arr);
+      } catch { /* ignore */ }
+    }
+  }
+  if (all.length === 0) return null;
+  return Math.round(all.reduce((a, b) => a + b, 0) / all.length);
+}
+
+function getCourseAvg(course: string): number | null {
+  try {
+    const key = `learned_course_scores_${course.replace(/\s+/g, '_')}`;
+    const arr = JSON.parse(localStorage.getItem(key) || '[]') as number[];
+    if (arr.length === 0) return null;
+    return Math.round(arr.reduce((a, b) => a + b, 0) / arr.length);
+  } catch {
+    return null;
+  }
+}
+
+function getLastSession(): { course: string; score: string; mode: string; topic?: string } | null {
   try {
     const raw = localStorage.getItem('learned_last_session');
     return raw ? JSON.parse(raw) : null;
@@ -44,147 +94,216 @@ function getLastSession(): { course: string; score: string; mode: string } | nul
   }
 }
 
-const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-
 export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
-  const [todayComplete, setTodayComplete] = useState(false);
+  const [todayDone, setTodayDone] = useState(isTodayComplete);
   const { count: streakCount, days: streakDays } = getStreakData();
   const lastSession = getLastSession();
+  const totalQuestions = getTotalQuestions();
+  const accuracy = getOverallAccuracy();
+  const activeDays = getActiveDays(streakDays);
   const firstName = user.name.split(' ')[0];
+  const todayIdx = (new Date().getDay() + 6) % 7;
   const breakdown = PLACEHOLDER_BREAKDOWN;
 
   const handleStartBreakdown = () => {
-    // Mark today complete and bump streak in localStorage
-    const updated = {
-      count: streakCount + (todayComplete ? 0 : 1),
-      days: streakDays.map((d: boolean, i: number) =>
-        i === (new Date().getDay() + 6) % 7 ? true : d
-      ),
-    };
-    localStorage.setItem('learned_streak', JSON.stringify(updated));
-    setTodayComplete(true);
+    markTodayComplete();
+    setTodayDone(true);
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-8 space-y-6">
-      {/* Greeting + Streak */}
+    <div className="max-w-lg mx-auto px-4 py-8 space-y-7 pb-10">
+
+      {/* ── Greeting ── */}
       <div>
-        <h1 className="text-3xl font-serif font-bold text-slate-900 dark:text-white">
-          {getGreeting()}, {firstName}.
+        <p className="text-sm text-slate-500 dark:text-slate-400">{getGreeting()}</p>
+        <h1 className="text-4xl font-serif font-bold text-slate-900 dark:text-white mt-0.5">
+          {firstName}.
         </h1>
-        <div className="flex items-center gap-2 mt-3">
-          <Flame size={20} className="text-amber-500 flex-shrink-0" />
-          <span className="text-xl font-bold text-amber-600">
-            Day {streakCount} streak
-          </span>
+      </div>
+
+      {/* ── Streak row ── */}
+      <div>
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <Flame size={20} className="text-amber-500" />
+            <span className="text-lg font-bold text-amber-500">
+              Day {streakCount} streak
+            </span>
+          </div>
+          <span className="text-xs text-slate-400 dark:text-slate-500">Keep it lit 🔥</span>
         </div>
 
         {/* 7-day dot calendar */}
-        <div className="flex gap-2 mt-4">
-          {DAY_LABELS.map((label, i) => (
-            <div key={i} className="flex flex-col items-center gap-1.5">
+        <div className="flex gap-2">
+          {DAY_LABELS.map((label, i) => {
+            const isDone = streakDays[i];
+            const isToday = i === todayIdx;
+            let dotClass = '';
+            if (isDone) {
+              // completed day — amber fill
+              dotClass = 'bg-amber-500 text-white';
+            } else if (isToday) {
+              // today not yet done — amber ring
+              dotClass = 'border-2 border-amber-500 text-amber-500 bg-transparent';
+            } else {
+              // future or missed
+              dotClass = 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600';
+            }
+            return (
               <div
-                className={`w-9 h-9 rounded-full flex items-center justify-center text-[11px] font-semibold transition-colors ${
-                  streakDays[i]
-                    ? 'bg-amber-500 text-white'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500'
-                }`}
+                key={i}
+                className={`flex-1 aspect-square rounded-full flex items-center justify-center text-[11px] font-bold transition-colors ${dotClass}`}
               >
                 {label}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
-      {/* Today's Daily Breakdown Card */}
+      {/* ── Today's Breakdown card ── */}
       <div>
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
           Today's Breakdown
         </p>
 
-        {todayComplete ? (
-          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 border-l-4 border-l-amber-500 rounded-xl p-6">
-            <div className="flex items-start gap-3">
-              <CheckCircle2 size={22} className="text-amber-600 flex-shrink-0 mt-0.5" />
-              <div>
-                <h2 className="text-xl font-serif font-bold text-slate-900 dark:text-white leading-tight">
-                  {breakdown.concept}
-                </h2>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                  {breakdown.course} · {breakdown.level}
-                </p>
-                <p className="text-sm text-amber-700 dark:text-amber-400 font-medium mt-3">
-                  Streak continues. Come back tomorrow.
-                </p>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 border-l-4 border-l-amber-500 rounded-xl p-6 shadow-sm">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-amber-600 mb-3">
+        {todayDone ? (
+          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40 border-l-4 border-l-amber-500 rounded-2xl p-5">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">
               {breakdown.course} · Day {breakdown.dayNumber}
             </p>
-            <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white mb-3 leading-tight">
+            <h2 className="text-xl font-serif font-bold italic text-slate-900 dark:text-white leading-snug mb-2">
               {breakdown.concept}
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+            <p className="text-sm font-semibold text-amber-700 dark:text-amber-400">
+              Streak continues. Come back tomorrow. ✓
+            </p>
+          </div>
+        ) : (
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 border-l-4 border-l-amber-500 rounded-2xl p-5 shadow-sm">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-amber-500 mb-3">
+              {breakdown.course} · Day {breakdown.dayNumber}
+            </p>
+            <h2 className="text-2xl font-serif font-bold italic text-slate-900 dark:text-white leading-snug mb-3">
+              {breakdown.concept}
+            </h2>
+            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-5">
               {breakdown.definition}
             </p>
             <button
               onClick={handleStartBreakdown}
-              className="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+              className="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2 text-sm"
             >
-              Start Today's Breakdown <ArrowRight size={18} />
+              Start today's breakdown <ArrowRight size={16} />
             </button>
           </div>
         )}
       </div>
 
-      {/* Last Session */}
+      {/* ── Pick up where you left off ── */}
       {lastSession && (
-        <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Last Session
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+            Pick up where you left off
           </p>
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm font-semibold text-slate-900 dark:text-white">
+          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+            <div className="w-10 h-10 bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center flex-shrink-0">
+              <BookOpen size={18} className="text-slate-500 dark:text-slate-400" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-semibold text-slate-900 dark:text-white text-sm truncate">
                 {lastSession.course}
               </p>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                {lastSession.score} · {lastSession.mode}
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                {lastSession.topic ? `${lastSession.topic} · ` : ''}{lastSession.mode} · last scored {lastSession.score}
               </p>
             </div>
             <button
               onClick={() => onNavigate(AppView.PRACTICE)}
-              className="flex items-center gap-1 text-sm font-medium text-amber-600 hover:text-amber-700 dark:hover:text-amber-500 transition-colors"
+              className="flex items-center gap-0.5 text-sm font-bold text-amber-500 hover:text-amber-600 transition-colors flex-shrink-0"
             >
-              Continue <ChevronRight size={16} />
+              Resume <ChevronRight size={15} />
             </button>
           </div>
         </div>
       )}
 
-      {/* Quick Access */}
+      {/* ── This week stats ── */}
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          This Week
+        </p>
+        <div className="grid grid-cols-3 gap-3">
+          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <p className="text-2xl font-bold text-slate-900 dark:text-white">{totalQuestions.toLocaleString()}</p>
+            <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Questions answered</p>
+          </div>
+          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <p className="text-2xl font-bold text-amber-500">
+              {accuracy !== null ? `${accuracy}%` : '—'}
+            </p>
+            <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Average accuracy</p>
+          </div>
+          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <p className="text-2xl font-bold text-slate-900 dark:text-white">{activeDays}</p>
+            <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Active days</p>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Your courses ── */}
+      {user.courses && user.courses.length > 0 && (
+        <div>
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
+              Your Courses
+            </p>
+            <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{user.level}</p>
+          </div>
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden divide-y divide-slate-100 dark:divide-slate-800">
+            {user.courses.map((course) => {
+              const avg = getCourseAvg(course);
+              return (
+                <div key={course} className="px-5 py-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm font-semibold text-slate-900 dark:text-white">{course}</span>
+                    <span className="text-sm font-bold text-slate-700 dark:text-slate-300 tabular-nums">
+                      {avg !== null ? `${avg}%` : '—'}
+                    </span>
+                  </div>
+                  <div className="h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div
+                      className="h-full bg-amber-500 rounded-full transition-all duration-500"
+                      style={{ width: avg !== null ? `${avg}%` : '0%' }}
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* ── Quick access ── */}
       <div className="grid grid-cols-2 gap-3">
         <button
           onClick={() => onNavigate(AppView.PRACTICE)}
-          className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-xl p-5 text-left transition-colors shadow-sm"
+          className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-2xl p-5 text-left transition-colors shadow-sm"
         >
           <BookOpen size={22} className="text-slate-500 dark:text-slate-400 mb-3" />
-          <p className="font-semibold text-slate-900 dark:text-white text-sm">Practice</p>
+          <p className="font-bold text-slate-900 dark:text-white text-sm">Practice</p>
           <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">MCQ drills</p>
         </button>
         <button
           onClick={() => onNavigate(AppView.IRAC)}
-          className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-xl p-5 text-left transition-colors shadow-sm"
+          className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-2xl p-5 text-left transition-colors shadow-sm"
         >
           <Scale size={22} className="text-slate-500 dark:text-slate-400 mb-3" />
-          <p className="font-semibold text-slate-900 dark:text-white text-sm">IRAC</p>
+          <p className="font-bold text-slate-900 dark:text-white text-sm">IRAC</p>
           <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Legal reasoning</p>
         </button>
       </div>
+
     </div>
   );
 };
