@@ -9,6 +9,8 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import { AdminUpload } from './views/AdminUpload';
 import { AdminQuestionGenerator } from './views/AdminQuestionGenerator';
+import { Suggestions } from './views/Suggestions';
+import { AdminSuggestions } from './views/AdminSuggestions';
 import {
   Home as HomeIcon,
   BookOpen,
@@ -19,6 +21,7 @@ import {
   Sun,
   Moon,
   Flame,
+  MessageSquare,
 } from 'lucide-react';
 
 const AppContent: React.FC = () => {
@@ -104,6 +107,7 @@ const AppContent: React.FC = () => {
               name: profile.name,
               university: profile.university,
               level: profile.level,
+              semester: profile.semester ?? 'First Semester',
               courses: profile.courses,
               hasOnboarded: true,
             }}
@@ -132,6 +136,12 @@ const AppContent: React.FC = () => {
 
       case 'ADMIN_GENERATOR' as AppView:
         return isAdmin ? <AdminQuestionGenerator /> : <div className="p-8 text-center text-slate-500 dark:text-slate-400">Access denied.</div>;
+
+      case AppView.SUGGESTIONS:
+        return <Suggestions onBack={() => handleNavigate(AppView.PROFILE)} />;
+
+      case AppView.ADMIN_SUGGESTIONS:
+        return isAdmin ? <AdminSuggestions onBack={() => handleNavigate(AppView.PROFILE)} /> : <div className="p-8 text-center text-slate-500 dark:text-slate-400">Access denied.</div>;
 
       default:
         return null;
@@ -390,6 +400,20 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
         </p>
       </div>
 
+      {/* Suggestion Box */}
+      <button
+        onClick={() => onNavigate(AppView.SUGGESTIONS)}
+        className="w-full flex items-center gap-3 px-5 py-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 transition-colors text-left"
+      >
+        <div className="w-9 h-9 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center flex-shrink-0">
+          <MessageSquare size={18} className="text-slate-600 dark:text-slate-400" />
+        </div>
+        <div>
+          <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">Suggestion Box</p>
+          <p className="text-xs text-slate-400 dark:text-slate-500">Share feedback about your institution</p>
+        </div>
+      </button>
+
       {/* Admin tools — only shown to admin users */}
       {isAdmin && (
         <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 space-y-2">
@@ -407,6 +431,12 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
             className="w-full py-3 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
           >
             Question Bank Generator
+          </button>
+          <button
+            onClick={() => onNavigate(AppView.ADMIN_SUGGESTIONS)}
+            className="w-full py-3 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
+          >
+            Manage Suggestions
           </button>
         </div>
       )}

@@ -14,7 +14,9 @@ export enum AppView {
   PRACTICE = 'PRACTICE',
   IRAC = 'IRAC',
   PROFILE = 'PROFILE',
-  ADMIN = 'ADMIN'
+  ADMIN = 'ADMIN',
+  SUGGESTIONS = 'SUGGESTIONS',
+  ADMIN_SUGGESTIONS = 'ADMIN_SUGGESTIONS',
 }
 
 export interface QuizQuestion {

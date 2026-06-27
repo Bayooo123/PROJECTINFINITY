@@ -39,6 +39,19 @@ export interface QuizHistory {
     completed_at?: string;
 }
 
+export interface Suggestion {
+  id: string;
+  user_id: string;
+  university: string;
+  display_name: string | null;
+  category: string;
+  content: string;
+  is_anonymous: boolean;
+  status: 'pending' | 'under_review' | 'acknowledged' | 'implemented';
+  admin_response: string | null;
+  created_at: string;
+}
+
 export interface ProblemQuestion {
   id: string;
   topic_id: string;
