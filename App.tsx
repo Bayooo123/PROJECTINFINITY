@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppView } from './types';
+import { AppView, COURSE_STRUCTURE } from './types';
 import { Practice } from './views/Practice';
 import { Home } from './views/Home';
 import { IRAC } from './views/IRAC';
@@ -131,7 +131,11 @@ const AppContent: React.FC = () => {
         ) : null;
 
       case AppView.PROFILE:
-        return <ProfileView profile={profile} onLogout={handleLogout} onNavigate={handleNavigate} onUpdateSemester={(s) => updateProfile({ semester: s })} />;
+        return <ProfileView profile={profile} onLogout={handleLogout} onNavigate={handleNavigate} onUpdateSemester={async (s) => {
+          const semData = COURSE_STRUCTURE[profile.level]?.[s as 'First Semester' | 'Second Semester'];
+          const courses = semData ? semData.compulsory : profile.courses;
+          return updateProfile({ semester: s, courses });
+        }} />;
 
       case AppView.ADMIN:
         return isAdmin ? <AdminUpload /> : <div className="p-8 text-center text-slate-500 dark:text-slate-400">Access denied.</div>;
@@ -344,6 +348,9 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
           <option value="First Semester">First Semester</option>
           <option value="Second Semester">Second Semester</option>
         </select>
+        <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-2">
+          Changing semester updates your course list to the compulsory courses for that semester.
+        </p>
       </div>
 
       {/* Streak */}
