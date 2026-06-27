@@ -76,6 +76,21 @@ body,
   transition-duration: 150ms;
 }
 
+/* iOS touch fix — prevents 300ms tap delay and grey flash on all interactive elements */
+button,
+a,
+input,
+select,
+textarea,
+label {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button {
+  cursor: pointer;
+}
+
 /* Focus styles for accessibility */
 button:focus-visible,
 a:focus-visible,
