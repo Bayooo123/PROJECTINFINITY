@@ -188,13 +188,13 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
                             onClick={() => setActiveTab(tab.id)}
                             className={`flex-1 flex flex-col items-center py-4 px-2 sm:px-4 min-w-[110px] transition-all duration-200 border-b-2 ${
                                 activeTab === tab.id
-                                    ? 'border-amber-500 bg-amber-50/40 dark:bg-amber-900/10 text-amber-700 dark:text-amber-400'
+                                    ? 'border-slate-900 dark:border-white bg-slate-100/40 dark:bg-slate-800/40 text-slate-900 dark:text-white'
                                     : 'border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
                             }`}
                         >
                             <tab.icon
                                 className={`w-5 h-5 mb-1.5 ${
-                                    activeTab === tab.id ? 'text-amber-500' : 'text-slate-400 dark:text-slate-500'
+                                    activeTab === tab.id ? 'text-slate-900 dark:text-white' : 'text-slate-400 dark:text-slate-500'
                                 }`}
                             />
                             <span className="text-sm font-medium">{tab.label}</span>
@@ -226,11 +226,11 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
                     {entries.map((entry) => (
                         <div
                             key={entry.id}
-                            className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-5 shadow-sm relative group transition-all duration-200 hover:shadow-md hover:border-amber-300 dark:hover:border-amber-700"
+                            className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-5 shadow-sm relative group transition-all duration-200 hover:shadow-md hover:border-slate-400 dark:hover:border-slate-500"
                         >
                             <div className="flex justify-between items-start mb-4">
                                 <div className="flex items-center gap-3">
-                                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 font-bold text-sm">
+                                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm">
                                         {entry.number}
                                     </span>
                                     <h4 className="font-semibold text-slate-900 dark:text-white">
@@ -250,7 +250,7 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
 
                             {/* Textarea */}
                             <textarea
-                                className="w-full text-slate-900 dark:text-white bg-white dark:bg-slate-800 p-4 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 min-h-[160px] resize-y text-base outline-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
+                                className="w-full text-slate-900 dark:text-white bg-white dark:bg-slate-800 p-4 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 focus:border-slate-900 dark:focus:border-slate-400 min-h-[160px] resize-y text-base outline-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
                                 placeholder={`Write your ${activeTab.toLowerCase()} here...`}
                                 value={(entry[activeTab.toLowerCase() as keyof IRACEntry] as string) || ''}
                                 onChange={(e) =>
@@ -271,13 +271,13 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
                                             {entry.authorities.map((auth) => (
                                                 <span
                                                     key={auth.id}
-                                                    className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800"
+                                                    className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700"
                                                 >
                                                     {auth.name}{' '}
                                                     <span className="opacity-70 ml-1 font-normal">{auth.citation}</span>
                                                     <button
                                                         onClick={() => removeAuthority(entry.id, auth.id)}
-                                                        className="ml-2 text-amber-400 hover:text-amber-600 dark:hover:text-amber-300"
+                                                        className="ml-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-300"
                                                     >
                                                         <span className="sr-only">Remove</span>
                                                         <svg className="h-4 w-4" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -293,7 +293,7 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
                                     <div className="relative">
                                         <input
                                             type="text"
-                                            className="w-full sm:w-2/3 lg:w-1/2 p-2 pl-9 border border-slate-300 dark:border-slate-600 rounded-lg text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none"
+                                            className="w-full sm:w-2/3 lg:w-1/2 p-2 pl-9 border border-slate-300 dark:border-slate-600 rounded-lg text-sm text-slate-900 dark:text-white bg-white dark:bg-slate-900 placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 focus:border-slate-900 dark:focus:border-slate-400 outline-none"
                                             placeholder="Search cases or statutes to link..."
                                             value={searchQuery}
                                             onChange={(e) => setSearchQuery(e.target.value)}
@@ -311,7 +311,7 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
                                                         {filteredAuthorities.map((auth) => (
                                                             <li
                                                                 key={auth.id}
-                                                                className="cursor-pointer py-2 pl-3 pr-4 hover:bg-amber-50 dark:hover:bg-amber-900/20 border-b border-slate-100 dark:border-slate-800 last:border-0"
+                                                                className="cursor-pointer py-2 pl-3 pr-4 hover:bg-slate-50 dark:hover:bg-slate-800 border-b border-slate-100 dark:border-slate-800 last:border-0"
                                                                 onClick={() => addAuthority(entry.id, auth)}
                                                             >
                                                                 <span className="font-medium text-slate-900 dark:text-white block">
@@ -345,7 +345,7 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
                 </p>
                 <button
                     onClick={handleSubmit}
-                    className="inline-flex items-center px-6 py-3 rounded-lg text-sm font-semibold text-white bg-amber-500 hover:bg-amber-600 transition-colors"
+                    className="inline-flex items-center px-6 py-3 rounded-lg text-sm font-semibold text-white dark:text-slate-900 bg-slate-900 dark:bg-white hover:bg-black dark:hover:bg-slate-100 transition-colors"
                 >
                     Submit Analysis
                 </button>

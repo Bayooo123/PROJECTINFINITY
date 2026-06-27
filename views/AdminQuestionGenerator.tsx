@@ -97,18 +97,18 @@ export const AdminQuestionGenerator: React.FC = () => {
         <div className="max-w-4xl mx-auto p-6 space-y-8">
             <header className="mb-8">
                 <h2 className="text-3xl font-serif font-bold text-slate-900 mb-2 flex items-center gap-3">
-                    <Database className="text-amber-600" /> Question Bank Manager
+                    <Database className="text-slate-500" /> Question Bank Manager
                 </h2>
                 <div className="flex gap-4 mt-4 border-b border-slate-200">
                     <button
                         onClick={() => setActiveTab('generate')}
-                        className={`pb-3 px-2 font-medium transition-colors ${activeTab === 'generate' ? 'text-amber-600 border-b-2 border-amber-600' : 'text-slate-500'}`}
+                        className={`pb-3 px-2 font-medium transition-colors ${activeTab === 'generate' ? 'text-slate-900 border-b-2 border-slate-900' : 'text-slate-500'}`}
                     >
                         AI Generator
                     </button>
                     <button
                         onClick={() => setActiveTab('import')}
-                        className={`pb-3 px-2 font-medium transition-colors ${activeTab === 'import' ? 'text-amber-600 border-b-2 border-amber-600' : 'text-slate-500'}`}
+                        className={`pb-3 px-2 font-medium transition-colors ${activeTab === 'import' ? 'text-slate-900 border-b-2 border-slate-900' : 'text-slate-500'}`}
                     >
                         Manual Import (JSON)
                     </button>
@@ -203,12 +203,12 @@ export const AdminQuestionGenerator: React.FC = () => {
                 ) : (
                     // IMPORT UI
                     <div className="space-y-6">
-                        <div className="bg-amber-50 border border-amber-200 p-4 rounded-lg">
-                            <h4 className="font-bold text-amber-900 mb-2">How to use NotebookLLM</h4>
-                            <p className="text-sm text-amber-800 mb-2">
+                        <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg">
+                            <h4 className="font-bold text-slate-900 mb-2">How to use NotebookLLM</h4>
+                            <p className="text-sm text-slate-700 mb-2">
                                 Upload your PDF/Doc to NotebookLLM and prompt it:
                             </p>
-                            <code className="block bg-white/50 p-2 rounded text-amber-900 text-xs font-mono">
+                            <code className="block bg-white/50 p-2 rounded text-slate-900 text-xs font-mono">
                                 "Generate 20 multiple choice questions on [Topic]. Output ONLY a valid JSON array where each object has: text, options (array of 4 strings), correctAnswer (0-3), and explanation."
                             </code>
                         </div>

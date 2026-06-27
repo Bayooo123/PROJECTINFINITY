@@ -228,7 +228,7 @@ export const AdminUpload: React.FC = () => {
                 <button
                     onClick={() => setActiveTab('materials')}
                     className={`pb-3 px-4 font-medium transition-colors ${activeTab === 'materials'
-                        ? 'text-amber-600 border-b-2 border-amber-600'
+                        ? 'text-slate-900 border-b-2 border-slate-900'
                         : 'text-slate-500 hover:text-slate-700'
                         }`}
                 >
@@ -237,7 +237,7 @@ export const AdminUpload: React.FC = () => {
                 <button
                     onClick={() => setActiveTab('questions')}
                     className={`pb-3 px-4 font-medium transition-colors ${activeTab === 'questions'
-                        ? 'text-amber-600 border-b-2 border-amber-600'
+                        ? 'text-slate-900 border-b-2 border-slate-900'
                         : 'text-slate-500 hover:text-slate-700'
                         }`}
                 >
@@ -259,7 +259,7 @@ export const AdminUpload: React.FC = () => {
                                         type="button"
                                         onClick={() => toggleCourse(c)}
                                         className={`px-3 py-1.5 text-sm rounded-full border transition-all ${isSelected
-                                            ? 'bg-amber-100 border-amber-600 text-amber-800 font-medium'
+                                            ? 'bg-slate-900 border-slate-900 text-white font-medium'
                                             : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-slate-300'
                                             }`}
                                     >
@@ -283,14 +283,14 @@ export const AdminUpload: React.FC = () => {
                             value={activeTab === 'materials' ? topic : year}
                             onChange={(e) => activeTab === 'materials' ? setTopic(e.target.value) : setYear(e.target.value)}
                             placeholder={activeTab === 'materials' ? "e.g., Separation of Powers (or leave blank)" : "e.g., 2023"}
-                            className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none"
+                            className="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-slate-900 outline-none"
                             required={activeTab === 'questions'}
                         />
                     </div>
                 </div>
 
                 {/* File Upload Area */}
-                <div className="p-6 border-2 border-dashed border-slate-200 rounded-xl hover:border-amber-500 transition-colors bg-slate-50 text-center cursor-pointer relative">
+                <div className="p-6 border-2 border-dashed border-slate-200 rounded-xl hover:border-slate-900 transition-colors bg-slate-50 text-center cursor-pointer relative">
                     <input
                         type="file"
                         accept=".pdf,.docx,.txt"
@@ -298,7 +298,7 @@ export const AdminUpload: React.FC = () => {
                         className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                     />
                     <div className="flex flex-col items-center gap-2 text-slate-500">
-                        <FileUp size={32} className="text-amber-600" />
+                        <FileUp size={32} className="text-slate-500" />
                         <p className="font-medium text-slate-700">Click to upload PDF, Word, or Text file</p>
                         <p className="text-xs">Text will be automatically extracted.</p>
                     </div>
@@ -313,7 +313,7 @@ export const AdminUpload: React.FC = () => {
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
                         placeholder="Content will appear here after upload, or you can type manually..."
-                        className="w-full h-64 p-4 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none font-mono text-sm"
+                        className="w-full h-64 p-4 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-slate-900 outline-none font-mono text-sm"
                         required
                     />
                     <p className="text-xs text-slate-500 text-right">

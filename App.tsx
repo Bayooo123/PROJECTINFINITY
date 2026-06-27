@@ -152,19 +152,19 @@ const AppContent: React.FC = () => {
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-500 dark:text-slate-400">
             <button
               onClick={() => handleNavigate(AppView.HOME)}
-              className={`hover:text-amber-600 transition-colors ${currentView === AppView.HOME ? 'text-amber-600' : ''}`}
+              className={`hover:text-slate-900 dark:hover:text-white transition-colors ${currentView === AppView.HOME ? 'text-slate-900 dark:text-white font-semibold' : ''}`}
             >
               Home
             </button>
             <button
               onClick={() => handleNavigate(AppView.PRACTICE)}
-              className={`hover:text-amber-600 transition-colors ${currentView === AppView.PRACTICE ? 'text-amber-600' : ''}`}
+              className={`hover:text-slate-900 dark:hover:text-white transition-colors ${currentView === AppView.PRACTICE ? 'text-slate-900 dark:text-white font-semibold' : ''}`}
             >
               Practice
             </button>
             <button
               onClick={() => handleNavigate(AppView.IRAC)}
-              className={`hover:text-amber-600 transition-colors ${currentView === AppView.IRAC ? 'text-amber-600' : ''}`}
+              className={`hover:text-slate-900 dark:hover:text-white transition-colors ${currentView === AppView.IRAC ? 'text-slate-900 dark:text-white font-semibold' : ''}`}
             >
               IRAC
             </button>
@@ -316,8 +316,8 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
 
       {/* Streak */}
       <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3 flex items-center gap-1.5">
-          <Flame size={13} className="text-amber-500" /> Streak
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          Streak
         </p>
         <div className="flex items-baseline gap-2 mb-3">
           <span className="text-3xl font-bold text-slate-900 dark:text-white">{streakCount}</span>
@@ -329,7 +329,7 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
               <div
                 className={`w-full aspect-square rounded-full flex items-center justify-center text-[10px] font-semibold ${
                   streakDays[i]
-                    ? 'bg-amber-500 text-white'
+                    ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900'
                     : 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500'
                 }`}
               >
@@ -387,7 +387,7 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
           </button>
           <button
             onClick={() => onNavigate('ADMIN_GENERATOR' as AppView)}
-            className="w-full py-3 text-amber-700 dark:text-amber-500 hover:text-amber-900 text-sm font-medium bg-amber-50 dark:bg-amber-900/20 hover:bg-amber-100 dark:hover:bg-amber-900/30 rounded-lg transition-colors"
+            className="w-full py-3 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
           >
             Question Bank Generator
           </button>
@@ -420,7 +420,7 @@ const NavButton: React.FC<NavButtonProps> = ({ active, onClick, icon, label }) =
   <button
     onClick={onClick}
     className={`flex flex-col items-center gap-1 w-16 transition-colors ${
-      active ? 'text-amber-600' : 'text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300'
+      active ? 'text-slate-900 dark:text-white' : 'text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300'
     }`}
   >
     {icon}

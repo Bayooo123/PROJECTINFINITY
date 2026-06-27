@@ -157,7 +157,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
           <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
             <div className="p-4 bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
               <span className="font-medium text-slate-700 dark:text-slate-300 text-sm">Course List</span>
-              <span className="text-sm text-amber-600 font-medium">{selectedCourses.size} Selected</span>
+              <span className="text-sm text-slate-900 dark:text-white font-medium">{selectedCourses.size} Selected</span>
             </div>
 
             <div className="divide-y divide-slate-100 dark:divide-slate-800 max-h-[60vh] overflow-y-auto">
@@ -171,7 +171,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                       onClick={() => toggleLevelExpand(lvl)}
                       className={`w-full flex items-center justify-between p-4 transition-colors ${
                         isCurrentLevel
-                          ? 'bg-amber-50 dark:bg-amber-900/20 hover:bg-amber-50/80 dark:hover:bg-amber-900/30'
+                          ? 'bg-slate-100 dark:bg-slate-800 hover:bg-slate-100/80 dark:hover:bg-slate-700/60'
                           : 'hover:bg-slate-50 dark:hover:bg-slate-800'
                       }`}
                     >
@@ -179,14 +179,14 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                         <span
                           className={`font-bold text-sm ${
                             isCurrentLevel
-                              ? 'text-amber-700 dark:text-amber-400'
+                              ? 'text-slate-900 dark:text-white'
                               : 'text-slate-700 dark:text-slate-300'
                           }`}
                         >
                           {lvl}
                         </span>
                         {isCurrentLevel && (
-                          <span className="text-xs bg-amber-200 dark:bg-amber-800 text-amber-800 dark:text-amber-200 px-2 py-0.5 rounded-full">
+                          <span className="text-xs bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 px-2 py-0.5 rounded-full">
                             My Level
                           </span>
                         )}
@@ -208,12 +208,12 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                             {data.compulsory.map((course) => (
                               <label
                                 key={course}
-                                className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-amber-500 dark:hover:border-amber-500 transition-all"
+                                className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-slate-900 dark:hover:border-white transition-all"
                               >
                                 <div
                                   className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 transition-colors ${
                                     selectedCourses.has(course)
-                                      ? 'bg-amber-600 border-amber-600'
+                                      ? 'bg-slate-900 border-slate-900 dark:bg-white dark:border-white'
                                       : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
                                   }`}
                                 >
@@ -240,12 +240,12 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                               {data.electives.map((course) => (
                                 <label
                                   key={course}
-                                  className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-amber-500 dark:hover:border-amber-500 transition-all"
+                                  className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-slate-900 dark:hover:border-white transition-all"
                                 >
                                   <div
                                     className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 transition-colors ${
                                       selectedCourses.has(course)
-                                        ? 'bg-amber-600 border-amber-600'
+                                        ? 'bg-slate-900 border-slate-900 dark:bg-white dark:border-white'
                                         : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
                                     }`}
                                   >
@@ -303,7 +303,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
           <div className="divide-y divide-slate-100 dark:divide-slate-800">
             {Array.from(selectedCourses).map((course) => (
               <div key={course} className="px-5 py-3.5 flex items-center gap-3">
-                <BookOpen size={16} className="text-amber-500 flex-shrink-0" />
+                <BookOpen size={16} className="text-slate-400 dark:text-slate-500 flex-shrink-0" />
                 <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{course}</span>
               </div>
             ))}
@@ -318,7 +318,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
         <button
           onClick={handleFinalSubmit}
-          className="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-6 rounded-xl transition-colors flex items-center justify-center gap-2 text-base"
+          className="w-full bg-slate-900 dark:bg-white hover:bg-black dark:hover:bg-slate-100 text-white dark:text-slate-900 font-bold py-4 px-6 rounded-xl transition-colors flex items-center justify-center gap-2 text-base"
         >
           Enter Learned <ArrowRight size={18} />
         </button>

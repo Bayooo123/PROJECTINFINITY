@@ -125,8 +125,8 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
       <div>
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
-            <Flame size={20} className="text-amber-500" />
-            <span className="text-lg font-bold text-amber-500">
+            <Flame size={20} className="text-slate-400 dark:text-slate-500" />
+            <span className="text-lg font-bold text-slate-900 dark:text-white">
               Day {streakCount} streak
             </span>
           </div>
@@ -140,13 +140,10 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
             const isToday = i === todayIdx;
             let dotClass = '';
             if (isDone) {
-              // completed day — amber fill
-              dotClass = 'bg-amber-500 text-white';
+              dotClass = 'bg-slate-900 dark:bg-white text-white dark:text-slate-900';
             } else if (isToday) {
-              // today not yet done — amber ring
-              dotClass = 'border-2 border-amber-500 text-amber-500 bg-transparent';
+              dotClass = 'border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white bg-transparent';
             } else {
-              // future or missed
               dotClass = 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600';
             }
             return (
@@ -168,20 +165,20 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
         </p>
 
         {todayDone ? (
-          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40 border-l-4 border-l-amber-500 rounded-2xl p-5">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-2">
+          <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 border-l-4 border-l-slate-900 dark:border-l-white rounded-2xl p-5">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-2">
               {breakdown.course} · Day {breakdown.dayNumber}
             </p>
             <h2 className="text-xl font-serif font-bold italic text-slate-900 dark:text-white leading-snug mb-2">
               {breakdown.concept}
             </h2>
-            <p className="text-sm font-semibold text-amber-700 dark:text-amber-400">
+            <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
               Streak continues. Come back tomorrow. ✓
             </p>
           </div>
         ) : (
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 border-l-4 border-l-amber-500 rounded-2xl p-5 shadow-sm">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-amber-500 mb-3">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 border-l-4 border-l-slate-900 dark:border-l-white rounded-2xl p-5 shadow-sm">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-3">
               {breakdown.course} · Day {breakdown.dayNumber}
             </p>
             <h2 className="text-2xl font-serif font-bold italic text-slate-900 dark:text-white leading-snug mb-3">
@@ -192,7 +189,7 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
             </p>
             <button
               onClick={handleStartBreakdown}
-              className="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2 text-sm"
+              className="w-full bg-slate-900 dark:bg-white hover:bg-black dark:hover:bg-slate-100 text-white dark:text-slate-900 font-semibold py-3.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2 text-sm"
             >
               Start today's breakdown <ArrowRight size={16} />
             </button>
@@ -220,7 +217,7 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
             </div>
             <button
               onClick={() => onNavigate(AppView.PRACTICE)}
-              className="flex items-center gap-0.5 text-sm font-bold text-amber-500 hover:text-amber-600 transition-colors flex-shrink-0"
+              className="flex items-center gap-0.5 text-sm font-bold text-slate-900 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 transition-colors flex-shrink-0"
             >
               Resume <ChevronRight size={15} />
             </button>
@@ -239,7 +236,7 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
             <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Questions answered</p>
           </div>
           <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <p className="text-2xl font-bold text-amber-500">
+            <p className="text-2xl font-bold text-slate-900 dark:text-white">
               {accuracy !== null ? `${accuracy}%` : '—'}
             </p>
             <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Average accuracy</p>
@@ -273,7 +270,7 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
                   </div>
                   <div className="h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
                     <div
-                      className="h-full bg-amber-500 rounded-full transition-all duration-500"
+                      className="h-full bg-slate-900 dark:bg-white rounded-full transition-all duration-500"
                       style={{ width: avg !== null ? `${avg}%` : '0%' }}
                     />
                   </div>

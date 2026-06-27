@@ -41,7 +41,7 @@ export const IRAC: React.FC<IRACProps> = () => {
     <div className="max-w-7xl mx-auto py-6">
       <header className="px-6 mb-6">
         <div className="flex items-center gap-3 mb-1">
-          <Scale size={26} className="text-amber-600" />
+          <Scale size={26} className="text-slate-500 dark:text-slate-400" />
           <h2 className="text-3xl font-serif font-bold text-slate-900 dark:text-white">
             IRAC Practice
           </h2>
