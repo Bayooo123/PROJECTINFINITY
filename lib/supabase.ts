@@ -38,6 +38,19 @@ export interface QuizHistory {
     completed_at?: string;
 }
 
+export interface ProblemQuestion {
+  id: string;
+  topic_id: string;
+  question_number: number | null;
+  scenario: string;
+  instruction: string;
+  key_issues: string | null;
+  model_answer: string;
+  difficulty: 'Introductory' | 'Intermediate' | 'Advanced' | 'Complex';
+  marks: number | null;
+  created_at: string | null;
+}
+
 export interface UserProgress {
     id?: string;
     user_id: string;
