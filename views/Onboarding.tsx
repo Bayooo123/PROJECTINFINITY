@@ -7,24 +7,27 @@ interface OnboardingProps {
   onComplete: (profile: UserProfile) => void;
 }
 
+type SemKey = 'First Semester' | 'Second Semester';
+
 export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [name, setName] = useState('');
   const [university, setUniversity] = useState('');
-  const [level, setLevel] = useState('100 Level');
+  const [level, setLevel] = useState('200 Level');
+  const [semester, setSemester] = useState<SemKey>('First Semester');
   const [selectedCourses, setSelectedCourses] = useState<Set<string>>(new Set());
   const [expandedLevels, setExpandedLevels] = useState<Set<string>>(new Set());
 
-  // Auto-select compulsory courses when level changes
+  // Auto-select compulsory courses for current level + semester when entering step 2
   useEffect(() => {
     if (step === 2) {
-      const levelData = COURSE_STRUCTURE[level];
-      if (levelData) {
-        setSelectedCourses(new Set(levelData.compulsory));
+      const semData = COURSE_STRUCTURE[level]?.[semester];
+      if (semData) {
+        setSelectedCourses(new Set(semData.compulsory));
         setExpandedLevels(new Set([level]));
       }
     }
-  }, [step, level]);
+  }, [step, level, semester]);
 
   const handleStep1Submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,6 +51,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
       name,
       university,
       level,
+      semester,
       courses: Array.from(selectedCourses),
       hasOnboarded: true,
     });
@@ -55,8 +59,31 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
   const firstName = name.split(' ')[0];
 
+  const CourseCheckbox = ({ course }: { course: string }) => (
+    <label className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-slate-900 dark:hover:border-white transition-all">
+      <div
+        className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 transition-colors ${
+          selectedCourses.has(course)
+            ? 'bg-slate-900 border-slate-900 dark:bg-white dark:border-white'
+            : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
+        }`}
+      >
+        {selectedCourses.has(course) && (
+          <Check size={12} className="text-white dark:text-slate-900" />
+        )}
+      </div>
+      <input
+        type="checkbox"
+        className="hidden"
+        checked={selectedCourses.has(course)}
+        onChange={() => toggleCourse(course)}
+      />
+      <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{course}</span>
+    </label>
+  );
+
   // ────────────────────────────────────────────
-  // Step 1 — Name, University, Level
+  // Step 1 — Name, University, Level, Semester
   // ────────────────────────────────────────────
   if (step === 1) {
     return (
@@ -108,23 +135,40 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
               />
             </div>
 
-            <div className="space-y-2">
-              <label htmlFor="level" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
-                Level
-              </label>
-              <select
-                id="level"
-                value={level}
-                onChange={(e) => setLevel(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none transition-all"
-              >
-                <option value="100 Level">100 Level</option>
-                <option value="200 Level">200 Level</option>
-                <option value="300 Level">300 Level</option>
-                <option value="400 Level">400 Level</option>
-                <option value="500 Level">500 Level</option>
-                <option value="Law School">Law School</option>
-              </select>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <label htmlFor="level" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Level
+                </label>
+                <select
+                  id="level"
+                  value={level}
+                  onChange={(e) => setLevel(e.target.value)}
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none transition-all"
+                >
+                  <option value="100 Level">100 Level</option>
+                  <option value="200 Level">200 Level</option>
+                  <option value="300 Level">300 Level</option>
+                  <option value="400 Level">400 Level</option>
+                  <option value="500 Level">500 Level</option>
+                  <option value="Law School">Law School</option>
+                </select>
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="semester" className="block text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Semester
+                </label>
+                <select
+                  id="semester"
+                  value={semester}
+                  onChange={(e) => setSemester(e.target.value as SemKey)}
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none transition-all"
+                >
+                  <option value="First Semester">First Semester</option>
+                  <option value="Second Semester">Second Semester</option>
+                </select>
+              </div>
             </div>
 
             <Button type="submit" fullWidth className="mt-2">
@@ -148,9 +192,11 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
               Select Your Courses
             </h2>
             <p className="text-slate-500 dark:text-slate-400 text-sm">
-              We've pre-selected compulsory courses for{' '}
-              <span className="font-semibold text-slate-900 dark:text-white">{level}</span>.
-              Add your electives and any carryover courses.
+              Pre-selected compulsory courses for{' '}
+              <span className="font-semibold text-slate-900 dark:text-white">
+                {level} · {semester}
+              </span>.
+              Add electives and any carryover courses below.
             </p>
           </div>
 
@@ -161,7 +207,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
             </div>
 
             <div className="divide-y divide-slate-100 dark:divide-slate-800 max-h-[60vh] overflow-y-auto">
-              {Object.entries(COURSE_STRUCTURE).map(([lvl, data]) => {
+              {Object.entries(COURSE_STRUCTURE).map(([lvl, semesterData]) => {
                 const isCurrentLevel = lvl === level;
                 const isExpanded = expandedLevels.has(lvl);
 
@@ -176,13 +222,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                       }`}
                     >
                       <div className="flex items-center gap-3">
-                        <span
-                          className={`font-bold text-sm ${
-                            isCurrentLevel
-                              ? 'text-slate-900 dark:text-white'
-                              : 'text-slate-700 dark:text-slate-300'
-                          }`}
-                        >
+                        <span className={`font-bold text-sm ${isCurrentLevel ? 'text-slate-900 dark:text-white' : 'text-slate-700 dark:text-slate-300'}`}>
                           {lvl}
                         </span>
                         {isCurrentLevel && (
@@ -191,78 +231,61 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                           </span>
                         )}
                       </div>
-                      {isExpanded ? (
-                        <ChevronUp size={18} className="text-slate-400 dark:text-slate-500" />
-                      ) : (
-                        <ChevronDown size={18} className="text-slate-400 dark:text-slate-500" />
-                      )}
+                      {isExpanded
+                        ? <ChevronUp size={18} className="text-slate-400 dark:text-slate-500" />
+                        : <ChevronDown size={18} className="text-slate-400 dark:text-slate-500" />
+                      }
                     </button>
 
                     {isExpanded && (
-                      <div className="p-4 pt-0 space-y-4">
-                        <div>
-                          <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 mt-3">
-                            Compulsory
-                          </h4>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                            {data.compulsory.map((course) => (
-                              <label
-                                key={course}
-                                className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-slate-900 dark:hover:border-white transition-all"
-                              >
-                                <div
-                                  className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 transition-colors ${
-                                    selectedCourses.has(course)
-                                      ? 'bg-slate-900 border-slate-900 dark:bg-white dark:border-white'
-                                      : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
-                                  }`}
-                                >
-                                  {selectedCourses.has(course) && <Check size={12} className="text-white" />}
-                                </div>
-                                <input
-                                  type="checkbox"
-                                  className="hidden"
-                                  checked={selectedCourses.has(course)}
-                                  onChange={() => toggleCourse(course)}
-                                />
-                                <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{course}</span>
-                              </label>
-                            ))}
-                          </div>
-                        </div>
+                      <div className="p-4 pt-0 space-y-5">
+                        {(['First Semester', 'Second Semester'] as SemKey[]).map((sem) => {
+                          const semData = semesterData[sem];
+                          const isCurrentSem = isCurrentLevel && sem === semester;
+                          const hasCourses = semData.compulsory.length > 0 || semData.electives.length > 0;
+                          if (!hasCourses) return null;
 
-                        {data.electives.length > 0 && (
-                          <div>
-                            <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 mt-4">
-                              Electives
-                            </h4>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                              {data.electives.map((course) => (
-                                <label
-                                  key={course}
-                                  className="flex items-center gap-3 p-3 rounded-lg border border-slate-200 dark:border-slate-700 cursor-pointer hover:border-slate-900 dark:hover:border-white transition-all"
-                                >
-                                  <div
-                                    className={`w-5 h-5 rounded border flex items-center justify-center flex-shrink-0 transition-colors ${
-                                      selectedCourses.has(course)
-                                        ? 'bg-slate-900 border-slate-900 dark:bg-white dark:border-white'
-                                        : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
-                                    }`}
-                                  >
-                                    {selectedCourses.has(course) && <Check size={12} className="text-white" />}
+                          return (
+                            <div key={sem} className="mt-3">
+                              <div className="flex items-center gap-2 mb-3">
+                                <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+                                  {sem}
+                                </h4>
+                                {isCurrentSem && (
+                                  <span className="text-[9px] font-bold bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-1.5 py-0.5 rounded-full uppercase tracking-wide">
+                                    Current
+                                  </span>
+                                )}
+                              </div>
+
+                              {semData.compulsory.length > 0 && (
+                                <div className="mb-3">
+                                  <p className="text-[9px] font-bold text-slate-300 dark:text-slate-600 uppercase tracking-widest mb-2">
+                                    Compulsory
+                                  </p>
+                                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    {semData.compulsory.map((course) => (
+                                      <CourseCheckbox key={course} course={course} />
+                                    ))}
                                   </div>
-                                  <input
-                                    type="checkbox"
-                                    className="hidden"
-                                    checked={selectedCourses.has(course)}
-                                    onChange={() => toggleCourse(course)}
-                                  />
-                                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{course}</span>
-                                </label>
-                              ))}
+                                </div>
+                              )}
+
+                              {semData.electives.length > 0 && (
+                                <div>
+                                  <p className="text-[9px] font-bold text-slate-300 dark:text-slate-600 uppercase tracking-widest mb-2">
+                                    Electives
+                                  </p>
+                                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    {semData.electives.map((course) => (
+                                      <CourseCheckbox key={course} course={course} />
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
                             </div>
-                          </div>
-                        )}
+                          );
+                        })}
                       </div>
                     )}
                   </div>
@@ -285,7 +308,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
   }
 
   // ────────────────────────────────────────────
-  // Step 3 — Personalised Welcome (replaces manifesto)
+  // Step 3 — Personalised Welcome
   // ────────────────────────────────────────────
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-stone-100 dark:bg-slate-950">
@@ -298,7 +321,9 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
 
         <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
           <div className="px-5 py-4 border-b border-slate-100 dark:border-slate-800">
-            <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">Your study plan</p>
+            <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">
+              Your study plan · {level} · {semester}
+            </p>
           </div>
           <div className="divide-y divide-slate-100 dark:divide-slate-800">
             {Array.from(selectedCourses).map((course) => (

@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 const AppContent: React.FC = () => {
-  const { user, profile, loading, isConfigured, signOut } = useAuth();
+  const { user, profile, loading, isConfigured, signOut, updateProfile } = useAuth();
   const { theme, toggleTheme } = useTheme();
   const [currentView, setCurrentView] = useState<AppView>(AppView.HOME);
   const [authView, setAuthView] = useState<'login' | 'signup'>('login');
@@ -125,7 +125,7 @@ const AppContent: React.FC = () => {
         ) : null;
 
       case AppView.PROFILE:
-        return <ProfileView profile={profile} onLogout={handleLogout} onNavigate={handleNavigate} />;
+        return <ProfileView profile={profile} onLogout={handleLogout} onNavigate={handleNavigate} onUpdateSemester={(s) => updateProfile({ semester: s })} />;
 
       case AppView.ADMIN:
         return isAdmin ? <AdminUpload /> : <div className="p-8 text-center text-slate-500 dark:text-slate-400">Access denied.</div>;
@@ -260,11 +260,13 @@ interface ProfileViewProps {
     name: string;
     university: string;
     level: string;
+    semester?: string;
     courses: string[];
     role?: string;
   };
   onLogout: () => void;
   onNavigate: (view: AppView) => void;
+  onUpdateSemester: (semester: string) => Promise<{ error: any }>;
 }
 
 function getStreakData() {
@@ -296,7 +298,7 @@ function getCourseAvg(course: string): number | null {
 
 const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
-const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate }) => {
+const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate, onUpdateSemester }) => {
   const { count: streakCount, days: streakDays } = getStreakData();
   const totalQuestions = getTotalQuestions();
   const isAdmin = profile.role === 'admin';
@@ -310,8 +312,23 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
         </div>
         <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">{profile.name}</h2>
         <p className="text-slate-500 dark:text-slate-400 text-sm">
-          {profile.university} · {profile.level}
+          {profile.university} · {profile.level} · {profile.semester ?? 'First Semester'}
         </p>
+      </div>
+
+      {/* Semester */}
+      <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          Current Semester
+        </p>
+        <select
+          defaultValue={profile.semester ?? 'First Semester'}
+          onChange={(e) => onUpdateSemester(e.target.value)}
+          className="w-full px-3 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none"
+        >
+          <option value="First Semester">First Semester</option>
+          <option value="Second Semester">Second Semester</option>
+        </select>
       </div>
 
       {/* Streak */}

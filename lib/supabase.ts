@@ -19,6 +19,7 @@ export interface UserProfile {
     name: string;
     university: string;
     level: string;
+    semester?: string;
     courses: string[];
     role?: string;
     created_at?: string;

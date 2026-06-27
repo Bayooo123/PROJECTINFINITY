@@ -3,6 +3,7 @@ export interface UserProfile {
   name: string;
   university: string;
   level: string;
+  semester: string;
   courses: string[];
   hasOnboarded: boolean;
 }
@@ -42,61 +43,69 @@ export interface BlogPost {
   date?: string;
 }
 
-export const COURSE_STRUCTURE: Record<string, { compulsory: string[], electives: string[] }> = {
+export const COURSE_STRUCTURE: Record<string, {
+  'First Semester': { compulsory: string[]; electives: string[] };
+  'Second Semester': { compulsory: string[]; electives: string[] };
+}> = {
   "100 Level": {
-    compulsory: ["Legal Method", "Nigerian Legal System"],
-    electives: ["Logic and Philosophic Thought", "Introduction to Sociology", "Use of English", "Introduction to Information Processing"]
+    'First Semester': {
+      compulsory: ["Legal Methods I", "Use of English", "Philosophy, Logic & Philosophy of Science"],
+      electives: ["Introduction to Political Science", "Elements of English Grammar & Usage", "Introduction to Sociology", "Introduction to Psychology I", "Introduction to Poetry"]
+    },
+    'Second Semester': {
+      compulsory: ["Legal Methods II", "English Grammar Usage: Lexis and Structure"],
+      electives: ["Introduction to Psychology II", "Nigerian Societies, Cultures and Heritage", "Introduction to the Novel", "Introduction to African Societies and Culture"]
+    }
   },
   "200 Level": {
-    compulsory: ["Law of Contract", "Nigerian Legal System", "Constitutional Law"],
-    electives: ["Labor Law", "Introduction to Psychology"]
+    'First Semester': {
+      compulsory: ["Constitutional Law I", "Law of Contract I", "Nigerian Legal System I", "Administrative Law I"],
+      electives: ["Basic Computer Studies", "General African Studies"]
+    },
+    'Second Semester': {
+      compulsory: ["Constitutional Law II", "Law of Contract II", "Nigerian Legal System II", "Administrative Law II"],
+      electives: ["Introduction to Information Processing"]
+    }
   },
   "300 Level": {
-    compulsory: ["Law of Commercial Transactions", "Criminal Law", "Law of Torts"],
-    electives: [
-      "Islamic Law",
-      "Gender and the Law",
-      "Law and Religion",
-      "Intellectual Property Law",
-      "Terrorism and National Security Law",
-      "Mineral and Water Resources Law",
-      "Family Law",
-      "Human Rights and Civil Liberties"
-    ]
+    'First Semester': {
+      compulsory: ["Criminal Law I", "Law of Torts I", "Law of Commercial Transactions I"],
+      electives: ["Entrepreneurship and Corporate Governance", "Family Law I", "Gender and the Law I", "Human Rights and Civil Liberties I", "Law & Religion I", "Law of Intellectual Property I", "Terrorism & National Security Law I"]
+    },
+    'Second Semester': {
+      compulsory: ["Criminal Law II", "Law of Torts II", "Law of Commercial Transactions II"],
+      electives: ["Customary Law", "Family Law II", "Gender and the Law II", "Human Rights and Civil Liberties II", "Law & Religion II", "Law of Intellectual Property II", "Terrorism & National Security Law II", "Mineral and Water Resources Law"]
+    }
   },
   "400 Level": {
-    compulsory: ["Legal Research and Writing", "Land Law", "Equity and Trusts"],
-    electives: [
-      "Environmental Law",
-      "Law of Banking",
-      "Law of Insurance",
-      "Entertainment Law",
-      "Conflict of Laws",
-      "Petroleum and Energy Law",
-      "Health Law",
-      "Housing Law",
-      "Law of Restitution",
-      "Advertising Law",
-      "Taxation Law"
-    ]
+    'First Semester': {
+      compulsory: ["Land Law I", "Principles of Equity"],
+      electives: ["Conflict of Laws I", "Environmental Law I", "Health Law I", "Law of Banking and Related Instruments I", "Law of Insurance I", "Law of Personal Taxation", "Law of Restitution I", "Petroleum & Energy Law I"]
+    },
+    'Second Semester': {
+      compulsory: ["Land Law II", "Legal Research & Writing", "Law of Trusts"],
+      electives: ["Conflict of Laws II", "Environmental Law II", "Health Law II", "Housing Law", "Law of Banking and Related Instruments II", "Law of Business Taxation", "Law of Insurance II", "Law of Restitution II", "Entertainment Law", "Petroleum & Energy Law II"]
+    }
   },
   "500 Level": {
-    compulsory: ["Company Law", "Jurisprudence and Legal Theory", "Law of Evidence"],
-    electives: [
-      "Industrial Law",
-      "Shipping and Admiralty Law",
-      "Public International Law",
-      "International Trade Law",
-      "Criminology",
-      "Conveyancing",
-      "Law of Succession",
-      "Planning Law",
-      "Child Law"
-    ]
+    'First Semester': {
+      compulsory: ["Company Law and Other Organizations", "Jurisprudence and Legal Theory I", "Law of Evidence I"],
+      electives: ["Conveyancing", "Criminology", "Industrial Law", "International Trade Law", "Public International Law"]
+    },
+    'Second Semester': {
+      compulsory: ["Jurisprudence and Legal Theory II", "Law of Evidence II", "Project / Long Essay"],
+      electives: ["Administration of Estates", "Child Law", "Planning Law", "Shipping and Admiralty Law I", "Shipping and Admiralty Law II"]
+    }
   },
   "Law School": {
-    compulsory: ["Civil Litigation", "Criminal Litigation", "Corporate Law Practice", "Property Law Practice", "Professional Ethics"],
-    electives: []
+    'First Semester': {
+      compulsory: ["Civil Litigation", "Criminal Litigation", "Corporate Law Practice"],
+      electives: []
+    },
+    'Second Semester': {
+      compulsory: ["Property Law Practice", "Professional Ethics"],
+      electives: []
+    }
   }
 };
 
