@@ -11,6 +11,7 @@ import { AdminUpload } from './views/AdminUpload';
 import { AdminQuestionGenerator } from './views/AdminQuestionGenerator';
 import { Suggestions } from './views/Suggestions';
 import { AdminSuggestions } from './views/AdminSuggestions';
+import { EditCourses } from './views/EditCourses';
 import {
   Home as HomeIcon,
   BookOpen,
@@ -22,6 +23,7 @@ import {
   Moon,
   Flame,
   MessageSquare,
+  Pencil,
 } from 'lucide-react';
 
 const AppContent: React.FC = () => {
@@ -142,6 +144,9 @@ const AppContent: React.FC = () => {
 
       case AppView.ADMIN_SUGGESTIONS:
         return isAdmin ? <AdminSuggestions onBack={() => handleNavigate(AppView.PROFILE)} /> : <div className="p-8 text-center text-slate-500 dark:text-slate-400">Access denied.</div>;
+
+      case AppView.EDIT_COURSES:
+        return <EditCourses onBack={() => handleNavigate(AppView.PROFILE)} />;
 
       default:
         return null;
@@ -370,9 +375,17 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
       {/* Courses */}
       {profile.courses && profile.courses.length > 0 && (
         <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Courses
-          </p>
+          <div className="flex items-center justify-between mb-3">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
+              Courses
+            </p>
+            <button
+              onClick={() => onNavigate(AppView.EDIT_COURSES)}
+              className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              <Pencil size={12} /> Edit
+            </button>
+          </div>
           <div className="space-y-3">
             {profile.courses.map((course) => {
               const avg = getCourseAvg(course);
