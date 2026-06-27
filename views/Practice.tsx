@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { COURSE_TOPICS, UserProfile, LEARNING_FACTS } from '../types';
+import { UserProfile, LEARNING_FACTS } from '../types';
+import { supabase } from '../lib/supabase';
 import { generateQuizQuestions } from '../services/geminiService';
 import { Button } from '../components/Button';
 import {
@@ -70,8 +71,23 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
   const [score, setScore] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [randomTip, setRandomTip] = useState<{ title: string; content: string } | null>(null);
+  const [availableTopics, setAvailableTopics] = useState<string[]>([]);
+  const [topicsLoading, setTopicsLoading] = useState(false);
 
-  const availableTopics = selectedCourse ? COURSE_TOPICS[selectedCourse] || [] : [];
+  useEffect(() => {
+    if (!selectedCourse) { setAvailableTopics([]); return; }
+    setTopicsLoading(true);
+    supabase
+      .from('question_bank')
+      .select('topic')
+      .eq('course', selectedCourse)
+      .eq('type', 'objective')
+      .then(({ data }) => {
+        const topics = [...new Set((data ?? []).map((r: any) => r.topic as string))].sort();
+        setAvailableTopics(topics);
+        setTopicsLoading(false);
+      });
+  }, [selectedCourse]);
 
   const userCourses =
     user.courses && user.courses.length > 0
@@ -274,9 +290,12 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
                 <select
                   value={topic}
                   onChange={(e) => setTopic(e.target.value)}
-                  className="w-full px-4 py-3 pr-10 rounded-lg border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-500 outline-none appearance-none bg-white dark:bg-slate-800 text-slate-900 dark:text-white"
+                  disabled={topicsLoading}
+                  className="w-full px-4 py-3 pr-10 rounded-lg border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-500 outline-none appearance-none bg-white dark:bg-slate-800 text-slate-900 dark:text-white disabled:opacity-60"
                 >
-                  <option value="">-- Select a Topic --</option>
+                  <option value="">
+                    {topicsLoading ? 'Loading topics…' : availableTopics.length === 0 ? 'No topics available yet' : '-- Select a Topic --'}
+                  </option>
                   {availableTopics.map((t, idx) => (
                     <option key={idx} value={t}>
                       {t}
