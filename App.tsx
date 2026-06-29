@@ -32,10 +32,18 @@ const AppContent: React.FC = () => {
   const [currentView, setCurrentView] = useState<AppView>(AppView.HOME);
   const [authView, setAuthView] = useState<'login' | 'signup'>('login');
   const [isQuizActive, setIsQuizActive] = useState(false);
+  const [practicePreselect, setPracticePreselect] = useState<{ course: string; topic: string } | null>(null);
 
   const handleNavigate = (view: AppView) => {
     setIsQuizActive(false);
+    if (view !== AppView.PRACTICE) setPracticePreselect(null);
     setCurrentView(view);
+  };
+
+  const handleStartQuiz = (course: string, topic: string) => {
+    setPracticePreselect({ course, topic });
+    setIsQuizActive(false);
+    setCurrentView(AppView.PRACTICE);
   };
 
   // Show configuration error if Supabase is missing
@@ -99,6 +107,7 @@ const AppContent: React.FC = () => {
               courses: profile.courses,
             }}
             onNavigate={handleNavigate}
+            onStartQuiz={handleStartQuiz}
           />
         ) : null;
 
@@ -114,6 +123,7 @@ const AppContent: React.FC = () => {
               hasOnboarded: true,
             }}
             onQuizStateChange={setIsQuizActive}
+            preselect={practicePreselect ?? undefined}
           />
         ) : null;
 
@@ -209,13 +219,13 @@ const AppContent: React.FC = () => {
             </button>
           </div>
 
-          {/* Mobile theme toggle */}
+          {/* Mobile theme toggle — 44px tap target, active: instead of hover: for iOS */}
           <div className="md:hidden">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-colors"
+              className="flex items-center justify-center w-11 h-11 rounded-full text-slate-500 dark:text-slate-400 active:bg-slate-100 dark:active:bg-slate-800 transition-colors"
             >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+              {theme === 'dark' ? <Sun size={22} /> : <Moon size={22} />}
             </button>
           </div>
         </header>
@@ -321,6 +331,7 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
   const { count: streakCount, days: streakDays } = getStreakData();
   const totalQuestions = getTotalQuestions();
   const isAdmin = profile.role === 'admin';
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="max-w-md mx-auto px-4 py-10 space-y-5">
@@ -418,6 +429,30 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
         <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
           {totalQuestions === 0 ? 'Start your first drill.' : 'answered'}
         </p>
+      </div>
+
+      {/* Appearance */}
+      <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+          Appearance
+        </p>
+        <button
+          onClick={toggleTheme}
+          className="w-full flex items-center justify-between py-1 active:opacity-70 transition-opacity"
+        >
+          <div className="flex items-center gap-3">
+            {theme === 'dark'
+              ? <Moon size={18} className="text-slate-500 dark:text-slate-400" />
+              : <Sun size={18} className="text-slate-500 dark:text-slate-400" />}
+            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
+              {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
+            </span>
+          </div>
+          {/* iOS-style toggle switch */}
+          <div className={`relative w-12 h-6 rounded-full transition-colors duration-200 ${theme === 'dark' ? 'bg-slate-900 dark:bg-white' : 'bg-slate-200'}`}>
+            <div className={`absolute top-0.5 w-5 h-5 rounded-full shadow transition-transform duration-200 ${theme === 'dark' ? 'translate-x-6 bg-white dark:bg-slate-900' : 'translate-x-0.5 bg-white'}`} />
+          </div>
+        </button>
       </div>
 
       {/* Suggestion Box */}

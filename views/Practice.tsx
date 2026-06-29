@@ -26,6 +26,7 @@ function toQBCourse(name: string): string {
 interface PracticeProps {
   user: UserProfile;
   onQuizStateChange?: (active: boolean) => void;
+  preselect?: { course: string; topic: string };
 }
 
 type Phase = 'SELECTION' | 'LOADING' | 'QUIZ' | 'RESULT';
@@ -34,16 +35,16 @@ type QuizMode = 'QUICK' | 'MARATHON';
 const QUIZ_MODES: Record<QuizMode, { label: string; count: number; timeMinutes: number; description: string; icon: React.ReactNode }> = {
   QUICK: {
     label: 'Quick Drill',
-    count: 10,
-    timeMinutes: 15,
-    description: '10 questions on one topic. Perfect for focused review.',
+    count: 20,
+    timeMinutes: 20,
+    description: '20 questions on one topic. Pick a topic and drill it.',
     icon: <BookOpen size={20} />,
   },
   MARATHON: {
     label: 'Exam Marathon',
     count: 50,
-    timeMinutes: 30,
-    description: '50 questions across all topics. Full exam simulation.',
+    timeMinutes: 45,
+    description: 'Drawn from every topic in the course. Full exam simulation.',
     icon: <Layers size={20} />,
   },
 };
@@ -65,10 +66,10 @@ function saveSessionToStorage(course: string, mode: string, score: number, total
   localStorage.setItem(key, JSON.stringify(existing));
 }
 
-export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) => {
+export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, preselect }) => {
   const [phase, setPhase] = useState<Phase>('SELECTION');
-  const [selectedCourse, setSelectedCourse] = useState('');
-  const [topic, setTopic] = useState('');
+  const [selectedCourse, setSelectedCourse] = useState(preselect?.course ?? '');
+  const [topic, setTopic] = useState(preselect?.topic ?? '');
   const [quizMode, setQuizMode] = useState<QuizMode>('QUICK');
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -79,6 +80,7 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
   const [randomTip, setRandomTip] = useState<{ title: string; content: string } | null>(null);
   const [availableTopics, setAvailableTopics] = useState<string[]>([]);
   const [topicsLoading, setTopicsLoading] = useState(false);
+  const [marathonCount, setMarathonCount] = useState<50 | 100>(50);
 
   useEffect(() => {
     if (!selectedCourse) { setAvailableTopics([]); return; }
@@ -147,8 +149,10 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
 
     try {
       const modeConfig = QUIZ_MODES[quizMode];
-      const generatedQuestions = await generateQuizQuestions(toQBCourse(selectedCourse), topic, modeConfig.count);
-      setTimeLeft(modeConfig.timeMinutes * 60);
+      const count = quizMode === 'MARATHON' ? marathonCount : modeConfig.count;
+      const timeMinutes = quizMode === 'MARATHON' ? (marathonCount === 100 ? 75 : 45) : modeConfig.timeMinutes;
+      const generatedQuestions = await generateQuizQuestions(toQBCourse(selectedCourse), topic, count);
+      setTimeLeft(timeMinutes * 60);
 
       if (generatedQuestions && generatedQuestions.length > 0) {
         setQuestions(generatedQuestions);
@@ -275,7 +279,7 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
                       </div>
                       <div className="font-bold text-slate-900 dark:text-white">{config.label}</div>
                       <div className="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
-                        {config.count} Qs · {config.timeMinutes} Mins
+                        {mode === 'MARATHON' ? '50 or 100 Qs · All Topics' : `${config.count} Qs · ${config.timeMinutes} Mins`}
                       </div>
                       <p className="text-xs text-slate-400 dark:text-slate-500 mt-2 leading-tight">
                         {config.description}
@@ -283,6 +287,33 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
                     </button>
                   );
                 })}
+              </div>
+            </div>
+          )}
+
+          {/* Step 2b: Marathon count picker */}
+          {selectedCourse && quizMode === 'MARATHON' && (
+            <div className="space-y-3 animate-fade-slide-in">
+              <label className="block text-sm font-medium text-slate-900 dark:text-slate-300">
+                3. Number of Questions
+              </label>
+              <div className="flex gap-3">
+                {([50, 100] as const).map((n) => (
+                  <button
+                    key={n}
+                    onClick={() => setMarathonCount(n)}
+                    className={`flex-1 py-3 rounded-xl border font-semibold text-sm transition-all ${
+                      marathonCount === n
+                        ? 'border-slate-900 dark:border-slate-400 bg-slate-900 dark:bg-slate-700 text-white dark:text-white ring-1 ring-slate-900 dark:ring-slate-400'
+                        : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500'
+                    }`}
+                  >
+                    {n} Questions
+                    <span className="block text-xs font-normal mt-0.5 opacity-70">
+                      {n === 50 ? '~45 mins' : '~75 mins'}
+                    </span>
+                  </button>
+                ))}
               </div>
             </div>
           )}

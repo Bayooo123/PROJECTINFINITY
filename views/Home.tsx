@@ -1,22 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { UserProfile } from '../lib/supabase';
+import { supabase } from '../lib/supabase';
 import { AppView } from '../types';
-import { Flame, BookOpen, Scale, ArrowRight, ChevronRight } from 'lucide-react';
+import { Flame, BookOpen, Scale, ChevronRight, Loader, CheckCircle, Zap } from 'lucide-react';
 
 interface HomeProps {
   user: UserProfile;
   onNavigate: (view: AppView) => void;
+  onStartQuiz: (course: string, topic: string) => void;
 }
 
-// Placeholder until daily_breakdowns Supabase table is wired up
-const PLACEHOLDER_BREAKDOWN = {
-  concept: 'Nemo Dat Quod Non Habet',
-  course: 'Land Law',
-  level: '300L',
-  dayNumber: 12,
-  definition:
-    'No person can transfer a better title to property than they themselves possess — you cannot give what you do not have.',
-};
+interface NeedToKnowPoint {
+  point_number: number;
+  heading: string;
+  body: string;
+}
+
+interface WeeklyTopic {
+  id: string;
+  title: string;
+  number: number;
+}
 
 const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
@@ -37,16 +41,10 @@ function getStreakData(): { count: number; days: boolean[] } {
   }
 }
 
-function isTodayComplete(): boolean {
-  const last = localStorage.getItem('learned_today_breakdown');
-  return last === new Date().toISOString().slice(0, 10);
-}
-
-function markTodayComplete() {
-  const today = new Date().toISOString().slice(0, 10);
-  localStorage.setItem('learned_today_breakdown', today);
+function markTodayInStreak() {
   const { count, days } = getStreakData();
   const todayIdx = (new Date().getDay() + 6) % 7;
+  if (days[todayIdx]) return;
   const updated = [...days];
   updated[todayIdx] = true;
   localStorage.setItem('learned_streak', JSON.stringify({ count: count + 1, days: updated }));
@@ -94,8 +92,7 @@ function getLastSession(): { course: string; score: string; mode: string; topic?
   }
 }
 
-export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
-  const [todayDone, setTodayDone] = useState(isTodayComplete);
+export const Home: React.FC<HomeProps> = ({ user, onNavigate, onStartQuiz }) => {
   const { count: streakCount, days: streakDays } = getStreakData();
   const lastSession = getLastSession();
   const totalQuestions = getTotalQuestions();
@@ -103,11 +100,68 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
   const activeDays = getActiveDays(streakDays);
   const firstName = user.name.split(' ')[0];
   const todayIdx = (new Date().getDay() + 6) % 7;
-  const breakdown = PLACEHOLDER_BREAKDOWN;
 
-  const handleStartBreakdown = () => {
-    markTodayComplete();
-    setTodayDone(true);
+  // Weekly Focus
+  const [focusCourse, setFocusCourse] = useState(user.courses[0] ?? '');
+  const [weeklyTopic, setWeeklyTopic] = useState<WeeklyTopic | null>(null);
+  const [points, setPoints] = useState<NeedToKnowPoint[]>([]);
+  const [cardIndex, setCardIndex] = useState(0);
+  const [focusLoading, setFocusLoading] = useState(false);
+  const touchStartX = useRef(0);
+
+  useEffect(() => {
+    if (!focusCourse) return;
+    setFocusLoading(true);
+    setCardIndex(0);
+    setWeeklyTopic(null);
+    setPoints([]);
+
+    const fetchFocus = async () => {
+      const { data: courseRow } = await supabase
+        .from('courses')
+        .select('id')
+        .eq('course_name', focusCourse)
+        .maybeSingle();
+      if (!courseRow) { setFocusLoading(false); return; }
+
+      const { data: topicRows } = await supabase
+        .from('course_topics')
+        .select('topic_id, topic_title, topic_number')
+        .eq('course_id', courseRow.id)
+        .order('topic_number');
+      if (!topicRows || topicRows.length === 0) { setFocusLoading(false); return; }
+
+      const weekNum = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
+      const t = topicRows[weekNum % topicRows.length];
+      setWeeklyTopic({ id: t.topic_id, title: t.topic_title, number: t.topic_number });
+
+      const { data: pointRows } = await supabase
+        .from('topic_need_to_know')
+        .select('point_number, heading, body')
+        .eq('topic_id', t.topic_id)
+        .order('point_number');
+      setPoints(pointRows ?? []);
+      setFocusLoading(false);
+    };
+
+    fetchFocus();
+  }, [focusCourse]);
+
+  const prevCard = () => setCardIndex(i => Math.max(0, i - 1));
+  const nextCard = () => setCardIndex(i => Math.min(points.length, i + 1));
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (diff > 50) nextCard();
+    if (diff < -50) prevCard();
+  };
+
+  const handleTestYourself = () => {
+    markTodayInStreak();
+    if (weeklyTopic) onStartQuiz(focusCourse, weeklyTopic.title);
   };
 
   return (
@@ -130,26 +184,20 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
               Day {streakCount} streak
             </span>
           </div>
-          <span className="text-xs text-slate-400 dark:text-slate-500">Keep it lit 🔥</span>
+          <span className="text-xs text-slate-400 dark:text-slate-500">Keep it lit</span>
         </div>
-
-        {/* 7-day dot calendar */}
         <div className="flex gap-2">
           {DAY_LABELS.map((label, i) => {
             const isDone = streakDays[i];
             const isToday = i === todayIdx;
-            let dotClass = '';
-            if (isDone) {
-              dotClass = 'bg-slate-900 dark:bg-white text-white dark:text-slate-900';
-            } else if (isToday) {
-              dotClass = 'border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white bg-transparent';
-            } else {
-              dotClass = 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600';
-            }
+            let cls = '';
+            if (isDone) cls = 'bg-slate-900 dark:bg-white text-white dark:text-slate-900';
+            else if (isToday) cls = 'border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white bg-transparent';
+            else cls = 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600';
             return (
               <div
                 key={i}
-                className={`flex-1 aspect-square rounded-full flex items-center justify-center text-[11px] font-bold transition-colors ${dotClass}`}
+                className={`flex-1 aspect-square rounded-full flex items-center justify-center text-[11px] font-bold transition-colors ${cls}`}
               >
                 {label}
               </div>
@@ -158,42 +206,142 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate }) => {
         </div>
       </div>
 
-      {/* ── Today's Breakdown card ── */}
+      {/* ── Weekly Focus ── */}
       <div>
         <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-          Today's Breakdown
+          Weekly Focus
         </p>
 
-        {todayDone ? (
-          <div className="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 border-l-4 border-l-slate-900 dark:border-l-white rounded-2xl p-5">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-2">
-              {breakdown.course} · Day {breakdown.dayNumber}
-            </p>
-            <h2 className="text-xl font-serif font-bold italic text-slate-900 dark:text-white leading-snug mb-2">
-              {breakdown.concept}
-            </h2>
-            <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">
-              Streak continues. Come back tomorrow. ✓
+        {/* Course switcher pills — horizontal scroll */}
+        <div
+          className="flex gap-2 overflow-x-auto pb-2 mb-4"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {user.courses.map((c) => (
+            <button
+              key={c}
+              onClick={() => setFocusCourse(c)}
+              className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
+                focusCourse === c
+                  ? 'bg-slate-900 dark:bg-white border-slate-900 dark:border-white text-white dark:text-slate-900'
+                  : 'border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500 bg-white dark:bg-slate-900'
+              }`}
+            >
+              {c}
+            </button>
+          ))}
+        </div>
+
+        {focusLoading ? (
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-10 flex items-center justify-center">
+            <Loader size={22} className="animate-spin text-slate-400 dark:text-slate-600" />
+          </div>
+        ) : !weeklyTopic || points.length === 0 ? (
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 text-center">
+            <p className="text-sm text-slate-400 dark:text-slate-500 italic">
+              No content available for this course yet.
             </p>
           </div>
         ) : (
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 border-l-4 border-l-slate-900 dark:border-l-white rounded-2xl p-5 shadow-sm">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-3">
-              {breakdown.course} · Day {breakdown.dayNumber}
+          <>
+            <p className="text-[11px] font-medium text-slate-500 dark:text-slate-400 mb-3">
+              Topic {weeklyTopic.number} — {weeklyTopic.title}
             </p>
-            <h2 className="text-2xl font-serif font-bold italic text-slate-900 dark:text-white leading-snug mb-3">
-              {breakdown.concept}
-            </h2>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-5">
-              {breakdown.definition}
-            </p>
-            <button
-              onClick={handleStartBreakdown}
-              className="w-full bg-slate-900 dark:bg-white hover:bg-black dark:hover:bg-slate-100 text-white dark:text-slate-900 font-semibold py-3.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-2 text-sm"
-            >
-              Start today's breakdown <ArrowRight size={16} />
-            </button>
-          </div>
+
+            {cardIndex < points.length ? (
+              <div
+                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col select-none"
+                style={{ minHeight: 240 }}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+              >
+                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4 block">
+                  Point {points[cardIndex].point_number} of {points.length}
+                </span>
+                <h3 className="text-xl font-serif font-bold text-slate-900 dark:text-white mb-3 leading-snug">
+                  {points[cardIndex].heading}
+                </h3>
+                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
+                  {points[cardIndex].body}
+                </p>
+
+                <div className="flex items-center justify-between mt-6">
+                  <button
+                    onClick={prevCard}
+                    disabled={cardIndex === 0}
+                    className="text-sm font-semibold text-slate-500 dark:text-slate-400 disabled:opacity-25 hover:text-slate-900 dark:hover:text-white transition-colors"
+                  >
+                    ← Prev
+                  </button>
+
+                  {/* Dot indicators — one per point + end card */}
+                  <div className="flex items-center gap-1.5">
+                    {Array.from({ length: points.length + 1 }, (_, i) => (
+                      <div
+                        key={i}
+                        className={`rounded-full transition-all duration-200 ${
+                          i === cardIndex
+                            ? 'w-4 h-1.5 bg-slate-900 dark:bg-white'
+                            : 'w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700'
+                        }`}
+                      />
+                    ))}
+                  </div>
+
+                  <button
+                    onClick={nextCard}
+                    className="text-sm font-semibold text-slate-900 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+                  >
+                    Next →
+                  </button>
+                </div>
+              </div>
+            ) : (
+              /* End card */
+              <div
+                className="bg-slate-900 dark:bg-slate-100 rounded-2xl p-6 text-center select-none"
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+              >
+                <div className="w-12 h-12 bg-white/10 dark:bg-black/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <CheckCircle size={24} className="text-white dark:text-slate-800" />
+                </div>
+                <p className="text-white/60 dark:text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-1">
+                  All {points.length} points covered
+                </p>
+                <h3 className="text-white dark:text-slate-900 font-serif font-bold text-lg mb-5 leading-snug">
+                  {weeklyTopic.title}
+                </h3>
+
+                {/* Dot indicators on end card */}
+                <div className="flex items-center justify-center gap-1.5 mb-5">
+                  {Array.from({ length: points.length + 1 }, (_, i) => (
+                    <div
+                      key={i}
+                      className={`rounded-full transition-all duration-200 ${
+                        i === cardIndex
+                          ? 'w-4 h-1.5 bg-white dark:bg-slate-800'
+                          : 'w-1.5 h-1.5 bg-white/30 dark:bg-slate-400'
+                      }`}
+                    />
+                  ))}
+                </div>
+
+                <button
+                  onClick={handleTestYourself}
+                  className="w-full bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors mb-3"
+                >
+                  <Zap size={16} /> Test yourself on this topic
+                </button>
+                <button
+                  onClick={() => setCardIndex(0)}
+                  className="text-white/50 dark:text-slate-500 text-xs hover:text-white/80 dark:hover:text-slate-700 transition-colors"
+                >
+                  Review points again
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
 

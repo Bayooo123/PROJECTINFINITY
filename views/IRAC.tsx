@@ -28,15 +28,15 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Resolve a course name to its DB id — tries exact match then prefix match
-  // so both old profiles ("Criminal Law") and new ("Criminal Law I") work
+  // Resolve a course name to its DB id — uses limit(1) not maybeSingle()
+  // so duplicate rows in the courses table don't silently return null
   const resolveCourseId = async (courseName: string): Promise<string | null> => {
     const { data: exact } = await supabase
       .from('courses')
       .select('id')
       .eq('course_name', courseName)
-      .maybeSingle();
-    if (exact) return exact.id;
+      .limit(1);
+    if (exact && exact.length > 0) return exact[0].id;
 
     // Strip " I" / " II" suffix and try a prefix match
     const base = courseName.replace(/\s+(I{1,3}|IV|VI?)$/i, '').trim();
@@ -57,26 +57,24 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
 
     const fetchTopics = async () => {
       const courseId = await resolveCourseId(selectedCourse);
+      console.log('[IRAC] course:', selectedCourse, '→ courseId:', courseId);
       if (!courseId) { setTopicsLoading(false); return; }
 
-      // Get topic_ids for this course
-      const { data: ctRows } = await supabase
+      // course_topics stores topic_title inline — no separate topics table
+      const { data: ctRows, error: ctErr } = await supabase
         .from('course_topics')
-        .select('topic_id')
-        .eq('course_id', courseId);
+        .select('topic_id, topic_title')
+        .eq('course_id', courseId)
+        .order('topic_number');
 
-      if (!ctRows || ctRows.length === 0) { setTopicsLoading(false); return; }
+      console.log('[IRAC] course_topics rows:', ctRows?.length ?? 0, ctErr ?? '');
 
-      const topicIds = ctRows.map((r: { topic_id: string }) => r.topic_id);
-
-      // Get topic names from the topics table
-      const { data: topicRows } = await supabase
-        .from('topics')
-        .select('id, name')
-        .in('id', topicIds)
-        .order('name');
-
-      setTopics((topicRows as Topic[]) ?? []);
+      setTopics(
+        (ctRows ?? []).map((r: { topic_id: string; topic_title: string }) => ({
+          id: r.topic_id,
+          name: r.topic_title,
+        }))
+      );
       setTopicsLoading(false);
     };
 
