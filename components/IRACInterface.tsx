@@ -162,8 +162,7 @@ export const IRACInterface: React.FC<IRACInterfaceProps> = ({
                     onClick={() => setIsScenarioCollapsed(!isScenarioCollapsed)}
                 >
                     <div className="flex items-center gap-2">
-                        <h2 className="text-base font-semibold">Scenario Context</h2>
-                        <span className="text-slate-400 text-sm">({scenarioId})</span>
+                        <h2 className="text-base font-semibold">Scenario</h2>
                     </div>
                     <button className="text-slate-300 hover:text-white transition-colors text-sm">
                         {isScenarioCollapsed ? 'Expand' : 'Collapse'}
