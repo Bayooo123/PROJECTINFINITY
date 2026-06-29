@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { UserProfile, LEARNING_FACTS } from '../types';
 import { supabase } from '../lib/supabase';
-import { generateQuizQuestions } from '../services/geminiService';
 import { Button } from '../components/Button';
 import {
   CheckCircle,
@@ -18,10 +17,6 @@ import {
   Loader,
 } from 'lucide-react';
 
-// "Constitutional Law I" → "Constitutional Law" (question_bank uses non-suffixed names)
-function toQBCourse(name: string): string {
-  return name.replace(/\s+(I{1,3}|IV|VI?)$/i, '').trim();
-}
 
 interface PracticeProps {
   user: UserProfile;
@@ -69,7 +64,7 @@ function saveSessionToStorage(course: string, mode: string, score: number, total
 export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, preselect }) => {
   const [phase, setPhase] = useState<Phase>('SELECTION');
   const [selectedCourse, setSelectedCourse] = useState(preselect?.course ?? '');
-  const [topic, setTopic] = useState(preselect?.topic ?? '');
+  const [selectedTopicId, setSelectedTopicId] = useState('');
   const [quizMode, setQuizMode] = useState<QuizMode>('QUICK');
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -78,25 +73,45 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
   const [score, setScore] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [randomTip, setRandomTip] = useState<{ title: string; content: string } | null>(null);
-  const [availableTopics, setAvailableTopics] = useState<string[]>([]);
+  const [availableTopics, setAvailableTopics] = useState<{ id: string; title: string }[]>([]);
   const [topicsLoading, setTopicsLoading] = useState(false);
   const [marathonCount, setMarathonCount] = useState<50 | 100>(50);
 
+  // Load topics from courses → course_topics → mcq_questions
   useEffect(() => {
     if (!selectedCourse) { setAvailableTopics([]); return; }
     setTopicsLoading(true);
-    const qbCourse = toQBCourse(selectedCourse);
-    supabase
-      .from('question_bank')
-      .select('topic')
-      .eq('course', qbCourse)
-      .eq('type', 'objective')
-      .then(({ data }) => {
-        const topics = [...new Set((data ?? []).map((r: any) => r.topic as string))].sort();
-        setAvailableTopics(topics);
-        setTopicsLoading(false);
-      });
+    setSelectedTopicId('');
+
+    const fetchTopics = async () => {
+      const { data: courseRows } = await supabase
+        .from('courses')
+        .select('id')
+        .eq('course_name', selectedCourse)
+        .limit(1);
+
+      if (!courseRows?.length) { setTopicsLoading(false); return; }
+
+      const { data: ctRows } = await supabase
+        .from('course_topics')
+        .select('topic_id, topic_title')
+        .eq('course_id', courseRows[0].id)
+        .order('topic_number');
+
+      setAvailableTopics((ctRows ?? []).map(r => ({ id: r.topic_id, title: r.topic_title })));
+      setTopicsLoading(false);
+    };
+
+    fetchTopics();
   }, [selectedCourse]);
+
+  // Apply preselect topic once topics are loaded
+  useEffect(() => {
+    if (preselect?.topic && availableTopics.length > 0 && !selectedTopicId) {
+      const match = availableTopics.find(t => t.title === preselect.topic);
+      if (match) setSelectedTopicId(match.id);
+    }
+  }, [availableTopics]);
 
   const userCourses =
     user.courses && user.courses.length > 0
@@ -125,13 +140,9 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
     return () => clearInterval(timer);
   }, [phase, timeLeft]);
 
-  // Auto-set topic when mode changes
+  // Reset topic selection when switching modes
   useEffect(() => {
-    if (quizMode === 'MARATHON') {
-      setTopic('All Topics');
-    } else if (quizMode === 'QUICK' && topic === 'All Topics') {
-      setTopic('');
-    }
+    setSelectedTopicId('');
   }, [quizMode]);
 
   const formatTime = (seconds: number) => {
@@ -140,7 +151,7 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const canStart = selectedCourse && (quizMode === 'MARATHON' || topic);
+  const canStart = selectedCourse && availableTopics.length > 0 && (quizMode === 'MARATHON' || selectedTopicId);
 
   const handleStartQuiz = async () => {
     if (!canStart) return;
@@ -148,26 +159,50 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
     setError(null);
 
     try {
-      const modeConfig = QUIZ_MODES[quizMode];
-      const count = quizMode === 'MARATHON' ? marathonCount : modeConfig.count;
-      const timeMinutes = quizMode === 'MARATHON' ? (marathonCount === 100 ? 75 : 45) : modeConfig.timeMinutes;
-      const generatedQuestions = await generateQuizQuestions(toQBCourse(selectedCourse), topic, count);
-      setTimeLeft(timeMinutes * 60);
+      const count = quizMode === 'MARATHON' ? marathonCount : QUIZ_MODES[quizMode].count;
+      const timeMinutes = quizMode === 'MARATHON' ? (marathonCount === 100 ? 75 : 45) : QUIZ_MODES[quizMode].timeMinutes;
 
-      if (generatedQuestions && generatedQuestions.length > 0) {
-        setQuestions(generatedQuestions);
-        setCurrentQuestionIndex(0);
-        setUserAnswers({});
-        setScore(0);
-        setPhase('QUIZ');
-      } else {
-        throw new Error(
-          'We are currently populating the question bank for this specific topic. Please try another topic or check back in a few minutes!'
-        );
+      // Determine which topic_ids to query
+      const topicIds = quizMode === 'MARATHON'
+        ? availableTopics.map(t => t.id)
+        : [selectedTopicId];
+
+      // Count available questions
+      const { count: total } = await supabase
+        .from('mcq_questions')
+        .select('*', { count: 'exact', head: true })
+        .in('topic_id', topicIds);
+
+      if (!total || total === 0) {
+        throw new Error('No questions available for this selection. Try another topic or check back later.');
       }
+
+      // Random offset for variety
+      const offset = total > count ? Math.floor(Math.random() * (total - count)) : 0;
+      const { data, error: fetchErr } = await supabase
+        .from('mcq_questions')
+        .select('question, option_a, option_b, option_c, option_d, correct_answer, explanation')
+        .in('topic_id', topicIds)
+        .range(offset, offset + count - 1);
+
+      if (fetchErr || !data?.length) throw new Error('Failed to load questions. Please try again.');
+
+      // Map to quiz format
+      const mapped = data.map(row => ({
+        text: row.question,
+        options: [row.option_a, row.option_b, row.option_c, row.option_d],
+        correctAnswer: ['A', 'B', 'C', 'D'].indexOf(row.correct_answer),
+        explanation: row.explanation,
+      }));
+
+      setTimeLeft(timeMinutes * 60);
+      setQuestions(mapped);
+      setCurrentQuestionIndex(0);
+      setUserAnswers({});
+      setScore(0);
+      setPhase('QUIZ');
     } catch (err: any) {
-      console.error(err);
-      setError(err.message || 'Failed to generate questions. Please try again.');
+      setError(err.message || 'Failed to load questions. Please try again.');
       setPhase('SELECTION');
     }
   };
@@ -196,14 +231,15 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
     });
     setScore(newScore);
     setRandomTip(LEARNING_FACTS[Math.floor(Math.random() * LEARNING_FACTS.length)]);
-    saveSessionToStorage(selectedCourse, QUIZ_MODES[quizMode].label, newScore, questions.length, topic);
+    const topicTitle = availableTopics.find(t => t.id === selectedTopicId)?.title;
+    saveSessionToStorage(selectedCourse, QUIZ_MODES[quizMode].label, newScore, questions.length, quizMode === 'QUICK' ? topicTitle : undefined);
     setPhase('RESULT');
   };
 
   const resetQuiz = () => {
     setPhase('SELECTION');
     setSelectedCourse('');
-    setTopic('');
+    setSelectedTopicId('');
     setQuestions([]);
     setUserAnswers({});
   };
@@ -240,7 +276,7 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
                   key={course}
                   onClick={() => {
                     setSelectedCourse(course);
-                    if (quizMode === 'QUICK') setTopic('');
+                    setSelectedTopicId('');
                   }}
                   className={`text-left px-4 py-3 rounded-lg border transition-all ${
                     selectedCourse === course
@@ -339,13 +375,13 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
               ) : (
                 <div className="relative">
                   <select
-                    value={topic}
-                    onChange={(e) => setTopic(e.target.value)}
+                    value={selectedTopicId}
+                    onChange={(e) => setSelectedTopicId(e.target.value)}
                     className="w-full px-4 py-3 pr-10 rounded-lg border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-500 outline-none appearance-none bg-white dark:bg-slate-800 text-slate-900 dark:text-white"
                   >
                     <option value="">-- Select a Topic --</option>
-                    {availableTopics.map((t, idx) => (
-                      <option key={idx} value={t}>{t}</option>
+                    {availableTopics.map((t) => (
+                      <option key={t.id} value={t.id}>{t.title}</option>
                     ))}
                   </select>
                   <div className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">
@@ -390,7 +426,7 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange, pre
         <div className="text-center space-y-2">
           <h3 className="text-xl font-medium text-slate-900 dark:text-white">Preparing Exam Paper</h3>
           <p className="text-slate-500 dark:text-slate-400 max-w-md mx-auto">
-            Curating questions on {topic === 'All Topics' ? 'all topics' : topic}…
+            Curating questions on {quizMode === 'MARATHON' ? 'all topics' : (availableTopics.find(t => t.id === selectedTopicId)?.title ?? 'selected topic')}…
           </p>
         </div>
       </div>
