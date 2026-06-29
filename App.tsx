@@ -24,6 +24,7 @@ import {
   Flame,
   MessageSquare,
   Pencil,
+  Share2,
 } from 'lucide-react';
 
 const AppContent: React.FC = () => {
@@ -327,6 +328,60 @@ function getCourseAvg(course: string): number | null {
 
 const DAY_LABELS = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
+const INVITE_MESSAGE = `Hey! I have been using Learned to study and improve my learning journey. Using Learned you can practice MCQ questions, answer problem questions and so much more 🎓 Join me: ${window.location.origin}`;
+
+const InviteCard: React.FC = () => {
+  const [copied, setCopied] = React.useState(false);
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Join me on Learned',
+          text: INVITE_MESSAGE,
+          url: window.location.origin,
+        });
+      } catch {
+        // user cancelled — do nothing
+      }
+    } else {
+      window.open(`https://wa.me/?text=${encodeURIComponent(INVITE_MESSAGE)}`, '_blank');
+    }
+  };
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(INVITE_MESSAGE).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
+  return (
+    <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
+      <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-1">
+        Invite a Friend
+      </p>
+      <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">
+        Know someone who'd benefit from Learned? Bring them in.
+      </p>
+      <div className="flex gap-2">
+        <button
+          onClick={handleShare}
+          className="flex-1 flex items-center justify-center gap-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold text-sm py-3 rounded-xl active:opacity-80 transition-opacity"
+        >
+          <Share2 size={16} /> Share Invite
+        </button>
+        <button
+          onClick={handleCopy}
+          className="px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 text-sm font-semibold text-slate-600 dark:text-slate-300 active:bg-slate-50 dark:active:bg-slate-800 transition-colors"
+        >
+          {copied ? 'Copied!' : 'Copy'}
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate, onUpdateSemester }) => {
   const { count: streakCount, days: streakDays } = getStreakData();
   const totalQuestions = getTotalQuestions();
@@ -454,6 +509,9 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
           </div>
         </button>
       </div>
+
+      {/* Invite a Friend */}
+      <InviteCard />
 
       {/* Suggestion Box */}
       <button
