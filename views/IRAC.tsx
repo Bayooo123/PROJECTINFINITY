@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IRACInterface, ScenarioSubmission } from '../components/IRACInterface';
 import { UserProfile, supabase, ProblemQuestion } from '../lib/supabase';
 import { Scale, CheckCircle2, RotateCcw, Loader, ChevronRight } from 'lucide-react';
@@ -11,14 +11,63 @@ interface IRACProps {
 
 const DIFFICULTIES = ['All', 'Introductory', 'Intermediate', 'Advanced', 'Complex'] as const;
 
+interface Topic {
+  id: string;
+  name: string;
+}
+
 export const IRAC: React.FC<IRACProps> = ({ user }) => {
   const { user: authUser } = useAuth();
   const [phase, setPhase] = useState<'pick' | 'active' | 'submitted'>('pick');
   const [selectedCourse, setSelectedCourse] = useState<string>(user.courses[0] ?? '');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('All');
+  const [selectedTopicId, setSelectedTopicId] = useState<string>('');
+  const [topics, setTopics] = useState<Topic[]>([]);
+  const [topicsLoading, setTopicsLoading] = useState(false);
   const [question, setQuestion] = useState<ProblemQuestion | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  // Fetch topics from DB whenever course changes
+  useEffect(() => {
+    if (!selectedCourse) { setTopics([]); return; }
+    setTopicsLoading(true);
+    setSelectedTopicId('');
+    setTopics([]);
+
+    const fetchTopics = async () => {
+      // Get course id
+      const { data: courseRow } = await supabase
+        .from('courses')
+        .select('id')
+        .eq('course_name', selectedCourse)
+        .single();
+
+      if (!courseRow) { setTopicsLoading(false); return; }
+
+      // Get topic_ids for this course
+      const { data: ctRows } = await supabase
+        .from('course_topics')
+        .select('topic_id')
+        .eq('course_id', courseRow.id);
+
+      if (!ctRows || ctRows.length === 0) { setTopicsLoading(false); return; }
+
+      const topicIds = ctRows.map((r: { topic_id: string }) => r.topic_id);
+
+      // Get topic names from the topics table
+      const { data: topicRows } = await supabase
+        .from('topics')
+        .select('id, name')
+        .in('id', topicIds)
+        .order('name');
+
+      setTopics((topicRows as Topic[]) ?? []);
+      setTopicsLoading(false);
+    };
+
+    fetchTopics();
+  }, [selectedCourse]);
 
   const loadQuestion = async () => {
     if (!selectedCourse) return;
@@ -33,15 +82,19 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
         .single();
       if (courseErr || !courseRow) throw new Error('Course not found in question bank.');
 
-      // Get topic ids for this course
-      const { data: topicRows, error: topicsErr } = await supabase
-        .from('course_topics')
-        .select('topic_id')
-        .eq('course_id', courseRow.id);
-      if (topicsErr || !topicRows || topicRows.length === 0)
-        throw new Error('No topics found for this course.');
-
-      const topicIds = topicRows.map((t: { topic_id: string }) => t.topic_id);
+      // Determine which topic_ids to query
+      let topicIds: string[];
+      if (selectedTopicId) {
+        topicIds = [selectedTopicId];
+      } else {
+        const { data: ctRows, error: topicsErr } = await supabase
+          .from('course_topics')
+          .select('topic_id')
+          .eq('course_id', courseRow.id);
+        if (topicsErr || !ctRows || ctRows.length === 0)
+          throw new Error('No topics found for this course.');
+        topicIds = ctRows.map((t: { topic_id: string }) => t.topic_id);
+      }
 
       // Count available questions
       let countQuery = supabase
@@ -53,9 +106,9 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
 
       const { count, error: countErr } = await countQuery;
       if (countErr || count === null || count === 0)
-        throw new Error('No questions available for this selection. Try a different difficulty.');
+        throw new Error('No questions available for this selection. Try a different topic or difficulty.');
 
-      // Fetch a random question using a random offset
+      // Fetch a random question
       const randomOffset = Math.floor(Math.random() * count);
       let qQuery = supabase
         .from('problem_questions')
@@ -88,6 +141,8 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
     setPhase('submitted');
   };
 
+  const selectedTopicName = topics.find(t => t.id === selectedTopicId)?.name;
+
   const reset = () => {
     setQuestion(null);
     setPhase('pick');
@@ -112,7 +167,9 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
           <div className="px-5 py-4 bg-slate-900 dark:bg-slate-800 text-white">
             <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-0.5">Model Answer</p>
-            <p className="text-sm font-semibold">{selectedCourse} · {question.difficulty}</p>
+            <p className="text-sm font-semibold">
+              {selectedCourse}{selectedTopicName ? ` · ${selectedTopicName}` : ''} · {question.difficulty}
+            </p>
           </div>
           <div className="px-5 py-5 text-sm text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-wrap">
             {question.model_answer}
@@ -147,7 +204,7 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
                 {selectedCourse}
               </h2>
               <p className="text-slate-500 dark:text-slate-400 text-xs">
-                {question.difficulty}{question.marks ? ` · ${question.marks} marks` : ''}
+                {selectedTopicName ? `${selectedTopicName} · ` : ''}{question.difficulty}{question.marks ? ` · ${question.marks} marks` : ''}
               </p>
             </div>
           </div>
@@ -159,7 +216,6 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
           </button>
         </header>
 
-        {/* Instruction banner */}
         <div className="mx-4 sm:mx-6 mb-4 bg-slate-900 dark:bg-slate-800 text-white rounded-xl px-5 py-3">
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">
             Instruction
@@ -211,6 +267,49 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
             ))}
           </div>
         </div>
+
+        {/* Topic — loads from DB after course is picked */}
+        {selectedCourse && (
+          <div className="space-y-2">
+            <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">Topic</p>
+            {topicsLoading ? (
+              <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400 py-2">
+                <Loader size={15} className="animate-spin" />
+                <span className="text-sm">Loading topics…</span>
+              </div>
+            ) : topics.length === 0 ? (
+              <p className="text-sm text-slate-400 dark:text-slate-500 italic">
+                No topics found for this course yet.
+              </p>
+            ) : (
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setSelectedTopicId('')}
+                  className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${
+                    selectedTopicId === ''
+                      ? 'bg-slate-900 dark:bg-white border-slate-900 dark:border-white text-white dark:text-slate-900'
+                      : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500 bg-white dark:bg-slate-900'
+                  }`}
+                >
+                  All Topics
+                </button>
+                {topics.map((t) => (
+                  <button
+                    key={t.id}
+                    onClick={() => setSelectedTopicId(t.id)}
+                    className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${
+                      selectedTopicId === t.id
+                        ? 'bg-slate-900 dark:bg-white border-slate-900 dark:border-white text-white dark:text-slate-900'
+                        : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500 bg-white dark:bg-slate-900'
+                    }`}
+                  >
+                    {t.name}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Difficulty */}
         <div className="space-y-2">
