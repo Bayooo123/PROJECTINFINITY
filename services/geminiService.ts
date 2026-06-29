@@ -300,26 +300,48 @@ export const generateQuizQuestions = async (
   count: number = 5
 ): Promise<any[]> => {
   try {
-    // 1. Try fetching from Question Bank first (Strict Production Mode)
-    const { data, error } = await supabase
+    const isAllTopics = !topic || topic === 'All Topics';
+
+    let query = supabase
       .from('question_bank')
       .select('question_data')
       .eq('course', course)
-      .eq('topic', topic)
-      .eq('type', 'objective')
-      .limit(count);
+      .eq('type', 'objective');
 
-    if (data && data.length >= count) {
-      console.log("Fetched questions from Bank!");
-      return data.map(row => row.question_data);
+    if (!isAllTopics) {
+      query = query.eq('topic', topic);
     }
 
-    console.warn(`Bank insufficient for ${course} - ${topic}. Requested ${count}, found ${data?.length || 0}.`);
+    // For marathon (all topics), shuffle by fetching more and slicing
+    if (isAllTopics) {
+      // Fetch total count first, then random offset for variety
+      const { count: total } = await supabase
+        .from('question_bank')
+        .select('*', { count: 'exact', head: true })
+        .eq('course', course)
+        .eq('type', 'objective');
 
-    // STRICT PRODUCTION MODE: Do NOT generate live.
-    return data ? data.map(row => row.question_data) : [];
+      const offset = total && total > count
+        ? Math.floor(Math.random() * (total - count))
+        : 0;
+
+      query = query.range(offset, offset + count - 1);
+    } else {
+      query = query.limit(count);
+    }
+
+    const { data, error } = await query;
+
+    if (error) throw error;
+
+    if (!data || data.length === 0) {
+      console.warn(`No questions in bank for ${course}${isAllTopics ? '' : ` - ${topic}`}.`);
+      return [];
+    }
+
+    return data.map((row: any) => row.question_data);
   } catch (error) {
-    console.error("Error generating quiz:", error);
+    console.error("Error fetching quiz questions:", error);
     throw error;
   }
 };

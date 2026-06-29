@@ -15,7 +15,13 @@ import {
   Timer,
   Layers,
   Zap,
+  Loader,
 } from 'lucide-react';
+
+// "Constitutional Law I" → "Constitutional Law" (question_bank uses non-suffixed names)
+function toQBCourse(name: string): string {
+  return name.replace(/\s+(I{1,3}|IV|VI?)$/i, '').trim();
+}
 
 interface PracticeProps {
   user: UserProfile;
@@ -77,10 +83,11 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
   useEffect(() => {
     if (!selectedCourse) { setAvailableTopics([]); return; }
     setTopicsLoading(true);
+    const qbCourse = toQBCourse(selectedCourse);
     supabase
       .from('question_bank')
       .select('topic')
-      .eq('course', selectedCourse)
+      .eq('course', qbCourse)
       .eq('type', 'objective')
       .then(({ data }) => {
         const topics = [...new Set((data ?? []).map((r: any) => r.topic as string))].sort();
@@ -140,7 +147,7 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
 
     try {
       const modeConfig = QUIZ_MODES[quizMode];
-      const generatedQuestions = await generateQuizQuestions(selectedCourse, topic, modeConfig.count);
+      const generatedQuestions = await generateQuizQuestions(toQBCourse(selectedCourse), topic, modeConfig.count);
       setTimeLeft(modeConfig.timeMinutes * 60);
 
       if (generatedQuestions && generatedQuestions.length > 0) {
@@ -286,26 +293,35 @@ export const Practice: React.FC<PracticeProps> = ({ user, onQuizStateChange }) =
               <label className="block text-sm font-medium text-slate-900 dark:text-slate-300">
                 3. Select Topic
               </label>
-              <div className="relative">
-                <select
-                  value={topic}
-                  onChange={(e) => setTopic(e.target.value)}
-                  disabled={topicsLoading}
-                  className="w-full px-4 py-3 pr-10 rounded-lg border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-500 outline-none appearance-none bg-white dark:bg-slate-800 text-slate-900 dark:text-white disabled:opacity-60"
-                >
-                  <option value="">
-                    {topicsLoading ? 'Loading topics…' : availableTopics.length === 0 ? 'No topics available yet' : '-- Select a Topic --'}
-                  </option>
-                  {availableTopics.map((t, idx) => (
-                    <option key={idx} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">
-                  <ListFilter size={20} />
+              {topicsLoading ? (
+                <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400 py-2">
+                  <Loader size={16} className="animate-spin" />
+                  <span className="text-sm">Loading topics from question bank…</span>
                 </div>
-              </div>
+              ) : availableTopics.length === 0 ? (
+                <div className="p-4 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
+                  <p className="text-sm text-slate-500 dark:text-slate-400">
+                    No questions in the bank yet for <span className="font-semibold text-slate-700 dark:text-slate-300">{selectedCourse}</span>.
+                    An admin can add them via the Question Bank Generator.
+                  </p>
+                </div>
+              ) : (
+                <div className="relative">
+                  <select
+                    value={topic}
+                    onChange={(e) => setTopic(e.target.value)}
+                    className="w-full px-4 py-3 pr-10 rounded-lg border border-slate-300 dark:border-slate-600 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-500 outline-none appearance-none bg-white dark:bg-slate-800 text-slate-900 dark:text-white"
+                  >
+                    <option value="">-- Select a Topic --</option>
+                    {availableTopics.map((t, idx) => (
+                      <option key={idx} value={t}>{t}</option>
+                    ))}
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none">
+                    <ListFilter size={20} />
+                  </div>
+                </div>
+              )}
             </div>
           )}
 

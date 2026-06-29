@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { COURSE_TOPICS } from '../types';
 import { batchGenerateAndSaveQuestions, importQuestionsToBank } from '../services/geminiService';
+import { supabase } from '../lib/supabase';
 import { Button } from '../components/Button';
 import { Database, Save, AlertCircle, CheckCircle, Loader2 } from 'lucide-react';
 
@@ -12,16 +13,54 @@ export const AdminQuestionGenerator: React.FC = () => {
     const [count, setCount] = useState<number>(10);
     const [isGenerating, setIsGenerating] = useState(false);
     const [status, setStatus] = useState<{ type: 'success' | 'error', message: string } | null>(null);
+    const [dbCourses, setDbCourses] = useState<string[]>([]);
 
-    const allCourses = Object.keys(COURSE_TOPICS).sort();
-    const availableTopics = selectedCourse ? (COURSE_TOPICS[selectedCourse] || []) : [];
+    // Load courses from Supabase so generator always uses the canonical names
+    useEffect(() => {
+        supabase
+            .from('courses')
+            .select('course_name')
+            .order('course_name')
+            .then(({ data }) => {
+                if (data && data.length > 0) {
+                    setDbCourses(data.map((r: { course_name: string }) => r.course_name));
+                } else {
+                    // Fallback to hardcoded list if courses table is empty
+                    setDbCourses(Object.keys(COURSE_TOPICS).sort());
+                }
+            });
+    }, []);
+
+    // For topics: first check question_bank for existing topics, fallback to COURSE_TOPICS
+    const [dbTopics, setDbTopics] = useState<string[]>([]);
+    useEffect(() => {
+        if (!selectedCourse) { setDbTopics([]); return; }
+        const base = selectedCourse.replace(/\s+(I{1,3}|IV|VI?)$/i, '').trim();
+        supabase
+            .from('question_bank')
+            .select('topic')
+            .eq('course', base)
+            .then(({ data }) => {
+                const fromDb = [...new Set((data ?? []).map((r: any) => r.topic as string))].sort();
+                // Merge with hardcoded topics (base name lookup) so admin can seed new topics too
+                const hardcoded = COURSE_TOPICS[base] ?? COURSE_TOPICS[selectedCourse] ?? [];
+                const merged = [...new Set([...fromDb, ...hardcoded])].sort();
+                setDbTopics(merged);
+            });
+    }, [selectedCourse]);
+
+    const allCourses = dbCourses.length > 0 ? dbCourses : Object.keys(COURSE_TOPICS).sort();
+    const availableTopics = dbTopics.length > 0 ? dbTopics : (COURSE_TOPICS[selectedCourse] ?? []);
+
+    // question_bank stores courses without the I/II suffix
+    const qbCourse = selectedCourse.replace(/\s+(I{1,3}|IV|VI?)$/i, '').trim();
 
     const handleGenerate = async () => {
         if (!selectedCourse || !selectedTopic) return;
         setIsGenerating(true);
         setStatus(null);
         try {
-            const result = await batchGenerateAndSaveQuestions(selectedCourse, selectedTopic, count, questionType);
+            const result = await batchGenerateAndSaveQuestions(qbCourse, selectedTopic, count, questionType);
             if (result.success) {
                 setStatus({ type: 'success', message: `Successfully generated and saved ${result.count} questions!` });
             } else {
@@ -57,7 +96,7 @@ export const AdminQuestionGenerator: React.FC = () => {
 
             // 2. Transform/Validate
             const rowsToInsert = parsedQuestions.map((q: any) => ({
-                course: selectedCourse,
+                course: qbCourse,
                 topic: selectedTopic,
                 type: questionType,
                 question_data: q,
