@@ -28,6 +28,26 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Resolve a course name to its DB id — tries exact match then prefix match
+  // so both old profiles ("Criminal Law") and new ("Criminal Law I") work
+  const resolveCourseId = async (courseName: string): Promise<string | null> => {
+    const { data: exact } = await supabase
+      .from('courses')
+      .select('id')
+      .eq('course_name', courseName)
+      .maybeSingle();
+    if (exact) return exact.id;
+
+    // Strip " I" / " II" suffix and try a prefix match
+    const base = courseName.replace(/\s+(I{1,3}|IV|VI?)$/i, '').trim();
+    const { data: rows } = await supabase
+      .from('courses')
+      .select('id')
+      .ilike('course_name', `${base}%`)
+      .limit(1);
+    return rows?.[0]?.id ?? null;
+  };
+
   // Fetch topics from DB whenever course changes
   useEffect(() => {
     if (!selectedCourse) { setTopics([]); return; }
@@ -36,20 +56,14 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
     setTopics([]);
 
     const fetchTopics = async () => {
-      // Get course id
-      const { data: courseRow } = await supabase
-        .from('courses')
-        .select('id')
-        .eq('course_name', selectedCourse)
-        .single();
-
-      if (!courseRow) { setTopicsLoading(false); return; }
+      const courseId = await resolveCourseId(selectedCourse);
+      if (!courseId) { setTopicsLoading(false); return; }
 
       // Get topic_ids for this course
       const { data: ctRows } = await supabase
         .from('course_topics')
         .select('topic_id')
-        .eq('course_id', courseRow.id);
+        .eq('course_id', courseId);
 
       if (!ctRows || ctRows.length === 0) { setTopicsLoading(false); return; }
 
@@ -74,13 +88,9 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
     setLoading(true);
     setError(null);
     try {
-      // Get course id
-      const { data: courseRow, error: courseErr } = await supabase
-        .from('courses')
-        .select('id')
-        .eq('course_name', selectedCourse)
-        .single();
-      if (courseErr || !courseRow) throw new Error('Course not found in question bank.');
+      // Get course id (handles both "Criminal Law" and "Criminal Law I")
+      const courseId = await resolveCourseId(selectedCourse);
+      if (!courseId) throw new Error('Course not found in question bank.');
 
       // Determine which topic_ids to query
       let topicIds: string[];
@@ -90,7 +100,7 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
         const { data: ctRows, error: topicsErr } = await supabase
           .from('course_topics')
           .select('topic_id')
-          .eq('course_id', courseRow.id);
+          .eq('course_id', courseId);
         if (topicsErr || !ctRows || ctRows.length === 0)
           throw new Error('No topics found for this course.');
         topicIds = ctRows.map((t: { topic_id: string }) => t.topic_id);
