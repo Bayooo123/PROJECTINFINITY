@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { IRACInterface, ScenarioSubmission } from '../components/IRACInterface';
 import { UserProfile, supabase, ProblemQuestion } from '../lib/supabase';
-import { Scale, CheckCircle2, RotateCcw, Loader, ChevronRight } from 'lucide-react';
+import { Scale, CheckCircle2, RotateCcw, Loader, ChevronRight, Sparkles } from 'lucide-react';
 import { Button } from '../components/Button';
 import { useAuth } from '../contexts/AuthContext';
+import { assessIRACSubmission, IRACAssessment } from '../services/claudeService';
 
 interface IRACProps {
   user: UserProfile;
@@ -27,6 +28,8 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
   const [question, setQuestion] = useState<ProblemQuestion | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [assessment, setAssessment] = useState<IRACAssessment | null>(null);
+  const [assessing, setAssessing] = useState(false);
 
   // Resolve a course name to its DB id — uses limit(1) not maybeSingle()
   // so duplicate rows in the courses table don't silently return null
@@ -139,6 +142,9 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
 
   const handleSubmit = async (data: ScenarioSubmission) => {
     if (!question) return;
+    setAssessment(null);
+    setPhase('submitted');
+
     if (authUser) {
       await supabase.from('irac_submissions').insert({
         user_id: authUser.id,
@@ -146,32 +152,124 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
         entries: data.entries,
       });
     }
-    setPhase('submitted');
+
+    setAssessing(true);
+    const result = await assessIRACSubmission(
+      question.scenario,
+      question.instruction ?? '',
+      question.key_issues,
+      data.entries
+    );
+    setAssessment(result);
+    setAssessing(false);
   };
 
   const selectedTopicName = topics.find(t => t.id === selectedTopicId)?.name;
 
   const reset = () => {
     setQuestion(null);
+    setAssessment(null);
     setPhase('pick');
   };
 
   // ── Submitted ──────────────────────────────────────────────
   if (phase === 'submitted' && question) {
+    const verdictConfig = {
+      Distinction: { bg: 'bg-emerald-100 dark:bg-emerald-900/30', text: 'text-emerald-700 dark:text-emerald-300', border: 'border-emerald-200 dark:border-emerald-800' },
+      Credit:      { bg: 'bg-blue-100 dark:bg-blue-900/30',    text: 'text-blue-700 dark:text-blue-300',    border: 'border-blue-200 dark:border-blue-800'    },
+      Pass:        { bg: 'bg-amber-100 dark:bg-amber-900/30',  text: 'text-amber-700 dark:text-amber-300',  border: 'border-amber-200 dark:border-amber-800'  },
+      Fail:        { bg: 'bg-red-100 dark:bg-red-900/30',      text: 'text-red-700 dark:text-red-300',      border: 'border-red-200 dark:border-red-800'      },
+    };
+
+    const ScoreBar = ({ score, max }: { score: number; max: number }) => (
+      <div className="flex items-center gap-2 min-w-0">
+        <div className="flex-1 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-slate-700 dark:bg-slate-300 rounded-full transition-all"
+            style={{ width: `${(score / max) * 100}%` }}
+          />
+        </div>
+        <span className="text-xs font-semibold text-slate-600 dark:text-slate-400 shrink-0">{score}/{max}</span>
+      </div>
+    );
+
     return (
-      <div className="max-w-2xl mx-auto px-4 py-12 space-y-8">
-        <div className="text-center space-y-3">
-          <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto">
-            <CheckCircle2 size={32} className="text-green-600 dark:text-green-400" />
+      <div className="max-w-2xl mx-auto px-4 py-10 space-y-6">
+        {/* Header */}
+        <div className="text-center space-y-2">
+          <div className="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto">
+            <CheckCircle2 size={28} className="text-green-600 dark:text-green-400" />
           </div>
-          <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">
-            Analysis submitted.
-          </h2>
-          <p className="text-slate-500 dark:text-slate-400 text-sm">
-            Your reasoning has been saved. Compare it with the model answer below.
-          </p>
+          <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">Analysis submitted.</h2>
         </div>
 
+        {/* AI Assessment Card */}
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
+          <div className="px-5 py-4 flex items-center gap-2 border-b border-slate-100 dark:border-slate-800">
+            <Sparkles size={15} className="text-slate-400" />
+            <p className="text-xs font-bold uppercase tracking-widest text-slate-400">AI Assessment</p>
+          </div>
+
+          {assessing && (
+            <div className="px-5 py-8 flex flex-col items-center gap-3 text-center">
+              <Loader size={20} className="animate-spin text-slate-400" />
+              <p className="text-sm text-slate-500 dark:text-slate-400">Analysing your submission…</p>
+            </div>
+          )}
+
+          {!assessing && !assessment && (
+            <div className="px-5 py-6 text-center">
+              <p className="text-sm text-slate-400">Assessment unavailable — AI could not be reached.</p>
+            </div>
+          )}
+
+          {!assessing && assessment && (() => {
+            const vc = verdictConfig[assessment.overall.verdict];
+            return (
+              <div className="divide-y divide-slate-100 dark:divide-slate-800">
+                {/* Overall verdict */}
+                <div className={`px-5 py-5 ${vc.bg}`}>
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className={`text-2xl font-serif font-bold ${vc.text}`}>{assessment.overall.verdict}</p>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{assessment.overall.score} / {assessment.overall.max} overall</p>
+                    </div>
+                    <span className={`text-3xl font-bold ${vc.text}`}>{assessment.overall.score}<span className="text-base font-normal opacity-60">/{assessment.overall.max}</span></span>
+                  </div>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mt-3 leading-relaxed">{assessment.overall.summary}</p>
+                </div>
+
+                {/* Per-entry breakdown */}
+                {assessment.entries.map(entry => (
+                  <div key={entry.number} className="px-5 py-5 space-y-4">
+                    <div className="flex items-center justify-between">
+                      <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Issue {entry.number}</p>
+                      <p className="text-sm font-bold text-slate-700 dark:text-slate-200">{entry.total} / 10</p>
+                    </div>
+
+                    <div className="space-y-3">
+                      {(['issue', 'rule', 'application', 'conclusion'] as const).map(comp => {
+                        const label = { issue: 'Issue', rule: 'Rule', application: 'Application', conclusion: 'Conclusion' }[comp];
+                        const data = entry[comp];
+                        return (
+                          <div key={comp} className="space-y-1">
+                            <div className="flex items-center gap-3">
+                              <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 w-24 shrink-0">{label}</span>
+                              <ScoreBar score={data.score} max={data.max} />
+                            </div>
+                            <p className="text-xs text-slate-500 dark:text-slate-500 ml-[7rem] leading-relaxed">{data.feedback}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
+        </div>
+
+        {/* Model Answer */}
         <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
           <div className="px-5 py-4 bg-slate-900 dark:bg-slate-800 text-white">
             <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-0.5">Model Answer</p>
@@ -185,15 +283,13 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
         </div>
 
         <div className="flex gap-3">
-          <Button onClick={reset} variant="outline" className="flex-1">
-            Back to courses
-          </Button>
+          <Button onClick={reset} variant="outline" className="flex-1">Back to courses</Button>
           <Button
-            onClick={() => setPhase('active')}
+            onClick={() => { setAssessment(null); setPhase('active'); }}
             variant="primary"
             className="flex-1 flex items-center gap-2 justify-center"
           >
-            <RotateCcw size={15} /> Retry this question
+            <RotateCcw size={15} /> Retry
           </Button>
         </div>
       </div>
