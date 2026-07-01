@@ -207,3 +207,64 @@ textarea:focus-visible {
 .animate-fade-slide-in {
   animation: fadeSlideIn 0.25s ease-out forwards;
 }
+
+/* Custom Landing Page helper styles */
+.marker {
+  position: relative;
+  display: inline-block;
+  color: #b45309;
+}
+.marker::after {
+  content: '';
+  position: absolute;
+  left: -2px; right: -2px; bottom: 6px;
+  height: 14px;
+  background: rgba(245, 158, 11, 0.28);
+  z-index: -1;
+  transform: rotate(-1deg);
+}
+
+.device {
+  width: 300px;
+  border-radius: 42px;
+  padding: 10px;
+  background: #0a0a0a;
+  box-shadow: 0 40px 80px -24px rgba(20,15,5,0.5), 0 0 0 1px rgba(0,0,0,0.05);
+}
+.device-screen {
+  border-radius: 33px;
+  overflow: hidden;
+  background: #f8fafc;
+  position: relative;
+}
+.no-sb::-webkit-scrollbar { display: none; }
+.no-sb { scrollbar-width: none; }
+
+.hero-wash {
+  background:
+    radial-gradient(ellipse 80% 50% at 85% 0%, rgba(245,158,11,0.10), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 0% 100%, rgba(217,119,6,0.06), transparent 60%);
+}
+
+.reveal {
+  transition: opacity .7s ease, transform .7s ease;
+}
+/* only hide when JS is active AND motion is allowed */
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+}
+html.js .reveal.in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.tab-num {
+  font-variant-numeric: tabular-nums;
+}

@@ -9,7 +9,12 @@ module.exports = {
     ],
     darkMode: 'class',
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ['Inter', 'system-ui', 'sans-serif'],
+                serif: ['Merriweather', 'Georgia', 'serif'],
+            }
+        },
     },
     plugins: [],
 }
