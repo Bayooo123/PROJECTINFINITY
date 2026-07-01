@@ -68,7 +68,7 @@ export const Landing: React.FC<LandingProps> = ({ onLogin, onSignup }) => {
           </div>
           <div className="hidden sm:flex items-center gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
             <a href="#practice" className="hover:text-slate-900 dark:hover:text-white transition-colors">Practice</a>
-            <a href="#irac" className="hover:text-slate-900 dark:hover:text-white transition-colors">IRAC</a>
+            <a href="#irac" className="hover:text-slate-900 dark:hover:text-white transition-colors">Problem Questions</a>
             <a href="#focus" className="hover:text-slate-900 dark:hover:text-white transition-colors">Weekly Focus</a>
           </div>
           <div className="flex items-center gap-2">
@@ -106,7 +106,7 @@ export const Landing: React.FC<LandingProps> = ({ onLogin, onSignup }) => {
             </h1>
 
             <p className="mt-7 text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg">
-              Learned turns every course into focused retrieval practice — MCQ drills, IRAC reasoning, and the week's most examinable topics, surfaced so you always know where to aim.
+              Learned turns every course into focused retrieval practice — MCQ drills, Problem Questions, and the week's most examinable topics, surfaced so you always know where to aim.
             </p>
 
             <div className="mt-9 flex flex-col sm:flex-row items-start sm:items-center gap-3">
@@ -245,7 +245,7 @@ export const Landing: React.FC<LandingProps> = ({ onLogin, onSignup }) => {
           </div>
           <div>
             <p className="font-serif text-3xl font-black text-slate-900 dark:text-white">4 modes</p>
-            <p className="text-[13px] text-slate-500 dark:text-slate-450 mt-1">Standard · Speed · Marathon · IRAC</p>
+            <p className="text-[13px] text-slate-500 dark:text-slate-450 mt-1">Standard · Speed · Marathon · Problem Questions</p>
           </div>
           <div>
             <p className="font-serif text-3xl font-black text-slate-900 dark:text-white">Daily</p>
@@ -433,7 +433,7 @@ export const Landing: React.FC<LandingProps> = ({ onLogin, onSignup }) => {
           
           <div className="reveal text-left">
             <p className="text-[11px] font-bold tracking-[0.2em] text-amber-500 uppercase mb-4">
-              IRAC Reasoning
+              Problem Questions
             </p>
             <h2 className="font-serif text-3xl lg:text-[40px] font-black leading-tight tracking-tight mb-5">
               Practise the skill exams actually test — not just recall.
@@ -444,7 +444,7 @@ export const Landing: React.FC<LandingProps> = ({ onLogin, onSignup }) => {
             <ul className="space-y-3 text-left">
               <li className="flex items-start gap-3 text-[15px] text-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-amber-550 flex-shrink-0 mt-0.5" />
-                Structured feedback on each IRAC limb
+                Structured feedback on each Problem Question limb
               </li>
               <li className="flex items-start gap-3 text-[15px] text-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-amber-550 flex-shrink-0 mt-0.5" />

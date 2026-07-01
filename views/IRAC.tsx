@@ -338,24 +338,24 @@ export const IRAC: React.FC<IRACProps> = ({ user }) => {
 
   // ── Pick ────────────────────────────────────────────────────
   return (
-    <div className="max-w-lg mx-auto px-4 py-10 space-y-8">
+    <div className="max-w-lg md:max-w-3xl mx-auto px-4 py-10 space-y-8">
       <div>
-        <div className="flex items-center gap-3 mb-1">
+        <div className="flex items-center gap-3 mb-1 text-left">
           <Scale size={26} className="text-slate-500 dark:text-slate-400" />
           <h2 className="text-3xl font-serif font-bold text-slate-900 dark:text-white">
-            IRAC Practice
+            Problem Questions
           </h2>
         </div>
-        <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+        <p className="text-slate-500 dark:text-slate-400 text-sm mt-1 text-left">
           Structure your legal reasoning on real Nigerian law problems.
         </p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-6 text-left">
         {/* Course */}
         <div className="space-y-2">
           <p className="text-sm font-semibold text-slate-700 dark:text-slate-300">Course</p>
-          <div className="space-y-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {user.courses.map((course) => (
               <button
                 key={course}

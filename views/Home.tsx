@@ -165,290 +165,298 @@ export const Home: React.FC<HomeProps> = ({ user, onNavigate, onStartQuiz }) => 
   };
 
   return (
-    <div className="max-w-lg mx-auto px-4 py-8 space-y-7 pb-10">
-
-      {/* ── Greeting ── */}
-      <div>
-        <p className="text-sm text-slate-500 dark:text-slate-400">{getGreeting()}</p>
-        <h1 className="text-4xl font-serif font-bold text-slate-900 dark:text-white mt-0.5">
-          {firstName}.
-        </h1>
-      </div>
-
-      {/* ── Streak row ── */}
-      <div>
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <Flame size={20} className="text-slate-400 dark:text-slate-500" />
-            <span className="text-lg font-bold text-slate-900 dark:text-white">
-              Day {streakCount} streak
-            </span>
+    <div className="max-w-lg md:max-w-5xl mx-auto px-4 py-8 pb-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8">
+        
+        {/* Left Column (Main study actions) */}
+        <div className="md:col-span-7 space-y-7">
+          {/* ── Greeting ── */}
+          <div>
+            <p className="text-sm text-slate-500 dark:text-slate-400">{getGreeting()}</p>
+            <h1 className="text-4xl font-serif font-bold text-slate-900 dark:text-white mt-0.5">
+              {firstName}.
+            </h1>
           </div>
-          <span className="text-xs text-slate-400 dark:text-slate-500">Keep it lit</span>
-        </div>
-        <div className="flex gap-2">
-          {DAY_LABELS.map((label, i) => {
-            const isDone = streakDays[i];
-            const isToday = i === todayIdx;
-            let cls = '';
-            if (isDone) cls = 'bg-slate-900 dark:bg-white text-white dark:text-slate-900';
-            else if (isToday) cls = 'border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white bg-transparent';
-            else cls = 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600';
-            return (
-              <div
-                key={i}
-                className={`flex-1 aspect-square rounded-full flex items-center justify-center text-[11px] font-bold transition-colors ${cls}`}
-              >
-                {label}
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
-      {/* ── Weekly Focus ── */}
-      <div>
-        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-          Weekly Focus
-        </p>
-
-        {/* Course switcher pills — horizontal scroll */}
-        <div
-          className="flex gap-2 overflow-x-auto pb-2 mb-4"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          {user.courses.map((c) => (
-            <button
-              key={c}
-              onClick={() => setFocusCourse(c)}
-              className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
-                focusCourse === c
-                  ? 'bg-slate-900 dark:bg-white border-slate-900 dark:border-white text-white dark:text-slate-900'
-                  : 'border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500 bg-white dark:bg-slate-900'
-              }`}
-            >
-              {c}
-            </button>
-          ))}
-        </div>
-
-        {focusLoading ? (
-          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-10 flex items-center justify-center">
-            <Loader size={22} className="animate-spin text-slate-400 dark:text-slate-600" />
-          </div>
-        ) : !weeklyTopic || points.length === 0 ? (
-          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 text-center">
-            <p className="text-sm text-slate-400 dark:text-slate-500 italic">
-              No content available for this course yet.
-            </p>
-          </div>
-        ) : (
-          <>
-            <p className="text-[11px] font-medium text-slate-500 dark:text-slate-400 mb-3">
-              Topic {weeklyTopic.number} — {weeklyTopic.title}
-            </p>
-
-            {cardIndex < points.length ? (
-              <div
-                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col select-none"
-                style={{ minHeight: 240 }}
-                onTouchStart={handleTouchStart}
-                onTouchEnd={handleTouchEnd}
-              >
-                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4 block">
-                  Point {points[cardIndex].point_number} of {points.length}
+          {/* ── Streak row ── */}
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <Flame size={20} className="text-slate-400 dark:text-slate-500" />
+                <span className="text-lg font-bold text-slate-900 dark:text-white">
+                  Day {streakCount} streak
                 </span>
-                <h3 className="text-xl font-serif font-bold text-slate-900 dark:text-white mb-3 leading-snug">
-                  {points[cardIndex].heading}
-                </h3>
-                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
-                  {points[cardIndex].body}
-                </p>
-
-                <div className="flex items-center justify-between mt-6">
-                  <button
-                    onClick={prevCard}
-                    disabled={cardIndex === 0}
-                    className="text-sm font-semibold text-slate-500 dark:text-slate-400 disabled:opacity-25 hover:text-slate-900 dark:hover:text-white transition-colors"
+              </div>
+              <span className="text-xs text-slate-400 dark:text-slate-500">Keep it lit</span>
+            </div>
+            <div className="flex gap-2">
+              {DAY_LABELS.map((label, i) => {
+                const isDone = streakDays[i];
+                const isToday = i === todayIdx;
+                let cls = '';
+                if (isDone) cls = 'bg-slate-900 dark:bg-white text-white dark:text-slate-900';
+                else if (isToday) cls = 'border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white bg-transparent';
+                else cls = 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600';
+                return (
+                  <div
+                    key={i}
+                    className={`flex-1 aspect-square rounded-full flex items-center justify-center text-[11px] font-bold transition-colors ${cls}`}
                   >
-                    ← Prev
-                  </button>
-
-                  {/* Dot indicators — one per point + end card */}
-                  <div className="flex items-center gap-1.5">
-                    {Array.from({ length: points.length + 1 }, (_, i) => (
-                      <div
-                        key={i}
-                        className={`rounded-full transition-all duration-200 ${
-                          i === cardIndex
-                            ? 'w-4 h-1.5 bg-slate-900 dark:bg-white'
-                            : 'w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700'
-                        }`}
-                      />
-                    ))}
+                    {label}
                   </div>
+                );
+              })}
+            </div>
+          </div>
 
-                  <button
-                    onClick={nextCard}
-                    className="text-sm font-semibold text-slate-900 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
-                  >
-                    Next →
-                  </button>
-                </div>
+          {/* ── Weekly Focus ── */}
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+              Weekly Focus
+            </p>
+
+            {/* Course switcher pills — horizontal scroll */}
+            <div
+              className="flex gap-2 overflow-x-auto pb-2 mb-4"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {user.courses.map((c) => (
+                <button
+                  key={c}
+                  onClick={() => setFocusCourse(c)}
+                  className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
+                    focusCourse === c
+                      ? 'bg-slate-900 dark:bg-white border-slate-900 dark:border-white text-white dark:text-slate-900'
+                      : 'border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-slate-400 dark:hover:border-slate-500 bg-white dark:bg-slate-900'
+                  }`}
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+
+            {focusLoading ? (
+              <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-10 flex items-center justify-center">
+                <Loader size={22} className="animate-spin text-slate-400 dark:text-slate-600" />
+              </div>
+            ) : !weeklyTopic || points.length === 0 ? (
+              <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8 text-center">
+                <p className="text-sm text-slate-400 dark:text-slate-500 italic">
+                  No content available for this course yet.
+                </p>
               </div>
             ) : (
-              /* End card */
-              <div
-                className="bg-slate-900 dark:bg-slate-100 rounded-2xl p-6 text-center select-none"
-                onTouchStart={handleTouchStart}
-                onTouchEnd={handleTouchEnd}
-              >
-                <div className="w-12 h-12 bg-white/10 dark:bg-black/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <CheckCircle size={24} className="text-white dark:text-slate-800" />
-                </div>
-                <p className="text-white/60 dark:text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-1">
-                  All {points.length} points covered
+              <>
+                <p className="text-[11px] font-medium text-slate-500 dark:text-slate-400 mb-3 text-left">
+                  Topic {weeklyTopic.number} — {weeklyTopic.title}
                 </p>
-                <h3 className="text-white dark:text-slate-900 font-serif font-bold text-lg mb-5 leading-snug">
-                  {weeklyTopic.title}
-                </h3>
 
-                {/* Dot indicators on end card */}
-                <div className="flex items-center justify-center gap-1.5 mb-5">
-                  {Array.from({ length: points.length + 1 }, (_, i) => (
-                    <div
-                      key={i}
-                      className={`rounded-full transition-all duration-200 ${
-                        i === cardIndex
-                          ? 'w-4 h-1.5 bg-white dark:bg-slate-800'
-                          : 'w-1.5 h-1.5 bg-white/30 dark:bg-slate-400'
-                      }`}
-                    />
-                  ))}
+                {cardIndex < points.length ? (
+                  <div
+                    className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex flex-col select-none text-left"
+                    style={{ minHeight: 240 }}
+                    onTouchStart={handleTouchStart}
+                    onTouchEnd={handleTouchEnd}
+                  >
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4 block">
+                      Point {points[cardIndex].point_number} of {points.length}
+                    </span>
+                    <h3 className="text-xl font-serif font-bold text-slate-900 dark:text-white mb-3 leading-snug">
+                      {points[cardIndex].heading}
+                    </h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
+                      {points[cardIndex].body}
+                    </p>
+
+                    <div className="flex items-center justify-between mt-6">
+                      <button
+                        onClick={prevCard}
+                        disabled={cardIndex === 0}
+                        className="text-sm font-semibold text-slate-500 dark:text-slate-400 disabled:opacity-25 hover:text-slate-900 dark:hover:text-white transition-colors"
+                      >
+                        ← Prev
+                      </button>
+
+                      {/* Dot indicators — one per point + end card */}
+                      <div className="flex items-center gap-1.5">
+                        {Array.from({ length: points.length + 1 }, (_, i) => (
+                          <div
+                            key={i}
+                            className={`rounded-full transition-all duration-200 ${
+                              i === cardIndex
+                                ? 'w-4 h-1.5 bg-slate-900 dark:bg-white'
+                                : 'w-1.5 h-1.5 bg-slate-200 dark:bg-slate-700'
+                            }`}
+                          />
+                        ))}
+                      </div>
+
+                      <button
+                        onClick={nextCard}
+                        className="text-sm font-semibold text-slate-900 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+                      >
+                        Next →
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  /* End card */
+                  <div
+                    className="bg-slate-900 dark:bg-slate-100 rounded-2xl p-6 text-center select-none"
+                    onTouchStart={handleTouchStart}
+                    onTouchEnd={handleTouchEnd}
+                  >
+                    <div className="w-12 h-12 bg-white/10 dark:bg-black/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <CheckCircle size={24} className="text-white dark:text-slate-800" />
+                    </div>
+                    <p className="text-white/60 dark:text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-1">
+                      All {points.length} points covered
+                    </p>
+                    <h3 className="text-white dark:text-slate-900 font-serif font-bold text-lg mb-5 leading-snug">
+                      {weeklyTopic.title}
+                    </h3>
+
+                    {/* Dot indicators on end card */}
+                    <div className="flex items-center justify-center gap-1.5 mb-5">
+                      {Array.from({ length: points.length + 1 }, (_, i) => (
+                        <div
+                          key={i}
+                          className={`rounded-full transition-all duration-200 ${
+                            i === cardIndex
+                              ? 'w-4 h-1.5 bg-white dark:bg-slate-800'
+                              : 'w-1.5 h-1.5 bg-white/30 dark:bg-slate-400'
+                          }`}
+                        />
+                      ))}
+                    </div>
+
+                    <button
+                      onClick={handleTestYourself}
+                      className="w-full bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 hover:bg-slate-100 dark:hover:bg-slate-850 transition-colors mb-3"
+                    >
+                      <Zap size={16} /> Test yourself on this topic
+                    </button>
+                    <button
+                      onClick={() => setCardIndex(0)}
+                      className="text-white/50 dark:text-slate-500 text-xs hover:text-white/80 dark:hover:text-slate-700 transition-colors"
+                    >
+                      Review points again
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+        </div>
+
+        {/* Right Column (Sidebar/Progress/Stats) */}
+        <div className="md:col-span-5 space-y-7 text-left">
+          {/* ── This week stats ── */}
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+              This Week
+            </p>
+            <div className="grid grid-cols-3 gap-3">
+              <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
+                <p className="text-2xl font-bold text-slate-900 dark:text-white tab-num">{totalQuestions.toLocaleString()}</p>
+                <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Questions answered</p>
+              </div>
+              <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
+                <p className="text-2xl font-bold text-slate-900 dark:text-white tab-num">
+                  {accuracy !== null ? `${accuracy}%` : '—'}
+                </p>
+                <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Average accuracy</p>
+              </div>
+              <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
+                <p className="text-2xl font-bold text-slate-900 dark:text-white tab-num">{activeDays}</p>
+                <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Active days</p>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Pick up where you left off ── */}
+          {lastSession && (
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+                Pick up where you left off
+              </p>
+              <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+                <div className="w-10 h-10 bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <BookOpen size={18} className="text-slate-500 dark:text-slate-400" />
                 </div>
-
+                <div className="flex-1 min-w-0">
+                  <p className="font-semibold text-slate-900 dark:text-white text-sm truncate">
+                    {lastSession.course}
+                  </p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 truncate">
+                    {lastSession.topic ? `${lastSession.topic} · ` : ''}{lastSession.mode} · last scored {lastSession.score}
+                  </p>
+                </div>
                 <button
-                  onClick={handleTestYourself}
-                  className="w-full bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-bold py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors mb-3"
+                  onClick={() => onNavigate(AppView.PRACTICE)}
+                  className="flex items-center gap-0.5 text-sm font-bold text-slate-900 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 transition-colors flex-shrink-0"
                 >
-                  <Zap size={16} /> Test yourself on this topic
-                </button>
-                <button
-                  onClick={() => setCardIndex(0)}
-                  className="text-white/50 dark:text-slate-500 text-xs hover:text-white/80 dark:hover:text-slate-700 transition-colors"
-                >
-                  Review points again
+                  Resume <ChevronRight size={15} />
                 </button>
               </div>
-            )}
-          </>
-        )}
-      </div>
+            </div>
+          )}
 
-      {/* ── Pick up where you left off ── */}
-      {lastSession && (
-        <div>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Pick up where you left off
-          </p>
-          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
-            <div className="w-10 h-10 bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center flex-shrink-0">
-              <BookOpen size={18} className="text-slate-500 dark:text-slate-400" />
+          {/* ── Your courses ── */}
+          {user.courses && user.courses.length > 0 && (
+            <div>
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
+                  Your Courses
+                </p>
+                <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{user.level}</p>
+              </div>
+              <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden divide-y divide-slate-100 dark:divide-slate-800">
+                {user.courses.map((course) => {
+                  const avg = getCourseAvg(course);
+                  return (
+                    <div key={course} className="px-5 py-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-semibold text-slate-900 dark:text-white">{course}</span>
+                        <span className="text-sm font-bold text-slate-700 dark:text-slate-300 tabular-nums">
+                          {avg !== null ? `${avg}%` : '—'}
+                        </span>
+                      </div>
+                      <div className="h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                        <div
+                          className="h-full bg-slate-900 dark:bg-white rounded-full transition-all duration-500"
+                          style={{ width: avg !== null ? `${avg}%` : '0%' }}
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-            <div className="flex-1 min-w-0">
-              <p className="font-semibold text-slate-900 dark:text-white text-sm truncate">
-                {lastSession.course}
-              </p>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 truncate">
-                {lastSession.topic ? `${lastSession.topic} · ` : ''}{lastSession.mode} · last scored {lastSession.score}
-              </p>
-            </div>
+          )}
+
+          {/* ── Quick access ── */}
+          <div className="grid grid-cols-2 gap-3">
             <button
               onClick={() => onNavigate(AppView.PRACTICE)}
-              className="flex items-center gap-0.5 text-sm font-bold text-slate-900 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 transition-colors flex-shrink-0"
+              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-2xl p-5 text-left transition-colors shadow-sm"
             >
-              Resume <ChevronRight size={15} />
+              <BookOpen size={22} className="text-slate-500 dark:text-slate-400 mb-3" />
+              <p className="font-bold text-slate-900 dark:text-white text-sm">Practice</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">MCQ drills</p>
+            </button>
+            <button
+              onClick={() => onNavigate(AppView.IRAC)}
+              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-2xl p-5 text-left transition-colors shadow-sm"
+            >
+              <Scale size={22} className="text-slate-500 dark:text-slate-400 mb-3" />
+              <p className="font-bold text-slate-900 dark:text-white text-sm">Problem Questions</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Legal reasoning</p>
             </button>
           </div>
         </div>
-      )}
 
-      {/* ── This week stats ── */}
-      <div>
-        <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-          This Week
-        </p>
-        <div className="grid grid-cols-3 gap-3">
-          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <p className="text-2xl font-bold text-slate-900 dark:text-white">{totalQuestions.toLocaleString()}</p>
-            <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Questions answered</p>
-          </div>
-          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <p className="text-2xl font-bold text-slate-900 dark:text-white">
-              {accuracy !== null ? `${accuracy}%` : '—'}
-            </p>
-            <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Average accuracy</p>
-          </div>
-          <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-sm">
-            <p className="text-2xl font-bold text-slate-900 dark:text-white">{activeDays}</p>
-            <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-1 leading-tight">Active days</p>
-          </div>
-        </div>
       </div>
-
-      {/* ── Your courses ── */}
-      {user.courses && user.courses.length > 0 && (
-        <div>
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
-              Your Courses
-            </p>
-            <p className="text-[10px] font-semibold text-slate-400 dark:text-slate-500">{user.level}</p>
-          </div>
-          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden divide-y divide-slate-100 dark:divide-slate-800">
-            {user.courses.map((course) => {
-              const avg = getCourseAvg(course);
-              return (
-                <div key={course} className="px-5 py-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-semibold text-slate-900 dark:text-white">{course}</span>
-                    <span className="text-sm font-bold text-slate-700 dark:text-slate-300 tabular-nums">
-                      {avg !== null ? `${avg}%` : '—'}
-                    </span>
-                  </div>
-                  <div className="h-1.5 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                    <div
-                      className="h-full bg-slate-900 dark:bg-white rounded-full transition-all duration-500"
-                      style={{ width: avg !== null ? `${avg}%` : '0%' }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* ── Quick access ── */}
-      <div className="grid grid-cols-2 gap-3">
-        <button
-          onClick={() => onNavigate(AppView.PRACTICE)}
-          className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-2xl p-5 text-left transition-colors shadow-sm"
-        >
-          <BookOpen size={22} className="text-slate-500 dark:text-slate-400 mb-3" />
-          <p className="font-bold text-slate-900 dark:text-white text-sm">Practice</p>
-          <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">MCQ drills</p>
-        </button>
-        <button
-          onClick={() => onNavigate(AppView.IRAC)}
-          className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 rounded-2xl p-5 text-left transition-colors shadow-sm"
-        >
-          <Scale size={22} className="text-slate-500 dark:text-slate-400 mb-3" />
-          <p className="font-bold text-slate-900 dark:text-white text-sm">IRAC</p>
-          <p className="text-xs text-slate-400 dark:text-slate-500 mt-0.5">Legal reasoning</p>
-        </button>
-      </div>
-
     </div>
   );
 };

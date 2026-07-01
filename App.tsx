@@ -215,7 +215,7 @@ const AppContent: React.FC = () => {
               onClick={() => handleNavigate(AppView.IRAC)}
               className={`hover:text-slate-900 dark:hover:text-white transition-colors ${currentView === AppView.IRAC ? 'text-slate-900 dark:text-white font-semibold' : ''}`}
             >
-              IRAC
+              Problem Questions
             </button>
 
             <div className="h-6 w-px bg-slate-200 dark:bg-slate-700 mx-2" />
@@ -286,7 +286,7 @@ const AppContent: React.FC = () => {
             active={currentView === AppView.IRAC}
             onClick={() => handleNavigate(AppView.IRAC)}
             icon={<Scale size={22} />}
-            label="IRAC"
+            label="Problem Qs"
           />
           <NavButton
             active={currentView === AppView.PROFILE}
@@ -408,178 +408,187 @@ const ProfileView: React.FC<ProfileViewProps> = ({ profile, onLogout, onNavigate
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="max-w-md mx-auto px-4 py-10 space-y-5">
-      {/* Avatar + Name */}
-      <div className="text-center space-y-2">
-        <div className="w-20 h-20 bg-slate-200 dark:bg-slate-800 rounded-full mx-auto flex items-center justify-center">
-          <UserIcon size={36} className="text-slate-500 dark:text-slate-400" />
-        </div>
-        <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">{profile.name}</h2>
-        <p className="text-slate-500 dark:text-slate-400 text-sm">
-          {profile.university} · {profile.level} · {profile.semester ?? 'First Semester'}
-        </p>
-      </div>
+    <div className="max-w-md md:max-w-4xl mx-auto px-4 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        
+        {/* Left Column: Identity & Statistics */}
+        <div className="md:col-span-5 space-y-5">
+          {/* Avatar + Name */}
+          <div className="text-center space-y-2 bg-white dark:bg-slate-900 rounded-xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div className="w-20 h-20 bg-slate-200 dark:bg-slate-800 rounded-full mx-auto flex items-center justify-center">
+              <UserIcon size={36} className="text-slate-500 dark:text-slate-400" />
+            </div>
+            <h2 className="text-2xl font-serif font-bold text-slate-900 dark:text-white">{profile.name}</h2>
+            <p className="text-slate-500 dark:text-slate-400 text-sm">
+              {profile.university} · {profile.level} · {profile.semester ?? 'First Semester'}
+            </p>
+          </div>
 
-      {/* Semester */}
-      <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-          Current Semester
-        </p>
-        <select
-          defaultValue={profile.semester ?? 'First Semester'}
-          onChange={(e) => onUpdateSemester(e.target.value)}
-          className="w-full px-3 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none"
-        >
-          <option value="First Semester">First Semester</option>
-          <option value="Second Semester">Second Semester</option>
-        </select>
-        <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-2">
-          Changing semester updates your course list to the compulsory courses for that semester.
-        </p>
-      </div>
+          {/* Streak */}
+          <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm text-left">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+              Streak
+            </p>
+            <div className="flex items-baseline gap-2 mb-3">
+              <span className="text-3xl font-bold text-slate-900 dark:text-white">{streakCount}</span>
+              <span className="text-slate-500 dark:text-slate-400 text-sm">days</span>
+            </div>
+            <div className="flex gap-1.5">
+              {DAY_LABELS.map((label, i) => (
+                <div key={i} className="flex flex-col items-center gap-1 flex-1">
+                  <div
+                    className={`w-full aspect-square rounded-full flex items-center justify-center text-[10px] font-semibold ${
+                      streakDays[i]
+                        ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500'
+                    }`}
+                  >
+                    {label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-      {/* Streak */}
-      <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-          Streak
-        </p>
-        <div className="flex items-baseline gap-2 mb-3">
-          <span className="text-3xl font-bold text-slate-900 dark:text-white">{streakCount}</span>
-          <span className="text-slate-500 dark:text-slate-400 text-sm">days</span>
+          {/* Total Questions */}
+          <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm text-left">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-1">
+              Total Questions
+            </p>
+            <p className="text-3xl font-bold text-slate-900 dark:text-white">{totalQuestions.toLocaleString()}</p>
+            <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
+              {totalQuestions === 0 ? 'Start your first drill.' : 'answered'}
+            </p>
+          </div>
         </div>
-        <div className="flex gap-1.5">
-          {DAY_LABELS.map((label, i) => (
-            <div key={i} className="flex flex-col items-center gap-1 flex-1">
-              <div
-                className={`w-full aspect-square rounded-full flex items-center justify-center text-[10px] font-semibold ${
-                  streakDays[i]
-                    ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500'
-                }`}
-              >
-                {label}
+
+        {/* Right Column: Settings & Controls */}
+        <div className="md:col-span-7 space-y-5 text-left">
+          {/* Semester */}
+          <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+              Current Semester
+            </p>
+            <select
+              defaultValue={profile.semester ?? 'First Semester'}
+              onChange={(e) => onUpdateSemester(e.target.value)}
+              className="w-full px-3 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 outline-none"
+            >
+              <option value="First Semester">First Semester</option>
+              <option value="Second Semester">Second Semester</option>
+            </select>
+            <p className="text-[10px] text-slate-400 dark:text-slate-500 mt-2">
+              Changing semester updates your course list to the compulsory courses for that semester.
+            </p>
+          </div>
+
+          {/* Courses */}
+          {profile.courses && profile.courses.length > 0 && (
+            <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
+                  Courses
+                </p>
+                <button
+                  onClick={() => onNavigate(AppView.EDIT_COURSES)}
+                  className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
+                >
+                  <Pencil size={12} /> Edit
+                </button>
+              </div>
+              <div className="space-y-3">
+                {profile.courses.map((course) => {
+                  const avg = getCourseAvg(course);
+                  return (
+                    <div key={course} className="flex items-center justify-between">
+                      <span className="text-sm text-slate-700 dark:text-slate-350">{course}</span>
+                      <span className="text-sm font-medium text-slate-500 dark:text-slate-400 tabular-nums">
+                        {avg !== null ? `${avg}% avg` : '— avg'}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-          ))}
-        </div>
-      </div>
+          )}
 
-      {/* Courses */}
-      {profile.courses && profile.courses.length > 0 && (
-        <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
-              Courses
+          {/* Appearance */}
+          <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+              Appearance
             </p>
             <button
-              onClick={() => onNavigate(AppView.EDIT_COURSES)}
-              className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
+              onClick={toggleTheme}
+              className="w-full flex items-center justify-between py-1 active:opacity-70 transition-opacity"
             >
-              <Pencil size={12} /> Edit
+              <div className="flex items-center gap-3">
+                {theme === 'dark'
+                  ? <Moon size={18} className="text-slate-500 dark:text-slate-400" />
+                  : <Sun size={18} className="text-slate-500 dark:text-slate-400" />}
+                <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                  {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
+                </span>
+              </div>
+              {/* iOS-style toggle switch */}
+              <div className={`relative w-12 h-6 rounded-full transition-colors duration-200 ${theme === 'dark' ? 'bg-slate-900 dark:bg-white' : 'bg-slate-200'}`}>
+                <div className={`absolute top-0.5 w-5 h-5 rounded-full shadow transition-transform duration-200 ${theme === 'dark' ? 'translate-x-6 bg-white dark:bg-slate-900' : 'translate-x-0.5 bg-white'}`} />
+              </div>
             </button>
           </div>
-          <div className="space-y-3">
-            {profile.courses.map((course) => {
-              const avg = getCourseAvg(course);
-              return (
-                <div key={course} className="flex items-center justify-between">
-                  <span className="text-sm text-slate-700 dark:text-slate-300">{course}</span>
-                  <span className="text-sm font-medium text-slate-500 dark:text-slate-400 tabular-nums">
-                    {avg !== null ? `${avg}% avg` : '— avg'}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
 
-      {/* Total Questions */}
-      <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-1">
-          Total Questions
-        </p>
-        <p className="text-3xl font-bold text-slate-900 dark:text-white">{totalQuestions.toLocaleString()}</p>
-        <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
-          {totalQuestions === 0 ? 'Start your first drill.' : 'answered'}
-        </p>
+          {/* Invite a Friend */}
+          <InviteCard />
+
+          {/* Suggestion Box */}
+          <button
+            onClick={() => onNavigate(AppView.SUGGESTIONS)}
+            className="w-full flex items-center gap-3 px-5 py-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 transition-colors text-left shadow-sm"
+          >
+            <div className="w-9 h-9 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center flex-shrink-0">
+              <MessageSquare size={18} className="text-slate-600 dark:text-slate-400" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">Suggestion Box</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500">Share feedback about your institution</p>
+            </div>
+          </button>
+
+          {/* Admin tools — only shown to admin users */}
+          {isAdmin && (
+            <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 space-y-2 shadow-sm">
+              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+                Admin
+              </p>
+              <button
+                onClick={() => onNavigate(AppView.ADMIN)}
+                className="w-full py-3 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
+              >
+                Manage Knowledge Base
+              </button>
+              <button
+                onClick={() => onNavigate('ADMIN_GENERATOR' as AppView)}
+                className="w-full py-3 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
+              >
+                Question Bank Generator
+              </button>
+              <button
+                onClick={() => onNavigate(AppView.ADMIN_SUGGESTIONS)}
+                className="w-full py-3 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
+              >
+                Manage Suggestions
+              </button>
+            </div>
+          )}
+
+          {/* Log Out */}
+          <button
+            onClick={onLogout}
+            className="w-full text-red-500 hover:text-red-700 dark:hover:text-red-400 text-sm font-medium border border-red-200 dark:border-red-900/50 px-4 py-3 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
+          >
+            Sign Out
+          </button>
+        </div>
       </div>
-
-      {/* Appearance */}
-      <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-          Appearance
-        </p>
-        <button
-          onClick={toggleTheme}
-          className="w-full flex items-center justify-between py-1 active:opacity-70 transition-opacity"
-        >
-          <div className="flex items-center gap-3">
-            {theme === 'dark'
-              ? <Moon size={18} className="text-slate-500 dark:text-slate-400" />
-              : <Sun size={18} className="text-slate-500 dark:text-slate-400" />}
-            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
-              {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
-            </span>
-          </div>
-          {/* iOS-style toggle switch */}
-          <div className={`relative w-12 h-6 rounded-full transition-colors duration-200 ${theme === 'dark' ? 'bg-slate-900 dark:bg-white' : 'bg-slate-200'}`}>
-            <div className={`absolute top-0.5 w-5 h-5 rounded-full shadow transition-transform duration-200 ${theme === 'dark' ? 'translate-x-6 bg-white dark:bg-slate-900' : 'translate-x-0.5 bg-white'}`} />
-          </div>
-        </button>
-      </div>
-
-      {/* Invite a Friend */}
-      <InviteCard />
-
-      {/* Suggestion Box */}
-      <button
-        onClick={() => onNavigate(AppView.SUGGESTIONS)}
-        className="w-full flex items-center gap-3 px-5 py-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 transition-colors text-left"
-      >
-        <div className="w-9 h-9 bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center flex-shrink-0">
-          <MessageSquare size={18} className="text-slate-600 dark:text-slate-400" />
-        </div>
-        <div>
-          <p className="text-sm font-semibold text-slate-800 dark:text-slate-200">Suggestion Box</p>
-          <p className="text-xs text-slate-400 dark:text-slate-500">Share feedback about your institution</p>
-        </div>
-      </button>
-
-      {/* Admin tools — only shown to admin users */}
-      {isAdmin && (
-        <div className="bg-white dark:bg-slate-900 rounded-xl p-5 border border-slate-200 dark:border-slate-800 space-y-2">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
-            Admin
-          </p>
-          <button
-            onClick={() => onNavigate(AppView.ADMIN)}
-            className="w-full py-3 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
-          >
-            Manage Knowledge Base
-          </button>
-          <button
-            onClick={() => onNavigate('ADMIN_GENERATOR' as AppView)}
-            className="w-full py-3 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
-          >
-            Question Bank Generator
-          </button>
-          <button
-            onClick={() => onNavigate(AppView.ADMIN_SUGGESTIONS)}
-            className="w-full py-3 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white text-sm font-medium bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
-          >
-            Manage Suggestions
-          </button>
-        </div>
-      )}
-
-      {/* Log Out */}
-      <button
-        onClick={onLogout}
-        className="w-full text-red-500 hover:text-red-700 dark:hover:text-red-400 text-sm font-medium border border-red-200 dark:border-red-900/50 px-4 py-3 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
-      >
-        Sign Out
-      </button>
     </div>
   );
 };
