@@ -8,12 +8,12 @@ interface SuggestionsProps {
 }
 
 const CATEGORIES = [
-  'Academic Quality',
-  'Infrastructure',
-  'Administration',
-  'Student Welfare',
-  'Library & Resources',
-  'Technology',
+  'Content & Explanations',
+  'Question Quality',
+  'Study Tools',
+  'Performance Tracking',
+  'User Experience',
+  'New Features',
   'Other',
 ];
 
@@ -125,7 +125,7 @@ export const Suggestions: React.FC<SuggestionsProps> = ({ onBack }) => {
             Suggestion Box
           </h1>
           <p className="text-slate-500 dark:text-slate-400 text-xs mt-0.5">
-            {profile?.university}
+            Help us improve your learning experience
           </p>
         </div>
       </div>
@@ -167,7 +167,7 @@ export const Suggestions: React.FC<SuggestionsProps> = ({ onBack }) => {
                   Suggestion submitted.
                 </h2>
                 <p className="text-slate-500 dark:text-slate-400 text-sm">
-                  Your feedback has been sent to {profile?.university}.
+                  Thanks — your feedback helps us make Learned better for every student.
                 </p>
               </div>
               <div className="flex gap-3 pt-2">
@@ -219,7 +219,7 @@ export const Suggestions: React.FC<SuggestionsProps> = ({ onBack }) => {
                   value={content}
                   onChange={(e) => setContent(e.target.value.slice(0, MAX_CHARS))}
                   rows={6}
-                  placeholder="Describe your suggestion clearly. What's the problem, and how could it be improved?"
+                  placeholder="What would make your learning experience better? Describe the idea clearly — we read every submission."
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-400 focus:border-slate-900 dark:focus:border-slate-400 outline-none text-sm leading-relaxed resize-none transition-all"
                 />
               </div>
@@ -326,7 +326,7 @@ export const Suggestions: React.FC<SuggestionsProps> = ({ onBack }) => {
                   {s.admin_response && (
                     <div className="mx-5 mb-5 px-4 py-3 bg-slate-50 dark:bg-slate-800 rounded-xl border-l-2 border-slate-900 dark:border-white">
                       <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-1">
-                        Response from {s.university}
+                        Response from the Learned team
                       </p>
                       <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
                         {s.admin_response}
