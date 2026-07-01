@@ -7,6 +7,7 @@ import { Login } from './components/Auth/Login';
 import { Signup } from './components/Auth/Signup';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+import { Landing } from './views/Landing';
 import { AdminUpload } from './views/AdminUpload';
 import { AdminQuestionGenerator } from './views/AdminQuestionGenerator';
 import { Suggestions } from './views/Suggestions';
@@ -31,7 +32,7 @@ const AppContent: React.FC = () => {
   const { user, profile, loading, isConfigured, signOut, updateProfile } = useAuth();
   const { theme, toggleTheme } = useTheme();
   const [currentView, setCurrentView] = useState<AppView>(AppView.HOME);
-  const [authView, setAuthView] = useState<'login' | 'signup'>('login');
+  const [authView, setAuthView] = useState<'landing' | 'login' | 'signup'>('landing');
   const [isQuizActive, setIsQuizActive] = useState(false);
   const [practicePreselect, setPracticePreselect] = useState<{ course: string; topic: string } | null>(null);
 
@@ -81,10 +82,28 @@ const AppContent: React.FC = () => {
 
   // Show auth screens if not logged in
   if (!user || !profile) {
-    if (authView === 'login') {
-      return <Login onSwitchToSignup={() => setAuthView('signup')} />;
+    if (authView === 'landing') {
+      return (
+        <Landing
+          onLogin={() => setAuthView('login')}
+          onSignup={() => setAuthView('signup')}
+        />
+      );
     }
-    return <Signup onSwitchToLogin={() => setAuthView('login')} />;
+    if (authView === 'login') {
+      return (
+        <Login
+          onSwitchToSignup={() => setAuthView('signup')}
+          onBack={() => setAuthView('landing')}
+        />
+      );
+    }
+    return (
+      <Signup
+        onSwitchToLogin={() => setAuthView('login')}
+        onBack={() => setAuthView('landing')}
+      />
+    );
   }
 
   const handleLogout = async () => {

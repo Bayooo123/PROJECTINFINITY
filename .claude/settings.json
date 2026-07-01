@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Force)",
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "WebFetch(domain:abiolasanniandco.com)",
+      "Read(//c/Users/DELL/Downloads\" 2>/dev/**)",
+      "Read(//c/Users/DELL/Desktop\" 2>/dev/**)",
+      "Bash(find \"c:/Users/DELL\" -maxdepth 4 -type d -iname \"*ascolp*\" -o -maxdepth 4 -type d -iname \"*abiola*\" -o -maxdepth 4 -type d -iname \"*sanni*\" 2>/dev/null | head -20)",
+      "Read(//c/Users/DELL/**)",
+      "mcp__claude_ai_Supabase__list_projects",
+      "mcp__claude_ai_Supabase__list_tables",
+      "mcp__claude_ai_Supabase__execute_sql",
+      "mcp__claude_ai_Supabase__apply_migration",
+      "Bash(git commit -m 'fix: remove UUID from scenario header, rename to Scenario *)",
+      "Bash(claude --model claude-sonnet-4-5)",
+      "Bash(git commit -m 'feat: add Invite a Friend card to Profile *)",
+      "Read(//c/Users/DELL/.claude/**)"
+    ]
+  }
+}

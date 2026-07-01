@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Mail, Lock, AlertCircle, Loader, CheckCircle } from 'lucide-react';
+import { Mail, Lock, AlertCircle, Loader, CheckCircle, ChevronLeft } from 'lucide-react';
 import { Onboarding } from '../../views/Onboarding';
 import { UserProfile as LocalUserProfile } from '../../types';
 
 interface SignupProps {
   onSwitchToLogin: () => void;
+  onBack?: () => void;
 }
 
-export const Signup: React.FC<SignupProps> = ({ onSwitchToLogin }) => {
+export const Signup: React.FC<SignupProps> = ({ onSwitchToLogin, onBack }) => {
   const [step, setStep] = useState<'credentials' | 'onboarding'>('credentials');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -114,6 +115,14 @@ export const Signup: React.FC<SignupProps> = ({ onSwitchToLogin }) => {
   return (
     <div className="min-h-screen bg-stone-100 dark:bg-slate-950 flex items-center justify-center p-4">
       <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl p-8 w-full max-w-md border border-slate-100 dark:border-slate-800">
+        {onBack && (
+          <button
+            onClick={onBack}
+            className="flex items-center gap-1 text-sm text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors mb-6"
+          >
+            <ChevronLeft size={16} /> Back
+          </button>
+        )}
         <div className="text-center mb-8">
           <div className="flex flex-col items-center justify-center gap-4 mb-2">
             <img src="/logo_icon.png" alt="Learned Icon" className="w-16 h-16 rounded-full shadow-sm" />

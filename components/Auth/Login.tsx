@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { Mail, Lock, AlertCircle, Loader } from 'lucide-react';
+import { Mail, Lock, AlertCircle, Loader, ChevronLeft } from 'lucide-react';
 
 interface LoginProps {
     onSwitchToSignup: () => void;
+    onBack?: () => void;
 }
 
-export const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
+export const Login: React.FC<LoginProps> = ({ onSwitchToSignup, onBack }) => {
     const { signIn } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -30,6 +31,15 @@ export const Login: React.FC<LoginProps> = ({ onSwitchToSignup }) => {
     return (
         <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
             <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md border border-slate-100">
+                {/* Back */}
+                {onBack && (
+                    <button
+                        onClick={onBack}
+                        className="flex items-center gap-1 text-sm text-slate-400 hover:text-slate-700 transition-colors mb-6"
+                    >
+                        <ChevronLeft size={16} /> Back
+                    </button>
+                )}
                 {/* Logo */}
                 <div className="text-center mb-8">
                     <div className="flex flex-col items-center justify-center gap-4 mb-2">
